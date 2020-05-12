@@ -1,0 +1,210 @@
+AuthorID,Author,Date,Content,Attachments,Reactions
+"257888406925737984","fharoe#9657","25-Jan-18 08:32 PM","First 🙄","",""
+"392298840058888192","Alonso#9569","30-Jan-18 01:57 PM","second","",""
+"274604147939213313","Abhijeet Singh#0615","31-Jan-18 09:40 AM","third","",""
+"232215051052908545","QParticle#9469","01-Feb-18 04:48 AM","first","",""
+"232215051052908545","QParticle#9469","01-Feb-18 04:49 AM","wait","",""
+"352628480006946816","CPU#9457","02-Feb-18 11:02 AM","I enjoyed this short course","",""
+"352628480006946816","CPU#9457","02-Feb-18 03:15 PM","have you gotten your results back yet? edit 8 march: now i have","",""
+"358253637429886988","PerfectlyBalanced#1021","18-Mar-18 05:17 PM","6th","",""
+"331360434567380995","DiscordBay#6583","01-Apr-18 10:13 PM","Why the number? Never mind, seventh Lol😁","","💩 (2)"
+"229789186188771338","REX MASTER#1598","02-Apr-18 06:33 PM","@staff i mest up some thing on my check50 and don't no how to fix","",""
+"393854278764068875","curiouskiwi#1671","02-Apr-18 11:12 PM","@REX MASTER  the CS50 Technology course doesn't use check50.  Are you doing CS50x?  Please ask your question in the problem channel for the pset problem you are currently doing.","",""
+"229789186188771338","REX MASTER#1598","03-Apr-18 12:26 AM","OK","",""
+"454728374519201793","Laiba#5699","09-Jun-18 06:27 PM","How can I attend sections and what is this for? Please guide me.","https://cdn.discordapp.com/attachments/401110306094317579/455030074270547978/unknown.png",""
+"393854278764068875","curiouskiwi#1671","10-Jun-18 03:51 AM","What course is that? It looks like a Harvard Extension school course.","",""
+"393854278764068875","curiouskiwi#1671","10-Jun-18 03:52 AM","If you are doing CS50 Technology, it is on edx here: https://courses.edx.org/courses/course-v1:HarvardX+CS50T+Technology/course/","",""
+"454728374519201793","Laiba#5699","10-Jun-18 03:44 PM","In CS50 Understanding Technology, I have to submit only 6 assignments and there is no exam in it?","",""
+"393854278764068875","curiouskiwi#1671","10-Jun-18 11:26 PM","That's correct.  Watch 6 lectures and complete 6 assignments.  https://docs.cs50.net/technology/2018/x/syllabus.html","","👍 (1),👌 (1)"
+"454728374519201793","Laiba#5699","27-Jun-18 04:30 PM","Hello! It's have been two weeks since I submitted my two assignments. Do you have any idea when will I get their results?","",""
+"256081335762812928","aBooDyy#9543","01-Jul-18 04:06 PM","how do i open the terminal  window in windows 10? im in the git lecture and i need to open this window to get the GitHub repository","",""
+"238974731817189377","jimwin#0996","01-Jul-18 04:08 PM","terminal is a unix thing. you could try installing ubuntu bash from windows store","",""
+"256081335762812928","aBooDyy#9543","01-Jul-18 04:09 PM","i saw this video <https://www.youtube.com/watch?v=Ts3Je2jeK0c> but i dont think i should do that..","",""
+"238974731817189377","jimwin#0996","01-Jul-18 04:10 PM","https://www.microsoft.com/en-au/p/ubuntu/9nblggh4msv6#","",""
+"238974731817189377","jimwin#0996","01-Jul-18 04:10 PM","try that, i haven't used it before so i dont know how good it is","",""
+"238974731817189377","jimwin#0996","01-Jul-18 04:10 PM","you can also install git for windows","",""
+"238974731817189377","jimwin#0996","01-Jul-18 04:10 PM","i think it has its own shell that you can use","",""
+"256081335762812928","aBooDyy#9543","01-Jul-18 04:11 PM","ok tysm will try that","",""
+"238974731817189377","jimwin#0996","01-Jul-18 04:11 PM","also this:
+https://gitforwindows.org/","",""
+"256081335762812928","aBooDyy#9543","01-Jul-18 04:13 PM","i need one right? cuz in Ubuntu features theres bash and thats what i need i think..","",""
+"256081335762812928","aBooDyy#9543","01-Jul-18 04:13 PM","cuz the teacher opened that in the lecture ..","",""
+"256081335762812928","aBooDyy#9543","01-Jul-18 04:14 PM","and thank you so much for helping me 😁","",""
+"315162191781298176","ChTBoner#4038","01-Jul-18 04:19 PM","if I were you I would use the Ubuntu port on the windows store, or run ubuntu on a Virtual Machine","","👍 (2)"
+"256081335762812928","aBooDyy#9543","01-Jul-18 04:21 PM","i heard about it before that its good and everyone use it so i think i will too 😄","",""
+"463336162036023316","Kino#9658","02-Jul-18 04:39 PM","Hi everyone. I got the results from all my assignments through email (Understanding Technology). But I don't see a button to view my certificate (paid $90 for it). Has anyone completed and got their certificates? Thanks!","","👌 (1)"
+"256081335762812928","aBooDyy#9543","02-Jul-18 04:41 PM","i dont think so anyone finished it to get it.... it started yesterday...","",""
+"463336162036023316","Kino#9658","02-Jul-18 04:47 PM","What do you mean it started yesterday? I started the course on March 23. Anyway, I found out why I still don't have the cretificate.","",""
+"463336162036023316","Kino#9658","02-Jul-18 04:47 PM","certificate *","",""
+"463336162036023316","Kino#9658","02-Jul-18 04:48 PM","I got a 2 out of 9 in the Web Development assignment because they can't access the final link I provided due to ""500 - Internal Server Error"" which is totally not under my control.","",""
+"256081335762812928","aBooDyy#9543","02-Jul-18 05:07 PM","Oh sorry..","",""
+"354536811500142592","bluebooger#8988","02-Jul-18 06:54 PM","@Kino https://www.lifewire.com/500-internal-server-error-explained-2622938  ""In most cases, a 500 Internal Server Error is due to an incorrect permission on one or more files or folders."" 
+https://www.howtogeek.com/305093/what-is-a-500-internal-server-error-and-how-do-i-fix-it/   ""Common problems include an error in your website’s .htaccess file, incorrect permissions on files and folders on your server, a software package that your website depends on not being installed, or a timeout when connecting to an external resource.""","",""
+"463336162036023316","Kino#9658","03-Jul-18 12:51 PM","@bluebooger thanks, but when I try to resubmit my assignment, the IDE keeps telling me that I should upgrade to premium. Does that happen to anyone else?","",""
+"454728374519201793","Laiba#5699","03-Jul-18 06:42 PM","@Kino Hi! I also got the results from my all assignments and paid for the certificate but didn’t receive it yet.","",""
+"463336162036023316","Kino#9658","03-Jul-18 06:59 PM","@Laiba Oh, hi. Thanks for letting me know.","","😊 (1)"
+"232909121639153665","Ziad#3079","25-Jul-18 01:44 PM","fileCrypto is library that make u how ever beginner or professional encrypt and decrypt file
+In Just 3 Line Of CODE !!!
+Nothing More 
+Now there Is Just 2 Encryption Algorithm And 3 Encode Algorithm 
+So Feel Free to Use It 
+pip : https://pypi.org/project/fileCrypto/
+github : https://github.com/ziadab/fileCrypto 
+BTW You Can Develop It too It's For Everyone By Everyone","","👌 (1)"
+"494594850516369411","Ercan#3473","26-Sep-18 10:47 PM","Hello World!
+Speaking for CS50's understanding technology, I haven't got my assignment result and it's been two weeks since I sent it.
+Is there anybody else with the same problem ?","",""
+"463336162036023316","Kino#9658","08-Oct-18 02:59 PM","@Ercan I did have that problem. Some assignments took almost a month before I got the results.","",""
+"485213517658587148","Charta#1773","26-Dec-18 05:03 PM","Same here !","",""
+"485213517658587148","Charta#1773","26-Dec-18 05:03 PM","I was just about to ask if anyone hasn’t gotten results back","",""
+"485213517658587148","Charta#1773","26-Dec-18 05:05 PM","Has anyone still not gotten their results back? I haven’t...","",""
+"485213517658587148","Charta#1773","26-Dec-18 05:13 PM","It has been over a month for me...","",""
+"460072305964351498","Nyagi#3831","14-Feb-19 06:18 AM","I just got my assignment result on Hardware. I got two answers wrong. Can anybody tell me the correct answer for this?
+
+Q : Some computers, particularly PCs, come with stickers that say ""Intel Inside."" What is it that's inside of most computers that's made by Intel? In your own words, what does that hardware do?
+My wrong answer : Intel is popular with its processor. Processor sends signals to control the other parts of the computer, which literally made processor the computer's brain.
+
+Q : Name at least 3 devices that can be connected to a laptop or desktop via ""USB"".
+My wrong answer : 
+1. USB LED Light. 
+2. USB Wireless Mouse Receiver. 
+3. USB Phone Charging Cable.","",""
+"475391620590862346","thunder#5887","14-Feb-19 09:30 AM","Q.2 External Keyboard, Mouse, Phone","",""
+"332396618903060482","ahmadjamalmughal47#2162","19-Feb-19 04:27 AM","@figo718 I opened the site on mobile and it's working alright","","👍 (1)"
+"492450454341550100","WhipStreak23#6131","28-Feb-19 06:43 PM","@figo718 That's normal. It should load in about 4-5 minutes","","👍 (1)"
+"282945361704648705","puoygae#8917","02-Jun-19 05:32 PM","128 + 64 + 32 + 16 + 8 + 4  + 2 + 1 = 255
+Where did the extra 1 in 256 come from?","",""
+"118155500025020421","willrei#2623","02-Jun-19 06:24 PM","8 bits gives you 256 different numbers, from 0 to 255","","👌🏼 (1)"
+"282945361704648705","puoygae#8917","02-Jun-19 10:36 PM","Oh, the 0!","",""
+"282945361704648705","puoygae#8917","04-Jun-19 08:41 PM","What is the difference between a compiler and an interpreter?
+Is it that the compiler is the software that converts code into machine readable code
+while an interpreter 'reads' the code? 
+
+At which level exactly does an interpreter work? 
+For example, Python code is converted into the intermediary 'bytecode' before converted into machine-code. 
+Where does the interpreter apply here?","",""
+"566340210212864022","👻Ghosty (Azin Cordus)#4159","10-Jun-19 04:26 AM","How do I add a second page to my website I have created the second html but how do I connect it to my first page","",""
+"393854278764068875","curiouskiwi#1671","10-Jun-19 05:08 AM","you can use an `a` tag  ```html
+<a href=""mysecondpage.html"">visit my other page</a> ```  for example.  In the lecture example, you had a link to another site, but it works the same way.  ```html
+<!DOCTYPE html>
+
+<html lang=""en"">
+    <head>
+        <title>link</title>
+    </head>
+    <body>
+        Visit <a href=""http://www.harvard.edu/"">Harvard</a>.
+    </body>
+</html>```","",""
+"566340210212864022","👻Ghosty (Azin Cordus)#4159","10-Jun-19 06:14 AM","@curiouskiwi  thanks","",""
+"566340210212864022","👻Ghosty (Azin Cordus)#4159","10-Jun-19 07:54 AM","Now I’m having another problem, I have the link to my second site on but every time I press it on the browser it keeps saying 404 error 🤦🏻‍♂️","",""
+"446609783584194570","bilharts#7658","10-Jun-19 08:26 AM","@👻Ghosty (Azin Cordus)  Can I get a screenshot?","",""
+"566340210212864022","👻Ghosty (Azin Cordus)#4159","10-Jun-19 09:39 PM","","https://cdn.discordapp.com/attachments/401110306094317579/587712529694851083/image.png",""
+"566340210212864022","👻Ghosty (Azin Cordus)#4159","10-Jun-19 09:39 PM","@bilharts","",""
+"446609783584194570","bilharts#7658","10-Jun-19 09:45 PM","Ok thanks ill check it out now","",""
+"566340210212864022","👻Ghosty (Azin Cordus)#4159","10-Jun-19 09:47 PM","Thanks","",""
+"446609783584194570","bilharts#7658","10-Jun-19 09:47 PM","Try the <a...> tag without the paragraph tag in a body","",""
+"393854278764068875","curiouskiwi#1671","10-Jun-19 09:49 PM","the issue is that you have `page2.html` but your file is named `Page2.html`   (it's case-sensitive)","",""
+"566340210212864022","👻Ghosty (Azin Cordus)#4159","10-Jun-19 09:51 PM","🤦🏻‍♂️🤦🏻‍♂️🤦🏻‍♂️ thanks guys","",""
+"566340210212864022","👻Ghosty (Azin Cordus)#4159","10-Jun-19 09:54 PM","Also do I need to use a <nav> link ?","",""
+"566340210212864022","👻Ghosty (Azin Cordus)#4159","10-Jun-19 09:55 PM","It’s okay it’s working now thank you again","",""
+"446609783584194570","bilharts#7658","10-Jun-19 10:39 PM","lol np(Even thought it was probably @curiouskiwi s solution","",""
+"566340210212864022","👻Ghosty (Azin Cordus)#4159","10-Jun-19 11:17 PM","Trust me every little thing helps haha, first time doing anything like this but I am enjoying it only got programming left to do","",""
+"591601842836996097","susarla#5544","21-Jun-19 05:07 PM","Hi
+In the first lecture ... David sir.. mentions that each core can do task and 4 cores means 4 task parallely at a time.
+Does that mean a processor is 2ghz .. so each core can do 2billion task at a time or those 2 billion tasks are divided to 4 cores ?","",""
+"237335376782426115","_𝕄𝕣. 𝕊𝕙𝕖𝕖𝕡#4604","21-Jun-19 10:08 PM","@susarla in the case of a CPU processor, each core will have an individual clock speed (essentially how many tasks per time). That means a 2ghz 4 core processor is running 4 cores, each at 2ghz. But nowadays, CPUs may have different speeds for different cores so as to be more efficient in certain tasks.","",""
+"591601842836996097","susarla#5544","22-Jun-19 12:52 AM","@_𝕄𝕣. 𝕊𝕙𝕖𝕖𝕡 so assuming that each core clock speeds are same ... So it's like 2billion things (say instructions) * 4cores per second . 
+Thank you :)","","👍 (1)"
+"591601842836996097","susarla#5544","22-Jun-19 02:47 PM","Hi,
+What are the main difference between cache and registers near CPU?
+Both are near CPU and are accessable faster. Both save instructions and values.
+So I'm little confused. 
+Can someone help me with better clarification?
+Thank you.","",""
+"591601842836996097","susarla#5544","22-Jun-19 02:50 PM","I  meant L1 cache.","",""
+"591601842836996097","susarla#5544","01-Jul-19 10:18 AM","Anyone there ?","",""
+"207884450237906947","Lx4#3481","05-Jul-19 12:06 PM","hi https://stackoverflow.com/questions/14504734/cache-or-registers-which-is-faster","","BlobbleWobble (4)"
+"207884450237906947","Lx4#3481","05-Jul-19 12:06 PM","@susarla","",""
+"603924010727899136","sudkumar#3340","25-Jul-19 03:31 PM","is it possible to create AI based application in php","",""
+"609824384500105217","Boyuan#0628","26-Sep-19 07:23 AM","Is there is a portal for CS50 Technology just like CS50 intro to Computer Science so I can check my progress?","",""
+"630310145213333514","Retarlnet_gamma#4353","07-Oct-19 10:26 AM","@Boyuan  i think no but you can search the web for it.","",""
+"630310145213333514","Retarlnet_gamma#4353","07-Oct-19 10:26 AM","You can use #cs50-technology in this same server.","",""
+"170300390691176449","OFFLINE#2281","24-Oct-19 04:12 PM","@Boyuan this?","https://cdn.discordapp.com/attachments/401110306094317579/636914800403939329/unknown.png",""
+"609824384500105217","Boyuan#0628","24-Oct-19 05:56 PM","No, but more like cs50.me","",""
+"170300390691176449","OFFLINE#2281","24-Oct-19 07:28 PM","https://cs50.harvard.edu/technology/","",""
+"603294110614552587","noob4ever#1127","31-Oct-19 09:21 PM","Just curious. At about 51:35 in the Hardware Video Colton states about Apple ""Often using magnets too."" Does anyone know what is meant by this statement?","",""
+"508845037291831296",". ¦3<RELATIVISM#5748","22-Jan-20 07:12 PM","@Jelleas hey there, new to CS50x here(edited)
+did you ever consider bridging this room to the matrix.org network. with that bridge you could acess many other ecossystems like slack/irc/gitter/xmpp etc. It is a very user-friendly easy to setup bridge that was created by one of the matrix.org employees. here is link for this specific bridge https://t2bot.io/discord/ or if you want to learn more about matrix.org here theyre website https://www.matrix.org/. It is a super cool project, trying to do the same thing as xmpp wanted to but learning with their mistakes and fixing their problems.(edited)
+t2bot.io - Discord Bridge
+Learn how to set up t2bot.io's Discord Bridge
+
+Cheers, Alexis(edited)
+
+ 
+ASKVASTLast Wednesday at 3:44 PM
+and i notice that you already have a slack gitter and discord account so if you use matrix.org all those ecosystems could be syncronised and conected. There is also the privacy freedoom benefit being that it is mostly FOSS(free and open source software). Hope you consider it @coltonoscopy, thank you, Alexis.(edited)
+And if not wrong they even have a twitter/instagram bots. Making it very easy to mantain all ecosystems, from matrix.org","",""
+"322546286870134785","coltonoscopy#9517","22-Jan-20 07:19 PM","@noob4ever Apple cases, particularly for the iMacs, tend to be sealed using magnets (at least in my experience taking them apart) 🙂","",""
+"603294110614552587","noob4ever#1127","22-Jan-20 07:32 PM","@coltonoscopy Thanks for the reply friend! I'm not an Apple guy and hate not being in on a joke.","",""
+"603294110614552587","noob4ever#1127","22-Jan-20 07:32 PM","👍","",""
+"508845037291831296",". ¦3<RELATIVISM#5748","22-Jan-20 07:34 PM","@coltonoscopy I see that there is no interess in bridging this room to matrix.org . this is unfortunate because it should align with your values of user fredoom/privacy. But anyway I have been ignored now, 3 times so there is not much more I can do. I will leave discord now and hopefully in the gitter room they will be able to help me through out my course. Cheers, Alexis.","",""
+"492450454341550100","WhipStreak23#6131","22-Jan-20 07:35 PM","He just left the server...","",""
+"592598836313325568","Tokom#8458","15-Feb-20 06:02 PM","I need a friend of same interest in computer science to discuss and develop. Anyone?","",""
+"690246450357076070","mrtushaar#2603","22-Mar-20 06:57 AM","> I need a friend of same interest in computer science to discuss and develop. Anyone?
+@Tokom Hi Tokom! May I know more about it? Feel free to DM me. Thank you.","",""
+"413314454915383297","sktiorro twitch.tv/sktiorro#3156","22-Mar-20 05:47 PM","I just submitted my google forms assignment. Do I have to do anything else for the work to be graded?","",""
+"609824384500105217","Boyuan#0628","23-Mar-20 07:36 AM","I don't think so.","",""
+"413314454915383297","sktiorro twitch.tv/sktiorro#3156","23-Mar-20 03:03 PM","Thank you","",""
+"692425149370335262","LucasG19#3305","25-Mar-20 07:44 PM","Hello","",""
+"413314454915383297","sktiorro twitch.tv/sktiorro#3156","26-Mar-20 07:58 PM","Good afternoon, I just got an email about my assignment containing my grade. It says one grade on the email but when I open the google form it shows I got one question wrong. What is the correct one?","",""
+"413314454915383297","sktiorro twitch.tv/sktiorro#3156","26-Mar-20 07:59 PM","Correct grade?","",""
+"537207816423866370","hakiniti#5800","31-Mar-20 08:00 PM","Hi, I have completed CS50 and I would like to know better how things work behind the hood. I have understood all CS50 clearly so I wonder if this is course is going to be repetitive or it takes when the cs50 finishes","",""
+"651110562176172045","m.sharifit88#2964","31-Mar-20 10:19 PM","Hi, Should we take this course first or AI?","",""
+"697164159133155328","Sinnerman#8847","07-Apr-20 10:35 PM","Hello
+
+I just finished lessons on CS50’s Computer Science for Business Professionals. But I don't understand, I can't find the questions to finalize the exam and also to have the certification.
+
+I see that, but no exam ! please ! how can i get my certification?
+
+
+« CS50 Certificate
+If you submit and receive a score of at least 70% on each of this course’s assignments, you will be eligible for a free CS50 Certificate.
+For a verified certificate from edX, register at cs50.edx.org/business.
+Email certificates@cs50.harvard.edu with any questions. »","",""
+"689248610587902165","Carol_ca#2356","16-Apr-20 03:24 AM","Hi, do you know if there is a way to get a help in the price of the certificate? I'm sorry if you find some mistakes, my english  isn't so good","",""
+"281101012297842689","omega.#7222","16-Apr-20 10:51 PM","90$ USD","",""
+"566832761776898058","Lolito#6982","17-Apr-20 03:06 AM","Hey","",""
+"566832761776898058","Lolito#6982","17-Apr-20 03:07 AM","can someone join the spanish voice channel?","",""
+"493612718402568213","tokieyoh#0001","21-Apr-20 03:09 AM","Do you get the certificate right after you're done with the whole course? (if you paid the $90 of course)","",""
+"393854278764068875","curiouskiwi#1671","21-Apr-20 03:25 AM","@tokieyoh No, certificates are issued every few weeks.","",""
+"493612718402568213","tokieyoh#0001","21-Apr-20 03:58 AM","Oh, ok thanks!","",""
+"702070700374229044","XParif#8552","21-Apr-20 04:01 PM","can anyone suggest me some book about computer hardware?","",""
+"702070700374229044","XParif#8552","21-Apr-20 04:01 PM","I'm new here","",""
+"702070700374229044","XParif#8552","21-Apr-20 04:02 PM","I have already completed 1st 3 chapter","",""
+"616223766690660353","AYUSHMAN17#4315","21-Apr-20 08:10 PM","Hey Folks!, This is my #first blog of the #quarantine series. I hope you all give it a read. I am hoping to #clear up some #confusion about 5G mobile network recently so give it a read! 
+Check out my blog post:  https://ayushman17.blogspot.com/2020/04/does-5g-tech-leads-to-coronavirus.html
+Please share and comment!","",""
+"702182818243018954","laurent#7550","22-Apr-20 03:41 PM","Hello","",""
+"702182818243018954","laurent#7550","22-Apr-20 03:41 PM","I need help","",""
+"364438077017423873","Or ashkenazi#9958","22-Apr-20 09:35 PM","Hi!
+I'm a begginer in all of this, I'm on the course of understanding technology and I have a question, I know every byte is 8 bits but how does the computer knows the difference between two information units, for example if I want to write 1 and then 2 in binary I would write 001 and 010 but how the computer knows if its 001 and then 010 or just 001010 which gives a totaly different value? Thanks for anyone who helps!!","",""
+"445163837038002197","french#4046","22-Apr-20 09:40 PM","Same","",""
+"226342747450245120","Kotoko#1900","23-Apr-20 08:23 AM","hey! i noticed that in a month the assignment google form have changed? I wrote a very long good essay and apparently it didn't even reflect to the google form 😫","",""
+"566340210212864022","👻Ghosty (Azin Cordus)#4159","25-Apr-20 03:43 AM","@SinewyParrot this is the main page for the course","",""
+"612339190214164482","SinewyParrot#0617","25-Apr-20 03:43 AM","Ahhh, thanks mate","",""
+"566340210212864022","👻Ghosty (Azin Cordus)#4159","26-Apr-20 02:27 AM","> Hi!
+> I'm a begginer in all of this, I'm on the course of understanding technology and I have a question, I know every byte is 8 bits but how does the computer knows the difference between two information units, for example if I want to write 1 and then 2 in binary I would write 001 and 010 but how the computer knows if its 001 and then 010 or just 001010 which gives a totaly different value? Thanks for anyone who helps!!
+@Or ashkenazi it know this becasue there is a brake between the 2 they are not connected together so for example you would have 0001 0010 0101 and that would be 1 2 5","",""
+"566340210212864022","👻Ghosty (Azin Cordus)#4159","26-Apr-20 02:45 AM","also 8 bits just determin how many 0 and 1s are in one group together I.E 01000001 that is 8 bits it the number of them in one line","",""
+"566340210212864022","👻Ghosty (Azin Cordus)#4159","26-Apr-20 02:45 AM","i hope that helps","",""
+"566340210212864022","👻Ghosty (Azin Cordus)#4159","26-Apr-20 02:48 AM","also a byte is just another way of saying 8 bits, so 8 bytes is 64bits","",""
+"231385348192600065","Bryan#8158","05-May-20 04:32 PM","@staff I was looking through the CS50T EDx page and I found a repeated dead link throughout the links to the lecture notes. It seems that clicking the notes link in the first lecture directs you to https://cs50.harvard.edu/technology/notes/hardware/hardware/ instead of https://cs50.harvard.edu/technology/notes/hardware (the right link). This does the same for all the lectures where the ""week name"" is repeated twice in the link","",""
+"393854278764068875","curiouskiwi#1671","05-May-20 11:11 PM","@Bryan thanks, fixed","",""
+"231385348192600065","Bryan#8158","06-May-20 02:29 PM","@curiouskiwi no problem! Thanks for the quick fix","",""
+"669087770626752533","Hamza kiyani#4389","07-May-20 01:21 AM","Can someone help me please...... I don't know how to submit the work 😭...
+What shall I do????","",""
+"393854278764068875","curiouskiwi#1671","07-May-20 01:24 AM","are you taking this via edX?  http://cs50.edx.org/technology?","",""
+"231385348192600065","Bryan#8158","09-May-20 12:45 PM","Are we allowed to resubmit the scratch file we have done in CS50's PS1 to CS50T's Final Project and vice versa since they essentially have the same requirements","",""
+"560835982388232205","dlloyd#7570","10-May-20 05:09 AM","yes","",""
+"231385348192600065","Bryan#8158","10-May-20 10:14 AM","@dlloyd thanks!","",""

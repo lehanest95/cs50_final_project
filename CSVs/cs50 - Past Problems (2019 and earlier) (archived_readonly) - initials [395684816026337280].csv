@@ -1,0 +1,208 @@
+AuthorID,Author,Date,Content,Attachments,Reactions
+"260757571445587968","LT.Sana#9372","28-Dec-17 11:20 AM","#include <cs50.h>
+#include <ctype.h>
+#include <stdio.h>
+#include <string.h>
+
+int main(void)
+{
+    //Enter persons name to get Initials//
+    string name = get_string();
+
+    // nameL make name lenght into a int //
+    int nameL = strlen(name);
+
+    // bounce to tell when to print the character//
+    int bounce = 1;
+
+    // int to know when to make a new line//
+    int finished = 0;
+
+    //if i is not greater or equal to name lenght LOOP//
+    for (int i = 0; i <= nameL; i++)
+    {
+        //if a space is found make bounce 1//
+        if (name[i] == ' ')
+        {
+            bounce = 1;
+        }
+        //Check if there is no space and
+        //that bounce is 1 then print i
+        //(letter in the number i)
+        else if ( name[i] != ' ' && bounce == 1)
+        {
+            //prints Initials in %c and toupper to capitalize//
+            printf(""%c"", toupper(name[i]));
+            bounce = 0;
+        }
+    finished = 1;
+    }
+    //When Loop is finished print new line//
+    if ( finished == 1)
+    {
+        printf(""\n"");
+    }
+}","",""
+"260757571445587968","LT.Sana#9372","28-Dec-17 11:22 AM","Im having an error when i check50, it keeps printing  ""HJ\x00\n"" instead of ""HJ\n"" ?","",""
+"395861528521474048","thesillygeek#1343","28-Dec-17 11:59 AM","What's the command line argument you gave?","",""
+"393854278764068875","curiouskiwi#1671","28-Dec-17 10:55 PM","@LT.Sana `""HJ\x00\n"" `  tells me that you are printing the Null char that is at the end of the string.  Be sure that you don't allow your loop to print `name[i]` when `i`  is `nameL` (remember that char arrays are zero-indexed, so if the string is 5 chars long, then string[5] is the Null character.)","",""
+"260757571445587968","LT.Sana#9372","28-Dec-17 11:08 PM","that makes more sence, so ""\x00"" means a empty space (NULL), I thought that if I hit a NULL it would print NULL. Thank You @curiouskiwi","",""
+"393854278764068875","curiouskiwi#1671","28-Dec-17 11:09 PM","@LT.Sana `\x00` is a printed representation of Null.","",""
+"393854278764068875","curiouskiwi#1671","28-Dec-17 11:09 PM","it's one byte where each bit is set to 0","",""
+"260757571445587968","LT.Sana#9372","29-Dec-17 12:35 AM","@curiouskiwi it took me some time to notice that using NULL in my loop doesn't work 😂 had to tell it to not print when \x00 is going to be an output","",""
+"260757571445587968","LT.Sana#9372","29-Dec-17 12:35 AM","Thank You","",""
+"393854278764068875","curiouskiwi#1671","29-Dec-17 12:47 AM","@LT.Sana you shouldn't have to explicitly tell it not to print NULL.  Just don't go past the end of the string. 😃","",""
+"456226577798135808","Deleted User#0000","03-Jan-18 06:21 PM","I've noticed you are not using toupper().....","",""
+"395861528521474048","thesillygeek#1343","03-Jan-18 09:21 PM","Yeah, i was using a more primitive approach. :p","",""
+"456226577798135808","Deleted User#0000","03-Jan-18 09:26 PM","I don't reccomend that...","",""
+"152438978354741248","Kendall#1426","05-Jan-18 07:36 AM","Not looking at that, but please don't post finished code.","",""
+"152438978354741248","Kendall#1426","05-Jan-18 07:38 AM","From the table of contents, academic dishonesty, under the header 'Not Reasonable':","",""
+"152438978354741248","Kendall#1426","05-Jan-18 07:38 AM","Providing or making available solutions to problem sets to individuals who might take this course in the future.","",""
+"152438978354741248","Kendall#1426","05-Jan-18 07:38 AM","Unless I'm misinterpreting this @staff","",""
+"393854278764068875","curiouskiwi#1671","05-Jan-18 07:56 AM","Thanks @~~~#1426  .  @thesillygeek  in the future, please don't post solution code.","",""
+"395861528521474048","thesillygeek#1343","05-Jan-18 08:01 AM","OK @curiouskiwi, I didn't knew that. Sorry.","",""
+"152438978354741248","Kendall#1426","05-Jan-18 10:13 AM","#include <stdio.h>
+#include <cs50.h>
+#include <string.h>
+#include <ctype.h>
+
+
+int main (int argc, string argv[])
+{
+    if (argc > 2)
+    {
+
+        for (int n = 1; n < argc; n++) //'n = 1' to avoid printing the name of the program. Executes as many times as arguments have been given.
+        {
+            if (argv != NULL) //checks for valid input
+            {
+                argv[n] = toupper(argv[n]); //converts each argument provided by user to upper-case letters
+                printf(""%c"", argv[n]); //prints the first character of 'n'th argument
+            }
+        }
+
+        printf(""\n""); //prints newline after all initials have been printed
+
+    }//end bracket of if statement
+    else
+    {
+        printf(""Please restart program and input your full name.\n"");
+    }//end bracket of else statement
+
+}//end bracket of int main","",""
+"152438978354741248","Kendall#1426","05-Jan-18 10:13 AM","--------","",""
+"152438978354741248","Kendall#1426","05-Jan-18 10:14 AM","Errors:","",""
+"152438978354741248","Kendall#1426","05-Jan-18 10:14 AM","initials.c:23:35: error: incompatible pointer to integer conversion passing 'string' (aka 'char *') to parameter of type 'int' [-Werror,-Wint-conversion]
+                argv[n] = toupper(argv[n]); //converts each argument provided by user to upper-case letters
+                                  ^~~~~~~
+/usr/include/ctype.h:127:25: note: passing argument to parameter '__c' here
+extern int toupper (int __c) __THROW;
+                        ^
+initials.c:23:25: error: incompatible integer to pointer conversion assigning to 'string' (aka 'char *') from 'int' [-Werror,-Wint-conversion]
+                argv[n] = toupper(argv[n]); //converts each argument provided by user to upper-case letters
+                        ^ ~~~~~~~~~~~~~~~~
+initials.c:24:30: error: format specifies type 'int' but the argument has type 'string' (aka 'char *') [-Werror,-Wformat]
+                printf(""%c"", argv[n]); //prints the first character of 'n'th argument
+                        ~~   ^~~~~~~
+                        %s
+3 errors generated.","",""
+"152438978354741248","Kendall#1426","05-Jan-18 10:15 AM","-----------","",""
+"152438978354741248","Kendall#1426","05-Jan-18 10:15 AM","I promise my style looks a lot less terrible in the IDE.","",""
+"152438978354741248","Kendall#1426","05-Jan-18 10:15 AM","I feel like I'm missing something silly.","",""
+"152438978354741248","Kendall#1426","05-Jan-18 10:19 AM","disclaimer: this code does not currently compile","",""
+"393854278764068875","curiouskiwi#1671","05-Jan-18 10:40 AM","start with the top one.  `argv[n]` is a string  (argv is an array of strings).  So you can't run `toupper` on it, since `toupper` takes a char.","",""
+"393854278764068875","curiouskiwi#1671","05-Jan-18 10:41 AM","but the main problem is you aren't following the spec.  You can't take the name from the command line.  (that would make the problem too easy).  You have to get the name from the user as part of the program (using `get_string`)","",""
+"152438978354741248","Kendall#1426","05-Jan-18 10:47 AM","Ah, I was trying to run toupper on the entire string and print the first char. No shortcuts, I guess 😅","",""
+"152438978354741248","Kendall#1426","05-Jan-18 10:47 AM","Oops, should've looked at that more closely.","",""
+"152438978354741248","Kendall#1426","05-Jan-18 10:49 AM","I'm pretty confident that I know exactly how to do that, actually. That's good and all, but how does prompting a user input make it more difficult? It seems easier to me, just a few more lines of code than would be required otherwise.","",""
+"393854278764068875","curiouskiwi#1671","05-Jan-18 11:20 AM","because there is only one first char","",""
+"152438978354741248","Kendall#1426","05-Jan-18 07:02 PM","I see what you're saying, thank you.","",""
+"475717710945189889","asinfinity09#2610","12-Sep-18 01:30 AM","","https://cdn.discordapp.com/attachments/395684816026337280/489200995633594378/Screenshot_15.png",""
+"475717710945189889","asinfinity09#2610","12-Sep-18 01:31 AM","I want to compare the element name with space so as to skip that part","",""
+"393854278764068875","curiouskiwi#1671","12-Sep-18 01:53 AM","I think you mean ""if it's a space""  not ""for it's a space""","",""
+"475717710945189889","asinfinity09#2610","12-Sep-18 05:43 AM","I made so that whenever the individual character store a ""space"" it reiterates the whole loop by using continue. But the problem i am not able to compare the ""space"" with the individual characters","",""
+"393854278764068875","curiouskiwi#1671","12-Sep-18 05:44 AM","yes, but you don't want a `for` loop.  you want an `if`","",""
+"475717710945189889","asinfinity09#2610","12-Sep-18 07:00 AM","Sorry my bad😅 i am looking everywhere but not at that","",""
+"456226577798135808","Deleted User#0000","30-Sep-18 10:21 PM","```#include <stdio.h>
+
+int main(void){
+    char name[40], initials[3];
+    int x = 1, i;
+
+    printf(""Enter a name: "");
+    scanf(""%s"", name);
+
+    initials[0] = name[0];
+
+    for(i = 0; i < 40; i++){
+        if (name[i] == '\0' && name[i+1] != '\0'){
+            initials[x] = name[i + 1];
+            x ++;
+        }
+    }
+
+    printf(""Your initials are %s\n"", initials);
+}```","",""
+"456226577798135808","Deleted User#0000","30-Sep-18 10:23 PM","I believe the problem has to do with scanf","",""
+"393854278764068875","curiouskiwi#1671","30-Sep-18 10:36 PM","what happens when you run it?","",""
+"393854278764068875","curiouskiwi#1671","30-Sep-18 10:44 PM","if `name[i]` is null, then won't `name[i+1]` be beyond the end of the string?","",""
+"456226577798135808","Deleted User#0000","30-Sep-18 10:53 PM","name[i] can't be null unless there is a space at the end of the string","",""
+"456226577798135808","Deleted User#0000","30-Sep-18 10:53 PM","i switched the code to argc and argv","",""
+"456226577798135808","Deleted User#0000","30-Sep-18 10:58 PM","```#include <stdio.h>
+
+int main(int argc, char * * argv){
+    char initials[argc];
+    int x, i;
+
+
+    for(i = 1, x = 0; i < argc; i++, x ++){
+            initials[x] = argv[i][0];
+        }
+
+    printf(""Your initials are %s"", initials);
+}```","",""
+"456226577798135808","Deleted User#0000","30-Sep-18 10:59 PM","","https://cdn.discordapp.com/attachments/395684816026337280/496048384373948418/unknown.png",""
+"456226577798135808","Deleted User#0000","30-Sep-18 11:04 PM","It is getting the initials, but for some reason is still outputting stuff after it","",""
+"393854278764068875","curiouskiwi#1671","30-Sep-18 11:04 PM","you've declared `initials` as a char array, but you didn't null-terminate it, so `printf` will keep printing until it hits a null (since that is what determines the end of a string).","",""
+"393854278764068875","curiouskiwi#1671","30-Sep-18 11:05 PM","There's no need to store the initials.  Just print them as you find them.  (if you are doing this problem, I'd assume you are still in week 2?","",""
+"456226577798135808","Deleted User#0000","30-Sep-18 11:08 PM","I am at Unit 2 Exit codes I came back to this one because I never actually finished it","",""
+"393854278764068875","curiouskiwi#1671","30-Sep-18 11:09 PM","so you're doing https://docs.cs50.net/2018/ap/problems/initials/less/initials.html ?","",""
+"393854278764068875","curiouskiwi#1671","30-Sep-18 11:10 PM","why are you using the command line?","",""
+"393854278764068875","curiouskiwi#1671","30-Sep-18 11:10 PM","the spec says to use `get_string`","",""
+"456226577798135808","Deleted User#0000","30-Sep-18 11:12 PM","I'm not using the edx50 library because I am enrolled in a Programming in C class at my college and I want to make sure i can do it without it 😐","",""
+"393854278764068875","curiouskiwi#1671","30-Sep-18 11:12 PM","oh, so you won't be submitting?","",""
+"393854278764068875","curiouskiwi#1671","30-Sep-18 11:12 PM","ok","",""
+"393854278764068875","curiouskiwi#1671","30-Sep-18 11:13 PM","doing it using the command line is much simpler but it means that you don't learn the 'lesson' that the problem is teaching.","",""
+"456226577798135808","Deleted User#0000","30-Sep-18 11:18 PM","Oo i see what you're saying so would","",""
+"456226577798135808","Deleted User#0000","30-Sep-18 11:18 PM","``` if (name[i] != '\0' && name[i-1] == '\0'){```","",""
+"456226577798135808","Deleted User#0000","30-Sep-18 11:19 PM","be a better way to write ``` if (name[i] == '\0' && name[i+1] != '\0'){```","",""
+"456226577798135808","Deleted User#0000","30-Sep-18 11:20 PM","Then I wouldn't have to  worry about  i + 1 being null","",""
+"393854278764068875","curiouskiwi#1671","30-Sep-18 11:28 PM","if you have an array `{'J', 'i', 'm', ' ', 'L', 'a', 'h', 'e', 'y', '\0'}`  then how do you determine which chars to print?  you seem to be thinking that the space char `' '` is the null char?","",""
+"456226577798135808","Deleted User#0000","30-Sep-18 11:34 PM","would it be ```name[i] == ' '``` rather than ```'\0'```?","",""
+"456226577798135808","Deleted User#0000","30-Sep-18 11:38 PM","Yuppp that was it, thank you!","",""
+"307158365744791555","exoceus#3913","01-Oct-18 09:02 PM","waig","",""
+"399021249667399722","harbar20#9389","17-Oct-18 02:28 AM","how do i check the type of something in C?","",""
+"399021249667399722","harbar20#9389","17-Oct-18 02:28 AM","like, how do i check that something is of type `int`?","",""
+"393854278764068875","curiouskiwi#1671","17-Oct-18 02:32 AM","shouldn't you know something is an int since you declared it?","",""
+"399021249667399722","harbar20#9389","17-Oct-18 05:03 AM","@curiouskiwi i was giving an example","",""
+"399021249667399722","harbar20#9389","17-Oct-18 05:04 AM","oh wait","",""
+"399021249667399722","harbar20#9389","17-Oct-18 05:04 AM","a space is just a char, isnt it","",""
+"329977469350445069","Lord of Galaxy#9211","17-Oct-18 01:05 PM","Clearly","",""
+"492450454341550100","WhipStreak23#6131","17-Oct-18 06:06 PM","lol","",""
+"399021249667399722","harbar20#9389","18-Oct-18 05:39 AM","i ran `check50` on my initials program","",""
+"399021249667399722","harbar20#9389","18-Oct-18 05:40 AM","this is one of the outputs:
+```
+:( Outputs HJ for     hailey James
+    expected ""HJ\n"", not ""HJ\x00\n""
+```","",""
+"399021249667399722","harbar20#9389","18-Oct-18 05:40 AM","what does the `x00` mean?","",""
+"393854278764068875","curiouskiwi#1671","18-Oct-18 05:51 AM","@harbar20 it means you printed the Nul char that signifies the end of a string","",""
+"399021249667399722","harbar20#9389","18-Oct-18 05:54 AM","oh","",""
+"399021249667399722","harbar20#9389","18-Oct-18 05:54 AM","ok","",""
+"329977469350445069","Lord of Galaxy#9211","18-Oct-18 03:37 PM","That's a rather strange problem really.... To the best of my knowledge printf doesn't actually print the Null","",""
+"399021249667399722","harbar20#9389","18-Oct-18 07:20 PM","@Lord of Galaxy the way i built my program is to print each individual character if it is preceded by a space.","",""
+"399021249667399722","harbar20#9389","18-Oct-18 07:20 PM","so that's why i got that","",""
+"329977469350445069","Lord of Galaxy#9211","18-Oct-18 07:21 PM","Zn","",""
+"329977469350445069","Lord of Galaxy#9211","18-Oct-18 07:21 PM","*Ah","",""
+"329977469350445069","Lord of Galaxy#9211","18-Oct-18 07:21 PM","Ok","",""
+"329330957230276615","Porous#6942","30-Sep-19 05:26 AM","ayy let's liven it up in here","",""

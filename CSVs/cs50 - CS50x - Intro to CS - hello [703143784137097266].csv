@@ -1,0 +1,953 @@
+AuthorID,Author,Date,Content,Attachments,Reactions
+"506862070331867138","The chosen 1#1787","24-Apr-20 12:21 PM","#include <stdio.h>
+
+int main(void)
+{
+     printf(""hello,everyone\n"");
+}","",""
+"459527908801642496","Zerozero#8049","24-Apr-20 03:30 PM","./hello","",""
+"136224264314552321","Kilrogg#1032","24-Apr-20 05:15 PM","Hi everyone, retaking the course this year after doing the first few weeks last year 😄","",""
+"136224264314552321","Kilrogg#1032","24-Apr-20 05:15 PM","And already I'm feeling really dumb","",""
+"136224264314552321","Kilrogg#1032","24-Apr-20 05:16 PM","I can get my ""hello, name"" to run just fine (I have a ""name"" string that I can prompt the user for, everything works as intended), but when I run check50, I get this","",""
+"136224264314552321","Kilrogg#1032","24-Apr-20 05:16 PM","usage: check50 [-h] [-d] [--offline] [-l] [--log]
+               [-o {ansi,json,html} [{ansi,json,html} ...]]
+               [--target TARGET [TARGET ...]] [--output-file FILE] [-v] [-V]
+               [--logout]
+               slug
+check50: error: the following arguments are required: slug","",""
+"136224264314552321","Kilrogg#1032","24-Apr-20 05:17 PM","is this supposed to happen?","",""
+"136224264314552321","Kilrogg#1032","24-Apr-20 05:18 PM","woah","",""
+"136224264314552321","Kilrogg#1032","24-Apr-20 05:18 PM","never mind","",""
+"136224264314552321","Kilrogg#1032","24-Apr-20 05:18 PM","didn't realize I had to type the path to the file after ""check50"", my bad","",""
+"419698727465517056","Evania#3572","24-Apr-20 07:31 PM","hi uh, stupid question but how do you delete the sandboxes from the cs50 sandbox? I've made a bunch but it's getting really disorganized now and I can't seem to find a way to delete them.","",""
+"393854278764068875","curiouskiwi#1671","24-Apr-20 10:12 PM","@Evania   afraid there's no delete feature","",""
+"174623017316515840","DK / Kunrath#8802","25-Apr-20 03:36 AM","> hi uh, stupid question but how do you delete the sandboxes from the cs50 sandbox? I've made a bunch but it's getting really disorganized now and I can't seem to find a way to delete them.
+@Evania try ""del filename.c""","",""
+"174623017316515840","DK / Kunrath#8802","25-Apr-20 03:37 AM","remember to be in the same folder","",""
+"393854278764068875","curiouskiwi#1671","25-Apr-20 03:45 AM","(that deletes files, not entire sandboxes from sandbox.cs50.io)","",""
+"174623017316515840","DK / Kunrath#8802","25-Apr-20 04:47 AM","oh, i didn't understood the question then, sorry 🙂","",""
+"393854278764068875","curiouskiwi#1671","25-Apr-20 05:02 AM","no worries.  Thanks for taking the time to help.","",""
+"580029891404365849","Inverted_Pyramid#1062","25-Apr-20 05:07 AM","Hi @curiouskiwi - do you have a minute to guide me through a different problem?","",""
+"701041582341619742","mihreteab bokretsion#4622","25-Apr-20 03:28 PM","hello guys","",""
+"701041582341619742","mihreteab bokretsion#4622","25-Apr-20 03:29 PM","i have got some problem in my program if any could help me","",""
+"701041582341619742","mihreteab bokretsion#4622","25-Apr-20 03:32 PM","please see where ma problem is","https://cdn.discordapp.com/attachments/703143784137097266/703584164150116362/message.txt",""
+"419698727465517056","Evania#3572","25-Apr-20 04:55 PM","@curiouskiwi @DK / Kunrath oh okay, thank you for taking the time to help","",""
+"174623017316515840","DK / Kunrath#8802","25-Apr-20 04:57 PM","@mihreteab bokretsion hi, I believe you may ask for advise in the proper section?","",""
+"701041582341619742","mihreteab bokretsion#4622","25-Apr-20 05:12 PM","oh sorry for doing that","",""
+"701041582341619742","mihreteab bokretsion#4622","25-Apr-20 05:14 PM","please i need your help","",""
+"174623017316515840","DK / Kunrath#8802","25-Apr-20 05:24 PM","I would, but I don't know that code, at least yet, so you could have better help at the proper channel 🙂","",""
+"257675941084397568","geg yeffel#9629","25-Apr-20 10:04 PM","can someone help me understand how to switch files in the terminal? thanks. I have three different folders. one is *~/* another is *hello*. IM just trying to understand how to switch from the first to the second folder in the terminal as a command. if that makes sense. thanks.","",""
+"356245550737260554","strawnks#8488","25-Apr-20 11:40 PM","you can use the cd command","",""
+"356245550737260554","strawnks#8488","25-Apr-20 11:41 PM","type in `cd hello` on the terminal to go to the ""hello"" folder","",""
+"320996834677882881","Yo Yo Swift#3722","26-Apr-20 02:10 AM","what is supposed to happen when I run ""ls"" because nothing happens when I run that...","",""
+"257675941084397568","geg yeffel#9629","26-Apr-20 04:22 AM","@Yo Yo Swift its supposed to show you all of the available folders, source code and machine code","",""
+"257675941084397568","geg yeffel#9629","26-Apr-20 04:22 AM","in other words ""list"" them","",""
+"257675941084397568","geg yeffel#9629","26-Apr-20 04:22 AM","thats what ls stands for as a command line in the terminal","",""
+"257675941084397568","geg yeffel#9629","26-Apr-20 04:23 AM","@strawnks thanks btw","",""
+"320996834677882881","Yo Yo Swift#3722","26-Apr-20 04:27 AM","where does it ""show' you  all the stuff?","",""
+"356245550737260554","strawnks#8488","26-Apr-20 04:28 AM","in the terminal","",""
+"257675941084397568","geg yeffel#9629","26-Apr-20 04:29 AM","should be in the terminal","",""
+"320996834677882881","Yo Yo Swift#3722","26-Apr-20 04:29 AM","nothing shows up...","https://cdn.discordapp.com/attachments/703143784137097266/703779781698781204/unknown.png",""
+"356245550737260554","strawnks#8488","26-Apr-20 04:30 AM","that means there's nothing in there","",""
+"257675941084397568","geg yeffel#9629","26-Apr-20 04:30 AM","try this: cd to your **~/** folder","",""
+"257675941084397568","geg yeffel#9629","26-Apr-20 04:30 AM","then try it","",""
+"257675941084397568","geg yeffel#9629","26-Apr-20 04:30 AM","it should then list something for you","",""
+"257675941084397568","geg yeffel#9629","26-Apr-20 04:31 AM","","https://cdn.discordapp.com/attachments/703143784137097266/703780262949027910/unknown.png",""
+"257675941084397568","geg yeffel#9629","26-Apr-20 04:31 AM","@Yo Yo Swift","",""
+"257675941084397568","geg yeffel#9629","26-Apr-20 04:31 AM","here it listed the folder that is within my **~/** folder","",""
+"320996834677882881","Yo Yo Swift#3722","26-Apr-20 04:33 AM","thanks that worked","",""
+"257675941084397568","geg yeffel#9629","26-Apr-20 04:35 AM","no problem boss","",""
+"257675941084397568","geg yeffel#9629","26-Apr-20 05:56 AM","yes. right click on your files on your left and click delete","",""
+"257675941084397568","geg yeffel#9629","26-Apr-20 05:56 AM","@Tarek","",""
+"702235649096286339","suhana#3296","26-Apr-20 12:54 PM","Hello","",""
+"479338401594736640","REEEEEEE#9354","26-Apr-20 06:30 PM","https://discord.gg/meUvEZ","",""
+"681983914650501128","TTVArkopy#5915","26-Apr-20 06:31 PM","Week one, can't create a.out file. When entering #include <stdio.h> everything is purple. When finishing script and hitting enter i just get errors, no second file above hello.c","",""
+"681983914650501128","TTVArkopy#5915","26-Apr-20 06:32 PM","@mahan ?","",""
+"359275497911222272","⎛Coolkidmacho⎞#5915","26-Apr-20 08:27 PM","u have this issue","https://cdn.discordapp.com/attachments/703143784137097266/704020921119146064/unknown.png",""
+"201496362053795840","X On The Paris-Brest#1410","26-Apr-20 08:31 PM","stdio.h","",""
+"119595436846612480","SkinnyPen#9604","26-Apr-20 08:57 PM","I have an issue, if one of you could point me in the right direction, it would be appreciated.","",""
+"119595436846612480","SkinnyPen#9604","26-Apr-20 08:57 PM","","https://cdn.discordapp.com/attachments/703143784137097266/704028498481905684/Hello_Error.png",""
+"269227960156946454","GhostDragon#7128","26-Apr-20 09:02 PM","That needs to be in a function like main","",""
+"119595436846612480","SkinnyPen#9604","26-Apr-20 09:05 PM","oh! gotcha, thanks for the help!","",""
+"566340210212864022","👻Ghosty (Azin Cordus)#4159","26-Apr-20 11:01 PM","is everyone using sandbox for this and not IDE","",""
+"566340210212864022","👻Ghosty (Azin Cordus)#4159","26-Apr-20 11:16 PM","@brian whats the diffrence between the sandbox and IDE","",""
+"515036848456728605","besthumanzonly#5292","26-Apr-20 11:36 PM","Hello everyone","",""
+"482928963568533505","alonzotelge#7423","26-Apr-20 11:52 PM","@elijah yes","",""
+"482928963568533505","alonzotelge#7423","26-Apr-20 11:52 PM","Thank you for taking the time to help","",""
+"620730268659089408","elijah#3605","26-Apr-20 11:52 PM","i’m not sure if this was discussed in the lecture since it used lab instead of ide before","",""
+"329822437539840002","Vivadel#5530","26-Apr-20 11:53 PM","","https://cdn.discordapp.com/attachments/703143784137097266/704072679954841701/SPOILER_unknown.png",""
+"329822437539840002","Vivadel#5530","26-Apr-20 11:53 PM","This isn't really a code issue, so I think it's safe for me to give you a bit more of a direct response.","",""
+"329822437539840002","Vivadel#5530","26-Apr-20 11:53 PM","@alonzotelge","",""
+"620730268659089408","elijah#3605","26-Apr-20 11:53 PM","but if your file is in another directory (aka folder) and you want to use your terminal to manipulate or execute a file","",""
+"329822437539840002","Vivadel#5530","26-Apr-20 11:53 PM","What directory are you in?","",""
+"620730268659089408","elijah#3605","26-Apr-20 11:54 PM","use cd nameofdirectory","",""
+"482928963568533505","alonzotelge#7423","26-Apr-20 11:55 PM","I used cd hello","",""
+"482928963568533505","alonzotelge#7423","26-Apr-20 11:55 PM","bash: cd: hello: No such file or directory","",""
+"482928963568533505","alonzotelge#7423","26-Apr-20 11:55 PM","and get this meesage","",""
+"620730268659089408","elijah#3605","26-Apr-20 11:55 PM","cd pset1 first","",""
+"620730268659089408","elijah#3605","26-Apr-20 11:55 PM","then once you’re in there, cd hello","",""
+"700087140192878602","angela#1379","26-Apr-20 11:56 PM","👋","","👋 (4)"
+"482928963568533505","alonzotelge#7423","26-Apr-20 11:56 PM","yes thank you @elijah that worked","","❤️ (2)"
+"644126548818919434","Captain Fake Snake#3615","27-Apr-20 01:41 AM","I got 50% for hello?!!!!!!","",""
+"644126548818919434","Captain Fake Snake#3615","27-Apr-20 01:41 AM","What am I supposed to do?","",""
+"201496362053795840","X On The Paris-Brest#1410","27-Apr-20 01:41 AM","Just submit again","",""
+"644126548818919434","Captain Fake Snake#3615","27-Apr-20 01:41 AM","i had an entire conversation","",""
+"644126548818919434","Captain Fake Snake#3615","27-Apr-20 01:42 AM","but submitting again will work?","",""
+"201496362053795840","X On The Paris-Brest#1410","27-Apr-20 01:43 AM","ye ye","",""
+"644126548818919434","Captain Fake Snake#3615","27-Apr-20 01:43 AM","alright. Should I make some improvements","",""
+"201496362053795840","X On The Paris-Brest#1410","27-Apr-20 01:43 AM","If you have 50% yes","",""
+"201496362053795840","X On The Paris-Brest#1410","27-Apr-20 01:43 AM","To hit 100%","",""
+"201496362053795840","X On The Paris-Brest#1410","27-Apr-20 01:44 AM","Check before you submit","",""
+"201496362053795840","X On The Paris-Brest#1410","27-Apr-20 01:44 AM","With check50","",""
+"201496362053795840","X On The Paris-Brest#1410","27-Apr-20 01:44 AM","And style50","",""
+"644126548818919434","Captain Fake Snake#3615","27-Apr-20 01:44 AM","it kept saying add more comments","",""
+"201496362053795840","X On The Paris-Brest#1410","27-Apr-20 01:45 AM","I think it's about pseudocode","",""
+"201496362053795840","X On The Paris-Brest#1410","27-Apr-20 01:45 AM","double slash // and write what your program do with your words","",""
+"201496362053795840","X On The Paris-Brest#1410","27-Apr-20 01:46 AM","So when you relook at it , it's more clear","",""
+"644126548818919434","Captain Fake Snake#3615","27-Apr-20 02:11 AM","||#include <cs50.h>
+
+int main(void)
+{
+    // asking name
+    string name = get_string(""I am C! What is your name?\n ""); 
+    // Completing introductions.
+    printf(""hello, %s\n"", name); 
+    // Making the program more user-friendly. Asking about user's hobby and displaying cheerfulness.
+    string hobby = get_string(""What is your hobby? Mine is creating programs!\n Well... my masters would say creating bugs is my hobby. But it is not my fault. They are always in a hurry and don't pay attention to their mistakes! "");    
+    // Promoting user to continue the conversation.  
+    printf(""What is that? I have never heard of it!\nCan I do it?""); 
+    // Creating a light mood. Regardless of input, the program will reply with a satisfactory and rational answer.
+    string knowledge = get_string(""Would you tell me more about it?\nI am free right now. Besides, I love to discover, learn and search new things!"");
+    // terminating the much enjoyed conversation.
+    printf(""Sounds very interesting! I wish I could do it. I tend to get bored very easily. Its just that my masters are soo slow! Its not their fault...\nBut its lonely here....""); 
+}||","",""
+"644126548818919434","Captain Fake Snake#3615","27-Apr-20 02:11 AM","did this","",""
+"644126548818919434","Captain Fake Snake#3615","27-Apr-20 02:11 AM","but it shows : \n means that you should add more lines","",""
+"644126548818919434","Captain Fake Snake#3615","27-Apr-20 02:11 AM","its a simple a hello program","",""
+"644126548818919434","Captain Fake Snake#3615","27-Apr-20 02:11 AM","what else should I add","",""
+"201496362053795840","X On The Paris-Brest#1410","27-Apr-20 02:13 AM","Don't need that much haha","",""
+"644126548818919434","Captain Fake Snake#3615","27-Apr-20 02:13 AM","overkill huh?","",""
+"644126548818919434","Captain Fake Snake#3615","27-Apr-20 02:14 AM","well i am submitting this as soon as i figure out how to","",""
+"201496362053795840","X On The Paris-Brest#1410","27-Apr-20 02:14 AM","That was funny","",""
+"201496362053795840","X On The Paris-Brest#1410","27-Apr-20 02:14 AM","If u check50 u have all condition in green ?","",""
+"644126548818919434","Captain Fake Snake#3615","27-Apr-20 02:14 AM","hang on","",""
+"201496362053795840","X On The Paris-Brest#1410","27-Apr-20 02:17 AM","If u have this even without comments u should have 100%","https://cdn.discordapp.com/attachments/703143784137097266/704108836478517328/unknown.png",""
+"644126548818919434","Captain Fake Snake#3615","27-Apr-20 02:20 AM","it timed out","",""
+"644126548818919434","Captain Fake Snake#3615","27-Apr-20 02:20 AM","bad net😅","",""
+"297816224686145537","KarljoY#4078","27-Apr-20 06:57 AM","hello everyone,  I'd like to access to the cs 50 sandbox","",""
+"297816224686145537","KarljoY#4078","27-Apr-20 06:57 AM","how can i do so ?","",""
+"119595436846612480","SkinnyPen#9604","27-Apr-20 07:00 AM","Is this a question specifically to the ""hello"" assignment?","",""
+"297816224686145537","KarljoY#4078","27-Apr-20 07:03 AM","yes","",""
+"297816224686145537","KarljoY#4078","27-Apr-20 07:04 AM","but I just found that if i google cs50 sandbox then i can access to it","",""
+"585030768477077514","TechBot#4576","27-Apr-20 07:05 AM","hello","",""
+"297816224686145537","KarljoY#4078","27-Apr-20 07:05 AM","hello","",""
+"393854278764068875","curiouskiwi#1671","27-Apr-20 07:09 AM","@KarljoY for Pset1, you should now be using the IDE per the spec.  The sandbox is no longer used for this course (except for anyone still finishing up pset1).  https://cs50.harvard.edu/x/2020/psets/1/","",""
+"297816224686145537","KarljoY#4078","27-Apr-20 07:11 AM","oh thank you !","",""
+"700087140192878602","angela#1379","27-Apr-20 03:34 PM","hi... which one will i use in making hello. is it on CS50 IDE or hello lab? thanks","",""
+"700087140192878602","angela#1379","27-Apr-20 03:39 PM","😊","",""
+"704212072904392734","aryanptl01#9865","27-Apr-20 04:39 PM","you should use IDE cuz its better","",""
+"704212072904392734","aryanptl01#9865","27-Apr-20 04:39 PM","Doesn't have auto save tho","",""
+"665053121499627571","fjw#9108","27-Apr-20 08:08 PM","you can turn on auto save if you want","",""
+"393854278764068875","curiouskiwi#1671","27-Apr-20 10:41 PM","@angela If you are just starting, you should be using the IDE per the instructions here: http://cs50.harvard.edu/x/2020/psets/1/","",""
+"700087140192878602","angela#1379","28-Apr-20 12:53 AM","Thanks a lot.. But can i delete the 1st one that ive done..","",""
+"700087140192878602","angela#1379","28-Apr-20 12:56 AM","Im really confuse yet.. How can i make may own hello if ive have already made a hello file.. I mean how can i make other directories of hello. Im sorry and thanks alot for assisting newbie here🙃","",""
+"490650939036794891","ExJordan#0748","28-Apr-20 01:34 AM","How do I submit a code on CS50IDE??","",""
+"393854278764068875","curiouskiwi#1671","28-Apr-20 01:48 AM","the How to Submit section at the bottom.","",""
+"393854278764068875","curiouskiwi#1671","28-Apr-20 01:48 AM","https://cs50.harvard.edu/x/2020/psets/1/hello/#how-to-submit","",""
+"490650939036794891","ExJordan#0748","28-Apr-20 02:08 AM","Thanks","",""
+"616518211797647380","Rohit Kumaran#8781","28-Apr-20 06:23 AM","hey guys can you tell me how to submit the hello project
+i dont understand how to execute","",""
+"356245550737260554","strawnks#8488","28-Apr-20 07:51 AM","Copy paste the submit50 command to the terminal","",""
+"616518211797647380","Rohit Kumaran#8781","28-Apr-20 09:13 AM","can you be more specific i am new to these things","",""
+"697348478279483445","Hera#8206","28-Apr-20 10:22 AM","copy the submit50/....... line from the bottom of the problem and paste it in the place where you type commands like make/ls/cd","",""
+"697348478279483445","Hera#8206","28-Apr-20 10:22 AM","and hit enter","",""
+"616518211797647380","Rohit Kumaran#8781","28-Apr-20 01:45 PM","tnks a ton @Hera","",""
+"628853453661405224","deep12g#2999","28-Apr-20 02:05 PM","Hello,
+While submitting, it displayed that binary file cannot be uploaded.
+So it is normal right? 
+Or is there any mistake?","",""
+"285876537235079169","kjc00007#0217","28-Apr-20 05:50 PM","Trying to make hello and I keep getting the error ""initializer element is not compile-time constant"" with the get_string()  line highlighted in green. I have included cs50.h but it seems like it's not accepting the get_string function. Is anyone else having the same problem? I've tried sandbox and ide and same problem in both","",""
+"269227960156946454","GhostDragon#7128","28-Apr-20 06:02 PM","@kjc00007 your program needs to be in a function such as `int main(void)`","",""
+"285876537235079169","kjc00007#0217","28-Apr-20 06:04 PM","> @kjc00007 your program needs to be in a function such as `int main(void)`
+@GhostDragon  thank you! I had a space between main and (void) and a lack of curly braces following","",""
+"702029447863468103","lordofgod2007#9085","28-Apr-20 07:18 PM","hye","",""
+"361235692019384323","Sanath#7244","28-Apr-20 07:58 PM","The space doesn't matter, the braces do","",""
+"523556980762083328","Hylo#8263","29-Apr-20 03:38 AM","Really basic question but I'm confused","",""
+"523556980762083328","Hylo#8263","29-Apr-20 03:38 AM","printf(""hello, %s\n"", answer);","",""
+"523556980762083328","Hylo#8263","29-Apr-20 03:38 AM","Why is the %s before the \n and why are both of them inside the """"?","",""
+"393854278764068875","curiouskiwi#1671","29-Apr-20 03:39 AM","that says print  the word `hello, ` and then replace %s with the string that I will give you as an argument and then print a new line","",""
+"393854278764068875","curiouskiwi#1671","29-Apr-20 03:39 AM","so printf replaces %s with the value in `answer`","",""
+"393854278764068875","curiouskiwi#1671","29-Apr-20 03:40 AM","and if answer is ""Hylo"", then printf will print ""hello, Hylo""","",""
+"393854278764068875","curiouskiwi#1671","29-Apr-20 03:40 AM","and then a newline","",""
+"523556980762083328","Hylo#8263","29-Apr-20 03:40 AM","\n is part of the string?","",""
+"523556980762083328","Hylo#8263","29-Apr-20 03:40 AM","Is that why it's inside the """"?","",""
+"393854278764068875","curiouskiwi#1671","29-Apr-20 03:40 AM","yes   `\n` is the last character in the string","",""
+"523556980762083328","Hylo#8263","29-Apr-20 03:40 AM","Ah I think it's confusing me because <br> isn't like that","",""
+"523556980762083328","Hylo#8263","29-Apr-20 03:41 AM","I think I get it. Ty very much.","",""
+"523556980762083328","Hylo#8263","29-Apr-20 03:41 AM","Answer is part of the string too, and it's before the space. Makes sense.","",""
+"393854278764068875","curiouskiwi#1671","29-Apr-20 03:42 AM","If I wanted to print something like ```
+Hello
+
+there
+
+```  I'd say ```printf(""Hello\n\nthere\n"");```","",""
+"393854278764068875","curiouskiwi#1671","29-Apr-20 03:42 AM","the formatting didn't work, but that's 2 blank lines in between 🙂","",""
+"523556980762083328","Hylo#8263","29-Apr-20 03:42 AM","If you wanted to print something that had \n in it (the characters), how would you do that?","",""
+"523556980762083328","Hylo#8263","29-Apr-20 03:42 AM","If it's not too complicated.","",""
+"393854278764068875","curiouskiwi#1671","29-Apr-20 03:43 AM","you would have to ""escape"" the backslash  using another backslash  ```
+printf(""\\n"");``` I would get `\n`","",""
+"523556980762083328","Hylo#8263","29-Apr-20 03:43 AM","Okay. Thank you very much! 😄","",""
+"214197498384744450","coldfusion#5932","29-Apr-20 07:38 AM","its actually handy to remember that \ ""escapes"" formatting in a lot of places like if you want to use \|\| \|\| without it being a spoiler","",""
+"694937568684540034","LikeOm#8176","29-Apr-20 10:45 PM","👋","",""
+"313880410557906947","Combot#4614","30-Apr-20 12:59 AM","Is this enough for hello thing?","",""
+"313880410557906947","Combot#4614","30-Apr-20 12:59 AM","#include <stdio.h> int main() { // printf() displays the string inside quotation printf(""Hello, World!""); return 0; }","",""
+"393854278764068875","curiouskiwi#1671","30-Apr-20 12:59 AM","no, because the spec requires you to ask the user their name and then print that in your greeting","",""
+"313880410557906947","Combot#4614","30-Apr-20 01:12 AM","#include<conio.h>
+
+#include<stdio.h>
+
+void main()
+
+{
+
+clrscr( );
+
+char name[20];
+
+printf(“Enter you name:”);
+
+scanf(“%s”, name);
+
+printf(“\n Hello %s”,name);
+
+getch( );
+
+}","",""
+"393854278764068875","curiouskiwi#1671","30-Apr-20 01:14 AM","You can't use conio.h","",""
+"313880410557906947","Combot#4614","30-Apr-20 01:14 AM","okay okay","",""
+"313880410557906947","Combot#4614","30-Apr-20 01:14 AM","got it got it","",""
+"313880410557906947","Combot#4614","30-Apr-20 01:14 AM","fk e","",""
+"313880410557906947","Combot#4614","30-Apr-20 01:14 AM","me","",""
+"393854278764068875","curiouskiwi#1671","30-Apr-20 01:14 AM","you shouldn't be using a DOS only version of C","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","01-May-20 12:57 AM","@New2Data Alright so https://cdn.discordapp.com/attachments/395684984909856779/705537998099316826/unknown.png","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","01-May-20 12:57 AM","what this is saying is to make a folder called pset1, then a folder called hello within it","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","01-May-20 12:57 AM","then type cd","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","01-May-20 12:57 AM","then type cd pset1/hello","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","01-May-20 12:58 AM","now you have the directory that will store your hello.c file, and have also told your terminal where to look when you give it commands","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","01-May-20 12:58 AM","create a file with the green + sign at the top, click file/save as, and name it hello.c","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","01-May-20 12:59 AM","now your directories at the side should look like this: pset1/hello/hello.c","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","01-May-20 12:59 AM","pset1 with a folder called hello in it, with a file called hello.c","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","01-May-20 01:00 AM","Now, type those lines into hello.c","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","01-May-20 01:01 AM","","https://cdn.discordapp.com/attachments/703143784137097266/705539435168792597/unknown.png",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","01-May-20 01:02 AM","","https://cdn.discordapp.com/attachments/703143784137097266/705539485407903755/unknown.png",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","01-May-20 01:03 AM","","https://cdn.discordapp.com/attachments/703143784137097266/705539731257032948/unknown.png",""
+"696919410820251719","New2Data#5943","01-May-20 01:06 AM","Ok I think I got it thanks! What confuses me is knowing where to type in the codes.","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","01-May-20 01:07 AM","yeah where you were typing is the terminal, thats where you go to *run* the code","",""
+"696919410820251719","New2Data#5943","01-May-20 01:07 AM","For example, when it says, this, am I executing on the notes side or the terminal side?","https://cdn.discordapp.com/attachments/703143784137097266/705540944362995812/unknown.png",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","01-May-20 01:08 AM","Youd put that in the terminal","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","01-May-20 01:08 AM","The file is where you put your code, the terminal is where you tell the computer to execute it","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","01-May-20 01:09 AM","","https://cdn.discordapp.com/attachments/703143784137097266/705541431942578306/unknown.png",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","01-May-20 01:10 AM","though in your case you would do ```clang hello.c``` and ```./a.out```","",""
+"696919410820251719","New2Data#5943","01-May-20 01:13 AM","Oh okk..I'll get it eventually thanks!","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","01-May-20 01:13 AM","Np, good luck!","",""
+"696919410820251719","New2Data#5943","01-May-20 01:59 AM","Ok, I'm stuck again. When you are typing a new code, do you need to create a new file? What does it mean ""no rule to make target 'string'""?","https://cdn.discordapp.com/attachments/703143784137097266/705553985750302760/unknown.png",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","01-May-20 02:00 AM","add #include <cs50.h> to the top, at the same place the other #include is","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","01-May-20 02:00 AM","strings dont exist in C, the cs50 header file gives you them","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","01-May-20 02:01 AM","also your code is not in your main","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","01-May-20 02:02 AM","Should be more like
+``` int main(void)
+{
+  string name = get_string(""What is your name?\n"");
+  printf(""hello, %s\n"", name);
+}
+```","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","01-May-20 02:03 AM","with the cs50 include","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","01-May-20 02:05 AM","Oh and also youre typing ""make string""","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","01-May-20 02:05 AM","its ""make hello""","",""
+"459447974209126401","illuziun#0573","01-May-20 02:09 AM","Not sure if I'm doing something wrong or if there is an issue with IDE:","https://cdn.discordapp.com/attachments/703143784137097266/705556442165543002/hello.PNG",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","01-May-20 02:09 AM","int main(void)","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","01-May-20 02:09 AM","not <void>","",""
+"459447974209126401","illuziun#0573","01-May-20 02:09 AM","Ha!","",""
+"459447974209126401","illuziun#0573","01-May-20 02:09 AM","Thank you","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","01-May-20 02:09 AM","Very pointy parentheses you have there, lol","",""
+"459447974209126401","illuziun#0573","01-May-20 02:10 AM","I can't believe this. I have stared at this for too long lol","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","01-May-20 02:11 AM","It happens more often than youd think, i'm up to the games track and still do that stuff lol","",""
+"459447974209126401","illuziun#0573","01-May-20 02:11 AM","I definitely appreciate the second set of eyes on this","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","01-May-20 02:12 AM","Sometimes thats all it takes, a second set of eyes","",""
+"696919410820251719","New2Data#5943","01-May-20 02:17 AM","> Should be more like
+> ``` int main(void)
+> {
+>   string name = get_string(""What is your name?\n"");
+>   printf(""hello, %s\n"", name);
+> }
+> ```
+@Napoopan Totallatot, Worm King I keep getting the same error.","https://cdn.discordapp.com/attachments/703143784137097266/705558541645250681/unknown.png",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","01-May-20 02:18 AM","well you cant have two mains","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","01-May-20 02:18 AM","Delete the first one that has the hello world in it","",""
+"696919410820251719","New2Data#5943","01-May-20 02:22 AM","The errors keep coming. Does the folder directory matter?","https://cdn.discordapp.com/attachments/703143784137097266/705559759213953094/unknown.png",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","01-May-20 02:24 AM","No, remove all of it","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","01-May-20 02:24 AM","remove the first set of curly braces","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","01-May-20 02:24 AM","and the printf(""hello world\n"")","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","01-May-20 02:24 AM","leave only the includes and the remaining main function","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","01-May-20 02:26 AM","You might want to go back and watch the lecture, get a better understanding from it","",""
+"696919410820251719","New2Data#5943","01-May-20 02:41 AM","Yea I might have to","",""
+"701850039789551727","mans#4597","01-May-20 05:01 AM","whats the difference between software engineering and development?","",""
+"510429976592384011","aloharai#9126","01-May-20 06:10 AM","Could someone please give me some insight to what I'm doing wrong here.","https://cdn.discordapp.com/attachments/703143784137097266/705617078656303104/Annotation_2020-04-30_200911.png",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","01-May-20 06:12 AM","Youre not giving the %s a variable to be replaced by","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","01-May-20 06:13 AM","```printf(""hello, %s!\n"", variablename);``` is more apt","",""
+"510429976592384011","aloharai#9126","01-May-20 06:26 AM","Ahh, of course! Thank you. I think I need to go back and rewatch the lecture for a 4th time.","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","01-May-20 06:27 AM","hey, if thats what you think you need to do then go for it","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","01-May-20 06:28 AM","patience and trying to fully comprehend what is going on is way more helpful than trying to speedrun the course lol","",""
+"510429976592384011","aloharai#9126","01-May-20 06:32 AM","Totally agreed! I just thought I would understand the prework a lot easier and not spend a week on it 😅","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","01-May-20 06:35 AM","C is comparatively pretty arcane, to be fair","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","01-May-20 06:35 AM","I find it the easiest to read, but only because of the curly braces lol","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","01-May-20 06:35 AM","Some of the words/syntax is very abstract","",""
+"510429976592384011","aloharai#9126","01-May-20 06:40 AM","Definitely seems it. I'm sure in time I'll get a little part of the way there.","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","01-May-20 06:43 AM","Youll get there, once you get through some of the concepts itll start to seem less abstract and more logical","",""
+"698137183793709068","bruhmastir#6077","01-May-20 08:32 AM","hi","",""
+"698137183793709068","bruhmastir#6077","01-May-20 08:33 AM","in C if i want to wait for some seconds what is the command to use?","",""
+"393854278764068875","curiouskiwi#1671","01-May-20 08:34 AM","http://man7.org/linux/man-pages/man3/sleep.3.html","",""
+"698137183793709068","bruhmastir#6077","01-May-20 08:35 AM","thank you!","",""
+"704647420105064448","Tan Tze Herng#0011","01-May-20 12:52 PM","Can anyone help me?
+
+
+
+[
+6:43 PM
+] 
+This one. I have deleted pset1, but the terminal says it exists.","",""
+"704647420105064448","Tan Tze Herng#0011","01-May-20 12:54 PM","https://discordapp.com/channels/393846237255696385/691387443194101780/705368795862007838","",""
+"704647420105064448","Tan Tze Herng#0011","01-May-20 12:54 PM","Click into the link and you can see my problem.","",""
+"534785044321927171","Bunkeror#9322","01-May-20 02:02 PM","[REDACTED]","",""
+"534785044321927171","Bunkeror#9322","01-May-20 02:08 PM","Oh lol no nevermind, there's an actual week 0 with more than the lecture...","",""
+"472680804187766814","Gentle+Mental#1214","01-May-20 02:11 PM","hey everyone my name is furqan n im beginner at machine learning probably a year by now, i need some advice related to career n projects can someone who has mastered this field can guide me
+??","",""
+"705480546859614320","Feyre#7609","01-May-20 04:01 PM","I´m having problem logging in to CS IDE. Already since 3 hours ago. Anybody else having the same problem or is it just me? 😦","https://cdn.discordapp.com/attachments/703143784137097266/705765921368834088/Screenshot_1.png",""
+"500944231029014529","AadhitShah01#8498","01-May-20 04:32 PM","Well It takes a while I don't know why","",""
+"500944231029014529","AadhitShah01#8498","01-May-20 04:32 PM","For me like It took 5 mins","",""
+"693448091633844265","kal_كال#3748","01-May-20 04:40 PM","was wondering if anyone could help me?? I'm trying to submit this pset but whenever i try to login to github in c it comes up with this message. Ive changed my password so im 100% sure i have the right password and i can github on the github site alright. im on firefox on mac. would really appreciate any suggestions!","https://cdn.discordapp.com/attachments/703143784137097266/705775633623416893/Screenshot_2020-05-01_at_14.33.52.png",""
+"697348478279483445","Hera#8206","01-May-20 06:06 PM","> I´m having problem logging in to CS IDE. Already since 3 hours ago. Anybody else having the same problem or is it just me? 😦
+@Feyre  did you go to 
+ide from the pset link sth like that or just clicking on the history","",""
+"697348478279483445","Hera#8206","01-May-20 06:07 PM","> was wondering if anyone could help me?? I'm trying to submit this pset but whenever i try to login to github in c it comes up with this message. Ive changed my password so im 100% sure i have the right password and i can github on the github site alright. im on firefox on mac. would really appreciate any suggestions!
+@kal_كال  did you do as instructed, go to submit.cs50.io","",""
+"156235703611686912","Indie#9687","01-May-20 06:09 PM","I got the commands setup for the Week 1 assignment, but when I inputted the check50 command, it's telling me the following:
+ hello.c exists
+ hello.c compiles 
+responds to name Emma
+    expected ""Emma"", not ""hello, name\n""
+responds to name Rodrigo
+    expected ""Rodrigo"", not ""hello, name\n""","",""
+"156235703611686912","Indie#9687","01-May-20 06:10 PM","I was able to run the string command to where I would have C say hello to these two names, but for some reason I still get the error. Anyone knows why this might be the case?","",""
+"697348478279483445","Hera#8206","01-May-20 06:12 PM","You need a placeholder, %s for the name ||like (“hello, %s”, name)||","",""
+"693448091633844265","kal_كال#3748","01-May-20 06:13 PM","@Hera thanks for responding! 🙂 i did go to submit.cs50.io, but i couldn't find any settings or anything there to change to help it work","",""
+"156235703611686912","Indie#9687","01-May-20 06:13 PM","You mean in the string.c in printf line or the hello.c in printf line?","",""
+"697348478279483445","Hera#8206","01-May-20 06:14 PM","The hello","",""
+"156235703611686912","Indie#9687","01-May-20 06:15 PM","Ok. Let me test this out and see if it fixes the problem.","",""
+"697348478279483445","Hera#8206","01-May-20 06:16 PM","@kal_كال and did you try again?","",""
+"156235703611686912","Indie#9687","01-May-20 06:17 PM","Hmmm. Did not work there. Let me post the command prompt I have up.","",""
+"693448091633844265","kal_كال#3748","01-May-20 06:18 PM","@Hera  yeah i did!","",""
+"697348478279483445","Hera#8206","01-May-20 06:20 PM","That’s weird","",""
+"697348478279483445","Hera#8206","01-May-20 06:21 PM","I don’t know anything about that really,maybe you should ask that in #ide @kal_كال","",""
+"697348478279483445","Hera#8206","01-May-20 06:24 PM","Wait what is it for string.c?","",""
+"156235703611686912","Indie#9687","01-May-20 06:25 PM","That is the command used for when you want to say hello to an inputted name. It was from the lecture so I was trying it from there.","",""
+"156235703611686912","Indie#9687","01-May-20 06:26 PM","I thought that was the next step to take after creating the initial set of commands for hello world as specified in the instructions for the first part of the assignment.","",""
+"697348478279483445","Hera#8206","01-May-20 06:28 PM","How does that work together","",""
+"156235703611686912","Indie#9687","01-May-20 06:28 PM","That's what I was wondering myself. Think I might have gotten something mixed up here.","",""
+"693448091633844265","kal_كال#3748","01-May-20 06:34 PM","@Hera thats a good idea, thanks for trying!","",""
+"156235703611686912","Indie#9687","01-May-20 06:34 PM","Either that or I misunderstood what was asked.","",""
+"697348478279483445","Hera#8206","01-May-20 06:35 PM","If you put them in two c files they don’t work together l","",""
+"705480546859614320","Feyre#7609","01-May-20 06:35 PM","> @Feyre  did you go to 
+> ide from the pset link sth like that or just clicking on the history
+@Hera
+
+I go directly from the link given on the instructions of problem set 1","",""
+"619066262252945415","AIM#9793","01-May-20 07:24 PM","Why does it say “No submissions here” when I follow the link that I get from the terminal after executing the code for submitting?","",""
+"393880618221699072","crossroads1112#5300","01-May-20 10:14 PM","@AIM Can you send the link submit50 is outputting along with a screenshot of the terminal output?","",""
+"317317169396318226","SmartLouie#1062","01-May-20 11:33 PM","I’m having issues compiling my program","",""
+"317317169396318226","SmartLouie#1062","01-May-20 11:36 PM","I enter the command
+$ make hello
+But it get the error message
+make: *** No rule to make target ‘hello’. Stop.","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","01-May-20 11:46 PM","is your file named hello.c","",""
+"317317169396318226","SmartLouie#1062","02-May-20 12:03 AM","It’s named hello/","",""
+"232308820477476864","brosaphianachos#1979","02-May-20 12:32 AM","Hey guys, any ideas why i'm getting this error?","https://cdn.discordapp.com/attachments/703143784137097266/705894321651712100/Hello_troubleshooting.PNG",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","02-May-20 12:37 AM","Your name string is in global space, cant do that","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","02-May-20 12:38 AM","Put it at the top of main and it should work","",""
+"232308820477476864","brosaphianachos#1979","02-May-20 12:38 AM","Ah, thanks","",""
+"232308820477476864","brosaphianachos#1979","02-May-20 12:39 AM","Thought i tried that already haha","",""
+"704647420105064448","Tan Tze Herng#0011","02-May-20 08:23 AM","I have a problem again. My problem is in the file attached to it.","",""
+"704647420105064448","Tan Tze Herng#0011","02-May-20 08:24 AM","~/ $ mkdir ~/pset1/
+~/ $ cd ~/pset1/
+~/pset1/ $ mkdir ~/pset1/hello
+~/pset1/ $ 
+~/pset1/ $ cd ~/pset1/hello
+~/pset1/hello/ $ ls
+~/pset1/hello/ $  ls
+~/pset1/hello/ $ clang hello.c
+clang-7: error: no such file or directory: 'hello.c'
+clang-7: error: no input files
+~/pset1/hello/ $ check50 cs50/problems/2020/x/hello
+Connecting.....
+You seem to be missing these required files:
+hello.c
+You are currently in: ~/pset1/hello, did you perhaps intend another directory?
+~/pset1/hello/ $ y
+bash: y: command not found
+~/pset1/hello/ $ ./a.out
+bash: ./a.out: No such file or directory
+~/pset1/hello/ $ clang -o hello hello.c
+clang-7: error: no such file or directory: 'hello.c'
+clang-7: error: no input files
+~/pset1/hello/ $ ls
+~/pset1/hello/ $ ./hello
+bash: ./hello: No such file or directory
+~/pset1/hello/ $ make hello
+make: *** No rule to make target 'hello'.  Stop.","",""
+"704647420105064448","Tan Tze Herng#0011","02-May-20 08:25 AM","~/pset1/hello/ $ check50 cs50/problems/2020/x/hello
+Connecting......
+You seem to be missing these required files:
+hello.c
+You are currently in: ~/pset1/hello, did you perhaps intend another directory?
+~/pset1/hello/ $ cd ..
+~/pset1/ $ ls
+hello/
+~/pset1/ $ clang hello
+/usr/bin/ld: cannot find hello: File format not recognized
+clang-7: error: linker command failed with exit code 1 (use -v to see invocation)
+~/pset1/ $ clang hello.c
+clang-7: error: no such file or directory: 'hello.c'
+clang-7: error: no input files
+~/pset1/ $ check50 cs50/problems/2020/x/hello
+Connecting.....
+You seem to be missing these required files:
+hello.c
+You are currently in: ~/pset1, did you perhaps intend another directory?
+~/pset1/ $ 
+~/pset1/ $ clang hello
+/usr/bin/ld: cannot find hello: File format not recognized
+clang-7: error: linker command failed with exit code 1 (use -v to see invocation)
+~/pset1/ $ check50 cs50/problems/2020/x/hello
+Connecting.....
+You seem to be missing these required files:
+hello.c
+You are currently in: ~/pset1, did you perhaps intend another directory?
+~/pset1/ $ clang hello.c
+clang-7: error: no such file or directory: 'hello.c'
+clang-7: error: no input files
+~/pset1/ $ clang hello.c.c
+clang-7: error: no such file or directory: 'hello.c.c'
+clang-7: error: no input files
+~/pset1/ $ clang hello
+/usr/bin/ld: cannot find hello: File format not recognized
+clang-7: error: linker command failed with exit code 1 (use -v to see invocation)
+~/pset1/ $","",""
+"704647420105064448","Tan Tze Herng#0011","02-May-20 08:25 AM","No, I do not mean the file. I mean the words above this message.","",""
+"500944231029014529","AadhitShah01#8498","02-May-20 08:26 AM","@Tan Tze Herng Are you doing hello?","",""
+"393854278764068875","curiouskiwi#1671","02-May-20 08:27 AM","let's see what you actually have.  Can you run `cd` to get back to the root, and then run `ls -l` to list what's in that root directory?","",""
+"180925261531840512","ddm135 | Aut#5379","02-May-20 08:29 AM","you haven't made a hello.c file yet","",""
+"500944231029014529","AadhitShah01#8498","02-May-20 08:30 AM","yea","",""
+"500944231029014529","AadhitShah01#8498","02-May-20 08:30 AM","you gotta create the flies like this...","https://cdn.discordapp.com/attachments/703143784137097266/706014782054072350/2020-05-02.png",""
+"704647420105064448","Tan Tze Herng#0011","02-May-20 09:23 AM","> let's see what you actually have.  Can you run `cd` to get back to the root, and then run `ls -l` to list what's in that root directory?
+@curiouskiwi Yes. My problem is that when I typed ls (list) in /pset1/hello, nothing happens. It just prompted me again with the ~/pset1/hello/ dollar sign.","",""
+"393854278764068875","curiouskiwi#1671","02-May-20 09:25 AM","You have to actually create the hello.c file yourself, as the spec outlines.","",""
+"704647420105064448","Tan Tze Herng#0011","02-May-20 09:25 AM","Okay. Thank you.","",""
+"704647420105064448","Tan Tze Herng#0011","02-May-20 09:26 AM","But I have created. Let me share a screenshot.","",""
+"704647420105064448","Tan Tze Herng#0011","02-May-20 09:27 AM","So, ""file"" is that blue folder, and ""directory"" is that piece of paper with a ""C"" on it?","",""
+"393854278764068875","curiouskiwi#1671","02-May-20 09:31 AM","I'd expect it to look something like this:","https://cdn.discordapp.com/attachments/703143784137097266/706030038767894579/filetree.png",""
+"393854278764068875","curiouskiwi#1671","02-May-20 09:31 AM","will hello.c inside the hello folder which is inside the pset1 folder","",""
+"704647420105064448","Tan Tze Herng#0011","02-May-20 09:32 AM","Mine is almost same, but there is an additional a.out file in the hello file. Am I in the right path?","",""
+"393854278764068875","curiouskiwi#1671","02-May-20 09:33 AM","if it's like that, that's fine","",""
+"393854278764068875","curiouskiwi#1671","02-May-20 09:34 AM","so if you are in the hello folder in the terminal  (so it looks like this: ```
+~/pset1/hello $``` and you run `ls` you see `hello.c` and `a.out`","",""
+"393854278764068875","curiouskiwi#1671","02-May-20 09:35 AM","","https://cdn.discordapp.com/attachments/703143784137097266/706031176162476084/Screen_Shot_2020-05-02_at_6.37.32_PM.png",""
+"704647420105064448","Tan Tze Herng#0011","02-May-20 09:36 AM","I typed ls, but it prompts me with ~/pset1/hello dollar sign over and over again.","",""
+"393854278764068875","curiouskiwi#1671","02-May-20 09:37 AM","that means the folder is empty","",""
+"393854278764068875","curiouskiwi#1671","02-May-20 09:37 AM","are your files inside pset1 and not inside hello?","",""
+"393854278764068875","curiouskiwi#1671","02-May-20 09:38 AM","you can drag them into the hello folder","",""
+"704647420105064448","Tan Tze Herng#0011","02-May-20 09:39 AM","The sequence of my files: In the file ~, there is a file called pset1. In the file pset1, there is a file called hello. In the file hello, there are two files, which are hello.c and a.out.","",""
+"393854278764068875","curiouskiwi#1671","02-May-20 09:40 AM","can you show a screenshot of your file browser tree? as I did?","",""
+"704647420105064448","Tan Tze Herng#0011","02-May-20 09:40 AM","This.","https://cdn.discordapp.com/attachments/703143784137097266/706032375380967474/Screenshot_12.png",""
+"393854278764068875","curiouskiwi#1671","02-May-20 09:41 AM","so that's showing that hello.c and a.out are inside the pset1 folder.  but not inside the hello folder.  (if they were inside the hello folder, they would be indented below it.)","",""
+"393854278764068875","curiouskiwi#1671","02-May-20 09:41 AM","so you can click drag each of the files onto the hello folder to move them inside","",""
+"704647420105064448","Tan Tze Herng#0011","02-May-20 09:42 AM","Ok. So hello, hello.c and a.out are on the third level inside pset1?","",""
+"393854278764068875","curiouskiwi#1671","02-May-20 09:43 AM","actually, they aren't even in the pset1 folder.    (now that I look closely)","",""
+"393854278764068875","curiouskiwi#1671","02-May-20 09:44 AM","so what probably happened is you created hello.c and then saved it to `~/`  rather than into the `hello` folder inside the `pset1` folder","",""
+"704647420105064448","Tan Tze Herng#0011","02-May-20 09:44 AM","This is my renewed screen.","https://cdn.discordapp.com/attachments/703143784137097266/706033336623038514/Screenshot_14.png",""
+"393854278764068875","curiouskiwi#1671","02-May-20 09:45 AM","so now they are in pset1 folder.","",""
+"393854278764068875","curiouskiwi#1671","02-May-20 09:45 AM","you still need to move them into the hello folder","",""
+"704647420105064448","Tan Tze Herng#0011","02-May-20 09:45 AM","Okay.","",""
+"704647420105064448","Tan Tze Herng#0011","02-May-20 09:47 AM","So is this right?","https://cdn.discordapp.com/attachments/703143784137097266/706034030461714432/Screenshot_16.png",""
+"704647420105064448","Tan Tze Herng#0011","02-May-20 09:48 AM","I succeeded to get what I want. Thank you, teacher.","",""
+"393854278764068875","curiouskiwi#1671","02-May-20 09:48 AM","yes 😉","",""
+"706030882842214481","AkaylinW#8512","02-May-20 09:49 AM","my a.out doesn’t show up , why is that ?","",""
+"214197498384744450","coldfusion#5932","02-May-20 10:02 AM","is clang running properly","",""
+"477910457974521868","xd Dead-Pool#9355","02-May-20 01:55 PM","hewwo everybody ヾ(・ω・ ｏ)","",""
+"619066262252945415","AIM#9793","02-May-20 03:03 PM","> @AIM Can you send the link submit50 is outputting along with a screenshot of the terminal output?
+@crossroads1112  
+
+
+https://submit.cs50.io/users/MIAtshipara/cs50/problems/2020/x/hello","",""
+"619066262252945415","AIM#9793","02-May-20 03:05 PM","@crossroads1112 
+Here is the screenshot 
+
+
+https://submit.cs50.io/users/MIAtshipara/cs50/problems/2020/x/hello 
+And here is the link","https://cdn.discordapp.com/attachments/703143784137097266/706114029193789450/image0.png",""
+"700087140192878602","angela#1379","02-May-20 04:24 PM","@curiouskiwi please assess this","",""
+"700087140192878602","angela#1379","02-May-20 04:25 PM","","https://cdn.discordapp.com/attachments/703143784137097266/706134262906355792/IMG_20200502_175411.jpg",""
+"700087140192878602","angela#1379","02-May-20 04:37 PM","@curiouskiwi","",""
+"700087140192878602","angela#1379","02-May-20 05:22 PM","@brian sir kindly assess if i completed the folders needed in making hello","",""
+"700087140192878602","angela#1379","02-May-20 05:23 PM","","https://cdn.discordapp.com/attachments/703143784137097266/706148858945732678/IMG_20200502_175350.jpg",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","02-May-20 06:47 PM","Your hello.c isn't in the folder","","😀 (1)"
+"354372432838000642","humanbeing#0598","02-May-20 07:55 PM","how to learn c syntax real quick 😦","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","02-May-20 07:57 PM","Watch the lectures closely and do the psets, really","",""
+"700087140192878602","angela#1379","03-May-20 12:07 AM","@Napoopan Totallatot, Worm King.. Thanks.. I'll fix it later","",""
+"275582859304108032","RandomMelonHere#4954","03-May-20 12:46 AM","so I'm just learning and, in this it takes the string called prompt as an input. is there a way to tell the program to take more than 1 input? like for example prompt and prompt2","https://cdn.discordapp.com/attachments/703143784137097266/706260255931367454/unknown.png",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","03-May-20 12:47 AM","```
+int function(type name, type name)
+```","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","03-May-20 12:47 AM","you can comma separate as many values as you want","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","03-May-20 12:47 AM","My button class in Lua takes 9 l0l","",""
+"275582859304108032","RandomMelonHere#4954","03-May-20 12:47 AM","ahh i was doing `int function(type name, name)` thinking the type will apply to both lol","",""
+"275582859304108032","RandomMelonHere#4954","03-May-20 12:47 AM","thanks haha","","👍 (2)"
+"275582859304108032","RandomMelonHere#4954","03-May-20 12:47 AM","dang","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","03-May-20 12:56 AM","ls doesnt compile, ls tells you what files are in your current directory","","👍 (2)"
+"417849180464087040","KRFC#0774","03-May-20 12:57 AM","Fixed it.","",""
+"558865636336467970","diegotacus289#0520","03-May-20 01:00 AM","Whats does the orange sentence mean ?","https://cdn.discordapp.com/attachments/703143784137097266/706263949481345035/image0.jpg",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","03-May-20 01:02 AM","Yeah, if you make hello.c with the + at the top, it puts it in your base directory","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","03-May-20 01:03 AM","Only goes in a folder if you right click the folder and make new file","",""
+"393854278764068875","curiouskiwi#1671","03-May-20 01:03 AM","From the spec:  
+> From the File menu, click New File, and save it (as via the Save option in the File menu) as hello.c inside of your ~/pset1/hello directory.","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","03-May-20 01:03 AM","Oh yeah, or change it in save as","",""
+"393854278764068875","curiouskiwi#1671","03-May-20 01:03 AM","when you choose File > Save, you choose the folder you want to save it in.  If you don't choose any folder, it will go into the root.","",""
+"180925261531840512","ddm135 | Aut#5379","03-May-20 01:05 AM","@diegotacus289 it means to add the lines that looks like ""// What the next few lines does""","",""
+"180925261531840512","ddm135 | Aut#5379","03-May-20 01:05 AM","but hello.c is a simple program","",""
+"180925261531840512","ddm135 | Aut#5379","03-May-20 01:05 AM","you don't need any comments for this program","",""
+"180925261531840512","ddm135 | Aut#5379","03-May-20 01:05 AM","it won't affect your score for now","",""
+"558865636336467970","diegotacus289#0520","03-May-20 01:06 AM","Ok thanks","",""
+"417849180464087040","KRFC#0774","03-May-20 01:43 AM","I'm stuck at attempting to link cs50.h so I can execute the string.","https://cdn.discordapp.com/attachments/703143784137097266/706274768088858666/cs50.png",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","03-May-20 01:44 AM","youre trying to compile ""string.c"" which doesnt exist","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","03-May-20 01:44 AM","your file is ""hello.c""","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","03-May-20 01:44 AM","If i were you id just use ""make hello""","",""
+"417849180464087040","KRFC#0774","03-May-20 01:53 AM","I get: /usr/include/cs50.h:109:35: note: expanded from macro 'get_string'
+#define get_string(...) get_string(NULL, __VA_ARGS__)","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","03-May-20 01:56 AM","your \n is outside the quotes","","👍 (2)"
+"417849180464087040","KRFC#0774","03-May-20 01:57 AM","Oh jeez. Embarrassing. Thanks","",""
+"700087140192878602","angela#1379","03-May-20 02:22 AM","~/pset1/hello/ $ check50
+usage: check50 [-h] [-d] [--offline] [-l] [--log]
+               [-o {ansi,json,html} [{ansi,json,html} ...]]
+               [--target TARGET [TARGET ...]] [--output-file FILE] [-v] [-V]
+               [--logout]
+               slug
+check50: error: the following arguments are required: slug
+~/pset1/hello/ $ 
+
+help please","",""
+"336021621271953408","Teapot#0189","03-May-20 02:52 AM","@angela. I see why you have the problem that you have. The missing slug part refers to your missing something in the command. Just copy this in the command line and run it. It should work
+
+check50 cs50/problems/2020/x/hello","","👍 (1)"
+"700087140192878602","angela#1379","03-May-20 02:53 AM","thank you","",""
+"336021621271953408","Teapot#0189","03-May-20 02:53 AM","Not a prob. Hopefully everything goes well for you","","👍 (1)"
+"653803496876802081","vegan soap#6660","03-May-20 06:22 AM","helo","",""
+"653803496876802081","vegan soap#6660","03-May-20 06:22 AM","hello","",""
+"653803496876802081","vegan soap#6660","03-May-20 06:22 AM","c:","",""
+"697348478279483445","Hera#8206","03-May-20 07:02 AM","Hello, Akuma","",""
+"597678696962326539","squezme#1502","03-May-20 08:20 AM","clang is not linking stdio.h","",""
+"597678696962326539","squezme#1502","03-May-20 08:22 AM","","https://cdn.discordapp.com/attachments/703143784137097266/706375011719577630/unknown.png",""
+"361235692019384323","Sanath#7244","03-May-20 08:28 AM","your file doesnt have a main function","",""
+"706030882842214481","AkaylinW#8512","03-May-20 08:48 AM","why isnt a.out showing","https://cdn.discordapp.com/attachments/703143784137097266/706381672764932197/image0.jpg",""
+"361235692019384323","Sanath#7244","03-May-20 08:50 AM","the command is just ls not $ls","",""
+"361235692019384323","Sanath#7244","03-May-20 08:50 AM","same for clang","",""
+"361235692019384323","Sanath#7244","03-May-20 08:51 AM","and your hello.c file isnt in the folder","",""
+"436926506598400000","Echo#3703","03-May-20 08:52 AM","why does it say this?","https://cdn.discordapp.com/attachments/703143784137097266/706382748889120820/unknown.png",""
+"436926506598400000","Echo#3703","03-May-20 08:53 AM","like where will I add **more** comments from? 🤔","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","03-May-20 08:54 AM","You comment by doing ""// stuff goes here""","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","03-May-20 08:54 AM","It wants you to annotate your code, for readability @Echo","",""
+"436926506598400000","Echo#3703","03-May-20 08:55 AM","@Napoopan Totallatot, Worm King thanks bro. it's all ok now 🙂","https://cdn.discordapp.com/attachments/703143784137097266/706383529801678899/unknown.png",""
+"436926506598400000","Echo#3703","03-May-20 08:56 AM","👍","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","03-May-20 08:57 AM","👍👍👍","",""
+"597678696962326539","squezme#1502","03-May-20 10:35 AM","I am not seeing what is going wrong","",""
+"597678696962326539","squezme#1502","03-May-20 10:35 AM","","https://cdn.discordapp.com/attachments/703143784137097266/706408489051881553/unknown.png","➕ (1)"
+"361235692019384323","Sanath#7244","03-May-20 10:48 AM","your variable is answer, not name
+the variable has to be outside the quotes
+clang requires certain options to compile correctly, use make instead","",""
+"522650672316022785","Altynai Sydykova#7836","03-May-20 04:29 PM","similar issue here","https://cdn.discordapp.com/attachments/703143784137097266/706497786992001085/Screen_Shot_2020-05-03_at_7.24.44_PM.png",""
+"361235692019384323","Sanath#7244","03-May-20 04:30 PM","dont use clang, use make","","👍 (3)"
+"361235692019384323","Sanath#7244","03-May-20 04:30 PM","clang requires additional options if you want to use the cs50 lib","",""
+"706490436750934068","HKB#5016","03-May-20 04:32 PM","I dont knwo how to do this. Pls help","https://cdn.discordapp.com/attachments/703143784137097266/706498314505289768/unknown.png",""
+"361235692019384323","Sanath#7244","03-May-20 04:32 PM","execute the commands in the terminal","",""
+"706490436750934068","HKB#5016","03-May-20 04:33 PM","@Sanath ohk thanks for the help","",""
+"224172870144753664","gary#1905","03-May-20 07:11 PM","Can someone explain why the 1s command doesn't work?  I've been stuck trying to figure it out","",""
+"224172870144753664","gary#1905","03-May-20 07:11 PM","","https://cdn.discordapp.com/attachments/703143784137097266/706538482767495229/20200503_121042.jpg",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","03-May-20 07:12 PM","Because it's ls","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","03-May-20 07:12 PM","***L***s","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","03-May-20 07:12 PM","But lowercase","",""
+"224172870144753664","gary#1905","03-May-20 07:19 PM","THANK YOU!!!!","",""
+"224172870144753664","gary#1905","03-May-20 07:19 PM","smashing my head figuring that one out, haha","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","03-May-20 07:50 PM","👍","",""
+"697244470852321280","Nelson#6018","03-May-20 10:47 PM","It supposed to be \n and not /n","",""
+"224172870144753664","gary#1905","03-May-20 10:56 PM","Yeah I figured that out after wondering why it was included in the output, thanks!!","",""
+"705588010669965402","Ola#5430","04-May-20 02:19 AM","hello guys, i am Ola from Nigeria","",""
+"312941560184438785","Lily~#0001","04-May-20 02:30 AM","Hello","",""
+"706672695387095061","iammoahmed#4486","04-May-20 04:19 AM","Hi everyone, I am stuck with this error every time i run clang - what am i doing wrong? 🤨 Thanks in advance","https://cdn.discordapp.com/attachments/703143784137097266/706676345903775824/Capture.PNG",""
+"697348478279483445","Hera#8206","04-May-20 04:56 AM","you need to link to library","",""
+"697348478279483445","Hera#8206","04-May-20 04:57 AM","better just use make","",""
+"706672695387095061","iammoahmed#4486","04-May-20 05:13 AM","i have no idea what either means ( sorry complete newbie)","",""
+"697348478279483445","Hera#8206","04-May-20 05:19 AM","type ' make hello' instead","",""
+"587663056046391302","A Doggo#0001","04-May-20 09:53 AM","","https://cdn.discordapp.com/attachments/703143784137097266/706760491833360424/unknown.png",""
+"587663056046391302","A Doggo#0001","04-May-20 09:54 AM","why error","",""
+"697348478279483445","Hera#8206","04-May-20 09:58 AM","stdio","",""
+"697348478279483445","Hera#8206","04-May-20 09:58 AM","not studio","",""
+"697348478279483445","Hera#8206","04-May-20 09:58 AM","and at the end of printf hello add a ;","",""
+"461238875042611201","Brinkers#6087","04-May-20 02:36 PM","Hey guys, I'm brand new to programming, and I'm really struggling with this problem. I've written the code, and I'm pretty sure it's correct, but every time I try to compile it, I get the message, ""*** No rule to make target 'Hello'.  Stop."" Any ideas?","",""
+"361235692019384323","Sanath#7244","04-May-20 02:37 PM","make sure youre in the same folder as your hello file","",""
+"461238875042611201","Brinkers#6087","04-May-20 02:43 PM","Additionally, when I create the directories on sandbox by inputting the ""mkdir"" commands, the directories don't show up in the directory tree on the left hand side of the screen. To get them to do that, I have to go and create them by clicking the ""Folder actions"" button and selecting ""New directory"". To be clear, I can see the directories from the root file if I list them, just not in the directory sidebar.","",""
+"461238875042611201","Brinkers#6087","04-May-20 02:45 PM","The hello file is in /root/sandbox/Hello, but when i try to cd to ""~/sandbox/Hello"" that directory, it says it doesn't exist","",""
+"461238875042611201","Brinkers#6087","04-May-20 02:45 PM","I know I'm probably being very stupid here, I'm just an absolute noob to coding","",""
+"697244470852321280","Nelson#6018","04-May-20 02:58 PM","Hi","",""
+"697244470852321280","Nelson#6018","04-May-20 02:59 PM","My code can't be executed.","",""
+"269227960156946454","GhostDragon#7128","04-May-20 04:34 PM","what error message is it giving you?","",""
+"176920657467146240","noobtopro#6200","05-May-20 12:10 AM","i was having trouble because my \n was outside of my quotation marks and deleted a.out and the old hello and hello.c files out of hello directory","",""
+"176920657467146240","noobtopro#6200","05-May-20 12:11 AM","i reworked my problem but now only hello and hello.c are in the directory; do i need to turn in a.out as well?","",""
+"393854278764068875","curiouskiwi#1671","05-May-20 12:12 AM","only `hello.c` will be submitted.  submit50 knows what files it needs and excludes anything else automatically","",""
+"176920657467146240","noobtopro#6200","05-May-20 12:13 AM","ok just verifying i dont need to show i modified the file only that the program returns value","",""
+"176920657467146240","noobtopro#6200","05-May-20 12:13 AM","right?","",""
+"393854278764068875","curiouskiwi#1671","05-May-20 12:19 AM","the grading program will compile your hello.c file and then run the executable to test that it follows the specification.","","👍 (1)"
+"176920657467146240","noobtopro#6200","05-May-20 12:19 AM","great thanks ^^","",""
+"360487344828055563","Francomunista#0453","05-May-20 12:25 AM","Hello, I'm new in this course and I have a problem that I don't know were to post/search solution for","",""
+"360487344828055563","Francomunista#0453","05-May-20 12:27 AM","I just downloaded everything I need for assignment0, but when I run LOVE this message apears:","",""
+"360487344828055563","Francomunista#0453","05-May-20 12:27 AM","Error
+
+push.lua:101: attempt to call field 'getPixelScale' (a nil value)
+
+
+Traceback
+
+push.lua:101: in function 'initValues'
+push.lua:48: in function 'setupScreen'
+main.lua:85: in function 'load'
+[C]: in function 'xpcall'
+[C]: in function 'xpcall'","",""
+"360487344828055563","Francomunista#0453","05-May-20 12:28 AM","Any idea what it means/how to fix it?","",""
+"461238875042611201","Brinkers#6087","05-May-20 07:55 AM","Still looking for an answer to my problem above. I figured out that the terminal directory is not in the right place, but I can't change it so that it is. I tried right clicking in the directory sidebar, but I just get a bunch of Windows options. Help?","",""
+"461238875042611201","Brinkers#6087","05-May-20 08:34 AM","Never mind. Figured out my problem.","","👏🏼 (2)"
+"705605976736137237","Fa#5568","05-May-20 08:06 PM","I think i was in the wrong chat. I think when I chose a new terminal that happened. How can I go back to Hello?","https://cdn.discordapp.com/attachments/703143784137097266/707277086464802867/Screen_Shot_2020-05-05_at_12.53.40_PM.png",""
+"706030882842214481","AkaylinW#8512","05-May-20 08:07 PM","just restart over so you know where you went wrong","",""
+"269227960156946454","GhostDragon#7128","05-May-20 08:09 PM","@Fa you need to do cd pset1/","",""
+"269227960156946454","GhostDragon#7128","05-May-20 08:09 PM","also the command is clang not clung","",""
+"705605976736137237","Fa#5568","05-May-20 08:25 PM","Thank u guys! SO I start over and listed ls now I have no idea how compile it? what is the next step?","https://cdn.discordapp.com/attachments/703143784137097266/707281846852911111/Screen_Shot_2020-05-05_at_1.23.27_PM.png",""
+"269227960156946454","GhostDragon#7128","05-May-20 08:26 PM","clang hello.c","",""
+"269227960156946454","GhostDragon#7128","05-May-20 08:26 PM","follow the instructions given in the problem set","",""
+"705605976736137237","Fa#5568","05-May-20 08:27 PM","Should I click enter after ls I mean in new line or just keep typing?","",""
+"269227960156946454","GhostDragon#7128","05-May-20 08:28 PM","enter","",""
+"705605976736137237","Fa#5568","05-May-20 08:28 PM","k","",""
+"705605976736137237","Fa#5568","05-May-20 08:30 PM","it didn't work","https://cdn.discordapp.com/attachments/703143784137097266/707283117173375107/Screen_Shot_2020-05-05_at_1.29.57_PM.png",""
+"269227960156946454","GhostDragon#7128","05-May-20 08:31 PM","you have to put the file hello.c into the folder hello/","",""
+"705605976736137237","Fa#5568","05-May-20 08:36 PM","How can I do that? Do I need to start over again?","",""
+"269227960156946454","GhostDragon#7128","05-May-20 08:36 PM","start over fully and follow the instructions they give you **word for word**","",""
+"706030882842214481","AkaylinW#8512","05-May-20 08:40 PM","drag hello.c into hello/ and then do clang hello.c","",""
+"706030882842214481","AkaylinW#8512","05-May-20 08:40 PM","u didnt meed to start over though","",""
+"706030882842214481","AkaylinW#8512","05-May-20 08:43 PM","what happened here","https://cdn.discordapp.com/attachments/703143784137097266/707286464773488650/image0.jpg",""
+"269227960156946454","GhostDragon#7128","05-May-20 08:44 PM","the quotes shouldnt be after answer they should be before the second comma","",""
+"706030882842214481","AkaylinW#8512","05-May-20 08:46 PM","so what do i need to put near answer","",""
+"269227960156946454","GhostDragon#7128","05-May-20 08:47 PM","nothing","",""
+"269227960156946454","GhostDragon#7128","05-May-20 08:47 PM","`printf(""hello, %s\n"", answer);`","",""
+"706030882842214481","AkaylinW#8512","05-May-20 08:50 PM","","https://cdn.discordapp.com/attachments/703143784137097266/707288108751650860/image0.jpg",""
+"180925261531840512","ddm135 | Aut#5379","05-May-20 08:52 PM","you didn't initialize answer to be a string","",""
+"269227960156946454","GhostDragon#7128","05-May-20 08:52 PM","have you initialized the variable 'answer'?","",""
+"706030882842214481","AkaylinW#8512","05-May-20 08:54 PM","how do i do that","",""
+"180925261531840512","ddm135 | Aut#5379","05-May-20 08:55 PM","as of now you have `answer = get_string...` right?","",""
+"706030882842214481","AkaylinW#8512","05-May-20 08:57 PM","yes","",""
+"705605976736137237","Fa#5568","05-May-20 08:58 PM","@AkaylinW I started all over! 😑","",""
+"180925261531840512","ddm135 | Aut#5379","05-May-20 09:03 PM","it needs to be `string answer = get_string...`","",""
+"180925261531840512","ddm135 | Aut#5379","05-May-20 09:03 PM","you have to define the type of variable before you give it a value","",""
+"706030882842214481","AkaylinW#8512","05-May-20 09:12 PM","is it supposed to do this","https://cdn.discordapp.com/attachments/703143784137097266/707293630339088444/image0.jpg",""
+"180925261531840512","ddm135 | Aut#5379","05-May-20 09:13 PM","it shouldn't","",""
+"706030882842214481","AkaylinW#8512","05-May-20 09:14 PM","i’ll start over","",""
+"705605976736137237","Fa#5568","05-May-20 10:10 PM","M I doing it right so far?","https://cdn.discordapp.com/attachments/703143784137097266/707308325292998786/Screen_Shot_2020-05-05_at_3.09.00_PM.png",""
+"705605976736137237","Fa#5568","05-May-20 10:11 PM","what is next?","https://cdn.discordapp.com/attachments/703143784137097266/707308427440816180/Screen_Shot_2020-05-05_at_3.09.50_PM.png",""
+"356245550737260554","strawnks#8488","05-May-20 10:21 PM","so far so good, next up is the mario problem","",""
+"356245550737260554","strawnks#8488","05-May-20 10:22 PM","one thing is that you should probably use the `make` command instead of `clang`, it's a lot easier","",""
+"705605976736137237","Fa#5568","05-May-20 10:27 PM","I don't think I have quite finished it yet to go for mario. Can u plz walk me through how use make command?","",""
+"649505237618393119","est370#5570","05-May-20 10:46 PM","Hi everyone I am new in this as well","",""
+"649505237618393119","est370#5570","05-May-20 10:46 PM","I am trying to study to work on the mario problem","",""
+"649505237618393119","est370#5570","05-May-20 10:46 PM","trying to get used to typing the code and all","",""
+"356245550737260554","strawnks#8488","05-May-20 10:52 PM","you can watch the shorts that they give you, they give a more in depth explanation on the functions, and you can try to follow along","",""
+"356245550737260554","strawnks#8488","05-May-20 10:53 PM","> I don't think I have quite finished it yet to go for mario. Can u plz walk me through how use make command?
+@Fa the `make` command is just an easier way to compile your code, so instead of using `clang -o hello hello.c`, you can simply just type `make hello`, and it'll do the exact same thing, it's just a lot easier","",""
+"563679773868687361","DUWANG NO RYU#3914","05-May-20 10:55 PM","Hello I am new here, I just joined the lecture today, and I am watching the first lecture on pong. Can I ask what programs I have to download besides love2d to start @Fa","",""
+"705605976736137237","Fa#5568","05-May-20 10:58 PM","> @Fa the `make` command is just an easier way to compile your code, so instead of using `clang -o hello hello.c`, you can simply just type `make hello`, and it'll do the exact same thing, it's just a lot easier
+@strawnks It make sense. Thanks! But I don't know what to do next. I mean the string thing. M I supposed to make a new file? Totally lost!😏 😫","",""
+"706030882842214481","AkaylinW#8512","05-May-20 11:29 PM","","https://cdn.discordapp.com/attachments/703143784137097266/707328172034752512/image0.jpg",""
+"706030882842214481","AkaylinW#8512","05-May-20 11:32 PM","why is that showing up","",""
+"264230294658220042","Ristray#9849","05-May-20 11:33 PM","@AkaylinW You seem to have #include <stdio.h> twice instead of the first one being <cs50.h>","",""
+"264230294658220042","Ristray#9849","05-May-20 11:35 PM","I'm having a tiny problem trying to figure out this code ordering: #include <stdio.h>
+
+void cough(void);
+
+int main(void)
+{
+    for (int i = 0; i < 3; i++)
+    {
+        cough();
+    }
+}
+
+void cough(void)
+{
+    printf(""cough\n"");
+}","",""
+"264230294658220042","Ristray#9849","05-May-20 11:36 PM","If the computer reads in order, and we show it the cough function first, how does it know what the cough(); does before it gets down to the function underneath?","",""
+"393854278764068875","curiouskiwi#1671","05-May-20 11:40 PM","`void cough(void);` is a function prototype.  It tells the compiler that the function exists (and will be defined later) so that when it reads the call `cough()` further down, it won't be flagged as unknown.","",""
+"264230294658220042","Ristray#9849","05-May-20 11:43 PM","So it still reads the cough() second but waits until it passes by the function later before deciding to complain about it?","",""
+"264230294658220042","Ristray#9849","05-May-20 11:43 PM","Maybe I'm just trying to get too specific about how this stuff works and just accept it happens somehow.","",""
+"393854278764068875","curiouskiwi#1671","05-May-20 11:44 PM","by putting the prototype at the top, you are ""promising"" to the compiler that a function called `cough` exists","",""
+"393854278764068875","curiouskiwi#1671","05-May-20 11:45 PM","just like all the other functions in your program that come from the included libraries","",""
+"393854278764068875","curiouskiwi#1671","05-May-20 11:45 PM","like printf.","",""
+"264230294658220042","Ristray#9849","05-May-20 11:46 PM","Oh. ok, that works. Thanks.","",""
+"705605976736137237","Fa#5568","05-May-20 11:55 PM","Can anyone kindly tell me what to do next? for the string, are we supposed to get a new file?","https://cdn.discordapp.com/attachments/703143784137097266/707334588942516316/Screen_Shot_2020-05-05_at_4.51.59_PM.png",""
+"481250375786037258","ChargeAnimations#3766","06-May-20 12:07 AM","You can read what you have to do here:https://cs50.harvard.edu/x/2020/psets/1/hello/","",""
+"705605976736137237","Fa#5568","06-May-20 12:25 AM","> You can read what you have to do here:https://cs50.harvard.edu/x/2020/psets/1/hello/
+@ChargeAnimations how can I do the string ? thats where I am lost","",""
+"481250375786037258","ChargeAnimations#3766","06-May-20 12:26 AM","hint: ||please refer to the link I sent and scroll down to hints||","",""
+"705605976736137237","Fa#5568","06-May-20 01:11 AM","> 
+> hint: ||please refer to the link I sent and scroll down to hints||
+> @ChargeAnimations I did it many many time. trust me! so for string function, do I need a new file that should be called string.c  at the top or I should just erase everything and do this?name = get_string(""What is your name?\n"");
+>     printf(""hello, %s\n"", name);","",""
+"481250375786037258","ChargeAnimations#3766","06-May-20 01:12 AM","ohhh I misunderstood what you were asking, sorry","",""
+"481250375786037258","ChargeAnimations#3766","06-May-20 01:12 AM","you don't need a new file","",""
+"481250375786037258","ChargeAnimations#3766","06-May-20 01:12 AM","just keep it in the file hello.c","",""
+"705605976736137237","Fa#5568","06-May-20 01:18 AM","> you don't need a new file
+@ChargeAnimations So I kept it and says this. what did i do wrong?","https://cdn.discordapp.com/attachments/703143784137097266/707355496209973309/Screen_Shot_2020-05-05_at_6.16.27_PM.png",""
+"636545749156495361","Coupe2T#8639","06-May-20 01:26 AM","clang and make just compile your code,  When you did make hello, it recognised your hello file and compiled, and you then ran it with ./hello and it produced the expected output right?  then you tried to run clang, and you have basically said said clang {compile} into a program named {-o} a program called {string} from my file called {string.c} and include the library cs50 {lcs50}.  It is erroring as you have no file called string.c.  You are still using the file called hello.c.  so if you ran clang -o hello hello.c -lcs50 it should compile fine, and then you can use ./hello to test.","",""
+"705605976736137237","Fa#5568","06-May-20 01:32 AM","> clang and make just compile your code,  When you did make hello, it recognised your hello file and compiled, and you then ran it with ./hello and it produced the expected output right?  then you tried to run clang, and you have basically said said clang {compile} into a program named {-o} a program called {string} from my file called {string.c} and include the library cs50 {lcs50}.  It is erroring as you have no file called string.c.  You are still using the file called hello.c.  so if you ran clang -o hello hello.c -lcs50 it should compile fine, and then you can use ./hello to test.
+@Coupe2T Appreciate it! seems like it worked. Now for to testing the code, should i just type check50 cs50/problems/2020/x/hello after =>  clang -o hello hello.c -lcs50","",""
+"636545749156495361","Coupe2T#8639","06-May-20 01:35 AM","If you're happy after running it yourself it looks good then yes, you can submit as much as you want and check multiple times, so don't worry about submitting or checking anything that might be wrong, can still correct and do again! 👍","",""
+"636545749156495361","Coupe2T#8639","06-May-20 01:36 AM","All the instructions should be on the page for the problem set though to cover submission, having the Git account and allowing repo access and so forth if needed.","",""
+"705605976736137237","Fa#5568","06-May-20 02:48 AM","> If you're happy after running it yourself it looks good then yes, you can submit as much as you want and check multiple times, so don't worry about submitting or checking anything that might be wrong, can still correct and do again! 👍
+@Coupe2T You are a life saver. Thanks a lot!","",""
+"660668671068471297","dauly#6406","06-May-20 08:36 AM","question does this check your code? 
+
+
+How to Test Your Code
+Execute the below to evaluate the correctness of your code using check50. But be sure to compile and test it yourself as well!
+
+check50 cs50/problems/2020/x/hello
+Execute the below to evaluate the style of your code using style50.
+
+style50 hello.c","",""
+"660668671068471297","dauly#6406","06-May-20 08:43 AM","nvm i figured it out!","",""
+"197466666878107648","Luty#1533","06-May-20 12:15 PM","is my score lower when I write my code like this? 
+example {
+ 
+}
+
+rather than this?
+
+example
+{
+
+}","",""
+"636545749156495361","Coupe2T#8639","06-May-20 12:20 PM","use style50 and it will tell you.  Can run as many times as you want to keep checking.","",""
+"197466666878107648","Luty#1533","06-May-20 12:22 PM","thank","",""
+"197466666878107648","Luty#1533","06-May-20 12:24 PM","i guess i have to write all my code like that then","",""
+"636545749156495361","Coupe2T#8639","06-May-20 12:24 PM","It checks your indentation and alsorts.  Obviously best practice training for coding neatly. lol","",""
+"669087770626752533","Hamza kiyani#4389","06-May-20 03:05 PM","Can somebody help me out with this I don't know everything is correct but still it's giving error 😑","https://cdn.discordapp.com/attachments/703143784137097266/707563763082985492/IMG-20200506-WA0000.jpg",""
+"619066262252945415","AIM#9793","06-May-20 03:30 PM","> Can somebody help me out with this I don't know everything is correct but still it's giving error 😑
+@Hamza kiyani  
+write string, not String, don’t capitalize the S","",""
+"669087770626752533","Hamza kiyani#4389","06-May-20 03:33 PM","@AIM thanks man","",""
+"667204679364640779","_depressed_#2599","07-May-20 04:48 AM","I need help","https://cdn.discordapp.com/attachments/703143784137097266/707770713964019742/Screenshot_2020-05-06_at_9.47.43_PM.png",""
+"667204679364640779","_depressed_#2599","07-May-20 04:55 AM","For me, it still says hello, world","",""
+"186558206376411136","Gemy#2935","07-May-20 04:56 AM","choose the right file","",""
+"186558206376411136","Gemy#2935","07-May-20 04:56 AM","cd pset1/hello","",""
+"186558206376411136","Gemy#2935","07-May-20 04:56 AM","then make hello","",""
+"186558206376411136","Gemy#2935","07-May-20 04:56 AM","and try it then","",""
+"667204679364640779","_depressed_#2599","07-May-20 04:58 AM","Thx","",""
+"570302061220986881","Ash#5987","07-May-20 10:31 AM","Quick question since I’m C when using command printf since it takes everything you type between “” as literally what to output... how come it doesn’t simply print hello, %s?
+What if my intent was to have it print the characters %s for some reason?","",""
+"361235692019384323","Sanath#7244","07-May-20 10:32 AM","% is used to represent a variable, if you want to actually print a % symbol, you need to use %%","",""
+"570302061220986881","Ash#5987","07-May-20 10:32 AM","Thank you","",""
+"281417721676169216","ᴏʀᴏᴋᴀ_#0001","07-May-20 10:33 AM","you could also just include a backslash no?","",""
+"361235692019384323","Sanath#7244","07-May-20 10:39 AM","no, that wont work","",""
+"570302061220986881","Ash#5987","07-May-20 03:32 PM","When I ran style50 the first time, it recommended I add comments... after adding comments , it still gives me the same score... what can be improved or is done incorrectly?","https://cdn.discordapp.com/attachments/703143784137097266/707932928868483152/image0.jpg",""
+"361235692019384323","Sanath#7244","07-May-20 03:34 PM","green shows where it wants you to add spaces","",""
+"570302061220986881","Ash#5987","07-May-20 03:41 PM","Cheers... much appreciated","",""
+"384058131270860800","Lunal#0624","07-May-20 04:33 PM","hello","",""
+"172154120742895617","philip#3333","07-May-20 08:32 PM","Hi","",""
+"172154120742895617","philip#3333","07-May-20 08:32 PM","how does dave reset the terminal","",""
+"463436673439498259","kamila🌈#5238","07-May-20 08:36 PM","ctrl + L","",""
+"172154120742895617","philip#3333","07-May-20 08:43 PM","ty!","",""
+"635713828876714004","Itz_Samuxl#6596","07-May-20 09:24 PM","Why is using:
+""Make hello"" 
+Not giving hello world....insted write a long line like
+""Um.....""
+Something like that","",""
+"172154120742895617","philip#3333","07-May-20 09:41 PM","https://gyazo.com/ec41e1ec229687e9e4baf390068b0bb1","",""
+"172154120742895617","philip#3333","07-May-20 09:41 PM","uhm what","",""
+"172154120742895617","philip#3333","07-May-20 09:42 PM","nvm","",""
+"172154120742895617","philip#3333","07-May-20 09:42 PM","I didn't make int","",""
+"696919410820251719","New2Data#5943","08-May-20 12:03 AM","I don't understand when to use clang. How do you know when to use it?","",""
+"696919410820251719","New2Data#5943","08-May-20 12:04 AM","I don't understand when to use clang. How do you know when to use it?","",""
+"269227960156946454","GhostDragon#7128","08-May-20 12:39 AM","you use it to compile a program into an executable that your computer can run","",""
+"696919410820251719","New2Data#5943","08-May-20 02:38 AM","But how do you know when to use it? If I finished writing some notes, would I type in make or clang X in the terminal?","",""
+"269227960156946454","GhostDragon#7128","08-May-20 02:40 AM","Clang and make compile programs written in c","",""
+"696919410820251719","New2Data#5943","08-May-20 02:54 AM","Is this the only way to run a code each time?","https://cdn.discordapp.com/attachments/703143784137097266/708104477475078225/unknown.png",""
+"393854278764068875","curiouskiwi#1671","08-May-20 02:55 AM","make hello  then ./hello","",""
+"249376501353414656","khongjj#2112","08-May-20 08:40 AM","hi guys. i just created a file call x&y.c . however when i click make x&y, it keeps showing this","",""
+"249376501353414656","khongjj#2112","08-May-20 08:40 AM","[1] 2475
+bash: y: command not found
+make: *** No rule to make target 'x'.  Stop.
+[1]+  Exit 2                  make x","",""
+"249376501353414656","khongjj#2112","08-May-20 08:40 AM","does anyone know whst is this","",""
+"393854278764068875","curiouskiwi#1671","08-May-20 09:23 AM","don't use & in the filename","",""
+"635713828876714004","Itz_Samuxl#6596","08-May-20 09:29 AM","Make hello doesnt give hello world","",""
+"635713828876714004","Itz_Samuxl#6596","08-May-20 09:30 AM","Instead its giving something else in a long line","",""
+"393854278764068875","curiouskiwi#1671","08-May-20 10:53 AM","make hello will run the clang command to compile your hello.c file.","",""
+"393854278764068875","curiouskiwi#1671","08-May-20 10:53 AM","and then, to run your program, run `./hello`","",""
+"249376501353414656","khongjj#2112","08-May-20 06:49 PM","ok thanks @curiouskiwi ^^","",""
+"651895259323826187","kingvader#1094","08-May-20 07:58 PM","How to compile c++ in the IDE?","",""
+"178543252637483009","JZ#7525","08-May-20 08:20 PM","@kingvader The beginning of cs50 uses C and not c++, and I don't think the IDE has a way to complie c++, I might be wrong tho","",""
+"238784058627325953","S4nie#4759","09-May-20 02:52 AM","I have some matlab and python experience, and just by watching the 1st week lecture, I experienced intense fear LOL","",""
+"703906393903857736","chuinzer#6740","09-May-20 05:55 AM","https://tenor.com/view/terio-umm-nervous-anxious-what-gif-5205799","",""
+"706852493245808650","Islique#7289","09-May-20 06:23 AM","@S4nie Don't worry! coding can be intimidating but isn't everything at first.👍","",""
+"700087140192878602","angela#1379","09-May-20 01:14 PM","please help im really stuck😫","https://cdn.discordapp.com/attachments/703143784137097266/708622873161498674/make_hello.jpg",""
+"381840470814490624","Dale#7314","09-May-20 01:41 PM","@angela  As far as I can tell the pset1 hello program only outputs a single string.","",""
+"381840470814490624","Dale#7314","09-May-20 01:41 PM","According to the problem set I read, it only needs to output a single string","",""
+"700087140192878602","angela#1379","09-May-20 01:48 PM","@Daleishould remove the other code? Is that so.. Im really new to this i almost give up..","",""
+"381840470814490624","Dale#7314","09-May-20 01:50 PM","@angela If you read the problem set 1 Hello documentation then you will see that there is only a single line you need to print to the console. I am not sure how the academic policy will apply to pset1 hello, because the solution is in the pset, but please just read the problem set at https://cs50.harvard.edu/x/2020/psets/1/hello/ and follow all the instructions","",""
+"381840470814490624","Dale#7314","09-May-20 01:52 PM","pset1 Hello is there to show you the process most psets will take, creating folders and files, writing your code, checking your work and finally submitting it","",""
+"707728142067957792","cdc20#6769","09-May-20 02:13 PM","Angela, it looks like you have made your own program that does something beyond what is required to pass this assignment. So it's great that you're experimenting with doing different things with code, but to complete these weekly problem sets you need to just write programs that meet the specific requirements listed.","",""
+"700087140192878602","angela#1379","09-May-20 02:19 PM","thanks alot","",""
+"700087140192878602","angela#1379","09-May-20 02:19 PM","welcome to mario..","",""
+"700087140192878602","angela#1379","09-May-20 05:42 PM","@cdc20 yeah i over do. I got confused seeing ""please add more comments word😀","",""
+"700087140192878602","angela#1379","09-May-20 05:42 PM","But thanks all for all your help starting my mario now","",""
+"708797319033782383","MarioKStrauss#4502","10-May-20 01:26 AM","hello! i seem to be stuck on an issue. im following the hello instructions exactly but i seem to be getting a syntax error message involving the last "")"" bracket on my code.","https://cdn.discordapp.com/attachments/703143784137097266/708807112364523540/unknown.png",""
+"707728142067957792","cdc20#6769","10-May-20 01:36 AM","Mario you seem to be typing C into the terminal","",""
+"707728142067957792","cdc20#6769","10-May-20 01:36 AM","The big window above is where your code goes (although switch back to the tab for hello.c)","",""
+"707728142067957792","cdc20#6769","10-May-20 01:37 AM","And the terminal is where you type commands to the system to compile and run your code","",""
+"238784058627325953","S4nie#4759","10-May-20 02:02 AM","@Islique I am not experienced but have tested the waters with online python course and a Matlab uni course. The feelings I felt when I saw how C worked, intimidated me","",""
+"540555808103071771","Singh#7170","10-May-20 02:05 AM","hello","",""
+"380185588898201602","9855#7243","10-May-20 02:39 AM","@Zolso","","scarfOMEGA (1),smug (1)"
+"708797319033782383","MarioKStrauss#4502","10-May-20 03:16 AM","@cdc20 OH! ok thank you!","",""
+"393480172638044160","[IHL]Xenophloxic#9179","10-May-20 04:50 AM","My ide isn't letting me ""make"" hello.c Yes I know, I'm not done, but still.","https://cdn.discordapp.com/attachments/703143784137097266/708858490592034916/SPOILER_unknown.png",""
+"409623218517704705","Thien#0976","10-May-20 05:21 AM","you need to change your directory","",""
+"409623218517704705","Thien#0976","10-May-20 05:21 AM","type ""cd pset1"" and then ""cd hello""
+based on what I see in your IDE","",""
+"437308195376070658","Argros#7737","10-May-20 05:29 AM","i could use some help with this as this is my first time using cs50 ide      ~/pset1/hello/ $ clang hello.c
+/tmp/hello-c72445.o: In function `main':
+hello.c:(.text+0x19): undefined reference to `get_string'
+clang-7: error: linker command failed with exit code 1 (use -v to see invocation)
+i have #include <cs50.h> at the top so not sure the issue","",""
+"211261070185070602","Bobby#3076","10-May-20 05:30 AM","Try typing ""make hello""","",""
+"437308195376070658","Argros#7737","10-May-20 05:33 AM","make hello
+clang -ggdb3 -O0 -std=c11 -Wall -Werror -Wextra -Wno-sign-compare -Wno-unused-parameter -Wno-unused-variable -Wshadow    hello.c  -lcrypt -lcs50 -lm -o hello","",""
+"437308195376070658","Argros#7737","10-May-20 05:33 AM","error","",""
+"437308195376070658","Argros#7737","10-May-20 05:53 AM","thanks bobby","",""
+"211261070185070602","Bobby#3076","10-May-20 06:05 AM","Hmm, I'm not sure then. Still getting the error? I'm googling around trying to figure it out...","",""
+"269227960156946454","GhostDragon#7128","10-May-20 06:09 AM","@Argros did you put #include cs50.h at the top?","",""
+"211261070185070602","Bobby#3076","10-May-20 06:16 AM","They said they did. That was my first thought too.","",""
+"393480172638044160","[IHL]Xenophloxic#9179","10-May-20 06:28 AM","@Thien thank you","",""
+"437308195376070658","Argros#7737","10-May-20 07:26 AM","@Bobby so i found a solution bobby, i found a command prompt that manually links up my file to the cs50 library, longer command type but got it done thanks a ton man, submitted and now just finishing up my credit submission","",""
+"708417175035314237","youngboss#1142","10-May-20 11:20 PM","Who just started this course?","",""
+"493272809372385290","sergio285#9197","11-May-20 01:37 AM","i, and i dont have any idea about how goings this course","",""
+"707142971107049503","Aduro-wura#8331","11-May-20 01:38 AM","hi","",""
+"707142971107049503","Aduro-wura#8331","11-May-20 01:39 AM","youngboss i just did and don't know whats going","",""
+"393854278764068875","curiouskiwi#1671","11-May-20 01:39 AM","","https://cdn.discordapp.com/attachments/703143784137097266/709172854020767845/getting_started_cs50x.png",""
+"707142971107049503","Aduro-wura#8331","11-May-20 01:51 AM","thanks","",""
+"707142971107049503","Aduro-wura#8331","11-May-20 01:52 AM","how do i find my classmates","",""
+"709173923115434035","KeshavGanesh#1219","11-May-20 02:08 AM","@malan  hello","",""
+"393854278764068875","curiouskiwi#1671","11-May-20 02:48 AM","@Aduro-wura they are here in this server, or in Slack, or reddit, or Facebook group, etc.  That's a link to http://cs50.edx.org/communities","",""
+"503218640749854720","Korphil_TAG#5146","11-May-20 02:52 AM","When I try to use check50, I get the error ""*Make sure your username and/or password are valid and check50 is enabled for your account. To enable check50, please go to https://submit.cs50.io in your web browser and try again. If you're using GitHub two-factor authentication, you'll need to create and use a personal access token with the ""repo"" scope instead of your password. See https://cs50.ly/github-2fa for more information!*""","",""
+"393854278764068875","curiouskiwi#1671","11-May-20 02:56 AM","@Korphil_TAG when you go to that first link, what do you see?","",""
+"503218640749854720","Korphil_TAG#5146","11-May-20 02:57 AM","I see this","https://cdn.discordapp.com/attachments/703143784137097266/709192391915208744/unknown.png",""
+"393854278764068875","curiouskiwi#1671","11-May-20 02:59 AM","ok and when you type in your username/password in the terminal when running check50, are you sure you are using the correct password (and you are typing it in, not pasting it?)","",""
+"503218640749854720","Korphil_TAG#5146","11-May-20 03:00 AM","yup","",""
+"393854278764068875","curiouskiwi#1671","11-May-20 03:01 AM","and do you see this okay?  http://github.com/me50/KorphilTAG ?","",""
+"393854278764068875","curiouskiwi#1671","11-May-20 03:02 AM","if you do, then best to email sysadmins@cs50.harvard.edu with your details and someone on the team can check why it's not working","",""
+"503218640749854720","Korphil_TAG#5146","11-May-20 03:02 AM","never mind","",""
+"503218640749854720","Korphil_TAG#5146","11-May-20 03:02 AM","It just decided to work","",""
+"393854278764068875","curiouskiwi#1671","11-May-20 03:02 AM","ok","",""
+"503218640749854720","Korphil_TAG#5146","11-May-20 03:02 AM","Thanks for the help!","","👍 (1)"
+"637494446513979404","IshBoii#4168","11-May-20 06:56 AM","peace everyone! sorry for the primitive question. I'm just getting started in the course ... I see someone was also having the same problem, not sure how it was resolved tho. Would appreciate the insight","https://cdn.discordapp.com/attachments/703143784137097266/709252527291367484/unknown.png",""
+"269227960156946454","GhostDragon#7128","11-May-20 06:58 AM","@IshBoii it is stdio.h not studio.h","","👍🏼 (1)"
+"637494446513979404","IshBoii#4168","11-May-20 06:59 AM","....","",""
+"637494446513979404","IshBoii#4168","11-May-20 07:00 AM","https://tenor.com/view/the-simpsons-homer-simpson-good-bye-bye-hide-gif-4983317","","😆 (1)"
+"637494446513979404","IshBoii#4168","11-May-20 07:01 AM","thanks a ton@GhostDragon","",""
+"269227960156946454","GhostDragon#7128","11-May-20 07:01 AM","No problem I made that error at first as well don’t worry","","😆 (2),👍 (1)"
+"688797416035450976","MAF#2599","11-May-20 06:25 PM","Hi ... I have a question...Will be virtual classes?...zoom conferences or something..? ...if you read this have a good day !","",""
+"505476936688992277","inconcinnus#6717","11-May-20 09:38 PM","yes, Office Hours via Zoom","",""
+"555172460664979466","RoacraftGames#3283","11-May-20 10:09 PM","Hello!  #cs50","",""
+"515255906272018432","＄ᙎɩᖇしʓ#5948","11-May-20 11:05 PM","Error
+
+Syntax error: main.lua:17: unexpected symbol near ']'
+
+
+
+Traceback
+
+[C]: at 0x0fb0d550
+[C]: in function 'require'
+[C]: in function 'xpcall'
+[C]: in function 'xpcall'","",""
+"515255906272018432","＄ᙎɩᖇしʓ#5948","11-May-20 11:05 PM","This means what exactly?","",""
+"705479034808696905","julesybab#7284","11-May-20 11:54 PM","Hi all. I've looked back to try to solve this issue, but the only advice i've seen is to use make instead of clang, but it still won't link the library. What am I doing wrong here?","https://cdn.discordapp.com/attachments/703143784137097266/709508639567904828/Screen_Shot_2020-05-11_at_3.50.51_PM.png",""
+"393854278764068875","curiouskiwi#1671","11-May-20 11:58 PM","@julesybab that red dot in the tab means your file is unsaved.  Save before trying to make.","",""
+"705479034808696905","julesybab#7284","11-May-20 11:59 PM","Thanks! That did it.","",""
+"338082010830471168","Mellowie#0966","12-May-20 12:35 AM","> make hello
+> clang -ggdb3 -O0 -std=c11 -Wall -Werror -Wextra -Wno-sign-compare -Wno-unused-parameter -Wno-unused-variable -Wshadow    hello.c  -lcrypt -lcs50 -lm -o hello
+@Argros did you figure out that error? I'm stuck on that too","",""
+"404970589187473409","TheBrsrkr#9039","12-May-20 12:49 AM","Hi, I hit the ' key by accident when typing ls so it was ls' and now instead of $ at the beginning its > and I can't get back to the directory. Can anyone help?","",""
+"393854278764068875","curiouskiwi#1671","12-May-20 12:50 AM","type the key again and hit enter","",""
+"404970589187473409","TheBrsrkr#9039","12-May-20 12:53 AM","Okay thanks","",""
+"404970589187473409","TheBrsrkr#9039","12-May-20 12:56 AM","When I run the file now it says hello word/n instead of making a new line, am I supposed to out it outside the quotes?","",""
+"269227960156946454","GhostDragon#7128","12-May-20 12:56 AM","it should be a \ not a /","",""
+"404970589187473409","TheBrsrkr#9039","12-May-20 12:57 AM","Oh I never noticed that, thanks","",""
+"404970589187473409","TheBrsrkr#9039","12-May-20 01:20 AM","This is what I have in my notes, but when I type it the program asks for your name twice and only gives yiu the second answer. What am I doing wrong here? Should I put string answer first?","https://cdn.discordapp.com/attachments/703143784137097266/709530316762644520/JPEG_20200511_181912.jpg",""
+"404970589187473409","TheBrsrkr#9039","12-May-20 01:21 AM","Here's a better quality picture","https://cdn.discordapp.com/attachments/703143784137097266/709530532886741022/JPEG_20200511_182049.jpg",""
+"696707413956362240","luobreg#5003","12-May-20 01:31 AM","Hi everybody, do you know why I'm getting this error?
+~/pset1/hello/ $ clang hello.c
+/usr/bin/../lib/gcc/x86_64-linux-gnu/7.4.0/../../../x86_64-linux-gnu/crt1.o: In function `_start':
+(.text+0x20): undefined reference to `main'
+clang-7: error: linker command failed with exit code 1 (use -v to see invocation)","",""
+"702282942591926322","ForPurpose#3916","12-May-20 01:32 AM","hey guys, I started intro to CS a few weeks ago and I pick up on things pretty quickly. If someone wants to help me make something amazing in scratch let me know.","",""
+"702282942591926322","ForPurpose#3916","12-May-20 01:34 AM","I'm already doing it myself, but if someone happens to have a particular aptitude for music as well, you can message me","",""
+"404970589187473409","TheBrsrkr#9039","12-May-20 01:35 AM","@luobreg did you type the whole thing or was the ~pset1/hello/ there before?","",""
+"696707413956362240","luobreg#5003","12-May-20 01:35 AM","It was there","",""
+"404970589187473409","TheBrsrkr#9039","12-May-20 01:35 AM","When you type ls do you see hello. C?","",""
+"696707413956362240","luobreg#5003","12-May-20 01:35 AM","Yes","",""
+"696707413956362240","luobreg#5003","12-May-20 01:36 AM","And it's not ""unsaved"", I saw someone getting this error here before","",""
+"404970589187473409","TheBrsrkr#9039","12-May-20 01:36 AM","Yeah, that was me I think","",""
+"404970589187473409","TheBrsrkr#9039","12-May-20 01:37 AM","Try CD first then try again","",""
+"696707413956362240","luobreg#5003","12-May-20 01:40 AM","it's not working 😕","",""
+"404970589187473409","TheBrsrkr#9039","12-May-20 01:44 AM","When in doubt, refresh","",""
+"696707413956362240","luobreg#5003","12-May-20 01:45 AM","Nope 😅","",""
+"404970589187473409","TheBrsrkr#9039","12-May-20 01:54 AM","I would start over then, mine went away when I just did everything over","",""
+"696707413956362240","luobreg#5003","12-May-20 02:03 AM","I solved it 😅  I forgot to actually write the code so I think I had nothing to compile","",""
+"696707413956362240","luobreg#5003","12-May-20 02:03 AM","I skipped that step","",""
+"404970589187473409","TheBrsrkr#9039","12-May-20 02:22 AM","Lol","",""
+"291294687673974784","Superlake#2649","12-May-20 04:56 AM","Hi!","",""
+"291294687673974784","Superlake#2649","12-May-20 04:56 AM","so","",""
+"291294687673974784","Superlake#2649","12-May-20 04:56 AM","","https://cdn.discordapp.com/attachments/703143784137097266/709584874511794256/unknown.png",""
+"291294687673974784","Superlake#2649","12-May-20 04:57 AM","I don't know what i'm doing wrong currently, but i'd like to fix it lol","",""
+"291294687673974784","Superlake#2649","12-May-20 04:57 AM","I'm at the point where my code is written, and i need to list it, before i compile it.","",""
+"291294687673974784","Superlake#2649","12-May-20 04:58 AM","Could i have some advice? when I tell it ls, it moves to the next line, instead of Typing out Hello.c in the terminal, as i saw above","",""
+"291294687673974784","Superlake#2649","12-May-20 04:58 AM","thanks!","",""
+"430262064892870678","JoJoMan42#6824","12-May-20 05:49 AM","you didnt write a semicolon and the end","",""
+"291294687673974784","Superlake#2649","12-May-20 05:50 AM","gotcha","",""
+"291294687673974784","Superlake#2649","12-May-20 05:51 AM","so, i cleared that program, and pasted in the one from the Cs50 website","",""
+"291294687673974784","Superlake#2649","12-May-20 05:51 AM","it has the semicolon","",""
+"291294687673974784","Superlake#2649","12-May-20 05:51 AM","But how do i tell it to list?","",""
+"291294687673974784","Superlake#2649","12-May-20 05:51 AM","wait","",""
+"291294687673974784","Superlake#2649","12-May-20 05:53 AM","I guess using the pasted one fixed it","",""
+"291294687673974784","Superlake#2649","12-May-20 05:53 AM","Sorry!","",""
+"291294687673974784","Superlake#2649","12-May-20 05:54 AM","Thank you for the help!","",""
+"291294687673974784","Superlake#2649","12-May-20 06:05 AM","I got it!!!","",""
+"709613485444694049","cachibala#9236","12-May-20 07:24 AM","hello! my name is Cachibala N Domingos, its my first time in this discussion group. I am taking my first step in the technology industry and my goal is to learn as much from everyone.","",""
+"435661306121420800","HamletJr#0917","12-May-20 08:01 AM","hello there!","",""
+"287930159951118339","Selly#0987","12-May-20 08:18 AM","h i","",""
+"709094873407684659","Alvaro#1135","12-May-20 10:12 AM","plz no hate lol i'm farely new to this but so far i'm enjoying it my question is where am I going wrong on this i feel so lost lol any help would be appreciated","https://cdn.discordapp.com/attachments/703143784137097266/709664356153163856/Screen_Shot_2020-05-12_at_12.08.41_AM.png",""
+"430262064892870678","JoJoMan42#6824","12-May-20 10:23 AM","do the command `make hello` and then `./hello`","",""
+"430262064892870678","JoJoMan42#6824","12-May-20 10:23 AM","it should work","",""
+"709094873407684659","Alvaro#1135","12-May-20 10:29 AM","Oooo yes fixed it thank you","",""

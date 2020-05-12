@@ -1,0 +1,341 @@
+AuthorID,Author,Date,Content,Attachments,Reactions
+"531961213681270794","Spylee01#9961","18-Jan-20 05:21 AM","Hi, is there any way for me to access a specific updates distro?","",""
+"531961213681270794","Spylee01#9961","18-Jan-20 05:21 AM","For mario 3 I need the distro for the protgen","",""
+"531961213681270794","Spylee01#9961","18-Jan-20 05:32 PM","@staff","",""
+"531961213681270794","Spylee01#9961","19-Jan-20 07:16 PM","hello @staff ? ^^","",""
+"393854278764068875","curiouskiwi#1671","19-Jan-20 10:32 PM","there's only the one version (at the end) of the distro code.","",""
+"165837829287575552","September#5047","13-Feb-20 06:21 PM","Hi, I've made sure to re-check my code with the tutorial in mario0, but I can't seem to figure out why my screen has this odd lines. Is this a hardware issue?","https://cdn.discordapp.com/attachments/661709059702915082/677549932000837634/unknown.png",""
+"342054148012769284","kappilino#9875","07-Mar-20 02:25 PM","Have the same issue. But it occures only when the the map moves.","",""
+"342054148012769284","kappilino#9875","07-Mar-20 02:32 PM","No, now after programming the translate function it occures also on the not animated version. Even if i comment all the animation functionality out. Very weird.","",""
+"342054148012769284","kappilino#9875","07-Mar-20 02:48 PM","OK...i have found the issue. The initialization of the map object must be after the setDefaultFilter function. In mario0 the the initialization is before it. I do not know why it works there, but not in our versions.","",""
+"342054148012769284","kappilino#9875","09-Mar-20 02:09 PM","Next problem in mario3. If I generate the world in the map class, in the while function creates always a gap on the last position on the right of the map. Because the condition x < self.mapWidth is false there. 
+A second problem, the else clause at the end of the loop, which creates a 2 tile gap, is theoretically capable of creating an endless gap. Because there is no condition that prevent to generate one 2-tile-gap after a 2-tile-gap.","",""
+"599198875806334986","Hades#2274","14-Mar-20 02:18 PM","When you make the pyramid in the assignment, Would i be made out of the bricks tile? Because the spritesheet provided in the distribution file doesn't have a tile similar to the tiles seen in the marion10 video.","",""
+"677215146694803458","pbrouse#8651","30-Mar-20 03:58 PM","@Hades This is my assumption and how I am working on doing it. I haven’t seen anything stating otherwise","",""
+"418804878656274434","SvejKelej#4184","01-Apr-20 08:18 PM","@brian i would like to study some arabic please🇸🇦","",""
+"104640431534383104","Ripley#2540","04-Apr-20 04:13 PM","I'm just starting with mario0 so maybe this question is answered down the line, but we're filling half the screen with blank and half the screen with bricks","",""
+"104640431534383104","Ripley#2540","04-Apr-20 04:13 PM","But on the image we se like 80% blank and 20% bricks","",""
+"104640431534383104","Ripley#2540","04-Apr-20 04:13 PM","that means we have map offscreen?","",""
+"104640431534383104","Ripley#2540","04-Apr-20 04:14 PM","Like, bricks should continue where the red lines are?","https://cdn.discordapp.com/attachments/661709059702915082/695984576350257212/unknown.png",""
+"387292479675826176","omarbeendeaded#8736","05-Apr-20 11:42 PM","@staff in mario7 I think he forgets to set dx to zero if no button was pressed","",""
+"387292479675826176","omarbeendeaded#8736","05-Apr-20 11:42 PM","So when you press one button it just continues on its own","",""
+"304690705996054528","Krish12003#8752","11-Apr-20 04:19 AM","```Error
+
+Map.lua:34: attempt to index local 'self' (a number value)
+
+
+Traceback
+
+Map.lua:34: in function 'getTile'
+Map.lua:43: in function 'render'
+main.lua:36: in function 'draw'
+[C]: in function 'xpcall'```
+
+```lua
+function Map:getTile(x, y)
+    return self.tiles[(y - 1) * self.mapWidth + x]
+end
+```
+
+Why am I getting this error?","",""
+"304690705996054528","Krish12003#8752","11-Apr-20 04:19 AM","my tiles object is defined as follows: `self.tiles = {}`","",""
+"304690705996054528","Krish12003#8752","11-Apr-20 04:19 AM","I'm just following allong Mario 0","",""
+"304690705996054528","Krish12003#8752","11-Apr-20 11:27 PM","I figured it out, when I was calling the function I was using `.` instead of `:`","",""
+"553279963894382622","novikorisnik#3534","12-Apr-20 02:06 AM","can I have a little help with Mario problem set here? I have two issues, one is a bug with drawing pyramid and one issue is related to flag animation","",""
+"553279963894382622","novikorisnik#3534","12-Apr-20 02:10 AM","sometimes I have pyramid like this, or with one tile block less, but I can't figure it out why","https://cdn.discordapp.com/attachments/661709059702915082/698671305876176987/Super_Mario_50.png",""
+"684652492256051221","asmat#3174","17-Apr-20 02:19 PM","Error
+
+Map.lua:12: attempt to call field 'tiles' (a nil value)
+
+
+Traceback
+
+Map.lua:12: in function 'init'
+Class.lua:75: in function 'Map'
+main.lua:15: in function 'load'
+[C]: in function 'xpcall'
+[C]: in function 'xpcall'","",""
+"684652492256051221","asmat#3174","17-Apr-20 02:19 PM","i am at mario0","",""
+"684652492256051221","asmat#3174","17-Apr-20 02:19 PM","followed every step he did but i ended up with this error","",""
+"684652492256051221","asmat#3174","17-Apr-20 02:20 PM","my code of Map.lua so far as in mario0
+Map = Class{}
+
+TILE_BRICK = 1
+TILE_EMPTY = 4
+
+function Map:init()
+    self.spritesheet = love.graphics.newImage('graphics/spritesheet.png')
+    self.tileWidth = 16
+    self.tileHeight = 16
+    self.mapWidth = 30
+    self.mapHeight = 28
+    self.tiles{}
+
+    self.tileSprites = generateQuads(self.spritesheet, self.tileWidth, self.tileHeight)
+
+    -- filling the map with empty tiles
+    for y = 1, self.mapHeight / 2 do
+        for x = 1, self.mapWidth do
+            self:setTile(x, y, TILE_EMPTY)
+        end
+    end
+
+    -- starts halfway down the map, populates with bricks
+    for y = self.mapHeight/2, self.mapHeight do
+        for x = 1, self.mapWidth do
+            self:setTile(x, y, TILE_BRICK)
+        end
+    end
+end
+
+function Map:setTile(x, y, tile)
+    self.tiles[(y - 1) * self.mapWidth + x] = tile
+end
+
+function Map:getTile(x, y)
+    return  self.tiles[(y - 1) * self.mapWidth + x]
+end
+
+function Map:update(dt)
+    
+end
+
+function Map:render()
+    for y = 1, self.mapHeight do
+        for x = 1, self.mapWidth do
+            love.graphics.draw(self.spritesheet, self.tileSprites[self:getTile(x, y)], (x - 1) * self.tileWidth, (y - 1) * self.tileHeight)
+        end
+    end
+end","",""
+"684652492256051221","asmat#3174","17-Apr-20 04:25 PM","love 11.3 
+VSCode 1.44","",""
+"230721716412874753","Vince#6486","17-Apr-20 05:10 PM","> Hi, I've made sure to re-check my code with the tutorial in mario0, but I can't seem to figure out why my screen has this odd lines. Is this a hardware issue?
+@September He addresses this issue in the videos actually, it's caused by the frames loading at a fractional value, he (and you) can solve it using the math.floor function in the render call","",""
+"230721716412874753","Vince#6486","17-Apr-20 05:10 PM","@asmat if you get an error code that says 'nil value' it means that the variable you are calling hasn't been initialised","",""
+"230721716412874753","Vince#6486","17-Apr-20 05:11 PM","Just from reading the error message, I think you're calling the variable 'tiles' when you should be calling 'tile'","",""
+"230721716412874753","Vince#6486","17-Apr-20 05:11 PM","my mistake, you've got a typo in line 12","",""
+"230721716412874753","Vince#6486","17-Apr-20 05:12 PM","you put 'self.tiles{}' when it should be 'self.tiles = {}'","",""
+"684652492256051221","asmat#3174","17-Apr-20 05:12 PM","thanks Vince","",""
+"684652492256051221","asmat#3174","17-Apr-20 05:15 PM","i have been reading and compairing it with the clip and somehow everytime i could not see the = missing there just one min before you typed i noticed it was missing just by reading past messages and read Krish12003's 12th april message and i found out what i have done","",""
+"230721716412874753","Vince#6486","17-Apr-20 05:17 PM","yeah, this track is pretty heavy imo (compared to web which I did first)","",""
+"684652492256051221","asmat#3174","17-Apr-20 05:17 PM","now i can go to mario1 atlast","",""
+"230721716412874753","Vince#6486","17-Apr-20 05:17 PM","Introduces some pretty big topics such as Object Oriented Programming and a lot of function calling etc","",""
+"684652492256051221","asmat#3174","17-Apr-20 05:17 PM","i am doing this then will go to web","",""
+"684652492256051221","asmat#3174","17-Apr-20 05:17 PM","yes","",""
+"684652492256051221","asmat#3174","17-Apr-20 05:18 PM","after web will try Android and ios","",""
+"230721716412874753","Vince#6486","17-Apr-20 05:19 PM","not to mention that this one introduces an entirely new language whereas web uses python and a small bit of JavaScript","",""
+"230721716412874753","Vince#6486","17-Apr-20 05:19 PM","yeah I'm gonna do Android and iOS afterwards too","",""
+"684652492256051221","asmat#3174","17-Apr-20 05:20 PM","i managed to get pong done it was fairly easy as compaired to mario","",""
+"230721716412874753","Vince#6486","17-Apr-20 05:21 PM","yeah, the assignments themselves are pretty straight-forward and easy but the content itself is a lot more challenging","",""
+"684652492256051221","asmat#3174","17-Apr-20 05:22 PM","yes it is","",""
+"684652492256051221","asmat#3174","17-Apr-20 05:22 PM","hope we pull off","",""
+"230721716412874753","Vince#6486","18-Apr-20 01:41 AM","the nice thing about the mario assignment is that there is a lot you can add yourself","",""
+"230721716412874753","Vince#6486","18-Apr-20 01:41 AM","like a death state etc","",""
+"230721716412874753","Vince#6486","18-Apr-20 01:41 AM","there's a lot of unused content in the distribution","",""
+"482128850948456448","Radiant_snipe#2381","19-Apr-20 06:48 AM","Hey","",""
+"482128850948456448","Radiant_snipe#2381","19-Apr-20 06:49 AM","Can someone explain what is pygame and where to use it and how to use it","",""
+"482128850948456448","Radiant_snipe#2381","19-Apr-20 06:49 AM","My friend wants to know and I’m not sure how to explain","",""
+"248946557544693760","EvilDunk73#2111","19-Apr-20 08:49 AM","Where can we get the distribution code for each iteration of mario?","",""
+"684652492256051221","asmat#3174","19-Apr-20 10:02 AM","there is only one distribution i found and that is the assignment","",""
+"684652492256051221","asmat#3174","19-Apr-20 10:03 AM","i have been following the clip and i pause and pause to copy the code while they explain","",""
+"684652492256051221","asmat#3174","19-Apr-20 10:03 AM","if you need i can send it here","",""
+"684652492256051221","asmat#3174","19-Apr-20 10:04 AM","i have completed mario4 and started on mario5","",""
+"684652492256051221","asmat#3174","19-Apr-20 10:05 AM","mario 0","https://cdn.discordapp.com/attachments/661709059702915082/701327571438141451/mario0.rar",""
+"684652492256051221","asmat#3174","19-Apr-20 10:05 AM","mario 1","https://cdn.discordapp.com/attachments/661709059702915082/701327655298924554/mario1.rar",""
+"684652492256051221","asmat#3174","19-Apr-20 10:06 AM","mario 2","https://cdn.discordapp.com/attachments/661709059702915082/701327744872611911/mario2.rar",""
+"684652492256051221","asmat#3174","19-Apr-20 10:15 AM","mario 3","https://cdn.discordapp.com/attachments/661709059702915082/701330198947168286/mario3.rar",""
+"684652492256051221","asmat#3174","19-Apr-20 10:16 AM","mario 4","https://cdn.discordapp.com/attachments/661709059702915082/701330263833051149/mario4.rar",""
+"684652492256051221","asmat#3174","19-Apr-20 10:16 AM","so far i  have extracted these from the clips","",""
+"684652492256051221","asmat#3174","19-Apr-20 10:31 AM","mario 5","https://cdn.discordapp.com/attachments/661709059702915082/701334223549890600/mario5.rar",""
+"684652492256051221","asmat#3174","19-Apr-20 11:51 AM","mario 6","https://cdn.discordapp.com/attachments/661709059702915082/701354254320926730/mario6.rar",""
+"684652492256051221","asmat#3174","19-Apr-20 09:39 PM","mario 7","https://cdn.discordapp.com/attachments/661709059702915082/701502230947430430/mario7.rar",""
+"684652492256051221","asmat#3174","19-Apr-20 09:43 PM","> mario 7
+@asmat I had to make changes in walking self.dx = -MOVE_SPEED
+back to what it was in mario6 cause it was not stopping once i clicked 'a' or 'd' so for both i had to change back to self.x = self.x - MOVE_SPEED * dt
+and 
+self.x = self.x + MOVE_SPEED * dt","",""
+"684652492256051221","asmat#3174","19-Apr-20 09:43 PM","in clip mario7 they used self.dx","",""
+"684652492256051221","asmat#3174","19-Apr-20 09:44 PM","#####################################################
+will work on mario8 tomorrow and will upload it","",""
+"554876169363652620","gimmetechtip#6299","20-Apr-20 10:25 AM","Hey, I got flag generation working but whenever I try pyramid generation, the love window does not respond","",""
+"554876169363652620","gimmetechtip#6299","20-Apr-20 10:33 AM","this is my code","https://cdn.discordapp.com/attachments/661709059702915082/701696950197682236/Map.lua",""
+"684652492256051221","asmat#3174","21-Apr-20 11:51 AM","-- testing for the pyramid start
+        self:setTile(self.mapWidth - 5, self.mapHeight / 2 - 4, TILE_BRICK)
+        self:setTile(self.mapWidth - 6, self.mapHeight / 2 - 3, TILE_BRICK)
+        self:setTile(self.mapWidth - 7, self.mapHeight / 2 - 2, TILE_BRICK)
+        self:setTile(self.mapWidth - 8, self.mapHeight / 2 - 1, TILE_BRICK)
+
+        self:setTile(self.mapWidth - 5, self.mapHeight / 2 - 3, TILE_BRICK)
+        self:setTile(self.mapWidth - 6, self.mapHeight / 2 - 2, TILE_BRICK)
+        self:setTile(self.mapWidth - 7, self.mapHeight / 2 - 1, TILE_BRICK)
+
+        
+        self:setTile(self.mapWidth - 5, self.mapHeight / 2 - 2, TILE_BRICK)
+        self:setTile(self.mapWidth - 6, self.mapHeight / 2 - 1, TILE_BRICK)
+
+        self:setTile(self.mapWidth - 5, self.mapHeight / 2 - 1, TILE_BRICK)
+        -- creates column of tiles going to bottom of map
+        for y = self.mapHeight / 2, self.mapHeight do
+            self:setTile(x, y, TILE_BRICK)
+        end
+        -- next vertical scan line
+        x = x + 1
+
+        -- end of pyramid test","",""
+"684652492256051221","asmat#3174","21-Apr-20 11:52 AM","i am getting pyramid this way but i dont like this method how can i shrink it like a loop or something","",""
+"684652492256051221","asmat#3174","21-Apr-20 08:13 PM","how can i call a function in player.lua from main.lua","",""
+"684652492256051221","asmat#3174","21-Apr-20 08:13 PM","function winningMessage()
+    scoreFont = love.graphics.newFont('font.ttf', 32)
+    love.graphics.setFont(scoreFont)
+    love.graphics.print(""You Win!"", VIRTUAL_WIDTH / 2 - 50, 
+        VIRTUAL_HEIGHT / 3)    
+end","",""
+"684652492256051221","asmat#3174","21-Apr-20 08:14 PM","trying to call in player.lua when player touch the flag pole","",""
+"684652492256051221","asmat#3174","21-Apr-20 08:14 PM","self.main:winningMessage()","",""
+"684652492256051221","asmat#3174","21-Apr-20 08:14 PM","get error","",""
+"684652492256051221","asmat#3174","21-Apr-20 08:15 PM","Error
+
+Player.lua:242: attempt to index field 'main' (a nil value)
+
+
+Traceback
+
+Player.lua:242: in function 'checkLeftCollision'
+Player.lua:132: in function <Player.lua:109>
+Player.lua:179: in function 'update'
+Map.lua:208: in function 'update'
+main.lua:90: in function 'update'
+[C]: in function 'xpcall'","",""
+"684652492256051221","asmat#3174","21-Apr-20 09:11 PM","i am totaly blank at the moment","",""
+"684652492256051221","asmat#3174","21-Apr-20 09:11 PM","how can i animate flag","",""
+"684652492256051221","asmat#3174","21-Apr-20 09:13 PM","when player touch the pole sound is played","",""
+"684652492256051221","asmat#3174","21-Apr-20 09:14 PM","but cant get the flag animation and display message","",""
+"684652492256051221","asmat#3174","21-Apr-20 09:16 PM","pyramid","https://cdn.discordapp.com/attachments/661709059702915082/702221212599976026/unknown.png",""
+"684652492256051221","asmat#3174","21-Apr-20 09:17 PM","pole but no flag","https://cdn.discordapp.com/attachments/661709059702915082/702221475486105600/unknown.png",""
+"684652492256051221","asmat#3174","21-Apr-20 09:59 PM","['jumping'] = Animation({
+            texture = self.texture,
+            frames = {
+                love.graphics.newQuad(32, 0, 16, 20, self.texture:getDimensions())
+            }
+        }),
+        ['flag'] = Animation({
+            flagPole = self.flagPole,
+            flames = {
+                love.graphics.newQuad(13, 0, 16, 16, self.flagPole:getDimensions()),
+                love.graphics.newQuad(14, 0, 16, 16, self.flagPole:getDimensions()),
+                love.graphics.newQuad(15, 0, 16, 16, self.flagPole:getDimensions())
+            }
+        })","",""
+"684652492256051221","asmat#3174","21-Apr-20 10:00 PM","i am try to animate flag by doing so i get an error","",""
+"684652492256051221","asmat#3174","21-Apr-20 10:01 PM","Error
+
+Player.lua:309: bad argument #2 to 'draw' (Quad expected, got nil)
+
+
+Traceback
+
+[C]: in function 'draw'
+Player.lua:309: in function 'render'
+Map.lua:247: in function 'render'
+main.lua:107: in function 'draw'
+[C]: in function 'xpcall'","",""
+"684652492256051221","asmat#3174","21-Apr-20 10:02 PM","line 309 is following","",""
+"684652492256051221","asmat#3174","21-Apr-20 10:02 PM","-- draw sprite with scale factor and offsets
+    love.graphics.draw(self.texture, self.currentFrame, math.floor(self.x + self.xOffset),
+        math.floor(self.y + self.yOffset), 0, scaleX, 1, self.xOffset, self.yOffset)","",""
+"684652492256051221","asmat#3174","21-Apr-20 10:02 PM","this is all in player.lua","",""
+"684652492256051221","asmat#3174","21-Apr-20 10:34 PM","anyone please help","",""
+"248946557544693760","EvilDunk73#2111","22-Apr-20 05:30 AM","Thank you asmat!","",""
+"683447864533581953","Gibraltar001#1182","22-Apr-20 03:59 PM","Guys, does anyone know how i can continue generating blocks infinitely? I need this for my final project.","",""
+"587359341586415629","Bruno#9057","23-Apr-20 07:37 AM","@Gibraltar001 in self.mapWidth write a big number like 1 thousand or 5 thousand which the player probably wont reach making it seem like its infinite like in the dinosaur game","",""
+"683447864533581953","Gibraltar001#1182","23-Apr-20 11:51 AM","Thank you i did it this exact same way","",""
+"587359341586415629","Bruno#9057","23-Apr-20 04:27 PM","","https://cdn.discordapp.com/attachments/661709059702915082/702873318017204284/20200423_092637.jpg",""
+"587359341586415629","Bruno#9057","23-Apr-20 04:27 PM","I did it","",""
+"587359341586415629","Bruno#9057","23-Apr-20 04:27 PM","Finally","",""
+"587359341586415629","Bruno#9057","23-Apr-20 04:58 PM","does anyone know how to close the game once you touch the flag","",""
+"587359341586415629","Bruno#9057","23-Apr-20 04:58 PM","pls help","",""
+"356440200253276163","P̷̆́a̷̅͠n̷̑̽d̵̕͜a̷͌͘Ḃ̸̈ó̵͝ḯ̸̍#4137","23-Apr-20 05:08 PM","i thin","",""
+"356440200253276163","P̷̆́a̷̅͠n̷̑̽d̵̕͜a̷͌͘Ḃ̸̈ó̵͝ḯ̸̍#4137","23-Apr-20 05:08 PM","waiy","",""
+"356440200253276163","P̷̆́a̷̅͠n̷̑̽d̵̕͜a̷͌͘Ḃ̸̈ó̵͝ḯ̸̍#4137","23-Apr-20 05:08 PM","wait* which coding r u using?","",""
+"356440200253276163","P̷̆́a̷̅͠n̷̑̽d̵̕͜a̷͌͘Ḃ̸̈ó̵͝ḯ̸̍#4137","23-Apr-20 05:09 PM","if lua i think that u need to have the end command","",""
+"587359341586415629","Bruno#9057","23-Apr-20 05:10 PM","Yeah, im using lua","",""
+"356440200253276163","P̷̆́a̷̅͠n̷̑̽d̵̕͜a̷͌͘Ḃ̸̈ó̵͝ḯ̸̍#4137","23-Apr-20 05:11 PM","like the command for what happens when it touches the flag irdk the code yet but ill b at that lecture soon","",""
+"683447864533581953","Gibraltar001#1182","23-Apr-20 05:37 PM","https://drive.google.com/file/d/1_vtnoEsWNWFqBdm3P_cMqgYk-_hFII4h/view","",""
+"683447864533581953","Gibraltar001#1182","23-Apr-20 05:37 PM","This is my final project! What do you think?","",""
+"127541905822187520","DGChem#7441","24-Apr-20 07:29 PM","To be really honest, I am watching his videos and he is way too fast to really get the ideas behind the code. Sometimes it is really valuable what he says and it's well explained, but sometimes he just rushes through everything like it is normal to a learning student 😅 
+I will stay with this track as I've already finished (and understood) pong. But mario is really a punch","",""
+"409623218517704705","Thien#0976","26-Apr-20 12:13 AM","> mario 3
+@asmat hello, can anyone explain, why TILE_EMPTY = -1
+in mario 2, TILE_EMPTY = 4","",""
+"409623218517704705","Thien#0976","26-Apr-20 12:34 AM","in mario 0, he said that we could do ""for y = 1, self.mapHeight/2""
+but actually it didn't work, I had been checking so hard to figure it out.
+when I fixed it into ""for y = 1, self.mapHeight"" (erase ""/2"")
+it worked
+so confusing and hard to understand","https://cdn.discordapp.com/attachments/661709059702915082/703720719745417236/unknown.png",""
+"409623218517704705","Thien#0976","26-Apr-20 12:37 AM","I did try to code a long with the teacher, step by step, I also notice that he made a few modifications outside of the video, but I decided not to care about them, let see what happened.
+And my program didn't work because of ""self.mapHeight/2"" instead of ""self.mapHeight""","",""
+"216818987701501962","heX#5289","26-Apr-20 10:52 AM","I'm also having a problem with mario0 after coding along with him, afterwards I checked all the files against his code two more times again but still couldn't figure out what went wrong
+
+>with the exact same code as his my application prints a whole page of empty tiles
+>with the brick tiles supposedly starting from the 2nd or 3rd row (self.mapHeight - 27 or 26), the application prints a whole page of brick tiles
+>with brick tiles supposedly starting from the 4th row it prints this: ?????","https://cdn.discordapp.com/attachments/661709059702915082/703876178540232734/Capture.PNG",""
+"216818987701501962","heX#5289","26-Apr-20 10:53 AM","the code is like this (ignore the comments in green)","https://cdn.discordapp.com/attachments/661709059702915082/703876385479065681/Ca.PNG",""
+"409623218517704705","Thien#0976","27-Apr-20 12:29 AM","what're you trying to do?","",""
+"409623218517704705","Thien#0976","27-Apr-20 12:31 AM","I don't think your picture resulted from your code","",""
+"216818987701501962","heX#5289","27-Apr-20 05:05 AM","mario 0 was supposed to print empty tiles for the top half and bricks for the bottom half","",""
+"409623218517704705","Thien#0976","27-Apr-20 06:56 AM","Does this count :))","https://cdn.discordapp.com/attachments/661709059702915082/704179158158278666/Super_Mario_50_2020-04-26_20-55-58.mp4",""
+"409623218517704705","Thien#0976","27-Apr-20 07:19 AM","I'm not so proud of this but I struggled a lot to come up with just this","",""
+"703906393903857736","chuinzer#6740","28-Apr-20 03:02 PM","https://tenor.com/view/congrats-minions-gif-4115631","",""
+"692111168524910642","Graefetyp#4189","28-Apr-20 05:22 PM","hey, you might have any idea. my flag is at the right position and moving between frame 1 and 2 but the third frame is missing","",""
+"692111168524910642","Graefetyp#4189","28-Apr-20 05:25 PM","","https://cdn.discordapp.com/attachments/661709059702915082/704699812649500672/Bildschirmvideo_aufnehmen_2020-04-28_um_16.24.40.mov",""
+"484307336505327631","aayannabeel123!#3427","29-Apr-20 06:52 AM","hey cs50,  can I have the link for the images","",""
+"127541905822187520","DGChem#7441","29-Apr-20 11:34 PM","Oh man I'm really stuck with that problem... how do you implement the flag waving??","",""
+"248946557544693760","EvilDunk73#2111","01-May-20 01:08 AM","How can you print text to the screen, I have a function that checks when you have collided with the flag (it works, I tested it by making the game quit on contact) but when I try to print to the screen it doesnt appear","",""
+"248946557544693760","EvilDunk73#2111","01-May-20 01:08 AM","","https://cdn.discordapp.com/attachments/661709059702915082/705541205768929381/unknown.png",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","01-May-20 01:11 AM","its not appearing because youre not running that in the love.draw() function","",""
+"248946557544693760","EvilDunk73#2111","01-May-20 01:11 AM","","https://cdn.discordapp.com/attachments/661709059702915082/705541799007223858/unknown.png",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","01-May-20 01:11 AM","hmmm","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","01-May-20 01:12 AM","add a love.event.exit() before the font stuff","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","01-May-20 01:12 AM","and see if the game quits when the condition is supposed to be met","",""
+"248946557544693760","EvilDunk73#2111","01-May-20 01:17 AM","worked, the condition is met when I hit the pole","",""
+"248946557544693760","EvilDunk73#2111","01-May-20 01:17 AM","the game exits when I hit the pole","https://cdn.discordapp.com/attachments/661709059702915082/705543474845319179/unknown.png",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","01-May-20 01:18 AM","Okay then the condition is functional, something is wrong with the font or the printing","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","01-May-20 01:18 AM","Step one, i would say, would be initializing the font variable in the love.load() bit","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","01-May-20 01:18 AM","So you only do it once","",""
+"248946557544693760","EvilDunk73#2111","01-May-20 01:18 AM","ah","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","01-May-20 01:20 AM","and id also check to make sure fonts/font.ttf is the correct directory and file name","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","01-May-20 01:20 AM","If it is, im really not sure","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","01-May-20 01:20 AM","seems like it should work","",""
+"248946557544693760","EvilDunk73#2111","01-May-20 02:03 AM","I figured it out","",""
+"248946557544693760","EvilDunk73#2111","01-May-20 02:03 AM","because we associated player with map when we initialized map, we have to call ""if map.player:checkVictory() then"" instead of what I wrote","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","01-May-20 02:04 AM","ahh i see","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","01-May-20 02:04 AM","Nice job, i didnt realize","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","01-May-20 06:58 AM","Fun fact, on 144hz monitors, math.floor(self.camX/Y + SCROLL_SPEED * dt) is always 0","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","01-May-20 06:58 AM","I had to swap to math.ceil to get the way he coded it to work","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","01-May-20 07:02 AM","(if SCROLL_SPEED is less than something like a few hundred)","",""
+"684652492256051221","asmat#3174","01-May-20 08:56 AM","> @asmat hello, can anyone explain, why TILE_EMPTY = -1
+> in mario 2, TILE_EMPTY = 4
+@Thien sorry for the late reply i was heaving inertent problems lately. -1 is automatically points to nothing so it wont draw anything","",""
+"684652492256051221","asmat#3174","01-May-20 09:17 AM","i used PLAYER_STATUS = 'win'  in function Player:checkLeftCollision()  and  function Player:checkRightCollision() in Player.lua file when player colide with flag pole,   PLAYER_STATUS = 'playing'  was globle veriable diclaryed in main.lua file and then       
+ if PLAYER_STATUS == 'win' then
+        scoreFont = love.graphics.newFont('fonts/font.ttf', 32)
+        love.graphics.setFont(scoreFont)
+        love.graphics.print(""You Win!"", VIRTUAL_WIDTH / 2 - 50, 
+            VIRTUAL_HEIGHT / 3) 
+
+        love.graphics.draw(flagImage, flagFrames[flagCurrentFrame], VIRTUAL_WIDTH + 28, 163)
+    end
+used this if then statement in love.draw() in main.lua to draw winning message","",""
+"395174542403829760","Orante#6576","05-May-20 01:03 PM","Can mario really go past the screen (left and right)?","",""
+"395174542403829760","Orante#6576","05-May-20 01:14 PM","Can i also extend the map witdh?","",""
+"127541905822187520","DGChem#7441","05-May-20 03:55 PM","How does the staff check whether the solution we provide is right? In theory I could submit an empty file.","",""
+"607564909206568990","-oLo-#3796","05-May-20 05:58 PM","> Can i also extend the map witdh?
+@Orante 
+Yes, I did and it was accepted.","",""
+"395174542403829760","Orante#6576","05-May-20 05:58 PM","Thank you","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","05-May-20 06:33 PM","I added a button to change it pre-generation","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","05-May-20 06:34 PM","It's hard to add something and have it get your score tanked, good additions can't hurt really","",""
+"395272669353869315","Oreo#2457","09-May-20 03:12 AM","anyone know how to make it so the player can't go out of bounds of the map on either side? I want to trigger an event if the player hits the right side of the map aka put the player into the pyramid/flag part of the map","",""
+"395272669353869315","Oreo#2457","09-May-20 03:13 AM","i tried if self.player.x >= self.mapHeight then but nothing","",""
+"395272669353869315","Oreo#2457","09-May-20 03:13 AM","mapWidth*","",""
+"395272669353869315","Oreo#2457","09-May-20 03:14 AM","and mapWidthPixels","",""

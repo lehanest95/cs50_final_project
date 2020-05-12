@@ -1,0 +1,1648 @@
+AuthorID,Author,Date,Content,Attachments,Reactions
+"145867449105907712","Ahmed4119#3690","17-Nov-19 04:55 AM","db.execute('INSERT INTO students (first, middle, last, house, birth) VALUES (?, ?, ?, ?, ?)', name[0], None, name[1], i['house'], i['birth'])","",""
+"145867449105907712","Ahmed4119#3690","17-Nov-19 04:56 AM","Is this the proper way of putting NULL in sql db through python CS50 module ?","",""
+"145867449105907712","Ahmed4119#3690","17-Nov-19 04:56 AM","Because when i typed SELECT middle FROM students; in sqlite3","",""
+"145867449105907712","Ahmed4119#3690","17-Nov-19 04:56 AM","I got this","",""
+"145867449105907712","Ahmed4119#3690","17-Nov-19 04:56 AM","middle
+
+
+
+
+
+
+
+
+Lucius
+
+Molly
+
+
+James
+Jean
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Bilius","",""
+"145867449105907712","Ahmed4119#3690","17-Nov-19 04:57 AM","many white spaces, Should that be the result ?","",""
+"393854278764068875","curiouskiwi#1671","17-Nov-19 04:58 AM","yes","",""
+"145867449105907712","Ahmed4119#3690","18-Nov-19 05:23 AM","Thanks ^_^","",""
+"112625916781277184","yama#2710","16-Dec-19 03:55 PM","opened students.db with sqlite3 and doing `SELECT * FROM students;` returns nothing","",""
+"112625916781277184","yama#2710","16-Dec-19 04:08 PM","oh lmao i guess there's nothing in it yet","",""
+"166251424873709570","Grimrath#0353","02-Jan-20 11:11 PM","I'm having trouble inserting NULL into a column with db.execute("""").  From what i gather from the documentation you simply enter NULL as the value when inserting into the database. But I get NULL as the return value while check50 expects None. 
+Can someone please point me in the right direction?","",""
+"393854278764068875","curiouskiwi#1671","02-Jan-20 11:19 PM","presumably, you've got some variable names like `first`, `middle`, `last`, that you are using to populate the rows?  I'd set `middle=None` if  there is no middle name for that row.","",""
+"166251424873709570","Grimrath#0353","03-Jan-20 10:40 AM","Because None is the Python equivalent to SQL's NULL and that must be used when using :variables in an sql.execute command?
+`db.execute(""INSERT INTO table (col1, col2) VALUES (:value1, 'value2')"",`
+`           value1=None)`
+
+But when using sqlite3 I need to type out NULL?
+`INSERT INTO table (col1, col2) VALUES (NULL, 'value2');`","",""
+"166251424873709570","Grimrath#0353","03-Jan-20 11:14 AM","I just got on my computer and could test it and this is indeed the case. setting :value1=""NULL"" will just insert the string literal ""NULL"", not a NULL value. It's so easy to feel stupid sometimes. Thanks a bunch for your help @curiouskiwi much appreciated!","",""
+"333930283101323264","Anya L#2162","04-Jan-20 01:15 AM","Does this version of sqlite take AUTO_INCREMENT on table creation? I tried to use it (in syntax AUTOINCREMENT too), but it throws an error. Should I look for a mistake on my end, or is this feature just unavailable?","",""
+"393854278764068875","curiouskiwi#1671","04-Jan-20 05:52 AM","@Anya L yes, it does.  You shouldn't be creating any tables in this Houses problem, but if you look at the schema for the students table that was created for you:  ```CREATE TABLE characters (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    first VARCHAR(255),
+    middle VARCHAR(255),
+    last VARCHAR(255),
+    house VARCHAR(10),
+    birth INTEGER
+);
+```  you can see that it has used AUTOINCREMENT for the `id` column.","",""
+"333930283101323264","Anya L#2162","04-Jan-20 09:42 AM","Huh, it might not have liked the order of commands then... 
+Well, it says in the task that we can assume all columns except ""middle"" will be filled in - and I was like, it's a challenge to make them NOT NULL, of course :) Anyway, I've submitted it without AUTOINCREMENT for full points and will experiment some more in my own time. Thank you for letting me know what's what, @curiouskiwi!","",""
+"393854278764068875","curiouskiwi#1671","04-Jan-20 09:45 AM","@Anya L still unsure why you are creating any new tables.  There's no reason to do so for this problem.","",""
+"333930283101323264","Anya L#2162","04-Jan-20 09:46 AM","@curiouskiwi To see if I can is not good enough? *pouts*","",""
+"393854278764068875","curiouskiwi#1671","04-Jan-20 09:47 AM","go for it! 🙂","","😜 (1)"
+"494833253166088192","saleh#5557","05-Jan-20 03:58 PM","hello","",""
+"494833253166088192","saleh#5557","05-Jan-20 04:01 PM","i cant figure out what's wrong with my import.py code, it creates the students table but is unable to insert the data from the csv file","",""
+"494833253166088192","saleh#5557","05-Jan-20 04:01 PM","shall i send the code here for u guys to see?","",""
+"393854278764068875","curiouskiwi#1671","05-Jan-20 07:37 PM","your import.py should not be creating any tables.","",""
+"333930283101323264","Anya L#2162","05-Jan-20 09:43 PM","Oops, I might have confused ppl. Don't go creating any tables unless you actively want to! And if you do, make sure your id field is either autoincremented or filled in by your loop; it won't insert data otherwise.","",""
+"575580654352334848","Dhairye Kataria#8587","09-Jan-20 04:34 AM","Has anyone completed roster.py","",""
+"634578357371011092","beinginvisible#2912","10-Jan-20 07:27 PM","my import.py function is working perfectly but I can't figure out how to SELECT and print the data in roster.py. I can't tell if my connection is working or not. Is there a way to test if the sql is connecting to the python code? Or maybe my problem is that I'm not properly printing the list of dicts being returned (but I have tried so 100s of different ways of printing the SQL results so I doubt its my printing of the list) Here is my code so far:     from cs50 import SQL
+from sys import argv, exit
+
+db = SQL(""sqlite:///students.db"")
+
+if len(argv) != 2:
+    print(""needs one and only one command line arg"")
+    exit(1)
+
+    rows = db.execute(""SELECT * FROM students"")
+
+
+    for x in rows:
+        for i in rows[x]:
+            print (rows[x][i])","",""
+"333930283101323264","Anya L#2162","10-Jan-20 07:45 PM","@beinginvisible This is not how loops in Python work; x is not an index, it's an element. E.g. 
+```for student in students:
+    print(student)  #-> prints out element of the list```
+And don't forget that your database has structure - using it will make your life easier, not harder.","",""
+"634578357371011092","beinginvisible#2912","10-Jan-20 08:00 PM","@Anya L Thanks Anya.  But, I have tried this iterative loop as well too and to no avail though. I was hoping that the [x] would be interpreted as a key. But I guess it is acting as an index.    By structure do you mean columns and rows?","",""
+"333930283101323264","Anya L#2162","10-Jan-20 08:14 PM","@beinginvisible Yes. And I believe, in lecture, David shows what is used to identify fields/columns, so you can figure out what syntax to use to access them, and how to plug them into your print statement. Hint: no numbered indexes need to be involved at all","",""
+"634578357371011092","beinginvisible#2912","10-Jan-20 08:15 PM","@Anya L ok thanks a lot!","","👍 (1)"
+"634578357371011092","beinginvisible#2912","10-Jan-20 09:59 PM","For anyone in the future, check the 2019/2020 week 7 lecture(https://cs50.harvard.edu/x/2020/weeks/7/) at around the 10 mins mark. For help with getting SQL values to python. Indentation matters a lot too!!!","",""
+"634578357371011092","beinginvisible#2912","13-Jan-20 08:51 AM","My programs are running properly (i.e. I can load the data into the database and retrieve the data and print it. But they won't pass the check50. The checker says that it is returning a blank list. Does anyone know why this is the case?","",""
+"393854278764068875","curiouskiwi#1671","13-Jan-20 08:53 AM","why are you hardcoding the csv file instead of taking it from the command line?","",""
+"393854278764068875","curiouskiwi#1671","13-Jan-20 08:54 AM","@beinginvisible (also, I've deleted your code so as to avoid spoiling it for others)","",""
+"634578357371011092","beinginvisible#2912","13-Jan-20 07:50 PM","@curiouskiwi I'm not sure what you mean. I am only reading the csv file, not writing a new one. (Ok, sorry about that. Assuming that you've completed the pset, I can DM you my code, if need be.)","",""
+"393854278764068875","curiouskiwi#1671","13-Jan-20 08:12 PM","@beinginvisible you are hard coding the name of the csv file.  You should be reading whatever csv file the user provided as a command line argument.","",""
+"634578357371011092","beinginvisible#2912","13-Jan-20 08:15 PM","Ooooo yeah! that makes perfect sense now. Silly mistake. Thank you!","",""
+"288233641979412480","Seijin Leonhart#5264","21-Jan-20 01:17 AM","hey guys","",""
+"288233641979412480","Seijin Leonhart#5264","21-Jan-20 01:18 AM","can anyone tell me how does id work in db.execute ?","",""
+"288233641979412480","Seijin Leonhart#5264","21-Jan-20 01:19 AM","i'm currently using i and incrementing by myself as an id, on src code they use id but i don't understand the implementation","",""
+"288233641979412480","Seijin Leonhart#5264","21-Jan-20 01:19 AM","# Trim prefix from tconst
+id = int(row[""tconst""][2:])","",""
+"393854278764068875","curiouskiwi#1671","21-Jan-20 01:22 AM","not sure what you mean by ""how does id work in db.execute""?  what src code is this? context?","",""
+"456091522144796693","camps#1886","21-Jan-20 02:09 AM","Done! I saw your hardcoding in the house post but didnt relate 😦","",""
+"456091522144796693","camps#1886","21-Jan-20 02:09 AM","Thanks again!","",""
+"288233641979412480","Seijin Leonhart#5264","21-Jan-20 04:55 AM","hi @curiouskiwi sorry for the late reply, it's on import4.py, i remember that Dr. Malan said something about id and a function which automatically increment the id so we don't have to implement it by ourselves on SQL, but i don't find the part in the video now,","",""
+"288233641979412480","Seijin Leonhart#5264","21-Jan-20 04:57 AM","i have another question if i'm not asking too much, i'm at the very end of houses, i'm stuck on the last terms of the query about sorting","",""
+"288233641979412480","Seijin Leonhart#5264","21-Jan-20 04:57 AM","|||requested_otp = db.execute(""""""SELECT first, middle, last, birth
+                                FROM students
+                                JOIN names
+                                ON students.id = names.student_id
+                                WHERE house = ?
+                                ORDER BY last"""""", house_name)||","",""
+"288233641979412480","Seijin Leonhart#5264","21-Jan-20 04:58 AM","here's my query but i don't understand how to implement what is asked for","",""
+"288233641979412480","Seijin Leonhart#5264","21-Jan-20 04:58 AM","it's like a condition but there are no terms for that in SQL, there is AND and OR but i don't see how i could use those to sort by last name and first name when they share the same last name","",""
+"393854278764068875","curiouskiwi#1671","21-Jan-20 05:09 AM","why do you have more than one table? @Seijin Leonhart","",""
+"393854278764068875","curiouskiwi#1671","21-Jan-20 05:10 AM","> Your program should query the `students` table in the `students.db` database for all of the students in the specified house.","",""
+"393854278764068875","curiouskiwi#1671","21-Jan-20 05:12 AM","and that table was defined for you:  ```
+sqlite> .schema
+CREATE TABLE students (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    first VARCHAR(255),
+    middle VARCHAR(255),
+    last VARCHAR(255),
+    house VARCHAR(10),
+    birth INTEGER
+);
+CREATE TABLE sqlite_sequence(name,seq);
+sqlite> ```","",""
+"393854278764068875","curiouskiwi#1671","21-Jan-20 05:14 AM","so you should be querying that table and printing out the students who are in that house, sorting by last name and then first name.  If you have more than one sort column, you can simply put them in order with commas   `ORDER BY col1, col2`","",""
+"393854278764068875","curiouskiwi#1671","21-Jan-20 05:15 AM","you would have done that ""order by"" 2 fields in the Movies problem, as I remember.","",""
+"288233641979412480","Seijin Leonhart#5264","21-Jan-20 05:33 AM","oh i see i think i deleted the code by mistake then because i had nothing, i did that because i wanted to play with relations and try to do something maybe cleaner, i'll implement that table then thank you @curiouskiwi, and also thank you for the answer, i tried that at first but it didn't produce the right output, it was probably because of my implementation, thank you again 🙂 you're seriously the hero we don't deserve i often see you help students","",""
+"288233641979412480","Seijin Leonhart#5264","21-Jan-20 05:46 AM","thanks again it took me 2 mins to rewrite my code with your table and it works well now 🙂","",""
+"240826012437446658","VokE-#4319","21-Jan-20 04:47 PM","Hi guys. I wanted to try using my own windows pc to do this problem instead of using CS50 IDE. Should I use command prompt as my terminal window?","",""
+"240826012437446658","VokE-#4319","21-Jan-20 04:49 PM","It doesn't recognize the ls command used to list files/directories","",""
+"240826012437446658","VokE-#4319","21-Jan-20 04:49 PM","Should I be using something else?","",""
+"288233641979412480","Seijin Leonhart#5264","21-Jan-20 08:11 PM","you need bash for windows in order to run linux commands, ls is one of those, although i thought ls was working on windows ?","",""
+"288233641979412480","Seijin Leonhart#5264","21-Jan-20 08:13 PM","anyway if you want to run linux commands you need bash and apparently WSL @VokE-  https://itsfoss.com/install-bash-on-windows/","",""
+"288233641979412480","Seijin Leonhart#5264","21-Jan-20 08:14 PM","else you can learn windows commands and use those instead of linux commands","",""
+"288233641979412480","Seijin Leonhart#5264","21-Jan-20 08:15 PM","or, you can use the powershell which accepts some linux command lines","",""
+"324522780252962816","Sinergy#7605","23-Jan-20 10:37 AM","I figured out why everyone was probably wanting to create tables, because I did the same thing.  I thoughtlessly included and ran
+
+open(""students.db"", ""w"").close()
+
+while i was still working from the lecture template.  I was distracted by managing the possibility of the command line argument not giving an appropriate csv file.  Time to get the pristine files again...","",""
+"324522780252962816","Sinergy#7605","23-Jan-20 09:10 PM","I'm a bit leery about just typing out the answer.  Have you:
+imported cs50 or SQL from cs50?
+Set db using cs50.SQL(...) or SQL(...) depending on import?
+can you post your db.execute(...) so I know where you're at with that?","",""
+"217012197119885313","Pango#4967","23-Jan-20 09:11 PM","Ahh yes pardon me, i didnt give such a good description. 1 sec ^^","",""
+"324522780252962816","Sinergy#7605","23-Jan-20 09:15 PM","ah I see","",""
+"324522780252962816","Sinergy#7605","23-Jan-20 09:19 PM","the general form of the safe use of db.execute is
+db.execute(""string of SQL that uses parameters from the database and replaces the values from your python code with '?'"", the values from your python code in order)
+In INSERT, the values just after 'db' should be the columns in the .db that you want to insert into","",""
+"324522780252962816","Sinergy#7605","23-Jan-20 09:20 PM","Also, since you haven't used {} within the string, it is attempting to insert into a column literally named ""fml[0]""","",""
+"217012197119885313","Pango#4967","23-Jan-20 09:21 PM","ohhhh! that makes so much sense XD Thank you!","",""
+"324522780252962816","Sinergy#7605","23-Jan-20 09:22 PM","np.  also fml, house and birth are overwritten every time it loops.  Each time they are evaluated, you need to insert them into the db","",""
+"217012197119885313","Pango#4967","23-Jan-20 09:24 PM","Ahh yess. Tried mixing around with the postion thinking that was the issue at first so that is why the execute is down there XD","",""
+"217012197119885313","Pango#4967","23-Jan-20 09:24 PM","tyvm ^^","",""
+"324522780252962816","Sinergy#7605","23-Jan-20 09:25 PM","yeah, I thought that was the case, and you probably had it inside the loop to start with, just nudging you back to code you can test a bit quicker 😄","","👍 (1)"
+"217012197119885313","Pango#4967","23-Jan-20 09:42 PM","@Sinergy Omg thank youuu sooo much! the relief! working perfectly 😄","",""
+"324522780252962816","Sinergy#7605","23-Jan-20 09:42 PM","^^","",""
+"393854278764068875","curiouskiwi#1671","23-Jan-20 09:47 PM","Glad you fixed it.  In the future, please don't post too much code publicly.  Use spoiler tags if you must.","",""
+"217012197119885313","Pango#4967","23-Jan-20 10:25 PM","Ahhh! right didnt think about that, will do 🙂","",""
+"663961814526328912","Reem#0587","26-Jan-20 02:47 PM","Hello all, I am pretty confident with my code for import and roster but when I submit the pset I get the following from check50 .. I don't know where the flaw could be and It doesn't look like Luna was imported incorrectly in the table .. am I missing something? any advice?","https://cdn.discordapp.com/attachments/639522223329378314/670972980855177226/Screen_Shot_2020-01-26_at_7.45.21_AM.png",""
+"663961814526328912","Reem#0587","26-Jan-20 02:47 PM","","https://cdn.discordapp.com/attachments/639522223329378314/670973042800721923/Screen_Shot_2020-01-26_at_7.40.37_AM.png",""
+"324522780252962816","Sinergy#7605","26-Jan-20 10:18 PM","This is the only one it tests for names with no middle name, so that's what's getting in the way.  I think the two things which can cause this step to fail are
+>You need to set the middle name to None in your python code, which will make it NULL in your db.  Not """"
+>When your write her full name, it needs to have just one space between the first and last name","","👍 (1)"
+"663961814526328912","Reem#0587","29-Jan-20 06:37 AM","@Sinergy Thank you for your response! I tried removing the """" I initially had 5/6 on check50 but after removing the quotation marks i got 1/6. The spaces are good .. could there be another reason?","",""
+"324522780252962816","Sinergy#7605","29-Jan-20 06:39 AM","I think there could be a miscommunication.  Rather than setting the middle name to
+""""
+you should set it to
+None","",""
+"663961814526328912","Reem#0587","29-Jan-20 06:41 AM","Let me give that another try then","",""
+"324522780252962816","Sinergy#7605","29-Jan-20 06:43 AM","you will also want to consider how this will affect your printing the full name out in roster.py","",""
+"663961814526328912","Reem#0587","29-Jan-20 06:44 AM","You are right! I got it thank you!! I mistakenly commented out one of the lines after i removed the """" thats why it returned 1/6","",""
+"324522780252962816","Sinergy#7605","29-Jan-20 06:45 AM","good job","","👍 (1)"
+"291997042127929356","peabody#4435","30-Jan-20 09:53 AM","how would i go about access the individual first, middle and last names within the split thing","",""
+"291997042127929356","peabody#4435","30-Jan-20 10:10 AM","nvm got it lmao","",""
+"291997042127929356","peabody#4435","30-Jan-20 10:17 AM","aight so i can get the first and last names using the following:","",""
+"109970729109323776","jackshow#0001","30-Jan-20 12:05 PM","How am I supposed to order the output?","",""
+"109970729109323776","jackshow#0001","30-Jan-20 12:07 PM","","https://cdn.discordapp.com/attachments/639522223329378314/672382394736705546/unknown.png",""
+"109970729109323776","jackshow#0001","30-Jan-20 12:08 PM","It's not ordered alphabetically or by date, how am I supposed to replicate that output?","",""
+"109970729109323776","jackshow#0001","30-Jan-20 12:11 PM","Oh, I'm blind. It's ordered alphabetically by last name","",""
+"234679095378706433","Blauelf#6622","30-Jan-20 01:40 PM","Last name, and secondarily first name. That's what the specification says.","",""
+"291997042127929356","peabody#4435","31-Jan-20 06:31 PM","hey guys, so im using split in the following way to access the words in my string of names:","",""
+"291997042127929356","peabody#4435","31-Jan-20 06:31 PM","for row in reader:
+    words = row['name'].split()
+    for i in range(len(words)):
+        print(words[i], end="" | "")
+    print(f""\n"")","",""
+"291997042127929356","peabody#4435","31-Jan-20 06:31 PM","would this work with the insert? i ask because if i manually change the i in words[i] to words[2], i get an index out of range error","",""
+"291997042127929356","peabody#4435","31-Jan-20 06:31 PM","insert into db*","",""
+"291997042127929356","peabody#4435","31-Jan-20 06:35 PM","ayy aight i have a way to avoid that","",""
+"301617245598121985","Firelods#6251","31-Jan-20 06:35 PM","you shloud do len(words)-1","",""
+"291997042127929356","peabody#4435","31-Jan-20 06:35 PM","this works now:","",""
+"291997042127929356","peabody#4435","31-Jan-20 06:36 PM","for row in reader:
+    words = row['name'].split()
+    if len(words) > 2:
+        db.execute(#todo)
+    else:
+        db.execute(#todo)
+
+    print(f""\n"")","",""
+"291997042127929356","peabody#4435","31-Jan-20 06:36 PM","cause thinking ahead to the db insert, i need a way to distinguish those who have a middle name and those who dont and insert stuff accordingly","",""
+"301617245598121985","Firelods#6251","31-Jan-20 06:36 PM","because imagine ur list is [1,2,3,4,5]","",""
+"301617245598121985","Firelods#6251","31-Jan-20 06:36 PM","the len of this list is 5","",""
+"291997042127929356","peabody#4435","31-Jan-20 06:36 PM","i got rid of the second for loop entirely","",""
+"291997042127929356","peabody#4435","31-Jan-20 06:36 PM","right i got that","",""
+"301617245598121985","Firelods#6251","31-Jan-20 06:37 PM","but the last element of the list is 4","",""
+"291997042127929356","peabody#4435","31-Jan-20 06:37 PM","yeh ik","",""
+"291997042127929356","peabody#4435","31-Jan-20 06:37 PM","with split tho, it starts at -1 (which means all things included)","",""
+"291997042127929356","peabody#4435","31-Jan-20 06:37 PM","i think","",""
+"301617245598121985","Firelods#6251","31-Jan-20 06:40 PM","never seen a thing which start at -1 but ok","",""
+"291997042127929356","peabody#4435","31-Jan-20 06:42 PM","also guys, what exactly is import.py supposed to do","",""
+"291997042127929356","peabody#4435","31-Jan-20 06:43 PM","like is it just supposed to enter in names or also the house and dob?","",""
+"291997042127929356","peabody#4435","31-Jan-20 06:47 PM","aight import.py is a success lmao","",""
+"291997042127929356","peabody#4435","31-Jan-20 07:30 PM","uhh this is kinda embarrasing","",""
+"291997042127929356","peabody#4435","31-Jan-20 07:30 PM","how to i format my strings","",""
+"291997042127929356","peabody#4435","31-Jan-20 07:30 PM","print(currow['first'], currow['last'], currow['birth'])","",""
+"291997042127929356","peabody#4435","31-Jan-20 07:30 PM","this is my current output string","",""
+"291997042127929356","peabody#4435","31-Jan-20 07:30 PM","how do i get it with the f string format?","",""
+"301617245598121985","Firelods#6251","31-Jan-20 07:33 PM","don't understand your question","",""
+"291997042127929356","peabody#4435","31-Jan-20 07:33 PM","so rn my print statement does this:","",""
+"291997042127929356","peabody#4435","31-Jan-20 07:33 PM","harry james potter, 1989","",""
+"291997042127929356","peabody#4435","31-Jan-20 07:34 PM","but i need it to do this:","",""
+"291997042127929356","peabody#4435","31-Jan-20 07:34 PM","harry james potter, born 1989","",""
+"291997042127929356","peabody#4435","31-Jan-20 07:34 PM","how","",""
+"301617245598121985","Firelods#6251","31-Jan-20 07:34 PM","just add born?","",""
+"291997042127929356","peabody#4435","31-Jan-20 07:35 PM","yeh and the comma","",""
+"301617245598121985","Firelods#6251","31-Jan-20 07:35 PM","print(currow['first'], currow['last'], 'born',currow['birth'])","",""
+"301617245598121985","Firelods#6251","31-Jan-20 07:36 PM","try it","",""
+"291997042127929356","peabody#4435","31-Jan-20 07:41 PM","thanks!","",""
+"291997042127929356","peabody#4435","31-Jan-20 07:41 PM","it works!","",""
+"301617245598121985","Firelods#6251","31-Jan-20 08:07 PM","i added you if you want more help mp me @peabody","",""
+"291997042127929356","peabody#4435","01-Feb-20 10:41 AM","nah i finished and submitted lmao","",""
+"291997042127929356","peabody#4435","01-Feb-20 10:41 AM","which track you going for?","",""
+"665886217623175187","randomone#1881","01-Feb-20 12:20 PM","for some reason when I db.execute, it eventually only writes the last line from the .csv to database.","https://cdn.discordapp.com/attachments/639522223329378314/673110301863968768/Screen_Shot_2020-02-01_at_1.17.23_pm.png",""
+"665886217623175187","randomone#1881","01-Feb-20 12:20 PM","","https://cdn.discordapp.com/attachments/639522223329378314/673110326434201611/Screen_Shot_2020-02-01_at_1.17.34_pm.png",""
+"665886217623175187","randomone#1881","01-Feb-20 12:22 PM","but when I just print(y/z) in python without db.execute - it works ok splits the ""name"" column and prints out all lines in both names separately... guessing what might be the reason, thanks...","",""
+"393854278764068875","curiouskiwi#1671","01-Feb-20 12:29 PM","your loop runs over all the rows but it continually overwrites y & z ... once the loop finishes, they contain the final name","",""
+"665886217623175187","randomone#1881","01-Feb-20 04:35 PM","@curiouskiwi thanks got that!","",""
+"665886217623175187","randomone#1881","01-Feb-20 04:35 PM","it all worked","",""
+"291997042127929356","peabody#4435","01-Feb-20 04:36 PM","also @randomone you're creating a table in the students.db that already has a students table","",""
+"291997042127929356","peabody#4435","01-Feb-20 04:36 PM","so why create the two tables?","",""
+"665886217623175187","randomone#1881","01-Feb-20 04:39 PM","@peabody yea I created my own table and then realised that the table was ""pre-created"" for us before, but all checked on CS50 anyways lmao)))","",""
+"665886217623175187","randomone#1881","01-Feb-20 04:39 PM",".schema is good to look at","",""
+"291997042127929356","peabody#4435","01-Feb-20 04:39 PM","ahaha lmao","",""
+"291997042127929356","peabody#4435","01-Feb-20 04:39 PM","yeh ik","",""
+"291997042127929356","peabody#4435","01-Feb-20 04:39 PM","ngl i wouldnt recommend running your import function more than once tho","",""
+"291997042127929356","peabody#4435","01-Feb-20 04:40 PM","so like run it, then view it with the builtin db browser in the ide","",""
+"291997042127929356","peabody#4435","01-Feb-20 04:40 PM","if its all good, then move on to roster","",""
+"291997042127929356","peabody#4435","01-Feb-20 04:40 PM","if not, clear the table out then start agian","",""
+"665886217623175187","randomone#1881","01-Feb-20 04:40 PM","why is that? it just creates itself again and again)))","",""
+"291997042127929356","peabody#4435","01-Feb-20 04:40 PM","cause if you keep running it, you'll be inserting duplicates","",""
+"665886217623175187","randomone#1881","01-Feb-20 04:41 PM","wait","",""
+"291997042127929356","peabody#4435","01-Feb-20 04:41 PM","no i meant if you werent creating a new table and simply inserting values into the prexisting db","",""
+"665886217623175187","randomone#1881","01-Feb-20 04:43 PM","yea, it recreates it again and again","",""
+"665886217623175187","randomone#1881","01-Feb-20 04:43 PM","just ran a CS50 again","",""
+"665886217623175187","randomone#1881","01-Feb-20 04:43 PM","and it all green on import at least","",""
+"665886217623175187","randomone#1881","01-Feb-20 04:43 PM","roster haven't started)","",""
+"291997042127929356","peabody#4435","01-Feb-20 04:45 PM","aight nice","",""
+"251371194962411521","ILYAS ML#0115","06-Feb-20 07:07 PM","i always check discord when i'm stuck and i find the solution without interacting with you guys","",""
+"251371194962411521","ILYAS ML#0115","06-Feb-20 07:08 PM","just wanna say thank you, i got 100% in pset 7","",""
+"675062557635248129","kate#6538","06-Feb-20 11:03 PM","""ModuleNotFoundError: No module named 'CS50'"": has anyone faced the problem after update50 has been removed from IDE?","",""
+"234679095378706433","Blauelf#6622","06-Feb-20 11:21 PM","Did you `import CS50` instead of `import cs50`?","","👍 (1)"
+"392717162797596672","Homosexual Toaster#6083","12-Feb-20 06:45 AM","for roster.py, how do i extract out the SQL results into python?","",""
+"393854278764068875","curiouskiwi#1671","12-Feb-20 06:48 AM","https://cs50.harvard.edu/x/2020/psets/7/houses/#hints","",""
+"392717162797596672","Homosexual Toaster#6083","12-Feb-20 06:56 AM","🤦 my bad! Thanks!","",""
+"392717162797596672","Homosexual Toaster#6083","12-Feb-20 06:58 AM","Now let's say I wanna
+SELECT * from students where first = (variable)
+
+Do I do
+```py
+inputstr = ""..."" 
+db.execute(""SELECT * from students WHERE  first =""?"" ORDER BY birth, ASC"", inputstr)```","",""
+"393854278764068875","curiouskiwi#1671","12-Feb-20 07:01 AM","let's say you wanted to get everyone born in 1992.   
+```Python
+results = db.execute(""SELECT * from students WHERE birth = ?"", 1992)```","",""
+"393854278764068875","curiouskiwi#1671","12-Feb-20 07:01 AM","or ```Python
+query = 1994
+results = db.execute(""SELECT * from students WHERE birth = ?"", query)```","",""
+"393854278764068875","curiouskiwi#1671","12-Feb-20 07:02 AM","so your example is almost right, but you don't want the "" "" around the ?","",""
+"393854278764068875","curiouskiwi#1671","12-Feb-20 07:04 AM","@Homosexual Toaster make sense?","",""
+"392717162797596672","Homosexual Toaster#6083","12-Feb-20 07:08 AM","Yes! Thank you so much!","",""
+"285408475457126400","Mendax#3549","13-Feb-20 09:32 AM","hi guys, I had run import.py a few times to test my code","",""
+"285408475457126400","Mendax#3549","13-Feb-20 09:33 AM","but now that i've gotten my python code correct, i realised the id from the students.db had been incrementing all the time","",""
+"285408475457126400","Mendax#3549","13-Feb-20 09:33 AM","so now my first student starts at id 81","",""
+"285408475457126400","Mendax#3549","13-Feb-20 09:33 AM","anyone know a way to completely reset a table in SQL?","",""
+"285408475457126400","Mendax#3549","13-Feb-20 09:40 AM","or would i just have to update each entry manually?","",""
+"285408475457126400","Mendax#3549","13-Feb-20 09:41 AM","tried and can't update the table dang hahah","",""
+"285408475457126400","Mendax#3549","13-Feb-20 10:46 AM","@curiouskiwi","",""
+"285408475457126400","Mendax#3549","13-Feb-20 11:00 AM","Also stuck on getting data from the students table into python","",""
+"285408475457126400","Mendax#3549","13-Feb-20 11:01 AM","i tried using list = db.execute(SELECT query) but nothing seems to be indexing into the list at all","",""
+"285408475457126400","Mendax#3549","13-Feb-20 11:01 AM","😮","",""
+"285408475457126400","Mendax#3549","13-Feb-20 11:02 AM","thing i dont understand is, what format are the tables in SQL stored as?","",""
+"285408475457126400","Mendax#3549","13-Feb-20 11:02 AM","are the csvs or tsv? or someothing different entirely?","",""
+"285408475457126400","Mendax#3549","13-Feb-20 11:04 AM","because if they arent csvs or tsv's we should'nt have to open them with a csv reader at all right?","",""
+"285408475457126400","Mendax#3549","13-Feb-20 11:05 AM","we should be able to just use db.execute to get whatever we want","",""
+"188578948937023488","Indra Reddy#2687","13-Feb-20 11:30 AM","> anyone know a way to completely reset a table in SQL?
+@Mendax 
+
+`DELETE FROM table_name`","",""
+"285408475457126400","Mendax#3549","13-Feb-20 11:32 AM","i tried that","",""
+"188578948937023488","Indra Reddy#2687","13-Feb-20 11:33 AM","> i tried using list = db.execute(SELECT query) but nothing seems to be indexing into the list at all
+@Mendax 
+
+list is python key word, using it as a variable is not a great idea.  db.execute returns a dict as far as I know.. Indexing might not work in this case..","",""
+"285408475457126400","Mendax#3549","13-Feb-20 11:33 AM","but it wont allow me to delete or write to the table","",""
+"285408475457126400","Mendax#3549","13-Feb-20 11:33 AM","apprently read only?","",""
+"285408475457126400","Mendax#3549","13-Feb-20 11:33 AM","maybe i should try it in my python code","",""
+"285408475457126400","Mendax#3549","13-Feb-20 11:33 AM","i mean i tried doing this as well","",""
+"285408475457126400","Mendax#3549","13-Feb-20 11:34 AM","list = []
+list = db.execute(SELECT query)","",""
+"188578948937023488","Indra Reddy#2687","13-Feb-20 11:34 AM","rename the variable.. it shouldn't be list","",""
+"285408475457126400","Mendax#3549","13-Feb-20 11:35 AM","i tried that too","",""
+"285408475457126400","Mendax#3549","13-Feb-20 11:36 AM","i call the variable database actually","",""
+"285408475457126400","Mendax#3549","13-Feb-20 11:36 AM","but i typed list here just for simplicity","","👍 (1)"
+"285408475457126400","Mendax#3549","13-Feb-20 11:36 AM","doesnt work","",""
+"285408475457126400","Mendax#3549","13-Feb-20 11:36 AM","whenever i print the list it returns an empty list sadly","",""
+"285408475457126400","Mendax#3549","13-Feb-20 11:36 AM","😦","",""
+"188578948937023488","Indra Reddy#2687","13-Feb-20 11:36 AM","try this `query = db.execute(SELECT query)` and then try `query[index]['column name']` to access the values in python code","",""
+"188578948937023488","Indra Reddy#2687","13-Feb-20 11:37 AM","> whenever i print the list it returns an empty list sadly
+@Mendax 
+
+sorry for asking this but do you have this line in roster.py 
+`db = SQL(""sqlite:///students.db"")`","",""
+"285408475457126400","Mendax#3549","13-Feb-20 11:38 AM","yes","","👍 (1)"
+"285408475457126400","Mendax#3549","13-Feb-20 11:56 AM","so yea still not sure why my db SELECT query isnt working","",""
+"285408475457126400","Mendax#3549","13-Feb-20 11:56 AM","could anyone see if there's a problem with it?","",""
+"285408475457126400","Mendax#3549","13-Feb-20 01:45 PM","turns out my old terminal was just stuck....","",""
+"285408475457126400","Mendax#3549","13-Feb-20 01:45 PM","reloaded the terminal and everything worked fine -.-","",""
+"159359521225965568","Jrn#4836","13-Feb-20 11:30 PM","I have a question regarding check50. Are the results generated by it 'final'?
+Seeing as I just got 5/6 even though both work fine","",""
+"393854278764068875","curiouskiwi#1671","13-Feb-20 11:31 PM","yes, check50 is the grader.","",""
+"159359521225965568","Jrn#4836","13-Feb-20 11:31 PM","Well, my error isn't really an error, just a different design choice","",""
+"159359521225965568","Jrn#4836","13-Feb-20 11:31 PM","","https://cdn.discordapp.com/attachments/639522223329378314/677627954607554570/DQ57ir6.png",""
+"159359521225965568","Jrn#4836","13-Feb-20 11:32 PM","None object vs me just immediately using 'NULL' for easier usage later on","",""
+"234679095378706433","Blauelf#6622","13-Feb-20 11:32 PM","A Python `None` would translate to a SQL `NULL` (which is different from the string `'NULL'`)","",""
+"159359521225965568","Jrn#4836","13-Feb-20 11:33 PM","So if I provide `None` to db.execute, it'll translate it to the SQL `NULL`?","",""
+"234679095378706433","Blauelf#6622","13-Feb-20 11:33 PM","Correct.","",""
+"159359521225965568","Jrn#4836","13-Feb-20 11:34 PM","Alright, thanks! I was just providing it 'NULL' as you probably guessed.","",""
+"376187384376852481","YoYoO#2555","15-Feb-20 06:09 AM","Simple question... where is the output suppose to be shown? Or is my terminal window not correct? It's showing ...> after each command.","https://cdn.discordapp.com/attachments/639522223329378314/678090541459832852/2.PNG",""
+"393854278764068875","curiouskiwi#1671","15-Feb-20 06:10 AM","you should be running the `cat` command in your terminal... not inside sqlite3","",""
+"393854278764068875","curiouskiwi#1671","15-Feb-20 06:11 AM","`~/pset7/movies/ $ cat 1.sql | sqlite3 movies.db `","",""
+"376187384376852481","YoYoO#2555","15-Feb-20 06:11 AM","How do I exit sqlite3?","",""
+"376187384376852481","YoYoO#2555","15-Feb-20 06:11 AM","Typing ^C doens't exit it","",""
+"393854278764068875","curiouskiwi#1671","15-Feb-20 06:13 AM","ctrl-d","","👍 (1)"
+"376187384376852481","YoYoO#2555","15-Feb-20 06:18 AM","What's the command to get rid of the column name?","",""
+"376187384376852481","YoYoO#2555","15-Feb-20 06:18 AM","","https://cdn.discordapp.com/attachments/639522223329378314/678092653274988554/3.PNG",""
+"376187384376852481","YoYoO#2555","15-Feb-20 06:18 AM","For example how would i not show that birth column header?","",""
+"393854278764068875","curiouskiwi#1671","15-Feb-20 06:19 AM","you can't","",""
+"393854278764068875","curiouskiwi#1671","15-Feb-20 06:20 AM","(you don't have to either)","",""
+"376187384376852481","YoYoO#2555","15-Feb-20 06:20 AM","","https://cdn.discordapp.com/attachments/639522223329378314/678093348568825866/4.PNG",""
+"376187384376852481","YoYoO#2555","15-Feb-20 06:21 AM","Doesn't that imply you can?","",""
+"393854278764068875","curiouskiwi#1671","15-Feb-20 06:26 AM","oh, sorry. I meant you don't have to and when check50 runs it will ignore them.","",""
+"393854278764068875","curiouskiwi#1671","15-Feb-20 06:26 AM","you can turn them off for your own testing if you want by running `.headers off`","",""
+"393854278764068875","curiouskiwi#1671","15-Feb-20 06:28 AM","@YoYoO ^^","",""
+"376187384376852481","YoYoO#2555","15-Feb-20 06:38 AM","@curiouskiwi gotcha","",""
+"376187384376852481","YoYoO#2555","15-Feb-20 06:38 AM","","https://cdn.discordapp.com/attachments/639522223329378314/678097861300322314/6.PNG",""
+"376187384376852481","YoYoO#2555","15-Feb-20 06:38 AM","Why is 2.9 specifically being spat out here?","",""
+"393854278764068875","curiouskiwi#1671","15-Feb-20 06:39 AM","you've asked for it","",""
+"393854278764068875","curiouskiwi#1671","15-Feb-20 06:39 AM","or do you mean, why is it 2.9?","",""
+"376187384376852481","YoYoO#2555","15-Feb-20 06:39 AM","Yeah look at the top I nowhere mentioned 2.9","",""
+"376187384376852481","YoYoO#2555","15-Feb-20 06:41 AM","I'm also not sure why the COUNT function isn't being lit up blue","",""
+"393854278764068875","curiouskiwi#1671","15-Feb-20 06:41 AM","2.9 is the last rating in the database","",""
+"393854278764068875","curiouskiwi#1671","15-Feb-20 06:42 AM","your color scheme uses that gray color for COUNT.","",""
+"376187384376852481","YoYoO#2555","15-Feb-20 06:43 AM","Hmm okay, I think it also might be because COUNT must be paired with the GROUP BY function","",""
+"393854278764068875","curiouskiwi#1671","15-Feb-20 06:43 AM","mine is like this:","https://cdn.discordapp.com/attachments/639522223329378314/678099152852221962/sql.png",""
+"393854278764068875","curiouskiwi#1671","15-Feb-20 06:44 AM","if you only want the count, then you shouldn't ask for the rating too","",""
+"393854278764068875","curiouskiwi#1671","15-Feb-20 06:44 AM","`select count(rating) from ratings;`","",""
+"393854278764068875","curiouskiwi#1671","15-Feb-20 06:44 AM","will give you just the count","",""
+"393854278764068875","curiouskiwi#1671","15-Feb-20 06:50 AM","@YoYoO ^^","",""
+"376187384376852481","YoYoO#2555","15-Feb-20 06:53 AM","Is there a law on the order of functions?","",""
+"376187384376852481","YoYoO#2555","15-Feb-20 06:53 AM","Like WHERE must go after SELECT but before FROM","",""
+"376187384376852481","YoYoO#2555","15-Feb-20 06:53 AM","Or something like that?","",""
+"393854278764068875","curiouskiwi#1671","15-Feb-20 06:56 AM","https://www.w3schools.com/sql/sql_where.asp","",""
+"376187384376852481","YoYoO#2555","15-Feb-20 06:59 AM","","https://cdn.discordapp.com/attachments/639522223329378314/678103000111120385/7.PNG",""
+"376187384376852481","YoYoO#2555","15-Feb-20 07:00 AM","","https://cdn.discordapp.com/attachments/639522223329378314/678103247642296330/8.PNG",""
+"376187384376852481","YoYoO#2555","15-Feb-20 07:00 AM","Tried a few combinations... removing the comma gives the second photo","",""
+"376187384376852481","YoYoO#2555","15-Feb-20 07:00 AM","Trying to count the amount of times 10.0 has ever been given.","",""
+"393854278764068875","curiouskiwi#1671","15-Feb-20 07:01 AM","if all you want is the count, don't ask for the individual rating column","",""
+"376187384376852481","YoYoO#2555","15-Feb-20 07:02 AM","does select have to be in the code everytime?","",""
+"393854278764068875","curiouskiwi#1671","15-Feb-20 07:02 AM","for example, if I want to select the count of all the movies, I might say ```select count(*) from movies;```","",""
+"376187384376852481","YoYoO#2555","15-Feb-20 07:02 AM","I noticed above when you wrote `select count(rating) from ratings;` you still included select but put nothing after it","",""
+"393854278764068875","curiouskiwi#1671","15-Feb-20 07:02 AM","I'm selecting the count","",""
+"376187384376852481","YoYoO#2555","15-Feb-20 07:06 AM","","https://cdn.discordapp.com/attachments/639522223329378314/678104704265224194/9.PNG",""
+"393854278764068875","curiouskiwi#1671","15-Feb-20 07:06 AM","did you look at this? https://www.w3schools.com/sql/sql_where.asp","",""
+"376187384376852481","YoYoO#2555","15-Feb-20 07:07 AM","Is there a reason why line 4 doesn't work?","",""
+"376187384376852481","YoYoO#2555","15-Feb-20 07:07 AM","Count the number of times that (10.0) appears in ratings?","",""
+"393854278764068875","curiouskiwi#1671","15-Feb-20 07:08 AM","look at the order in that page I linked","",""
+"376187384376852481","YoYoO#2555","15-Feb-20 07:09 AM","Yeah I did, I'm talking about line 4 which doesn't include the WHERE function","",""
+"376187384376852481","YoYoO#2555","15-Feb-20 07:09 AM","Can I not just say ""count the number of times ('10.0') appears in the ratings table""?","",""
+"393854278764068875","curiouskiwi#1671","15-Feb-20 07:11 AM","no","",""
+"393854278764068875","curiouskiwi#1671","15-Feb-20 07:11 AM","you have to use a WHERE","","👍 (1)"
+"393854278764068875","curiouskiwi#1671","15-Feb-20 08:38 AM","because it doesn't know if you want `id` from movies or from `stars`","",""
+"393854278764068875","curiouskiwi#1671","15-Feb-20 08:38 AM","because you've joined them","",""
+"376187384376852481","YoYoO#2555","15-Feb-20 08:38 AM","Ahhh okay","",""
+"376187384376852481","YoYoO#2555","15-Feb-20 08:39 AM","I thought it was because 'id' in people was used as a linking column to person_id in stars","",""
+"376187384376852481","YoYoO#2555","15-Feb-20 09:10 AM","(adding ""name = "" in front of helena doesnt change anything","",""
+"393854278764068875","curiouskiwi#1671","15-Feb-20 09:10 AM","because the name can't be both of those at the same time.  Just like in C you can't say `if (num == 5 & num == 6)`","",""
+"376187384376852481","YoYoO#2555","15-Feb-20 09:11 AM","Right, so what's the appropriate function?","",""
+"376187384376852481","YoYoO#2555","15-Feb-20 09:12 AM","The OR function would list movies either one of them has been in","",""
+"393854278764068875","curiouskiwi#1671","15-Feb-20 09:17 AM","There's a set of movies starring Johnny Depp.
+There's a set of movies starring Helena Bonham Carter.
+Your interest is in the intersection of those sets.","",""
+"376187384376852481","YoYoO#2555","15-Feb-20 09:26 AM","I can't think","",""
+"376187384376852481","YoYoO#2555","15-Feb-20 09:29 AM","Because each list doesn't have a name I don't know how to join them at `on`...","",""
+"393854278764068875","curiouskiwi#1671","15-Feb-20 09:29 AM","perhaps google ""sql intersection"" and see what you find","",""
+"376187384376852481","YoYoO#2555","15-Feb-20 09:31 AM","Apparently there's an INTERSECT operator but that doesn't show up?","",""
+"376187384376852481","YoYoO#2555","15-Feb-20 09:36 AM","There's an UNION operator but no INTERSECT one","",""
+"393854278764068875","curiouskiwi#1671","15-Feb-20 09:45 AM","https://www.tutorialspoint.com/sql/sql-intersect-clause.htm","",""
+"376187384376852481","YoYoO#2555","15-Feb-20 09:46 AM","~~Yeah I found that a while ago, but the INTERSECT operator is not support in SQL lite the one we have~~","",""
+"376187384376852481","YoYoO#2555","15-Feb-20 09:49 AM","Nevermind...","",""
+"376187384376852481","YoYoO#2555","15-Feb-20 09:50 AM","30 mins ago I thought the intersect function just didn't work for me (because didnt go blue) so I moved on... went back, type in intersect, pressed enter and it works 🤦‍♂️","",""
+"376187384376852481","YoYoO#2555","15-Feb-20 11:54 AM","How come the lists of size 2 are not succesfully have 'hi' inserted into them?","https://cdn.discordapp.com/attachments/639522223329378314/678177190411632640/16.PNG",""
+"376187384376852481","YoYoO#2555","15-Feb-20 11:55 AM","We can see on the right hand side the size of them remains at 2.","",""
+"234679095378706433","Blauelf#6622","15-Feb-20 12:21 PM","You get a new list each time you call `x.split()`","",""
+"376187384376852481","YoYoO#2555","15-Feb-20 12:29 PM","Is there a way to assign x.split() to a variable/list or something?","",""
+"376187384376852481","YoYoO#2555","15-Feb-20 12:29 PM","y = x.split() doesn't work","",""
+"234679095378706433","Blauelf#6622","15-Feb-20 12:49 PM","Why do you think it doesn't work?","",""
+"376187384376852481","YoYoO#2555","15-Feb-20 12:50 PM","Forget I asked","",""
+"234679095378706433","Blauelf#6622","15-Feb-20 01:24 PM","Exactly what's written there. Table `students` exists in the database, so you cannot create it. I don't think my code had a `CREATE TABLE` query.","",""
+"376187384376852481","YoYoO#2555","15-Feb-20 01:26 PM","Oh, right. I thought we had to make a table inside that database.","",""
+"376187384376852481","YoYoO#2555","15-Feb-20 01:26 PM","But we have to specify the column names of the table, so that the insert line will work?","",""
+"376187384376852481","YoYoO#2555","15-Feb-20 01:29 PM","Yeah you get this error.","",""
+"234679095378706433","Blauelf#6622","15-Feb-20 01:41 PM","I think it's `first`, `middle`, `last`, `house`, `birth`","",""
+"376187384376852481","YoYoO#2555","15-Feb-20 01:44 PM","I added `open(f""students.db"", ""w"").close()` and the errors went away. ~~When I double click students.db this comes up though. This normal? How can I see the database I just made?~~","",""
+"234679095378706433","Blauelf#6622","15-Feb-20 01:46 PM","Why not keep the database as you got it in the distribution code?","",""
+"376187384376852481","YoYoO#2555","15-Feb-20 01:47 PM","I think I am using that database","",""
+"376187384376852481","YoYoO#2555","15-Feb-20 01:47 PM","When I double click on 'students.db' on the left hand side in pset7 it comes up","",""
+"376187384376852481","YoYoO#2555","15-Feb-20 01:47 PM","As I said above, if `open(f""students.db"", ""w"").close()` isn't included I get errors.","",""
+"234679095378706433","Blauelf#6622","15-Feb-20 01:48 PM","Seems like you completely erased it (`open(""students.db"",""w"").close()`) and created your own `students` table. I hope that one matches the old one.","",""
+"376187384376852481","YoYoO#2555","15-Feb-20 01:48 PM","Do you know why it wasn't working before when I didn't even include the open function?","",""
+"376187384376852481","YoYoO#2555","15-Feb-20 01:49 PM","It's alright I've got a working table now, so it doesn't matter","",""
+"376187384376852481","YoYoO#2555","15-Feb-20 01:50 PM","Hopefully check50 reads it correctly","",""
+"234679095378706433","Blauelf#6622","15-Feb-20 01:50 PM","You tried to create a table which was already there. Now you erased the whole database, of course the table doesn't exist in an empty file.","",""
+"376187384376852481","YoYoO#2555","15-Feb-20 01:50 PM","No it wasn't working before I created anything","",""
+"234679095378706433","Blauelf#6622","15-Feb-20 01:50 PM","Check50 will expect the original layout.","",""
+"376187384376852481","YoYoO#2555","15-Feb-20 01:51 PM","Well if it doesn't work I'll have to redo it","",""
+"234679095378706433","Blauelf#6622","15-Feb-20 01:53 PM","The original table is using
+```sql
+CREATE TABLE students (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    first VARCHAR(255),
+    middle VARCHAR(255),
+    last VARCHAR(255),
+    house VARCHAR(10),
+    birth INTEGER
+);
+```","","👍 (1)"
+"376187384376852481","YoYoO#2555","15-Feb-20 02:27 PM","This is my table","https://cdn.discordapp.com/attachments/639522223329378314/678215866927546378/64.PNG",""
+"376187384376852481","YoYoO#2555","15-Feb-20 02:28 PM","`results`, by assignment is a dictionary.","",""
+"234679095378706433","Blauelf#6622","15-Feb-20 03:48 PM","`results[i]['first_name']`?","","👍 (1)"
+"376187384376852481","YoYoO#2555","16-Feb-20 03:56 AM","What's the point of splitting the full name string up?","",""
+"376187384376852481","YoYoO#2555","16-Feb-20 03:56 AM","We have to paste back the whole name again, so why split it up","",""
+"393854278764068875","curiouskiwi#1671","16-Feb-20 03:56 AM","what if you want to sort by last name?","",""
+"393854278764068875","curiouskiwi#1671","16-Feb-20 03:56 AM","or run a report that only has first name?","",""
+"376187384376852481","YoYoO#2555","16-Feb-20 03:58 AM","I see","",""
+"376187384376852481","YoYoO#2555","16-Feb-20 04:12 AM","","https://cdn.discordapp.com/attachments/639522223329378314/678423527853916200/99.PNG",""
+"376187384376852481","YoYoO#2555","16-Feb-20 04:13 AM","I'm having some problems with skipping middle name if it's null. I tried putting `if (results[i]['middle_name'] == ""NULL""):
+        continue;`","",""
+"376187384376852481","YoYoO#2555","16-Feb-20 04:14 AM","Didn't work, just printed out 'None' instead, so I tried the ISNULL function in the db.execute line but to no avail","",""
+"376187384376852481","YoYoO#2555","16-Feb-20 04:23 AM","","https://cdn.discordapp.com/attachments/639522223329378314/678426216092401695/1.PNG",""
+"393854278764068875","curiouskiwi#1671","16-Feb-20 04:25 AM","you shouldn't have to do anything special in the SQL.  Just get the results and deal with it when you print","",""
+"376187384376852481","YoYoO#2555","16-Feb-20 04:27 AM","Yeah that was my initial plan but then","",""
+"376187384376852481","YoYoO#2555","16-Feb-20 04:27 AM","`if (results[i]['middle_name'] == ""NULL""):
+        continue;`","",""
+"376187384376852481","YoYoO#2555","16-Feb-20 04:27 AM","didn't work, even with no """" around the NULL","",""
+"393854278764068875","curiouskiwi#1671","16-Feb-20 04:30 AM","it won't be `""NULL""`  it'll be `None`","","👍 (1)"
+"376187384376852481","YoYoO#2555","16-Feb-20 04:44 AM","I'm getting these errors in check50, it must be to do with the database","https://cdn.discordapp.com/attachments/639522223329378314/678431496507228191/2.PNG",""
+"376187384376852481","YoYoO#2555","16-Feb-20 04:44 AM","What should I do?","",""
+"376187384376852481","YoYoO#2555","16-Feb-20 04:45 AM","","https://cdn.discordapp.com/attachments/639522223329378314/678431726837694508/3.PNG",""
+"376187384376852481","YoYoO#2555","16-Feb-20 04:45 AM","All houses works for me","",""
+"676463066942144512","drail159#6376","16-Feb-20 04:56 AM","Try clearing your db and then see if import.py repopulates it correctly.","",""
+"676463066942144512","drail159#6376","16-Feb-20 04:57 AM","it seems like check50 is having a hard time populating the db with your import.py script","",""
+"376187384376852481","YoYoO#2555","16-Feb-20 04:59 AM","@drail159 I found the problem; the first time I made the import script I had a CREATE TABLE function that must've deleted to original one cs50 staff gave us. To solve this I just deleted all the files and redownloaded the zip","",""
+"167593654452617216","Cellico#2608","18-Feb-20 03:49 PM","hi can anyone explain to me what db.execute does","",""
+"167593654452617216","Cellico#2608","18-Feb-20 03:49 PM","im not sure what to do with that command","",""
+"167593654452617216","Cellico#2608","18-Feb-20 03:49 PM","i have the info read from the characters.csv file already and it's ready to be written onto students.db but i have no idea how to do it","",""
+"167593654452617216","Cellico#2608","18-Feb-20 03:50 PM","the walkthrough doesn't say much about db.execute","",""
+"234679095378706433","Blauelf#6622","18-Feb-20 04:02 PM","Try an `INSERT` query in a loop, once per student.","",""
+"167593654452617216","Cellico#2608","18-Feb-20 04:05 PM","ah yes i just realised david went thru this in the lecture","",""
+"167593654452617216","Cellico#2608","18-Feb-20 04:05 PM","i must have glossed over it","",""
+"167593654452617216","Cellico#2608","18-Feb-20 04:05 PM","im watching it now","",""
+"662015941785157654","Dalsnin#3322","19-Feb-20 01:18 PM","I have made the import and roster files, and I can import and export data just fine with them, giving the result I aimed for.","",""
+"662015941785157654","Dalsnin#3322","19-Feb-20 01:28 PM","Nevermind, found the answer further up","",""
+"567509736463794186","lexi#9144","19-Feb-20 09:01 PM","Can anyone help me w some syntax issues for import.py","",""
+"567509736463794186","lexi#9144","19-Feb-20 09:01 PM","for row in reader:
+            if (row[""name""].count("" "")) == 1:
+                first = row[""name""].split()[0]
+                middle = ""None""
+                last = row[""name""].split([1]
+            if (row[""name""].count("" "")) == 2:
+                first = row[""name""].split()[0]
+                middle = row[""name""].split([1]
+                last = row[""name""].split([2]","",""
+"567509736463794186","lexi#9144","19-Feb-20 09:02 PM","I'm trying to have two separate paths: one for middle names one for without middle names","",""
+"567509736463794186","lexi#9144","19-Feb-20 09:02 PM","These lines ""   if (row[""name""].count("" "")) == 2:"" where I am trying to count the spaces are giving me issues","",""
+"567509736463794186","lexi#9144","19-Feb-20 09:03 PM","not even sure i'm thinking about this the right way","",""
+"393854278764068875","curiouskiwi#1671","19-Feb-20 09:08 PM","I'd suggest it might be a better approach to split the name first into a list, and then deal with the list being either length 2 or length 3.","",""
+"567509736463794186","lexi#9144","19-Feb-20 09:10 PM","Thank you!!","",""
+"567509736463794186","lexi#9144","19-Feb-20 09:10 PM","So first doing something like this","",""
+"567509736463794186","lexi#9144","19-Feb-20 09:10 PM","splitname = row[""name""].split()","",""
+"393854278764068875","curiouskiwi#1671","19-Feb-20 09:10 PM","yes","",""
+"567509736463794186","lexi#9144","19-Feb-20 09:10 PM","and then if split name = 3","",""
+"393854278764068875","curiouskiwi#1671","19-Feb-20 09:10 PM","if len(splitname) == 3","",""
+"567509736463794186","lexi#9144","19-Feb-20 09:11 PM","Isn't len the number of characters?","",""
+"567509736463794186","lexi#9144","19-Feb-20 09:11 PM","Maybe i've always had that wrong","",""
+"393854278764068875","curiouskiwi#1671","19-Feb-20 09:11 PM","if the list is [""Harry"", ""James"", ""Potter""]","",""
+"393854278764068875","curiouskiwi#1671","19-Feb-20 09:11 PM","then len is 3 since there are 3 items in the list","",""
+"567509736463794186","lexi#9144","19-Feb-20 09:12 PM","Ah ok yeah","",""
+"393854278764068875","curiouskiwi#1671","19-Feb-20 09:12 PM","if the list is ""Harry James Potter""  then len will be 18 since there are 18 chars","",""
+"567509736463794186","lexi#9144","19-Feb-20 09:12 PM","So you would need to index into an item in the list and then len to count characters","",""
+"567509736463794186","lexi#9144","19-Feb-20 09:12 PM","right","",""
+"393854278764068875","curiouskiwi#1671","19-Feb-20 09:12 PM","why do you need to know the number of characters?","",""
+"567509736463794186","lexi#9144","19-Feb-20 09:13 PM","Don't need to know was just curious  for future purposes lol","",""
+"567509736463794186","lexi#9144","19-Feb-20 09:13 PM","So I will try something like this","",""
+"393854278764068875","curiouskiwi#1671","19-Feb-20 09:13 PM","yes, like that","",""
+"393854278764068875","curiouskiwi#1671","19-Feb-20 09:13 PM","(remember that `None` isn't a string though)","",""
+"567509736463794186","lexi#9144","19-Feb-20 09:14 PM","Ahhhh","",""
+"567509736463794186","lexi#9144","19-Feb-20 09:14 PM","right","",""
+"567509736463794186","lexi#9144","19-Feb-20 09:14 PM","and in my second path i should put [1] as last not [2]","",""
+"567509736463794186","lexi#9144","19-Feb-20 09:15 PM","Thank you so so much @curiouskiwi !","",""
+"393854278764068875","curiouskiwi#1671","19-Feb-20 09:15 PM","no problem 🙂","",""
+"567509736463794186","lexi#9144","19-Feb-20 10:09 PM","Anyone know why only one of my rows is inserting into the table","",""
+"567509736463794186","lexi#9144","19-Feb-20 10:09 PM","","https://cdn.discordapp.com/attachments/639522223329378314/679781617665179649/Screen_Shot_2020-02-19_at_3.09.17_PM.png",""
+"567509736463794186","lexi#9144","19-Feb-20 10:18 PM","Only the last value is being stores in db for some reason","",""
+"393854278764068875","curiouskiwi#1671","19-Feb-20 10:21 PM","Does your import program run an INSERT query for each item in your list of characters?","",""
+"567509736463794186","lexi#9144","19-Feb-20 10:21 PM","I think so because it's within the for row in reader","",""
+"567509736463794186","lexi#9144","19-Feb-20 10:22 PM","db.execute(""INSERT INTO students (id_count, first, middle, last, house, birth) values (?,?,?,?,?,?)"", id_count, first, middle, last, house, birth)","",""
+"567509736463794186","lexi#9144","19-Feb-20 10:22 PM","Where ID_count is incrementing for each row","",""
+"393854278764068875","curiouskiwi#1671","19-Feb-20 10:23 PM","is there a reason why you've changed the format of the table as it was given to you in the distribution code?","",""
+"567509736463794186","lexi#9144","19-Feb-20 10:24 PM","Didn't really mean to, I guess I shouldn't have created a table in the first place","",""
+"567509736463794186","lexi#9144","19-Feb-20 10:24 PM","and just inserted","",""
+"393854278764068875","curiouskiwi#1671","19-Feb-20 10:24 PM","your import.py program should only insert the characters into the database.  If you do anything else, it will fail check50","",""
+"567509736463794186","lexi#9144","19-Feb-20 10:25 PM","So I shouldn't have this line","",""
+"567509736463794186","lexi#9144","19-Feb-20 10:25 PM","Which created the table structure?","",""
+"567509736463794186","lexi#9144","19-Feb-20 10:30 PM","The reason I added that was because I was showing this error","",""
+"567509736463794186","lexi#9144","19-Feb-20 10:30 PM","RuntimeError: no such table: students","",""
+"567509736463794186","lexi#9144","19-Feb-20 10:30 PM","When I was only inserting","",""
+"393854278764068875","curiouskiwi#1671","19-Feb-20 10:32 PM","sounds like you should delete the students.db and then get a fresh copy.  
+
+`$ rm students.db
+ $ wget https://cdn.cs50.net/2019/fall/psets/7/houses/houses/students.db","",""
+"567509736463794186","lexi#9144","20-Feb-20 12:30 AM","Yes that worked and I completed the set","",""
+"567509736463794186","lexi#9144","20-Feb-20 12:30 AM","Thank you!!","",""
+"280736470745219072","Svnhue#9504","21-Feb-20 12:48 AM","Hello! Can someone help me please??","",""
+"393854278764068875","curiouskiwi#1671","21-Feb-20 12:48 AM","what's up?","",""
+"280736470745219072","Svnhue#9504","21-Feb-20 12:48 AM","I'm trying to insert the student list to the database (from python, to students.db)","",""
+"280736470745219072","Svnhue#9504","21-Feb-20 12:48 AM","When i try to do so, nothing happens in the database... I tried to print what python is actually doing and i get this","",""
+"280736470745219072","Svnhue#9504","21-Feb-20 12:49 AM","~/pset7/houses/ $ python import.py characters.csv
+<sqlite3.Cursor object at 0x7fd9b9008ce0>
+<sqlite3.Cursor object at 0x7fd9b9008730>
+<sqlite3.Cursor object at 0x7fd9b9008ce0>
+<sqlite3.Cursor object at 0x7fd9b9008730>
+<sqlite3.Cursor object at 0x7fd9b9008ce0>
+<sqlite3.Cursor object at 0x7fd9b9008730>
+<sqlite3.Cursor object at 0x7fd9b9008ce0>
+<sqlite3.Cursor object at 0x7fd9b9008730>
+<sqlite3.Cursor object at 0x7fd9b9008ce0>
+<sqlite3.Cursor object at 0x7fd9b9008730>
+<sqlite3.Cursor object at 0x7fd9b9008ce0>
+<sqlite3.Cursor object at 0x7fd9b9008730>
+<sqlite3.Cursor object at 0x7fd9b9008ce0>
+<sqlite3.Cursor object at 0x7fd9b9008730>
+<sqlite3.Cursor object at 0x7fd9b9008ce0>
+<sqlite3.Cursor object at 0x7fd9b9008730>
+<sqlite3.Cursor object at 0x7fd9b9008ce0>
+<sqlite3.Cursor object at 0x7fd9b9008730>
+<sqlite3.Cursor object at 0x7fd9b9008ce0>
+<sqlite3.Cursor object at 0x7fd9b9008730>
+<sqlite3.Cursor object at 0x7fd9b9008ce0>
+<sqlite3.Cursor object at 0x7fd9b9008730>
+<sqlite3.Cursor object at 0x7fd9b9008ce0>
+<sqlite3.Cursor object at 0x7fd9b9008730>
+<sqlite3.Cursor object at 0x7fd9b9008ce0>
+<sqlite3.Cursor object at 0x7fd9b9008730>
+<sqlite3.Cursor object at 0x7fd9b9008ce0>
+<sqlite3.Cursor object at 0x7fd9b9008730>
+<sqlite3.Cursor object at 0x7fd9b9008ce0>
+<sqlite3.Cursor object at 0x7fd9b9008730>
+<sqlite3.Cursor object at 0x7fd9b9008ce0>
+<sqlite3.Cursor object at 0x7fd9b9008730>
+<sqlite3.Cursor object at 0x7fd9b9008ce0>
+<sqlite3.Cursor object at 0x7fd9b9008730>
+<sqlite3.Cursor object at 0x7fd9b9008ce0>
+<sqlite3.Cursor object at 0x7fd9b9008730>
+<sqlite3.Cursor object at 0x7fd9b9008ce0>
+<sqlite3.Cursor object at 0x7fd9b9008730>
+<sqlite3.Cursor object at 0x7fd9b9008ce0>
+<sqlite3.Cursor object at 0x7fd9b9008730>","",""
+"393854278764068875","curiouskiwi#1671","21-Feb-20 12:50 AM","if you run an INSERT query, db.execute will return the `id` of the row it inserted.  If you print out the result, what do you see?","",""
+"393854278764068875","curiouskiwi#1671","21-Feb-20 12:51 AM","ie, if you have `result = db.execute(""INSERT .... ` and then `print(result)`  do you get 40 prints?","",""
+"280736470745219072","Svnhue#9504","21-Feb-20 12:52 AM","I get this","",""
+"280736470745219072","Svnhue#9504","21-Feb-20 12:52 AM","<sqlite3.Cursor object at 0x7f75dd478ce0>
+<sqlite3.Cursor object at 0x7f75dd478730>
+<sqlite3.Cursor object at 0x7f75dd478ce0>
+<sqlite3.Cursor object at 0x7f75dd478730>
+<sqlite3.Cursor object at 0x7f75dd478ce0>
+<sqlite3.Cursor object at 0x7f75dd478730>
+<sqlite3.Cursor object at 0x7f75dd478ce0>
+<sqlite3.Cursor object at 0x7f75dd478730>
+<sqlite3.Cursor object at 0x7f75dd478ce0>
+<sqlite3.Cursor object at 0x7f75dd478730>
+<sqlite3.Cursor object at 0x7f75dd478ce0>
+<sqlite3.Cursor object at 0x7f75dd478730>
+<sqlite3.Cursor object at 0x7f75dd478ce0>
+<sqlite3.Cursor object at 0x7f75dd478730>
+<sqlite3.Cursor object at 0x7f75dd478ce0>
+<sqlite3.Cursor object at 0x7f75dd478730>
+<sqlite3.Cursor object at 0x7f75dd478ce0>
+<sqlite3.Cursor object at 0x7f75dd478730>
+<sqlite3.Cursor object at 0x7f75dd478ce0>
+<sqlite3.Cursor object at 0x7f75dd478730>
+<sqlite3.Cursor object at 0x7f75dd478ce0>
+<sqlite3.Cursor object at 0x7f75dd478730>
+<sqlite3.Cursor object at 0x7f75dd478ce0>
+<sqlite3.Cursor object at 0x7f75dd478730>
+<sqlite3.Cursor object at 0x7f75dd478ce0>
+<sqlite3.Cursor object at 0x7f75dd478730>
+<sqlite3.Cursor object at 0x7f75dd478ce0>
+<sqlite3.Cursor object at 0x7f75dd478730>
+<sqlite3.Cursor object at 0x7f75dd478ce0>
+<sqlite3.Cursor object at 0x7f75dd478730>
+<sqlite3.Cursor object at 0x7f75dd478ce0>
+<sqlite3.Cursor object at 0x7f75dd478730>
+<sqlite3.Cursor object at 0x7f75dd478ce0>
+<sqlite3.Cursor object at 0x7f75dd478730>
+<sqlite3.Cursor object at 0x7f75dd478ce0>
+<sqlite3.Cursor object at 0x7f75dd478730>
+<sqlite3.Cursor object at 0x7f75dd478ce0>
+<sqlite3.Cursor object at 0x7f75dd478730>
+<sqlite3.Cursor object at 0x7f75dd478ce0>
+<sqlite3.Cursor object at 0x7f75dd478730>","",""
+"280736470745219072","Svnhue#9504","21-Feb-20 12:52 AM","That's 40","",""
+"393854278764068875","curiouskiwi#1671","21-Feb-20 12:53 AM","can you send me your import.py code privately?","",""
+"280736470745219072","Svnhue#9504","21-Feb-20 01:16 AM","I'm having the last issue with check50","",""
+"280736470745219072","Svnhue#9504","21-Feb-20 01:16 AM","","https://cdn.discordapp.com/attachments/639522223329378314/680191163197685785/Screen_Shot_2020-02-20_at_8.16.10_PM.png",""
+"280736470745219072","Svnhue#9504","21-Feb-20 01:16 AM","","https://cdn.discordapp.com/attachments/639522223329378314/680191184097902679/Screen_Shot_2020-02-20_at_8.16.15_PM.png",""
+"280736470745219072","Svnhue#9504","21-Feb-20 01:17 AM","","https://cdn.discordapp.com/attachments/639522223329378314/680191206747275306/Screen_Shot_2020-02-20_at_8.16.05_PM.png",""
+"280736470745219072","Svnhue#9504","21-Feb-20 01:17 AM","My code is doing what's required i think","",""
+"280736470745219072","Svnhue#9504","21-Feb-20 01:17 AM","And i don't know what's wrong","",""
+"280736470745219072","Svnhue#9504","21-Feb-20 01:25 AM","I found what was wrong: I was using None as a string (""None""), and not as Nonetype (None)","",""
+"558678172372041764","Aimer#8978","21-Feb-20 03:40 AM","is this the correct table","https://cdn.discordapp.com/attachments/639522223329378314/680227328101449778/unknown.png",""
+"558678172372041764","Aimer#8978","21-Feb-20 03:41 AM","because i somewhat cannot make the middle name to be empty even after setting the value of it to None","",""
+"558678172372041764","Aimer#8978","21-Feb-20 03:44 AM","","https://cdn.discordapp.com/attachments/639522223329378314/680228232431534099/unknown.png",""
+"558678172372041764","Aimer#8978","21-Feb-20 03:44 AM","i google that python usage of None is equivalent to NULL in C","",""
+"558678172372041764","Aimer#8978","21-Feb-20 03:45 AM","or should i just put it equal to string(space)","",""
+"393854278764068875","curiouskiwi#1671","21-Feb-20 03:45 AM","`None`","",""
+"393854278764068875","curiouskiwi#1671","21-Feb-20 03:45 AM","you appear to be setting it to `\N`","",""
+"558678172372041764","Aimer#8978","21-Feb-20 03:46 AM","> `None`
+@curiouskiwi as you can see from my code, i use None","",""
+"393854278764068875","curiouskiwi#1671","21-Feb-20 03:47 AM","well, that's not what you are putting into the INSERT statement","",""
+"558678172372041764","Aimer#8978","21-Feb-20 03:47 AM","AHHH","",""
+"393854278764068875","curiouskiwi#1671","21-Feb-20 03:47 AM","where do you have `\N` in your code?","",""
+"558678172372041764","Aimer#8978","21-Feb-20 03:47 AM","no wonder","",""
+"558678172372041764","Aimer#8978","21-Feb-20 03:47 AM","i make it as string","",""
+"558678172372041764","Aimer#8978","21-Feb-20 03:49 AM","eh wait, that is the other project i made for fun, this one they already set the table for us right","",""
+"558678172372041764","Aimer#8978","21-Feb-20 03:49 AM","because i try to put the type of the input, and it says the table already created","",""
+"393854278764068875","curiouskiwi#1671","21-Feb-20 04:24 AM","yes, you are given the database with the table you are meant to insert the students to","",""
+"558678172372041764","Aimer#8978","21-Feb-20 04:31 AM","okay","",""
+"558678172372041764","Aimer#8978","21-Feb-20 05:16 AM","why does it print so many times = =","https://cdn.discordapp.com/attachments/639522223329378314/680251406594343000/unknown.png",""
+"393854278764068875","curiouskiwi#1671","21-Feb-20 05:40 AM","how many times have you run your import script.  Did you delete all the rows before you tested each time?  in sqlite3:  `delete from students;`  will delete all the rows and then you can run your import.py script again","",""
+"393854278764068875","curiouskiwi#1671","21-Feb-20 05:47 AM","I didn't mean in your code.  I meant after testing your import and discovering that you had added bad rows to the table.  You should go into sqlite3 and delete those bad rows.","","😄 (1)"
+"393854278764068875","curiouskiwi#1671","21-Feb-20 05:48 AM","because otherwise, when you test your roster.py, you'll have a lot of bad data so you won't be able to tell if roster.py is working or not.","",""
+"558678172372041764","Aimer#8978","21-Feb-20 05:50 AM","","https://cdn.discordapp.com/attachments/639522223329378314/680260114992857088/unknown.png",""
+"558678172372041764","Aimer#8978","21-Feb-20 05:50 AM","it worked ! !","",""
+"558678172372041764","Aimer#8978","21-Feb-20 05:51 AM","ive been sitting for hours","",""
+"558678172372041764","Aimer#8978","21-Feb-20 05:51 AM","i never knew about the bad data things = =","",""
+"553340374836314142","Holder#7561","24-Feb-20 09:54 PM","what does this mean?","",""
+"553340374836314142","Holder#7561","24-Feb-20 09:54 PM","File ""import.py"", line 37, in main
+    db.execute(""INSERT INTO strudents1.db (first, middle, last, house, birth) VALUES (name[0], 'None', name[1], row['house'], row['birth'])"")
+  File ""/usr/local/lib/python3.7/site-packages/cs50/sql.py"", line 21, in decorator
+    return f(*args, **kwargs)
+  File ""/usr/local/lib/python3.7/site-packages/cs50/sql.py"", line 372, in execute
+    raise e
+RuntimeError: near ""[0]"": syntax error","",""
+"234679095378706433","Blauelf#6622","24-Feb-20 10:13 PM","You wrote your Python values into the SQL. Use the placeholder-sytax from the lecture. Either the style
+```Python
+db.execute(""... VALUES (:some_name, :other_name, :name3)"", some_name=value1, other_name=value2, name3=value3)
+```
+or
+```Python
+db.execute(""... VALUES (?, ?, ?)"", value1, value2, value3)
+```","",""
+"553340374836314142","Holder#7561","24-Feb-20 10:17 PM","okey i will go back to the lecture and look at it in more detail","",""
+"553340374836314142","Holder#7561","25-Feb-20 12:13 AM","i'm still getting the message","",""
+"553340374836314142","Holder#7561","25-Feb-20 12:14 AM","if len(name) == 3:
+                db.execute(""INSERT INTO strudents1.db (first, middle, last, house, birth) VALUES(?, ?, ?, ?, ?)"",
+                name[0], name[1], name[2], house, birth)","",""
+"234679095378706433","Blauelf#6622","25-Feb-20 12:17 AM","Which message?","",""
+"393854278764068875","curiouskiwi#1671","25-Feb-20 12:17 AM","`strudents1.db`  is that the name of your table?  seems a strange name","",""
+"553340374836314142","Holder#7561","25-Feb-20 12:18 AM","File ""/usr/local/lib/python3.7/site-packages/cs50/sql.py"", line 21, in decorator
+    return f(*args, **kwargs)","",""
+"234679095378706433","Blauelf#6622","25-Feb-20 12:24 AM","That line is pretty useless. There should be something above (your code) and something below (the error message), those might give more information.","",""
+"553340374836314142","Holder#7561","25-Feb-20 12:25 AM","Traceback (most recent call last):
+  File ""import.py"", line 47, in <module>
+    main()
+  File ""import.py"", line 43, in main
+    name[0], none, name[1], house. birth)
+AttributeError: 'str' object has no attribute 'birth'","",""
+"553340374836314142","Holder#7561","25-Feb-20 12:25 AM","yes i can also see now that i mispelled students, sorry dislexia","",""
+"393854278764068875","curiouskiwi#1671","25-Feb-20 12:26 AM","it wasn't the misspelling of it I was concerned over, but the fact that it had `.db` at the end of it.","",""
+"234679095378706433","Blauelf#6622","25-Feb-20 12:26 AM","That's `house.birth`, you meant `house,birth`","",""
+"234679095378706433","Blauelf#6622","25-Feb-20 12:27 AM","Also, `None` with upper-case N","",""
+"553340374836314142","Holder#7561","25-Feb-20 04:51 AM","Got no clue how to fix this or where to look for an answer","https://cdn.discordapp.com/attachments/639522223329378314/681694817683505153/Screen_Shot_2020-02-24_at_8.35.18_PM.png",""
+"553340374836314142","Holder#7561","25-Feb-20 04:52 AM","db.execute(""INSERT INTO students (first, middle, last, house, birth) VALUES(?, ?, ?, ?, ?)"",
+                name[0], none, name[1], house, birth)","",""
+"553340374836314142","Holder#7561","25-Feb-20 04:52 AM","none = str(None)","",""
+"553340374836314142","Holder#7561","25-Feb-20 04:52 AM","i have tried a bunch of things but no clue how to solve it","",""
+"393854278764068875","curiouskiwi#1671","25-Feb-20 04:54 AM","`None` isn't a string.","",""
+"553340374836314142","Holder#7561","25-Feb-20 05:00 AM","thanks you very much","",""
+"174850178384134145","L.S.#6002","29-Feb-20 11:00 AM","This was the easiest pset I’ve done in this course. Kinda surprised week 7 is so straightforward","",""
+"678377940030980120","ziller#6589","29-Feb-20 02:08 PM","that’s build on 8 weeks of learning 🙂","",""
+"678377940030980120","ziller#6589","29-Feb-20 02:09 PM","I found myself looking up a lot more than I did in previous weeks","",""
+"678377940030980120","ziller#6589","29-Feb-20 02:10 PM","but also found my head hurting a lot less.","",""
+"395585988857954304","siafa#4740","04-Mar-20 12:47 PM","What a sweet pset 😋","",""
+"430515097421742102","edd#5479","05-Mar-20 01:08 PM","Agree","",""
+"339078915886678017","Mo#6561","05-Mar-20 02:29 PM","hello there","",""
+"339078915886678017","Mo#6561","05-Mar-20 02:30 PM","what is error here","",""
+"339078915886678017","Mo#6561","05-Mar-20 02:30 PM","Traceback (most recent call last):
+  File ""import.py"", line 26, in <module>
+    for row in reader:
+  File ""/usr/local/lib/python3.7/csv.py"", line 111, in __next__
+    self.fieldnames
+  File ""/usr/local/lib/python3.7/csv.py"", line 98, in fieldnames
+    self._fieldnames = next(self.reader)
+ValueError: I/O operation on closed file.","",""
+"324522780252962816","Sinergy#7605","05-Mar-20 02:32 PM","did you use open file as reader:
+and then lose the indentation you would need to access reader?  As soon as you leave the code block indented from that line, the file is closed","",""
+"339078915886678017","Mo#6561","05-Mar-20 02:33 PM","oh damn yeah , python space sensitive","",""
+"339078915886678017","Mo#6561","05-Mar-20 02:34 PM","thx for help","",""
+"324522780252962816","Sinergy#7605","05-Mar-20 02:34 PM","np","",""
+"339078915886678017","Mo#6561","05-Mar-20 04:42 PM","😐 import.py correctly imports Harry Potter
+check50 ran into an error while running checks!
+Log
+running python3 import.py students.csv...
+
+Error","",""
+"339078915886678017","Mo#6561","05-Mar-20 04:43 PM","what is the error here ?","",""
+"339078915886678017","Mo#6561","05-Mar-20 04:43 PM","python3 import.py students.csv... (what is after ..... ) ?","",""
+"430515097421742102","edd#5479","05-Mar-20 04:45 PM","What command exactly are you running that generates that error?","",""
+"339078915886678017","Mo#6561","05-Mar-20 04:47 PM","it is in cs50 check","",""
+"430515097421742102","edd#5479","05-Mar-20 04:48 PM","I think there's no cs50 check for this pset","",""
+"339078915886678017","Mo#6561","05-Mar-20 04:49 PM","https://submit.cs50.io/check50/3aca22738137419ff7f786dcf152d481f906cf47","",""
+"339078915886678017","Mo#6561","05-Mar-20 04:49 PM","here","",""
+"339078915886678017","Mo#6561","05-Mar-20 05:08 PM","i fixed it","",""
+"234679095378706433","Blauelf#6622","05-Mar-20 05:08 PM","@Mo Did you alter the database in any way?","",""
+"339078915886678017","Mo#6561","05-Mar-20 05:09 PM","yeah i made ( mid ) colum insand of middle","",""
+"360960743442481162","Ali A.#6928","07-Mar-20 09:58 AM","Hello guys so
+I have this weird problem here,","",""
+"360960743442481162","Ali A.#6928","07-Mar-20 09:58 AM","while the name does it exists!","",""
+"360960743442481162","Ali A.#6928","07-Mar-20 09:58 AM","it says not found.","",""
+"360960743442481162","Ali A.#6928","07-Mar-20 09:58 AM","","https://cdn.discordapp.com/attachments/639522223329378314/685758358791258125/unknown.png",""
+"360960743442481162","Ali A.#6928","07-Mar-20 09:58 AM","","https://cdn.discordapp.com/attachments/639522223329378314/685758359676387368/unknown.png",""
+"676463066942144512","drail159#6376","07-Mar-20 10:06 AM","Put Gryffindor in quotes. It thinks your looking for Gryffindor as a column in the table.","",""
+"676463066942144512","drail159#6376","07-Mar-20 10:08 AM","@Ali A. ^^","",""
+"360960743442481162","Ali A.#6928","07-Mar-20 10:08 AM","I already tried that out actually","",""
+"360960743442481162","Ali A.#6928","07-Mar-20 10:09 AM","but let me try it again and show it.","",""
+"360960743442481162","Ali A.#6928","07-Mar-20 10:09 AM","you mean this  ""Gryffindor""
+the problem is, it is ends the quotes for the query","",""
+"676463066942144512","drail159#6376","07-Mar-20 10:11 AM","Try single quotes.","",""
+"676463066942144512","drail159#6376","07-Mar-20 10:11 AM","'Gryffindor'","",""
+"360960743442481162","Ali A.#6928","07-Mar-20 10:13 AM","Thank you I guess it is working","",""
+"676463066942144512","drail159#6376","07-Mar-20 10:13 AM","👍","","💯 (1)"
+"254622976710803456","bec#7264","07-Mar-20 05:51 PM","lads","",""
+"254622976710803456","bec#7264","07-Mar-20 05:51 PM","having a lot of trouble with formatting the text to put in strings/lists","",""
+"254622976710803456","bec#7264","07-Mar-20 05:52 PM","my whole idea is to make 2 lists one having the value of the collumns in the table and the other the values so I can keep these in an insert query","",""
+"254622976710803456","bec#7264","07-Mar-20 05:53 PM","having trouble on lines like these ||val = [row[1],(f"",{row[2]}"")]||","",""
+"234679095378706433","Blauelf#6622","07-Mar-20 05:58 PM","What do you mean? Do you mean you want to skip `middle` instead of passing `None` for its value?","",""
+"234679095378706433","Blauelf#6622","07-Mar-20 06:42 PM","That output is the checker's database dump. Have you altered the table in any way?","",""
+"234679095378706433","Blauelf#6622","07-Mar-20 06:45 PM","People do funny things other than `insert` and `delete`, like renaming columns. The database should be same as in distribution code.","",""
+"254622976710803456","bec#7264","08-Mar-20 07:55 AM","||val.append(f"",{name[len(name) - 1]}"")||","",""
+"254622976710803456","bec#7264","08-Mar-20 07:55 AM","how do I format this line correctly","",""
+"254622976710803456","bec#7264","08-Mar-20 07:55 AM","I just did it like I would in printf","",""
+"393854278764068875","curiouskiwi#1671","08-Mar-20 07:57 AM","why do you want a formatted string in your list?","",""
+"254622976710803456","bec#7264","08-Mar-20 08:11 AM","so I can dynamically form INSERT queries","",""
+"254622976710803456","bec#7264","08-Mar-20 08:11 AM","anyways I got it","",""
+"254622976710803456","bec#7264","08-Mar-20 08:14 AM","> RuntimeError: table students has no column named 'house', ',birth', ',first', ',last'","",""
+"254622976710803456","bec#7264","08-Mar-20 08:15 AM","why am I getting this error when I looked at the students table in the phpliteadmin it had all those fields","",""
+"254622976710803456","bec#7264","08-Mar-20 08:16 AM","","https://cdn.discordapp.com/attachments/639522223329378314/686094870791716864/unknown.png",""
+"393854278764068875","curiouskiwi#1671","08-Mar-20 08:34 AM","are you sure you have opened the correct database?","",""
+"324522780252962816","Sinergy#7605","08-Mar-20 09:05 AM","did you using something like db.execute(""INSERT INTO students ('house','birth'.....  ?
+You don't need those single quotes","",""
+"254622976710803456","bec#7264","08-Mar-20 09:28 AM","no lad those quotes are added by the terminal when displaying the error messages","",""
+"254622976710803456","bec#7264","08-Mar-20 09:29 AM","||db = cs50.SQL(""sqlite:///students.db"")|| is what I did","",""
+"254622976710803456","bec#7264","08-Mar-20 09:30 AM","when I run `db = SQL(""sqlite:///students.db"")` like the guide wants me to it just tells me SQL isn't defined","",""
+"393854278764068875","curiouskiwi#1671","08-Mar-20 09:36 AM","did you `import cs50`","",""
+"254622976710803456","bec#7264","08-Mar-20 09:37 AM","yes","",""
+"393854278764068875","curiouskiwi#1671","08-Mar-20 09:39 AM","if you import the entire library, then yes, you need to use `cs50.SQL(""...`   or, you can just import the SQL method using `from cs50 import SQL`  and then you can use just `SQL(""...`","",""
+"393854278764068875","curiouskiwi#1671","08-Mar-20 09:40 AM","```python
+from cs50 import SQL
+
+db = SQL(""sqlite:///students.db"")
+```","",""
+"254622976710803456","bec#7264","08-Mar-20 09:40 AM","anyways so my og cs50.SQl(""sqlite:///students.db"") isn't what's wrong with the code","",""
+"393854278764068875","curiouskiwi#1671","08-Mar-20 09:46 AM","are you using db.execute? and passing it an INSERT query using `?` for placeholders, and then variables as the arguments?","",""
+"393854278764068875","curiouskiwi#1671","08-Mar-20 09:47 AM","like in the lecture example?  ```python
+db.execute(""INSERT INTO shows (id, title, year) VALUES(?, ?, ?)"", id, row[""primaryTitle""], startYear)```","",""
+"254622976710803456","bec#7264","08-Mar-20 09:53 AM","not specifying he id, row or startyear though","",""
+"254622976710803456","bec#7264","08-Mar-20 09:53 AM","||db.execute(f""INSERT INTO students ({col}) VALUES ({val})"")||","",""
+"254622976710803456","bec#7264","08-Mar-20 09:53 AM","is what I am using","",""
+"393854278764068875","curiouskiwi#1671","08-Mar-20 09:53 AM","well, no, because that example is from lecture.","",""
+"603921781350334504","Chetan#8251","08-Mar-20 09:53 AM","I run my import.py twice and now I have 80 members in my students.db to erase them I used 
+```DELETE FROM students;```
+Now when I insert rows in my data base their I'd starts from 81 how to fix it ?","",""
+"393854278764068875","curiouskiwi#1671","08-Mar-20 09:54 AM","you shouldn't use formatted strings in your query.  Review the lecture notes about sql injection. (at the very end of the notes)","",""
+"254622976710803456","bec#7264","08-Mar-20 09:54 AM","doesn't this thing have stuff built in to protect against SQL injection attacks","",""
+"254622976710803456","bec#7264","08-Mar-20 09:55 AM","anyways will look at all the security problems and writing all the comments and such after I get my program to function","",""
+"393854278764068875","curiouskiwi#1671","08-Mar-20 09:55 AM","the built in protection is when using the function's arguments","",""
+"393854278764068875","curiouskiwi#1671","08-Mar-20 09:55 AM","as the example from lecture","",""
+"393854278764068875","curiouskiwi#1671","08-Mar-20 09:56 AM","> I run my import.py twice and now I have 80 members in my students.db to erase them I used 
+> ```DELETE FROM students;```
+> Now when I insert rows in my data base their I'd starts from 81 how to fix it ?
+@Chetan 
+You can't easily.  But it doesn't matter.","",""
+"603921781350334504","Chetan#8251","08-Mar-20 09:57 AM","Will it work fine if my I'd start from 81 ?","",""
+"393854278764068875","curiouskiwi#1671","08-Mar-20 09:57 AM","yes","",""
+"603921781350334504","Chetan#8251","08-Mar-20 09:57 AM","Ok thank you🙂","",""
+"254622976710803456","bec#7264","08-Mar-20 03:06 PM","||    db.execute(""INSERT INTO students (?) VALUES (?);"", col , val)
+||  File ""/usr/local/lib/python3.7/site-packages/cs50/sql.py"", line 21, in decorator
+    return f(*args, **kwargs)
+  File ""/usr/local/lib/python3.7/site-packages/cs50/sql.py"", line 372, in execute
+    raise e
+RuntimeError: table students has no column named house',birth',first',last","",""
+"254622976710803456","bec#7264","08-Mar-20 03:06 PM","I still odn't get how I am supposed to fix this","",""
+"234679095378706433","Blauelf#6622","08-Mar-20 04:49 PM","I did the full ||`INSERT INTO students (first, middle, last, house, birth) VALUES (?, ?, ?, ?, ?)`||, but for a non-existent middle name, I would pass value `None`, which gets translated to database's `NULL`","",""
+"254622976710803456","bec#7264","12-Mar-20 08:56 PM","I am passing in the string ""None"" not just None","",""
+"254622976710803456","bec#7264","12-Mar-20 08:56 PM","that's till correct right","",""
+"254622976710803456","bec#7264","12-Mar-20 08:56 PM","I gave up since i realised I had to rewrite the code and came back right now and rewrote it in about 10 mins","",""
+"393854278764068875","curiouskiwi#1671","12-Mar-20 08:57 PM","`None` is not a string","",""
+"254622976710803456","bec#7264","12-Mar-20 08:59 PM","what I was doing was literally writing ""None"" instead of None","",""
+"254622976710803456","bec#7264","12-Mar-20 09:30 PM","why can't I split a dict?","",""
+"254622976710803456","bec#7264","12-Mar-20 09:32 PM","using str to turn it into a string so I can split is that a good idea or is there a better way?","",""
+"254622976710803456","bec#7264","12-Mar-20 09:34 PM","||first = str(raw[i]).split("","")[0].split("":"")[1].strip()|| is my spaghetti code","",""
+"254622976710803456","bec#7264","12-Mar-20 09:37 PM","turned it into a function so it's much nicer to look at","",""
+"393854278764068875","curiouskiwi#1671","12-Mar-20 09:37 PM","that seems a bit odd","",""
+"393854278764068875","curiouskiwi#1671","12-Mar-20 09:42 PM","are you using csv.DictReader ?","",""
+"254622976710803456","bec#7264","12-Mar-20 09:52 PM","🤔","",""
+"254622976710803456","bec#7264","12-Mar-20 09:52 PM","this is for roster","",""
+"254622976710803456","bec#7264","12-Mar-20 09:52 PM","should have mentioned that","",""
+"393854278764068875","curiouskiwi#1671","12-Mar-20 09:53 PM","that makes your code even more perplexing","",""
+"393854278764068875","curiouskiwi#1671","12-Mar-20 09:53 PM","if you have a dictionary like ```
+result = {'first': 'Millicent', 'middle': None, 'last': 'Bulstrode', 'birth': 1979}```","",""
+"393854278764068875","curiouskiwi#1671","12-Mar-20 09:54 PM","then `result['first']` will be `'Millicent'`","",""
+"393854278764068875","curiouskiwi#1671","12-Mar-20 09:54 PM","no need for converting to strings or splitting","",""
+"254622976710803456","bec#7264","13-Mar-20 07:22 AM","didn't know that","",""
+"254622976710803456","bec#7264","13-Mar-20 07:22 AM","🥴","",""
+"677215146694803458","pbrouse#8651","14-Mar-20 02:34 AM","Well I was pleasantly surprised by how easy this one was. Don't think this took more than half an hour to do.","",""
+"234679095378706433","Blauelf#6622","14-Mar-20 10:27 AM","If you did the previous problems as expected (especially `dna` with its csv access), it shouldn't be super difficult. The `db.execute` syntax will confuse some people (though I've seen it used in a video), as will the value `None`.","",""
+"280090813558423553","NitroBR#6144","16-Mar-20 05:01 AM","guys I don't know why, but using db.execute(select ....) I am receiving a resultProxy none, trying the same select command at Adminer I receive the resultProxu with the row correctly","",""
+"280090813558423553","NitroBR#6144","16-Mar-20 05:01 AM","what can be the problem","",""
+"280090813558423553","NitroBR#6144","16-Mar-20 05:01 AM","I checked the variable that I am passing to the db.select command and it is string","",""
+"393854278764068875","curiouskiwi#1671","16-Mar-20 05:04 AM","so if you say `result = db.execute(""select * from students;"")`  result is None?","",""
+"393854278764068875","curiouskiwi#1671","16-Mar-20 05:06 AM","or, in context:  ```from cs50 import SQL
+
+db = SQL(""sqlite:///students.db"")
+
+results = db.execute(""select * from students;"");
+print(results)```","",""
+"280090813558423553","NitroBR#6144","16-Mar-20 05:06 AM","actually is in project1","",""
+"280090813558423553","NitroBR#6144","16-Mar-20 05:06 AM","so I tried the same code but changed student to books","",""
+"280090813558423553","NitroBR#6144","16-Mar-20 05:06 AM","and I got same result","",""
+"280090813558423553","NitroBR#6144","16-Mar-20 05:06 AM","none","",""
+"393854278764068875","curiouskiwi#1671","16-Mar-20 05:07 AM","so, not Houses?","",""
+"393854278764068875","curiouskiwi#1671","16-Mar-20 05:07 AM","not CS50x?","",""
+"280090813558423553","NitroBR#6144","16-Mar-20 05:07 AM","oops","",""
+"280090813558423553","NitroBR#6144","16-Mar-20 05:07 AM","wrong room","",""
+"280090813558423553","NitroBR#6144","16-Mar-20 05:07 AM","sorry 😮","",""
+"280090813558423553","NitroBR#6144","16-Mar-20 05:08 AM","is CS50w i was looking for","",""
+"393854278764068875","curiouskiwi#1671","16-Mar-20 05:08 AM","#cs50-web","",""
+"166210877148626944","GhostE#9548","16-Mar-20 07:34 PM","Is it good practice to use SELECT DISTINCT  when SELECT more than 1 columns?","",""
+"234679095378706433","Blauelf#6622","16-Mar-20 10:11 PM","Depends on whether you need it. It can be somewhat expensive, as the database would have to keep all records in memory. But so it might have to for ORDER BY.","",""
+"261692352056262677","Rintok#3584","17-Mar-20 08:40 PM","Hey guys, my program works correctly, however I used import.py multiple times so when printing the students of each house I get multiple copies of the same person. Could somene tell me how to clear the students.db file?","",""
+"393854278764068875","curiouskiwi#1671","17-Mar-20 09:53 PM","@Rintok in sqlite3 run `delete from students;`","","👍 (1)"
+"480302730989010954","gunomagic#2168","18-Mar-20 05:04 PM","my code is working and giving me right output but cheak50 is giving me bugs","https://cdn.discordapp.com/attachments/639522223329378314/689851624130478107/errors.PNG",""
+"480302730989010954","gunomagic#2168","18-Mar-20 05:09 PM","solved!","",""
+"313861224704114688","Khono#0226","19-Mar-20 07:01 PM","> solved!
+@gunomagic What was it?  Something about the naming?","",""
+"234679095378706433","Blauelf#6622","19-Mar-20 07:39 PM","From the error, I would have guessed a renamed column. Or trying to recreate the table after deleting it accidentally.","",""
+"467004868738023464","MrDanIce#8666","20-Mar-20 05:03 PM","So arrays are what you call lists in python right?","",""
+"467004868738023464","MrDanIce#8666","20-Mar-20 05:12 PM","||with open('characters.csv') as chara:
+    csvreader = csv.reader(chara)
+    clist = list(csvreader)
+
+print(clist)||","",""
+"467004868738023464","MrDanIce#8666","20-Mar-20 05:13 PM","So I think this would be a list of lists, can I use this list to put into the database?","",""
+"467004868738023464","MrDanIce#8666","20-Mar-20 05:13 PM","Or do I need a list of tuples?","",""
+"467004868738023464","MrDanIce#8666","20-Mar-20 05:14 PM","||clist = [tuple(row) for row in csvreader]|| like this?","",""
+"234679095378706433","Blauelf#6622","20-Mar-20 10:12 PM","@MrDanIce C's arrays are most similar to lists, yes. But lists are more flexible. Tuples are mostly same, just that they are immutable (you can't add/delete/exchange their elements, though if the elements are objects, those could be mutated)","",""
+"234679095378706433","Blauelf#6622","20-Mar-20 10:15 PM","List of lists is fine. Don't forget to separate the first line of the csv file (assuming that's a header row)","",""
+"234679095378706433","Blauelf#6622","20-Mar-20 10:16 PM","But that skipping first line could be done at any point, even after converting it to a list of lists.","",""
+"234679095378706433","Blauelf#6622","20-Mar-20 10:35 PM","```Python
+dummy = ([],) # tuble containing empty list
+dummy[0].append(42)
+print(dummy) # ([42],)
+dummy[0] = 23 # TypeError, tuples are immutable!
+```","",""
+"247805115015102464","MaxMayo#4771","21-Mar-20 03:04 AM","Quick question regarding SQL databases: if I wanted to reset the data that I had inserted into a table, would I ""DELETE"" that table so all the values are gone? Or would that destroy the table from the database entirely?","",""
+"324522780252962816","Sinergy#7605","21-Mar-20 03:23 AM","DELETE removes data
+DROP removes the table","",""
+"247805115015102464","MaxMayo#4771","21-Mar-20 03:36 AM","Thank you!!","",""
+"467004868738023464","MrDanIce#8666","21-Mar-20 04:01 AM","> List of lists is fine. Don't forget to separate the first line of the csv file (assuming that's a header row)
+@Blauelf Thanks, almost missed the header row","",""
+"467004868738023464","MrDanIce#8666","21-Mar-20 04:02 AM","I got into roster.py but","",""
+"467004868738023464","MrDanIce#8666","21-Mar-20 04:03 AM","whenever I execute this ||db.execute(""SELECT * FROM students WHERE house = '(?)'"", (argv[2]))||","",""
+"467004868738023464","MrDanIce#8666","21-Mar-20 04:03 AM","I get his ||Traceback (most recent call last):
+  File ""roster.py"", line 10, in <module>
+    db.execute(""SELECT * FROM students WHERE house = '(?)'"", (argv[2]))
+IndexError: list index out of range||","",""
+"467004868738023464","MrDanIce#8666","21-Mar-20 06:03 AM","ok got it, I was just being a klutz","",""
+"467004868738023464","MrDanIce#8666","21-Mar-20 06:03 AM","should've been argv[1]","",""
+"467004868738023464","MrDanIce#8666","21-Mar-20 06:08 AM","","https://cdn.discordapp.com/attachments/639522223329378314/690773760806223882/unknown.png",""
+"467004868738023464","MrDanIce#8666","21-Mar-20 06:08 AM","","https://cdn.discordapp.com/attachments/639522223329378314/690773874622595192/unknown.png",""
+"467004868738023464","MrDanIce#8666","21-Mar-20 06:09 AM","ok just what did I do wrong now? 😦","",""
+"467004868738023464","MrDanIce#8666","21-Mar-20 06:10 AM","everything shows up fine in the phpliteadmin","",""
+"393854278764068875","curiouskiwi#1671","21-Mar-20 06:23 AM","@MrDanIce > Your program should accept the name of a CSV file as a command-line argument.","",""
+"393854278764068875","curiouskiwi#1671","21-Mar-20 06:23 AM","don't hard code the name 'characters.csv'","",""
+"467004868738023464","MrDanIce#8666","21-Mar-20 06:24 AM","oh ok","",""
+"467004868738023464","MrDanIce#8666","21-Mar-20 06:27 AM","by default, it opens in read mode right?","",""
+"467004868738023464","MrDanIce#8666","21-Mar-20 06:27 AM","should I be opening it in 'rb'?","",""
+"467004868738023464","MrDanIce#8666","21-Mar-20 06:31 AM","Nevermind, it worked anyway","",""
+"467004868738023464","MrDanIce#8666","21-Mar-20 06:32 AM","Thank you so much","","💯 (1)"
+"673846945298776084","Masha#2750","21-Mar-20 11:14 PM","hello, maybe someone faced the same problem?","https://cdn.discordapp.com/attachments/639522223329378314/691031959555801158/Screen_Shot_2020-03-21_at_11.11.57_PM.png",""
+"673846945298776084","Masha#2750","21-Mar-20 11:14 PM","where actual output is the same as expected","",""
+"247805115015102464","MaxMayo#4771","21-Mar-20 11:55 PM","@Masha","",""
+"673846945298776084","Masha#2750","21-Mar-20 11:56 PM","Yes, the import😊","",""
+"247805115015102464","MaxMayo#4771","21-Mar-20 11:57 PM","could i see how you set up the data to be put into the db.execute statement?","",""
+"247805115015102464","MaxMayo#4771","21-Mar-20 11:58 PM","You could PM me if that works better!","",""
+"673846945298776084","Masha#2750","21-Mar-20 11:58 PM","sure)) @MaxMayo","",""
+"470427327244009483","niV#5484","23-Mar-20 12:01 AM","in import, my code does not assign the names to their location, only birth and house","",""
+"470427327244009483","niV#5484","23-Mar-20 12:01 AM","here is my code, in case anyone could take a look","",""
+"470427327244009483","niV#5484","23-Mar-20 12:01 AM","https://pastebin.com/HU0LE1Yw","",""
+"324522780252962816","Sinergy#7605","23-Mar-20 12:09 AM","you are making a new line each time you insert.  Split the flow of your code by len(l) and then insert all the columns at once.","",""
+"470427327244009483","niV#5484","23-Mar-20 12:29 AM","thank you!","",""
+"324522780252962816","Sinergy#7605","23-Mar-20 12:32 AM","I guess you could also UPDATE but you're just increasing your number of times running sql, when you would have all of the values just milliseconds later","",""
+"470427327244009483","niV#5484","23-Mar-20 12:34 AM","I agree, its a matter of miliseconds anyway","",""
+"470427327244009483","niV#5484","23-Mar-20 12:34 AM","Thank you very much","",""
+"470427327244009483","niV#5484","23-Mar-20 01:11 AM","In roster, how am I supposed to read from a .db file?","",""
+"470427327244009483","niV#5484","23-Mar-20 01:12 AM","should I just treat if as a tsv?","",""
+"234679095378706433","Blauelf#6622","23-Mar-20 01:13 AM","The same way you write to the .db file in `import.py`, just this time using `SELECT`, not `INSERT`.","",""
+"470427327244009483","niV#5484","23-Mar-20 01:21 AM","I see...  and how do I print it?","",""
+"393854278764068875","curiouskiwi#1671","23-Mar-20 01:22 AM","that's the entire point of this problem 🙂","",""
+"393854278764068875","curiouskiwi#1671","23-Mar-20 01:22 AM","db.execute will return a list of dictionaries. Your goal is to then print out the values from that","",""
+"393854278764068875","curiouskiwi#1671","23-Mar-20 01:23 AM","I'd review the walkthrough again","",""
+"470427327244009483","niV#5484","23-Mar-20 01:25 AM","I think I'm not getting something obvious then","",""
+"470427327244009483","niV#5484","23-Mar-20 01:25 AM","I know it returns a list of dicts, as it is said in the walkthough","",""
+"470427327244009483","niV#5484","23-Mar-20 01:27 AM","but, for instance, what is the name of the list? So I can iterate through it","",""
+"393854278764068875","curiouskiwi#1671","23-Mar-20 01:28 AM","okay, so let's say it was a query like ""select first from students;""   you might get a list like `[{'first': 'Adelaide'}, {'first': 'Adrian'}, {'first': 'Anthony'}]`","",""
+"393854278764068875","curiouskiwi#1671","23-Mar-20 01:28 AM","the name of the list is whatever you call the results from your db.execute query","",""
+"393854278764068875","curiouskiwi#1671","23-Mar-20 01:29 AM","`results = db.execute(""select first from students"")`  for example","",""
+"393854278764068875","curiouskiwi#1671","23-Mar-20 01:30 AM","then `print(results)` temporarily as it will show you what you got, and you can then use that to figure out how to print the values you want in the format required.","",""
+"470427327244009483","niV#5484","23-Mar-20 01:36 AM","I finally got it now","",""
+"470427327244009483","niV#5484","23-Mar-20 01:36 AM","thank you","",""
+"470427327244009483","niV#5484","23-Mar-20 01:36 AM","appreciate your help sir o/","",""
+"457971782293389314","./S.A#6274","23-Mar-20 11:28 AM","> appreciate your help sir o/
+@niV she's a ma'am :GWjianWut:","",""
+"457971782293389314","./S.A#6274","23-Mar-20 11:29 AM","i've to insert NULL if middle name exists else insert the middle name
+and i want to avoid copy pasting the whole database sql INSERT statement twice (one with NULL and one with the value to be inserted)
+i tried saving NULL in a variable but that doesn't work ofcourse, lol","",""
+"457971782293389314","./S.A#6274","23-Mar-20 11:29 AM","is there a way to do it without copypaste?","",""
+"457971782293389314","./S.A#6274","23-Mar-20 11:31 AM","wait how do you insert NULL in python in an sql statement :GWchadMEGATHINK:","",""
+"457971782293389314","./S.A#6274","23-Mar-20 11:33 AM","will passing python's ``None`` do the job?","",""
+"457971782293389314","./S.A#6274","23-Mar-20 11:46 AM","o it apparently does. None works. but according to this website's first answer, it shouldn't work https://github.com/vertica/vertica-python/issues/136","",""
+"457971782293389314","./S.A#6274","23-Mar-20 11:46 AM","hmm","",""
+"457971782293389314","./S.A#6274","23-Mar-20 11:46 AM","odd","",""
+"324522780252962816","Sinergy#7605","23-Mar-20 12:31 PM","yes, None is correct","",""
+"324522780252962816","Sinergy#7605","23-Mar-20 12:31 PM","hmm you could try a ternary operator in place of value","",""
+"324522780252962816","Sinergy#7605","23-Mar-20 12:34 PM","For the middle name, ``None if len(name) == 2 else name[1]``.  For the last name, name[len(name) -1].  I believe name[-1] would work too.","",""
+"457971782293389314","./S.A#6274","23-Mar-20 01:01 PM","Well i just stored middle name in a variable and then used one dv.dxecute statement","",""
+"457971782293389314","./S.A#6274","23-Mar-20 01:01 PM","And yes i did name[-1]","",""
+"457971782293389314","./S.A#6274","23-Mar-20 01:02 PM","And found value of middle with an if else statme6","",""
+"457971782293389314","./S.A#6274","23-Mar-20 01:02 PM","Statement*","",""
+"457971782293389314","./S.A#6274","23-Mar-20 01:03 PM","Decided against doing it all in one line with a ternady operator for better readability","",""
+"470427327244009483","niV#5484","23-Mar-20 06:40 PM","@./S.A oh god ty","",""
+"457971782293389314","./S.A#6274","23-Mar-20 06:41 PM","@niV for?","",""
+"470427327244009483","niV#5484","23-Mar-20 06:41 PM","@curiouskiwi I apologize, thank you ma'am hahah","",""
+"457971782293389314","./S.A#6274","23-Mar-20 06:41 PM","Oh🤣","",""
+"393854278764068875","curiouskiwi#1671","23-Mar-20 08:33 PM","@niV No worries!  I always appreciate a ""thank you"" no matter how I am addressed. 🙂","",""
+"457971782293389314","./S.A#6274","23-Mar-20 09:42 PM","😂","",""
+"664112164465934367","rudeen#5459","27-Mar-20 02:35 PM","Hi guys, how can I best go on printing out the gotten dict values after running roster.py                          def main ():
+    if len(sys.argv) != 2:
+        exit
+    db.execute(""SELECT * FROM students WHERE house = ?"", (sys.argv[1],))","",""
+"186298086669156353","•••#2676","27-Mar-20 09:04 PM","@rudeen you have to assign the `db.execute()` statement to a variable, let’s call it `results`. Then using a “for” loop you can iterate over the results variable like you would normally do with any other list.
+
+Something like this:
+
+```
+results = db.execute(…)
+# print(results)
+for row in results:
+    print(row)
+```","","👍 (2)"
+"213211001372409856","AsxzTheApteryx#0097","31-Mar-20 12:08 AM","Kia ora all. I've put my code for movies import.py in a main() function. I worked through and reached a point where I thought it should run without any errors, then I get this: 
+
+~/pset7/houses/ $ python import.py characters.csv
+  File ""import.py"", line 48
+    main()
+       ^
+SyntaxError: invalid syntax
+
+
+This is the main function at the bottom of my file. It won't run for some reason? What is the usual reason for this type of error? 
+
+I tried writing directly into the space, rather than def main(): then calling main at the end, but that also ended up with an error of ""unexpected EOF"". Any suggestions for my next step?","",""
+"393854278764068875","curiouskiwi#1671","31-Mar-20 12:24 AM","Kia ora!  Without seeing code, hard to tell, but how about you don't put any of it into a main function and therefore don't try to call main either.","",""
+"393854278764068875","curiouskiwi#1671","31-Mar-20 12:25 AM","does it work then?","",""
+"234679095378706433","Blauelf#6622","31-Mar-20 12:29 AM","@AsxzTheApteryx From that ""unexpected EOF"", I'd guess you might have some opening parenthesis/curly brace/square bracket without a closing equivalent?","","❤️ (1)"
+"213211001372409856","AsxzTheApteryx#0097","31-Mar-20 12:31 AM","Yes, thank you! Was combing through the codes and looking at indentations, checking whether each loop was appropriately finished... turned out that I forgot to add an end bracket to my row[""birth""] when I int()'d it","",""
+"393854278764068875","curiouskiwi#1671","31-Mar-20 12:53 AM","@AsxzTheApteryx so all set?","",""
+"213211001372409856","AsxzTheApteryx#0097","31-Mar-20 12:54 AM","Yep 🙂","",""
+"393854278764068875","curiouskiwi#1671","31-Mar-20 12:54 AM","sweet.","",""
+"178462411206950912","Chook#2868","01-Apr-20 08:48 AM","are there major trade offs / things to think about when importing as a CSV as a list versus importing it as a dictionary? Or does it simply change implementation details?","",""
+"234679095378706433","Blauelf#6622","01-Apr-20 09:40 AM","Details, I would say.","",""
+"688184524202442858","facu96molina#8694","01-Apr-20 11:31 AM","if i declare None to be the middle name of a stuedent, it shows in the db as NULL, instad of a blank space by using """". it that okay?","",""
+"324522780252962816","Sinergy#7605","01-Apr-20 01:15 PM","facu, the None/NULL is what you want","",""
+"299154369704755200","Wey#9176","01-Apr-20 03:18 PM","How come we open the db file with using an f after the parentheses `open(f""students.db"", ""w"").close()`","",""
+"299154369704755200","Wey#9176","01-Apr-20 03:35 PM","And just so that I understand: normally the roster.py is somewhat of an unecessary program because normally we would just do all that in SQL right?","",""
+"234679095378706433","Blauelf#6622","01-Apr-20 04:17 PM","Why would you do such thing, erasing the database?","",""
+"234679095378706433","Blauelf#6622","01-Apr-20 04:18 PM","Don't remove tables, but delete entries. `DELETE FROM students;`","",""
+"234679095378706433","Blauelf#6622","01-Apr-20 04:26 PM","The `f""students.db""` is an f-string, and it is one completely unnecessarily.
+f-strings can be used for example like
+```Python
+name = ""Wey""
+greeting = f""Hello, {name}!"" # inserts name variable
+print(greeting) # Hello, Wey!
+```
+The curly braces could contain any expression, its result will be converted to string. Also supports some format option, a bit like printf in C, just as part of the string syntax.","",""
+"367044760415895553","gansach#6107","01-Apr-20 06:30 PM","I've tried debugging on my own, but I can't wrap my head around a possible mistake","",""
+"269227960156946454","GhostDragon#7128","01-Apr-20 06:30 PM","run check50 in the ide","",""
+"269227960156946454","GhostDragon#7128","01-Apr-20 06:30 PM","nvm i forgot","",""
+"269227960156946454","GhostDragon#7128","01-Apr-20 06:30 PM","which one is wrong?","",""
+"367044760415895553","gansach#6107","01-Apr-20 06:36 PM","I just realised I can look at check50 analysis through github","",""
+"367044760415895553","gansach#6107","01-Apr-20 06:36 PM","lol, I'll try to figure it out","",""
+"367044760415895553","gansach#6107","01-Apr-20 06:37 PM","Thank you tho","",""
+"367044760415895553","gansach#6107","01-Apr-20 06:43 PM","@GhostDragon I was putting 'NULL' string in middle names instead of None, lol","",""
+"269227960156946454","GhostDragon#7128","01-Apr-20 06:43 PM","lol it happens","",""
+"418804878656274434","SvejKelej#4184","01-Apr-20 08:18 PM","@brian i would like to study some arabic please🇸🇦","",""
+"587882932711063552","scoobie#7439","01-Apr-20 10:05 PM","is Finch in Justin Finch-Fletchley","",""
+"587882932711063552","scoobie#7439","01-Apr-20 10:05 PM","a middle name?","",""
+"269227960156946454","GhostDragon#7128","01-Apr-20 10:08 PM","no it is a hyphenated last name","",""
+"587882932711063552","scoobie#7439","01-Apr-20 10:11 PM","okay thanks","",""
+"587882932711063552","scoobie#7439","01-Apr-20 11:15 PM","What's the difference between csv.reader and csv.DictReader?","",""
+"587882932711063552","scoobie#7439","01-Apr-20 11:15 PM","and which one should we use?","",""
+"234679095378706433","Blauelf#6622","02-Apr-20 09:57 AM","Use one that you like.
+`csv.reader` is the more ""raw"" experience, treating the CSV file like a list of lists. It's your responsibility to handle the header row.
+`csv.DictReader` will take the first row for headers, and will use them to construct a dict of each of the remaining rows, so you end up with a list of dicts instead. Its `fieldnames` attribute provides the values from the header.","",""
+"587882932711063552","scoobie#7439","02-Apr-20 10:19 AM","so DictReader is more advanced","",""
+"587882932711063552","scoobie#7439","02-Apr-20 10:19 AM","okay thanks","",""
+"387292479675826176","omarbeendeaded#8736","04-Apr-20 01:04 AM","everytime I try to run import.py I get this error","",""
+"387292479675826176","omarbeendeaded#8736","04-Apr-20 01:04 AM","Traceback (most recent call last):
+  File ""import.py"", line 12, in <module>
+    db = cs50.SQL(""SQLite:///student.db"")
+  File ""/usr/local/lib/python3.7/site-packages/cs50/sql.py"", line 60, in __init__
+    self._engine = sqlalchemy.create_engine(url, **kwargs).execution_options(autocommit=False)
+  File ""/usr/local/lib/python3.7/site-packages/sqlalchemy/engine/__init__.py"", line 479, in create_engine
+    return strategy.create(*args, **kwargs)
+  File ""/usr/local/lib/python3.7/site-packages/sqlalchemy/engine/strategies.py"", line 61, in create
+    entrypoint = u._get_entrypoint()
+  File ""/usr/local/lib/python3.7/site-packages/sqlalchemy/engine/url.py"", line 172, in _get_entrypoint
+    cls = registry.load(name)
+  File ""/usr/local/lib/python3.7/site-packages/sqlalchemy/util/langhelpers.py"", line 240, in load
+    ""Can't load plugin: %s:%s"" % (self.group, name)
+sqlalchemy.exc.NoSuchModuleError: Can't load plugin: sqlalchemy.dialects:SQLite","",""
+"387292479675826176","omarbeendeaded#8736","04-Apr-20 01:04 AM","I tried help50 but to no avail","",""
+"234679095378706433","Blauelf#6622","04-Apr-20 01:25 AM","@omarbeendeaded And if you did `sqlite://` with all characters lower-case?","",""
+"665053121499627571","fjw#9108","04-Apr-20 03:11 AM","am curious - anyone know of a common db library that's not CS50.SQL to use for use with DBs - I've seen waaaayyyyyy too many sql injection attacks over the years, and would rather write safer code","",""
+"387292479675826176","omarbeendeaded#8736","04-Apr-20 12:39 PM","@Blauelf I didnt notice it was capitalized","",""
+"387292479675826176","omarbeendeaded#8736","04-Apr-20 12:39 PM","thanks","",""
+"387292479675826176","omarbeendeaded#8736","04-Apr-20 12:54 PM","I fixed it but now I'm getting this","",""
+"387292479675826176","omarbeendeaded#8736","04-Apr-20 12:54 PM","Traceback (most recent call last):
+  File ""import.py"", line 40, in <module>
+    db.execute(""INSERT INTO student (first_name, middle_name, last_name, house, birth), VALUES(?, ?, ?, ?, ?)"", first_name, middle_name, last_name, house, birth)
+  File ""/usr/local/lib/python3.7/site-packages/cs50/sql.py"", line 21, in decorator
+    return f(*args, **kwargs)
+  File ""/usr/local/lib/python3.7/site-packages/cs50/sql.py"", line 372, in execute
+    raise e
+RuntimeError: near "","": syntax error","",""
+"387292479675826176","omarbeendeaded#8736","04-Apr-20 01:22 PM","Nevermind I found out where the problem is","",""
+"226777911875731456","Cristian#4659","04-Apr-20 02:30 PM","What was the problem?","",""
+"226777911875731456","Cristian#4659","04-Apr-20 02:30 PM","I have the exact same error message","",""
+"226777911875731456","Cristian#4659","04-Apr-20 02:30 PM","@omarbeendeaded","",""
+"387292479675826176","omarbeendeaded#8736","04-Apr-20 02:31 PM","I accidently put a coma before the VALUES","",""
+"387292479675826176","omarbeendeaded#8736","04-Apr-20 02:32 PM","(first_name, middle_name, last_name, house, birth)"","" VALUES(?, ?, ?, ?, ?) the one marked with quotation marks","",""
+"226777911875731456","Cristian#4659","04-Apr-20 02:34 PM","Traceback (most recent call last):
+  File ""import.py"", line 23, in <module>
+    db.execute(f""INSERT INTO {db} VALUES ({full_name[0]}, NULL, {full_name[1]}, {row[1]}, {row[2]})"")
+  File ""/usr/local/lib/python3.7/site-packages/cs50/sql.py"", line 21, in decorator
+    return f(*args, **kwargs)
+  File ""/usr/local/lib/python3.7/site-packages/cs50/sql.py"", line 372, in execute
+    raise e
+RuntimeError: near ""<"": syntax error","",""
+"226777911875731456","Cristian#4659","04-Apr-20 02:34 PM",".","",""
+"226777911875731456","Cristian#4659","04-Apr-20 02:34 PM","I have this error,","",""
+"226777911875731456","Cristian#4659","04-Apr-20 02:34 PM","but I don't have a < in my code","",""
+"226777911875731456","Cristian#4659","04-Apr-20 02:34 PM","so I don't know","",""
+"387292479675826176","omarbeendeaded#8736","04-Apr-20 02:41 PM","I dont know but I think during the lecture David said dont use the curly bracket notation","",""
+"387292479675826176","omarbeendeaded#8736","04-Apr-20 02:41 PM","and put question marks instead","",""
+"387292479675826176","omarbeendeaded#8736","04-Apr-20 02:41 PM","and plugin the values at the end","",""
+"226777911875731456","Cristian#4659","04-Apr-20 02:47 PM","ah thank you","",""
+"226777911875731456","Cristian#4659","04-Apr-20 02:47 PM","I just got it","",""
+"226777911875731456","Cristian#4659","04-Apr-20 02:47 PM","works now","",""
+"387292479675826176","omarbeendeaded#8736","04-Apr-20 02:49 PM","no problem","",""
+"282113226353803265","Nihil Novi#0084","05-Apr-20 04:16 PM","Can someone give me a hint? I have a weird problem when returning a students list from database","",""
+"282113226353803265","Nihil Novi#0084","05-Apr-20 04:17 PM","when I get the list like  db.execute(""SELECT first, middle, last, birth FROM students WHERE house = ?"", house) it works fine, but when I try to add ORDER BY to get list sorted by names I get duplicated name and half the names are missing","",""
+"282113226353803265","Nihil Novi#0084","05-Apr-20 04:30 PM","forgot the semicolon at the end of SQL query, duh","",""
+"556931239756693516","thebluestfox#9307","06-Apr-20 06:59 AM","When printing out the roaster, instead of using a formatted string I use a combination of concatenation methods such as `,` and `+` to print out first, middle, last name and birth year. Had I used a formatted string to print out the roaster, would my code have been potentially susceptible to SQL injection attacks?","",""
+"664112164465934367","rudeen#5459","06-Apr-20 08:14 AM","Hi Guys, I am able to order students in roaster base on their last name, but find it difficult in ordering students by similar last name, any help?                                                                                                                                         students = db.execute(""SELECT * FROM students WHERE house = ? ORDER BY last ASC"", (sys.argv[1],))","",""
+"556931239756693516","thebluestfox#9307","06-Apr-20 08:49 AM","@rudeen You can specify more than one column to the `ORDER BY` clause in order of decreasing significance. In short: `ORDER BY last, first`. P.S. you don't necessarily need to include ASC, as it is the default and it's presumed (by ORDER BY) if ommited.","",""
+"664112164465934367","rudeen#5459","06-Apr-20 08:52 AM","thanks @thebluestfox , how can i better order similar last names?","",""
+"684652492256051221","asmat#3174","06-Apr-20 12:32 PM","rows = db.execute(""SELECT first, middle, last, birth FROM students WHERE house = 'Slytherin'"" )
+when i print rows i get
+[{'first': 'Adelaide', 'middle': '', 'last': 'Murton', 'birth': 1982}, {'first': 'Adrian', 'middle': '', 'last': 'Pucey', 'birth': 1977}, {'first': 'Blaise', 'middle': '', 'last': 'Zabini', 'birth': 1979}, {'first': 'Draco', 'middle': 'Lucius', 'last': 'Malfoy', 'birth': 1980}, {'first': 'Gregory', 'middle': '', 'last': 'Goyle', 'birth': 1980}, {'first': 'Marcus', 'middle': '', 'last': 'Flint', 'birth': 1975}, {'first': 'Millicent', 'middle': '', 'last': 'Bulstrode', 'birth': 1979}, {'first': 'Pansy', 'middle': '', 'last': 'Parkinson', 'birth': 1979}, {'first': 'Terence', 'middle': '', 'last': 'Higgs', 'birth': 1979}, {'first': 'Tracey', 'middle': '', 'last': 'Davis', 'birth': 1980}, {'first': 'Vincent', 'middle': '', 'last': 'Crabbe', 'birth': 1979}]","",""
+"684652492256051221","asmat#3174","06-Apr-20 12:33 PM","i am i going the rite way for doing something wrong","",""
+"684652492256051221","asmat#3174","06-Apr-20 12:33 PM","i am hard coding the house name just for the test phase","",""
+"684652492256051221","asmat#3174","06-Apr-20 12:53 PM","for row in rows:
+        if len(row) = 4: 
+
+and how can we achive this","",""
+"684652492256051221","asmat#3174","06-Apr-20 02:07 PM","{'first': 'Millicent', 'middle': '', 'last': 'Bulstrode', 'birth': 1979} split is not working on it","",""
+"665053121499627571","fjw#9108","06-Apr-20 07:06 PM","look into .items","",""
+"665053121499627571","fjw#9108","06-Apr-20 07:07 PM","and notice the dot","",""
+"684652492256051221","asmat#3174","06-Apr-20 10:02 PM","check50 result","https://cdn.discordapp.com/attachments/639522223329378314/696796895669911552/unknown.png",""
+"684652492256051221","asmat#3174","06-Apr-20 10:03 PM","my database file","https://cdn.discordapp.com/attachments/639522223329378314/696797320716746763/unknown.png",""
+"684652492256051221","asmat#3174","06-Apr-20 10:06 PM","when i run my roster.py","https://cdn.discordapp.com/attachments/639522223329378314/696797935975006218/unknown.png",""
+"684652492256051221","asmat#3174","06-Apr-20 10:06 PM","why am i getting all wrong","",""
+"684652492256051221","asmat#3174","06-Apr-20 10:06 PM","when i submit","",""
+"684652492256051221","asmat#3174","06-Apr-20 10:12 PM","import.py code","https://cdn.discordapp.com/attachments/639522223329378314/696799577847889940/SPOILER_unknown.png",""
+"684652492256051221","asmat#3174","06-Apr-20 10:14 PM","roster.py code","https://cdn.discordapp.com/attachments/639522223329378314/696800031705137242/SPOILER_unknown.png",""
+"393854278764068875","curiouskiwi#1671","06-Apr-20 10:48 PM","what's `get_database`?  Is that in a library you've imported that check50 may not have?","",""
+"684652492256051221","asmat#3174","06-Apr-20 11:01 PM","no it is just a function to open database file, in this case its csv file","",""
+"684652492256051221","asmat#3174","06-Apr-20 11:03 PM","`def get_database(database_file):
+    with open(database_file, 'r') as file_DB:
+        read_DB = csv.reader(file_DB, delimiter=',')
+        #read_DB = csv.DictReader(file_DB)
+        dbase = list(read_DB)
+        #checkDB = (dbase[0][0:])
+    file_DB.close()
+    # return checkDB
+    return dbase
+    # return read_DB`","",""
+"393854278764068875","curiouskiwi#1671","06-Apr-20 11:23 PM","@asmat what's your github username.  I'll have someone take a look.","",""
+"684652492256051221","asmat#3174","06-Apr-20 11:25 PM","AUKNiazi","",""
+"393854278764068875","curiouskiwi#1671","06-Apr-20 11:26 PM","you've assumed that the csv file is named ""characters.csv"" when the spec simply says to take the name from the command line.  As such, since check50's csv file has a different name, your import fails.","",""
+"393854278764068875","curiouskiwi#1671","06-Apr-20 11:27 PM","(that was the one part you left out of your screenshot ;))","",""
+"393854278764068875","curiouskiwi#1671","06-Apr-20 11:27 PM","if you fix that and submit again?","",""
+"393854278764068875","curiouskiwi#1671","06-Apr-20 11:54 PM","@asmat ^^","",""
+"684652492256051221","asmat#3174","06-Apr-20 11:57 PM","ok got it","",""
+"684652492256051221","asmat#3174","07-Apr-20 12:02 AM","Expected Output:
+[{'first': 'Luna', 'middle': None, 'last': 'Lovegood', 'house': 'Ravenclaw', 'birth': 1981}]
+Actual Output:
+[{'first': 'Luna', 'middle': '', 'last': 'Lovegood', 'house': 'Ravenclaw', 'birth': 1981}]","",""
+"684652492256051221","asmat#3174","07-Apr-20 12:03 AM","now what is that","",""
+"684652492256051221","asmat#3174","07-Apr-20 12:04 AM","'middle': None, do we use a NULL char","",""
+"684652492256051221","asmat#3174","07-Apr-20 12:07 AM","None is None","",""
+"684652492256051221","asmat#3174","07-Apr-20 12:10 AM","no output","https://cdn.discordapp.com/attachments/639522223329378314/696829151306448969/unknown.png",""
+"393854278764068875","curiouskiwi#1671","07-Apr-20 12:12 AM","`None`  rather than an empty string","",""
+"684652492256051221","asmat#3174","07-Apr-20 12:14 AM","now it is not printing anything","",""
+"684652492256051221","asmat#3174","07-Apr-20 12:14 AM","roster.py","",""
+"393854278764068875","curiouskiwi#1671","07-Apr-20 12:23 AM","check your indentation  @asmat","",""
+"684652492256051221","asmat#3174","07-Apr-20 12:25 AM","ok let me check","",""
+"684652492256051221","asmat#3174","07-Apr-20 12:53 AM","got it working","",""
+"684652492256051221","asmat#3174","07-Apr-20 12:54 AM","was using 'None' instead of None","",""
+"244878227825229824","dan#8231","08-Apr-20 01:18 AM","","https://cdn.discordapp.com/attachments/639522223329378314/697208608592625674/SPOILER_unknown.png",""
+"244878227825229824","dan#8231","08-Apr-20 01:18 AM","could someone tell me why my output is first, iddle, mlast","",""
+"244878227825229824","dan#8231","08-Apr-20 01:18 AM","it should be first, middle, last","",""
+"244878227825229824","dan#8231","08-Apr-20 01:18 AM","something is wrong only with the 'm'","",""
+"244878227825229824","dan#8231","08-Apr-20 01:23 AM","oh, my lines 20 though 22 were indented by mistake","",""
+"244878227825229824","dan#8231","08-Apr-20 01:23 AM","fixed now","",""
+"244878227825229824","dan#8231","08-Apr-20 02:41 AM","","https://cdn.discordapp.com/attachments/639522223329378314/697229628657369148/SPOILER_unknown.png",""
+"244878227825229824","dan#8231","08-Apr-20 02:41 AM","anyone know why this isnt working?","",""
+"244878227825229824","dan#8231","08-Apr-20 02:41 AM","it gives me a bunch of errors","",""
+"244878227825229824","dan#8231","08-Apr-20 02:41 AM","i thought i did everything right","",""
+"269227960156946454","GhostDragon#7128","08-Apr-20 02:47 AM","what errors is it giving you?","",""
+"244878227825229824","dan#8231","08-Apr-20 02:48 AM","","https://cdn.discordapp.com/attachments/639522223329378314/697231406555856946/unknown.png",""
+"244878227825229824","dan#8231","08-Apr-20 02:48 AM","this","",""
+"269227960156946454","GhostDragon#7128","08-Apr-20 02:53 AM","no need for the alter statement","",""
+"269227960156946454","GhostDragon#7128","08-Apr-20 02:53 AM","the db already has the columns","",""
+"269227960156946454","GhostDragon#7128","08-Apr-20 02:53 AM","see if that fixes it","",""
+"244878227825229824","dan#8231","08-Apr-20 02:55 AM","no need for the alter statement at all?","",""
+"244878227825229824","dan#8231","08-Apr-20 02:55 AM","the db doesnt have any columns by default","",""
+"244878227825229824","dan#8231","08-Apr-20 02:55 AM","","https://cdn.discordapp.com/attachments/639522223329378314/697233241572114492/SPOILER_unknown.png",""
+"244878227825229824","dan#8231","08-Apr-20 02:56 AM","different error message, but still not working","",""
+"269227960156946454","GhostDragon#7128","08-Apr-20 02:58 AM","why are you doing name_list.insert? just curious, but remember you can change the value directly","",""
+"269227960156946454","GhostDragon#7128","08-Apr-20 02:58 AM","you could just do name_list[1] = None","",""
+"244878227825229824","dan#8231","08-Apr-20 02:59 AM","but for people with a middle name, doing that will overwrite their middle name","",""
+"269227960156946454","GhostDragon#7128","08-Apr-20 02:59 AM","inside the if statement tho","",""
+"244878227825229824","dan#8231","08-Apr-20 03:00 AM","that would overwrite the last name though","",""
+"244878227825229824","dan#8231","08-Apr-20 03:00 AM","wouldnt it","",""
+"269227960156946454","GhostDragon#7128","08-Apr-20 03:01 AM","remember in python you can access the array ""in reverse"" by using negative numbers","",""
+"269227960156946454","GhostDragon#7128","08-Apr-20 03:01 AM","also im not too sure but I dont think that list == 2 will check the length i think you might need to use the len() function","",""
+"244878227825229824","dan#8231","08-Apr-20 03:04 AM","hold on, let me try that in just a sec","",""
+"244878227825229824","dan#8231","08-Apr-20 03:04 AM","but about the first point you made","",""
+"269227960156946454","GhostDragon#7128","08-Apr-20 03:05 AM","youre right about that","",""
+"269227960156946454","GhostDragon#7128","08-Apr-20 03:05 AM","i didnt realize insert was a method","",""
+"244878227825229824","dan#8231","08-Apr-20 03:05 AM","okay","",""
+"244878227825229824","dan#8231","08-Apr-20 03:05 AM","did you not use it in your solution?","",""
+"269227960156946454","GhostDragon#7128","08-Apr-20 03:05 AM","no i didnt, once you finish i can send you it if you want","",""
+"244878227825229824","dan#8231","08-Apr-20 03:06 AM","okay","",""
+"244878227825229824","dan#8231","08-Apr-20 03:07 AM","also your right, the columns actually do exist by default","",""
+"244878227825229824","dan#8231","08-Apr-20 03:07 AM","i thought i had to make them myselfs","",""
+"244878227825229824","dan#8231","08-Apr-20 03:07 AM","they should have said something about that in the spec","",""
+"244878227825229824","dan#8231","08-Apr-20 03:07 AM","let me check out the list == 2 thing now","",""
+"269227960156946454","GhostDragon#7128","08-Apr-20 03:08 AM","While the CSV file provided to you has just a name column, the **database has separate columns for first, middle, and last names**. You’ll thus want to first parse each name and separate it into first, middle, and last names. You may assume that each person’s name field will contain either two space-separated names (a first and last name) or three space-separated names (a first, middle, and last name). For students without a middle name, you should leave their middle name field as NULL in the table.","",""
+"269227960156946454","GhostDragon#7128","08-Apr-20 03:08 AM","i guess thats where you are supposed to know from","",""
+"244878227825229824","dan#8231","08-Apr-20 03:10 AM","oh","",""
+"244878227825229824","dan#8231","08-Apr-20 03:10 AM","right","",""
+"244878227825229824","dan#8231","08-Apr-20 03:10 AM","somehow didnt realize","",""
+"244878227825229824","dan#8231","08-Apr-20 03:10 AM","anyways you were right","",""
+"269227960156946454","GhostDragon#7128","08-Apr-20 03:10 AM","is it working?","",""
+"244878227825229824","dan#8231","08-Apr-20 03:10 AM","","https://cdn.discordapp.com/attachments/639522223329378314/697236892814409849/unknown.png",""
+"244878227825229824","dan#8231","08-Apr-20 03:10 AM","len did work","",""
+"244878227825229824","dan#8231","08-Apr-20 03:10 AM","yup","",""
+"269227960156946454","GhostDragon#7128","08-Apr-20 03:10 AM","perfect","",""
+"244878227825229824","dan#8231","08-Apr-20 03:10 AM","thanks a lot","",""
+"269227960156946454","GhostDragon#7128","08-Apr-20 03:10 AM","do you want me to send you my code?","",""
+"244878227825229824","dan#8231","08-Apr-20 03:10 AM","sure, id love to compare","",""
+"269227960156946454","GhostDragon#7128","08-Apr-20 03:14 AM","sent!","",""
+"666277966040268801","jpcorrea#8034","08-Apr-20 07:45 PM","Hey guys! I'm getting a error when I'm trying to call the INSERT method inside (db.execute) in import.py program. The print is here:","https://cdn.discordapp.com/attachments/639522223329378314/697487393565179964/SPOILER_unknown.png",""
+"666277966040268801","jpcorrea#8034","08-Apr-20 07:46 PM","It's saying that there are no such table: students","",""
+"666277966040268801","jpcorrea#8034","08-Apr-20 09:07 PM","Anyone?","",""
+"234679095378706433","Blauelf#6622","08-Apr-20 09:37 PM","Did you maybe delete the table?","",""
+"677215146694803458","pbrouse#8651","10-Apr-20 04:53 PM","@jpcorrea if you go to the terminal and type ‘sqlite3 students.db .schema’ what is the output?","",""
+"677215146694803458","pbrouse#8651","10-Apr-20 05:06 PM","Also did you actually set your database to db = SQL(“sqlite:///students.db”)?","",""
+"571281752207654913","niklaszzm#9764","11-Apr-20 08:07 AM","Does anybody have an idea why it rejects this? I have the exact same output as expected...","https://cdn.discordapp.com/attachments/639522223329378314/698398832848797706/Screen_Shot_2020-04-11_at_1.06.58_PM.png",""
+"393854278764068875","curiouskiwi#1671","11-Apr-20 08:19 AM","you should be using the table that was given, not creating a new one","",""
+"571281752207654913","niklaszzm#9764","11-Apr-20 08:23 AM","Oh damn, thanks a lot -- So I just comment out the open(..""w"") line?","",""
+"393854278764068875","curiouskiwi#1671","11-Apr-20 08:24 AM","yes, and the create table line","",""
+"571281752207654913","niklaszzm#9764","11-Apr-20 08:26 AM","You saved me -- Thanks so much!","","👍 (1)"
+"251199781152620545","Charles#0217","13-Apr-20 06:26 AM","I've worked with a few databases in the past. Is there a need to close the database for this pset in  import.py","",""
+"251199781152620545","Charles#0217","13-Apr-20 06:58 AM","nvm answered it 🙂","",""
+"169157824281051136","Darkfenix#4484","14-Apr-20 02:26 AM","uhh","https://cdn.discordapp.com/attachments/639522223329378314/699400189567303740/unknown.png",""
+"169157824281051136","Darkfenix#4484","14-Apr-20 02:27 AM","cant spot whats wrong","",""
+"169157824281051136","Darkfenix#4484","14-Apr-20 02:27 AM","help ? xD","",""
+"393854278764068875","curiouskiwi#1671","14-Apr-20 02:27 AM","how about the rest? any with middle names?","",""
+"169157824281051136","Darkfenix#4484","14-Apr-20 02:27 AM","oh thats all","",""
+"169157824281051136","Darkfenix#4484","14-Apr-20 02:27 AM","","https://cdn.discordapp.com/attachments/639522223329378314/699400452642701402/unknown.png",""
+"169157824281051136","Darkfenix#4484","14-Apr-20 02:27 AM","","https://cdn.discordapp.com/attachments/639522223329378314/699400517343903895/unknown.png",""
+"169157824281051136","Darkfenix#4484","14-Apr-20 02:28 AM","same with the other","",""
+"393854278764068875","curiouskiwi#1671","14-Apr-20 02:28 AM","if you run `python roster.py Hufflepuff | cat -A`  what do you get","",""
+"169157824281051136","Darkfenix#4484","14-Apr-20 02:29 AM","uh","",""
+"169157824281051136","Darkfenix#4484","14-Apr-20 02:29 AM","it was a extra space","",""
+"169157824281051136","Darkfenix#4484","14-Apr-20 02:29 AM","in the end xD","",""
+"169157824281051136","Darkfenix#4484","14-Apr-20 02:29 AM","sorry","",""
+"169157824281051136","Darkfenix#4484","14-Apr-20 02:34 AM","other thing , isn't Ronald Bilius Weasley supposed to come before Ginevra Molly Weasley ?","",""
+"169157824281051136","Darkfenix#4484","14-Apr-20 02:34 AM","","https://cdn.discordapp.com/attachments/639522223329378314/699402106506838630/unknown.png",""
+"169157824281051136","Darkfenix#4484","14-Apr-20 02:34 AM","sorry if its a silly question , where i live we just order by first name and thats it","",""
+"393854278764068875","curiouskiwi#1671","14-Apr-20 02:38 AM","per the spec: 
+> Students should be ordered by last name. For students with the same last name, they should be ordered by first name.","",""
+"169157824281051136","Darkfenix#4484","14-Apr-20 02:38 AM","thanks ! :D","",""
+"393854278764068875","curiouskiwi#1671","14-Apr-20 02:38 AM","G before R 🙂","",""
+"169157824281051136","Darkfenix#4484","14-Apr-20 02:38 AM","yeah xD got confused and did last then middle","",""
+"337775335695187969","ra9#3988","15-Apr-20 11:46 AM","Guys pls help me out here","https://cdn.discordapp.com/attachments/639522223329378314/699903380826488843/unknown.png",""
+"393854278764068875","curiouskiwi#1671","15-Apr-20 12:05 PM","you look to have an empty space in the middle","",""
+"337775335695187969","ra9#3988","15-Apr-20 12:09 PM","> you look to have an empty space in the middle
+@curiouskiwi yeah","",""
+"393854278764068875","curiouskiwi#1671","15-Apr-20 12:10 PM","if there's no middle name, then the field in the database should be empty  (ie, if you set it to `None` in your python query, it will be NULL in the database.  It looks like you've set it to `"" ""`","",""
+"393854278764068875","curiouskiwi#1671","15-Apr-20 12:11 PM","don't set it to an empty string.  just leave it as None","",""
+"337775335695187969","ra9#3988","15-Apr-20 12:14 PM","But if I leave it as None, it outputs None instead of an empty space","",""
+"337775335695187969","ra9#3988","15-Apr-20 12:17 PM","@curiouskiwi see what I am getting","https://cdn.discordapp.com/attachments/639522223329378314/699911361764786246/unknown.png",""
+"393854278764068875","curiouskiwi#1671","15-Apr-20 12:31 PM","that should only happen if you print ""None""","",""
+"337775335695187969","ra9#3988","15-Apr-20 12:44 PM","Thanks @curiouskiwi , it is passing now","",""
+"329904059014447105","KenKinoshita#5783","15-Apr-20 01:49 PM","Anyone online?","",""
+"329904059014447105","KenKinoshita#5783","15-Apr-20 01:49 PM","Just want to ask question about roster.py","",""
+"213703938027814913","blackcat#5439","15-Apr-20 02:52 PM","just finished houses, whats ur question","",""
+"558660774307037194","ソフィア#7524","15-Apr-20 07:32 PM","Hello, does anyone have an idea why there are duplicates in my result?","https://cdn.discordapp.com/attachments/639522223329378314/700020709425938442/res.PNG",""
+"558660774307037194","ソフィア#7524","15-Apr-20 07:34 PM","I've tried using GROUP BY and now it's working fine. I just don't understand why there would be two Collins and Deans when I only have one of them in the database.","",""
+"234679095378706433","Blauelf#6622","15-Apr-20 10:08 PM","@ソフィア Do you maybe import twice into the database without some `DELETE FROM students;` in between?","",""
+"558660774307037194","ソフィア#7524","16-Apr-20 07:37 AM","@Blauelf can I send you my code in a dm? Because I know I didn't import it twice yet I can't think of another reason why there would be duplicates. I don't know if it's okay to send it here since it's already working.","",""
+"374720030346051584","CyHunt#2508","16-Apr-20 07:43 AM","So I'm having this wierd issue where i get an extra space in between the last name and the comma... and I have no idea how to format it properly 😅 does anyone know how whether the check50 function will dock points for this? It's straight up the only thing holding me back from turning it in","https://cdn.discordapp.com/attachments/639522223329378314/700204776943517827/unknown.png",""
+"393854278764068875","curiouskiwi#1671","16-Apr-20 08:12 AM","it will be flagged as error","",""
+"393854278764068875","curiouskiwi#1671","16-Apr-20 08:12 AM","you must have either a space in your actual name field in the database or you've added one in your print format","",""
+"374720030346051584","CyHunt#2508","16-Apr-20 08:16 AM","must be in my name field in the database, but i used split, so im not sure how i'd go about removing it...","",""
+"374720030346051584","CyHunt#2508","16-Apr-20 08:25 AM","@curiouskiwi would i see that in the phpliteadmin table? because i dont, and i have no spaces in my print format at all. I've used strip hoping that would help but it didnt... im stumped","",""
+"374720030346051584","CyHunt#2508","16-Apr-20 08:25 AM","this","https://cdn.discordapp.com/attachments/639522223329378314/700215339824185344/unknown.png",""
+"393854278764068875","curiouskiwi#1671","16-Apr-20 08:36 AM","@CyHunt what's your print statement?","",""
+"374720030346051584","CyHunt#2508","16-Apr-20 08:37 AM","tryna give away as little as possible 😅","https://cdn.discordapp.com/attachments/639522223329378314/700218341071126548/unknown.png",""
+"213703938027814913","blackcat#5439","16-Apr-20 08:42 AM","@CyHunt I used + instead of , because using , has a free space","",""
+"213703938027814913","blackcat#5439","16-Apr-20 08:43 AM","thats what mines look like","",""
+"234679095378706433","Blauelf#6622","16-Apr-20 08:43 AM","@ソフィア Maybe you ran `import.py` twice? Or have an `if`/`else` that's not working?","",""
+"393854278764068875","curiouskiwi#1671","16-Apr-20 08:44 AM","@CyHunt as @blackcat said printing a list of variables with a comma automatically adds a space between each item","",""
+"393854278764068875","curiouskiwi#1671","16-Apr-20 08:44 AM","using the `+` to concatenate your variables will work because you can control the spaces","",""
+"558660774307037194","ソフィア#7524","16-Apr-20 08:45 AM","@Blauelf  I have 48 students in the database.","",""
+"234679095378706433","Blauelf#6622","16-Apr-20 08:48 AM","@ソフィア So everyone times two. If you run import.py twice, don't forget to delete the rows.","",""
+"558660774307037194","ソフィア#7524","16-Apr-20 08:49 AM","Ohhh. Thanks @Blauelf I must have ran import twice without noticing.","",""
+"234679095378706433","Blauelf#6622","16-Apr-20 08:49 AM","The checker would probably have it run on an empty table only.","",""
+"558660774307037194","ソフィア#7524","16-Apr-20 08:50 AM","When I checked the 48 students none of them are duplicates however.","",""
+"374720030346051584","CyHunt#2508","16-Apr-20 08:51 AM","@curiouskiwi @blackcat thanks so much, that worked perfect!! had no idea i could use + 🤣","",""
+"234679095378706433","Blauelf#6622","16-Apr-20 08:52 AM","@ソフィア You are right, I was counting rows of the wrong file.","",""
+"234679095378706433","Blauelf#6622","16-Apr-20 08:56 AM","40 students.","",""
+"558660774307037194","ソフィア#7524","16-Apr-20 08:56 AM","@Blauelf this is my SQL query along with how I printed the roster. I'm sorry I have to keep on asking I just don't understand why it wouldn't work without the GROUP BY.","https://cdn.discordapp.com/attachments/639522223329378314/700223071008718868/SPOILER_Capture.PNG",""
+"234679095378706433","Blauelf#6622","16-Apr-20 08:57 AM","The printing isn't the issue, I think.","",""
+"234679095378706433","Blauelf#6622","16-Apr-20 08:58 AM","""GROUP BY first"" seems wrong, though. Why would they be identical if they have same first name? Remove the grouping.","",""
+"558660774307037194","ソフィア#7524","16-Apr-20 08:59 AM","I've seen it now! Thanks @Blauelf.","https://cdn.discordapp.com/attachments/639522223329378314/700223728109223966/dup.PNG",""
+"234679095378706433","Blauelf#6622","16-Apr-20 08:59 AM","Ah, so there are some entries from an earlier attempt?","",""
+"558660774307037194","ソフィア#7524","16-Apr-20 08:59 AM","I thought the duplicates will be next to each other 😄 Thanks for telling me there were only 40 students.","",""
+"558660774307037194","ソフィア#7524","16-Apr-20 09:00 AM","Probably? I don't really know 😅","",""
+"558660774307037194","ソフィア#7524","16-Apr-20 09:06 AM","I guess they are. I re-downloaded the file to start with a new database it's working fine now even without the GROUP BY. Thanks a lot @Blauelf.","",""
+"329904059014447105","KenKinoshita#5783","16-Apr-20 09:26 AM","@blackcat I am finished with houses but I just want to know better/clear to write a code on this one","",""
+"554876169363652620","gimmetechtip#6299","17-Apr-20 08:49 AM","Hey, I'm getting an error saying no module named cs50","",""
+"554876169363652620","gimmetechtip#6299","17-Apr-20 08:49 AM","in roster.py","",""
+"554876169363652620","gimmetechtip#6299","17-Apr-20 08:51 AM","","https://cdn.discordapp.com/attachments/639522223329378314/700584101648007188/unknown.png",""
+"554876169363652620","gimmetechtip#6299","17-Apr-20 08:54 AM","my import.py works perfectly fine","",""
+"554876169363652620","gimmetechtip#6299","17-Apr-20 08:54 AM","but my roster.py is having trouble importing cs50 library","",""
+"393854278764068875","curiouskiwi#1671","17-Apr-20 08:55 AM","what other .py files do you have in that folder?","",""
+"554876169363652620","gimmetechtip#6299","17-Apr-20 08:55 AM","i have import.py, roster.py, characters.csv and students.db","",""
+"393854278764068875","curiouskiwi#1671","17-Apr-20 08:55 AM","I just tried your code and it had no trouble with the import","",""
+"554876169363652620","gimmetechtip#6299","17-Apr-20 08:55 AM","","https://cdn.discordapp.com/attachments/639522223329378314/700585270679961720/unknown.png",""
+"554876169363652620","gimmetechtip#6299","17-Apr-20 08:56 AM","> I just tried your code and it had no trouble with the import
+@curiouskiwi what, i closed and opened the ide and it still isnt working","",""
+"393854278764068875","curiouskiwi#1671","17-Apr-20 08:56 AM","did your pset6 programs work okay?","",""
+"554876169363652620","gimmetechtip#6299","17-Apr-20 08:56 AM","yeah","",""
+"554876169363652620","gimmetechtip#6299","17-Apr-20 08:56 AM","even movies worked fine","",""
+"554876169363652620","gimmetechtip#6299","17-Apr-20 08:56 AM","even import.py works fine","",""
+"554876169363652620","gimmetechtip#6299","17-Apr-20 08:56 AM","its only roster.py","",""
+"393854278764068875","curiouskiwi#1671","17-Apr-20 08:57 AM","db = SQL(""sqlire:///students.db"")  is that a typo?  sqlite","",""
+"554876169363652620","gimmetechtip#6299","17-Apr-20 08:57 AM","oh damn","",""
+"554876169363652620","gimmetechtip#6299","17-Apr-20 08:57 AM","yeah","",""
+"554876169363652620","gimmetechtip#6299","17-Apr-20 08:57 AM","works perfectly fine","",""
+"554876169363652620","gimmetechtip#6299","17-Apr-20 08:57 AM","thanks!","",""
+"393854278764068875","curiouskiwi#1671","17-Apr-20 08:57 AM","👍","",""
+"372141606012321793","Yoggan#0011","20-Apr-20 02:54 AM","can someone help me?","",""
+"372141606012321793","Yoggan#0011","20-Apr-20 02:55 AM","","https://cdn.discordapp.com/attachments/639522223329378314/701581766154125392/unknown.png",""
+"372141606012321793","Yoggan#0011","20-Apr-20 02:59 AM","||for i in rows:
+        if i['middle'] != None:
+            middle = "" "" + i['middle']
+        else:
+            middle = None
+        print(""{}{} {}, born {}"".format(i['first'], i['middle'], i['last'], i['birth']))||","",""
+"372141606012321793","Yoggan#0011","20-Apr-20 03:06 AM","i cant figure out","",""
+"372141606012321793","Yoggan#0011","20-Apr-20 03:06 AM","why is printing the none","",""
+"372141606012321793","Yoggan#0011","20-Apr-20 03:06 AM","i solved the error","",""
+"698673555885522996","Omi2006#7359","20-Apr-20 03:07 AM","When checking if something is none in python, do ```if i['middle'] is None:
+```","",""
+"372141606012321793","Yoggan#0011","20-Apr-20 03:09 AM","for i in rows:
+        if i['middle'] is not None:
+            middle = "" "" + i['middle']
+        print(""{} {} {}, born {}"".format(i['first'], i['middle'], i['last'], i['birth']))","",""
+"372141606012321793","Yoggan#0011","20-Apr-20 03:09 AM","its the same","",""
+"372141606012321793","Yoggan#0011","20-Apr-20 03:10 AM","for the none value is putting none","",""
+"393854278764068875","curiouskiwi#1671","20-Apr-20 03:11 AM","shouldn't you be printing `middle` in that case?","",""
+"372141606012321793","Yoggan#0011","20-Apr-20 03:14 AM","its working for the middle name if there is a middle name","",""
+"372141606012321793","Yoggan#0011","20-Apr-20 03:15 AM","my only problem is without the middle name its putting None","",""
+"372141606012321793","Yoggan#0011","20-Apr-20 03:15 AM","","https://cdn.discordapp.com/attachments/639522223329378314/701586884282810418/unknown.png",""
+"698673555885522996","Omi2006#7359","20-Apr-20 03:16 AM","Try ```
+if i['middle'] != ""None"":
+
+```","",""
+"372141606012321793","Yoggan#0011","20-Apr-20 03:17 AM","if i do this it gives me back the error","",""
+"372141606012321793","Yoggan#0011","20-Apr-20 03:18 AM","","https://cdn.discordapp.com/attachments/639522223329378314/701587670299836546/unknown.png",""
+"372141606012321793","Yoggan#0011","20-Apr-20 03:20 AM","i read on stackoverflow about this problem","",""
+"372141606012321793","Yoggan#0011","20-Apr-20 03:20 AM","and it seems to be some confusion about the string type and NoneType","",""
+"698673555885522996","Omi2006#7359","20-Apr-20 03:20 AM","Maybe you could do: ```
+if i['middle']:
+
+``` since  None evaluates to false","","👍 (1)"
+"372141606012321793","Yoggan#0011","20-Apr-20 03:20 AM","let me check","",""
+"372141606012321793","Yoggan#0011","20-Apr-20 03:24 AM","its working thank you so much","",""
+"698673555885522996","Omi2006#7359","20-Apr-20 03:25 AM","Happy to help","","👍 (1)"
+"238801079339450368","RoyalSeraph#9004","21-Apr-20 01:40 PM","Hi I'm a little confused about this (import):
+||db = SQL(""sqlite:///students.db"")||
+||with open(sys.argv[1]) as hogwarts:||
+||    hogwarts = csv.DictReader(hogwarts)||
+||    for row in hogwarts:||
+||        namels = row['name'].split()||
+||       if len(namels) == 3:||
+||            namels.insert(1, None)||
+||        db.execute(""INSERT INTO students (firstname, middlename, lastname, house, birth) VALUES (?, ?, ?, ?, ?)"", namels[0], namels[1], namels[2], row['house'], row['birth'])||","",""
+"238801079339450368","RoyalSeraph#9004","21-Apr-20 01:40 PM","it returns ""IndexError: list index out of range""","",""
+"238801079339450368","RoyalSeraph#9004","21-Apr-20 01:42 PM","I saw someone further up this chat had a similar problem but I couldn't understand the explanation","",""
+"618083472506093581","Lisa Gillfrost#3330","21-Apr-20 04:29 PM","Hi! I get an error message that says: ""database disk image is malformed"". Does anyone have a clue how to fix it?","",""
+"213263603095175168","Shisss#8536","21-Apr-20 10:58 PM","I don't get it, when submitting my results, import.py returns  2 ""errors"" enclosed, expected and actual look identical to me... roster.py results are perfect... can anyone tell me what am I missing?","https://cdn.discordapp.com/attachments/639522223329378314/702246829538148422/Screenshot_2020-04-21_at_21.54.02.png",""
+"213263603095175168","Shisss#8536","21-Apr-20 11:43 PM","solved! I was recreating the table... well, one more down...","",""
+"238801079339450368","RoyalSeraph#9004","23-Apr-20 02:02 PM","> it returns ""IndexError: list index out of range""
+Anyone?","",""
+"547242917975031814","lovemrlemon#5740","23-Apr-20 02:26 PM","> it returns ""IndexError: list index out of range""
+@RoyalSeraph Hi! when you try to reach names[2] it will be out of range if there is no middle name, since for people who has only first and last name, the length of the list names will be 2, not 3.","",""
+"547242917975031814","lovemrlemon#5740","23-Apr-20 02:27 PM","if there's not a middle name, you should set it to None.. you might want to consider a condition for it before the INSERT query","",""
+"547242917975031814","lovemrlemon#5740","23-Apr-20 02:28 PM","頑張って^^","",""
+"238801079339450368","RoyalSeraph#9004","23-Apr-20 03:13 PM","ア〜ありがとう！ 😃
+Well, it worked :) but now there's a different error, regarding the titles... But I'll try to solve it myself first. Thanks a lot!","",""
+"547242917975031814","lovemrlemon#5740","23-Apr-20 03:28 PM","now I have a question.. I am done and I do get the results when I run roster.py. But my results are like below:","",""
+"547242917975031814","lovemrlemon#5740","23-Apr-20 03:29 PM","","https://cdn.discordapp.com/attachments/639522223329378314/702858640788553738/Screen_Shot_2020-04-23_at_15.29.01.png",""
+"547242917975031814","lovemrlemon#5740","23-Apr-20 03:30 PM","I'm sending my code too.. this is import","https://cdn.discordapp.com/attachments/639522223329378314/702858882459893790/SPOILER_Screen_Shot_2020-04-23_at_15.29.55.png",""
+"547242917975031814","lovemrlemon#5740","23-Apr-20 03:30 PM","and roster","https://cdn.discordapp.com/attachments/639522223329378314/702858985652355143/SPOILER_Screen_Shot_2020-04-23_at_15.30.25.png",""
+"547242917975031814","lovemrlemon#5740","23-Apr-20 03:30 PM","and ideas what's wrong?","",""
+"238801079339450368","RoyalSeraph#9004","23-Apr-20 03:47 PM","Why the ""-1"" in the last name?","",""
+"269227960156946454","GhostDragon#7128","23-Apr-20 03:47 PM","it selects the last value in the list","",""
+"547242917975031814","lovemrlemon#5740","23-Apr-20 03:48 PM","it's to not to mix the middle name. I don't know if it's necessary, but I wanted to be safe","",""
+"393854278764068875","curiouskiwi#1671","24-Apr-20 12:44 AM","@lovemrlemon you shouldn't be creating a new table in the database.  The database you were given (and that check50 is using) already has the table.","",""
+"547242917975031814","lovemrlemon#5740","24-Apr-20 12:48 AM","Alright. Managed it this time. At first I got an error message saying smth like “there’s no table students”. But it fixed after i downloaded the assignment from scratch ^^","",""
+"690305517586874378","DJMANTA#8982","24-Apr-20 12:35 PM","Has anyone else completed the course and not yet got a certificate?","",""
+"703906393903857736","chuinzer#6740","28-Apr-20 03:05 PM","maybe your projects didnt pass or something?","",""
+"478262400416743441","honeycat#6038","29-Apr-20 03:13 AM","In import.py I am explicitely updating the middle name column to set the value to NULL if there is no middle name. Is this correct, or am I just supposed to not pass a value. Is NULL already the default value?
+
+Update: That worked just fine!","",""
+"478262400416743441","honeycat#6038","29-Apr-20 06:48 AM","@ソフィア#7524 @Blauelf one thing I noticed too is that even if you delete all the rows in your table the id number doesn't reset to 0, so just to be sure I copied the create statement from the table, deleted the students table and created a new one with a paste of the create statement.","",""
+"527542645002862609","mahmirr#9495","29-Apr-20 08:51 AM","How do you set the default value to NULL when inserting the middle name?","",""
+"527542645002862609","mahmirr#9495","29-Apr-20 08:51 AM","Does the python None get converted over?","",""
+"212069163542249472","Ginge#3034","29-Apr-20 08:54 AM","That's what the video walkthrough implied, and it seemed to work when I did it","",""
+"212069163542249472","Ginge#3034","29-Apr-20 08:54 AM","Didn't play with it too much","",""
+"527542645002862609","mahmirr#9495","29-Apr-20 09:30 AM","Yeah, it does","",""
+"527542645002862609","mahmirr#9495","29-Apr-20 09:30 AM","I just tested with the database","",""
+"234679095378706433","Blauelf#6622","29-Apr-20 11:03 AM","@honeycat That's fine. It shouldn't automatically start at 0 again, as you might have used the previously existing IDs elsewhere, and might not realise it's referring to a different record now. For `houses`, the ID doesn't even matter.","","👍 (1)"
+"402562063823667200","KatsuThunder#2846","30-Apr-20 12:25 AM","Hi everyone! Gettting this weird error when trying to push data into the student SQL table:
+```
+Traceback (most recent call last):
+  File ""import.py"", line 13, in <module>
+    db.execute(""CREATE TABLE students (firstName TEXT, middleName TEXT, lastName TEXT, house TEXT, birth NUMERIC"")
+  File ""/usr/local/lib/python3.7/site-packages/cs50/sql.py"", line 21, in decorator
+    return f(*args, **kwargs)
+  File ""/usr/local/lib/python3.7/site-packages/cs50/sql.py"", line 372, in execute
+    raise e
+RuntimeError: incomplete input
+```
+When searching that error, it looks like other people got it because they were passing in python values rather than using the (?, ?, ?) notation, but I am using that and still getting the error. Here is my code (tried to mark it as a spoiler so hope that worked):","",""
+"402562063823667200","KatsuThunder#2846","30-Apr-20 12:27 AM","||```
+
+#create empty students.db
+open(""students.db"",""w"").close()
+
+#open that file for SQlite
+db = cs50.SQL(""sqlite:///students.db"")
+
+# creates table called students in students.db
+db.execute(""CREATE TABLE students (firstName TEXT, middleName TEXT, lastName TEXT, house TEXT, birth NUMERIC"")
+
+#Open csv
+
+if (len(sys.argv) > 2):
+    print(""Error"")
+else:
+    with open(sys.argv[1],""r"") as file:
+        reader = csv.DictReader(file)
+        for row in reader:
+            name = row[""name""].split("" "")
+            house = row[""house""]
+            birth = row[""birth""]
+            if(len(name) == 2):
+                firstName = name[0]
+                middleName = ""NULL""
+                lastName = name[1]
+            elif(len(name) == 3):
+                firstName = name[0]
+                middleName = name[1]
+                lastName = name[2]
+            
+            db.execute(""INSERT INTO students(firstName, middleName, lastName, house, birth) VALUES (?, ?, ?, ?, ?)"",
+                firstName, middleName, lastName, house, birth)
+```||","",""
+"393854278764068875","curiouskiwi#1671","30-Apr-20 12:32 AM","First of all, you should not be creating an empty db and then inserting a table.  The spec tells you to import the students into the database table that is given to you in the distribution code.","",""
+"402562063823667200","KatsuThunder#2846","30-Apr-20 12:34 AM","ah yeah, I saw that db was already in there but thought I might still need that code since david had it in the lecture. Just took it out but still getting that error","",""
+"393854278764068875","curiouskiwi#1671","30-Apr-20 12:35 AM","your error was in a CREATE sql statement.   As I said, you shouldn't be creating any tables in this exercise.","",""
+"402562063823667200","KatsuThunder#2846","30-Apr-20 12:37 AM","","https://cdn.discordapp.com/attachments/639522223329378314/705170831851913216/Screen_Shot_2020-04-29_at_2.36.56_PM.png",""
+"402562063823667200","KatsuThunder#2846","30-Apr-20 12:37 AM","but when I open the database it says there are no tables?","",""
+"393854278764068875","curiouskiwi#1671","30-Apr-20 12:38 AM","that's because you deleted the database that was given to you in the distribution code","",""
+"402562063823667200","KatsuThunder#2846","30-Apr-20 12:39 AM","oh.. not sure how I did that lol. Will redownload. Thanks!","",""
+"393854278764068875","curiouskiwi#1671","30-Apr-20 12:39 AM","you did that here; `open(""students.db"",""w"").close()`","",""
+"402562063823667200","KatsuThunder#2846","30-Apr-20 12:40 AM","ah! okay did not know that would delete things. Thought it just opened and closed","",""
+"393854278764068875","curiouskiwi#1671","30-Apr-20 12:44 AM","yes, per the python docs for `open`: 
+> The first argument is a string containing the filename. The second argument is another string containing a few characters describing the way in which the file will be used. mode can be 'r' when the file will only be read, 'w' for only writing (an existing file with the same name will be erased)
+> 
+--  https://docs.python.org/3.7/tutorial/inputoutput.html#reading-and-writing-files","",""
+"402562063823667200","KatsuThunder#2846","30-Apr-20 12:56 AM","gotcha. thanks so much!","",""
+"395174542403829760","Orante#6576","30-Apr-20 10:26 AM","Is there some way to shorten this code? I cannot use * because I am not using all columns (not including the id column)","https://cdn.discordapp.com/attachments/639522223329378314/705319157624733776/SPOILER_unknown.png",""
+"212069163542249472","Ginge#3034","30-Apr-20 09:16 PM","nope, the only way to shorten that would be to use shorter variable names","",""
+"527542645002862609","mahmirr#9495","30-Apr-20 10:14 PM","You could always store the string somewhere else.","",""
+"446491969384873985","Swervmerv#2164","30-Apr-20 11:36 PM","I'm getting the following error about a malformed database issue, can someone help?","https://cdn.discordapp.com/attachments/639522223329378314/705517982813519912/unknown.png",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","30-Apr-20 11:38 PM","replace null with None","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","30-Apr-20 11:38 PM","with the capital N","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","30-Apr-20 11:39 PM","""None"" is python's NULL","",""
+"446491969384873985","Swervmerv#2164","30-Apr-20 11:40 PM","I'm already doing that I think. I assign (middle_name = None) and pass middle_name to the sql query.","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","30-Apr-20 11:41 PM","Huh, weird, let me look at mine and compare","",""
+"446491969384873985","Swervmerv#2164","30-Apr-20 11:41 PM","This is my sql query in Python","https://cdn.discordapp.com/attachments/639522223329378314/705519218497683566/SPOILER_unknown.png",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","30-Apr-20 11:43 PM","that query seems correct","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","30-Apr-20 11:43 PM","seems like it might have something to do with the .db file","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","30-Apr-20 11:43 PM","if you go into sqlite and .schema, what does it output?","",""
+"312763198103093257","Legendary Girl A#3022","30-Apr-20 11:44 PM","should i clear my table every time i run import?","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","30-Apr-20 11:44 PM","nah","",""
+"312763198103093257","Legendary Girl A#3022","30-Apr-20 11:44 PM","why not?","",""
+"312763198103093257","Legendary Girl A#3022","30-Apr-20 11:44 PM","dont have to because it doesnt matter i guess?","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","30-Apr-20 11:44 PM","So that, theoretically, you can add students from different files","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","30-Apr-20 11:44 PM","import 3 .csv files of students to one database","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","30-Apr-20 11:45 PM","If you clear it every time you import that is impossiburu","",""
+"446491969384873985","Swervmerv#2164","30-Apr-20 11:45 PM","How do I go to sqlite and .schema?","",""
+"312763198103093257","Legendary Girl A#3022","30-Apr-20 11:45 PM","sqlite3 <filename.db>","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","30-Apr-20 11:45 PM","```sqlite3 students.db```","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","30-Apr-20 11:46 PM","then ```.schema```","",""
+"446491969384873985","Swervmerv#2164","30-Apr-20 11:46 PM","that must be it, I'm getting $ sqlite3 students.db
+SQLite version 3.22.0 2018-01-22 18:45:57
+Enter "".help"" for usage hints.
+sqlite> .schema
+Error: malformed database schema (?)","",""
+"446491969384873985","Swervmerv#2164","30-Apr-20 11:46 PM","I'll try to re-download the .db file","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","30-Apr-20 11:46 PM","yeah sounds like a good plan","",""
+"446491969384873985","Swervmerv#2164","30-Apr-20 11:51 PM","That worked, thank you @Napoopan Totallatot, Worm King!","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","30-Apr-20 11:51 PM","What a weird thing lol, i wonder how that happened","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","30-Apr-20 11:51 PM","But youre welcome, your query should work now","",""
+"446491969384873985","Swervmerv#2164","30-Apr-20 11:52 PM","Not sure how it happened either, but it works now","",""
+"446491969384873985","Swervmerv#2164","30-Apr-20 11:52 PM","Maybe I messed something up with one of my earlier inserts that was incorrect","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","30-Apr-20 11:53 PM","¯\_(ツ)_/¯","",""
+"476784784551444490","ninlectro#9391","01-May-20 03:14 PM","Did anyone find houses much easier than movies?","",""
+"142284966133366784","KennyD#6825","01-May-20 05:59 PM","Neither was particularly difficult but I guess houses took a bit longer due to having to combine python and sql syntax","",""
+"142284966133366784","KennyD#6825","01-May-20 06:00 PM","I found that whenever I went into the students.db with sqlite3 and then ctrl+d out of it, the table in the db ended up being deleted. Did anyone experience this as well?","",""
+"142284966133366784","KennyD#6825","01-May-20 06:00 PM","I could recreate the table in the import.py script though","",""
+"312763198103093257","Legendary Girl A#3022","01-May-20 10:40 PM","movies 13 was scary. didnt give me much trouble but i paniced and felt unprepared.","",""
+"142284966133366784","KennyD#6825","02-May-20 01:00 AM","I thought SQL was scary before this pset","",""
+"142284966133366784","KennyD#6825","02-May-20 01:01 AM","But it's really straightforward. It's almost like typing in plain english (for left brained people)","",""
+"588150974422581268","Muktesharyan#5091","02-May-20 05:28 AM","@ninlectro yes i think so too","",""
+"701479951479865384","ABD#0399","02-May-20 12:58 PM","SQL not defined it says.","https://cdn.discordapp.com/attachments/639522223329378314/706082108942057542/unknown.png",""
+"393854278764068875","curiouskiwi#1671","02-May-20 12:59 PM","`from cs50 import SQL`  or if you just `import cs50` as you've done, you have to say `db = cs50.SQL(...`","",""
+"701479951479865384","ABD#0399","02-May-20 01:15 PM","cs50.SQL  -> Thanks","",""
+"566075422547247105","kaizen71#1394","02-May-20 10:26 PM","hello","",""
+"265276863113330688","euhmi#0001","03-May-20 03:34 AM","Hi, will it count as a mistake if the students of each roster are not listed in the same order (mine  is on the right)?
+
+EDIT: Forgot to order by last name and first name","https://cdn.discordapp.com/attachments/639522223329378314/706302562118139964/SPOILER_houses_roster.png",""
+"265276863113330688","euhmi#0001","03-May-20 03:39 AM","Oops, didn't notice that we had to order by last name, my mistake","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","03-May-20 03:40 AM","Yeah, seems you've ordered them alphabetically by first name","",""
+"285347116703023104","Rz.inc#5464","03-May-20 09:23 AM","Hey could someone help me out with this?","https://cdn.discordapp.com/attachments/639522223329378314/706390422649569390/unknown.png",""
+"285347116703023104","Rz.inc#5464","03-May-20 09:24 AM","Hufflepuff loads fine and this one looks fine too but it's giving a wrong","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","03-May-20 09:36 AM","Your middle names are connected to your first names","",""
+"285347116703023104","Rz.inc#5464","03-May-20 09:36 AM","ohshyeah","",""
+"285347116703023104","Rz.inc#5464","03-May-20 09:36 AM","Thanks for that","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","03-May-20 09:36 AM","Np, good luck","",""
+"285347116703023104","Rz.inc#5464","03-May-20 09:38 AM","got it 6/6 :D","",""
+"285347116703023104","Rz.inc#5464","03-May-20 09:38 AM","finally","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","03-May-20 09:39 AM","👍👍","",""
+"700310446774943836","Hoody512#2226","03-May-20 05:08 PM","I've managed to come this far - could someone help guide me or give a hint how do you go from here to formatting the results?","",""
+"700310446774943836","Hoody512#2226","03-May-20 05:09 PM","||||","https://cdn.discordapp.com/attachments/639522223329378314/706507616016400394/Screen_Shot_2020-05-03_at_8.08.04_PM.png",""
+"700310446774943836","Hoody512#2226","03-May-20 05:10 PM","I have a feeling a for loop is definitely needed here but not sure syntactically what's the way forward","",""
+"700310446774943836","Hoody512#2226","03-May-20 06:07 PM","Ah, I finally got it to manage in the IDE but when submitting it is giving me some error flags 😦","",""
+"700310446774943836","Hoody512#2226","03-May-20 06:08 PM","Could anyone kindly lend an eye?","",""
+"700310446774943836","Hoody512#2226","03-May-20 06:08 PM","https://submit.cs50.io/check50/276db8fc429b955863bf793bdf2aecd16f1aebcf","",""
+"700310446774943836","Hoody512#2226","03-May-20 06:11 PM","I also used Nameparser to help split the names - could that be an issue?","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","03-May-20 06:40 PM","Well first off you've got the middle names wrong","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","03-May-20 06:41 PM","Set them to None if there isn't one, capital N","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","03-May-20 06:41 PM","That's Python for Null","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","03-May-20 06:41 PM","Wait, maybe it's just weird python formatting and you have it right","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","03-May-20 06:42 PM","When I printed them out it didn't say None, but yours aren't quoted","",""
+"700310446774943836","Hoody512#2226","03-May-20 06:42 PM","I did set it to None though! Let me recheck again and give you a screenshot.","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","03-May-20 06:42 PM","I think you may have it right, and it's just because you're printing the whole row with headers","",""
+"700310446774943836","Hoody512#2226","03-May-20 06:42 PM","Thank you for the reply though - it just feels so rough being so close and yet 😦","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","03-May-20 06:43 PM","I think you're gonna need to for loop through every entry in the list of dictionaries","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","03-May-20 06:44 PM","It's been a couple weeks since I did this so I'm not exactly sure what I did","",""
+"700310446774943836","Hoody512#2226","03-May-20 06:44 PM","This is the null part.","https://cdn.discordapp.com/attachments/639522223329378314/706531665169875044/Screen_Shot_2020-05-03_at_9.43.39_PM.png",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","03-May-20 06:44 PM","Then yeah you're good","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","03-May-20 06:44 PM","I just thought you had it wrong because it was printing them out, sorry","",""
+"700310446774943836","Hoody512#2226","03-May-20 06:45 PM","","https://cdn.discordapp.com/attachments/639522223329378314/706531860724973608/Screen_Shot_2020-05-03_at_9.45.04_PM.png",""
+"700310446774943836","Hoody512#2226","03-May-20 06:45 PM","It's currently outputting just fine using roster.py","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","03-May-20 06:46 PM","I had a for loop that went through the entire list of dictionaries with one condition inside it","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","03-May-20 06:46 PM","And that printed it out correctly","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","03-May-20 06:46 PM","Condition to avoid those pesky Nones","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","03-May-20 06:47 PM","Wait, you got it working?","",""
+"700310446774943836","Hoody512#2226","03-May-20 06:47 PM","Yuppp","",""
+"700310446774943836","Hoody512#2226","03-May-20 06:47 PM","It works just fine!","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","03-May-20 06:47 PM","Nice one","",""
+"700310446774943836","Hoody512#2226","03-May-20 06:47 PM","For all the values.","",""
+"700310446774943836","Hoody512#2226","03-May-20 06:47 PM","But","",""
+"700310446774943836","Hoody512#2226","03-May-20 06:47 PM","","https://cdn.discordapp.com/attachments/639522223329378314/706532394164944896/Screen_Shot_2020-05-03_at_9.47.10_PM.png",""
+"700310446774943836","Hoody512#2226","03-May-20 06:47 PM","This is where I am struggling..","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","03-May-20 06:48 PM","Gry[]?","",""
+"700310446774943836","Hoody512#2226","03-May-20 06:50 PM","Umm, not sure I got you 😦","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","03-May-20 06:51 PM","Why does their expected output say 'house': 'Gry[]","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","03-May-20 06:51 PM","maybe it's just because it's too long","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","03-May-20 06:52 PM","Can you show me your sqlite query that fills the database?","",""
+"700310446774943836","Hoody512#2226","03-May-20 06:52 PM","Would you mind if I PM you?","",""
+"700310446774943836","Hoody512#2226","03-May-20 06:52 PM","Or I can also share it here 🙂","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","03-May-20 06:53 PM","Either works","",""
+"700310446774943836","Hoody512#2226","03-May-20 07:03 PM","Changed the splitting of the names using split and it's working just fine in the IDE - I can get the houses sorted properly.","",""
+"700310446774943836","Hoody512#2226","03-May-20 07:03 PM","Thank you @Napoopan Totallatot, Worm King  for the support. Could anyone else if possible help me out?","",""
+"204736232545058816","Mintage#7507","04-May-20 02:07 AM","Why is this PSET so frustrating 😅","",""
+"566075422547247105","kaizen71#1394","04-May-20 06:52 AM","houses","",""
+"566075422547247105","kaizen71#1394","04-May-20 06:52 AM","is probably the easiest after cash","",""
+"566075422547247105","kaizen71#1394","04-May-20 06:52 AM","0_0","",""
+"566075422547247105","kaizen71#1394","04-May-20 07:23 AM","hello","",""
+"566075422547247105","kaizen71#1394","04-May-20 07:23 AM","anyone here?","",""
+"204736232545058816","Mintage#7507","04-May-20 12:45 PM","@kaizen71 I had to debug something that didn't want to work. Took me 20 submits and 2 hours to find out I was working in the wrong file. Got the 6/6 though 😁","",""
+"689575154870780028","RandmTask#7556","04-May-20 08:25 PM","how can I call argv[1] variable into db.execute? ie db.execute(""SELECT first, middle, last, birth, house FROM students WHERE house = ""?"", argv[1]"")","",""
+"689575154870780028","RandmTask#7556","04-May-20 09:16 PM","Never mind got it","",""
+"689575154870780028","RandmTask#7556","04-May-20 09:19 PM","Submitted! But not sure what the /n means in the style50?","",""
+"698673555885522996","Omi2006#7359","04-May-20 10:47 PM","End of line. Basically an ""enter"" space","",""
+"204736232545058816","Mintage#7507","05-May-20 02:19 AM","If /n is in style50 it wants you to put a new line, in such a way that the code ""restarts"" where the green ends","",""
+"689575154870780028","RandmTask#7556","05-May-20 07:11 AM","Thanks I’ll try that.","",""
+"407308504706187304","Comp_Turt#1065","05-May-20 03:24 PM","","https://cdn.discordapp.com/attachments/639522223329378314/707206203238776883/unknown.png",""
+"407308504706187304","Comp_Turt#1065","05-May-20 03:25 PM","","https://cdn.discordapp.com/attachments/639522223329378314/707206260516454430/unknown.png",""
+"407308504706187304","Comp_Turt#1065","05-May-20 03:25 PM","what am i doing wrong?","",""
+"269227960156946454","GhostDragon#7128","05-May-20 03:26 PM","if middle is none then does name[2] really exist?","",""
+"407308504706187304","Comp_Turt#1065","05-May-20 03:29 PM","ahhhh why sometimes am i so stupid 😛. Thanks GD","",""
+"269227960156946454","GhostDragon#7128","05-May-20 04:07 PM","np","",""
+"547961721029918740","FishyFeathers#5760","05-May-20 08:05 PM","Hi all! I've been working on this pset for a bit and my code seems to do everything it's supposed to - it fills out the database (I thought) correctly, and prints the student names from all the houses in the correct orders. However, when I submit it check50 tells me that everything is wrong and doesn't seem to get any output. I'm new to programming so I'm not sure how to tackle this. If anyone has some advice, I'd appreciate it!","",""
+"365430370570731520","Dr. Nihil#2560","05-May-20 08:25 PM","@Hoody512 , im having the same problem, did you solve it yet","",""
+"547961721029918740","FishyFeathers#5760","05-May-20 08:28 PM","Nope 😦","",""
+"547961721029918740","FishyFeathers#5760","05-May-20 08:28 PM","oh oops that wasn't to me. Sorry!!","",""
+"365430370570731520","Dr. Nihil#2560","05-May-20 08:39 PM","nvm i got it xD","",""
+"640676779505352716","xyz#3272","07-May-20 12:02 AM","What is the proper syntax for this:","",""
+"640676779505352716","xyz#3272","07-May-20 12:02 AM","first = row[""name""][0]","",""
+"269227960156946454","GhostDragon#7128","07-May-20 12:06 AM","what are you trying to do?","",""
+"671601274780778499","manolo#9615","07-May-20 08:19 AM","anyone online","",""
+"383322530511060994","Singularity#9064","08-May-20 05:23 AM","@xyz 
+
+row[""name""] returns a whole string. Trying to index it will return a character.","",""
+"383322530511060994","Singularity#9064","08-May-20 05:28 AM","@manolo try asking questions directly. Someone who's online will see it and get right to the point. 
+
+The following link explains why so. 
+
+https://www.nohello.com/2013/01/please-dont-say-just-hello-in-chat.html?m=1","",""
+"372867715993567233","King of Random#7545","09-May-20 11:29 PM","?","",""
+"493062222235435023","Annie#1479","10-May-20 03:15 PM","Hi, I've finished my coding and checking, everything seemed to be ok, but when I submitted my results were like that","https://cdn.discordapp.com/attachments/639522223329378314/709015689792454676/2020-05-10_21.13.46.png",""
+"493062222235435023","Annie#1479","10-May-20 03:15 PM","below are my codes","",""
+"493062222235435023","Annie#1479","10-May-20 03:15 PM","","https://cdn.discordapp.com/attachments/639522223329378314/709015876917133312/SPOILER__2020-05-10_21.09.29.png",""
+"493062222235435023","Annie#1479","10-May-20 03:16 PM","","https://cdn.discordapp.com/attachments/639522223329378314/709015900933849128/SPOILER__2020-05-10_21.10.11.png",""
+"493062222235435023","Annie#1479","10-May-20 03:16 PM","but when I checked, everything seemed to be ok...","https://cdn.discordapp.com/attachments/639522223329378314/709016057356222524/2020-05-10_21.13.20.png",""
+"250157065887023105","Danny Deermouse#7534","10-May-20 11:37 PM","in import.py line 12 you are not recreating the students.db correctly. I'm assuming you want to delete the current data base everytime you run import and recreate a new one. To match the original style of the students.db before deletion, line 12 should look like 
+
+db.execute(""CREATE TABLE students (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    first VARCHAR(255),
+    middle VARCHAR(255),
+    last VARCHAR(255),
+    house VARCHAR(10),
+    birth INTEGER"")","",""
+"250157065887023105","Danny Deermouse#7534","10-May-20 11:37 PM","@Annie","",""
+"354372432838000642","humanbeing#0598","11-May-20 04:13 AM","is this easy?","",""
+"638271389119414293","Ojou Nii Sama#2791","11-May-20 02:07 PM","Hey guys I've imported the csv file into the database, and when I select * from students; I get ""Vincent |  | Crabbe | Slytherin | 1979"" is that correct already or does it have to be ""Vincent |NULL  | Crabbe | Slytherin | 1979""???","",""
+"250157065887023105","Danny Deermouse#7534","11-May-20 02:58 PM","First looks correct","",""
+"442181378008678400","PlsLigmaBalls#6049","11-May-20 04:44 PM","Can someone please explain this to me?","https://cdn.discordapp.com/attachments/639522223329378314/709400648676016278/unknown.png",""
+"487681505188118529","roughweed#9133","11-May-20 05:23 PM","Hi I've done with cs50x main","",""
+"487681505188118529","roughweed#9133","11-May-20 05:23 PM","Which track I should consider","",""
+"487681505188118529","roughweed#9133","11-May-20 05:23 PM","Initially I'm thinking of WEB","",""
+"638271389119414293","Ojou Nii Sama#2791","11-May-20 06:59 PM","Try anything you want, since it's just an online class. Just try to make the most of these free resources. I myself is thinking of trying all of the tracks out since nothing much to do in this quarantine.","","👍 (1)"
+"487681505188118529","roughweed#9133","11-May-20 07:22 PM","I'm doing two specializations in coursera parallelly along with cs50. So it'd be tough for me to do all the tracks","",""
+"487681505188118529","roughweed#9133","11-May-20 07:22 PM","Whatever, I'm gonna do web and if I find time, will go for game","",""
+"346081722254753801","CasualGamerCC#0928","11-May-20 08:47 PM","@roughweed I have some small projects in mind for a website and a mobile game, so that's what guided my decision. Starting with web first.","",""
+"487681505188118529","roughweed#9133","11-May-20 08:58 PM","Are you done with SQL? I am searching for someone to collab with for the final project. I might complete my web-track on 13th hopefully","",""
+"346081722254753801","CasualGamerCC#0928","11-May-20 11:41 PM","@roughweed I unfortunately end up having to take breaks from time to time because projects at work come up. Thankfully they keep me employed but I've mostly been learning programming as my contingency plan. I'll probably do the rest of Houses this evening. It seems straight forward enough","",""
+"346081722254753801","CasualGamerCC#0928","11-May-20 11:42 PM","As much as I'd love to collab, I may end up being absent more than you'd like. Early on in cs50 there were a few problems that I didn't complete for a week or more because other stuff ate my time.","",""
+"487681505188118529","roughweed#9133","11-May-20 11:44 PM","I'm afraid I found someone to collab with. Maybe some next time if I take another track I guess 😦","",""

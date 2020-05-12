@@ -1,0 +1,480 @@
+AuthorID,Author,Date,Content,Attachments,Reactions
+"397634699041701890","Travar#9492","02-Jan-18 08:19 AM","Can anyone assist me with this problem?","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 08:20 AM","is fifteen still a thing in the 2018 version? it's no longer there on my pset3","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:20 AM","Well, I'd be glad to stop working on this if it's no longer required.","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:20 AM","When did it roll over?","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 08:21 AM","the new curriculum is updated every year","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 08:21 AM","so literally today on the 1st of January","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:21 AM","Yes.  I know.","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 08:21 AM","pset3 only shows Music right now","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:21 AM","That's the answer I needed.","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 08:21 AM","for me at least","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 08:21 AM","but i'd personally still have a go at fifteen.c just to get more experience. it's up to you tho","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:22 AM","I've still put a lot of work into it, so if it  can be helped that would be nice.","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 08:22 AM","it can be a bit frustrating","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 08:22 AM","i finished fifteen last week, i'd love to help out","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:22 AM","My issue is this...","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:22 AM","I'm working on implementing move()","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:23 AM","When I go to make the swap, it just doesn't  do it.  I've tried several different approaches.","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:23 AM","Now I'm actually get segmentation errors which never happened before..","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 08:23 AM","hmm, what's your code for swapping pieces?","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 08:24 AM","wrap it in","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 08:24 AM","\```","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:24 AM","I have a paste bin link","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 08:24 AM","if you want to send it here","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:24 AM","h/o","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 08:24 AM","that's also fine","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:24 AM","https://pastebin.com/wwwjZXKT","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:24 AM","this is the worst code i've ever written in my life","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:25 AM","that is actually not the best version i've done","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:25 AM","code to swap is around line 44","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 08:26 AM","what's fopen for?","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:26 AM","i have an external file i've been printing data to","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:26 AM","similar to the log file that comes with the project","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 08:26 AM","ah ok","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:26 AM","it may very well be interfering with my code in some way, i'm not sure","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:27 AM","that code is just trying to swap out the space char with the one directly above.  i didn't do horizontal swaps because i can't get the vertical ones working","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:27 AM","i've found that if i hard code data in, i can make that data swap, but not refernces from the board array","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:29 AM","i'm not checking anything related to boundries","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:29 AM","i didn't think it was needed based on how i got the location of the space and the user input","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:29 AM","i wouldn","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:29 AM","i wouldn't understand how to integrate that from a conceptual level","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 08:31 AM","first of all, have you checked to see if the program is correctly finding the positions of both user tile and blank space?","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:31 AM","yes, yes","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 08:31 AM","just speaking from personal experience, that helped me out a bunch","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:31 AM","i did that many times over","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:31 AM","that's what the data outputting to the file is recording","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:32 AM","that was not an issue, i solved and made certain of that early on","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:32 AM","USER SELECTION: 6
+LOCATION:
+     Y - 0, X - 2
+SPACE LOCATION:
+     Y - 2, X - 2","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:32 AM","this is what is being output to that file","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:32 AM","the LOCATION is the coordinates of the user input, in this case '6'","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:33 AM","that data is being fed by the same data that i am making the swap with and is correct","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:33 AM","ditto for the space location","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:33 AM","here's an interesting quirk though","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:33 AM","if I select tile '3'","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:34 AM","USER SELECTION: 3
+LOCATION:
+     Y - 2, X - 2
+SPACE LOCATION:
+     Y - 1, X - 2","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:34 AM","This is output.  Basically, it's wrong - because the coords for the location are now where the SPACE should be and vice-versa","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:34 AM","But if I run the same command again -","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:34 AM","USER SELECTION: 3
+LOCATION:
+     Y - 2, X - 2
+SPACE LOCATION:
+     Y - 1, X - 2","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 08:34 AM","for reference, how large of a game board are you using?","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:34 AM","I get this.  Like it's swapping internally","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:34 AM","3 x 3","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:35 AM","But even though that swap is happening, it's not actually changing the board values","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:35 AM","so on first attempt this will fire","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:35 AM","if (tileY == spaceY - 1){
+            place = board[tileY][tileX];
+            board[spaceY][spaceX] = place;
+            board[tileY][tileX] = 0;
+            fprintf(tfile, ""--SPACE Y: %i\n--TILE Y: %i\n"", spaceY, tileY);
+            fprintf(tfile, ""Y - 1 CODE FIRED\n\n\n"");
+        }","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:36 AM","on second attempt","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:36 AM","else if (tileY == spaceY + 1){
+            place = board[tileY][tileX];
+            board[spaceY][spaceX] = place;
+            board[tileY][tileX] = 0;
+            fprintf(tfile, ""--SPACE Y: %i\n--TILE Y: %i\n"", spaceY, tileY);
+            fprintf(tfile, ""Y + 1 CODE FIRED\n\n\n"");
+        }","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 08:36 AM","i'm not completely sure, but i think this *might* be the same problem that was explored in last year's Week 4 lecture about swapping x and y. basically the idea was there, and you would thik it would work as expected, but as soon as the function returned to main, the values would just stay the same.","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:36 AM","will fire","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 08:36 AM","as it was a problem with local variables and what swapping inside of functions actually did. the fix around that was done using pointers, but that's not something you learn in Week 3 so you should not be expected to use them here.","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:37 AM","Yes.  That was my thinking.","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:37 AM","It's something to do with the reference values not being updates","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:37 AM","like a shallow copy being made","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:37 AM","I have seen others doing similar solutions so I'm not sure what to do, but i'm at a hard wall now","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:38 AM","I've rebuilt the function up from scratch like 6 or 7 times","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:38 AM","But i've not really heard of anyone else having an issue with pointers","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:38 AM","in this particular psety","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 08:38 AM","so place right now is just a temp int, right? to make the swap?","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:38 AM","that's right","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:39 AM","i need to go to the gym, i'm actually behind schedule because of this thing, but i'm really not sure what to do","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:39 AM","i don't want to look at a solution outright, but something is off and i don't know what","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:40 AM","the issue is the swap","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:40 AM","right now it is a hard wall for me","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:40 AM","i have a feeling there is a problem beyond the scope of my knowledge but i don't know how it was caused","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:40 AM","just curious did you implement a solution without checking the boundries?","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:41 AM","this is what i originally thought the problem was, but now i believe it is something to do with how the variables are being changed, like the function is closing before actually doing it or some such thing","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 08:41 AM","well i saw your thing about the boundaries and i was initially confused, because it seems like just an extra step","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 08:42 AM","if you are checking that the user tile and space tile are within one 'tile' of each other, it would be a given that neither of them are out of bounds, no?","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:42 AM","that was my thinking","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 08:43 AM","btw fifteen can no longer be submitted apparently. so you won't get any score for completing the old pset3. but either way i want to quickly get to the bottom of this","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:43 AM","it def recognizes that it is a legal move if i add to return true","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:43 AM","but no swap","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:43 AM","likewise it recognizes illegals","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 08:43 AM","i think i'm close to figuring out the issue, just need to think about it for a sec","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:44 AM","thats fine please be in touch because for my own learning i don't really care at this point","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:44 AM","it's one thing if it took a week and i would get credit","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 08:49 AM","okay, let me ask a question then","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 08:50 AM","if during a swap you know that one of the ints is 0 for sure (or whatever placeholder u have for the blank space), why do you need the temporary int place?","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:50 AM","I know what you're saying","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:50 AM","I've done it that way as well","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:50 AM","same result","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 08:50 AM","by having two lines of code?","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:51 AM","Yes, that's correct","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:51 AM","Same result","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 08:51 AM","okay i see","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:51 AM","I went back to having a placeholder for clairty","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:51 AM","clarity**","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 08:51 AM","yeah i wasnt expecting that to solve the swap issue, just thought i'd point it out","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:52 AM","And on the off chance it would somehow make a deep copy","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 08:52 AM","i'm not too great at any of this, so i'm trying to help with my limited knowledge","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:52 AM","But that was just naive hopefulness","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:52 AM","Well, how did you do the swap?","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 08:53 AM","well the thing is, i didnt understand the need for keeping track of two positions (2 X's and 2 Y's). even zamyla said to find both, and i just thought ""...but why?""","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 08:53 AM","i only looked for the user tile coordinates, and then checked if any of its adjacent tiles was my blank tile","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:53 AM","I don't mean that","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:53 AM","I mean actually assigning the references","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:53 AM","sorruy","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:53 AM","sorry","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 08:54 AM","yeah i was about to say haha","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:54 AM","I don't think the method matters so much","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:54 AM","Because i'm getting the desired result","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:54 AM","Your way is probably more elegant, but my thinking is to get something working as I went slow and tested that i was getting desired output all along the way","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 08:55 AM","well since i only had one x and one y variable (ypos, xpos meaning the tile), this is the code i'd use if i were checking that the blank tile was directly below the user tile","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 08:55 AM","```    if(board[ypos+1][xpos] == 0) {
+        board[ypos+1][xpos] = tile;
+        board[ypos][xpos] = 0;
+        return true;
+    }```","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 08:55 AM","but the thing is, i am **not sure** why my version of a swap works and yours doesn't","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:55 AM","right","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:55 AM","let me paste something else","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:55 AM","h/o","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:56 AM","if (tileY == spaceY - 1){
+
+            board[spaceY][spaceX] = board[tileY][tileX];;
+            board[tileY][tileX] = 12;
+            fprintf(tfile, ""--SPACE Y: %i\n--TILE Y: %i\n"", spaceY, tileY);
+            fprintf(tfile, ""Y - 1 CODE FIRED\n\n\n"");
+            return true;
+        }
+        else if (tileY == spaceY + 1){
+
+            board[spaceY][spaceX] = board[tileY][tileX];;
+            board[tileY][tileX] = 12;
+            fprintf(tfile, ""--SPACE Y: %i\n--TILE Y: %i\n"", spaceY, tileY);
+            fprintf(tfile, ""Y + 1 CODE FIRED\n\n\n"");
+            return true;
+        }","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:56 AM","Notice in this version i'm using the two line version as you mentioned","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:56 AM","On the second line in each if statement, i'm assigning 12 instead of 0","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 08:56 AM","is 12 the blank number?","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:56 AM","if I do that, it works","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:56 AM","Yes","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 08:57 AM","if you use 12, it works?","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:57 AM","If I do that it works exactly as intended","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:57 AM","Yes","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:57 AM","The swap works","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 08:57 AM","i actually had a similar problem, where i'd use a different number instead of my magic blank number, and it'd work just fine. but if i actually tried to display that number as a blank, it broke again.","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 08:58 AM","it was more of a problem with my draw function","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:58 AM","I suppose I could change it to something like X and then reconfigure the draw function","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 08:58 AM","are you actually displaying 12 as a _ ?","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:58 AM","no","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:58 AM","but that's what I'm saying I could do some outrageous number like 999","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:58 AM","beyond the scope of the thing","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:58 AM","but then I don't know if that would break something down the line","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:58 AM","and in the draw function have 999 print as a 0","",""
+"397634699041701890","Travar#9492","02-Jan-18 08:58 AM","er -","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 08:59 AM","okay, just to test out. what if your draw function didnt include a ""turn 0 into _"" bit, and just let the whole board draw out, with the last line being literally 0?","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 08:59 AM","and you did the swap with regular ol' 0 instead of 12","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:00 AM","let me redo that h/o","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:01 AM","it works on the first move, then doesn't work anymore","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:01 AM","the game treats it like the 0 is still in the bottom right corner","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:02 AM","and I restarted it","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:02 AM","and it now doesn't work","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:02 AM","very strange, but it's back to the original behavior where no swap happens","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 09:03 AM","8 7 6
+5 4 3
+2 1 0","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 09:03 AM","and it just stays like this?","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:03 AM","yes correct","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 09:03 AM","but what happened when you did it with 12","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 09:03 AM","was it like this:","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 09:03 AM","8 7 6
+5 4 12
+2 1 3","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 09:03 AM","did that work on multiple swaps?","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:03 AM","It does the intial swap but then no, not on multiples","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:04 AM","I've had a version that did do the swap with multiples before with another character other than 0","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:04 AM","but this one","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:04 AM","doesn't seem to do that, and i have literally no idea why","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 09:05 AM","could you share your current draw and move code?","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:06 AM","https://pastebin.com/LPfpfkVz","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:06 AM","for extra measure, the entire file","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:07 AM","as an aside, this means the find challenge is gone too, eh?  that's alright.  I actually enjoyed doing binary search and insertion sort but still","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 09:09 AM","quickly looking through the draw function, the adjust-width part actually doesn't need to be manually implemented. it was somewhere in the walkthroughs that putting a number in between %i would adjust its own width, and how many characters the int should occupy","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 09:10 AM","so `printf(""%2i "", board[i][j])` would be valid","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 09:11 AM","```if (board[i][j] == 0){
+                printf("" %i "", board[i][j]);```
+
+what's this, though? if it's 0, print out 0?","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:12 AM","yeah, that's from when you asked me to change it to just print out 0","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:12 AM","my code originally had it printing out -","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 09:12 AM","oh right","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 09:12 AM","my bad haha","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:13 AM","i just left the if statement in there so i could switch it back","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:13 AM","but i forgot to","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:13 AM","i wouldn't imagine it has any impact on functionallity though","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 09:14 AM","in the swap code you're giving the user tile a value of 12, but the code that searches for spaceX/spaceY still looks for 0?","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 09:15 AM","im saying this in terms of it failing on multiple attempts","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:17 AM","yes","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:18 AM","if i set it to look for 12","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:18 AM","it won't catch the first move because it inits as 0","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:18 AM","so if i change it so that board[d-1][d-1] manually equals 12 in init","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:18 AM","it's back to the original behavior","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:18 AM","no swaps","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:18 AM","very odd","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 09:19 AM","hmm, i tried your code","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 09:20 AM","without the fprintf stuff","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 09:20 AM","and just set it to 0 without any ifs for printing it as ""-"", for example","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 09:20 AM","and changing 12s to 0s, etc","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 09:20 AM","and it works for me","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:20 AM","nice let me give that a spin","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 09:21 AM","whoops, i'll just put it in pastebin","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 09:21 AM","https://pastebin.com/rpqXQ4jp","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:24 AM","OK what exactly did you change?","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:24 AM","Just removing that fprintf?","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:24 AM","Maybe that is messing with the buffers or something","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:24 AM","and the whatchamaclists","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:25 AM","because it's working for me","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 09:25 AM","i removed the fprintfs, got rid of the boundaries, and made some quick changes to my own init function","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 09:26 AM","try working to there with your original code, getting rid of the fprintf's and see if there's still anything going wrong","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:27 AM","boundries? you mean the if statements i had, right?","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:27 AM","they didn't actually do anything iirc","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 09:27 AM","yeah i know, but like the fprintf's it was just more clutter for me to go through, so i got rid of them for simplicity's sake","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:27 AM","just making sure","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 09:28 AM","i'm not sure if they actually did anything (though logically they shouldnt have). either way they probably wouldnt break the program if added back in","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:28 AM","no it def does a vertical swap now","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:29 AM","but when i go to use the same code to implement the horizontal swap, it recognizes again legal vs illegal moves","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:29 AM","but no swap is made, lol","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 09:29 AM","how do you implement horizontal?","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:29 AM","and i'm just as baffled as to why","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:29 AM","if (spaceX == tileX){
+        if (tileY == spaceY - 1){
+
+            board[spaceY][spaceX] = board[tileY][tileX];
+            board[tileY][tileX] = 0;
+            return true;
+        }
+        else if (tileY == spaceY + 1){
+            board[spaceY][spaceX] = board[tileY][tileX];
+            board[tileY][tileX] = 0;
+            return true;
+        }
+    }
+    if (spaceY == tileY){
+        if (tileX == spaceX - 1){
+            board[spaceY][spaceX] = board[tileY][tileX];
+            board[tileY][tileX] = 0;
+            return true;
+        }
+        else if (tileX == spaceX + 1){
+            board[spaceY][spaceX] = board[tileY][tileX];
+            board[tileY][tileX] = 0;
+            return true;
+        }
+    }","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:29 AM","the first IF is checking vertical","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:30 AM","it was functional before and still is","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:30 AM","the second checks horizontal","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:30 AM","i don't think i need to change anything with the swap mechanism","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:30 AM","the entire space should be exchanged","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:31 AM","actually","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:31 AM","trying again now, since i've implemented that second IF block, the vertical swap stopped working","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:31 AM","let me comment it out and see if it comes back","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:32 AM","No.  It doesn't.","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:32 AM","This is outrageous.","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:32 AM","And I'm getting an error","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:32 AM","fifteen.c:243:21: error: use of undeclared identifier 'tfile'; did you mean 'tile'?
+            fprintf(tfile, ""SPACE Y MINUS 1 - %i - OUT OF BOUNDS\n\n"", spaceY - 1);","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 09:32 AM","i tried doing what you did (replace Xs with Ys and Ys with Xs) and worked fine for me?","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:32 AM","But this line has been removed for some time","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 09:32 AM","have you saved the fifteen.c file?","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:32 AM","Yeah","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:32 AM","Several times","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 09:32 AM","is there no mention of fprintf in the code?","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:33 AM","correct","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 09:33 AM","that's so weird","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 09:33 AM","because i ran similar code for horizontal swaps on mine","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:33 AM","i will take that back because it's implemented by the CS50 code","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 09:33 AM","and worked just fine","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:33 AM","well i even took back out what i changed","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:33 AM","i copy and pasted yours in there too","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:34 AM","and it worked for a moment","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:34 AM","and now it doesn't work","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:34 AM","let me restart the IDE","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 09:34 AM","yeah, see if that works","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 09:34 AM","if not, i legitimately dont know what the problem is","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 09:34 AM","very strange","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:35 AM","well it is reliving that i'm not going crazy at least","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:35 AM","i knew it was some error related to the programming language and not the logic","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:35 AM","as long as i feel like i had a grasp on what i was doing i feel a lot better","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:35 AM","which i think is the case","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:35 AM","are you using the cloud9 IDE or something esle","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:35 AM","else**","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 09:35 AM","i'm using that, yes","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 09:35 AM","the ide.cs50.io","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:35 AM","i hate that thing","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 09:36 AM","why?","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:36 AM","well","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:36 AM","this, for starters","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 09:36 AM","i'm also not too familiar with programming or any CS, so i dont know if i need or want an alternative IDE","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 09:36 AM","it's always worked well for me, idk","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:37 AM","restarted and it still doesn't work","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:37 AM","you can confirm it did work with your code?","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 09:37 AM","your last code? it did work. like the logic at least.","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:37 AM","i just don't get it.  i was able to get it to work.","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 09:37 AM","and even the horizontal swap","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:37 AM","but then it stopped","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:37 AM","nothing changed.","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 09:37 AM","the strangest part is how it shows an error for fprintf when you dont have it in the code at all","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:38 AM","yews","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:38 AM","i don't know what to DO","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:39 AM","what the hell","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:39 AM","I watched it work","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:39 AM","I watched it","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:39 AM","And now it doesn't.  And I didn't change anything","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 09:39 AM","mind pasting your code just one more time?","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:40 AM","yea","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:40 AM","h/o","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:40 AM","https://pastebin.com/zaMHAUQE","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:40 AM","this one DID work","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:40 AM","at least the vertical swap","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:41 AM","and that's all this current code has in it to try and recreate it","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:41 AM","then it just stopped","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:41 AM","and i got that weird error","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:41 AM","in fact, the terminal has been wonky for me this whole time","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:41 AM","printing out graphical glitches and the like","",""
+"252555661630636032","mcheisenburglar#8092","02-Jan-18 09:42 AM","have you started a new terminal window?","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:42 AM","i started the IDE over","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:43 AM","i've found myself making new terminal windows quite a bit","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:43 AM","does that code still work?  i don't know.  maybe it's something outside the move function, but...","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:43 AM","I watched it work.","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:44 AM","I mean, I'm pretty distraught because I watched it work, didn't change anything, and suddenly it doesn't.  It's like ... did I actually see it work?  I","",""
+"397634699041701890","Travar#9492","02-Jan-18 09:44 AM","I am sure I did.","",""
+"397634699041701890","Travar#9492","02-Jan-18 10:28 AM","alright im off to bed.  i may try and redo this one from scratch.  i'm not sure since it's not for credit.  i may give it one more go, but i'm pretty discouraged since i'm not sure what the problem is","",""
+"397634699041701890","Travar#9492","02-Jan-18 10:28 AM","thanks for looking tho.","",""
+"397634699041701890","Travar#9492","02-Jan-18 11:32 AM","@mcheisenburglar I couldn't sleep","",""
+"397634699041701890","Travar#9492","02-Jan-18 11:32 AM","I figured out the problem though.  I have it working.","",""
+"397634699041701890","Travar#9492","02-Jan-18 11:33 AM","Turns out I had modified the main function.  It already checks if (!move(tile)) but I had added in another if statement","",""
+"397634699041701890","Travar#9492","02-Jan-18 11:33 AM","it was causing the commands to basically run twice","",""
+"397634699041701890","Travar#9492","02-Jan-18 11:33 AM","It would quickly pass then fail","",""
+"397634699041701890","Travar#9492","02-Jan-18 11:34 AM","So, this might explain why it sometimes DID pass on my end","",""
+"84197211113533440","Trainermax#4196","02-Jan-18 11:34 AM","So the game is now running fine?","",""
+"397634699041701890","Travar#9492","02-Jan-18 11:34 AM","Yes","",""
+"397634699041701890","Travar#9492","02-Jan-18 11:35 AM","I don't know what the deal was with the IDE, I was def having issues with it","",""
+"397634699041701890","Travar#9492","02-Jan-18 11:35 AM","But I have got the game working.  It isn't for credit anymore, but I don't care, haha.","",""
+"397634699041701890","Travar#9492","02-Jan-18 11:35 AM","Now I'm going to really try to go to bed.","",""
+"397634699041701890","Travar#9492","02-Jan-18 11:35 AM","Night all.","",""
+"84197211113533440","Trainermax#4196","02-Jan-18 11:36 AM","Good night. Good job on getting it to work! And I'm also not doing the course for 'credit' = )","",""
+"397634699041701890","Travar#9492","02-Jan-18 11:36 AM","No, the exercise was still good at learning to reason about 2D arrays","",""
+"397634699041701890","Travar#9492","02-Jan-18 11:36 AM","Which will come in handy for something else I'm working on","",""
+"397634699041701890","Travar#9492","02-Jan-18 11:36 AM","Thank you.  Getting this right has changed my entire mood.  I can sleep easy now.","",""
+"84197211113533440","Trainermax#4196","02-Jan-18 11:40 AM","yeah, I really like the approach you took to move()","",""
+"84197211113533440","Trainermax#4196","02-Jan-18 11:40 AM","I implemented it in a single nested for loop, but I like the four variables you keep track of.","",""
+"84197211113533440","Trainermax#4196","02-Jan-18 11:41 AM","Nice that it'll come in handy for something else. I dont have anything else im working on so im getting through the course swiftly","",""
+"344668731789803521","milo yiannopoulos#2669","04-Jan-18 03:55 AM","so when the fifteen puzzle is completed, are you supposed to see the game being played on fifteen.exe? or on log.txt?","",""
+"393854278764068875","curiouskiwi#1671","04-Jan-18 03:57 AM","you play it in the terminal  `./fifteen 3`","",""
+"393854278764068875","curiouskiwi#1671","04-Jan-18 03:58 AM","`log.txt` logs the state of the board as you play, so you can use it for debugging.","","👍 (2)"
+"249764487454785546","Felix#1144","22-Jan-18 10:57 PM","game of fifteen doesn't need to be submitted right? even when it was a pset, am I correct?","",""
+"249764487454785546","Felix#1144","22-Jan-18 10:58 PM","Just finished the game and was about to submit.","",""
+"393854278764068875","curiouskiwi#1671","22-Jan-18 11:24 PM","@Felix it's not part of the 2018 edX CS50x course, so if that is what you are working on, then, no, you can't submit it.  (well, you physically can, but it will not be graded).","",""
+"249764487454785546","Felix#1144","23-Jan-18 03:35 AM","ok, thanks @curiouskiwi","",""
+"456226577798135808","Deleted User#0000","31-Jan-18 10:57 PM","i","",""
+"456226577798135808","Deleted User#0000","31-Jan-18 10:58 PM","i need help with everything","",""
+"456226577798135808","Deleted User#0000","31-Jan-18 10:59 PM","...","",""
+"359446467192029194","lemonman321#1203","31-Jan-18 11:00 PM","frf","",""
+"359446467192029194","lemonman321#1203","31-Jan-18 11:00 PM","sorry cat jumped on my keyboard","",""
+"329977469350445069","Lord of Galaxy#9211","12-Dec-18 05:42 PM","Lol","",""
+"399021249667399722","harbar20#9389","19-Dec-18 04:53 AM","i cant figure out `init`","",""
+"399021249667399722","harbar20#9389","19-Dec-18 04:53 AM","at all","",""
+"399021249667399722","harbar20#9389","19-Dec-18 04:53 AM","it's so dumb and idk why","",""
+"329977469350445069","Lord of Galaxy#9211","19-Dec-18 06:47 AM","...","",""
+"399021249667399722","harbar20#9389","20-Dec-18 12:21 AM","@Lord of Galaxy can u help me?","",""
+"399021249667399722","harbar20#9389","20-Dec-18 12:21 AM","idk how they want me to initialize init","",""
+"399021249667399722","harbar20#9389","20-Dec-18 12:21 AM","do i return something?","",""
+"399021249667399722","harbar20#9389","20-Dec-18 12:21 AM","because anything i do inside the function wont affect what happens outside of i","",""
+"399021249667399722","harbar20#9389","20-Dec-18 12:21 AM","t","",""
+"399021249667399722","harbar20#9389","20-Dec-18 12:21 AM","which means that even if init works, nothing will happen","",""
+"399021249667399722","harbar20#9389","20-Dec-18 12:21 AM","so what in the world do i do?!?!","",""
+"393854278764068875","curiouskiwi#1671","20-Dec-18 12:22 AM","@harbar20 you are initializing the global GRID","",""
+"399021249667399722","harbar20#9389","20-Dec-18 12:22 AM","wait","",""
+"399021249667399722","harbar20#9389","20-Dec-18 12:22 AM","so i change `board` directly?","",""
+"393854278764068875","curiouskiwi#1671","20-Dec-18 12:24 AM","yes, sorry, I meant `board` not grid","",""
+"393854278764068875","curiouskiwi#1671","20-Dec-18 12:24 AM","as it says, you  fill the array with the values numbered 1 through d*d - 1","",""
+"399021249667399722","harbar20#9389","20-Dec-18 12:26 AM","oh my god, thank u so much","",""
+"399021249667399722","harbar20#9389","20-Dec-18 12:26 AM","im so","",""
+"399021249667399722","harbar20#9389","20-Dec-18 12:26 AM","so","",""
+"399021249667399722","harbar20#9389","20-Dec-18 12:26 AM","stupid","",""
+"399021249667399722","harbar20#9389","20-Dec-18 12:26 AM","thx","",""
+"399021249667399722","harbar20#9389","21-Dec-18 04:44 AM","@curiouskiwi what does this mean?
+```
+[2J[0;0H8-4-7|5-1-6|2-0-3
+ftw!
+```","",""
+"393854278764068875","curiouskiwi#1671","21-Dec-18 05:18 AM","@curiouskiwi where'd that come from?","",""
+"393854278764068875","curiouskiwi#1671","21-Dec-18 05:30 AM","my guess is that your terminal doesn't support ANSI sequences for clearing the screen  ...   ```C
+/**
+* Clears screen using ANSI escape sequences.
+*/
+void clear(void)
+{
+printf(""\033[2J"");
+printf(""\033[%d;%dH"", 0, 0);
+}```","",""
+"393854278764068875","curiouskiwi#1671","21-Dec-18 05:31 AM","did you change that?","",""
+"329977469350445069","Lord of Galaxy#9211","21-Dec-18 09:54 AM","You mentioned yourself lol  @curiouskiwi","",""
+"399021249667399722","harbar20#9389","21-Dec-18 03:24 PM","@curiouskiwi same thing is happening even after i did that clear thing. here's the outputs if u want:
+https://cs50.me/checks/1ecf1e215ae739fb27a22b8c7a5e541b3ad93e8b","",""
+"393854278764068875","curiouskiwi#1671","21-Dec-18 09:23 PM","@harbar20 in all of those cases, your `won` function is reporting true even when the board isn't in a winning position.","",""
+"399021249667399722","harbar20#9389","21-Dec-18 09:25 PM","it is?","",""
+"399021249667399722","harbar20#9389","21-Dec-18 09:25 PM","hm","",""
+"399021249667399722","harbar20#9389","21-Dec-18 09:25 PM","ok","",""
+"399021249667399722","harbar20#9389","22-Dec-18 12:48 AM","@curiouskiwi it's not working again:
+https://cs50.me/checks/af20d2b2ea108d797944ec8da36ea9efe75f941d","",""
+"399021249667399722","harbar20#9389","22-Dec-18 12:49 AM","thought i did it right?","",""
+"393854278764068875","curiouskiwi#1671","22-Dec-18 12:52 AM","Did you test yours with this?  `./fifteen 3 < ~cs50/unit3/3x3.txt`","",""
+"399021249667399722","harbar20#9389","22-Dec-18 12:54 AM","lol nvm i got it","",""
+"399021249667399722","harbar20#9389","22-Dec-18 12:54 AM","it was stupid","",""
+"399021249667399722","harbar20#9389","22-Dec-18 12:54 AM","it","",""
+"399021249667399722","harbar20#9389","22-Dec-18 12:54 AM","is checking rn","",""
+"399021249667399722","harbar20#9389","22-Dec-18 12:54 AM","oof","",""
+"399021249667399722","harbar20#9389","22-Dec-18 12:54 AM","it's in an infinite loop now","",""
+"399021249667399722","harbar20#9389","22-Dec-18 12:54 AM","lol","",""
+"399021249667399722","harbar20#9389","24-Dec-18 07:13 PM","ok i got it","",""
+"399021249667399722","harbar20#9389","24-Dec-18 07:13 PM","thx for all ur help!","",""
+"178543252637483009","JZ#7525","29-Mar-19 02:34 AM","My program works with ./fifteen 3 < ~cs50/unit3/3x3.txt","",""
+"178543252637483009","JZ#7525","29-Mar-19 02:34 AM","but I'm getting this check50","",""
+"178543252637483009","JZ#7525","29-Mar-19 02:34 AM","```
+:) fifteen.c exists.
+:) fifteen.c compiles.
+:) 3x3 board: init initializes board correctly
+:) 3x3 board: catches moving 8 an illegal move
+:) 3x3 board: catches moving 1 as a legal move
+:) 3x3 board: move blank up twice
+:) 3x3 board: move blank left twice
+:) 3x3 board: move blank left then right
+:) 3x3 board: move blank up then down
+:) 3x3 board: move up-up-left-down-down-left-up-up-right-down-down-right
+:) 3x3 board: make sure none of 2, 4, 5, 6, 7, 8 move tile
+:) 3x3 board: move blank left (tile 1) then up (tile 4), then try to move tiles 1, 2, 6, 8
+:( 3x3 board: make sure game is winnable
+    expected ""Tile to move:"", not ""\x1b[2J\x1b[0;0...""
+:( 4x4 board: make sure game is winnable
+    timed out while waiting for program to exit
+```","",""
+"178543252637483009","JZ#7525","29-Mar-19 02:34 AM","Thanks in advance","",""
+"234679095378706433","Blauelf#6622","27-Aug-19 12:51 AM","Looks like your `won` might be wrong.","",""

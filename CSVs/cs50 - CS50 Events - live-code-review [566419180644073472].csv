@@ -1,0 +1,30 @@
+AuthorID,Author,Date,Content,Attachments,Reactions
+"484040243818004491","Emma#6775","13-Apr-19 03:40 AM","```php
+<?php
+echo ""i am first"";
+?>
+```","",""
+"239013603922018304","bhavik_knight#6872","13-Apr-19 03:45 AM","To all who are submitting for stream-code review `may the style & good coding practice be with you`","","👌 (5)"
+"278186810050609152","Chan#9693","13-Apr-19 04:45 AM","Hi","",""
+"520889432140677121","dhavalveera#7775","13-Apr-19 04:50 AM","hi","",""
+"566454998108602399","Sato#1167","13-Apr-19 06:11 AM","Where do I live in...","https://cdn.discordapp.com/attachments/566419180644073472/566460496492888064/Londrina.html",""
+"234679095378706433","Blauelf#6622","13-Apr-19 11:32 AM","@Sato In a land of creative spelling 😄","",""
+"565635638611673108","Ryanryanryan#8554","13-Apr-19 01:48 PM","hey what is this?","",""
+"234679095378706433","Blauelf#6622","13-Apr-19 03:22 PM","Read the channel description. Post whatever you want to have reviewed on twitch live stream. It hasn't been specified yet how they prefer the code to be submitted (e.g. as a channel upload like that HTML file, or a link to a specific commit on github)","",""
+"224937960431157260","Penderrin#5312","13-Apr-19 07:34 PM","@Blauelf Egyptian hiroglyphics were mentioned in the #general channel ... I'm going with that","",""
+"169409038260371457","Kabir#9720","19-Apr-19 10:17 PM","Is it too late to submit code for today's livestream?","",""
+"322546286870134785","coltonoscopy#9517","19-Apr-19 10:17 PM","@Kabir give it a shot!","",""
+"169409038260371457","Kabir#9720","19-Apr-19 10:19 PM","Alright sure 😃","",""
+"169409038260371457","Kabir#9720","19-Apr-19 10:32 PM","Submitted! https://github.com/kabiroberai/java-expression-parser","",""
+"180339037012230144","Eloi#6994","26-Jun-19 06:00 PM","Hello !","",""
+"180339037012230144","Eloi#6994","26-Jun-19 06:01 PM","I tried a little bit harder that I'm willing to admit on my ""credit"" assignment and was hopping to get reviewed","",""
+"180339037012230144","Eloi#6994","26-Jun-19 06:01 PM","Am I at the right place ?","",""
+"492450454341550100","WhipStreak23#6131","27-Jun-19 03:19 PM","@Eloi #credit is the place for help. I haven't done credit, though","",""
+"597642254043316225","CEOV#6360","12-Jul-19 08:44 AM","help?","",""
+"393093317233082370","pos1tr0n#5427","14-Jul-19 07:30 PM","Hello! When's the next stream? Which channel and platform?","",""
+"234679095378706433","Blauelf#6622","14-Jul-19 11:25 PM","Used to be https://www.twitch.tv/cs50tv (activity might relate to university schedules, don't know the dates for US semesters)","",""
+"604706830450688005","Hyuri#2052","30-Jul-19 08:05 AM","Just submitted an app of mine for review 🤞 🤓","",""
+"290188325858312193","ZachAtoch#3882","30-Jul-19 11:22 PM","{%if ('$' in j) and ({{state}}=='buy')%} jinja throws this error jinja2.exceptions.TemplateSyntaxError: expected token ':', got '}'","",""
+"290188325858312193","ZachAtoch#3882","30-Jul-19 11:22 PM","where is it reffering to?","",""
+"604706830450688005","Hyuri#2052","05-Aug-19 09:20 AM","Oops, the repo I submitted was set to private. Made it public, now","",""
+"406803980509773824","Deepak#4018","13-Aug-19 02:35 PM","LOL okay","",""

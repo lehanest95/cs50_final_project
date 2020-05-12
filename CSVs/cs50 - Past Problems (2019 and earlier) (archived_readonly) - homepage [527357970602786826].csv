@@ -1,0 +1,852 @@
+AuthorID,Author,Date,Content,Attachments,Reactions
+"329977469350445069","Lord of Galaxy#9211","26-Dec-18 10:37 AM","So many new channels","",""
+"450796031131779087","gravywave#7935","26-Dec-18 10:37 AM","so many spam","",""
+"329977469350445069","Lord of Galaxy#9211","26-Dec-18 10:38 AM","Wdym?","",""
+"450796031131779087","gravywave#7935","26-Dec-18 10:39 AM","is this for cs50 2019?","",""
+"393854278764068875","curiouskiwi#1671","26-Dec-18 11:44 AM","Yes, just as the channel description says. 😃","",""
+"300110246238486530","Mr. Distinguished#9941","28-Dec-18 07:50 AM","oh, so very excited for 2019 now!","",""
+"450796031131779087","gravywave#7935","28-Dec-18 07:51 AM","looks like a new pset","",""
+"300110246238486530","Mr. Distinguished#9941","05-Jan-19 05:20 PM","Working on this one now. Pretty fun for sure. I like that this was added in. There is alot of new syntax to get used to. Js is a little confusing to me for sure.","",""
+"304394886529024001","Mxlt08#0159","06-Jan-19 12:35 AM","hey guys. Got a question. Doing the website I wanted to post an image but it's downloaded from google images (just some image I found). does the copyright thing matter?","",""
+"300110246238486530","Mr. Distinguished#9941","06-Jan-19 05:19 PM","https://support.google.com/websearch/answer/29508?hl=en","","😄 (1)"
+"300110246238486530","Mr. Distinguished#9941","06-Jan-19 05:19 PM","This can help","",""
+"109766394760921088","Etiquette#8290","09-Jan-19 04:56 AM","I would take a look at https://unsplash.com/ or https://www.pexels.com/","","😄 (1)"
+"109766394760921088","Etiquette#8290","09-Jan-19 04:56 AM","if you just need a lot of photos","",""
+"329977469350445069","Lord of Galaxy#9211","09-Jan-19 06:38 PM","Only use photos after finding out what copyright they have","","😄 (1)"
+"329977469350445069","Lord of Galaxy#9211","09-Jan-19 06:38 PM","I like the CC (Creative Commons) licenses as they're easy to understand","",""
+"300110246238486530","Mr. Distinguished#9941","10-Jan-19 03:28 AM","Would it be considered normal for a website to have multiple style sheets, ie: one for each page? Or is this sort of thing considerd bad design?","",""
+"393854278764068875","curiouskiwi#1671","10-Jan-19 03:30 AM","the advantage to style sheets is that you can change a style globally (across all your pages) by only changing it once.  You would lose that if you had separate sheets for each page.","",""
+"329977469350445069","Lord of Galaxy#9211","10-Jan-19 06:19 AM","You can have one global style sheet that decides the general design of the website, and some smaller separate style sheets for whatever is used by only a single page","",""
+"329977469350445069","Lord of Galaxy#9211","10-Jan-19 06:19 AM","Global style sheets can save bandwidth too if used properly, as they're static files","",""
+"234679095378706433","Blauelf#6622","13-Jan-19 10:29 AM","Attacking Homepage now. Feeling set back to the 90s, when I learnt HTML (no CSS around that time, but I *did* use `<blink>` and `<marquee>` as David said! Also, bright colours. And different JavaScript for Internet Explorer and Netscape Navigator)","",""
+"234679095378706433","Blauelf#6622","13-Jan-19 10:34 AM","Layout by tables. Still a thing in emails.","",""
+"234679095378706433","Blauelf#6622","13-Jan-19 10:34 AM","Just now with things like `margin` in CSS properties, not specific attributes.","",""
+"234679095378706433","Blauelf#6622","13-Jan-19 10:35 AM","I used the GridBagLayout in Java Swing, which is very similar.","",""
+"234679095378706433","Blauelf#6622","13-Jan-19 10:45 AM","Too bad Swing was not possible in applets, as those would not be compatible with the Microsoft Java VM (supporting 1.1.8 mostly, while Swing was a 1.2 addition - marketed as Java2 SDK 1.2)","",""
+"234679095378706433","Blauelf#6622","13-Jan-19 10:46 AM","Yeah, the `homepage` problem seems a bit... old-fashioned and simple. But I have no idea how I would see it if I hadn't done HTML before.","",""
+"234679095378706433","Blauelf#6622","13-Jan-19 10:49 AM","Maybe they want to avoid people doing table-based layouts 😛","",""
+"234679095378706433","Blauelf#6622","13-Jan-19 10:51 AM","And using bootstrap, and using it properly, you don't have to do all those `@media` queries for a design that looks great on all device sizes.","",""
+"234679095378706433","Blauelf#6622","13-Jan-19 10:56 AM","Wondering how this is graded. Not having `check50` suggests manual grading, but that wouldn't scale well.","",""
+"234679095378706433","Blauelf#6622","13-Jan-19 11:06 AM","That's what I think. Just not sure why we can't have a `check50` then. But maybe automatic checks are already more load than average pset.","",""
+"234679095378706433","Blauelf#6622","13-Jan-19 11:14 AM","Not sure whether to go Lorem ipsum, I would like to avoid it. Doing a page without a topic is... somewhat challenging in its own.
+
+Also, I feel like copying bootstrap sample code without understanding half of their classes.","",""
+"234679095378706433","Blauelf#6622","13-Jan-19 11:51 PM","Just submitted. The `check50` output is minimal, but I got 5/5 on correctness. I didn't even count the different HTML tags, should have been around 10. CSS-based layout means you no longer have tons of tables that boost the number of different elements by 3 (table, table row, table data)","",""
+"234679095378706433","Blauelf#6622","13-Jan-19 11:52 PM","Uh-oh. Now only final project left, I did not procrastinate hard enough 😕","",""
+"224937960431157260","Penderrin#5312","14-Jan-19 06:00 PM","Anyone know the code that gets executed, behind ""check50 cs50/2019/x/challenges/site""","",""
+"397677328660037632","Maarten#1004","15-Jan-19 11:21 AM","@Penderrin you can find that on the FAQ page and github. Check these: https://github.com/cs50/check50 and https://github.com/cs50/checks/tree/master/cs50/2019/x","",""
+"397677328660037632","Maarten#1004","15-Jan-19 11:27 AM","And the slug specific for site is here: https://github.com/cs50/checks/tree/master/cs50/2019/x/challenges/site","",""
+"66419649960488960","IzaakDonaldson#2597","16-Jan-19 08:49 PM","Does an actual person mark the style of the homepage? or is there no style mark?","",""
+"393854278764068875","curiouskiwi#1671","16-Jan-19 08:52 PM","everyone is given 5/5 for style since there  is no automated grader for html files.  (no actual person grades anything in CS50x)","",""
+"66419649960488960","IzaakDonaldson#2597","16-Jan-19 08:52 PM","Ahh okay thanks","",""
+"66419649960488960","IzaakDonaldson#2597","16-Jan-19 08:52 PM","Even the Final project isn't marked?","",""
+"393854278764068875","curiouskiwi#1671","16-Jan-19 08:52 PM","that's correct","",""
+"66419649960488960","IzaakDonaldson#2597","16-Jan-19 08:53 PM","Thanks!","",""
+"393854278764068875","curiouskiwi#1671","17-Jan-19 10:09 AM","@! Ben https://www.npmjs.com/package/http-server","",""
+"393854278764068875","curiouskiwi#1671","17-Jan-19 10:10 AM","with a custom wrapper, as I understand.","",""
+"393854278764068875","curiouskiwi#1671","17-Jan-19 10:10 AM","https://github.com/cs50/ide50/blob/develop/files/home/ubuntu/.cs50/bin/http-server","",""
+"393854278764068875","curiouskiwi#1671","17-Jan-19 10:11 AM","it's not covered in the course","",""
+"393854278764068875","curiouskiwi#1671","17-Jan-19 10:11 AM","just used internally","",""
+"300110246238486530","Mr. Distinguished#9941","18-Jan-19 03:25 PM","@curiouskiwi I deployed my website, and it says it was successful. But I get a 404 error as well as a security warning whenever I try and visit it.","",""
+"234679095378706433","Blauelf#6622","18-Jan-19 07:08 PM","Security warning is less surprising, as you are probably using github pages, so certificate is for another server name. The other thing - have you specified a file name, or just the slash? Haven't tried the deploy myself, maybe I should.","",""
+"300110246238486530","Mr. Distinguished#9941","18-Jan-19 07:25 PM","Ahhh that must be it then. I'll give it a go.","",""
+"300110246238486530","Mr. Distinguished#9941","18-Jan-19 07:35 PM","@Blauelf still not working. Tried specifying and not specifying. Maybe I'll just resubmit.","",""
+"300110246238486530","Mr. Distinguished#9941","18-Jan-19 07:37 PM","Tried multiple browsers as well.","",""
+"234679095378706433","Blauelf#6622","18-Jan-19 08:00 PM","Not sure how deploy works, is there a `cs50/2019/x/challenges/site` branch in your https://github.com/check50/USERNAME repo? If so, https://check50.github.io/USERNAME/ might work.","",""
+"234679095378706433","Blauelf#6622","18-Jan-19 08:25 PM","Ok, deployed and it's like you said, does not work. Deploying via phone is so annoying...","",""
+"234679095378706433","Blauelf#6622","18-Jan-19 08:34 PM","Tried just slash, or with index.html, no luck.","",""
+"234679095378706433","Blauelf#6622","18-Jan-19 08:37 PM","I have a username starting in upper-case, that can sometimes cause issues (domain names ignore case)","",""
+"300110246238486530","Mr. Distinguished#9941","18-Jan-19 08:59 PM","Hmm well at least it's not just me.","",""
+"234679095378706433","Blauelf#6622","18-Jan-19 09:17 PM","Do you have an all-lower-case user name? If so, it's not an issue with those.","",""
+"393854278764068875","curiouskiwi#1671","18-Jan-19 09:40 PM","@Mr. Distinguished  and @Blauelf  what's your github username?  we can investigate","",""
+"234679095378706433","Blauelf#6622","18-Jan-19 09:40 PM","Blauelf (yeah, a bit boring)","",""
+"393854278764068875","curiouskiwi#1671","18-Jan-19 09:41 PM","okay, i'll pass that on.","",""
+"300110246238486530","Mr. Distinguished#9941","18-Jan-19 10:00 PM","@curiouskiwi  djjohnsongeek","",""
+"393854278764068875","curiouskiwi#1671","18-Jan-19 10:01 PM","thanks, I'll pass that on too","","👍 (2)"
+"393854278764068875","curiouskiwi#1671","19-Jan-19 03:53 AM","@Blauelf @Mr. Distinguished   can you try resubmitting the `check50` challenge command?  Once you do that, it may take a few mins to deploy  (for both the site and the security cert to be updated).","",""
+"300110246238486530","Mr. Distinguished#9941","19-Jan-19 04:08 AM","Resubmitting now","",""
+"300110246238486530","Mr. Distinguished#9941","19-Jan-19 04:11 AM","@curiouskiwi worked! Thanks :)","",""
+"300110246238486530","Mr. Distinguished#9941","19-Jan-19 04:12 AM","Still says ""not secure"" idk if that's an issue or not.","",""
+"393854278764068875","curiouskiwi#1671","19-Jan-19 04:12 AM","nice!","",""
+"393854278764068875","curiouskiwi#1671","19-Jan-19 04:12 AM","the 'not secure' takes a few minutes to clear","",""
+"393854278764068875","curiouskiwi#1671","19-Jan-19 04:12 AM","in the meantime, just change https: to http:","",""
+"535134130980257802","zingya#3821","22-Jan-19 10:47 PM","its cheesy but its good, shows good understanding of js","",""
+"535134130980257802","zingya#3821","23-Jan-19 12:34 AM","this is quite a fun pset","",""
+"407658353070964736","Destructivarius#3394","01-Feb-19 05:46 PM","So on this pset, are we allowed to include images of ourselves on our homepage?","",""
+"407658353070964736","Destructivarius#3394","01-Feb-19 05:46 PM","or include images at all?","",""
+"407658353070964736","Destructivarius#3394","01-Feb-19 05:49 PM","Also, can we include links to external sites?","",""
+"393854278764068875","curiouskiwi#1671","01-Feb-19 08:42 PM","yes as long as you meet the requirements, you can have additional items.","",""
+"494528953604636706","Nitesh_Adapa#6892","04-Feb-19 04:39 PM","I found this code in lecture 5
+```html
+<!DOCTYPE html>
+
+<html lang=""en"">
+    <head>
+        <script>
+
+            // Toggles visibility of greeting
+            function blink()
+            {
+                let body = document.querySelector('body');
+                if (body.style.visibility == 'hidden')
+                {
+                    body.style.visibility = 'visible';
+                }
+                else
+                {
+                    body.style.visibility = 'hidden';
+                }
+            }
+
+            // Blink every 500ms
+            window.setInterval(blink, 500);
+
+        </script>
+        <title>blink</title>
+    </head>
+    <body>
+        hello, world
+    </body>
+</html> ```
+When does the code in script tag gets executed? I mean does it wait for entire DOM  content to load, or it gets executed then itself??","",""
+"188578948937023488","Indra Reddy#2687","04-Feb-19 05:27 PM","It doesn't wait for DOM to load completely, the function starts as soon as the browser reads `window.setInterval(blink, 500);`","",""
+"494528953604636706","Nitesh_Adapa#6892","05-Feb-19 03:52 AM","Thanks","",""
+"329977469350445069","Lord of Galaxy#9211","05-Feb-19 11:42 AM","use onload if you need it to wait @Nitesh_Adapa","",""
+"404381883443707915","Gigglebot#1599","07-Feb-19 05:27 AM","`Integrate one or more features from Bootstrap into your site.`","",""
+"404381883443707915","Gigglebot#1599","07-Feb-19 05:30 AM","This requirement is a bit confusing to me since it wasn't covered at all in lecture. I've built a website compliant to all of the other requirements of the spec and left this one til the end only to find out bootstrap seems to be... well, not stuck in the 90's. Really cool stuff. Not sure how to implement ""a feature or two"" as it seems to be a tool to massively overhaul a website for mobile. Hints? Suggestions?","",""
+"393854278764068875","curiouskiwi#1671","07-Feb-19 05:36 AM","it doesn't have to be anything big.  Use some bootstrap styling, like a drop shadow on a box, or a nicely formatted table, for example.","",""
+"404381883443707915","Gigglebot#1599","07-Feb-19 05:38 AM","Alright, cool. I'll look into that 👍","",""
+"404381883443707915","Gigglebot#1599","07-Feb-19 05:50 AM","This rounded image looks pretty good 😏","",""
+"407658353070964736","Destructivarius#3394","08-Feb-19 04:40 AM","So, I got my site pretty much done. All I have to do now is implement some functions from Bootstrap. However, I am a bit lost as to how to do so. Does Bootstrap offer additional tags, classes, etc. that we can use to add style?","",""
+"494528953604636706","Nitesh_Adapa#6892","08-Feb-19 06:38 PM","Thanks .... @Lord of Galaxy","","👌 (1)"
+"498434604701843456","Poseidon#8288","09-Feb-19 07:44 AM","```#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include ""struct.h""
+int main(void)
+{
+    int enrollment;
+    printf(""Enter the number of enrollment:"");
+    scanf(""%i"", &enrollment);
+    if(enrollment <= 0)
+        return 1;
+
+    student students[enrollment];
+
+    printf(""Enter name:\n"");
+    for(int i = 0; i < enrollment; i++)
+    {
+        fgets(students[i].name, 50, stdin);
+    }
+
+    printf(""%s"", students[1].name);
+}```","",""
+"498434604701843456","Poseidon#8288","09-Feb-19 07:46 AM","there is a bug in this code, it takes  input [enrollment - 1] times though I wanted it to take the same amount of input as enrollment is. Can anyone figure out where the bug is?","",""
+"498434604701843456","Poseidon#8288","09-Feb-19 07:47 AM","here is the ""struct.h"" file```typedef struct{
+    char name[50];
+    int roll;
+    int clas;
+    int section;
+} student;```","",""
+"393854278764068875","curiouskiwi#1671","09-Feb-19 08:34 AM","@Poseidon not quite sure what this has to do with the Homepage problem set.","",""
+"498434604701843456","Poseidon#8288","09-Feb-19 08:35 AM","no, there is no lecture based chatting groups, but this topic and the homepage problem is related with this lecture, so i just send it here","",""
+"498434604701843456","Poseidon#8288","09-Feb-19 08:36 AM","But it would be good if we had a lecture based discussion page","",""
+"393854278764068875","curiouskiwi#1671","09-Feb-19 08:40 AM","any reason why you aren't using get_int and get_string?","",""
+"393854278764068875","curiouskiwi#1671","09-Feb-19 08:40 AM","the issue is that scanf for the enrollment number takes in the digit and the newline/enter is still in stdin, so that becomes the first name","",""
+"498434604701843456","Poseidon#8288","09-Feb-19 08:41 AM","get_int   get_string  aren't the function used everywhere. It is a custom made software by you guys.","",""
+"498434604701843456","Poseidon#8288","09-Feb-19 08:42 AM","I am thinking to prepare myself with the original.","",""
+"498434604701843456","Poseidon#8288","09-Feb-19 08:42 AM","But yeah, I successfully have executed the code using get int","",""
+"498434604701843456","Poseidon#8288","09-Feb-19 08:42 AM","& get_string","",""
+"393854278764068875","curiouskiwi#1671","09-Feb-19 08:42 AM","okay, then you'll need to go read the documentation for scanf and fgets and figure out how to deal with the chars leftover in stdin.","",""
+"498434604701843456","Poseidon#8288","09-Feb-19 08:43 AM","okay, thanks.","",""
+"498434604701843456","Poseidon#8288","09-Feb-19 08:44 AM","And one more request,creating a lecture based discussion page will help a lot","",""
+"393854278764068875","curiouskiwi#1671","09-Feb-19 08:46 AM","#general is good for that","",""
+"393854278764068875","curiouskiwi#1671","09-Feb-19 08:47 AM","but I see what you mean.  I'll add one and see how it goes.","",""
+"498434604701843456","Poseidon#8288","09-Feb-19 08:47 AM","okay, thanks for listening","",""
+"247039406802862082","sampJ#2249","09-Feb-19 04:23 PM","ive got a question since im totally new to html","",""
+"247039406802862082","sampJ#2249","09-Feb-19 04:24 PM","i put an image in my html but i cant preview it in my hopepage....it shows only the alt text","",""
+"247039406802862082","sampJ#2249","09-Feb-19 04:24 PM","is that normal ?","",""
+"247039406802862082","sampJ#2249","09-Feb-19 04:28 PM","jpegs are in the same folder as my pages","",""
+"247039406802862082","sampJ#2249","09-Feb-19 04:30 PM","my .jpeg files seem to appear but not the .jpg","",""
+"188578948937023488","Indra Reddy#2687","09-Feb-19 05:49 PM","@sampJ  I think the source path of the image is messed up.
+if you're using filename as source of the image. The image should be in the same folder where you're html file lies in.","",""
+"247039406802862082","sampJ#2249","09-Feb-19 06:54 PM","Tried changing extension from jpg to jpeg and it worked.. Same folder as i already stated","",""
+"247808988698247168","Surutan#2538","12-Feb-19 12:48 PM","hello guys , i'm doing the pset , it says to be sure that the webpage looks nice on other devices , is using < meta viewport > enough to get 5 out of 5 ?","",""
+"214560066907406336","HopefulPanic#5870","13-Feb-19 11:33 PM","@curiouskiwi  is there a way to disable bootstrap on a particular element. It seems to be overwriting my CSS formatting for <textarea>. If I remove the <link href=>, the <textarea> works and looks the way I want it to, but then I won't be able to use bootstrap on that page....","",""
+"393854278764068875","curiouskiwi#1671","13-Feb-19 11:39 PM","because stylesheets ""cascade""  (hence the name CSS ""cascading style sheets"") you should be able to override anything by simply redefining a style *after* the bootstrap stylesheet is pulled in.","",""
+"214560066907406336","HopefulPanic#5870","14-Feb-19 12:13 AM","well I have it working, but it doesn't look as nice. Bootstrap somehow makes <textarea> more finicky with font size and scroll bars than default HTML/CSS","",""
+"250646623955189770","jubiiz#4846","22-Feb-19 04:28 AM","I was looking at bootstrap documentation and noticed some very nice examples. How ok is it to copy/paste other website's code and change it to make it your own, just as much from a day to day perspective than for this pset?  As long as the general appearance of the website is diffrent, is it plagiarism to take another website's structure and use it for ourselves?","",""
+"250646623955189770","jubiiz#4846","22-Feb-19 04:29 AM","or part of a website's structure?","",""
+"189635070246518784","holymama#4630","26-Feb-19 10:25 AM","I'm working on the homepage right now wondering how much i gotta do on it","",""
+"189635070246518784","holymama#4630","26-Feb-19 10:26 AM","do i make a perfect homepage with tabs and stuff etc?","",""
+"189635070246518784","holymama#4630","26-Feb-19 10:26 AM","like <nav>","",""
+"189635070246518784","holymama#4630","26-Feb-19 10:26 AM","or should i just use bootstrap","",""
+"393854278764068875","curiouskiwi#1671","26-Feb-19 07:47 PM","Up to you as long as you have all the required elements","",""
+"189635070246518784","holymama#4630","27-Feb-19 03:25 AM","i think theres a stupid way to make sure the links work with each other like copying the home page and change the contents below lets say","",""
+"189635070246518784","holymama#4630","27-Feb-19 03:25 AM","is this a preferable way to do it or is there any better methods?","",""
+"189635070246518784","holymama#4630","27-Feb-19 03:26 AM","lets say i have 4 pages page 1 page 2 page 3 an page 4. I have written a prototype for page 1 with links to 2,3,4 do i just copy page 1 and change the contents of the rest of the page?","",""
+"393854278764068875","curiouskiwi#1671","27-Feb-19 03:39 AM","in later weeks, you'll learn about templates, etc, but for this problem, copying the same 'menu' html onto all of your pages is perfectly fine.","",""
+"131136426946461697","Normantas#0001","04-Mar-19 05:44 PM","Can I use for the pages C# instead of Javascript?","",""
+"492450454341550100","WhipStreak23#6131","04-Mar-19 07:41 PM","Yeah.","",""
+"242010922611245056","armchair#4520","06-Mar-19 12:38 AM","Lawrence has arrived 😄","",""
+"492450454341550100","WhipStreak23#6131","06-Mar-19 12:39 AM","Welcome!","",""
+"492450454341550100","WhipStreak23#6131","06-Mar-19 12:39 AM","From now on it gets pretty easy...","",""
+"242010922611245056","armchair#4520","06-Mar-19 10:13 AM","@WhipStreak23 haha I don't believe you 😅 but it is however more accessible (human friendly) vs the lesson on pointers in C.
+
+Anyway, I'm glad I got this far already, looking forward to making my own homepage. Good talkin to you bro!","",""
+"131136426946461697","Normantas#0001","11-Mar-19 06:34 PM","","https://cdn.discordapp.com/attachments/527357970602786826/554703699746750478/HomepadeCS50.gif",""
+"131136426946461697","Normantas#0001","11-Mar-19 06:35 PM","After spending couple of days working on this webpage up to 2h, I finally did the aesthetic, now i just need to add the other 3 pages","",""
+"131136426946461697","Normantas#0001","11-Mar-19 06:35 PM","disco, Today and nchat (they will be like buttons)","",""
+"131136426946461697","Normantas#0001","11-Mar-19 06:45 PM","Honestly, I don't want to work on websites, I prefer fullstack C# dev, but I'm doing this course on my free time in Highschool... It's just fun playing with the tools. it won't get graded (as I'm doing the free version), but it doesn't mean I can just skip it.","",""
+"250646623955189770","jubiiz#4846","15-Mar-19 02:54 AM","Websites aren't my favorite either but hey, its worth learing","",""
+"250646623955189770","jubiiz#4846","15-Mar-19 02:56 AM","also @Normantas  please add staggering beauty to your other cool websites","",""
+"492450454341550100","WhipStreak23#6131","15-Mar-19 08:05 PM","@Normantas You can just make HTML buttons!","",""
+"165210752372703232","zdog#0928","23-Mar-19 01:47 AM","Do you guys know if real staff look at our code when we submit our webiste?","",""
+"165210752372703232","zdog#0928","23-Mar-19 01:48 AM","Mine looks kinda basic","",""
+"383999856898867200","InvictusESP#3678","23-Mar-19 05:46 AM","I think that if it has everything required in the specifications, you are on the safe side","",""
+"259990801612931084","Kyruel#7810","24-Mar-19 01:40 AM","ive accessed my webpage a few times at different locations on diff devices. im currently using a public wifi and am getting an error saying i am unable to securely connect to the server. I tried removing the s in https but that didnt work.","",""
+"383999856898867200","InvictusESP#3678","25-Mar-19 01:49 AM","Did you publish it publicly?","",""
+"259990801612931084","Kyruel#7810","27-Mar-19 03:35 AM","im not sure why it wasnt working in that situation but it seems to work if i go to any other locations so im just letting it be 😛","",""
+"259990801612931084","Kyruel#7810","27-Mar-19 03:35 AM","here is my styles.css `body
+{
+    background-color: lightblue;
+}
+`","",""
+"259990801612931084","Kyruel#7810","27-Mar-19 03:35 AM","why is it not changing the color from white to blue","",""
+"520889432140677121","dhavalveera#7775","27-Mar-19 03:36 AM","does your CSS File is Linked properly with HTML?","",""
+"259990801612931084","Kyruel#7810","27-Mar-19 03:36 AM","thats the entire css file. the index.html had this line built in","",""
+"259990801612931084","Kyruel#7810","27-Mar-19 03:36 AM","`<link href=""styles.css"" rel=""stylesheet"">`","",""
+"259990801612931084","Kyruel#7810","27-Mar-19 03:37 AM","do they both need to link to each other? i thought the .html could just call upon the .css file","",""
+"520889432140677121","dhavalveera#7775","27-Mar-19 04:05 AM","only HTML can Call CSS, CSS File is in Same folder where HTML File lies ?","",""
+"259990801612931084","Kyruel#7810","27-Mar-19 04:06 AM","yeah they are both in the homepage folder","",""
+"259990801612931084","Kyruel#7810","27-Mar-19 04:10 AM","aside from the cs50 material ive watched several videos on this and looked up information. as far as i can tell im doing it exactly like everyone else but its not working","",""
+"520889432140677121","dhavalveera#7775","27-Mar-19 04:23 AM","try to use Universal Selector for changing the Background Color, instead Body...
+
+in Universal Selector just change the Background Color itself","",""
+"393854278764068875","curiouskiwi#1671","27-Mar-19 04:53 AM","is your link to your css file the only stylesheet link in your index.html?","",""
+"520889432140677121","dhavalveera#7775","27-Mar-19 05:37 AM","@curiouskiwi  --- but if HTML File is Blank means no Tag is used but still CSS should Work..","",""
+"393854278764068875","curiouskiwi#1671","27-Mar-19 05:37 AM","what do you mean the html file is blank?","",""
+"259990801612931084","Kyruel#7810","27-Mar-19 07:32 AM","i only have one .css file. il try using the universal selector tomorrow but realistically it should work with body. its the same as the examples","",""
+"520889432140677121","dhavalveera#7775","27-Mar-19 12:41 PM","Yes, I know but I am asking you to check it out that Background-Color is working or not with Universal Selector instead of Body tag","",""
+"259990801612931084","Kyruel#7810","27-Mar-19 09:03 PM","um yes you are correct the universal tag correctly changes the background color. why is that? also i added text-align: center; to the .css file  but nothing is moving around. i tried it under both the universal selector and the body tag","",""
+"259990801612931084","Kyruel#7810","27-Mar-19 09:23 PM","`*
+{
+    text-align: center;
+    background-color: linen;
+}
+`","",""
+"259990801612931084","Kyruel#7810","27-Mar-19 10:21 PM","i was using <br> to format it instead of<p> and it appears that when break is used, the text wont align","",""
+"259990801612931084","Kyruel#7810","28-Mar-19 12:35 AM","aside from the meta name location i think most of this is correct","",""
+"259990801612931084","Kyruel#7810","28-Mar-19 12:35 AM","i do not understand why i am getting these 3 errors when i run it through the checker","",""
+"259990801612931084","Kyruel#7810","28-Mar-19 12:35 AM","`Error: Element head is missing a required instance of child element title.
+From line 7, column 1; to line 7, column 18
+lesheet"">↩        first page↩    <
+Content model for element head:
+If the document is an iframe srcdoc document or if title information is available from a higher-level protocol: Zero or more elements of metadata content, of which no more than one is a title element and no more than one is a base element.
+Otherwise: One or more elements of metadata content, of which exactly one is a title element and no more than one is a base element.
+Error: Stray end tag head.
+From line 8, column 5; to line 8, column 11
+ page↩    </head>↩    <
+Error: Start tag body seen but an element of the same type was already open.
+From line 9, column 5; to line 9, column 10
+head>↩    <body>↩     `","",""
+"259990801612931084","Kyruel#7810","28-Mar-19 12:37 AM","i had the title /title as a child of head earlier but that was causing an additional error","",""
+"393854278764068875","curiouskiwi#1671","28-Mar-19 12:37 AM","so when you said you only had one stylesheet link, you forgot about bootstrap?","",""
+"393854278764068875","curiouskiwi#1671","28-Mar-19 12:37 AM","it's declared after your local CSS so it will override anything","",""
+"259990801612931084","Kyruel#7810","28-Mar-19 12:38 AM","i think the bootstrap was the meta data line right? that was some other guy who was saying he had 1 stylesheet","",""
+"259990801612931084","Kyruel#7810","28-Mar-19 12:38 AM","which incidently i do have 1 stylesheet which is a .css","",""
+"259990801612931084","Kyruel#7810","28-Mar-19 12:39 AM","mmm i see ur counting bootstrap as a stylesheet i get that","",""
+"259990801612931084","Kyruel#7810","28-Mar-19 12:39 AM","but the site was somewhat confusing. it seemed like they just modified css. they didnt implement many new things","",""
+"393854278764068875","curiouskiwi#1671","28-Mar-19 12:39 AM","yes, and because they ""cascade"" per the name CSS (""cascading style sheet""), the second one will override the first.","",""
+"259990801612931084","Kyruel#7810","28-Mar-19 12:40 AM","okay so i need to use a seperate index page for the bootstrap i see","",""
+"393854278764068875","curiouskiwi#1671","28-Mar-19 12:40 AM","so your `body` tag that set it to blue might be overridden by a `body` tag in the bootstrap","",""
+"393854278764068875","curiouskiwi#1671","28-Mar-19 12:40 AM","no, you just need to link your local css file *after* the bootstrap one","",""
+"393854278764068875","curiouskiwi#1671","28-Mar-19 12:41 AM","have you been using the Chrome development tools to investigate which styles are being applied?","",""
+"259990801612931084","Kyruel#7810","28-Mar-19 12:41 AM","i switched them around and im still getting the same errors","",""
+"259990801612931084","Kyruel#7810","28-Mar-19 12:42 AM","i used the w3 exercises and brought them over","",""
+"259990801612931084","Kyruel#7810","28-Mar-19 12:42 AM","havent pulled out the development tools yet","",""
+"259990801612931084","Kyruel#7810","28-Mar-19 12:43 AM","figured id run it through validator to make sure it was working first","",""
+"393854278764068875","curiouskiwi#1671","28-Mar-19 12:45 AM","so the errors say that you're missing a `<title>` which is required inside of `<head>`","",""
+"259990801612931084","Kyruel#7810","28-Mar-19 12:46 AM","yeah i had it originally but then i was getting an error about title being in head","",""
+"393854278764068875","curiouskiwi#1671","28-Mar-19 12:47 AM","```<title>This is the title</title>```   that's the format you need","",""
+"393854278764068875","curiouskiwi#1671","28-Mar-19 12:47 AM","and that should be inside your `<head>` section","",""
+"259990801612931084","Kyruel#7810","28-Mar-19 12:47 AM","oh my goodness i just added the title back in and now all errors are fixed. im still trying to understand what the errors even were","",""
+"91187537187446784","Ianan#0318","07-Apr-19 04:27 PM","For every new html page we make as part of this, do we need to include the bootstrap.min.css? Or will each new page be smart enough to know that if index.html includes it, so should itself?","",""
+"224937960431157260","Penderrin#5312","07-Apr-19 06:00 PM","@Ianan if you are using Bootstrap, then yes, every HTML needs that source tag at the top","",""
+"224937960431157260","Penderrin#5312","07-Apr-19 06:00 PM","Later they will introduce Flask and the template language, Jinja, which makes it easier to do","",""
+"168837160709914624","Davincie#7607","22-Apr-19 05:48 PM","this one was really easy, nice to get over the troubles of c and into stuff i actually feel like i fully grasp","",""
+"168837160709914624","Davincie#7607","22-Apr-19 05:48 PM","got the whole exercise in around an hour","",""
+"560548949212135430","MatMiLam#5890","23-Apr-19 08:51 PM","@curiouskiwi  The lectures have the source code examples available for download but I don't see any source code available for the Shorts. Is there a way for us to get a hold of the source code for these?","https://cdn.discordapp.com/attachments/527357970602786826/570305638941589534/Shorts.png",""
+"560548949212135430","MatMiLam#5890","23-Apr-19 10:56 PM","RE JavaScript. In the lecture David says to use let to define a variable. In the short Doug says to use var to define a variable. This is confusing. Which one should we use?","",""
+"552859265199767563","Nucleon#8703","24-Apr-19 02:19 AM","*let is the newer and better version. But you may use anything.*","",""
+"397677328660037632","Maarten#1004","24-Apr-19 09:32 PM","@MatMiLam In most cases let is better. Perhaps this article can clear things up for you: https://hackernoon.com/js-var-let-or-const-67e51dbb716f","",""
+"560548949212135430","MatMiLam#5890","24-Apr-19 09:38 PM","@Maarten  Thank you","",""
+"318724387417227266","0x4E696E6A75#6171","27-Apr-19 03:04 AM","i have finished my homePage design without using JS should i use it for full mark ?!","",""
+"393854278764068875","curiouskiwi#1671","27-Apr-19 03:19 AM","as the spec says:  ""No need to include any JavaScript on your site for this problem set, unless so inclined!""   (ie, it is not required for full marks)","",""
+"318724387417227266","0x4E696E6A75#6171","27-Apr-19 01:24 PM","i have put my homepage in `cs50/2019/x/challenges/site` but without my images 
+how can i upload my images with the pset?! 
+i tried to use git but i fail 😦","",""
+"560548949212135430","MatMiLam#5890","27-Apr-19 06:11 PM","@0x4E696E6A75  where are your images located? post your <img> lines of code.","",""
+"318724387417227266","0x4E696E6A75#6171","27-Apr-19 08:19 PM","@MatMiLam","https://cdn.discordapp.com/attachments/527357970602786826/571747307008032802/unknown.png",""
+"560548949212135430","MatMiLam#5890","27-Apr-19 08:21 PM","is that logo.png file in your pset5\homepage directory?","",""
+"318724387417227266","0x4E696E6A75#6171","27-Apr-19 08:36 PM","yeah","",""
+"91532050187718656","Gabriel Dupuis#5013","04-May-19 04:11 PM","phew making website is not my cup of tea, I could just make like the minimal stuff and put only stuff on specification. Are we going to learn framework anyways later?","",""
+"240213365002076160","Exkywor#8158","08-May-19 12:25 AM","Hey","",""
+"240213365002076160","Exkywor#8158","08-May-19 12:25 AM","so","",""
+"240213365002076160","Exkywor#8158","08-May-19 12:25 AM","I'm checking the specification for this pset ""Focusing on just the first two of those three languages for now, create a simple homepage that introduces yourself, your favorite hobby or extracurricular, or anything else of interest to you.""","",""
+"240213365002076160","Exkywor#8158","08-May-19 12:26 AM","Does the page I make need to mention me or can it be about something I like without the need to introduce me?","",""
+"240213365002076160","Exkywor#8158","08-May-19 12:26 AM","Like, I'm thinking of maybe make something related to gaming","",""
+"393854278764068875","curiouskiwi#1671","08-May-19 12:26 AM","anything","",""
+"240213365002076160","Exkywor#8158","08-May-19 12:26 AM","Neat, thanks 😄","",""
+"240213365002076160","Exkywor#8158","12-May-19 09:03 AM","Hey, so","",""
+"240213365002076160","Exkywor#8158","12-May-19 09:04 AM","I think I'm finished with my website","",""
+"240213365002076160","Exkywor#8158","12-May-19 09:04 AM","but","",""
+"240213365002076160","Exkywor#8158","12-May-19 09:04 AM","after checking the specifications again I realized they say I should use bootstrap","",""
+"240213365002076160","Exkywor#8158","12-May-19 09:04 AM","but I didn't because I wanted to have full control so, do I HAVE to use bootstrap?","",""
+"240213365002076160","Exkywor#8158","12-May-19 09:05 AM","also, the site has to be responsive so it looks good in mobile devices right?","",""
+"234679095378706433","Blauelf#6622","12-May-19 09:10 AM","The specification says so. Bootstrap (at least a little bit), and looking nice on mobile and various screen sizes.","",""
+"240213365002076160","Exkywor#8158","12-May-19 07:21 PM","here is what I got so far","",""
+"240213365002076160","Exkywor#8158","12-May-19 07:21 PM","https://exkywor.cs50.site/","","👌 (1)"
+"240213365002076160","Exkywor#8158","12-May-19 07:21 PM","it is ""responsive"" 😂 😭","",""
+"234679095378706433","Blauelf#6622","12-May-19 10:27 PM","If I make the window pretty narrow by simulating a Galaxy S5 (Chrome has a pretty decent mobile device emulation, better than the one in Firefox), the text becomes really tiny. That's where one might want to switch from a 4x1 to a 2x2 or maybe even 1x4 layout for the four images.","",""
+"234679095378706433","Blauelf#6622","12-May-19 10:30 PM","The Galaxy S5 has 360x640 pixel of logical resolution (with a ratio of 3 real pixels to 1 reported pixel, so the screen in reality is FullHD 1920x1080)","",""
+"234679095378706433","Blauelf#6622","12-May-19 10:33 PM","Interesting. The page requests https://cdn.gamerant.com/wp-content/uploads/catherine-full-body-persona-5-dlc.jpg.optimal.jpg but that generates an HTTP status 520. Haven't seen that before.","",""
+"234679095378706433","Blauelf#6622","12-May-19 10:36 PM","So discord can download what I can't? CDNs are mysterious.","",""
+"240213365002076160","Exkywor#8158","12-May-19 10:36 PM","Yeah, that's the part I need to figure out, make the text not get super tiny and change the grid arrangement depending on size maybe","",""
+"240213365002076160","Exkywor#8158","12-May-19 10:36 PM","I did the grids using Grid from CSS","",""
+"240213365002076160","Exkywor#8158","12-May-19 10:37 PM","what do you mean by the image request?","",""
+"234679095378706433","Blauelf#6622","12-May-19 10:37 PM","\@media queries in your CSS might help. Haven't used grid so far (well, when I learnt HTML, we used a grid, by abusing tables for layout, but that was before CSS)","",""
+"240213365002076160","Exkywor#8158","12-May-19 10:38 PM","Ohh, thanks 😄 Gonna look into queries","",""
+"240213365002076160","Exkywor#8158","12-May-19 10:38 PM","at least I think I'm kinda close to getting it done xD","",""
+"234679095378706433","Blauelf#6622","12-May-19 10:38 PM","I meant that my browser could not load that image. The CDN would respond with status 520, which seems to be cloudflare's message for ""something went wrong"".","",""
+"240213365002076160","Exkywor#8158","12-May-19 10:39 PM","Ohhh, really?","",""
+"240213365002076160","Exkywor#8158","12-May-19 10:39 PM","It loads well on the devices I've tested it","",""
+"234679095378706433","Blauelf#6622","12-May-19 10:41 PM","The CDN is distributed, everybody being served by a server close to them. Maybe I got a server that had some kind of hiccup, while yours was fine.","",""
+"240213365002076160","Exkywor#8158","12-May-19 10:43 PM","Ohhh","",""
+"240213365002076160","Exkywor#8158","12-May-19 10:43 PM","I had no idea xD","",""
+"234679095378706433","Blauelf#6622","12-May-19 10:49 PM","That's one of the points for using a CDN. It delivers static content from their cache close to the customer. Another is that they might be able to protect you from DDOS attacks by acting as a proxy and hiding your server's IP address (you have to stop them before the packets can saturate your server's internet connection, so usually on the ISP or CDN level).","",""
+"240213365002076160","Exkywor#8158","13-May-19 02:16 AM","Ohhh","",""
+"240213365002076160","Exkywor#8158","13-May-19 02:16 AM","That sounds nice","",""
+"240213365002076160","Exkywor#8158","13-May-19 02:16 AM","😄","",""
+"234679095378706433","Blauelf#6622","14-May-19 10:16 AM","@Exkywor The major downside is that for most features to work, the cdn must access your traffic without encryption, so they in theory could read or manipulate content. Usually ok for static images, rest depends.","",""
+"508281201388158996","Sef Eiba#0939","20-May-19 05:48 PM","My humble homepage
+http://sefeiba.cs50.site/","","👌 (1)"
+"91532050187718656","Gabriel Dupuis#5013","21-May-19 09:12 PM","nice stuff I struggle making website I want to make something professional but yeah I hate designs","",""
+"91532050187718656","Gabriel Dupuis#5013","21-May-19 09:12 PM","I think I restarted the whole thing like 5 times","",""
+"240213365002076160","Exkywor#8158","23-May-19 05:14 PM","My advice would be to stick with a simple idea and maybe check sites related to that to get some inspiration","","🍒 (1)"
+"240213365002076160","Exkywor#8158","23-May-19 05:14 PM","and again, keep it simple","",""
+"572024231890649091","Bazinga#6447","29-May-19 09:38 PM","@Blauelf   in the cs50 ide , when i type http - server , i am getting http://localhost:8080/  instead of http://ide50-username.cs50.io:8080/ ... what to do?","",""
+"234679095378706433","Blauelf#6622","29-May-19 09:42 PM","Why tagging me? I've done that on the old IDE (cs50.io), and it worked for me. You're on the new one (ide.cs50.io), I guess?
+In the menu, you should have a point ""web server"" or similar. If the http-server does not really just bind to the loopback device, you might be able to find it there.","",""
+"572024231890649091","Bazinga#6447","29-May-19 09:46 PM","The serve command is not functional...","https://cdn.discordapp.com/attachments/527357970602786826/583365551326363659/Screenshot_29.png",""
+"572024231890649091","Bazinga#6447","29-May-19 09:58 PM","ok thanks, i got it ...","",""
+"572024231890649091","Bazinga#6447","29-May-19 09:58 PM","its working now","",""
+"572024231890649091","Bazinga#6447","29-May-19 09:58 PM","😃","",""
+"577955247415099393","KQ#3883","03-Jun-19 03:16 PM","under design for this one, it says:
+""In considering the overall design of your site, the staff will take into account the following, among potentially other things as well:""","",""
+"577955247415099393","KQ#3883","03-Jun-19 03:16 PM","does this mean staff are grading this one?","",""
+"234679095378706433","Blauelf#6622","03-Jun-19 08:26 PM","Not for CS50x. Are you reading CS50 instructions?","",""
+"234679095378706433","Blauelf#6622","03-Jun-19 08:34 PM","Oh, that's indeed in there.
+Well, pretend there were somebody grading your submission ;)
+(this problem has no real checks, as the specification is very open on purpose)","",""
+"138076956762701825","Ryan#3894","03-Jun-19 11:49 PM","Is it okay to use mostly Bootstrap to style my website or is that a bad habit to get into","",""
+"138076956762701825","Ryan#3894","03-Jun-19 11:50 PM","I'm not sure if I should be designing my own styles or using pre-made ones","",""
+"138076956762701825","Ryan#3894","03-Jun-19 11:50 PM","I'm making sure that I understand what the Bootstrap styles do by reading the CDN and stuff","",""
+"393854278764068875","curiouskiwi#1671","04-Jun-19 12:05 AM","It's fine.","",""
+"138076956762701825","Ryan#3894","04-Jun-19 12:19 AM","Alright cool, thanks","",""
+"456226577798135808","Deleted User#0000","05-Jun-19 02:51 AM","Hi guys","",""
+"456226577798135808","Deleted User#0000","05-Jun-19 02:51 AM","I was wondering what is the 'limit' to the homepage?","",""
+"456226577798135808","Deleted User#0000","05-Jun-19 02:52 AM","Any sample works out there?","",""
+"456226577798135808","Deleted User#0000","05-Jun-19 02:52 AM","I just made a homepage that passes all the requirements but I am not sure what else to do. Haha.","",""
+"393854278764068875","curiouskiwi#1671","05-Jun-19 03:32 AM","The Homepage problem isn't meant to be complicated.  (it was a short week on campus).  If you've met the requirements, then you've met them. 😃","","😃 (2)"
+"138076956762701825","Ryan#3894","05-Jun-19 11:25 PM","I finished my homepage! :D","",""
+"138076956762701825","Ryan#3894","05-Jun-19 11:25 PM","Probably won't show it though since it has some personal information on it xd","",""
+"250646623955189770","jubiiz#4846","10-Jun-19 03:48 AM","oof... I've been really overdoing it for the homepage then... anyway, I had this error in the corrector and I really have no idea what it means...","https://cdn.discordapp.com/attachments/527357970602786826/587442823889027072/Capture.PNG",""
+"250646623955189770","jubiiz#4846","10-Jun-19 03:50 AM","oh I get it! sry about that","",""
+"523395822084423690","WayneTheBrain#2337","17-Jun-19 08:54 AM","Alright, blocking out some time to knock this out, and looking through Bootstrap tutorials there's recommendations for straight up copy paste (i.e. the nav bar). I've been strict on academic honesty, and feel that, while definitely needing some strong nudges in the right direction, the code I've put down has been my own. In the context of bootstrap however, would using and modifying some of their prebuilt options be disingenuous, or is this to be expected?","",""
+"393854278764068875","curiouskiwi#1671","17-Jun-19 09:24 AM","using the bootstrap examples is fine","",""
+"523395822084423690","WayneTheBrain#2337","17-Jun-19 09:44 AM","@curiouskiwi thank you","",""
+"323564643358605322","Nornor#4436","23-Jun-19 05:46 AM","It's normal to get the local server's link as localhost:8080, right?","",""
+"323564643358605322","Nornor#4436","23-Jun-19 05:54 AM","Also, neither the lecture nor the shorts talked about creating a responsive website ( looks good on small and big screens ) so, do i really have to do that?","",""
+"234679095378706433","Blauelf#6622","23-Jun-19 12:23 PM","Bootstrap provides a few classes that make building a small responsive layout really easy. I had a part that would be two-column on larger screens, and one column on narrower.
+Most times ""responsive"" refers to using `@media`-queries in CSS to provide different layout.","",""
+"234679095378706433","Blauelf#6622","23-Jun-19 12:24 PM","And bootstrap does exactly that with its `col-md-6` and similar classes.","",""
+"323564643358605322","Nornor#4436","23-Jun-19 03:32 PM","Yeah, I know that. I meant, since it wasn't mentioned in the lecture or in the shorts do I have to care about it?","",""
+"234679095378706433","Blauelf#6622","23-Jun-19 03:55 PM","Does the problem description request it?","",""
+"323564643358605322","Nornor#4436","23-Jun-19 03:57 PM","""Ensure that your site looks nice on browsers both on mobile devices as well as laptops and desktops."", ""Recall also that by opening Developer Tools in Google Chrome, you can simulate visiting your page on a mobile device by clicking the phone-shaped icon to the left of Elements in the developer tools window, or, once the Developer Tools tab has already been opened, by typing Ctrl+Shift+M on a PC or Cmd+Shift+M on a Mac, rather than needing to visit your site on a mobile device separately!""","",""
+"323564643358605322","Nornor#4436","23-Jun-19 03:57 PM","well, it does","",""
+"323564643358605322","Nornor#4436","23-Jun-19 03:58 PM","which is weird since as I said b4 it wasn't mentioned in the lecture or in the shorts","",""
+"234679095378706433","Blauelf#6622","23-Jun-19 04:07 PM","The lectures/shorts do not mention everything. The more you progress in the course, the more do you have to do your own research.","",""
+"323564643358605322","Nornor#4436","23-Jun-19 04:08 PM","oh, i see","",""
+"323564643358605322","Nornor#4436","23-Jun-19 04:08 PM","thx","",""
+"323564643358605322","Nornor#4436","26-Jun-19 02:33 AM","How will this problem get checked?","",""
+"393854278764068875","curiouskiwi#1671","26-Jun-19 02:58 AM","we rely on students to only submit once they meet the requirements, so it's simply pass/fail","",""
+"323564643358605322","Nornor#4436","26-Jun-19 03:01 AM","oh cool","",""
+"269921447206584323","Banan#2842","30-Jun-19 07:24 AM","this ide does not like css grid very much","",""
+"269921447206584323","Banan#2842","30-Jun-19 07:24 AM","compiles fine though so no complaints","",""
+"234679095378706433","Blauelf#6622","30-Jun-19 02:08 PM","You mean the built-in syntax highlighter or linter?","",""
+"269921447206584323","Banan#2842","30-Jun-19 10:15 PM","former","",""
+"234679095378706433","Blauelf#6622","30-Jun-19 11:08 PM","Not sure we can configure it to accept more modern CSS.","",""
+"254780208811343873","Animaster7#5593","10-Jul-19 03:15 AM","I took a piece of code from someone on the internet, how should I cite it?","",""
+"254780208811343873","Animaster7#5593","10-Jul-19 03:16 AM","Do I need to cite it?","",""
+"393854278764068875","curiouskiwi#1671","10-Jul-19 03:16 AM","add a comment","",""
+"254780208811343873","Animaster7#5593","10-Jul-19 03:17 AM","Ok","",""
+"254780208811343873","Animaster7#5593","10-Jul-19 03:17 AM","I just commented with the link to the article that gave the code","",""
+"254780208811343873","Animaster7#5593","10-Jul-19 04:32 AM","```    <body>
+        <h1>
+            Header Text
+        </h1>
+        <normaltxt class=""border"">    
+            <p>
+                Yahallo~
+            </p>
+            <p>
+                Moar Text
+            </p>
+        </normaltxt>
+    </body>```
+```
+normaltxt
+{
+    text-indent: 50px;
+    font-size: 30px;
+}
+
+.border
+{
+    border: 5px dotted black;
+    margin-left: 50px;
+    padding-top: 40px;
+}```","",""
+"254780208811343873","Animaster7#5593","10-Jul-19 04:33 AM","I want to put a dotted black border around my two paragraphs in ``<normaltxt>`` but it's not working. I also tried getting rid of the ``.border`` and putting all of it into ``normaltxt`` but that didn't show me my border either....","",""
+"254780208811343873","Animaster7#5593","10-Jul-19 04:35 AM","I only see my text, but no border. Can someone help?","",""
+"393854278764068875","curiouskiwi#1671","10-Jul-19 04:41 AM","you need `.border p`  so that the border applies to the paragraph","",""
+"254780208811343873","Animaster7#5593","10-Jul-19 05:09 AM","Oh thanks","",""
+"254780208811343873","Animaster7#5593","10-Jul-19 05:09 AM","but then I get two different borders","",""
+"254780208811343873","Animaster7#5593","10-Jul-19 05:09 AM","how do I get a single border around both paragraphs?","",""
+"256880385504444418","Matgenius04#2433","10-Jul-19 05:24 AM","try changing the <normaltxt> tags to <div> tags, but keep the class=""border""","",""
+"254780208811343873","Animaster7#5593","10-Jul-19 08:49 PM","I have a border now but it's very thin and not dotted....?","",""
+"254780208811343873","Animaster7#5593","10-Jul-19 08:51 PM","ohh ok I just removed the class=""border"" and it worked","",""
+"254780208811343873","Animaster7#5593","10-Jul-19 09:56 PM","But the problem is what if I want to apply different traits to div....?","",""
+"254780208811343873","Animaster7#5593","10-Jul-19 09:59 PM","```{
+    text-indent: 50px;
+    font-size: 30px;
+    border: 5px dotted black;
+    margin: 30px 50px;
+    padding: 30px;
+}```
+```    <body>
+        <header>
+            My Favourite Anime!
+        </header>
+        <div class=""border"">    
+            <p>
+                Yahallo~
+            </p>
+            <p>
+                Filler Text
+            </p>
+        </div>
+    </body>```
+This is what I have right now, and I do get a single border around both my paragraphs, but the border is not dotted and instead looks like this:","",""
+"254780208811343873","Animaster7#5593","10-Jul-19 09:59 PM","It's extremely faint","https://cdn.discordapp.com/attachments/527357970602786826/598589238736453635/unknown.png",""
+"254780208811343873","Animaster7#5593","10-Jul-19 10:01 PM","It works if I apply the css directly to the div tag, however I might want to format multiple paragraphs inside a single, different border. This seems to only work with the <div> tag so if that happens I won't be able to fix this....","",""
+"256880385504444418","Matgenius04#2433","11-Jul-19 12:19 AM","@Animaster7 This is what I get when testing","https://cdn.discordapp.com/attachments/527357970602786826/598624413646192657/Screenshot_168.png",""
+"254780208811343873","Animaster7#5593","11-Jul-19 12:54 AM","@Matgenius04","https://cdn.discordapp.com/attachments/527357970602786826/598633047390158888/unknown.png",""
+"254780208811343873","Animaster7#5593","11-Jul-19 12:54 AM","^how do I fix that....","",""
+"254780208811343873","Animaster7#5593","11-Jul-19 12:54 AM","you think bootstrap is messing with something?","",""
+"254780208811343873","Animaster7#5593","11-Jul-19 12:55 AM","yep it's bootstrap","",""
+"254780208811343873","Animaster7#5593","11-Jul-19 12:55 AM","I removed their css and it works","",""
+"256880385504444418","Matgenius04#2433","11-Jul-19 01:19 AM","great!","",""
+"254780208811343873","Animaster7#5593","11-Jul-19 02:39 AM","okay Bootstrap is actually messing with a lot of my stuff, but I still need it to implement some of its features, right? How do I override Bootstrap?","",""
+"254780208811343873","Animaster7#5593","11-Jul-19 02:42 AM","do I just figure it out as I go....?","",""
+"256880385504444418","Matgenius04#2433","11-Jul-19 04:47 AM","@Animaster7 checkout this: https://stackoverflow.com/questions/20721248/how-can-i-override-bootstrap-css-styles","",""
+"254780208811343873","Animaster7#5593","11-Jul-19 05:48 PM","Thanks","",""
+"222821839129280512","xanderzauber#2043","11-Jul-19 06:07 PM","hello @malan I received an email saying my cs50w score was 0/1 I have gone to my project0 and there is no feedback about what I did wrong could i get some help?","",""
+"254780208811343873","Animaster7#5593","11-Jul-19 09:57 PM","when the specification says ""use least five (5) different CSS selectors"", does it mean ``.class1`` and ``.class2`` are different or do they only count as one kind of Selector?","",""
+"234679095378706433","Blauelf#6622","11-Jul-19 09:58 PM","I'd say they are different.","",""
+"254780208811343873","Animaster7#5593","11-Jul-19 10:00 PM","okay thanks","",""
+"254780208811343873","Animaster7#5593","12-Jul-19 08:43 PM","Just wondering, is the marking for this one still automated? They said check50 didn't support this...","",""
+"234679095378706433","Blauelf#6622","12-Jul-19 08:57 PM","You always get full score on submission.","",""
+"254780208811343873","Animaster7#5593","12-Jul-19 10:16 PM","...rly?","",""
+"254780208811343873","Animaster7#5593","12-Jul-19 10:17 PM","darn. I should've just copy pasted lorem ipsum text","",""
+"234679095378706433","Blauelf#6622","12-Jul-19 10:35 PM","Even if nobody will ever read it, it's training.","",""
+"254780208811343873","Animaster7#5593","12-Jul-19 11:49 PM","I wrote long paragraphs trying to make my website look like it was meant to be read O.o","",""
+"234679095378706433","Blauelf#6622","13-Jul-19 10:56 AM","It definitely helps with trying out which design decisions (like line width) don't affect the readability of the text.","",""
+"234679095378706433","Blauelf#6622","13-Jul-19 10:58 AM","And for finding a logical structure, and so on. There's more than just HTML and CSS in a homepage.","",""
+"337130571144626189","GriefThorn#7997","20-Jul-19 12:26 PM","Does anyone know how to upload a downloaded image (jpg file) within your computer to the actual IDE as a jpg file itself with just the image so that I can link to it in my website?","",""
+"337130571144626189","GriefThorn#7997","20-Jul-19 12:27 PM","Ping me if anyone knows, thanks in advance, sorry if this may be a silly question","",""
+"456226577798135808","Deleted User#0000","20-Jul-19 04:57 PM","@GriefThorn File>Upload Local Files","",""
+"337130571144626189","GriefThorn#7997","20-Jul-19 09:41 PM","Oh I managed to figure it out, thanks!","",""
+"574512800710393885","mann#4607","22-Jul-19 07:46 AM","Hello:
+
+In week-5 when i create html pages and linked it to index, when i am clicking on to move into my next pages the error shown is as below:
+
+Note: my all files are in same folder pset5
+
+Appreciate your response!","https://cdn.discordapp.com/attachments/527357970602786826/602723041394556938/error_in_linking_page_in_cs50_ide.png",""
+"393854278764068875","curiouskiwi#1671","22-Jul-19 07:48 AM","Are you sure your html page is Biography.html and not biography.html?   HTML is case sensitive.","",""
+"574512800710393885","mann#4607","22-Jul-19 08:07 AM","yes it is same","",""
+"393854278764068875","curiouskiwi#1671","22-Jul-19 08:08 AM","how are you linking the page in your HTML?","",""
+"574512800710393885","mann#4607","22-Jul-19 08:09 AM","in body tag using <a href = ""Biography.html"">","",""
+"393854278764068875","curiouskiwi#1671","22-Jul-19 08:14 AM","and all your html files including index.html are inside the same folder, and it is that folder that you are running Serve on?","",""
+"574512800710393885","mann#4607","22-Jul-19 08:17 AM","yes exactly, right now i have limited access to github once i reah home i will paste screenshot","",""
+"574512800710393885","mann#4607","23-Jul-19 04:50 AM","","https://cdn.discordapp.com/attachments/527357970602786826/603041239977295903/screenshot.png",""
+"574512800710393885","mann#4607","23-Jul-19 04:50 AM","here it is","",""
+"393854278764068875","curiouskiwi#1671","23-Jul-19 04:52 AM","@mann `Biography.html` isn't inside the same folder","",""
+"574512800710393885","mann#4607","23-Jul-19 04:53 AM","oh! thanks","",""
+"574512800710393885","mann#4607","23-Jul-19 04:58 AM","can you point out why  clicking on 2nd para again gives same error?","https://cdn.discordapp.com/attachments/527357970602786826/603043234637283328/background.png",""
+"574512800710393885","mann#4607","23-Jul-19 04:58 AM","i mean on the link","",""
+"393854278764068875","curiouskiwi#1671","23-Jul-19 05:02 AM","don't forget the ""http://","",""
+"574512800710393885","mann#4607","23-Jul-19 05:04 AM","thanks","",""
+"574512800710393885","mann#4607","24-Jul-19 05:49 AM","Do we need to edit style.css and link to every 4 other html pages?","",""
+"530135855415820288","Kontrary#1502","26-Jul-19 05:22 AM","Hi guys","",""
+"530135855415820288","Kontrary#1502","26-Jul-19 05:22 AM","I'm having issues with CSS","",""
+"530135855415820288","Kontrary#1502","26-Jul-19 05:22 AM","```CSS
+img 
+{
+    object-fit: contain;
+}
+```","",""
+"530135855415820288","Kontrary#1502","26-Jul-19 05:23 AM","I'm trying to get all the images for the page to scale to wherever they are, and the IDE gives me the error `Unknown property object-fit`","",""
+"530135855415820288","Kontrary#1502","26-Jul-19 05:23 AM","But it's available on this page https://www.w3schools.com/css/css3_object-fit.asp","",""
+"530135855415820288","Kontrary#1502","26-Jul-19 05:23 AM","It doesn't mention needing to do anything specific","",""
+"530135855415820288","Kontrary#1502","26-Jul-19 05:25 AM","Right now I'm implementing 
+```HTML
+<img src=""images/file.jpg"" alt=""File info"" width=100% height=100%>
+```
+Which is incorrect","",""
+"393854278764068875","curiouskiwi#1671","26-Jul-19 05:27 AM","the IDE's built in 'error check' doesn't know about that for some reason, but it will still work","",""
+"530135855415820288","Kontrary#1502","26-Jul-19 05:29 AM","will it? it didn't for me, for some reason...","",""
+"530135855415820288","Kontrary#1502","26-Jul-19 05:29 AM","if i keep in the incorrect implementation would it affect my grade or something?","",""
+"393854278764068875","curiouskiwi#1671","26-Jul-19 05:30 AM","did you also set the width and height of the container where your img is?","",""
+"530135855415820288","Kontrary#1502","26-Jul-19 05:30 AM","ohhh, not exactly","",""
+"393854278764068875","curiouskiwi#1671","26-Jul-19 05:30 AM","the ""contain"" is meant to be used when it's constrained","",""
+"530135855415820288","Kontrary#1502","26-Jul-19 05:30 AM","```CSS
+
+.column
+{
+    float:left;
+    padding:10px;
+}
+
+.column.main
+{
+    width:75%;
+}
+
+.column.side
+{
+    width:25%;
+}
+```","",""
+"530135855415820288","Kontrary#1502","26-Jul-19 05:30 AM","That's what I did pretty much","",""
+"530135855415820288","Kontrary#1502","26-Jul-19 05:31 AM","oh I see","",""
+"530135855415820288","Kontrary#1502","26-Jul-19 05:31 AM","So that up there isn't really constrained","",""
+"530135855415820288","Kontrary#1502","26-Jul-19 05:31 AM","for some reason, it works with the width 100% and height 100%","",""
+"530135855415820288","Kontrary#1502","26-Jul-19 05:31 AM","it maintains it within the boundaries..","",""
+"393854278764068875","curiouskiwi#1671","26-Jul-19 05:32 AM","so you're trying to keep it within the column.main?","",""
+"393854278764068875","curiouskiwi#1671","26-Jul-19 05:35 AM","the object-fit is a property of the img","",""
+"530135855415820288","Kontrary#1502","26-Jul-19 05:39 AM","Yeah","",""
+"530135855415820288","Kontrary#1502","26-Jul-19 05:40 AM","I found a solution, although i can't see with the html checker whether or not it's fine bc.. it's in the stylesheet haha. but it's essentially the same thing except i put `max-width=100% max-height=100%`","",""
+"530135855415820288","Kontrary#1502","26-Jul-19 05:40 AM","🤷 works","",""
+"530135855415820288","Kontrary#1502","26-Jul-19 06:03 AM","The object-fit didn't work","",""
+"530135855415820288","Kontrary#1502","26-Jul-19 06:03 AM","Anyway thank you  @curiouskiwi!! 🙌 very helpful","",""
+"322973582432927757","kadavraverkisto#7943","29-Jul-19 08:27 AM","...That's definitely the most difficult task so far. Even Scratch was easier 😂","",""
+"301466996057571337","jpjthunder#0746","29-Jul-19 08:31 AM","might take a course","",""
+"322973582432927757","kadavraverkisto#7943","29-Jul-19 08:33 AM","Well, maybe, if I read more about _tools_ once more, that will give me some ideas about a _goal_... Because I really have no idea what to say in all these pages 🤣","",""
+"222821839129280512","xanderzauber#2043","31-Jul-19 04:08 PM","I have submitted my home page assignment a few times and I can't seem to meet the requirements for the assignment but I can figure out what I am missing to meet the requirements","",""
+"393854278764068875","curiouskiwi#1671","31-Jul-19 08:57 PM","@xanderzauber where are you seeing that you are not meeting the requirements?  homepage is graded on the honor system (pass/fail) so unless you aren't submitting anything, you should pass.","",""
+"308966179333079041","StrikerOne65#2675","02-Aug-19 12:56 AM","guys anyone here??","",""
+"308966179333079041","StrikerOne65#2675","02-Aug-19 01:06 AM","","https://cdn.discordapp.com/attachments/527357970602786826/606608768540868669/Screenshot_2019-08-02-03-35-29-437_org.edx.mobile.png",""
+"543295021697204236","dexmexter#1184","02-Aug-19 06:16 AM","Submitted, off to the next assignment!","",""
+"322973582432927757","kadavraverkisto#7943","04-Aug-19 01:26 PM","...There is a way to set several possible fonts for a style - in case the most preferable font is not found on the local machine. Like, ""font-family: VeryFancyFont, LessFancyFont, 'Courier New', monotype"". But is there a way to determine which particular font is displayed at the moment in my browser?","",""
+"323564643358605322","Nornor#4436","04-Aug-19 04:34 PM","inspect an element and ull see on the right a tab called computed or computed css, can't rly remember, this tab contains all the css that u see on the element","",""
+"323564643358605322","Nornor#4436","04-Aug-19 04:35 PM","and all of this is in the elements tab in chrome dev tools","",""
+"322973582432927757","kadavraverkisto#7943","04-Aug-19 05:04 PM","That's what I was trying to do, but failed to find anything but the aforementioned list of fonts v_v Well, it's not not that I really needed it anyway... xD","",""
+"323564643358605322","Nornor#4436","05-Aug-19 03:58 AM","feelsbadman","",""
+"248208770788884491","Nicholas Goldfinder#3350","13-Aug-19 05:53 AM","hi there! i implemented a webpage that includes external html from more than 5 html sources via JavaScript. can those sources considered separate pages, or should i adapt my project to be strictly split into multiple pages?","",""
+"248208770788884491","Nicholas Goldfinder#3350","13-Aug-19 06:01 AM","moreover, since I am trying to build something for myself, besides the assignment, I modified a template that uses lots of features and included JavaScript code that I found on the internet. Is it conform to the honor code?","",""
+"432389552880091147","zizo#6825","19-Aug-19 01:00 AM","why this is not working?","https://cdn.discordapp.com/attachments/527357970602786826/612767707414396951/Screenshot_24.png",""
+"323564643358605322","Nornor#4436","19-Aug-19 01:07 AM",""".body"" selects elements with a class called body","",""
+"323564643358605322","Nornor#4436","19-Aug-19 01:08 AM","what u want is ""body"" which selects the body element","",""
+"432389552880091147","zizo#6825","19-Aug-19 01:30 AM","thanks","",""
+"323564643358605322","Nornor#4436","19-Aug-19 01:35 AM","np","",""
+"467342829426049024","Nivrel#0319","21-Aug-19 10:53 PM","Does the homepage need to be necessarily about myself or it could be about something else?","",""
+"393854278764068875","curiouskiwi#1671","21-Aug-19 11:10 PM","@Nivrel anything you'd like","",""
+"467342829426049024","Nivrel#0319","21-Aug-19 11:13 PM","Ok thanks","",""
+"318263650773368842","tipsyninja#2615","24-Aug-19 08:10 PM","what is this error
+`Error: The element button must not appear as a descendant of the a element.`
+code snippet
+```html
+<div class=""col"">
+                        <a href=""./index.html"" rel=""noopener noreferrer"">
+                        <button class=""btn btn-outline-success"" type=""button"">
+                                Main page
+                            </button>
+                        </a>
+                    </div>
+```","",""
+"318263650773368842","tipsyninja#2615","24-Aug-19 08:11 PM","i tried inserting `a` tag inside `button` tag then the error says `must not appear as a descendant of the button element`","",""
+"322973582432927757","kadavraverkisto#7943","24-Aug-19 10:25 PM","Well, <a> is a tag whose function is a reaction to click and <button> is a tag whose function is a reaction to click. Maybe it's logical that one is not to be placed inside of the other, because its behaviour would be sort of unpredictable then.","",""
+"318263650773368842","tipsyninja#2615","25-Aug-19 11:14 PM","you are right thanks","",""
+"579131782004473866","DeepDirect#6886","26-Aug-19 11:28 AM","How can I install ""ls"" in turmex(environment for Linux in Android) plzz help","",""
+"579131782004473866","DeepDirect#6886","26-Aug-19 11:29 AM","","https://cdn.discordapp.com/attachments/527357970602786826/615462768174301264/Screenshot_20190826_135905.png",""
+"579131782004473866","DeepDirect#6886","26-Aug-19 11:29 AM","It is showing to install busybody I have installed what to do now?","",""
+"579131782004473866","DeepDirect#6886","26-Aug-19 11:31 AM","Plzz help","",""
+"470930030764228618","Marcel Ferrari#0967","31-Aug-19 08:52 PM","try installing coreutils?","",""
+"603294110614552587","noob4ever#1127","03-Sep-19 10:01 PM","Could someone elaborate on the specification of **""Integrate one or more features from Bootstrap into your site."" ** Does this just mean make sure that it works on all devices?","",""
+"393854278764068875","curiouskiwi#1671","03-Sep-19 10:09 PM","no, it means to integrate at least one bootstrap feature.  There are lots of bootstrap components in the documentation: https://getbootstrap.com/docs/4.1/components/alerts/   (alerts is one, but the left menu sidebar on that page gives you lots of others)","","👍 (1)"
+"603294110614552587","noob4ever#1127","03-Sep-19 10:19 PM","Ah, I see. Thank you!","",""
+"255162012303228930","allsunday#1958","04-Sep-19 12:49 AM","this pset feels a bit out of place in the course, like it was improvised at the last minute","",""
+"393854278764068875","curiouskiwi#1671","04-Sep-19 12:58 AM","Week 5 was a short holiday week on campus, so this problem set is a simple introduction to HTML/CSS that was designed to be fairly quick.","",""
+"255162012303228930","allsunday#1958","04-Sep-19 01:32 AM","I've been googling and inspecting elements but I can't understand how these blocks of text are so perfectly aligned","",""
+"255162012303228930","allsunday#1958","04-Sep-19 01:32 AM","https://www.lipsum.com/","",""
+"255162012303228930","allsunday#1958","04-Sep-19 01:47 AM","nvm, solved it","",""
+"149030650639286272","meray#3929","05-Sep-19 08:55 PM","In the html short, Doug mentions another video on PHP. Is PHP going to be part of cs50 or was that something from another year or class?","",""
+"255162012303228930","allsunday#1958","05-Sep-19 09:32 PM","php was used before instead of python and this short was made then. Just can just ignore that php reference","",""
+"255162012303228930","allsunday#1958","05-Sep-19 09:33 PM","you can just* lol","",""
+"149030650639286272","meray#3929","05-Sep-19 09:54 PM","Cool, thanks @allsunday 😄 I was actually interested in the PHP stuff so I might go back to it at the end of the course","",""
+"255162012303228930","allsunday#1958","05-Sep-19 10:11 PM","I'm sure i'll be fairly easy to pick up whenever you want to 🙂","",""
+"342868479378194435","chiznuggets#1040","09-Sep-19 06:43 PM","Hello, I'm trying to work on homepage and keep getting this error from chrome when trying to run the server. I've tried deleting all my extensions, running in an incognito browser, using a different browser than chrome, and turning off my firewalls. I got the server to load one time on the incognito browser but since then I have not gotten it to work.","https://cdn.discordapp.com/attachments/527357970602786826/620645401875447809/pset5issue.PNG",""
+"366666680103075843","expressive#4411","14-Sep-19 09:40 PM","Useful hint: Emmet is supported in the IDE, so instead of typing the entire HTML tag, you can type its name and press tab to finish it off. It also supports shorthand for nested elements, etc. Check the Emmet cheatsheet and try it out!","",""
+"603294110614552587","noob4ever#1127","16-Sep-19 06:29 PM","I wanted to create a simple button which pops up with the users location. It works fine if I use the document.write function. I've tried replacing this with the alert function call and I've also tried replacing the document.write section of my code with ```return location;``` Nothing has worked so far. Any help is appreciated.","https://cdn.discordapp.com/attachments/527357970602786826/623178737860739073/UndefinedLocation.PNG",""
+"603294110614552587","noob4ever#1127","16-Sep-19 06:29 PM","","https://cdn.discordapp.com/attachments/527357970602786826/623178764599164969/Location_Function.PNG",""
+"603294110614552587","noob4ever#1127","16-Sep-19 06:30 PM","","https://cdn.discordapp.com/attachments/527357970602786826/623178798703312929/Button.PNG",""
+"234679095378706433","Blauelf#6622","17-Sep-19 09:34 AM","I don't think `getCurrentPosition` returns anything. It's all async and callbacks.","",""
+"234679095378706433","Blauelf#6622","17-Sep-19 09:35 AM","So your `alert` would have to be triggered by the callback, not run immediately.","",""
+"343698916023205898","iair1234#4829","18-Sep-19 03:32 AM","Hi there!
+I cannot get the http-server to work I get the url, but it won't open anything.","",""
+"492450454341550100","WhipStreak23#6131","18-Sep-19 03:36 AM","Could I have a screenshot?","",""
+"343698916023205898","iair1234#4829","18-Sep-19 06:54 AM","changed computers, previously in the classroom i believe they were blocking port 8080... so all good now.","",""
+"424603310549368843","icenine457#2076","26-Sep-19 05:08 AM","i posted this in the slack room but thought people here would like it too: my homepage submission","https://cdn.discordapp.com/attachments/527357970602786826/626600847023013898/image.png","👌 (2)"
+"234679095378706433","Blauelf#6622","26-Sep-19 08:59 AM","Looks a bit like the GUIs I wrote in Delphi 2, on Windows 95. Worst part was the IDE frequently messing up while saving, destroying my forms.","",""
+"393854278764068875","curiouskiwi#1671","26-Sep-19 09:00 AM","I think I still have my Delphi 2 floppy disks. lol.","",""
+"234679095378706433","Blauelf#6622","26-Sep-19 09:02 AM","It came with *printed books*.
+Some parts of the books accidentally stayed untranslated, though.","",""
+"234679095378706433","Blauelf#6622","26-Sep-19 09:03 AM","Some time after that, Borland renamed to Inprise. They quickly switched back.","",""
+"234679095378706433","Blauelf#6622","26-Sep-19 09:06 AM","I remember my first CeBIT (a German computer expo) in 1998. Was around that time.","",""
+"393854278764068875","curiouskiwi#1671","26-Sep-19 10:14 AM","pretty sure I have the entire box with the books too","",""
+"369773534265868288","tejasvi#1130","03-Oct-19 04:47 PM","I am receiving this baffling error in the validator:","",""
+"369773534265868288","tejasvi#1130","03-Oct-19 04:47 PM","Error: No p element in scope but a p end tag seen.
+
+From line 13, column 11; to line 13, column 14
+
+</p>↩","",""
+"369773534265868288","tejasvi#1130","03-Oct-19 04:47 PM","<!DOCTYPE html>
+
+<html lang=""en"">
+    <head>
+        <title>Online Zoo</title>
+    </head>
+    <body>
+          <p>
+            <form action=""https://www.google.com/search"" method=""get"">
+                <input name=""q"" type=""text"">
+                <input type=""submit"" value=""Search"">
+            </form>
+          </p>
+     </body>
+</html>","",""
+"369773534265868288","tejasvi#1130","03-Oct-19 04:48 PM","There is literally the <p> element present. Why wouldn't it be closed?","",""
+"153264387178758144","hi im steven#6206","04-Oct-19 01:40 AM","How can I write <p> literally in text on my web page rather than have a tag?","",""
+"393854278764068875","curiouskiwi#1671","04-Oct-19 01:42 AM","@tejasvi 
+> Error: No p element in scope but a p end tag seen.
+You can't have a form inside of a paragraph.","",""
+"393854278764068875","curiouskiwi#1671","04-Oct-19 01:45 AM","@hi im steven you can escape the brackets   `&ltp&gt`","",""
+"393854278764068875","curiouskiwi#1671","04-Oct-19 01:47 AM","oops  I mean `&lt;p&gt;`","",""
+"393854278764068875","curiouskiwi#1671","04-Oct-19 01:48 AM","like ```html
+<p>Here's a paragraph tag: &lt;p&gt;</p>
+```","",""
+"393854278764068875","curiouskiwi#1671","04-Oct-19 01:49 AM","","https://cdn.discordapp.com/attachments/527357970602786826/629449895643709440/p.png",""
+"153264387178758144","hi im steven#6206","04-Oct-19 01:55 AM","That is a monstrosity. Thanks!","",""
+"153264387178758144","hi im steven#6206","07-Oct-19 02:39 AM","How can I make class styles cascade into <a> tags? My code is currently making me apply my ""red"" class to each individual <a> tag which looks unnecessary.","https://cdn.discordapp.com/attachments/527357970602786826/630549842271141888/SPOILER_unknown.png",""
+"153264387178758144","hi im steven#6206","07-Oct-19 02:41 AM","applying the ""red"" class to a div that has all the <a> tags inside doesnt seem to do anything","",""
+"313982210497839106","Scrubb#6914","07-Oct-19 10:24 AM","@hi im steven , you can literally target the a tag in your css by just using ""a""","",""
+"313982210497839106","Scrubb#6914","07-Oct-19 10:28 AM","as the css selector","",""
+"548508397490798603","rybohi - tothewebsite.com#0217","07-Oct-19 02:18 PM","Hey, I'm not finding reading bootstrap documentation helpful","",""
+"548508397490798603","rybohi - tothewebsite.com#0217","07-Oct-19 02:18 PM","is there anything that is more helpful?","",""
+"153264387178758144","hi im steven#6206","07-Oct-19 08:28 PM","@Scrubb but then it would also apply to all my other links","",""
+"153264387178758144","hi im steven#6206","07-Oct-19 08:28 PM","i only want it on those 3","",""
+"313982210497839106","Scrubb#6914","07-Oct-19 09:01 PM","I wonder if this might be helpful, @hi im steven ?
+https://css-tricks.com/almanac/selectors/n/nth-child/","",""
+"153264387178758144","hi im steven#6206","07-Oct-19 09:07 PM","At first glance that doesn't seem like it","",""
+"153264387178758144","hi im steven#6206","07-Oct-19 09:07 PM","I just stuck the class on each <a> tag for now and submitted it","",""
+"153264387178758144","hi im steven#6206","07-Oct-19 09:09 PM","my website link is really long and weird and looks like a virus though","",""
+"153264387178758144","hi im steven#6206","07-Oct-19 09:10 PM","i saw someone's website link was just their username, how can i do that?","",""
+"548508397490798603","rybohi - tothewebsite.com#0217","07-Oct-19 11:21 PM","hey","",""
+"548508397490798603","rybohi - tothewebsite.com#0217","07-Oct-19 11:21 PM","really quick need help 🙂","",""
+"548508397490798603","rybohi - tothewebsite.com#0217","07-Oct-19 11:21 PM","my burger icon isn't dropping down the unordered list","",""
+"548508397490798603","rybohi - tothewebsite.com#0217","07-Oct-19 11:21 PM","any help","",""
+"548508397490798603","rybohi - tothewebsite.com#0217","07-Oct-19 11:21 PM","https://codepen.io/ryboh1/pen/GRRgEZN","",""
+"548508397490798603","rybohi - tothewebsite.com#0217","07-Oct-19 11:21 PM","would be appreciated","",""
+"313982210497839106","Scrubb#6914","08-Oct-19 12:01 AM","I'm having the same problem, @rybohi - tothewebsite.com . I checked my code against bootstraps example and I can't see what I've done wrong lol","",""
+"313982210497839106","Scrubb#6914","08-Oct-19 12:02 AM","It will change from a menu bar to a burger menu when the window size gets smaller, but it does not activate when clicked","",""
+"313982210497839106","Scrubb#6914","08-Oct-19 12:04 AM","I wonder if they have their own domain name, and have pointed it to the IDE's URL, or maybe they have their own hosting, @hi im steven ?","",""
+"153264387178758144","hi im steven#6206","08-Oct-19 12:21 AM","oh their own, maybe...","",""
+"153264387178758144","hi im steven#6206","08-Oct-19 01:02 AM","how can I make a new line in javascript? I'm changing certain text on the press of a button, but html tags do not work in javascript, and also /n does not work in html","",""
+"153264387178758144","hi im steven#6206","08-Oct-19 01:12 AM","nvm i have to use innerHTML instead of textContent","",""
+"600175895415881758","Kushik#7600","08-Oct-19 08:06 AM","I was just trying to add a link on a submit button. I wonder if that is doable or not?","",""
+"548508397490798603","rybohi - tothewebsite.com#0217","08-Oct-19 11:31 AM","@Scrubb you need to include javascript bootstrap in your head","",""
+"548508397490798603","rybohi - tothewebsite.com#0217","08-Oct-19 02:59 PM","Hey
+I'm creating my own website
+and I want to upload it to my wordpress site
+I haven't finished it yet
+is there a way to continously upload documents to my website ?","",""
+"548508397490798603","rybohi - tothewebsite.com#0217","08-Oct-19 05:13 PM","Hey I'm back
+So, I want the front page of my blog to have 3 previews of each blog post on it
+and the 3 previews being my most recent posts in descending order
+I've written the html and css for it
+I just don't know how to write the php for it or how to create it in wordpress
+https://codepen.io/ryboh1/pen/yLLyGwO
+this is a preview of what i want it to look like","",""
+"548508397490798603","rybohi - tothewebsite.com#0217","10-Oct-19 10:39 PM","is anyone on in homepage?","",""
+"398595647051268116","Disco Trooper#4230","11-Oct-19 11:47 AM","@rybohi - tothewebsite.com What's up","",""
+"548508397490798603","rybohi - tothewebsite.com#0217","11-Oct-19 01:58 PM","I'm having trouble with wordpress and uploading my theme to wordpress","",""
+"398595647051268116","Disco Trooper#4230","11-Oct-19 02:08 PM","Sadly got no experience with WP, so can’t help ya","",""
+"136631429151850496","Infi#2773","11-Oct-19 09:46 PM","Does the text in this project have to be about something legit, or can we just use garbage word and sentences?","",""
+"359511995202011149","Coroto#9524","11-Oct-19 11:00 PM","@Infi I'm doing it, including some of my hobbies and my bio.","",""
+"359511995202011149","Coroto#9524","11-Oct-19 11:01 PM","have been doing since yesterday. Lol, so much to learn about HTML and CSS alone. But its awesome, everything its online, not like C classes where you have to ""think"" a lot.","",""
+"359511995202011149","Coroto#9524","11-Oct-19 11:02 PM","although i miss C stuff 😦","",""
+"359511995202011149","Coroto#9524","11-Oct-19 11:05 PM","At this pace, i think i can finish it tomorrow, i have 2 pages already. Trying not copy-pasting, the goal is to learn.","",""
+"234679095378706433","Blauelf#6622","12-Oct-19 07:47 AM","@Infi Nobody will read your submission. Writing real texts as if (instead of for example lorem ipsum) makes you think more about structuring your content, so in my opinion might still be worth it for the practice.","",""
+"348898174137532417","Kinno#3002","18-Oct-19 11:41 AM","Eh","",""
+"348898174137532417","Kinno#3002","18-Oct-19 11:42 AM","I thought about generating stuff with javascript and stuff","",""
+"348898174137532417","Kinno#3002","18-Oct-19 11:42 AM","but it looks like that's not the goal here if I understand correctly","",""
+"348898174137532417","Kinno#3002","18-Oct-19 11:54 AM","can I use a lower version of bootstrap?","",""
+"348898174137532417","Kinno#3002","18-Oct-19 11:54 AM","I want glyphicons :C","",""
+"136631429151850496","Infi#2773","19-Oct-19 05:49 AM","If I want to create a header with subheader which would be better?:
+```HTML
+<html>
+    <body>     
+        <h1>Johann Sebastian Bach</h1>
+        <h2>Composer and Musician</h2>
+    </body>
+</html>
+```","",""
+"136631429151850496","Infi#2773","19-Oct-19 05:49 AM","or","",""
+"136631429151850496","Infi#2773","19-Oct-19 05:51 AM","```HTML
+<html>
+    <body>     
+        <h1>Johann Sebastian Bach <br /> 
+            <small>Composer and Musician</small>
+        </h1>
+    </body>
+</html>
+```","",""
+"570304143529476106","Aaryan.P#8207","20-Oct-19 06:40 PM","Whichever suits your needs and looks better to you?","",""
+"570304143529476106","Aaryan.P#8207","20-Oct-19 06:41 PM","But H2 is a header not subheader so probably not suitable","",""
+"342054148012769284","kappilino#9875","21-Oct-19 06:13 PM","The first variant is more common.","",""
+"121431803838988288","Megaguildy#4532","22-Oct-19 10:28 PM","There is no tutorial for this preset right? Just the shorts?","",""
+"291997042127929356","peabody#4435","22-Oct-19 11:24 PM","hey guys, so the spec calls for links to 5 pages","",""
+"291997042127929356","peabody#4435","22-Oct-19 11:25 PM","do they have to within my home directory?","",""
+"291997042127929356","peabody#4435","22-Oct-19 11:25 PM","my homepage is going to be the homepage for another website i built with some editor for a school projects","",""
+"291997042127929356","peabody#4435","22-Oct-19 11:25 PM","could those pages count as my 5 pages?","",""
+"291997042127929356","peabody#4435","22-Oct-19 11:46 PM","also guys im trying to use positioning to allow for resizing of the viewer windows","",""
+"291997042127929356","peabody#4435","22-Oct-19 11:46 PM","im on windows 10 and when I snap the window to a size, its fine","",""
+"291997042127929356","peabody#4435","22-Oct-19 11:46 PM","but when its not full screen or half or quarter, it breas","",""
+"291997042127929356","peabody#4435","22-Oct-19 11:46 PM","breaks*","",""
+"291997042127929356","peabody#4435","23-Oct-19 12:01 AM","so is it possible to make the size of something a function of window size?","",""
+"291997042127929356","peabody#4435","23-Oct-19 12:02 AM","like 100% of height such that as you resize, the size changes dynamically","",""
+"399913366593994762","stuart_clark#0463","24-Oct-19 12:31 PM","`Have at least one stylesheet file of your own creation, styles.css, which uses at least five (5) different CSS selectors (e.g. tag (example), class (.example), or ID (#example)), and within which you use a total of at least five (5) different CSS properties, such as font-size, or margin;`  In pset5, do we have to use atleast five different properties in every CSS selector or total of 5 different CSS properties spanned over each CSS selector?","",""
+"149030650639286272","meray#3929","25-Oct-19 12:23 PM","nah 5 different properties spanned across each css selector (so you have at least 5 different properties in your file in general)","",""
+"399913366593994762","stuart_clark#0463","26-Oct-19 08:30 AM","@meray How complex is the scope of this pset5","",""
+"399913366593994762","stuart_clark#0463","26-Oct-19 08:30 AM","@meray  because I am finding it hard to find the balance","",""
+"149030650639286272","meray#3929","26-Oct-19 04:01 PM","@stuart_clark This one wasn't as complex as the psets before that for me. Look through the HTML and CSS content on something like w3schools for some ideas maybe","",""
+"399913366593994762","stuart_clark#0463","26-Oct-19 05:22 PM","@meray  Yeah it is easy compared to C but I am actually finding it hard what is allowed or what is not.","",""
+"399913366593994762","stuart_clark#0463","26-Oct-19 05:23 PM","@meray  and what is too complex and what  is just ok.","",""
+"121431803838988288","Megaguildy#4532","26-Oct-19 11:10 PM","I'm trying to program a button to be in the center of the screen, but all I can do is just get it center on top","",""
+"256104011512545280","Magdiel#9311","01-Nov-19 06:29 PM","I'm having a bit of trouble understanding the extent of CSS's control over the content of the webpage.","",""
+"256104011512545280","Magdiel#9311","01-Nov-19 06:32 PM","For instance, if I were to have an item in my HTML document aligned to the left via the `align` attribute, but I use stylesheets to align it to the center, does the browser prioritize the HTML attribute or the style?","",""
+"256104011512545280","Magdiel#9311","01-Nov-19 06:39 PM","(I actually studied webdev to some extent around 4 years ago, goes to show how rusty I am, lol)","",""
+"131550384853483520","Lernaean-Hydra#5807","02-Nov-19 04:59 AM","How did everyone come up with the design for their homepage?","",""
+"342054148012769284","kappilino#9875","02-Nov-19 05:30 PM","It‘s a very big problem set to develope a real homepage /website. For a well looking and functional website you need month of planning and designing on paper even before you think to write one line of code. And one needs also knowledge how to design an ui, I think more than programming knowhow. It‘s not an obvious exercise for an CS Class. Consequently I wrote a dummy site wich meets the given requirements but not more.","",""
+"256104011512545280","Magdiel#9311","06-Nov-19 06:38 PM","Honestly, I agree.","",""
+"256104011512545280","Magdiel#9311","06-Nov-19 06:39 PM","Back in my old CS course several years ago, we had to design a webpage as a final project. We were a team of 4 and it still took us a month to get it done, plus we were given a theme to follow beforehand.","",""
+"256104011512545280","Magdiel#9311","06-Nov-19 06:41 PM","This being the problem set for a single week feels daunting. I haven't even touched the IDE yet, I'm still poring over docs for CSS and Bootstrap.","",""
+"393854278764068875","curiouskiwi#1671","06-Nov-19 07:07 PM","This is meant to be a gentle introduction to HTML/CSS and you aren't expected to develop a big site.  For the on-campus class, this pset was assigned during a short week so the average time spent on this one was 6 hours.","",""
+"203986617302646784","Nordaxion#3975","07-Nov-19 04:47 PM","It says on the specifications that I'm supposed to have at least 10 unique tags. Does it mean at least 10 distinct tags for each of the 4 html files or 10 in total across 4?","",""
+"393854278764068875","curiouskiwi#1671","07-Nov-19 06:57 PM","in total","",""
+"166251424873709570","Grimrath#0353","07-Nov-19 07:00 PM","Is there some sort of standard to in which order to write all the arguments in a html tag? E.g. <input id="""" name="""" class="""" placeholder="""" value=""""/> etc?","",""
+"490979026433867776","jhr_pato92#9062","07-Nov-19 07:56 PM","folder","https://cdn.discordapp.com/attachments/527357970602786826/642059694243840040/unknown.png",""
+"490979026433867776","jhr_pato92#9062","07-Nov-19 07:56 PM","how do i link to about.html","",""
+"490979026433867776","jhr_pato92#9062","07-Nov-19 07:56 PM","in my index file","",""
+"490979026433867776","jhr_pato92#9062","07-Nov-19 07:57 PM","i tried ```Read more about us <a hfref=""about.html"" >About</a>``` but its not working","",""
+"490979026433867776","jhr_pato92#9062","07-Nov-19 07:57 PM","wow. just realized the hfref when i copy pasted the line in here.","",""
+"490979026433867776","jhr_pato92#9062","07-Nov-19 07:58 PM","which was the issue 🙂","","👍 (1)"
+"342054148012769284","kappilino#9875","08-Nov-19 11:37 PM","I did not use bootstrap. Because it costs more time to learn a whole framework than to learn to create a little flexbox/grid layout. So I put the reference link for bootstrap in the header and not more. 
+I think also that bootstrap makes the code bad to read. One reason is that the documentation does not use many html 5 tags and  prefererd to use divs for everything. With modern html and css capabilities this framework is not needed.","",""
+"644720000258539530","hiimlauren#4570","15-Nov-19 04:32 AM","So I want to put a lot of images on my website project that I found on various sites on the internet.  Can I use them, legally?  Since I'm not profiting off the site or even publishing it?","",""
+"291997042127929356","peabody#4435","15-Nov-19 05:47 PM","you could search on google for images that are 'labeled for reuse' or 'non-commercial use etc'","",""
+"131185839408414721","Olivier#3472","15-Nov-19 10:44 PM","Behold, my masterpiece","",""
+"131185839408414721","Olivier#3472","15-Nov-19 10:44 PM","https://abc3c789-a92c-4193-aff4-3ae2c718e110-ide.cs50.xyz:8080/index.html","",""
+"291997042127929356","peabody#4435","15-Nov-19 10:47 PM","its beautiful","",""
+"131185839408414721","Olivier#3472","15-Nov-19 11:02 PM","ty ty 😊","",""
+"271830703933620225","Amogh/HinsdaleCentralB#2348","25-Nov-19 03:04 AM","just wondering, I submitted mine and just saw a score of 1/1","",""
+"271830703933620225","Amogh/HinsdaleCentralB#2348","25-Nov-19 03:05 AM","Is the submission based on honor system?","",""
+"393854278764068875","curiouskiwi#1671","25-Nov-19 03:18 AM","for this pset, yes","",""
+"501461310886903819","Cheech#6465","11-Dec-19 10:06 AM","@curiouskiwi i submitted by homepage just now and got this message from github:","",""
+"501461310886903819","Cheech#6465","11-Dec-19 10:06 AM","You recently used a password to access an endpoint through the GitHub API using python-requests/2.22.0. We will deprecate basic authentication using password to this endpoint soon:
+
+https://api.github.com/user
+
+We recommend using a personal access token (PAT) with the appropriate scope to access this endpoint instead. Visit https://github.com/settings/tokens for more information.
+
+Thanks,
+The GitHub Team","",""
+"609824384500105217","Boyuan#0628","15-Dec-19 09:32 AM","I think you can go to https://getbootstrap.com to see some button infos.","",""
+"291997042127929356","peabody#4435","23-Dec-19 01:13 PM","yo guys how  do i link to pages that i made?","",""
+"291997042127929356","peabody#4435","23-Dec-19 01:38 PM","also, my sections using bootstrap are kinda not spacing themselves? how to fix?","",""
+"291997042127929356","peabody#4435","23-Dec-19 01:39 PM","also @curiouskiwi if i dont finish this in 2019, can I continue for a certificate in 2020?","",""
+"374308043439079424","SuperCoderMcGee (Dan)#5963","29-Dec-19 06:58 AM","Does including a responsive meta tag in the head of my site count as ""Integrating one or more features from Bootstrap into your site""
+```
+<meta name=""viewport"" content=""width=device-width, initial-scale=1, shrink-to-fit=no"">
+```","",""
+"613513193481830400","tysonmkcullar#7830","30-Dec-19 06:49 AM","Just curious on how the transition from cs50 2019 to cs50 2020 will work and I'd progress will be continued like previous year. @curiouskiwi","",""
+"393854278764068875","curiouskiwi#1671","30-Dec-19 07:25 PM","@tysonmkcullar details still being worked out","",""
+"613513193481830400","tysonmkcullar#7830","30-Dec-19 11:32 PM","Ok appreciated it. Little scared now hahah @curiouskiwi","","👍 (1)"
+"393854278764068875","curiouskiwi#1671","30-Dec-19 11:42 PM","@tysonmkcullar essentially, you won't have to repeat any work you've done.  If you look at how the 2018->2019 transition worked (the big yellow box on the edX course's homepage), it will be similar.","",""
+"613513193481830400","tysonmkcullar#7830","30-Dec-19 11:48 PM","@curiouskiwi okay that's better to hear! I appreciate you and all of cs50 staff for making this experience, an ivy league education, or atleast some classes, available to everyone, I truly thank you all for your hard work and resourcefullness.","",""
+"662015941785157654","Dalsnin#3322","20-Feb-20 10:40 AM","Is there an obvious mistake since this does not work?
+
+```
+    <button id = 'show_all'>Show all</button>
+
+    <script>
+        document.querySelector('#show_all').onclick = function {
+        alert('Hello!');
+        }
+    </script>
+```","",""
+"662015941785157654","Dalsnin#3322","20-Feb-20 10:49 AM","I found it. I did not call the function by using ()","",""
+"662015941785157654","Dalsnin#3322","20-Feb-20 10:49 AM","Adding it fixed it","",""
+"236287924734394368","chriso#1172","08-Mar-20 07:47 AM","Hey guys pretty broad question but related to my homepage as its to do with javascript.
+I was trying to declare a new array then reference it later in a loop using the push method however when I declared the new array using let or var It wouldn't work however when I leave nothing before it it would. Does anyone have any Idea why? is it to do with scope. Everything is declared within the same function.
+
+For example this would not work
+var numArray = new Array();
+let numArray = new Array();
+
+This would
+numArray = newArray();","",""
+"234679095378706433","Blauelf#6622","08-Mar-20 10:39 AM","That's an ugly part of JavaScript: If you don't specify anything, your variable is created implicitly global. Often this happens by accident.
+`var` is function scope, similar to Python
+`let` is block scope, like in C
+So is the declaration and the loop happening in the same function?","",""
+"236287924734394368","chriso#1172","09-Mar-20 06:49 AM","@Blauelf  yea so I declared the variable at the start of the function, the strange thing is I ran into the same problem again. The variable was declared using let and it worked in the following nested if statement. I then tried to use the variable again later down the line and it said it was undefined. I had to redefine it as a global for it to work.","",""
+"236287924734394368","chriso#1172","09-Mar-20 06:50 AM","I tried redefining it with var but it still wouldnt work. All the if statements are in the one function.","",""
+"553340374836314142","Holder#7561","23-Mar-20 07:25 PM","hello, so for some reason the image does not load from my <img> tags","",""
+"553340374836314142","Holder#7561","23-Mar-20 07:26 PM","https://f97eae9a-8500-4d58-965b-ecff366d2db2-ide.cs50.xyz:8080/index.html","",""
+"553340374836314142","Holder#7561","23-Mar-20 07:26 PM","<img class=""pic"" scr=""horse.jpg"" alt=""Horse jumping 160cm with christopher holder on the sattle"" width=""600"" height=""400"">","",""
+"553340374836314142","Holder#7561","23-Mar-20 07:26 PM","anyone know what is wrong?","",""
+"234679095378706433","Blauelf#6622","23-Mar-20 07:49 PM","Is there a horse.jpg in the same directory, so you could replace index.html with horse.jpg in the URL and you would see the image?","",""
+"234679095378706433","Blauelf#6622","23-Mar-20 07:50 PM","Oh, just saw it, should be src for source, not scr!","",""
+"553340374836314142","Holder#7561","23-Mar-20 07:51 PM","sorry i always have the dumbest mustakes. thanks a lot","",""
+"657902663861796874","Shohan89#3901","13-Apr-20 06:01 PM","hello guys..","",""
+"291968718110588928","MonAx#7777","17-Apr-20 01:47 AM","hi","",""
+"699723932483452938","omat#6351","17-Apr-20 04:18 PM","Hello guys","",""
+"674677517851820066","allenrocks3042#7572","17-Apr-20 07:31 PM","hi","",""
+"674677517851820066","allenrocks3042#7572","17-Apr-20 07:31 PM","HELLO쨰낀","",""
+"674677517851820066","allenrocks3042#7572","17-Apr-20 07:31 PM","HELLO WORLD","",""
+"391042833596809218","Beep Beep I'm a Sheep#3105","17-Apr-20 10:53 PM","lllooolll","",""
+"501861786786725899","Streetlamp Larry#5782","19-Apr-20 06:56 PM","'''","",""

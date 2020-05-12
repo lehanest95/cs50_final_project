@@ -1,0 +1,685 @@
+AuthorID,Author,Date,Content,Attachments,Reactions
+"275290463995691009","Logic#2180","08-Jan-20 10:40 PM","I have no ideia what to build lol","",""
+"333930283101323264","Anya L#2162","10-Jan-20 04:04 AM","You got any hobbies? Or things that you enjoy and know lots about?","",""
+"634578357371011092","beinginvisible#2912","16-Jan-20 07:29 PM","Can someone offer advice or a good tutorial on how to use pure JS with bootstrap radio buttons? (I believe the course uses pure JS instead of jQuery, which seems to be much more popular.)","",""
+"541008695279091714","Alek#1695","19-Jan-20 12:01 AM","We did the 'Homepage' in 2019 pset5, do we have to do it all over again?","",""
+"393854278764068875","curiouskiwi#1671","19-Jan-20 01:01 AM","No","","😎 (1)"
+"109970729109323776","jackshow#0001","30-Jan-20 03:22 PM","Can these videos be uploaded to youtube?","",""
+"109970729109323776","jackshow#0001","30-Jan-20 03:23 PM","Obviously I will watch them anyway on edx's site, but - it'd be great if they were also on youtube, like the lectures","",""
+"109970729109323776","jackshow#0001","30-Jan-20 03:23 PM","I can't skip around with the video player on edx, its randomly timing out every ~20 minutes, etc","",""
+"234679095378706433","Blauelf#6622","30-Jan-20 04:01 PM","@jackshow Do you mean the videos at https://cs50.harvard.edu/x/2020/tracks/web/ ?","",""
+"109970729109323776","jackshow#0001","30-Jan-20 04:02 PM","yeah","",""
+"234679095378706433","Blauelf#6622","30-Jan-20 04:02 PM","Those are embedded youtube videos.","",""
+"109970729109323776","jackshow#0001","30-Jan-20 04:02 PM","ah, this is a different link than i had","",""
+"109970729109323776","jackshow#0001","30-Jan-20 04:02 PM","tyty","",""
+"109970729109323776","jackshow#0001","30-Jan-20 04:03 PM","lol","",""
+"109970729109323776","jackshow#0001","30-Jan-20 04:03 PM","I had this player","https://cdn.discordapp.com/attachments/661709455582560296/672441796906844181/unknown.png",""
+"109970729109323776","jackshow#0001","30-Jan-20 04:04 PM","dunno how you got your link, but thats exactly what i wanted","",""
+"234679095378706433","Blauelf#6622","30-Jan-20 04:08 PM","It's the opencourseware version, outside of edx.","",""
+"234679095378706433","Blauelf#6622","30-Jan-20 04:09 PM","Since they don't track progress on edX, you could use any version.","",""
+"109970729109323776","jackshow#0001","30-Jan-20 04:10 PM","can you link me where you found it?","",""
+"234679095378706433","Blauelf#6622","30-Jan-20 04:30 PM","Somewhere this link was, the main page is https://cs50.harvard.edu/x/2020/","",""
+"676463066942144512","drail159#6376","12-Feb-20 03:22 AM","I'm feeling pretty down about this one. All I wanted to do was to add a sidebar under my header that could scroll and would stretch from the bottom of my header to the bottom of the page and I couldn't figure out how to do that, so I just cut the sidebar and made a horizontal nav bar at the top instead. But the fact that I couldn't figure it out is really discouraging. I've been programming in python and c# for more than 10 years but for some reason when it comes to html and css I just can't get my head around it. Any one feel the same way or is that just me?","",""
+"393854278764068875","curiouskiwi#1671","12-Feb-20 03:34 AM","✋","",""
+"676463066942144512","drail159#6376","12-Feb-20 03:44 AM","Good to know I'm not alone. Thanks.","",""
+"376187384376852481","YoYoO#2555","18-Feb-20 04:55 AM","Are there source code for what Brian has in his videos?","",""
+"376187384376852481","YoYoO#2555","18-Feb-20 05:46 AM","Why is this line not being commented out? The form is `<!--....-->`, no?","https://cdn.discordapp.com/attachments/661709455582560296/679171840685637652/2.PNG",""
+"393854278764068875","curiouskiwi#1671","18-Feb-20 05:48 AM","is that a CSS file?  `/* this is a comment */`","","👍 (1)"
+"376187384376852481","YoYoO#2555","18-Feb-20 07:38 AM","I'm trying to implement a button that when clicked shows a picture. Any ideas why the picture isn't showing on click?","https://cdn.discordapp.com/attachments/661709455582560296/679200092644835328/3.PNG",""
+"376187384376852481","YoYoO#2555","18-Feb-20 07:39 AM","Inside the query selector I have `('img')` is that where the problem lies?","",""
+"676463066942144512","drail159#6376","18-Feb-20 07:47 AM","You should probably use a unique id for the img but I also recall Brian saying that the script would come after the body tag. I think that's what he said anyway.","",""
+"676463066942144512","drail159#6376","18-Feb-20 07:48 AM","I'd just test it on my own machine but my pc died today. 😢","",""
+"376187384376852481","YoYoO#2555","18-Feb-20 07:49 AM","Good idea but putting script under the buttons also doesn't work 😦","",""
+"376187384376852481","YoYoO#2555","18-Feb-20 07:54 AM","","https://cdn.discordapp.com/attachments/661709455582560296/679204090995015724/4.PNG",""
+"376187384376852481","YoYoO#2555","18-Feb-20 07:55 AM","^rearranged code that still doesn't display picture upon button click","",""
+"676463066942144512","drail159#6376","18-Feb-20 08:25 AM","I was able to make it work by setting display to ""block""
+
+```
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test</title>
+    </head>
+    <body>
+        <button id=""picture""> Why don't we click this for motivation...</button>
+        <img id=""image"" src=""icon.png"" style=""display:none;"" alt=""picture"">
+        <script>
+            document.querySelector(""#picture"").onclick = function()
+            {
+                document.querySelector(""img"").style.display = ""block"";
+            }
+        </script>
+    </body>
+</html>
+```","",""
+"676463066942144512","drail159#6376","18-Feb-20 08:26 AM","@YoYoO","",""
+"376187384376852481","YoYoO#2555","18-Feb-20 08:27 AM","Block sends it to the left hand side, right?","",""
+"376187384376852481","YoYoO#2555","18-Feb-20 08:27 AM","Thanks, by the way.","",""
+"376187384376852481","YoYoO#2555","18-Feb-20 08:27 AM","Setting it to inline sets it to be centred i think 🙂","",""
+"376187384376852481","YoYoO#2555","18-Feb-20 08:28 AM","`document.getElementById(""ooo"").style.display=""inline"";`","",""
+"376187384376852481","YoYoO#2555","18-Feb-20 08:28 AM","I found this online: getElementById works as well","",""
+"376187384376852481","YoYoO#2555","18-Feb-20 08:28 AM","'ooo' is the ID of the image","",""
+"676463066942144512","drail159#6376","18-Feb-20 08:44 AM","Oh cool.","",""
+"676463066942144512","drail159#6376","18-Feb-20 08:45 AM","I'll have to play with that some more and see how the different display settings work","",""
+"676463066942144512","drail159#6376","18-Feb-20 08:48 AM","One more thing, I found that I can toggle the image with this
+```
+document.querySelector(""#picture"").onclick = function()
+{
+  var i = document.querySelector(""img"");
+  if (i.style.display === ""none""){
+    i.style.display = ""inline"";
+  } else {
+    i.style.display = ""none"";
+  }
+}
+```","",""
+"676463066942144512","drail159#6376","18-Feb-20 08:49 AM","That was sourced from w3schools.com","",""
+"376187384376852481","YoYoO#2555","18-Feb-20 09:40 AM","Oh cool","",""
+"376187384376852481","YoYoO#2555","18-Feb-20 09:40 AM","Any ideas why upon press the button doesn't take me to Google?","https://cdn.discordapp.com/attachments/661709455582560296/679230707146424321/5.PNG",""
+"676463066942144512","drail159#6376","18-Feb-20 09:43 AM","try setting on click to ""window.location.href = 'https://www.google.com';""","",""
+"376187384376852481","YoYoO#2555","18-Feb-20 09:49 AM","Didn't work :/","https://cdn.discordapp.com/attachments/661709455582560296/679233024180879361/6.PNG",""
+"376187384376852481","YoYoO#2555","18-Feb-20 09:49 AM","Did you mean like that^?","",""
+"676463066942144512","drail159#6376","18-Feb-20 09:49 AM","Never mind I found something that works at :
+```
+document.querySelector(""#picture"").onclick = function()
+{
+  location.href = ""https://w3docs.com"";
+}
+```","",""
+"376187384376852481","YoYoO#2555","18-Feb-20 09:51 AM","Cool, works 🙂","",""
+"676463066942144512","drail159#6376","18-Feb-20 09:51 AM","if you define it in the button tag then you can do: 
+`<button onclick=""window.location.href = 'https://www.google.com ';"">click me</button>`","",""
+"676463066942144512","drail159#6376","18-Feb-20 09:51 AM","Cool.","",""
+"376187384376852481","YoYoO#2555","18-Feb-20 09:51 AM","But","",""
+"376187384376852481","YoYoO#2555","18-Feb-20 09:51 AM","Do you know how to add co-ordinates to that url?","",""
+"376187384376852481","YoYoO#2555","18-Feb-20 09:52 AM","https://74a2b892-5216-4a46-b2e7-d35bdcfb31bd-ide.cs50.xyz:8080/location.html","",""
+"376187384376852481","YoYoO#2555","18-Feb-20 09:52 AM","That's my website","",""
+"376187384376852481","YoYoO#2555","18-Feb-20 09:52 AM","I want (the bottom button) to take you to maps.google.com/ **coordinates**","",""
+"376187384376852481","YoYoO#2555","18-Feb-20 09:53 AM","Like is it possible to add a variable to the website tail end","",""
+"376187384376852481","YoYoO#2555","18-Feb-20 09:53 AM","So that the button is dynamic","",""
+"376187384376852481","YoYoO#2555","18-Feb-20 09:53 AM","Make sense? :/","",""
+"676463066942144512","drail159#6376","18-Feb-20 09:53 AM","Hmm. let me think on that one for a sec.","",""
+"376187384376852481","YoYoO#2555","18-Feb-20 09:55 AM","https://pastebin.com/TtuGTGXS","",""
+"376187384376852481","YoYoO#2555","18-Feb-20 09:56 AM","^code if you're interested","",""
+"376187384376852481","YoYoO#2555","18-Feb-20 10:02 AM","This unfortunately doesn't work","https://cdn.discordapp.com/attachments/661709455582560296/679236385147846676/7.PNG",""
+"676463066942144512","drail159#6376","18-Feb-20 10:24 AM","no but for some reason this does:
+```
+navigator.geolocation.getCurrentPosition(function(position) {
+    document.querySelector('#oki').innerHTML = (""Well, according to my data your current position is ""+position.coords.latitude + "", "" + position.coords.longitude + '. Zara will be with you shortly.');
+     document.querySelector('#map').onclick = function() {
+         location.href = (""https://www.google.com/maps/place/@"" + position.coords.latitude) + position.coords.longitude;
+    }
+});
+```","",""
+"376187384376852481","YoYoO#2555","18-Feb-20 10:26 AM","Is the only thing different the @?","",""
+"676463066942144512","drail159#6376","18-Feb-20 10:27 AM","I had to pull the longitude out of the parenthesis and I put the query inside of the getCurrentPosition function","",""
+"676463066942144512","drail159#6376","18-Feb-20 10:28 AM","I don't even think you need the @, I just added it while I was trying things.","",""
+"376187384376852481","YoYoO#2555","18-Feb-20 10:29 AM","**thinking**","",""
+"376187384376852481","YoYoO#2555","18-Feb-20 10:29 AM","The `});` at the end is in combination with what?","",""
+"676463066942144512","drail159#6376","18-Feb-20 10:31 AM","```
+navigator.geolocation.getCurrentPosition(function(position) {
+        ...   set oki text   ...
+        ... set #map.onclick ...
+});
+```","",""
+"676463066942144512","drail159#6376","18-Feb-20 10:32 AM","I moved the section for settings the buttons on click to the inside of this function. You already have that in your code.","",""
+"676463066942144512","drail159#6376","18-Feb-20 10:35 AM","Here it is so you can see it in full:
+https://pastebin.com/VUAVBkV7","",""
+"376187384376852481","YoYoO#2555","18-Feb-20 10:36 AM","Yeah I got it to work","",""
+"376187384376852481","YoYoO#2555","18-Feb-20 10:36 AM","That's so weird","",""
+"376187384376852481","YoYoO#2555","18-Feb-20 10:36 AM","I'm gonna look closely and see why this works","",""
+"376187384376852481","YoYoO#2555","18-Feb-20 10:36 AM","Thanks for figuring that out","",""
+"676463066942144512","drail159#6376","18-Feb-20 10:37 AM","No problem. I think it has to do with the way that javascript combines strings and doubles but I'm at a loss too.","",""
+"376187384376852481","YoYoO#2555","18-Feb-20 10:45 AM","So it's because when you close the bracket off early the latitude and longitude values are unknown to the program because the location function ended","",""
+"376187384376852481","YoYoO#2555","18-Feb-20 10:46 AM","I also realised moving the brack from latitude to outside longitude doesn't make a difference","",""
+"376187384376852481","YoYoO#2555","18-Feb-20 10:46 AM","But what does make a difference is removing the @ sign","",""
+"376187384376852481","YoYoO#2555","18-Feb-20 10:46 AM","Removing it gives a blue google maps screen, whilst keeping in brings up maps but doesn't show the red pointer, it's weird.","",""
+"676463066942144512","drail159#6376","18-Feb-20 10:50 AM","Huh. I was able to get it to work without the @ symbol. That's all pretty weird. But at least it works. lol","",""
+"376187384376852481","YoYoO#2555","18-Feb-20 11:00 AM","I fixed it 😄","",""
+"376187384376852481","YoYoO#2555","18-Feb-20 11:00 AM","`location.href = (""https://www.google.com/maps/search/""+position.coords.latitude+'+'+position.coords.longitude);`","",""
+"376187384376852481","YoYoO#2555","18-Feb-20 11:00 AM","Project complete!","",""
+"376187384376852481","YoYoO#2555","18-Feb-20 11:00 AM","Like with the @ sign the red pointer wouldn't come up","",""
+"376187384376852481","YoYoO#2555","18-Feb-20 11:01 AM","And I added `/search/`","",""
+"676463066942144512","drail159#6376","18-Feb-20 11:19 AM","Oh yeah. That makes sense. Good job!","",""
+"558678172372041764","Aimer#8978","21-Feb-20 10:53 AM","what is the different between this","https://cdn.discordapp.com/attachments/661709455582560296/680336291312697356/unknown.png",""
+"558678172372041764","Aimer#8978","21-Feb-20 10:53 AM","and this","https://cdn.discordapp.com/attachments/661709455582560296/680336366541864961/unknown.png",""
+"393854278764068875","curiouskiwi#1671","21-Feb-20 12:01 PM","The first is the web track for CS50x (the final 2 weeks of the course).  The second is a 12 week class on web programming. (CS50W)","",""
+"409868083574996992","khalil Abraham#4703","21-Feb-20 01:03 PM","on Projrct1, can I use flask_wtf to create flask forms?","",""
+"558678172372041764","Aimer#8978","22-Feb-20 02:04 PM","does using h1 to h6 considered using 6 different tags?","",""
+"680309651098697748","simplekode#6827","24-Feb-20 02:43 PM","I've been wondering if i choose to do web development for my final project and its done, can i go back and maybe try the other fields too?","",""
+"234679095378706433","Blauelf#6622","24-Feb-20 03:04 PM","No bonus points for doing so.","","👍 (1)"
+"234679095378706433","Blauelf#6622","24-Feb-20 03:04 PM","Other than that, sure.","",""
+"680309651098697748","simplekode#6827","26-Feb-20 10:10 PM","I'll be doing it purely for the experience and knowledge","","👍 (4)"
+"567509736463794186","lexi#9144","27-Feb-20 06:35 PM","Does anyone know why my dropdown menu from bootstrap isn't dropping down","",""
+"567509736463794186","lexi#9144","27-Feb-20 06:36 PM","","https://cdn.discordapp.com/attachments/661709455582560296/682627066013024259/Screen_Shot_2020-02-27_at_11.36.09_AM.png",""
+"567509736463794186","lexi#9144","27-Feb-20 06:45 PM","?","",""
+"567509736463794186","lexi#9144","27-Feb-20 06:45 PM","https://getbootstrap.com/docs/4.0/components/dropdowns/","",""
+"567509736463794186","lexi#9144","27-Feb-20 06:45 PM","I tried copying from there but it's not dropping down","",""
+"324522780252962816","Sinergy#7605","28-Feb-20 03:49 PM","@lexi as it says at the top of the dropdowns page, you need popper.js included before the bootstrap js.  Needed lines in head with spoilers (probably with some redundant bootstrap js but I wouldn't know which to remove):
+
+||<script href=""https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"" type=""text/javascript""></script>||
+(I constructed this from the popper.min.js link on the dropdowns page)
+||<script src=""https://code.jquery.com/jquery-3.2.1.slim.min.js"" integrity=""sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"" crossorigin=""anonymous""></script>||
+||<script src=""https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"" integrity=""sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"" crossorigin=""anonymous""></script>||
+||<script src=""https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"" integrity=""sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"" crossorigin=""anonymous""></script>||
+(Copied direct from the get started page of the bootstrap site (which would be where you could have redundant code))","",""
+"324522780252962816","Sinergy#7605","28-Feb-20 03:52 PM","Just because I don't like giving the answer just like that, I thought I would mention how I figured it out. I inspected the element on the dropdowns page, and saw that it was exactly the same.  Then I noticed that when I was clicking the dropdown button, the html was changing.  So I knew there was some kind of interactive process not found just in the html/css, and then I finally checked the documentation properly.","",""
+"567509736463794186","lexi#9144","28-Feb-20 08:20 PM","THanks!","",""
+"443948609705213962","hisfastness#2258","28-Feb-20 10:30 PM","Does anyone else find the web stuff to be a bit less exciting than what we did with C and Python? I'm just on homepage right now, but to me this feels like a lot of trial and error to get CSS right. C and Python required more computational logic.","",""
+"443948609705213962","hisfastness#2258","28-Feb-20 10:31 PM","Switching between HTML, CSS, Javascript breaks me out of the focus I found myself in with C and Python. I dunno, maybe its because this is new. Or front-end stuff isn't my thing.","",""
+"234679095378706433","Blauelf#6622","28-Feb-20 10:59 PM","It is great in the sense that you can have visible results with very little code, and trivial examples don't even require a build system.
+But in general, I do prefer backend stuff. It feels so much more well-defined, even though network isn't exactly that.","","🤜 (1),🤛 (1)"
+"662015941785157654","Dalsnin#3322","03-Mar-20 11:35 AM","@hisfastness I love it. It is very clear to see changes and improvements, whereas python and C is way more abstract.","","👍 (1)"
+"676463066942144512","drail159#6376","03-Mar-20 12:35 PM","@Dalsnin But there is something attractive about that abstraction. There is something I find very appealing about an algorithm structured to do a specific job but abstract enough for any potential use case. But I'm glad that people see things your way because otherwise we wouldn't have front-end developers.","",""
+"662015941785157654","Dalsnin#3322","03-Mar-20 02:34 PM","@drail159 I agree 🙂","",""
+"662015941785157654","Dalsnin#3322","03-Mar-20 02:35 PM","A question, if I may. I get an error regarding Javascript when acquiring Flask value I entered.
+```
+rows = {{ rows }};  // From Flask
+```
+Has that happened for anyone else? The IDE gives error about having the {, but the website runs just fine...","",""
+"174850178384134145","L.S.#6002","04-Mar-20 09:06 AM","Hey I have a question. If you have code that will repeat itself in every page of your site, isn’t there a way to save that code to a separate html file and just import/link it to every page of your site instead of repeating it in every file?","",""
+"174850178384134145","L.S.#6002","04-Mar-20 09:06 AM","For example, a side bar","",""
+"236287924734394368","chriso#1172","04-Mar-20 09:44 AM","You can make templates using wordpress or javascript templating software like mustache.js but I dont think you need to worry about that for this because you have to learn more than just html js and css","",""
+"324522780252962816","Sinergy#7605","04-Mar-20 02:19 PM","L.S., the finance pset will do that using something called Flask, which is implementing a kind of language in html called JINJA.  basically you will have a template html file, with a couple of blocks set aside to accept more content, and then other html files will say ""extends template"" and then define what is in the missing blocks.","",""
+"174850178384134145","L.S.#6002","05-Mar-20 10:04 AM","@Sinergy good to know. Thanks!","",""
+"104640431534383104","Ripley#2540","05-Mar-20 10:04 PM","guys, how can I horizontal center an element inside a div? (I'm using bootstrap)","",""
+"104640431534383104","Ripley#2540","05-Mar-20 10:05 PM","i want to center my image","https://cdn.discordapp.com/attachments/661709455582560296/685216371583483944/unknown.png",""
+"104640431534383104","Ripley#2540","05-Mar-20 10:05 PM","this is my current code","https://cdn.discordapp.com/attachments/661709455582560296/685216467792429160/unknown.png",""
+"234679095378706433","Blauelf#6622","05-Mar-20 10:08 PM","Something like `margin: 0 auto;` maybe?","",""
+"104640431534383104","Ripley#2540","05-Mar-20 10:23 PM","i tried with mx-auto either in the image and the div but it didn't work","",""
+"234679095378706433","Blauelf#6622","05-Mar-20 10:24 PM","`text-center` on the image maybe?","",""
+"234679095378706433","Blauelf#6622","05-Mar-20 10:25 PM","I haven't done much with bootstrap, I think `homepage` was the most of it.","","👍 (1)"
+"104640431534383104","Ripley#2540","05-Mar-20 10:26 PM","text-center on the div worked flawlessly, thanks!","",""
+"234679095378706433","Blauelf#6622","05-Mar-20 10:29 PM","On the div? Now that's confusing, I think I understood it wrong.","",""
+"234679095378706433","Blauelf#6622","05-Mar-20 10:31 PM","Ah, it's defined as
+```css
+.text-center {
+  text-align: center !important;
+}
+```
+while `mx-auto` is
+```css
+.mx-auto {
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+```","",""
+"234679095378706433","Blauelf#6622","05-Mar-20 10:34 PM","So `mx-auto` would expect an element with `display:block;`, while images are `display:inline;` by default.","",""
+"104640431534383104","Ripley#2540","05-Mar-20 11:21 PM","@L.S. just did that, i needed to reuse a navbar","",""
+"104640431534383104","Ripley#2540","05-Mar-20 11:24 PM","i had to add:
+
+`<script src=""https://code.jquery.com/jquery-1.10.2.js""></script>`
+To the header and then:
+```        <div id=""nav-placeholder"">
+
+        </div>
+        <script>
+            $(function(){
+                $(""#nav-placeholder"").load(""navbar.html"");
+            });
+        </script>```
+
+To the body","",""
+"104640431534383104","Ripley#2540","05-Mar-20 11:25 PM","And then on navbar.html i just added my navbar code, without any <body> tags","",""
+"174850178384134145","L.S.#6002","06-Mar-20 02:49 AM","@Ripley I’ll try that, thanks 🙂","",""
+"506173860312514580","Elipasking#7447","23-Mar-20 02:15 PM","omg i cant remove mcafee from my pc","",""
+"234679095378706433","Blauelf#6622","23-Mar-20 05:41 PM","Did he hide in the sandbox again? (Joke based on https://www.theguardian.com/world/2012/nov/14/john-mcafee-hiding-businessman-murder)","",""
+"231592825349734402","deFus3#0887","25-Mar-20 05:42 PM","","https://cdn.discordapp.com/attachments/661709455582560296/692397968678060062/unknown.png",""
+"231592825349734402","deFus3#0887","25-Mar-20 05:42 PM","pretty sure the hyperlink here is broken","",""
+"393854278764068875","curiouskiwi#1671","25-Mar-20 08:20 PM","@deFus3 thanks. fixed.","","👍 (2)"
+"236287924734394368","chriso#1172","25-Mar-20 11:34 PM","Hey I wrote my website on my computer is it possible to upload a zip file to the ide?","",""
+"236287924734394368","chriso#1172","25-Mar-20 11:35 PM","nvm","",""
+"353862880736837652","Vitaun42#8068","27-Mar-20 01:46 PM","I'm having problem with displaying images in my site","",""
+"353862880736837652","Vitaun42#8068","27-Mar-20 01:46 PM","","https://cdn.discordapp.com/attachments/661709455582560296/693063365932875776/unknown.png",""
+"353862880736837652","Vitaun42#8068","27-Mar-20 01:46 PM","this is my code:","",""
+"353862880736837652","Vitaun42#8068","27-Mar-20 01:46 PM","","https://cdn.discordapp.com/attachments/661709455582560296/693063457552990208/unknown.png",""
+"353862880736837652","Vitaun42#8068","27-Mar-20 01:47 PM","any ideia of why it doesn't fill the entire page?","",""
+"218090358872080386","Yuma X#4131","28-Mar-20 09:23 AM","I believe it's because u wrote it in the head and not the body","",""
+"254622976710803456","bec#7264","28-Mar-20 02:10 PM","","https://cdn.discordapp.com/attachments/661709455582560296/693431917957349416/unknown.png",""
+"254622976710803456","bec#7264","28-Mar-20 02:11 PM","any idea why this doesn't centre allign it?","",""
+"254622976710803456","bec#7264","28-Mar-20 02:13 PM","I used the <center> tag and got it working but I don't understand wy the html code above doesn't work","",""
+"218090358872080386","Yuma X#4131","28-Mar-20 04:09 PM","There's no center property","",""
+"218090358872080386","Yuma X#4131","28-Mar-20 04:09 PM","Use the text-center class provided by bootstrap","",""
+"678377940030980120","ziller#6589","29-Mar-20 10:06 PM","nah","",""
+"678377940030980120","ziller#6589","29-Mar-20 10:06 PM","it’s a spelling problem","",""
+"678377940030980120","ziller#6589","29-Mar-20 10:07 PM","text-align has only one l","",""
+"678377940030980120","ziller#6589","29-Mar-20 10:07 PM","and center needs to be spelled the american way","",""
+"678377940030980120","ziller#6589","29-Mar-20 10:07 PM","@bec","",""
+"254622976710803456","bec#7264","29-Mar-20 10:08 PM","I did fix center problem, didn't catch the other thing though","",""
+"254622976710803456","bec#7264","29-Mar-20 10:08 PM","nice","",""
+"254622976710803456","bec#7264","29-Mar-20 10:08 PM","thanks","",""
+"678377940030980120","ziller#6589","29-Mar-20 10:08 PM","there are lot’s of ways to center things with css","",""
+"678377940030980120","ziller#6589","29-Mar-20 10:08 PM","LOTS","",""
+"678377940030980120","ziller#6589","29-Mar-20 10:08 PM","and they all interact in complicated ways :/","",""
+"678377940030980120","ziller#6589","29-Mar-20 10:09 PM","depending on whether the width is fluid or fixed... the element is inline or block... or inline-block... etc etc etc","",""
+"254622976710803456","bec#7264","29-Mar-20 10:10 PM","anyways I tried gave up trying to make a Js script that dynamically links the other pages based on which page it was on and gave up and hardcoded","",""
+"254622976710803456","bec#7264","29-Mar-20 10:10 PM","mostly because it's faster","",""
+"254622976710803456","bec#7264","29-Mar-20 10:10 PM","is hard coding it bad design™️?","",""
+"678377940030980120","ziller#6589","29-Mar-20 10:11 PM","I don’t know the context!","",""
+"254622976710803456","bec#7264","29-Mar-20 10:11 PM","I mean it also saves computing power each time though it's not much","",""
+"254622976710803456","bec#7264","29-Mar-20 10:12 PM","uh it's basically something like Previous page                 Next page (both hyperlinks","",""
+"678377940030980120","ziller#6589","29-Mar-20 10:12 PM","ah, ok... well... hardcoding that is probably a slightly poor design if there’s a chance the content or the number of pages could change later","",""
+"678377940030980120","ziller#6589","29-Mar-20 10:13 PM","but at the same time JS might not be the way to go to make it dynamic","",""
+"254622976710803456","bec#7264","29-Mar-20 10:13 PM","I am not sure I don't think making it dynamic is really worth the time and efforts but it's good to get some experience with JS","",""
+"678377940030980120","ziller#6589","29-Mar-20 10:14 PM","yes","",""
+"678377940030980120","ziller#6589","29-Mar-20 10:14 PM","I hear you","",""
+"678377940030980120","ziller#6589","29-Mar-20 10:14 PM","I have huge gaps in my knowledge with this stuff","",""
+"678377940030980120","ziller#6589","29-Mar-20 10:14 PM","despite a fair amount of experience working with small websites...","",""
+"678377940030980120","ziller#6589","29-Mar-20 10:15 PM","have only ever used JS as a styling tool essentially","",""
+"254622976710803456","bec#7264","29-Mar-20 10:15 PM","anyways is there a summarised list of all the requirements in text format?","",""
+"678377940030980120","ziller#6589","29-Mar-20 10:15 PM","to do things like making modal windows... or tab navigation","",""
+"254622976710803456","bec#7264","29-Mar-20 10:15 PM","or do I have to write it down myself","",""
+"678377940030980120","ziller#6589","29-Mar-20 10:16 PM","?","",""
+"678377940030980120","ziller#6589","29-Mar-20 10:16 PM","Sorry man, I’m out of the conversation a bit...","",""
+"678377940030980120","ziller#6589","29-Mar-20 10:16 PM","jumping in in the middle!","",""
+"665756333370245121","Franciscosta#2924","30-Mar-20 02:16 AM","Finished my homepage project!! If every anyone needs a simple to-do: https://yvesapp.com","",""
+"665756333370245121","Franciscosta#2924","30-Mar-20 02:16 AM","😛","","👍 (1),✌️ (1)"
+"665756333370245121","Franciscosta#2924","30-Mar-20 02:16 AM","@brian loving the track!!","",""
+"357166762564780033","brian#1055","30-Mar-20 05:22 AM","@Franciscosta Glad you're liking the track! Your app looks great!","","😃 (1)"
+"254622976710803456","bec#7264","30-Mar-20 07:32 PM","is it a bad thing that I have no idea with regards to what I can do?","",""
+"254622976710803456","bec#7264","30-Mar-20 07:32 PM","just gonna copy stuff taught from earlier in the course","",""
+"254622976710803456","bec#7264","30-Mar-20 07:32 PM","and write about CS concepts","",""
+"247805115015102464","MaxMayo#4771","31-Mar-20 03:49 AM","@Franciscosta Your homepage project looks sweet!","",""
+"247805115015102464","MaxMayo#4771","31-Mar-20 03:50 AM","How did you get the code hosted? I'm not really sure how that side really works yet like buying a domain name / how you set up the code to be active on a server","",""
+"264784761493389313","Mievo#6594","31-Mar-20 03:54 AM","You need webspace (on a webserver) and a domain that will then point to the ip-address of the server. The server catches the request and will direct it to the folder, so for instance to ""mywebsite/"". And insinde the mywebsite/ folder you have for instance index.html, main.css and main.js.","",""
+"264784761493389313","Mievo#6594","31-Mar-20 03:54 AM","@MaxMayo","",""
+"247805115015102464","MaxMayo#4771","31-Mar-20 03:55 AM","So the webserver hosts the code, while the domain name is linked to the IP address so people can request your pages ?","",""
+"247805115015102464","MaxMayo#4771","31-Mar-20 03:56 AM","@Mievo","",""
+"264784761493389313","Mievo#6594","31-Mar-20 03:56 AM","Yes, in easy words","",""
+"247805115015102464","MaxMayo#4771","31-Mar-20 03:57 AM","Thanks for explaining that for me! Lol learning something new everyday","",""
+"264784761493389313","Mievo#6594","31-Mar-20 03:57 AM","No problem, you're welcome!","",""
+"264784761493389313","Mievo#6594","31-Mar-20 03:58 AM","You could also google e.g. nameserver, http request, how does a domain work, what is a webserver to find more and detailed information (y)","",""
+"247805115015102464","MaxMayo#4771","31-Mar-20 04:07 AM","I'll definitely do that, all that stuff is super useful. I'm gonna try and set up my own homepage similarly","",""
+"665756333370245121","Franciscosta#2924","31-Mar-20 04:36 AM","Thank you @MaxMayo ! My url is on iwantmyname.com, I then do the DNSs in cloudflare and host the app on heroku.com. The app is just a bunch of static HTML / CSS / JS files. I learned a little hack here: https://blog.teamtreehouse.com/deploy-static-site-heroku for how to do it. (Had no idea the Flask video was literally going to be about making a to-do list ahah).","",""
+"665756333370245121","Franciscosta#2924","31-Mar-20 04:37 AM","Lastly, your to-dos persist because I stored them in the browser (localStorage).","",""
+"665756333370245121","Franciscosta#2924","31-Mar-20 04:37 AM","Spent a week basically watching youtube and reading stackoverflow to figure it all out / learn how to access storage via JS, etc..","",""
+"665756333370245121","Franciscosta#2924","31-Mar-20 04:38 AM","Hope that helps!!","",""
+"247805115015102464","MaxMayo#4771","31-Mar-20 04:39 AM","That's awesome! I have some googling to do ahahah, definitely an awesome implementation of what we've learned so far + above and beyond","",""
+"665756333370245121","Franciscosta#2924","31-Mar-20 04:40 AM","Thank you!! I appreciate you for saying that. I've always felt like making a to-do app was like a ritual of initiation into the world of coding. I reaaally wanted to figure out how to do it.","",""
+"665756333370245121","Franciscosta#2924","31-Mar-20 04:41 AM","Totally worth it!","",""
+"665756333370245121","Franciscosta#2924","31-Mar-20 04:41 AM","To spend time on it.","",""
+"665756333370245121","Franciscosta#2924","31-Mar-20 04:42 AM","I reckon literally google: How to upload static site onto Heroku","",""
+"665756333370245121","Franciscosta#2924","31-Mar-20 04:42 AM","that'll get you somewhere!","",""
+"247805115015102464","MaxMayo#4771","31-Mar-20 04:44 AM","😃  Thanks! I'm excited to try and set up my first website lol, I'm sure it's awesome seeing it on the web","",""
+"665756333370245121","Franciscosta#2924","31-Mar-20 04:45 AM","suuper awesome and worth it!!!","",""
+"665756333370245121","Franciscosta#2924","31-Mar-20 04:45 AM","Do share the url when you do it!","",""
+"247805115015102464","MaxMayo#4771","31-Mar-20 04:45 AM","Lol i definitely will!","","🙌 (2)"
+"409868083574996992","khalil Abraham#4703","31-Mar-20 12:23 PM","","https://cdn.discordapp.com/attachments/661709455582560296/694476946280677446/Capture2.JPG",""
+"409868083574996992","khalil Abraham#4703","31-Mar-20 12:23 PM","","https://cdn.discordapp.com/attachments/661709455582560296/694476945336827924/Capture1.JPG",""
+"409868083574996992","khalil Abraham#4703","31-Mar-20 12:23 PM","So,it seems that I can't submit the same homepage I submitted in the cs50-web course, or can I?","https://cdn.discordapp.com/attachments/661709455582560296/694476942371717220/Capture.JPG",""
+"393854278764068875","curiouskiwi#1671","31-Mar-20 12:47 PM","That's correct, doing so would be unreasonable under the Academic Honesty policy","","👍 (1)"
+"409868083574996992","khalil Abraham#4703","31-Mar-20 04:40 PM","Could my homepage be inspired by other html, css templates?","",""
+"230721716412874753","Vince#6486","31-Mar-20 06:04 PM","Asking ~~the same question~~ a similar question to @khalil Abraham, was wondering if I could base this project on another website (i.e. my local council's website)","",""
+"230721716412874753","Vince#6486","31-Mar-20 06:04 PM","for content etc.","",""
+"393854278764068875","curiouskiwi#1671","31-Mar-20 10:21 PM","yes, that's okay.","",""
+"301308168783527947","dylantheop#8853","01-Apr-20 06:13 PM","I have a similar question. I'm crap at computer graphics but my friend is a really good artist. Am I allowed to ask him to help me with the background art? They would not be helping with the code in anyway, just making the project look more visually appeasing.","",""
+"301308168783527947","dylantheop#8853","01-Apr-20 06:14 PM","Would this be allowed or would it be considered a breech of ToS?","",""
+"418804878656274434","SvejKelej#4184","01-Apr-20 08:19 PM","@brian i would like to study some arabic please🇸🇦","",""
+"299154369704755200","Wey#9176","01-Apr-20 09:49 PM","Hey guys just finished week 8 and am wondering if I'm supposed to download python and the visual ide from lecture 8 ?","",""
+"393854278764068875","curiouskiwi#1671","01-Apr-20 09:52 PM","if you are doing the web track, you can continue using the CS50 IDE","",""
+"299154369704755200","Wey#9176","02-Apr-20 07:17 PM","If I have multiple html pages and include want to include bootstrap in all of them does it suffice to include it in the main one?","",""
+"299154369704755200","Wey#9176","02-Apr-20 07:17 PM","And any advice to ensure that the site will also look nice on mobile devices?","",""
+"299154369704755200","Wey#9176","02-Apr-20 07:29 PM","I'd also like to ask for some advice. I would love to somehow be able to embed the daily news from WIKI onto my website: https://en.wikipedia.org/wiki/Portal:Current_events
+Any advice on how I could do that?","",""
+"299154369704755200","Wey#9176","02-Apr-20 09:32 PM","@Franciscosta Awesome site! Can you link me some resources you used? I would like to include a little space on my website where a user can also make a little todo list/notes","",""
+"695333021301080105","highlawn#6432","02-Apr-20 10:38 PM","Hi all.  I am trying to set up my website for a CS50L assignment and keep getting the following message:  DeprecationWarning: OutgoingMessage.prototype._headers is deprecated.  Does anyone know what this is and how to fix it?  Thanks.","",""
+"254622976710803456","bec#7264","03-Apr-20 11:21 AM","any idea how to get a switch to the top right corner of my webpage","",""
+"254622976710803456","bec#7264","03-Apr-20 11:21 AM","tried everything and it never works","",""
+"254622976710803456","bec#7264","03-Apr-20 11:22 AM","you would have to include it every page iirc","",""
+"650396980442300427","Thanos A#8843","05-Apr-20 12:22 AM","this exercise is really satisfying to me as I am rookie in web dev","",""
+"650396980442300427","Thanos A#8843","05-Apr-20 12:50 AM","This describes how ""case"" works:
+https://www.w3schools.com/js/js_switch.asp
+
+`var x = ""0"";
+switch (x) {
+  case 0:
+    text = ""Off"";
+    break;
+  case 1:
+    text = ""On"";
+    break;
+  default:
+    text = ""No value found"";
+}` 
+
+In my case it doesn't work if I don't put the case numbers in quotes, such as:
+
+`var level = document.querySelector(""#level"").value;
+switch (x) {
+  case ""0"":
+    text = ""Off"";
+    break;
+  case ""1"":
+    text = ""On"";
+    break;
+  default:
+    text = ""No value found"";
+}`
+
+Any ideas why I have to treat my value as string ?","",""
+"587882932711063552","scoobie#7439","05-Apr-20 02:29 PM","```
+<!DOCTYPE html>
+
+<html lang=""en"">
+    <head>
+        <title>
+            Hello!
+        </title>
+        <script>
+            function greet()
+            {
+                let name = document.querySelector('#name').value();
+                alert('Hello, ' + name + '!');
+            }
+        </script>
+    </head>
+    <body>
+        <form onsubmit=""greet(); return false;"">
+            <input type=""text"" id=""name"">
+            <input type=""submit"">
+        </form>
+    </body>
+</html>
+```","",""
+"587882932711063552","scoobie#7439","05-Apr-20 02:29 PM","following the JavaScript tutorial","",""
+"587882932711063552","scoobie#7439","05-Apr-20 02:29 PM","I can't get the alert() to work properly with the input","",""
+"587882932711063552","scoobie#7439","05-Apr-20 02:30 PM","what's wrong","",""
+"587882932711063552","scoobie#7439","05-Apr-20 02:30 PM","?","",""
+"587882932711063552","scoobie#7439","05-Apr-20 04:08 PM","How do we submit homepage?","",""
+"650396980442300427","Thanos A#8843","05-Apr-20 05:14 PM","it is stated that you need to execute
+`submit50 cs50/problems/2020/x/tracks/web/homepage`","",""
+"650396980442300427","Thanos A#8843","05-Apr-20 05:22 PM","@scoobie I guess that by the time the <script> is executed the form has not been parsed. You can try to move the <script> after the <form>","",""
+"587882932711063552","scoobie#7439","05-Apr-20 05:23 PM","@Thanos A  found the problem, it was that () is not needed in value()","","✌️ (1)"
+"650396980442300427","Thanos A#8843","05-Apr-20 05:24 PM","btw I was talking about this:
+""[30:25] It turns out that we can’t add the onclick function in the beginning of our JavaScript code, since our browser interprets the code from top to bottom, and our code can’t find the buttons. There are a few ways to solve this problem, but for now we can simply move our script tag to the end of our body tag.""","",""
+"650396980442300427","Thanos A#8843","05-Apr-20 05:25 PM","maybe it is a different thing as that one has to do with the event ""onclick"".","",""
+"665053121499627571","fjw#9108","08-Apr-20 12:33 AM","if anyone has a pointer to a different approach to a form submission - trying to redirect to finance.yahoo.com/quote/<symbol>?p=<symbol>","",""
+"665053121499627571","fjw#9108","08-Apr-20 12:33 AM","doing the ?p=<symbol> is easy","",""
+"665053121499627571","fjw#9108","08-Apr-20 12:34 AM","but getting the symbol prior to the ? I haven't found an easy way","",""
+"269227960156946454","GhostDragon#7128","08-Apr-20 04:23 AM","is there a link to all the code brian is writing in the videos, akin to the src folders in the beginning of the course?","",""
+"174199182091878400","JD#8235","08-Apr-20 05:23 PM","Hi guys, I'm trying to put ssome text inline with an image, but I'd like the text to be vertically alligned with the image, I've done the following, but I'm not getting the desired result:
+
+<div>
+    <img style=""float: right;"" src=""img.png"" alt=""some img"">
+    <h1 style=""vertical-align: middle;"">some text</h1>
+</div>","",""
+"174199182091878400","JD#8235","08-Apr-20 05:25 PM","Am I missunderstanding how ""vertical-align"" works or should I be using some other tool?","",""
+"174199182091878400","JD#8235","08-Apr-20 05:41 PM","I found a fix for my need, but even thought it's displaying ok, it probably isn't a good design:
+
+<table>
+    <tr>
+        <td>
+            <h1>Some title</h1>
+        </td>
+        <td>
+            <img src=""img.png"" alt=""Some image"">
+        </td>
+    </tr>
+</table>","",""
+"254622976710803456","bec#7264","09-Apr-20 12:53 PM","it's alright if I copied some CSS from the web right?","",""
+"587882932711063552","scoobie#7439","09-Apr-20 01:23 PM","anyone care to share the homepages","",""
+"587882932711063552","scoobie#7439","09-Apr-20 01:23 PM","they have created?","",""
+"359698296287264768","Vagabond#9531","10-Apr-20 03:28 PM","does the ``check50 1/1`` mean I passed the pset? is it being check automatically as well? or how is this pset being graded?","",""
+"677215146694803458","pbrouse#8651","10-Apr-20 06:51 PM","@Vagabond I could be wrong but I don’t think the assignments in the track are being graded. I think it’s basically a submitted/not submitted situation. But if someone knows something different correct me.","",""
+"411234197751988224","BhayanakMaut#9412","10-Apr-20 09:59 PM","Anybody wants so see my attempt at homepage?","",""
+"254622976710803456","bec#7264","11-Apr-20 06:43 PM","sure post it","",""
+"254622976710803456","bec#7264","11-Apr-20 06:44 PM","any idea how to use switches in javascript or building an event handler for them","",""
+"254622976710803456","bec#7264","11-Apr-20 07:17 PM","https://cs50.me @Vagabond","",""
+"254622976710803456","bec#7264","11-Apr-20 07:17 PM","if it's green it means that you have passed the problem set","",""
+"359698296287264768","Vagabond#9531","11-Apr-20 07:18 PM","oki thanks","",""
+"244878227825229824","dan#8231","11-Apr-20 08:40 PM","im starting homepage now","",""
+"244878227825229824","dan#8231","11-Apr-20 08:40 PM","im confused how we include bootstrap code","",""
+"244878227825229824","dan#8231","11-Apr-20 08:40 PM","https://getbootstrap.com/docs/4.0/components/alerts/","",""
+"244878227825229824","dan#8231","11-Apr-20 08:40 PM","say i want to include an alart","",""
+"244878227825229824","dan#8231","11-Apr-20 08:41 PM","if i include this link:","",""
+"244878227825229824","dan#8231","11-Apr-20 08:41 PM","https://getbootstrap.com/docs/4.4/getting-started/introduction/","",""
+"244878227825229824","dan#8231","11-Apr-20 08:41 PM","it works, but then it renders my own css stylesheet useless","",""
+"244878227825229824","dan#8231","11-Apr-20 08:41 PM","he said we need to write our own css stylesheet, and use some bootsrap","",""
+"244878227825229824","dan#8231","11-Apr-20 08:41 PM","how do u do both at once","",""
+"309931673368395778","Kankii#0367","12-Apr-20 12:34 AM","Just include both links @dan","",""
+"309931673368395778","Kankii#0367","12-Apr-20 12:35 AM","","https://cdn.discordapp.com/attachments/661709455582560296/698647536503750666/unknown.png",""
+"309931673368395778","Kankii#0367","12-Apr-20 12:36 AM","one for bootstrap, one for your own stylesheet","",""
+"244878227825229824","dan#8231","12-Apr-20 12:44 AM","@Kankii thank you","",""
+"244878227825229824","dan#8231","12-Apr-20 01:21 AM","what if i wanted to be able to dismiss my alert","",""
+"244878227825229824","dan#8231","12-Apr-20 01:21 AM","how do i do that","",""
+"244878227825229824","dan#8231","12-Apr-20 01:21 AM","it says i need the javascript plugin","",""
+"244878227825229824","dan#8231","12-Apr-20 01:21 AM","but it doesnt say where to get it","",""
+"254622976710803456","bec#7264","12-Apr-20 12:23 PM","any idea why this statement doesn't work?
+> <table style = ""border: 1px solid white;"">","",""
+"309931673368395778","Kankii#0367","12-Apr-20 05:51 PM","@dan It's right under CSS on the introduction page","https://cdn.discordapp.com/attachments/661709455582560296/698908175134621786/unknown.png",""
+"244878227825229824","dan#8231","12-Apr-20 08:40 PM","thank you again","",""
+"244878227825229824","dan#8231","12-Apr-20 08:41 PM","the bootstrap website is so vague about everything","",""
+"244878227825229824","dan#8231","12-Apr-20 08:41 PM","what if i wanted to make my alert disappear automatically after x seconds","",""
+"244878227825229824","dan#8231","12-Apr-20 08:41 PM","how would i go about doing that","",""
+"309931673368395778","Kankii#0367","12-Apr-20 08:56 PM","No idea, I only used the javascript within bootstrap","",""
+"244878227825229824","dan#8231","12-Apr-20 08:56 PM","okay","",""
+"254622976710803456","bec#7264","13-Apr-20 11:50 AM","finally over!","",""
+"587882932711063552","scoobie#7439","13-Apr-20 10:47 PM","","https://cdn.discordapp.com/attachments/661709455582560296/699345019756216471/Screenshot_2020-04-13_at_22.46.36.png",""
+"587882932711063552","scoobie#7439","13-Apr-20 10:47 PM","","https://cdn.discordapp.com/attachments/661709455582560296/699345026324627587/Screenshot_2020-04-13_at_22.46.44.png",""
+"587882932711063552","scoobie#7439","13-Apr-20 10:47 PM","any idea why my alert() does not work?","",""
+"587882932711063552","scoobie#7439","13-Apr-20 10:53 PM","click() is triggered when I press the button","",""
+"587882932711063552","scoobie#7439","13-Apr-20 10:55 PM","for some reason the function is not getting called","",""
+"254622976710803456","bec#7264","14-Apr-20 10:47 AM","can you post the error that comes on the console on the browser","",""
+"479839136388218880","samnull#2340","14-Apr-20 02:53 PM","Is the code for the web track videos available online?","",""
+"587882932711063552","scoobie#7439","14-Apr-20 04:29 PM","@bec there was no error, I simply changed the function name and it started working","",""
+"587882932711063552","scoobie#7439","14-Apr-20 04:30 PM","don't know why click didnt work, maybe it is a reserved word, so JS had some problems with it","",""
+"587882932711063552","scoobie#7439","14-Apr-20 07:00 PM","how to make a website look nice on the mobile phone?","",""
+"587882932711063552","scoobie#7439","14-Apr-20 07:00 PM","if I designed it using paddings","",""
+"587882932711063552","scoobie#7439","14-Apr-20 07:00 PM","haha","",""
+"587882932711063552","scoobie#7439","14-Apr-20 07:00 PM","Do I have to redo everything","",""
+"587882932711063552","scoobie#7439","14-Apr-20 07:00 PM","?","",""
+"295674129179213824","Huskabyte#9058","14-Apr-20 07:58 PM","@scoobie 
+
+Yes and no. If no content needs to change, figure out the minimum width of your current website so that it down't fall apart (basically shrink the width on your computer until it does fall apart and figure out the area of the viewport), then write in a media query in your css to redesign the content that fell apart for widths less than your specified amount. Paddings, margins, widths, heights, sizes etc. can also be defined in terms of percentages of viewport width and height (vw (viewport width), vh (viewport height)), so you can actually have your site shrink down on lower resolution PCs, and therefore, really only need one media query though it is acceptable and well known for people to use one for a PC, one for a laptop, one for a tablet, and one for a phone.
+
+If content does need to change, you will have to use javascript to change the content as well.","","👍 (1)"
+"587882932711063552","scoobie#7439","14-Apr-20 10:27 PM","okay, I'll look into that","",""
+"251199781152620545","Charles#0217","15-Apr-20 01:06 AM","Design mobile first!","","💯 (2)"
+"677215146694803458","pbrouse#8651","15-Apr-20 05:04 PM","I go back and forth on the mobile first design the more I think about it. If you look at statistics, about 50% of internet traffic worldwide is on mobile. So about 50/50. Going forward that number will likely keep increasing though so I lean toward the mobile first mindset... however as of right now it is almost 50/50","",""
+"677215146694803458","pbrouse#8651","15-Apr-20 05:06 PM","That said, it’s not particularly difficult to make your pages responsive so they look good on all screen sizes. I’m not a huge Bootstrap fan but since this assignment calls for it, it makes the responsive design even easier","",""
+"251199781152620545","Charles#0217","15-Apr-20 05:07 PM","the mobile first mindset isn't completely because the world is moving towards majority mobile visitors","",""
+"251199781152620545","Charles#0217","15-Apr-20 05:08 PM","If you design for the smallest viewport, yes you hit the majority of screens first, but your work is far less this way as well, for example you use less media queries.","",""
+"251199781152620545","Charles#0217","15-Apr-20 05:10 PM","I haven't build a web app in awhile but one of the things that helped me alot too was learning em and rem instead of px to size my text. It works really well when adjusting for screen sizes and shortens your css. Also sass is a really great technology to use and it relatively easy to learn.","",""
+"578415944351875106","krinetic#7212","16-Apr-20 01:46 AM","what are ur guys thought on boostrap","",""
+"251199781152620545","Charles#0217","16-Apr-20 02:59 AM","It’s good for getting something up and running quickly. But it’s also very easy to spot a website that utilized bootstrap.","",""
+"251199781152620545","Charles#0217","16-Apr-20 03:00 AM","It makes navs super easy so that’s a big plus","",""
+"307434803165397003","MiDO#7198","16-Apr-20 01:49 PM","Is this pset (and the next one) manually evaluated?","",""
+"677215146694803458","pbrouse#8651","16-Apr-20 03:20 PM","@krinetic Meh. It’s good for quick prototyping but so many sites use it now that it makes them all look the same. Straight up custom CSS is more time consuming obviously but at least it’s all custom and not so cookie-cutter. Flexbox and Grid make it so you can handle your grid/columns through plain old vanilla css.","",""
+"295674129179213824","Huskabyte#9058","16-Apr-20 04:49 PM","Does it really matter if it's noticeable or not? As long as you have smooth UI it shouldn't matter what you used ~~other than if you used wix or some website builder because those are a scam~~","",""
+"251199781152620545","Charles#0217","16-Apr-20 06:33 PM","Well it doesn't really matter, but just like pbrouse said, so many sites look so similar because of them. If you go onto a website that uses bootstrap you can almost always immediatly tell that they are.","",""
+"251199781152620545","Charles#0217","16-Apr-20 06:33 PM","I'm not dissing bootstrap at all, that's just my thoughts. It's a great tool, just like other CSS libraries like semantic UI","",""
+"677215146694803458","pbrouse#8651","16-Apr-20 07:07 PM","Exactly. “Does it matter” is a matter of opinion. Personally, I want what I build to be more unique than just another cookie cutter bootstrap layout. I find Bootstrap to look pretty dull. It is good at what it does, but it’s not really my preference. Personally I prefer plain old css.","",""
+"307434803165397003","MiDO#7198","16-Apr-20 07:43 PM","erm..","",""
+"307434803165397003","MiDO#7198","16-Apr-20 07:43 PM","> Is this pset (and the next one) manually evaluated?
+@MiDO :c","",""
+"236625588868087808","psychodoughb0y#0892","19-Apr-20 02:23 AM","I'm a little confused on the spec... Do we have to have a link to every page on every page, or can every page have a link back to the homepage, which has a link to every other page?","",""
+"236625588868087808","psychodoughb0y#0892","19-Apr-20 02:27 AM","I think ""following one or more hyperlinks."" means that works.","",""
+"199634703060303872","Marmelo#2424","19-Apr-20 02:35 AM","What I got from it is that it needs to be linked together somehow, not that you need to have a link for all pages on all pages @psychodoughb0y","",""
+"199634703060303872","Marmelo#2424","19-Apr-20 03:01 AM","I'm going nuts with javascript, if anyone has any thoughts why this is not flicking and just hiding the clicker image in the last for loop 
+function reaction()
+||{
+    let counter = 0
+    let clicker = document.querySelector(""#clicker"");
+    console.log(""visibility: "" + clicker.style.visibility);
+    function hide()
+    {
+        if (clicker.style.visibility === ""hidden"")
+        {
+            clicker.style.visibility = ""visible"";
+        }
+        else
+        {
+            clicker.style.visibility = ""hidden"";
+        }
+    }
+    for (let index = 0; index < 3; index++) {
+        let wait = Math.floor(Math.random()*2000 + 500)
+        hide();
+        sleep(wait);
+        console.log(""here ""+index+"" wait: ""+ wait + "" time: "" + new Date().getSeconds() + "" - "" + new Date().getUTCMilliseconds())
+    }
+}||","",""
+"199634703060303872","Marmelo#2424","19-Apr-20 03:01 AM","Please ignore the console.log 's that's just for testing purposes","",""
+"199634703060303872","Marmelo#2424","19-Apr-20 03:02 AM","I realize that window.setInterval would probably work better, but I dont see why this wouldn't work","",""
+"199634703060303872","Marmelo#2424","19-Apr-20 03:03 AM","the sleep function is actually pretty cool and it's working just fine : 
+||function sleep(milliseconds) {
+    var start = new Date().getTime();
+    for (var i = 0; i < 1e7; i++) {
+      if ((new Date().getTime() - start) > milliseconds){
+        break;
+      }
+    }
+  }||","",""
+"236625588868087808","psychodoughb0y#0892","19-Apr-20 04:28 AM","Can we use jquery?","",""
+"393854278764068875","curiouskiwi#1671","19-Apr-20 04:59 AM","if you'd like","",""
+"236625588868087808","psychodoughb0y#0892","19-Apr-20 05:00 AM","Thanks","",""
+"199634703060303872","Marmelo#2424","21-Apr-20 02:13 AM","I really really dont get understand why my imagine is not going invisible with this code, its the correct id and no errors are returned on the console 
+ ||   var clicker = document.querySelector(""#clicker"");
+    console.log(""visibility: "" + clicker.style.visibility);
+    clicker.style.visibility = 'hidden';||","",""
+"144632818046074880","Yama#6436","21-Apr-20 06:13 PM","@Marmelo Just out of curiosity, is the code being run within the body? or is it the header? (or a link to the file)","",""
+"199634703060303872","Marmelo#2424","21-Apr-20 06:14 PM","It's in a separate file that I linked","",""
+"199634703060303872","Marmelo#2424","21-Apr-20 06:14 PM","it's running properly , alerts and console logs work fine","",""
+"144632818046074880","Yama#6436","21-Apr-20 06:15 PM","`https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/hidden`","",""
+"199634703060303872","Marmelo#2424","21-Apr-20 06:15 PM","and if i run just 
+||function hide()
+{
+    clicker.style.visibility = ""hidden"";
+}||
+
+it works as intended","",""
+"144632818046074880","Yama#6436","21-Apr-20 06:15 PM","I wonder if this might be what we would be looking for in regards to hiding an html element.","",""
+"199634703060303872","Marmelo#2424","21-Apr-20 06:17 PM","I also tried with getElementById instead , let me try with putting .hidden = true instead of saying = hidden","",""
+"144632818046074880","Yama#6436","21-Apr-20 06:17 PM","Yup. Let me know if it works. If it doesn't then we can think of a different solution/approach.","",""
+"144632818046074880","Yama#6436","21-Apr-20 06:18 PM","The reason from my own understand is when we set for example a property of  `<h1 hidden>Hello World </h1>` what it is actually doing is `hidden=""true""` by default. That is why setting it to hidden wouldn't work unless you are adding a class to the element.","",""
+"199634703060303872","Marmelo#2424","21-Apr-20 06:19 PM","I understand what you mean, when I tried to get the elements visibility it would return as (blank) instead of visible, so I decided to also start assigning it as visible before hiding it","",""
+"199634703060303872","Marmelo#2424","21-Apr-20 06:21 PM","Doesn't work, this is the relevant js code https://pastebin.com/miKiH9AM","",""
+"199634703060303872","Marmelo#2424","21-Apr-20 06:23 PM","This is the relevant html code too, the div should remain visible (its just a box) and the cookie (clicker) should remain hidden , disregard clicked() for now 
+
+||<p><button type=""button"" id= ""startbutton"" class=""btn btn-outline-dark margin1"" onclick=""reaction()"">Start Game</button>
+<div id =""cookie"" class=""marginauto2 background-dark"">
+    <img src=""cookie.svg"" id=""clicker"" alt=""Cookie"" width=""100"" class=""img-center"" onclick=""clicked()"">
+</div>||","",""
+"144632818046074880","Yama#6436","21-Apr-20 06:26 PM","Hm okay did you try using the `display:none` property for the image? I'm kind of curious if the issue might be related to image not working well with the visiblity=hidden property.","",""
+"144632818046074880","Yama#6436","21-Apr-20 06:26 PM","`https://www.quora.com/How-do-you-make-a-hidden-image-in-HTML`","",""
+"199634703060303872","Marmelo#2424","21-Apr-20 06:29 PM","Yea with display: none it hides the image","",""
+"144632818046074880","Yama#6436","21-Apr-20 06:31 PM","@Marmelo Hope it helped if not let me know and let us see if there is another approach. Might be using the `cookie` class if we want to use hide I believe 😮","",""
+"144632818046074880","Yama#6436","21-Apr-20 06:32 PM","Got a question. When we are building a basic site for homepage. Does elements use from Bootstrap count? Since I noticed for example when I get a nav it gives me about 3 html elements. Just want to make sure that counts to the requirement.","",""
+"199634703060303872","Marmelo#2424","21-Apr-20 06:32 PM","the issue here is that i need to hide it with js not css , because it needs to be hidden and show at random intervals","",""
+"144632818046074880","Yama#6436","21-Apr-20 06:37 PM","@Marmelo Could change the display back to a block property. Which would show the image again.","",""
+"199634703060303872","Marmelo#2424","21-Apr-20 06:37 PM","yea I guess in this case that might be the way to good, was hoping it would work similarly to blink.js","",""
+"144632818046074880","Yama#6436","21-Apr-20 06:38 PM","Let me look at blink again","",""
+"144632818046074880","Yama#6436","21-Apr-20 06:39 PM","@Marmelo Sorry but could you reference me to blink.js since I'm unable to find it xD unless it's in the javascript video.","",""
+"199634703060303872","Marmelo#2424","21-Apr-20 06:39 PM","yea it's the code brain used in the javascript video","",""
+"199634703060303872","Marmelo#2424","21-Apr-20 06:39 PM","1 moment let me get it for you","",""
+"199634703060303872","Marmelo#2424","21-Apr-20 06:40 PM","around here https://youtu.be/WzfPjOYmjxg?t=2486","",""
+"199634703060303872","Marmelo#2424","21-Apr-20 06:40 PM","starts at the timestamp","",""
+"144632818046074880","Yama#6436","21-Apr-20 06:40 PM","Just saw it 🙂 Thanks. So if you want to do this one. I believe we would need to use the div property","",""
+"199634703060303872","Marmelo#2424","21-Apr-20 06:42 PM","yea thats not a bad idea","",""
+"199634703060303872","Marmelo#2424","21-Apr-20 06:42 PM","let me give it a try","",""
+"144632818046074880","Yama#6436","21-Apr-20 06:42 PM","Did you try doing for example `let element = document.getElementById(""cookie"")`","",""
+"144632818046074880","Yama#6436","21-Apr-20 06:42 PM","Then follow his example where depending on the current property, you'll update it.","",""
+"144632818046074880","Yama#6436","21-Apr-20 06:42 PM","Let me know 😄","",""
+"199634703060303872","Marmelo#2424","21-Apr-20 06:43 PM","yea doesn't work, super weird","",""
+"144632818046074880","Yama#6436","21-Apr-20 06:43 PM","Hm this is weird lol let me look at the code again.","",""
+"199634703060303872","Marmelo#2424","21-Apr-20 06:43 PM","console is outputting everything as expected but just changing the visibility doesn't work","https://cdn.discordapp.com/attachments/661709455582560296/702182789000200202/unknown.png",""
+"144632818046074880","Yama#6436","21-Apr-20 06:44 PM","The `onclick=""clicked()""` is the one that will make the image become visible or invisible?","",""
+"199634703060303872","Marmelo#2424","21-Apr-20 06:45 PM","no no that's not being used, the onclick=""reaction()"" is the one","",""
+"144632818046074880","Yama#6436","21-Apr-20 06:47 PM","How about we break this down. Might be a problem where things are changing from visible to hidden to visible and we aren't seeing it. Let us do this. From the beginning the property would be visible. So instead change the function to just do 1 thing. Grab the element id then update it to hidden.","",""
+"144632818046074880","Yama#6436","21-Apr-20 06:47 PM","`let element = document.getElementById(""cookie"")` then `element.style.visibility = ""hidden"";`","",""
+"144632818046074880","Yama#6436","21-Apr-20 06:48 PM","Let us try to see if just doing this, will it at least hide it.","",""
+"199634703060303872","Marmelo#2424","21-Apr-20 06:49 PM","this is weird","",""
+"199634703060303872","Marmelo#2424","21-Apr-20 06:49 PM","I tried to comment out everything that wasnt 100% needed and it is working as I expected","",""
+"199634703060303872","Marmelo#2424","21-Apr-20 06:49 PM","||function reaction()
+{
+    let waittime = Math.floor(Math.random()*2000 + 1000)
+    var clicker = document.getElementById(""clicker"")
+    clicker.style.visibility = ""hidden"";
+    console.log(""visibility: "" + clicker.style.visibility);
+    //sleep(waittime)
+    //clicker.style.visibility = ""visible"";
+   // console.log(""visible now wait: ""+ waittime + "" time: "" + new Date().getSeconds() + "" - "" + new Date().getUTCMilliseconds())
+}||","",""
+"144632818046074880","Yama#6436","21-Apr-20 06:50 PM","Okay so it's working because this is what is happening.","",""
+"199634703060303872","Marmelo#2424","21-Apr-20 06:50 PM","its my sleep function messing something up 🤦‍♂️","",""
+"144632818046074880","Yama#6436","21-Apr-20 06:50 PM","You created a number and set it to `waittime` which you want the function to wait before doing visible again","",""
+"199634703060303872","Marmelo#2424","21-Apr-20 06:50 PM","yup","",""
+"144632818046074880","Yama#6436","21-Apr-20 06:50 PM","Yea so that isn't doing anything I think. You are basically doing","",""
+"144632818046074880","Yama#6436","21-Apr-20 06:50 PM","show, hide, show then function ends","",""
+"199634703060303872","Marmelo#2424","21-Apr-20 06:51 PM","i wanted it to hide, wait and show","",""
+"199634703060303872","Marmelo#2424","21-Apr-20 06:51 PM","just to test","",""
+"144632818046074880","Yama#6436","21-Apr-20 06:51 PM","resulting in nothing in a way. Let me see what we can do (I haven't done sleep/wait in a while)","",""
+"144632818046074880","Yama#6436","21-Apr-20 06:51 PM","`https://www.w3schools.com/jsref/met_win_settimeout.asp`","",""
+"144632818046074880","Yama#6436","21-Apr-20 06:51 PM","we might want to use a settimeout. What this does is wait until 3 seconds have passed then run this function.","",""
+"199634703060303872","Marmelo#2424","21-Apr-20 06:52 PM","lol god dammit","",""
+"144632818046074880","Yama#6436","21-Apr-20 06:52 PM","within another function you'll set it to visible 😄","",""
+"199634703060303872","Marmelo#2424","21-Apr-20 06:52 PM","im such an idiot","",""
+"199634703060303872","Marmelo#2424","21-Apr-20 06:52 PM","thank you","",""
+"144632818046074880","Yama#6436","21-Apr-20 06:52 PM","No you aren't. You are learning.","",""
+"144632818046074880","Yama#6436","21-Apr-20 06:52 PM","There is soooo much with JS xD you'll get a. hang of it as you continue to search 🙂","",""
+"144632818046074880","Yama#6436","21-Apr-20 06:54 PM","Btw when I said 3 seconds it can be any time frame you pick. Just know I believe 1000 = 1 second.","",""
+"690180874414981198","denizcan.bulut#5319","26-Apr-20 02:39 PM","Hello, I am sure that question has already asked but I couldn't find it. I've done my homepage and want to submit but I didn't understand where to execute the "" submit50 cs50/problems/2020/x/tracks/web/homepage "" code. Can somebody help me to submit my homepage please ?","",""
+"663347654981320705","LuciferAkirami#5852","26-Apr-20 06:15 PM","I'm thinking of learning web development...so should i start with flask or django","",""
+"199634703060303872","Marmelo#2424","27-Apr-20 02:20 PM","wondering what kind of stuff you guys did for homepage","",""
+"199634703060303872","Marmelo#2424","27-Apr-20 02:20 PM","I'm wondering if my website is complex enough for the assignment","",""
+"311363799640702976","robin#9650","27-Apr-20 06:20 PM","I did add; add cash, change password, and better history table","",""
+"199634703060303872","Marmelo#2424","27-Apr-20 07:59 PM","thanks","",""
+"199634703060303872","Marmelo#2424","27-Apr-20 07:59 PM","hopefully mine is good enough, I'm not sure how the submit50 checker works for this exercise","",""
+"199634703060303872","Marmelo#2424","27-Apr-20 08:01 PM","I did a credit card checker that uses luhn's algo, a reaction time game (you press start and a cookie appears within a random interval and you click and it tells you how long you took in ms) and a random page where the button keeps changing location once you try to click it (and once you finally are able to click it or you cheat an embedded youtube video will show)","",""
+"311363799640702976","robin#9650","27-Apr-20 10:27 PM","LOL i just realized that this is homepage not finance, and my answer was based on finance xd","",""
+"311363799640702976","robin#9650","27-Apr-20 10:28 PM","I made caesar, vigenere, and morse code encoder for homepage","",""
+"199634703060303872","Marmelo#2424","27-Apr-20 10:49 PM","was also wondering what you were going on about haha","",""
+"520279332250451968","Chef#6168","28-Apr-20 04:37 PM","whats wrong with this img? (its on my web,)","https://cdn.discordapp.com/attachments/661709455582560296/704687690922197012/2020-04-28_16.02.19.png",""
+"309931673368395778","Kankii#0367","28-Apr-20 07:34 PM","@Marmelo I believe submit50 just checks the number of elements, and types of elements, as specified in the specification. I don't think it *has* to be that complex. You can make it as complex as you like. I made a mock site for a donut shop.","",""
+"527542645002862609","mahmirr#9495","30-Apr-20 12:53 AM","@curiouskiwi should we be watching the 2020 lectures or the 2019 lectures? I see both on the CS50 YouTube page.","",""
+"393854278764068875","curiouskiwi#1671","30-Apr-20 12:53 AM","all the videos are here: https://cs50.harvard.edu/x/2020/tracks/web/","",""
+"362729008531505154","Mike Portnoyz#7103","30-Apr-20 09:58 PM","Check50 just tells me 1/1 submitted, how do I know I did this one right? Bit surprised there. I think it's all good but I liked all the checks in the previous exercises.","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","30-Apr-20 10:00 PM","They really cant automatically check the tracks because theyre too complex/freeform","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","30-Apr-20 10:00 PM","More of an honor system, as far as i know","",""
+"527542645002862609","mahmirr#9495","01-May-20 11:26 PM","If anyone is having trouble of finding things to write about, I found that you can easily search on Wikipedia for classification systems so that you can write about them in your pages. For example, I chose to write about the three different biology domains but you can choose, for example, the oceans of the world, the three great pyramids of Giza, etc.","","🤩 (1)"
+"199634703060303872","Marmelo#2424","02-May-20 01:31 AM","Great idea","",""
+"527542645002862609","mahmirr#9495","02-May-20 12:33 PM","It is somewhat satisfying to finally finish the website. Wow, that was a lot of learning in such a short period of time... Think I am going to need some coffee after that.","",""
+"171214514778406913","Elladan#3216","02-May-20 01:42 PM","Hello, does anyone know how to save user input into a .txt file? I've tried different ways using javascript but nothing seems to work","",""
+"527542645002862609","mahmirr#9495","02-May-20 09:46 PM","> Hello, does anyone know how to save user input into a .txt file? I've tried different ways using javascript but nothing seems to work
+@Elladan If you are talking about JavaScript, I am not sure. However, I do not think stuff like that is required for this problem.","",""
+"171214514778406913","Elladan#3216","02-May-20 09:50 PM","Ah ok, I wasnt to sure what i was meant to build as a website so i've made something with a login, create account and then 2 webpages","",""
+"171214514778406913","Elladan#3216","02-May-20 09:50 PM","I'm using localStorage atm but it's not great as i cant have multiple login details obviously","",""
+"527542645002862609","mahmirr#9495","02-May-20 09:52 PM","No I am pretty sure that the website is supposed to be pure HTML, CSS, and JS. It is more so a practice of coding HTML, learning the basics of Bootstrap, practicing custom stylings with CSS, and maybe, just maybe, experimenting with a little JS.","",""
+"171214514778406913","Elladan#3216","02-May-20 09:53 PM","yea i am only using html css and js","",""
+"527542645002862609","mahmirr#9495","02-May-20 09:53 PM","@Elladan Also, is your profile photo that Roman King? I think his name was Marcus Aurelius.","",""
+"171214514778406913","Elladan#3216","02-May-20 09:54 PM","yea its marcus aurelius ^^","",""
+"171214514778406913","Elladan#3216","02-May-20 09:54 PM","thanks","",""
+"488476914756091909","dougiedoom#1356","05-May-20 12:31 PM","Hey there. I've got a question on some of the guidance we've received on Homepage.","",""
+"488476914756091909","dougiedoom#1356","05-May-20 12:32 PM","We're supposed to use some Bootstrap components, but we're also supposed to have our own stylesheet.","",""
+"488476914756091909","dougiedoom#1356","05-May-20 12:33 PM","When we use Bootstrap, we're using Bootstrap's stylesheet. So is there a way to use both Bootstrap's stylesheet and our own for the same page, or do we need to split this up?","",""
+"488476914756091909","dougiedoom#1356","05-May-20 12:34 PM","i.e., maybe have one page w/ bootstrap, and at least one page with our own stylesheet. is there a better solution, where I can provide the styling for some elements and bootstrap for others?","",""
+"488476914756091909","dougiedoom#1356","05-May-20 12:44 PM","👆 That's Question 1","",""
+"488476914756091909","dougiedoom#1356","05-May-20 12:46 PM","Here's Question 2: I am finding some nice implementations of things on other websites. Like I like how a particular toggle switch between light and dark mode looks and functions on another website. Can I pull in the HTML & styling for that (with modification) if I build the JS myself, or is that a no-no? If I look at how W3 Schools implements something, can I reuse those?","",""
+"356245550737260554","strawnks#8488","06-May-20 12:11 AM","you can use both, just link your own stylesheet and the bootstrap as well.","",""
+"356245550737260554","strawnks#8488","06-May-20 12:11 AM","im not exactly sure about question 2","",""
+"703480567970398218","AhmedShoman94#6153","06-May-20 05:26 AM","I have a problem I'm now on JavaScript video and my implementation of what Brian says simply doesn't work !! i use visual studio code and google chrome.
+I'd really appreciate an explanation. here's a screenshot.","https://cdn.discordapp.com/attachments/661709455582560296/707418072855871579/unknown.png",""
+"703480567970398218","AhmedShoman94#6153","06-May-20 05:29 AM","Oh and how do i debug my code here if possible ?!","",""
+"365699593339404288","jkart#9902","08-May-20 07:58 PM","Does anyone have tips on how to modify css that comes from bootstrap via JavaScript?","",""
+"365699593339404288","jkart#9902","08-May-20 07:59 PM","I'm trying to use a navigation bar at the top of my index page that goes to my other pages and to highlight the correct page in the navbar, I need to change the class of certain elements.","",""
+"365699593339404288","jkart#9902","08-May-20 07:59 PM","Is there a simple way to listen for a change to a new page and change classes in a common HTML header?","",""
+"365699593339404288","jkart#9902","09-May-20 12:33 AM","@staff","",""
+"669952266651959317","windows-user0#9717","09-May-20 11:49 AM","@jkart You can manipulate the DOM with javascript https://www.w3schools.com/jsref/prop_html_classname.asp. You can also use jQuery which makes it a little bit easier","","👍 (1)"
+"365699593339404288","jkart#9902","09-May-20 08:38 PM","Do you know how to copy a header that is in common across multiple html pages?","",""
+"365699593339404288","jkart#9902","09-May-20 08:39 PM","I found a script using a jQuery site, but I can't modify the HTML header in any way after it's loaded.","",""
+"310762125062701056","justmiiplaynwii#5323","10-May-20 02:33 PM","Hi! Why is my website reloading when i submit the form?
+
+This is the code of my form:
+||      <form onsubmit=""startTimer(); return false;"">
+          <input type=""text"" id=""seconds"">
+          <input type=""submit"">
+      </form>||","",""
+"250157065887023105","Danny Deermouse#7534","11-May-20 02:10 AM","coming from the cs50 lectures i feel like the web lectures may be slightly over explained","",""
+"250157065887023105","Danny Deermouse#7534","11-May-20 02:10 AM","oh well its still a good class","",""
+"269227960156946454","GhostDragon#7128","11-May-20 02:23 AM","the class or the track?","",""
+"250157065887023105","Danny Deermouse#7534","11-May-20 03:00 PM","the class is really good, track is okay. its not bad, just over explained i feel so i have to skip through parts where he is repeating stuff that is obvious","",""
+"250157065887023105","Danny Deermouse#7534","11-May-20 03:01 PM","versus the main lectures i have to pay attention for every single part because theres so much info that is explained in just the right amount","",""
+"703274281433432157","Andrea bernal#1205","11-May-20 06:58 PM","Hello, Im doing the Cs50 for Business, I writing a home page but for some reason Css does not run, I tried linking it<link href=""style.css"" rel=""stylesheet"" type=""text/css"" />    revised code by code, after 12 hours of doing this im about to explote, any ideas ???","",""
+"704751519626690721","saumya#4338","11-May-20 09:04 PM","I'm struggling a lot with this problem set. Am I the only one?👀","",""
+"582256500215644163","AnneFrank#1257","11-May-20 09:17 PM","How is this pset checked? I submitted it and got 1/1 so Im confused is it marked manually???","",""
+"269227960156946454","GhostDragon#7128","11-May-20 09:21 PM","no in the tracks you are trusted to only submit once you feel it is a final product and also there are no tests they could run on your homepage","",""
