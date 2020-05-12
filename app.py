@@ -17,6 +17,7 @@ app = Flask(__name__)
 # Ensure templates are auto-reloaded
 app.config["TEMPLATES_AUTO_RELOAD"] = True
 
+
 # Ensure responses aren't cached
 @app.after_request
 def after_request(response):
@@ -24,6 +25,7 @@ def after_request(response):
     response.headers["Expires"] = 0
     response.headers["Pragma"] = "no-cache"
     return response
+
 
 # Custom filter
 app.jinja_env.filters["usd"] = usd
@@ -38,9 +40,9 @@ Session(app)
 db = SQL("sqlite:///finance.db")
 
 # Make sure API key is set
+os.environ["API_KEY"] = "pk_0923fa0d402b45abbde2964318ebdd08"
 if not os.environ.get("API_KEY"):
     raise RuntimeError("API_KEY not set")
-
 
 
 @app.route("/")
@@ -50,7 +52,9 @@ def index():
     user_id = session["user_id"]
 
     # get table with amount of each stock in portfolio
-    portfolio = db.execute("SELECT symbol, SUM(amount) amount FROM history WHERE user_id=:user_id GROUP BY symbol HAVING SUM(amount) > 0", user_id=user_id)
+    portfolio = db.execute(
+        "SELECT symbol, SUM(amount) amount FROM history WHERE user_id=:user_id GROUP BY symbol HAVING SUM(amount) > 0",
+        user_id=user_id)
 
     current_cash = db.execute("SELECT cash FROM users WHERE id = :user_id", user_id=user_id)[0]["cash"]
     portfolio_value = current_cash
@@ -58,14 +62,16 @@ def index():
     # adding new key to dictionary with corresponding value
     for row in range(len(portfolio)):
         symbol = portfolio[row]["symbol"]
-        price = lookup(symbol)["price"]
+        lookup_arr = lookup(symbol)  # to optimize query to API
+        price = lookup_arr["price"]
+        portfolio[row]["name"] = lookup_arr["name"]
         portfolio[row]["price"] = usd(price)
         portfolio[row]["sum"] = round(price * portfolio[row]["amount"], 2)
         portfolio_value += portfolio[row]["sum"]
         portfolio[row]["sum"] = usd(portfolio[row]["sum"])
-        portfolio[row]["name"] = lookup(symbol)["name"]
 
-    return render_template("index.html", portfolio=portfolio, cash=usd(round(current_cash, 2)), portfolio_value=usd(round(portfolio_value, 2)))
+    return render_template("index.html", portfolio=portfolio, cash=usd(round(current_cash, 2)),
+                           portfolio_value=usd(round(portfolio_value, 2)))
 
 
 @app.route("/buy", methods=["GET", "POST"])
@@ -95,7 +101,9 @@ def buy():
             return apology("not enough cash to make the purchase", 403)
 
         # update history table
-        db.execute("INSERT INTO history (user_id, symbol, amount, price, datetime) VALUES (:user_id, :symbol, :amount, :price, :datetime)", user_id=user_id, symbol=symbol, amount=amount, price=price, datetime=now)
+        db.execute(
+            "INSERT INTO history (user_id, symbol, amount, price, datetime) VALUES (:user_id, :symbol, :amount, :price, :datetime)",
+            user_id=user_id, symbol=symbol, amount=amount, price=price, datetime=now)
 
         # update user table with new cash amount
         db.execute("UPDATE users SET cash = :cash_after WHERE id = :user_id", cash_after=cash_after, user_id=user_id)
@@ -173,7 +181,7 @@ def logout():
 def quote():
     """Get stock quote."""
 
-# User reached route via POST (as by submitting a form via POST)
+    # User reached route via POST (as by submitting a form via POST)
     if request.method == "POST":
         symbol = request.form.get("symbol")
 
@@ -213,7 +221,6 @@ def register():
         elif not request.form.get("password_again"):
             return apology("must provide password (again)", 403)
 
-
         if request.form.get("password") != request.form.get("password_again"):
             return apology("passwords must match!", 403)
 
@@ -228,7 +235,8 @@ def register():
         # add user to the database
         username = request.form.get("username")
         password_hashed = generate_password_hash(request.form.get("password_again"))
-        db.execute("INSERT INTO users (username, hash) VALUES (:username, :password_hashed)", username=username, password_hashed=password_hashed)
+        db.execute("INSERT INTO users (username, hash) VALUES (:username, :password_hashed)", username=username,
+                   password_hashed=password_hashed)
 
         # get user id from the database
         rows = db.execute("SELECT id FROM users WHERE username = :username",
@@ -255,7 +263,9 @@ def sell():
     user_id = session["user_id"]
 
     # get table with amount of each stock in portfolio
-    portfolio = db.execute("SELECT DISTINCT symbol FROM history WHERE user_id=:user_id GROUP BY symbol HAVING SUM(amount) > 0", user_id=user_id)
+    portfolio = db.execute(
+        "SELECT DISTINCT symbol FROM history WHERE user_id=:user_id GROUP BY symbol HAVING SUM(amount) > 0",
+        user_id=user_id)
 
     if request.method == "POST":
         symbol = request.form.get("symbol")
@@ -266,7 +276,9 @@ def sell():
             return apology("you can't sell negative amounth of shares")
 
         # get selected symbol amount in portfolio
-        symbol_amount = db.execute("SELECT SUM(amount) amount FROM history WHERE user_id=:user_id AND symbol=:symbol", user_id=user_id, symbol=symbol)[0]["amount"]
+        symbol_amount = \
+        db.execute("SELECT SUM(amount) amount FROM history WHERE user_id=:user_id AND symbol=:symbol", user_id=user_id,
+                   symbol=symbol)[0]["amount"]
         if amount > symbol_amount:
             return apology("you're trying to sell more stocks than you own", 403)
 
@@ -276,13 +288,14 @@ def sell():
         current_cash = db.execute("SELECT cash FROM users WHERE id = :user_id", user_id=user_id)[0]["cash"]
         cash_result = current_cash + sell_sum
 
-
         # update cash amount
         db.execute("UPDATE users SET cash = :cash_result WHERE id=:user_id", cash_result=cash_result, user_id=user_id)
 
         # update history table
         now = datetime.datetime.now()
-        db.execute("INSERT INTO history (user_id, symbol, amount, price, datetime) VALUES (:user_id, :symbol, :amount, :price, :datetime)", user_id=user_id, symbol=symbol, amount= -amount, price=price, datetime=now)
+        db.execute(
+            "INSERT INTO history (user_id, symbol, amount, price, datetime) VALUES (:user_id, :symbol, :amount, :price, :datetime)",
+            user_id=user_id, symbol=symbol, amount=-amount, price=price, datetime=now)
 
         # Redirect user to home page
         flash("Stock sold")

@@ -19,12 +19,9 @@ all_files = glob.glob(os.path.join(path, "cs50 - CS50x - Intro to CS*.csv"))
 # list to store all CSVs contents
 all_df = []
 for f in all_files:
-    # read contents of particular CSV (including headers)
-    df = pd.read_csv(f, sep=',')
-    # add new column named "file" and put in the name of the file
-    df['file'] = f.split('/')[-1]
-    # add contents to the list
-    all_df.append(df)
+    df = pd.read_csv(f, sep=',')  # read contents of particular CSV (including headers)
+    df['file'] = f.split('/')[-1]  # add new column named "file" and put in the name of the file
+    all_df.append(df)  # add contents to the list
 
 # merge all (remove headers from subsequent CSVs)
 merged_df = pd.concat(all_df, ignore_index=True, sort=True)
