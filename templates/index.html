@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Dashboard
+{% endblock %}
+
+{% block main %}
+    <table class="table table-striped" text-align="left">
+        <thead>
+            <th>Symbol</th>
+            <th>Name</th>
+            <th>Shares</th>
+            <th>Price</th>
+            <th>TOTAL</th>
+        </thead>
+        <tbody>
+            {% for row in portfolio %}
+                <tr>
+                    <td> {{ row["symbol"] }} </td>
+                    <td> {{ row["name"] }} </td>
+                    <td> {{ row["amount"] }} </td>
+                    <td> {{ row["price"] }} </td>
+                    <td> {{ row["sum"] }} </td>
+                </tr>
+            {% endfor %}
+            <tr>
+                    <td colspan="4">CASH</td>
+                    <td>{{ cash }}</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4"></td>
+                <td> {{ portfolio_value }}</td>
+            </tr>
+        </tfoot>
+    </table>
+{% endblock %}
