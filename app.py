@@ -9,8 +9,6 @@ from werkzeug.security import check_password_hash, generate_password_hash
 
 from helpers import apology, login_required
 
-import datetime
-
 # Configure application
 app = Flask(__name__)
 
@@ -34,30 +32,71 @@ app.config["SESSION_TYPE"] = "filesystem"
 Session(app)
 
 # Configure CS50 Library to use SQLite database
-db = SQL("sqlite:///finance.db")
+db = SQL("sqlite:///final.db")
 
-# Make sure API key is set
-os.environ["API_KEY"] = "pk_0923fa0d402b45abbde2964318ebdd08"
-if not os.environ.get("API_KEY"):
-    raise RuntimeError("API_KEY not set")
 
+# session["user_id"]
 
 @app.route("/")
 def index():
-    return render_template("index.html")
+    # check for GOD MODE
+    if session.get("user_id") is not None:
+        if session["god_mode"] == "god":
+            flash("GOD MODE!")
+
+    # get current counters for main page
+    users_counter = db.execute("SELECT MAX(id) FROM users")[0]["MAX(id)"]
+    answers_counter = db.execute("SELECT MAX(answer_id) FROM answers")[0]["MAX(answer_id)"]
+    users_participated = db.execute('SELECT count(id) FROM users WHERE participated = "yes"')[0]["count(id)"]
+    return render_template("index.html", users_counter=users_counter, answers_counter=answers_counter,
+                           users_participated=users_participated)
 
 
 @app.route("/participate", methods=["GET", "POST"])
 @login_required
 def participate():
-    if request.method == "POST":
+    # getting local dicts to optimize for SQL queries
+    problems = db.execute("SELECT * FROM problems")
+    weeks = db.execute("SELECT * FROM problem_week")
+    questions = db.execute("SELECT * FROM questions")
 
-        flash("Stock(s) bought")
-        return redirect("/")
+    if request.method == "POST":
+        boiling_point = 511  # https://www.youtube.com/watch?v=PcQtdjlxp0M FRIENDS: Boiling Point Of Brain (S05 E11)
+
+        # getting answers to every question
+        for row in questions:
+            question_id = str(row["id"])
+            answer = request.form.get(question_id)
+
+            # checking for GOD MODE
+            if row["answer_type"] == "positive_int":
+                if not answer:
+                    answer = 0
+                elif int(answer) == boiling_point:
+                    # turn on GOD MODE
+                    flash("YOU ARE THE GOD OF CONSPIRACY AND HACKING, CONGRATS!")
+                    db.execute("UPDATE users SET god_mode=:god_value WHERE id=:user_id", god_value="god",
+                               user_id=session["user_id"])
+                    session["god_mode"] = "god"
+                elif int(answer) != boiling_point:
+                    # disable God Mode
+                    db.execute("UPDATE users SET god_mode=:god_value WHERE id=:user_id", god_value="",
+                               user_id=session["user_id"])
+                    session["god_mode"] = ""
+
+            db.execute("INSERT INTO answers(user_id, question_id, answer) VALUES(:user_id, :question_id, :answer)",
+                       user_id=session["user_id"], question_id=question_id, answer=answer)
+
+        # update status of the user (participated)
+        db.execute("UPDATE users SET participated=:participated WHERE id=:user_id", participated="yes", user_id=session["user_id"])
+        flash("Submitted! Now check stats!")
+        return redirect("/statistics")
 
     # User reached route via GET (as by clicking a link or via redirect)
     else:
-        return render_template("participate.html", session=session["user_id"])
+        user_id = session["user_id"]
+        return render_template("participate.html", user_id=user_id, problems=problems, weeks=weeks,
+                               questions=questions)
 
 
 @app.route("/statistics")
@@ -67,6 +106,12 @@ def statistics():
 
     # user_id = session["user_id"]
     return render_template("statistics.html")
+
+
+@app.route("/about")
+@login_required
+def about():
+    return render_template("about.html")
 
 
 @app.route("/login", methods=["GET", "POST"])
@@ -95,6 +140,10 @@ def login():
 
         # Remember which user has logged in
         session["user_id"] = rows[0]["id"]
+        if rows[0]["god_mode"] == "god":
+            session["god_mode"] = "god"
+        else:
+            session["god_mode"] = ""
 
         # Redirect user to home page
 
@@ -113,12 +162,6 @@ def logout():
 
     # Redirect user to home page
     return redirect("/")
-
-
-@app.route("/about")
-@login_required
-def about():
-    return render_template("about.html")
 
 
 @app.route("/register", methods=["GET", "POST"])
@@ -211,6 +254,3 @@ def errorhandler(e):
 # Listen for errors
 for code in default_exceptions:
     app.errorhandler(code)(errorhandler)
-
-
-

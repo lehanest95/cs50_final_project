@@ -5,14 +5,75 @@
 {% endblock %}
 
 {% block main %}
+    <div style="text-align: left">
+        Session (user_id) is: {{ user_id }}
+        <br><br>
+        <div id="accordion">
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Show list of all Problem Sets
+                </button>
+              </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+              <div class="card-body">
+                  {% for problem in problems %}
+                <br>(Week #{{ problem["problem_week"] }}), <a href="{{ problem["problem_link"] }}">
+                            {{ problem["problem_name"] }}</a> , {{ problem["problem_description"] }}
+                  {% endfor %}
+              </div>
+            </div>
+          </div>
+        </div>
 
-    <form action="/participate" method="post">
-        <div class="form-group">
-            <input autocomplete="off" autofocus class="form-control" name="username" placeholder="Username" type="text">
-        </div>
-        <div class="form-group">
-            <input class="form-control" name="password" placeholder="Password" type="password">
-        </div>
-        <button class="btn btn-primary" type="submit">Log In</button>
-    </form>
+        <form action="/participate" method="post">
+            {% for row in questions %}
+                <br><h4>{{ row["question_name"] }}</h4>{{ row["question_text"] }}
+                <br>
+                    {% if row["answer_type"] == "select_week" %}
+                        <select name="{{ row["id"] }}" class="form-control form-control">
+                            <option selected>Open this select menu</option>
+                            {% for week in weeks %}
+                                <option value="{{ week['week_number'] }}">(Week {{ week["week_number"] }})
+                                    {{ week['week_topic'] }}</option>
+                            {% endfor %}
+                        </select>
+                    {% elif row["answer_type"] == "select_problem_set" %}
+                        <select name="{{ row["id"] }}" class="form-control form-control">
+                            <option selected>Open this select menu</option>
+                            {% for problem in problems %}
+                                <option value="{{ problem['id'] }}">(Week {{ problem["problem_week"] }})
+                                    {{ problem['problem_name'] }} - {{ problem['problem_description'] }}</option>
+                            {% endfor %}
+                        </select>
+                    {% elif row["answer_type"] == "select_bool" %}
+                        <select name="{{ row["id"] }}" class="form-control form-control">
+                            <option selected>Open this select menu</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    {% elif row["answer_type"] == "positive_int" %}
+{#                        hint: https://www.youtube.com/watch?v=PcQtdjlxp0M#}
+                        <input autocomplete="off" class="form-control form-control" min="0" name="{{ row["id"] }}" value="Int or check for hints" type="number">
+                    {% endif %}
+                <br>
+            {% endfor %}
+            <br>
+            <button class="btn btn-primary" type="submit" id="submit_button">Submit answers</button>
+        </form>
+
+{#        <form action="/participate" method="post">#}
+{#            <table>#}
+{#                <div class="form-group">#}
+{#                <input autocomplete="off" autofocus class="form-control" name="username" placeholder="Username" type="text">#}
+{#                </div>#}
+{#                <div class="form-group">#}
+{#                    <input class="form-control" name="password" placeholder="Password" type="text">#}
+{#                </div>#}
+{#                <button class="btn btn-primary" type="submit">Submit answers</button>#}
+{#            </table>#}
+{#        </form>#}
+    </div>
 {% endblock %}
