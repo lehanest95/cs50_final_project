@@ -1,0 +1,1257 @@
+AuthorID,Author,Date,Content,Attachments,Reactions
+"372637391288139786","Sourav#0281","01-Jan-20 11:26 AM","Hello!! 👋","",""
+"489113470281973760","gonefishing★#0147","05-Jan-20 07:44 AM","I want to note that submit50 is looking for ""Main.lua"", not ""main.lua"" and this seems like a good place to do that","",""
+"489113470281973760","gonefishing★#0147","05-Jan-20 07:45 AM","i had to rename my main.lua, but thats fine","",""
+"489113470281973760","gonefishing★#0147","05-Jan-20 07:46 AM","You staff people should probably fix that 🙂","",""
+"393854278764068875","curiouskiwi#1671","21-Jan-20 08:14 AM","@gonefishing★ thanks for that. we've fixed it.","","👍 (2)"
+"132563772987408385","brianboyko#4460","21-Jan-20 10:47 PM","Just an FYI Love.11.0 and greater: love.graphics.clear(r, g, b, a) takes 0.0 - 1.0 floats instead of 0-255 ints for R, G, B, and A values.","",""
+"132563772987408385","brianboyko#4460","21-Jan-20 10:48 PM","I think this might not be the only snag, so I'll keep you updated as I go through it.","",""
+"132563772987408385","brianboyko#4460","21-Jan-20 10:48 PM","https://love2d.org/wiki/love.graphics.clear","",""
+"393854278764068875","curiouskiwi#1671","21-Jan-20 11:01 PM","Not sure what you mean by ""snag""?  Colton explains that in the lecture. (pong2)","https://cdn.discordapp.com/attachments/661709026811183130/669285367282794516/pong2.png",""
+"393854278764068875","curiouskiwi#1671","21-Jan-20 11:54 PM","@brianboyko ^^","",""
+"132563772987408385","brianboyko#4460","21-Jan-20 11:55 PM","Ah, yes, well if you pass in values from 1-255 now in Love 11.0 or later, it will read that as >= 1 and render a pure white screen, the 1-255 has been depreciated and no longer works.","",""
+"132563772987408385","brianboyko#4460","21-Jan-20 11:55 PM","The line ```
+    love.graphics.clear(40/255, 45/255, 52/255, 1)
+```
+works perfectly","",""
+"132563772987408385","brianboyko#4460","21-Jan-20 11:55 PM","actually, that should probably be 256","",""
+"132563772987408385","brianboyko#4460","21-Jan-20 11:56 PM","nah, 0 is a valid value...","",""
+"132563772987408385","brianboyko#4460","21-Jan-20 11:56 PM","40/255 etc.","",""
+"393854278764068875","curiouskiwi#1671","21-Jan-20 11:56 PM","yes, it has been deprecated, but no one in CS50x should be using an old version","",""
+"132563772987408385","brianboyko#4460","21-Jan-20 11:56 PM","Oh, no, not the students.  The course lecture itself uses the old version","",""
+"393854278764068875","curiouskiwi#1671","21-Jan-20 11:58 PM","? if that was the case, then surely this wouldn't work.","https://cdn.discordapp.com/attachments/661709026811183130/669299790705590275/pong2lecture.png",""
+"132563772987408385","brianboyko#4460","21-Jan-20 11:58 PM","O","",""
+"132563772987408385","brianboyko#4460","21-Jan-20 11:59 PM","I'm viewing on Edx, possible the youtube version is a later version?","",""
+"393854278764068875","curiouskiwi#1671","22-Jan-20 12:03 AM","?","",""
+"393854278764068875","curiouskiwi#1671","22-Jan-20 12:03 AM","https://courses.edx.org/courses/course-v1:HarvardX+CS50+X/courseware/b94adcd6bd6b4e69b2af7eef0d828674/0e928435e5a844eab3fd2c11699bac8b/3?activate_block_id=block-v1%3AHarvardX%2BCS50%2BX%2Btype%40vertical%2Bblock%409a76c6a216eb4abf9ae3947bd23a0e1f","",""
+"393854278764068875","curiouskiwi#1671","22-Jan-20 12:03 AM","this is the Games track for CS50x...   are you thinking this is CS50G?","",""
+"132563772987408385","brianboyko#4460","22-Jan-20 12:04 AM","I'm not taking CS50, I'm taking CS50G","",""
+"393854278764068875","curiouskiwi#1671","22-Jan-20 12:04 AM","this channel (#track-games-pong) is for CS50x's games track","",""
+"132563772987408385","brianboyko#4460","22-Jan-20 12:04 AM","Ah.","",""
+"393854278764068875","curiouskiwi#1671","22-Jan-20 12:04 AM","not for the #cs50-games course","",""
+"132563772987408385","brianboyko#4460","22-Jan-20 12:04 AM","Oh.","",""
+"132563772987408385","brianboyko#4460","22-Jan-20 12:04 AM","*jane curtin* nevermind","",""
+"132563772987408385","brianboyko#4460","22-Jan-20 12:05 AM","Sorry to bug you then","",""
+"132563772987408385","brianboyko#4460","22-Jan-20 12:05 AM","Thanks for looking at the issue, though","",""
+"553340603438727169","groot01#1438","13-Feb-20 03:09 AM","i played pong a lot on the atari 2600 as a kid, i went back and modified my code to look like the game i remembered","https://cdn.discordapp.com/attachments/661709026811183130/677320376593809408/pong.jpg","👍 (14),🦝 (1),🕹️ (3),🔥 (1)"
+"336312679792640000","Scribbles#1097","09-Mar-20 04:43 AM","Could anyone possibly help me understand the AI function of the Pong assignment? I am new to game AIs and I'm not sure what I'm doing wrong.
+
+I have the paddle following the ball's y position. I'm also calculating the distance between the ball's y position and the paddle's y position to get the distance. This is to fix the jitteriness caused by the paddle_speed if the distance between the y positions is less than 200.  But now, for some reason, that logic is running, and it slows down the paddle from the very top to the very bottom, and I'm not sure why. 😦 If someone could please help, I'd appreciate it. I've googled my way and clicked on every post and it's either in another language using libraries that don't apply, or it's not very clear to me what I should be doing. 😦 Any help is appreciated. ❤️","https://cdn.discordapp.com/attachments/661709026811183130/686403646866325525/d96359d0e5cba564c17490d537403cc8.png",""
+"234679095378706433","Blauelf#6622","09-Mar-20 09:26 AM","@Scribbles Something looks odd with `distance < -PADDLE_SPEED`. Shouldn't it be `>`?","",""
+"234679095378706433","Blauelf#6622","09-Mar-20 09:27 AM","I somewhat guess it's not the slow down that's wrong, but the speed in the other direction.","",""
+"234679095378706433","Blauelf#6622","09-Mar-20 09:29 AM","Also, I think it should be  `player1.dy = distance` in both cases, whether positive or negative.","",""
+"234679095378706433","Blauelf#6622","09-Mar-20 09:29 AM","The sign is already part of `distance`","",""
+"336312679792640000","Scribbles#1097","09-Mar-20 07:39 PM","Okay, so I finally got it working! 😄","",""
+"336312679792640000","Scribbles#1097","09-Mar-20 07:39 PM","Thanks for the tip that is had something to do with distance and Paddle speed","",""
+"336312679792640000","Scribbles#1097","09-Mar-20 07:40 PM","Part of the problem was that I didn't know lovec.exe is the app you need to run for console logging","",""
+"336312679792640000","Scribbles#1097","09-Mar-20 07:40 PM","So that helped a BUNCH","",""
+"336312679792640000","Scribbles#1097","09-Mar-20 07:42 PM","I saw that never is the distance greater than the paddle speed of 200, so I had to look at something else, and wouldn'tcha know it! 😄 It worked!","",""
+"360960743442481162","Ali A.#6928","10-Mar-20 10:04 PM","Hello Guys,","",""
+"360960743442481162","Ali A.#6928","10-Mar-20 10:04 PM","so, I have modified pong, with a little bit more features","",""
+"360960743442481162","Ali A.#6928","10-Mar-20 10:05 PM","difficulties, and some cheating possibilities for the player and a youtube music (not copy righted as I hope)","",""
+"360960743442481162","Ali A.#6928","10-Mar-20 10:05 PM","am I allowed to submit this","",""
+"360960743442481162","Ali A.#6928","10-Mar-20 10:06 PM","version","",""
+"360960743442481162","Ali A.#6928","11-Mar-20 11:14 AM","so, guys","",""
+"360960743442481162","Ali A.#6928","11-Mar-20 11:14 AM","how do I know if my pong game is","",""
+"360960743442481162","Ali A.#6928","11-Mar-20 11:15 AM","is being verfied and will get me the certificate?","",""
+"393854278764068875","curiouskiwi#1671","11-Mar-20 08:27 PM","did you submit it?","",""
+"360960743442481162","Ali A.#6928","14-Mar-20 09:45 PM","I did, and check says 1/1","",""
+"360960743442481162","Ali A.#6928","14-Mar-20 09:46 PM","yet I don't know if everything","",""
+"435801096577875968","ჭუჭუ მატარებელი#2212","23-Mar-20 06:02 PM","Error
+boot.lua:577: Cannot load game at path 'C:/Users/zurab/OneDrive/Desktop/New folder/pong-master/lua_demo.lua'.
+Make sure a folder exists at the specified path.
+Traceback
+[C]: in function 'error'
+[C]: in function 'xpcall'
+[C]: in function 'xpcall'","",""
+"435801096577875968","ჭუჭუ მატარებელი#2212","23-Mar-20 06:02 PM","lol help me","",""
+"577549284652744706","darth#2596","23-Mar-20 09:36 PM","Why don't you just drag the folder onto the love2d application icon?","",""
+"577549284652744706","darth#2596","23-Mar-20 09:36 PM","Also, can anyone help me out here, trying to set an icon for my game but the forums on the internet aren't that good. I would prefer not using a third party application for the purpose.","",""
+"435801096577875968","ჭუჭუ მატარებელი#2212","24-Mar-20 07:09 PM","ye idk, I always use a third party application","",""
+"435801096577875968","ჭუჭუ მატარებელი#2212","24-Mar-20 07:10 PM","or at least a converter to conver JPEG or PNG file into an ICON file","",""
+"435801096577875968","ჭუჭუ მატარებელი#2212","24-Mar-20 07:10 PM","I tried everything with the lua file, even downloaded 2 other game engines that support lua (one of them being CORONA 😮 ) but nothing seems to work","",""
+"227137986196799488","caioscadrago#4950","26-Mar-20 08:48 PM","Error
+
+push.lua:101: attempt to call field 'getPixelScale' (a nil value)
+
+
+Traceback
+
+push.lua:101: in function 'initValues'
+push.lua:48: in function 'setupScreen'
+main.lua:55: in function 'load'
+[C]: in function 'xpcall'
+[C]: in function 'xpcall'","",""
+"227137986196799488","caioscadrago#4950","26-Mar-20 08:49 PM","I tried to change it to getDPIScale, wich is the updated one, but then is just a white screen","",""
+"501134523434795028","Mowdl#5503","26-Mar-20 10:55 PM","i had the same problem","","👍 (1)"
+"501134523434795028","Mowdl#5503","26-Mar-20 10:55 PM","changed to getDPIScale","",""
+"501134523434795028","Mowdl#5503","26-Mar-20 10:55 PM","got the white screen","",""
+"501134523434795028","Mowdl#5503","26-Mar-20 10:56 PM","after i disabled love.graphics.clear()","",""
+"501134523434795028","Mowdl#5503","26-Mar-20 10:56 PM","everything works fine","",""
+"501134523434795028","Mowdl#5503","26-Mar-20 10:56 PM","love.graphics.clear() always results in white screen whatever value i input, i dont why","",""
+"501134523434795028","Mowdl#5503","26-Mar-20 10:57 PM","i dont know why","",""
+"501134523434795028","Mowdl#5503","26-Mar-20 11:02 PM","i found ""I fixed it. Love docs show in version 11 removals / changes that color ranges now go from 0 to 1 instead of 0 to 255""","",""
+"501134523434795028","Mowdl#5503","26-Mar-20 11:03 PM","easy fix ""Go to the love.graphics.clear line and just put in love.graphics.clear(40/255, 45/255, 52/255, 1) instead.""","",""
+"227137986196799488","caioscadrago#4950","26-Mar-20 11:23 PM","thanks","",""
+"363968669178658818","Hypadr1ve#2340","27-Mar-20 11:46 AM","or u can use love 10.2 instead","",""
+"363968669178658818","Hypadr1ve#2340","27-Mar-20 11:49 AM","pong but it's aimbot","https://cdn.discordapp.com/attachments/661709026811183130/693033925890801704/Pong_2020-03-27_14-42-09_Trim.mp4",""
+"358610571211309056","ICSF#8925","29-Mar-20 08:43 PM","@Mowdl  I'm having the same problem that Caios had and I tried to do what you said but it still gives me the error.","",""
+"358610571211309056","ICSF#8925","29-Mar-20 08:57 PM","But has Hypardr1ve said, I used 10.2","",""
+"186298086669156353","•••#2676","29-Mar-20 09:38 PM","This problem set seems several times easier than the ones in C and Python. I just added a single line to implement the “AI”: to make the player Y equal to Y. Am I missing something here?","",""
+"380742018718105602","Tyks_wtf#5614","30-Mar-20 02:15 PM","I have the same problem that @ICSF. I changer the .clear() and i still have the error. I'm using 11.3","",""
+"380742018718105602","Tyks_wtf#5614","30-Mar-20 03:04 PM","I think our best solution is to download 10.2 version","",""
+"249249011779895296","Davis#1856","30-Mar-20 07:09 PM","Hello everyone.","",""
+"249249011779895296","Davis#1856","30-Mar-20 07:11 PM","Can anyone help me out with a problem that I have encountered regarding Pong 1 coding and push file?","",""
+"249249011779895296","Davis#1856","30-Mar-20 07:12 PM","I dont have a good coding background. But I would like to learn a little more about the push file and how it works?","",""
+"663512775896858644","KingDeDeDe#0599","31-Mar-20 12:34 AM","Love 2d is showing up as a no game screen what do I do to fix it","",""
+"663512775896858644","KingDeDeDe#0599","31-Mar-20 12:35 AM","It has a balloon with the string spelling no game","",""
+"358610571211309056","ICSF#8925","01-Apr-20 07:01 AM","@KingDeDeDe in order o use live 2d you need to drag the file where the code is to the top of the application","",""
+"358610571211309056","ICSF#8925","01-Apr-20 07:02 AM","To open the file or pasta with the love 2d app","",""
+"139216987803877376","GIJO#6828","01-Apr-20 09:02 PM","@KingDeDeDe Download 10.2 and make a local variable to your program","",""
+"363729066475388928","Spla3h#2781","02-Apr-20 03:30 AM","I have no idea how to push my work using git","https://cdn.discordapp.com/attachments/661709026811183130/695067585401847979/unknown.png",""
+"269227960156946454","GhostDragon#7128","02-Apr-20 03:50 AM","then install submit50","",""
+"363729066475388928","Spla3h#2781","02-Apr-20 03:50 AM","we'll see","",""
+"363729066475388928","Spla3h#2781","02-Apr-20 03:54 AM","where do I run this","https://cdn.discordapp.com/attachments/661709026811183130/695073708129124433/unknown.png",""
+"269227960156946454","GhostDragon#7128","02-Apr-20 03:55 AM","where did you make the game?","",""
+"363729066475388928","Spla3h#2781","02-Apr-20 03:56 AM","what do you mean?","",""
+"269227960156946454","GhostDragon#7128","02-Apr-20 03:56 AM","in the cs50 ide?","",""
+"363729066475388928","Spla3h#2781","02-Apr-20 03:56 AM","made it in visual studio code","",""
+"363729066475388928","Spla3h#2781","02-Apr-20 03:56 AM","¯\_(ツ)_/¯","",""
+"269227960156946454","GhostDragon#7128","02-Apr-20 03:57 AM","does that have a command line?","",""
+"269227960156946454","GhostDragon#7128","02-Apr-20 03:58 AM","you could upload the game files to the cs50 ide or if you have python3 installed you could type that in your terminal to install submit50","",""
+"501134523434795028","Mowdl#5503","02-Apr-20 10:49 PM","@Tyks_wtf and @Davis  probably you should go to the push file, on line 221, change .getPixelScale() to getDPIScale()","",""
+"380742018718105602","Tyks_wtf#5614","02-Apr-20 10:50 PM","thx but i fix the error by changing my version of love","","👍 (1)"
+"501134523434795028","Mowdl#5503","02-Apr-20 10:51 PM","yeah thats a better solution","",""
+"249249011779895296","Davis#1856","03-Apr-20 05:08 AM","Thank you so much  @Mowdl","",""
+"249249011779895296","Davis#1856","03-Apr-20 05:08 AM","Worked like a charm","",""
+"304690705996054528","Krish12003#8752","05-Apr-20 07:05 AM","I am on Pong 5 and am getting the following error:
+```
+Error
+
+Paddle.lua:21: attempt to index local 'self' (a nil value)
+
+
+Traceback
+
+Paddle.lua:21: in function 'render'
+main.lua:78: in function 'draw'
+[C]: in function 'xpcall'
+```","",""
+"304690705996054528","Krish12003#8752","05-Apr-20 07:05 AM","why could this be happening?","",""
+"387292479675826176","omarbeendeaded#8736","05-Apr-20 02:35 PM","when you try to render the paddle one of the variables arent set to anything I think","",""
+"387292479675826176","omarbeendeaded#8736","05-Apr-20 02:40 PM","I think I've just finished the pset but the AI paddle is a lil shaky does that violate the smooth part of the assignment","",""
+"387292479675826176","omarbeendeaded#8736","05-Apr-20 02:49 PM","A lil shaky might be an understatement","https://cdn.discordapp.com/attachments/661709026811183130/696325674805493780/Pong_2020-04-05_13-45-03_Trim.mp4",""
+"684652492256051221","asmat#3174","07-Apr-20 05:06 PM","i can not run my lua and love in VSC 1.41.1","",""
+"684652492256051221","asmat#3174","07-Apr-20 05:13 PM","need help to get lua and love working through VSC
+Version: 1.43.2 (user setup)
+Commit: 0ba0ca52957102ca3527cf479571617f0de6ed50
+Date: 2020-03-24T07:38:38.248Z
+Electron: 7.1.11
+Chrome: 78.0.3904.130
+Node.js: 12.8.1
+V8: 7.8.279.23-electron.0
+OS: Windows_NT x64 10.0.17763","",""
+"684652492256051221","asmat#3174","07-Apr-20 05:14 PM","love worked if i use drag and drop folder on love icon","",""
+"684652492256051221","asmat#3174","07-Apr-20 05:23 PM","","https://cdn.discordapp.com/attachments/661709026811183130/697089142902882404/unknown.png",""
+"684652492256051221","asmat#3174","07-Apr-20 05:24 PM","","https://cdn.discordapp.com/attachments/661709026811183130/697089377200898108/unknown.png",""
+"684652492256051221","asmat#3174","07-Apr-20 05:24 PM","","https://cdn.discordapp.com/attachments/661709026811183130/697089521182834780/unknown.png",""
+"684652492256051221","asmat#3174","07-Apr-20 05:31 PM","what do i do so i can run love and lua VSC","",""
+"387292479675826176","omarbeendeaded#8736","07-Apr-20 10:57 PM","All you have to do is go to File > Preferences > settings","",""
+"387292479675826176","omarbeendeaded#8736","07-Apr-20 10:58 PM","then search love","",""
+"387292479675826176","omarbeendeaded#8736","07-Apr-20 10:58 PM","Second thing you'll find ""Path to the Love2D executable file""","",""
+"387292479675826176","omarbeendeaded#8736","07-Apr-20 10:59 PM","then paste where love.exe is installed","",""
+"387292479675826176","omarbeendeaded#8736","07-Apr-20 10:59 PM","But you have to have the exe in the directory","",""
+"387292479675826176","omarbeendeaded#8736","07-Apr-20 10:59 PM","for example","",""
+"387292479675826176","omarbeendeaded#8736","07-Apr-20 10:59 PM","C:\Program Files (x86)\LOVE\love.exe","",""
+"387292479675826176","omarbeendeaded#8736","07-Apr-20 11:00 PM","it should run when you press alt + L while your code is open","",""
+"684652492256051221","asmat#3174","07-Apr-20 11:45 PM","@omarbeendeaded i  will try it mean while i am uninstalling lot of software","",""
+"684652492256051221","asmat#3174","07-Apr-20 11:46 PM","will try after reinstalling VSCode","",""
+"684652492256051221","asmat#3174","08-Apr-20 01:56 AM","it is working on powershell","",""
+"684652492256051221","asmat#3174","08-Apr-20 01:57 AM","but still problem of 
+{
+    ""resource"": ""/c:/Users/auk01/Desktop/lua/projects/main.lua"",
+    ""owner"": ""_generated_diagnostic_collection_name_#0"",
+    ""code"": ""undefined-global"",
+    ""severity"": 4,
+    ""message"": ""Undefined global `love`."",
+    ""source"": ""Lua Diagnostics."",
+    ""startLineNumber"": 2,
+    ""startColumn"": 5,
+    ""endLineNumber"": 2,
+    ""endColumn"": 9
+}","",""
+"684652492256051221","asmat#3174","08-Apr-20 01:58 AM","","https://cdn.discordapp.com/attachments/661709026811183130/697218897727848528/unknown.png",""
+"387292479675826176","omarbeendeaded#8736","08-Apr-20 01:10 PM","Did you download the Love2Dsupport plugin","",""
+"684652492256051221","asmat#3174","10-Apr-20 10:18 PM","@omarbeendeaded  yes i have","",""
+"684652492256051221","asmat#3174","10-Apr-20 10:18 PM","","https://cdn.discordapp.com/attachments/661709026811183130/698250657127465050/unknown.png",""
+"387292479675826176","omarbeendeaded#8736","11-Apr-20 12:08 AM","I really dont know","",""
+"387292479675826176","omarbeendeaded#8736","11-Apr-20 12:08 AM","Maybe try reinstalling love again","",""
+"482411223418142750","RawGardn#3054","11-Apr-20 05:35 AM","getting error after running assigment0 into love","",""
+"482411223418142750","RawGardn#3054","11-Apr-20 05:35 AM","Error
+
+push.lua:101: attempt to call field 'getPixelScale' (a nil value)
+
+
+Traceback
+
+push.lua:101: in function 'initValues'
+push.lua:48: in function 'setupScreen'
+main.lua:85: in function 'load'
+[C]: in function 'xpcall'
+[C]: in function 'xpcall'","",""
+"482411223418142750","RawGardn#3054","11-Apr-20 06:28 AM","@Scribbles  Hey im also having problems with jiterness and speed of the paddle following the ball, any tips you can give me?","",""
+"477644298184163330","Martuch#0640","11-Apr-20 06:45 AM","Be aware  that the version of LOVE used in this course is 10.2 and not the newer one, it gave me problems as well
+> Error
+> 
+> push.lua:101: attempt to call field 'getPixelScale' (a nil value)
+> 
+> 
+> Traceback
+> 
+> push.lua:101: in function 'initValues'
+> push.lua:48: in function 'setupScreen'
+> main.lua:85: in function 'load'
+> [C]: in function 'xpcall'
+> [C]: in function 'xpcall'
+@RawGardn 
+> Error
+> 
+> push.lua:101: attempt to call field 'getPixelScale' (a nil value)
+> 
+> 
+> Traceback
+> 
+> push.lua:101: in function 'initValues'
+> push.lua:48: in function 'setupScreen'
+> main.lua:85: in function 'load'
+> [C]: in function 'xpcall'
+> [C]: in function 'xpcall'
+@RawGardn","","👍 (1)"
+"482411223418142750","RawGardn#3054","11-Apr-20 06:46 AM","> Be aware  that the version of LOVE used in this course is 10.2 and not the newer one, it gave me problems as well
+> @RawGardn 
+> @RawGardn
+@Martuch  yes i figured that part out thank you","",""
+"477644298184163330","Martuch#0640","11-Apr-20 08:41 AM","No prob","",""
+"684652492256051221","asmat#3174","11-Apr-20 11:24 AM","so you mean we should remove 11.3 and install 10.2 for the assignment","",""
+"393854278764068875","curiouskiwi#1671","11-Apr-20 11:34 AM","Are you taking the #cs50-games course?  If so, yes, 0.10.2 is the version.  But you are posting in the CS50x course's games track channel (pset8) and that uses the later version.","",""
+"684652492256051221","asmat#3174","11-Apr-20 11:36 AM","i am at pset8 cs50","",""
+"393854278764068875","curiouskiwi#1671","11-Apr-20 11:37 AM","so then you should be fine.","",""
+"684652492256051221","asmat#3174","11-Apr-20 11:37 AM","good thanks","",""
+"328966443213520896","Shade521#9460","11-Apr-20 05:19 PM","hey, im using the 0.10.2 version of LOVE and it still wont run...i googled stuff and checked solutions you guys had on here but I still cannot find anything?","",""
+"328966443213520896","Shade521#9460","11-Apr-20 05:19 PM","any ideas","",""
+"328966443213520896","Shade521#9460","11-Apr-20 05:19 PM","and i use Sublime 3 as the text editor/viewer","",""
+"500241510088835075","Zendril#1291","11-Apr-20 06:38 PM","> @Martuch  yes i figured that part out thank you
+@RawGardn Thanks for the heads up.. i *literally* just figured out how to install 11.3 as appimage and get on the path..","",""
+"500241510088835075","Zendril#1291","11-Apr-20 06:39 PM","btw.. is the a place that has all the incremental source that Colton was opening/showing during the lecture?","",""
+"684652492256051221","asmat#3174","11-Apr-20 08:32 PM","@Zendril i had VSCode already installed on my system i just followed what he said and got it installed from inside VSCode where as LOVE and LUA was downloaded from their own sites, as well as BFXR from https://www.bfxr.net","",""
+"684652492256051221","asmat#3174","12-Apr-20 09:24 PM","my AI moves from one point to another point without jumping but it shakes does it count to be assignment done or do I have to try and fix it. it is more like a Parkinson AI","",""
+"187822831004942337","TecTale#6305","13-Apr-20 09:49 PM","I had this problem initially too, but it was a simple fix. It was happening because I was using the center of the paddle to decide whether to go up or down. I fixed it by changing this to the edges of the paddle instead of the center. It is probably fine to submit it as long as it tracks the ball, but I think the people who designed the assignment intended the AI to move smoothly. I know I wouldn't want to play the game if the AI was shaking the way it was.","",""
+"137114328414420992","FizzyG#4609","14-Apr-20 02:14 AM","","https://cdn.discordapp.com/attachments/661709026811183130/699397108486111372/error_running_anything_after_pong_0.png",""
+"137114328414420992","FizzyG#4609","14-Apr-20 02:15 AM","hey guys! I'm not sure if this is the right channel to ask for help but if I try to run anything after pong 0 I keep getting this error. Any ideas what I'm doing wrong?","",""
+"137114328414420992","FizzyG#4609","14-Apr-20 02:16 AM","(I tried to include everything in the screenshot, sorry if it looks confusing)","",""
+"159012281630326785","WolfRescom#6187","14-Apr-20 03:04 AM","I have the same problem","",""
+"322546286870134785","coltonoscopy#9517","14-Apr-20 04:25 AM","@FizzyG the code uses an older version of LOVE (0.10.2), which you can download for your OS here: https://bitbucket.org/rude/love/downloads/","","👍 (1)"
+"183946861181272064","FunBunnyGrim#5523","15-Apr-20 12:17 PM","My code doesn't even run and my *Vis Studio* doesnt seem to recognise any of the files even if I do use the *New Project- Project From Existing Code* workaround.","",""
+"410156029549215764","Rathore#5612","15-Apr-20 06:10 PM","hi how to get started with pong game I have  no clue.","",""
+"410156029549215764","Rathore#5612","15-Apr-20 06:11 PM","I don't get how to run and use that love2d","",""
+"367619640420990976","Defender#8496","15-Apr-20 07:56 PM","I'm getting this error when I run Pong_1, any ideas?","https://cdn.discordapp.com/attachments/661709026811183130/700026821323784232/unknown.png",""
+"299879843451895812","Zisei#5341","15-Apr-20 07:58 PM","@Defender Go to push.lua, change all occurrences of getPixelScale() as getDPIScale()","","👍 (1)"
+"367619640420990976","Defender#8496","15-Apr-20 08:00 PM","Cool, it worked! Many thanks!","",""
+"299879843451895812","Zisei#5341","15-Apr-20 08:02 PM","You're welcome","",""
+"680298386787663911","DonutWithTheMayo#9777","15-Apr-20 09:15 PM","Hey, I am very new to coding, In the video guide for pong he showed an application where the text of the demo was shown, This must sound dumb, but what application was he using","",""
+"696951988608303125","Heatron#9122","15-Apr-20 09:22 PM","@DonutWithTheMayo  Why not listen to the first few lectures? it helps a lot","",""
+"680298386787663911","DonutWithTheMayo#9777","15-Apr-20 10:02 PM","@Heatron Ty for ur advice, I shall watch all the toutorials","",""
+"169157824281051136","Darkfenix#4484","15-Apr-20 11:13 PM","hey guys, is the love2d extension unavailible ?","",""
+"169157824281051136","Darkfenix#4484","15-Apr-20 11:13 PM","cant install it","",""
+"169157824281051136","Darkfenix#4484","15-Apr-20 11:13 PM","","https://cdn.discordapp.com/attachments/661709026811183130/700076438363045918/unknown.png",""
+"169157824281051136","Darkfenix#4484","15-Apr-20 11:14 PM","i can fin it on the market place on my browser but install button does nothing","",""
+"509494698973462529","Sniper Loli#5187","15-Apr-20 11:15 PM","Whenever i try to run the pong assignment i just get a white screen and the fps counter","",""
+"509494698973462529","Sniper Loli#5187","15-Apr-20 11:15 PM","but theres no errors","",""
+"509494698973462529","Sniper Loli#5187","15-Apr-20 11:16 PM","","https://cdn.discordapp.com/attachments/661709026811183130/700077046218620958/unknown.png",""
+"260102524776873985","Hamza911119#2066","15-Apr-20 11:26 PM","i have the same issue as this guy ^^^","",""
+"494586607043608579","juggy1233#8764","15-Apr-20 11:35 PM","I think the rgb is from 0 to 1 (float), not 0 to 255 (int)","",""
+"509494698973462529","Sniper Loli#5187","15-Apr-20 11:40 PM","@juggy1233 but if the colors are really 0 to 1 only wouldn't the love2d framework return some sort of error for unexpected parameters?","",""
+"494586607043608579","juggy1233#8764","15-Apr-20 11:41 PM","I tried 255, and it just showed white.","",""
+"494586607043608579","juggy1233#8764","15-Apr-20 11:41 PM","I put in 1 as well, also white","",""
+"494586607043608579","juggy1233#8764","15-Apr-20 11:41 PM","0.5 however is like a grey","",""
+"509494698973462529","Sniper Loli#5187","15-Apr-20 11:41 PM","0.5 on all of them?","",""
+"494586607043608579","juggy1233#8764","15-Apr-20 11:42 PM","yup","",""
+"509494698973462529","Sniper Loli#5187","15-Apr-20 11:42 PM","ah ok thanks","",""
+"494586607043608579","juggy1233#8764","15-Apr-20 11:43 PM","I did something like this to convert from 255 to float:
+`love.graphics.clear(40/255, 45/255, 52/255, 1)`","","👍 (1)"
+"509494698973462529","Sniper Loli#5187","15-Apr-20 11:43 PM","thank you i got it to work by adding decimal places to the original colors","",""
+"509494698973462529","Sniper Loli#5187","15-Apr-20 11:43 PM","oh i did it like love.graphics.clear(0.4, 0.45, 0.52, 1)","",""
+"494586607043608579","juggy1233#8764","15-Apr-20 11:44 PM","that wouldn't correspond to the right 255 values though","",""
+"494586607043608579","juggy1233#8764","15-Apr-20 11:44 PM","because 40/255 isn't 0.4","",""
+"509494698973462529","Sniper Loli#5187","16-Apr-20 12:01 AM","ah, ill switch it then to your system","",""
+"260102524776873985","Hamza911119#2066","16-Apr-20 12:04 AM","yeah it worked for me too, thanks","",""
+"209153289072148482","Isshako#7543","16-Apr-20 01:39 AM","So the paddle has to follow the ball constantly, even if the ball is not on its side of the court?","",""
+"209153289072148482","Isshako#7543","16-Apr-20 02:36 AM","I'm not understanding how to submit and push my work using Git","",""
+"209153289072148482","Isshako#7543","16-Apr-20 02:39 AM","I typed the branch into the Git bash but it tells me ""No such file or directory""","",""
+"209153289072148482","Isshako#7543","16-Apr-20 02:39 AM","do I have to install python3 to use submit50","",""
+"393854278764068875","curiouskiwi#1671","16-Apr-20 02:41 AM","This track doesn't require you to use git.  Per the instructions: 
+> To submit your code with submit50, you may either: (1) upload your code to CS50 IDE and run submit50 from inside of your IDE, or (2) install submit50 on your own computer by running pip3 install submit50 (assuming you have Python 3 installed).
+> 
+> Execute the below, logging in with your GitHub username and password when prompted. For security, you’ll see asterisks (*) instead of the actual characters in your password.
+> 
+> submit50 cs50/problems/2020/x/tracks/games/pong","",""
+"209153289072148482","Isshako#7543","16-Apr-20 02:53 AM","this is still not working for me","",""
+"393854278764068875","curiouskiwi#1671","16-Apr-20 02:55 AM","what isn't working?  are you getting an error when you run submit50?","",""
+"209153289072148482","Isshako#7543","16-Apr-20 02:57 AM","Yes, I tried running submit50, submit50 games50/assignments/2020/x/0,and submit50 cs50/problems/2020/x/tracks/games/pong","",""
+"209153289072148482","Isshako#7543","16-Apr-20 02:57 AM","None of them worked","",""
+"209153289072148482","Isshako#7543","16-Apr-20 02:58 AM","Do I have to have the assignment0 file in a specific directory?","",""
+"393854278764068875","curiouskiwi#1671","16-Apr-20 03:12 AM","So you're in the wrong channel.  #cs50-games is the channel for your course (you're posting in one of the pset8 problems of CS50x)","",""
+"209153289072148482","Isshako#7543","16-Apr-20 03:16 AM","Oh, I'm sorry","",""
+"402833042822922241","Blue#8975","17-Apr-20 05:52 AM","Guys so I tried this code it moves but it doesnt match the ball","",""
+"402833042822922241","Blue#8975","17-Apr-20 05:52 AM","if ball.dx < 0 then
+    player2.dy = ball.y - PADDLE_SPEED
+elseif ball.dy > 0 then
+    player2.dy = ball.y + PADDLE_SPEED
+else player2.dy = 0
+end","",""
+"402833042822922241","Blue#8975","17-Apr-20 05:53 AM","can someone help me","",""
+"402833042822922241","Blue#8975","17-Apr-20 05:53 AM","does my code right hehehe!","",""
+"236625588868087808","psychodoughb0y#0892","17-Apr-20 06:50 AM","Hide code in spoiler tags, please.","",""
+"402833042822922241","Blue#8975","17-Apr-20 07:15 AM","sorry it was just an error code though","",""
+"402833042822922241","Blue#8975","17-Apr-20 07:15 AM","sorry","",""
+"584674174073700352","Mr.Raccooon#1307","17-Apr-20 11:35 AM","hello","",""
+"700326772784365630","bilal#7228","17-Apr-20 11:38 AM","hello","",""
+"700326772784365630","bilal#7228","17-Apr-20 11:38 AM","i have a problem","",""
+"700326772784365630","bilal#7228","17-Apr-20 11:39 AM","can somone help me, i've had this problem for 2 days and noone is helping me
+plz","",""
+"700326772784365630","bilal#7228","17-Apr-20 11:40 AM","main.lua.10:Module 'Push' not found:                   no field package.preload['push']                  no file '.push.lua'                  it then lists some of my files","",""
+"700326772784365630","bilal#7228","17-Apr-20 11:51 AM","😐","",""
+"700326772784365630","bilal#7228","17-Apr-20 11:51 AM","helo???","",""
+"700326772784365630","bilal#7228","17-Apr-20 12:15 PM","is noone on","",""
+"700326772784365630","bilal#7228","17-Apr-20 12:16 PM","help plzz","https://cdn.discordapp.com/attachments/661709026811183130/700635714328723476/Screenshot_7.png",""
+"584674174073700352","Mr.Raccooon#1307","17-Apr-20 01:49 PM","yes i'm having the same problem","",""
+"700326772784365630","bilal#7228","17-Apr-20 02:02 PM","ok","",""
+"516544863580192771","Siddharth Bansal#7460","17-Apr-20 07:00 PM","Can anyone help me out with the download link of Lua.","",""
+"577549284652744706","darth#2596","17-Apr-20 08:53 PM","@bilal send the screenshot of your code","",""
+"577549284652744706","darth#2596","17-Apr-20 08:54 PM","also, that push thing is that you need to include the push.lua file in the same folder as main.lua","",""
+"611064664117215242","Lord_Helix07#1880","17-Apr-20 10:14 PM","I downloaded love2d and I’m stuck on this screen","https://cdn.discordapp.com/attachments/661709026811183130/700786376051785748/image0.jpg",""
+"611064664117215242","Lord_Helix07#1880","17-Apr-20 10:14 PM","Did I do something wrong?","",""
+"611064664117215242","Lord_Helix07#1880","18-Apr-20 12:39 AM","hello?","",""
+"379783803390001167","Highly Nonexistent#6057","18-Apr-20 01:14 AM","You need to either drag the folder containing the main.lua file into the executable/shortcut or add love to PATH and run a command window in the folder location and then input: love.exe [file name]","",""
+"424665581887684609","ColdSnipez#8429","18-Apr-20 02:42 AM","Did anyone figure out how to run Love2D natively from VS Code?","",""
+"405574181519097859","gnuoavo#6984","18-Apr-20 08:10 AM","i have @ColdSnipez","",""
+"405574181519097859","gnuoavo#6984","18-Apr-20 08:11 AM","have anyone been able to run pong-2 ? i know we need to update the push.lua file to version v0.4","",""
+"405574181519097859","gnuoavo#6984","18-Apr-20 08:11 AM","@Lord_Helix07 you did it right","",""
+"430407105107722252","xarrow#6864","18-Apr-20 01:52 PM","I opened my lua file with love2d and I'm getting this error. Anyone know what's wrong?","https://cdn.discordapp.com/attachments/661709026811183130/701022302753652846/Screenshot_37.png",""
+"554876169363652620","gimmetechtip#6299","18-Apr-20 03:17 PM","love.graphics.printf(""Hello Pong!"", 0, 20, VIRTUAL_WIDTH,  ""center"")","",""
+"554876169363652620","gimmetechtip#6299","18-Apr-20 03:17 PM","in this, the x and Y values are from the left corner right?","",""
+"554876169363652620","gimmetechtip#6299","18-Apr-20 03:18 PM","so why isnt hello at the left but instead in the center","",""
+"554876169363652620","gimmetechtip#6299","18-Apr-20 03:18 PM","this is from pong1 btw","",""
+"680298386787663911","DonutWithTheMayo#9777","18-Apr-20 04:21 PM","in hello pong, the tool he uses to edit the text, that was visual basic right","",""
+"508339211250696193","DEMONTOSS#3058","18-Apr-20 05:23 PM","the pong file that i downloaded for the first class when i run the pong 2 and above file  in love2d  nothing shows up mean it will run but on love2d the screen is white","",""
+"700326772784365630","bilal#7228","18-Apr-20 05:39 PM","@darth","",""
+"700326772784365630","bilal#7228","18-Apr-20 05:39 PM","WINDOW_WIDTH = 1280
+WINDOW_HEIGHT = 720
+
+--[[
+    Runs when the game first starts up, only once; used to initialize the game.
+]]
+function love.load()
+    love.window.setMode(WINDOW_WIDTH, WINDOW_HEIGHT,{
+        fullscreen = false,
+        resizable = false,
+        vsync = true
+    })
+end
+
+function love.draw()
+    love.graphics.printf(
+        'PONG!',          -- text to render
+        0,                      -- starting X (0 since we're going to center it based on width)
+        WINDOW_HEIGHT / 2 - 6,  -- starting Y (halfway down the screen)
+        WINDOW_WIDTH,           -- number of pixels to center within (the entire screen here)
+        'center')               -- alignment mode, can be 'center', 'left', or 'right'
+end","",""
+"700326772784365630","bilal#7228","18-Apr-20 05:39 PM","push = require 'push'
+
+WINDOW_WIDTH = 1280
+WINDOW_HEIGHT = 720
+
+VIRTUAL_WIDTH = 432
+VIRTUAL_HEIGHT = 243
+
+--[[
+    Runs when the game first starts up, only once; used to initialize the game.
+]]
+function love.load()
+    -- use nearest-neighbor filtering on upscaling and downscaling to prevent blurring of text 
+    -- and graphics; try removing this function to see the difference!
+    love.graphics.setDefaultFilter('nearest', 'nearest')
+
+    -- initialize our virtual resolution, which will be rendered within our
+    -- actual window no matter its dimensions; replaces our love.window.setMode call
+    -- from the last example
+    push:setupScreen(VIRTUAL_WIDTH, VIRTUAL_HEIGHT, WINDOW_WIDTH, WINDOW_HEIGHT, {
+        fullscreen = false,
+        resizable = false,
+        vsync = true
+    })
+end
+
+--[[
+    Keyboard handling, called by LÖVE2D each frame; 
+    passes in the key we pressed so we can access.
+]]
+function love.keypressed(key)
+    -- keys can be accessed by string name
+    if key == 'escape' then
+        -- function LÖVE gives us to terminate application
+        love.event.quit()
+    end
+end
+
+
+--[[
+    Called after update by LÖVE2D, used to draw anything to the screen, 
+    updated or otherwise.
+]]
+function love.draw()
+    -- begin rendering at virtual resolution
+    push:apply('start')
+
+    -- condensed onto one line from last example
+    -- note we are now using virtual width and height now for text placement
+    love.graphics.printf('PONG', 0, VIRTUAL_HEIGHT / 2 - 6, VIRTUAL_WIDTH, 'center')
+
+    -- end rendering at virtual resolution
+    push:apply('end')
+end","",""
+"700326772784365630","bilal#7228","18-Apr-20 05:46 PM","*help, I've been stuck for days*","","👺 (1)"
+"577549284652744706","darth#2596","18-Apr-20 05:49 PM","What is the problem you're having?","",""
+"577549284652744706","darth#2596","18-Apr-20 05:50 PM","Also, I think people here think LOVE2D is an ide?? It's a framework. So idk why you're thinking double clicking on it will start some game xD @Lord_Helix07","",""
+"350592513230372864","HenaWho#4512","18-Apr-20 07:11 PM","Where could we found the information to do an AI agent for the Paddles in the Pong game? I have no idea about AI and I have to do the assigment0","",""
+"577549284652744706","darth#2596","18-Apr-20 07:32 PM","It's not like you have to integrate something to it. It's just you have to add a function in the paddle.lua file and implement it on the second paddle","",""
+"496003297656700928","SidoEpic#2710","18-Apr-20 08:01 PM","Hi guys, I'm trying to run the first (pong-0) file in LOVE and some error appears:","",""
+"496003297656700928","SidoEpic#2710","18-Apr-20 08:01 PM","","https://cdn.discordapp.com/attachments/661709026811183130/701115101360554115/unknown.png",""
+"496003297656700928","SidoEpic#2710","18-Apr-20 08:01 PM","Did anybody have the same error?","",""
+"350592513230372864","HenaWho#4512","18-Apr-20 08:04 PM","Thaaanks","",""
+"487520783988424714","monmanuela#5461","18-Apr-20 09:52 PM","@SidoEpic I think you can just run `love ""pong-master/pong-0""`","","💯 (2)"
+"497924781166034956","TTW#5426","18-Apr-20 10:39 PM","I initially went about setting the player2's y position based on the ball's y thinking that was too simple","",""
+"497924781166034956","TTW#5426","18-Apr-20 10:39 PM","so I changed that and went about it in a method involving velocity","",""
+"281444541574414339","HadyDab#6004","18-Apr-20 11:17 PM","can someone help me with the github repository of the pong","",""
+"297577645682720770","pablitox#3000","19-Apr-20 08:03 AM","hi! I had a problem with the pong-2 project folder, whenever I open it with Love2d, all I get is a blank screen","",""
+"297577645682720770","pablitox#3000","19-Apr-20 08:08 AM","I changed the getPixelScale() function to getDPIScale()","",""
+"237143206666436609","ʙʟᴜᴇ#8031","19-Apr-20 08:12 AM","Hey guys, I also have the same type of error while trying to run pong on LOVE2D exe and i did everything as how it is. So what i did was to put main.lua into a folder and to drag the folder into the LOVE application shortcut but this error as on the image i shown appeared. Do any of you guys know how to solve this issue?","https://cdn.discordapp.com/attachments/661709026811183130/701299245679902842/love2d_issue.PNG",""
+"297577645682720770","pablitox#3000","19-Apr-20 08:15 AM","@ʙʟᴜᴇ I think you might want to add LOVE in your enviroment variables, so you can call it from any place","",""
+"200792940728156161","Ganlas#8579","19-Apr-20 09:06 AM","@ʙʟᴜᴇ maybe u also need to add the push.lua file to the folder","",""
+"237143206666436609","ʙʟᴜᴇ#8031","19-Apr-20 09:10 AM","I’m on windows 10 and I can’t find push.lua in any of the pong-related folders or the zip itself. @Ganlas","",""
+"200792940728156161","Ganlas#8579","19-Apr-20 09:13 AM","@ʙʟᴜᴇ hmm thats weird. I would try redownloading the source code. push.lua appears in pong-2 and up for me
+https://github.com/games50/pong","",""
+"136642951370637312","mwoodrum#7341","19-Apr-20 08:42 PM","Hello i have a Macbook pro and i can't install the LOVE program with the command code","",""
+"281444541574414339","HadyDab#6004","19-Apr-20 08:51 PM","@mwoodrum  you have to make an aliase to the love path  then you will be able to use the command love","",""
+"281444541574414339","HadyDab#6004","19-Apr-20 08:52 PM","follow the tutorial on love2d wiki getting started","",""
+"136642951370637312","mwoodrum#7341","19-Apr-20 10:06 PM","thank you","",""
+"136642951370637312","mwoodrum#7341","19-Apr-20 10:06 PM","@HadyDab","",""
+"574463314822955008","J0K3R#1699","19-Apr-20 10:11 PM","anyone know how to install babelua for visual studio?","",""
+"497924781166034956","TTW#5426","19-Apr-20 10:12 PM","I used atom instead with a love-ide and it worked fine","",""
+"435049719803281420","un_poco_loco#7052","19-Apr-20 11:03 PM","Hello !","",""
+"435049719803281420","un_poco_loco#7052","19-Apr-20 11:03 PM","Using this `love.graphics.clear(40,45,52,255)` in `love.draw()` makes everything white","",""
+"435049719803281420","un_poco_loco#7052","19-Apr-20 11:04 PM","How is that ?","",""
+"435049719803281420","un_poco_loco#7052","19-Apr-20 11:05 PM","Does anybody has an idea on that?","",""
+"435049719803281420","un_poco_loco#7052","19-Apr-20 11:11 PM","Got it, it uses colors between 0 and 1","",""
+"156502137956859904","ElenitaDeTroyaEmperatrizDeBabia#2024","20-Apr-20 04:18 AM","Hello I have to submit the assigment and I would like to contact to the teacher to ask him if I could do some changes because could be silly although I like them, but I want to pass the course so I don't want to submit something forbidden or something that wouldn't like to the teacher, this is why I would like to contact him and ask before submit","",""
+"502999896127832065","schendy#9270","20-Apr-20 05:36 AM","Maybe DM @malan ?","",""
+"393854278764068875","curiouskiwi#1671","20-Apr-20 05:49 AM","@ElenitaDeTroyaEmperatrizDeBabia the track projects are graded pass/fail, so if you are sure that your pong game meets the requirements, you are free to add/change features.  Don't worry about not passing.","",""
+"156502137956859904","ElenitaDeTroyaEmperatrizDeBabia#2024","20-Apr-20 09:24 AM","Thank you both :)","",""
+"281444541574414339","HadyDab#6004","20-Apr-20 11:07 AM","@un_poco_loco  the 255 to 0","",""
+"281444541574414339","HadyDab#6004","20-Apr-20 11:07 AM","change","",""
+"435049719803281420","un_poco_loco#7052","20-Apr-20 11:07 AM","I solved by dividing everything by 255","",""
+"281444541574414339","HadyDab#6004","20-Apr-20 11:08 AM","you only need to change the 255 to 0","",""
+"435049719803281420","un_poco_loco#7052","20-Apr-20 11:09 AM","No","",""
+"435049719803281420","un_poco_loco#7052","20-Apr-20 11:09 AM","Colors are from 0 to 1","",""
+"435049719803281420","un_poco_loco#7052","20-Apr-20 11:09 AM","This applies to alpha also","",""
+"281444541574414339","HadyDab#6004","20-Apr-20 11:10 AM","exactly","",""
+"281444541574414339","HadyDab#6004","20-Apr-20 11:10 AM","so the last digit is for alpha","",""
+"435049719803281420","un_poco_loco#7052","20-Apr-20 11:10 AM","Yes","",""
+"435049719803281420","un_poco_loco#7052","20-Apr-20 11:10 AM","Replacing 255 by zero means transparent","",""
+"435049719803281420","un_poco_loco#7052","20-Apr-20 11:10 AM","In the alpha","",""
+"435049719803281420","un_poco_loco#7052","20-Apr-20 11:11 AM","Am I wrong?","",""
+"281444541574414339","HadyDab#6004","20-Apr-20 11:11 AM","lolz","",""
+"281444541574414339","HadyDab#6004","20-Apr-20 11:11 AM","dude 255/255 = 0","",""
+"281444541574414339","HadyDab#6004","20-Apr-20 11:12 AM","so all you need to do is change it to 0","",""
+"435049719803281420","un_poco_loco#7052","20-Apr-20 11:12 AM","Wtf","",""
+"435049719803281420","un_poco_loco#7052","20-Apr-20 11:12 AM","255/255=1","",""
+"281444541574414339","HadyDab#6004","20-Apr-20 11:12 AM","yes","",""
+"281444541574414339","HadyDab#6004","20-Apr-20 11:12 AM","sorry","",""
+"281444541574414339","HadyDab#6004","20-Apr-20 11:12 AM","my bad","",""
+"281444541574414339","HadyDab#6004","20-Apr-20 11:12 AM","so change it to 1","",""
+"435049719803281420","un_poco_loco#7052","20-Apr-20 11:13 AM",":))) no problem","",""
+"435049719803281420","un_poco_loco#7052","20-Apr-20 11:13 AM","It happens to most of us at some point","",""
+"532225466128531486","ausloosL#2077","20-Apr-20 01:50 PM","How can I push my project 0 to the url on the specific branch? I always get an error.","",""
+"532225466128531486","ausloosL#2077","20-Apr-20 01:50 PM","I am doing something wrong","",""
+"701801498580877345","Meme#3813","20-Apr-20 06:58 PM","I downloaded Love 11.3 when the assignment and the demo didnt work i found out that i was supposed to download 10.2 how do i switch from 11.3 to 10.2 cause all the demos keep coming up as version 11.3","",""
+"255072032717406208","AlikeBrodie#5430","21-Apr-20 03:46 AM","after an hour i've only gotten pong-0 and 1 to work by changing the love.window.getPixelScale() to love.window.getDPIScale() but the rest are giving me a white screen","",""
+"255072032717406208","AlikeBrodie#5430","21-Apr-20 03:46 AM","i've tried solutions like dividing the values by 255, changing them all to 0, and using decimals but they all give the same result","",""
+"210614257648140310","Storm#6584","21-Apr-20 03:59 AM","Ello I am a rookie to all of this and I feel kind of dumb asking for help on the first assignment.... but I have been trying to get the game file to load onto love 0.10.2, it open the program but with the default nogame screen. I have tried loading it from sublime and also dragging the file into love. Is there something I am missing here? Or what am I doing wrong?","",""
+"210614257648140310","Storm#6584","21-Apr-20 04:39 AM","Nevermind, disregard this! I have figured out 😎","",""
+"410829263936421888","sebi#5402","21-Apr-20 04:41 AM","hello","",""
+"410829263936421888","sebi#5402","21-Apr-20 04:46 AM","(windows user here) For assignment 0 paragraph 2, I've dragged the assignment folder into my cmd however it states its not recognized as anything (its unzipped)(I've tried the directory where the files held and the assignment0 folder itself)","",""
+"210614257648140310","Storm#6584","21-Apr-20 04:49 AM","If you downloaded love, I zipped mine and renamed it as a .love it worked after that","",""
+"410829263936421888","sebi#5402","21-Apr-20 04:49 AM","intresting will try!","",""
+"262482689007943681","CratomicGames#8478","21-Apr-20 03:51 PM","im almost done with the assignment 0 but im dont know how to make a basic ai can someone help","",""
+"297442037051949056","Defne#8951","21-Apr-20 06:42 PM","@brian hi, i had a few questions if you could help me","",""
+"281971346613862400","MyNameIsDisco#8031","22-Apr-20 05:42 AM","for anyone on ubuntu: the package manager installs love 11.3, but the project runs with 10.2. Here is guidance to downgrade your version: https://davcri.github.io/posts/cs50-install-love2d-on-linux/","",""
+"409623218517704705","Thien#0976","22-Apr-20 08:31 AM","at the moment I'm at Pong5, but I'm wondering, Do I have to remember all the syntax, statements, ... of this track?
+I kind of feel a little intimidated","",""
+"262482689007943681","CratomicGames#8478","22-Apr-20 10:00 AM","everything seems alright to me but i dont know whats wrong","https://cdn.discordapp.com/attachments/661709026811183130/702413527251681360/unknown.png",""
+"110927293588729856","mattman111#5082","22-Apr-20 10:20 AM","Show code","",""
+"110927293588729856","mattman111#5082","22-Apr-20 10:24 AM","Anyone know a fix for when the ball hits a paddle vertically and it causes it to bounce around inside? Looking at the code, it shouldn't be happening but it is.","",""
+"262482689007943681","CratomicGames#8478","22-Apr-20 10:57 AM","","https://cdn.discordapp.com/attachments/661709026811183130/702427845942575134/SPOILER_unknown.png",""
+"110927293588729856","mattman111#5082","22-Apr-20 11:58 AM","You're asking it for ball.y in the function Paddle which doesn't require ball. In other words, you can not make that call in Paddlle.lua.","",""
+"262482689007943681","CratomicGames#8478","22-Apr-20 12:13 PM","im trying to make one of the paddles to move on its own","",""
+"684148178903236638","AwareTortoise#5386","22-Apr-20 01:44 PM","My copy of the distribution code crashes when I try to run it","https://cdn.discordapp.com/attachments/661709026811183130/702469773618970724/unknown.png",""
+"684148178903236638","AwareTortoise#5386","22-Apr-20 02:05 PM","Nevermind, the issue  is on line 101 of push.lua change getPixelScale to getDPIscale","",""
+"110927293588729856","mattman111#5082","22-Apr-20 02:57 PM","@CratomicGames You're over thinking it. You can make it move on its own with a special method. You can do that all in main.lua","",""
+"110927293588729856","mattman111#5082","22-Apr-20 02:57 PM","Where do I submit Pong? I completed this.","",""
+"409623218517704705","Thien#0976","23-Apr-20 01:19 AM","I don't know if I understand correctly","",""
+"409623218517704705","Thien#0976","23-Apr-20 01:19 AM","but I just add one simple line of code and I feel the problem is solved","",""
+"409623218517704705","Thien#0976","23-Apr-20 01:19 AM","how can I check if I've done it correctly?","",""
+"409623218517704705","Thien#0976","23-Apr-20 01:29 AM","and I find it easier to make it impossible to win, than possible to win","",""
+"409623218517704705","Thien#0976","23-Apr-20 01:54 AM","> @ElenitaDeTroyaEmperatrizDeBabia the track projects are graded pass/fail, so if you are sure that your pong game meets the requirements, you are free to add/change features.  Don't worry about not passing.
+@curiouskiwi I don't know if track projects were graded or not
+I submitted my pong folder, and all I get was this
+I'm a little worried because I kind of feel the way I implement pong track too simple to be true","https://cdn.discordapp.com/attachments/661709026811183130/702653627172651028/unknown.png",""
+"269227960156946454","GhostDragon#7128","23-Apr-20 01:57 AM","That is for all the tracks @Thien. At this point if you feel that your work is good enough to submit, then they will take your word for it. Also, these require a lot of user input so making test cases would be difficult","",""
+"409623218517704705","Thien#0976","23-Apr-20 01:58 AM","I tested, and player2 moves at its will","",""
+"393854278764068875","curiouskiwi#1671","23-Apr-20 01:58 AM","The tracks are graded pass/fail, as @GhostDragon says","",""
+"409623218517704705","Thien#0976","23-Apr-20 01:58 AM","but how are they graded?","",""
+"269227960156946454","GhostDragon#7128","23-Apr-20 01:58 AM","if you submit it, it gives you a 100 as the picture shows","",""
+"409623218517704705","Thien#0976","23-Apr-20 01:59 AM","so, submitting means pass?","",""
+"269227960156946454","GhostDragon#7128","23-Apr-20 01:59 AM","yes","",""
+"409623218517704705","Thien#0976","23-Apr-20 02:00 AM","I did try submitting the original distribution code, got the same result","",""
+"269227960156946454","GhostDragon#7128","23-Apr-20 02:00 AM","exactly","",""
+"269227960156946454","GhostDragon#7128","23-Apr-20 02:00 AM","as I said, you are at the point in the course where you would only be submitting it if you believe it is a good final product","",""
+"409623218517704705","Thien#0976","23-Apr-20 02:01 AM","can I discuss with you about what I did? I am a little concerned","",""
+"269227960156946454","GhostDragon#7128","23-Apr-20 02:01 AM","sure","",""
+"110927293588729856","mattman111#5082","23-Apr-20 05:22 AM","@Thien How did you submit it? I can't get pip to install through command prompt","",""
+"380203510349692928","serenai26#7065","23-Apr-20 06:22 AM","hi! I need help. I was following the video with the correct version of love but it cause an error (I was trying to print ""Hello Pong!"") and i'm using sublime text 3 to code","",""
+"409623218517704705","Thien#0976","23-Apr-20 08:03 AM","> @Thien How did you submit it? I can't get pip to install through command prompt
+@mattman111 I uploaded the whole pong folder onto CS50 IDE
+and then submit","",""
+"328966443213520896","Shade521#9460","23-Apr-20 03:49 PM","anyone know the solution to this?
+
+Im on pong-0 but the code just won't run in LOVE despite the fact of me using 0.10.2","",""
+"328966443213520896","Shade521#9460","23-Apr-20 03:50 PM","and I use Sublime 3 to view the code and edit it if need be
+
+[edit: here is a screenshot of what the software looks like when i try to run the main.lua for pong-0
+https://i.imgur.com/l3jlHmO.png]","",""
+"259440435880001536","Pardalis#3013","23-Apr-20 06:25 PM","how did you try to open it?","",""
+"328966443213520896","Shade521#9460","23-Apr-20 08:51 PM","i just opened the lua file in the file explorer","",""
+"328966443213520896","Shade521#9460","23-Apr-20 08:52 PM","and tried to run it that way","",""
+"409623218517704705","Thien#0976","23-Apr-20 09:47 PM","have anyone done pong?
+I'm kind of confused between WINDOW_WIDTH and VIRTUAL_WIDTH, WINDOW_HEIGHT and VIRTUAL_HEIGHT
+the ""WINDOW"" part is understandable, it creates a 1280x720 window
+but I can't imagine the ""VIRTUAL"" part
+432x243 is much smaller than 1280x720, why they look the same?
+and why do we have to do this? Just to make the word ""Hello Pong"" bigger?","",""
+"259440435880001536","Pardalis#3013","23-Apr-20 10:13 PM","@Shade521 try dragging the folder containing the main.lua file onto love2d","",""
+"328966443213520896","Shade521#9460","23-Apr-20 10:13 PM","okay, thanks","",""
+"259440435880001536","Pardalis#3013","23-Apr-20 10:15 PM","@Thien  the virtual window creates a smaller window (thus lesser resolution) and the push library upscales it to 1280x720. this is done to make it look more retro because of the lesser resolution","","👍 (1)"
+"409623218517704705","Thien#0976","23-Apr-20 10:17 PM","but later on, he keeps using virtual_height and virtual_width, now are they equal to 1280x720?","",""
+"259440435880001536","Pardalis#3013","24-Apr-20 12:56 AM","Nope, but they define the boundaries of the space in which the paddles and the ball exist. Essentially, everything is meant to be programmed in 432x243 and it could be displayed as such, but push allows you to not have a tiny window","",""
+"409623218517704705","Thien#0976","24-Apr-20 01:13 AM","so, even though I see a 1280x720 window, I'm actually programming in a 432x243 window, thanks to push, right?","",""
+"259440435880001536","Pardalis#3013","24-Apr-20 01:16 AM","you are programming in 432x243 and push allows you to display it in 1280x720, yes","","👍 (1)"
+"409623218517704705","Thien#0976","24-Apr-20 02:57 AM","so all my calculation relating to coordination will be based on 432x243, right?","",""
+"259440435880001536","Pardalis#3013","24-Apr-20 03:18 AM","yes","",""
+"409623218517704705","Thien#0976","24-Apr-20 03:18 AM","thanks so much","",""
+"702814360392695870","yuvraj singh patsariya#2769","24-Apr-20 11:55 AM","hello i am phasing that Error
+
+push.lua:101: attempt to call field 'getPixelScale' (a nil value)
+
+
+Traceback
+
+push.lua:101: in function 'initValues'
+push.lua:48: in function 'setupScreen'
+main.lua:42: in function 'load'
+[C]: in function 'xpcall'
+[C]: in function 'xpcall' 
+in Pong 1 
+how to fix it","",""
+"245862788163960832","Noxafrigus#7031","24-Apr-20 03:59 PM","love2d uses a different command in newer vesions","",""
+"245862788163960832","Noxafrigus#7031","24-Apr-20 03:59 PM","just change 'getPixelScale' to getDPIScale' and it should work","",""
+"609047455459311648","moonnn#5897","24-Apr-20 06:46 PM","can anyone tell me how the main.lua file is supposed to open up? the one we download from the assignment 0 link?","",""
+"609047455459311648","moonnn#5897","24-Apr-20 06:46 PM","for me it just shows error everytime i try","",""
+"156502137956859904","ElenitaDeTroyaEmperatrizDeBabia#2024","24-Apr-20 09:31 PM","Hello I have one question, i'm not so good using git so anyone could tell how can I do this, please? ""Using Git, push your work to https://github.com/me50/USERNAME.git, where USERNAME is your GitHub username, on a branch called games50/assignments/2020/x/0""","",""
+"216872147350454274","Suno#8888","24-Apr-20 09:31 PM","can .otf files be used by chance?","",""
+"156502137956859904","ElenitaDeTroyaEmperatrizDeBabia#2024","24-Apr-20 09:33 PM","> can .otf files be used by chance?
+@Suno I think so","",""
+"156502137956859904","ElenitaDeTroyaEmperatrizDeBabia#2024","24-Apr-20 09:33 PM","but i'm not sure","",""
+"216872147350454274","Suno#8888","24-Apr-20 09:34 PM","thnx","",""
+"216872147350454274","Suno#8888","24-Apr-20 09:51 PM","urr, when i open pong-2 in love.exe, it give me a blank white screen, anyone know what's going on?","",""
+"259440435880001536","Pardalis#3013","24-Apr-20 09:55 PM","you probably have the wrong version of love2d","",""
+"259440435880001536","Pardalis#3013","24-Apr-20 09:55 PM","you need 0.10.2","",""
+"216872147350454274","Suno#8888","24-Apr-20 09:56 PM","oh, no wonder","",""
+"156502137956859904","ElenitaDeTroyaEmperatrizDeBabia#2024","24-Apr-20 10:19 PM","you can change the param values","",""
+"156502137956859904","ElenitaDeTroyaEmperatrizDeBabia#2024","24-Apr-20 10:20 PM","at the version 11 only accepts 0-1 values, before 11 0-255 values","",""
+"156502137956859904","ElenitaDeTroyaEmperatrizDeBabia#2024","24-Apr-20 10:20 PM","use 255 to divide and get the new value or install 10.2 version","",""
+"156502137956859904","ElenitaDeTroyaEmperatrizDeBabia#2024","24-Apr-20 10:21 PM","however I think that you must submit the assignment using the deprecated methods","",""
+"216872147350454274","Suno#8888","24-Apr-20 10:23 PM","i just got the 10.2 versoin","",""
+"216872147350454274","Suno#8888","24-Apr-20 10:23 PM","this course started today right?","",""
+"156502137956859904","ElenitaDeTroyaEmperatrizDeBabia#2024","24-Apr-20 10:24 PM","I think it start when you inscribe on it","",""
+"216872147350454274","Suno#8888","24-Apr-20 10:25 PM","oh i see","",""
+"216872147350454274","Suno#8888","24-Apr-20 10:25 PM","and it's for how long?","",""
+"156502137956859904","ElenitaDeTroyaEmperatrizDeBabia#2024","24-Apr-20 10:27 PM","eehh 6-9 weeks? It is wrote, but I think is as fast as you want","",""
+"156502137956859904","ElenitaDeTroyaEmperatrizDeBabia#2024","24-Apr-20 10:27 PM","I mean you can take the time you want","",""
+"156502137956859904","ElenitaDeTroyaEmperatrizDeBabia#2024","24-Apr-20 10:28 PM","> Oh hello guys. I just started the course but I'm already having tough time due Love2D. I load the game and it gives me back this code: 
+> Error
+> 
+> push.lua:101: attempt to call field 'getPixelScale' (a nil value)
+> 
+> 
+> Traceback
+> 
+> push.lua:101: in function 'initValues'
+> push.lua:48: in function 'setupScreen'
+> main.lua:56: in function 'load'
+> [C]: in function 'xpcall'
+> [C]: in function 'xpcall'
+> 
+> How can i fix it?
+@Zarqus99 getPixelScale() is a deprecated function in LÖVE2Dv11.3","",""
+"156502137956859904","ElenitaDeTroyaEmperatrizDeBabia#2024","24-Apr-20 10:28 PM","now is called getDPIScale","",""
+"156502137956859904","ElenitaDeTroyaEmperatrizDeBabia#2024","24-Apr-20 10:28 PM","so","",""
+"156502137956859904","ElenitaDeTroyaEmperatrizDeBabia#2024","24-Apr-20 10:29 PM","change the function name everywhere it appears or install v10.2","",""
+"156502137956859904","ElenitaDeTroyaEmperatrizDeBabia#2024","24-Apr-20 10:29 PM","I recommend you to install v10.2 because you don't have to change anything and it becomes anoying","",""
+"156502137956859904","ElenitaDeTroyaEmperatrizDeBabia#2024","24-Apr-20 10:29 PM","and when you submit your assignment you don't have to change anything","",""
+"269930695831322639","Zarqus99#4886","24-Apr-20 10:30 PM","Oh ok thank you","",""
+"393854278764068875","curiouskiwi#1671","24-Apr-20 10:32 PM","> Oh hello guys. I just started the course but I'm already having tough time due Love2D. 
+@Zarqus99 
+This channel is for the games track in CS50x (which is weeks 9-10).  Do you mean that you just started CS50x or are you taking CS50 Intro to Game Dev?  If that's the case please post in #cs50-games as that is an entirely different course.","",""
+"269930695831322639","Zarqus99#4886","24-Apr-20 10:33 PM","I'm talking about CS50 Intro to Game Dev. Then sorry I'm deleting the message","",""
+"315617109331804160","Perrosky.cl#3707","25-Apr-20 01:56 AM","ay no worries Zarqus I've been browsing this channel for a week and just realized I'm in the same course as you lol","",""
+"701595636008615996","M4rcosM#3856","26-Apr-20 04:22 AM","Does anybody kown how submit pong project using git for windows?","",""
+"380203510349692928","serenai26#7065","26-Apr-20 05:36 AM","I got an error that says no 'push'  in LOVE game directories. does it mean I have to redownload the version or is there another way to get it?","",""
+"273752327595229185","DEADSHOTv#1540","26-Apr-20 09:27 AM","i got this please help me to solve this😩","https://cdn.discordapp.com/attachments/661709026811183130/703854643616284833/ddddd.PNG",""
+"216818987701501962","heX#5289","27-Apr-20 05:18 AM","@M4rcosM open cs50 ide in your browser, click on file > upload local files, select your pong folder to upload, then go into the newly uploaded pong directory and run submit50 command","",""
+"216818987701501962","heX#5289","27-Apr-20 05:19 AM","@serenai26 the push file has to be inside the pong directory where your main.lua file is","",""
+"216818987701501962","heX#5289","27-Apr-20 05:20 AM","@DEADSHOTv what did you write on the first line of Ball.lua?","",""
+"297442037051949056","Defne#8951","27-Apr-20 04:45 PM","hello, can anyone explain to me why does 'negative' in pong goes up and 'positive' goes down?","",""
+"297442037051949056","Defne#8951","27-Apr-20 04:45 PM","shouldn't it be the other way around like in a coordinate system","",""
+"245862788163960832","Noxafrigus#7031","27-Apr-20 04:51 PM","think of coordinates in coding as being in the 4th quadrant of a cartesian plane","",""
+"245862788163960832","Noxafrigus#7031","27-Apr-20 04:51 PM","so positive y is down and positive x is right","",""
+"245862788163960832","Noxafrigus#7031","27-Apr-20 04:53 PM","so 0,0 is the top left of your screen","",""
+"216750508700991490","Jayden#0466","27-Apr-20 04:54 PM","bruh wrong channel","",""
+"573125269121007636","Chandler_Mosby#3493","27-Apr-20 04:54 PM","@Noxafrigus isn't the 0,0 coordinate on the top left of the window?","",""
+"216750508700991490","Jayden#0466","27-Apr-20 04:54 PM","#cs50-games for the pong assignment","",""
+"245862788163960832","Noxafrigus#7031","27-Apr-20 04:57 PM","yeah top left sorry","",""
+"245862788163960832","Noxafrigus#7031","27-Apr-20 04:57 PM","my bad","",""
+"297442037051949056","Defne#8951","27-Apr-20 04:59 PM","@Noxafrigus why is it like that tho?","",""
+"245862788163960832","Noxafrigus#7031","27-Apr-20 05:00 PM","I'm not the person to ask sorry","",""
+"245862788163960832","Noxafrigus#7031","27-Apr-20 05:01 PM","I dont bother trying to find out why with coding","",""
+"245862788163960832","Noxafrigus#7031","27-Apr-20 05:01 PM","all you need to know for now is how things work not why","",""
+"245862788163960832","Noxafrigus#7031","27-Apr-20 05:01 PM","would be interesting to research though","",""
+"297442037051949056","Defne#8951","27-Apr-20 05:03 PM","oh okay","",""
+"297442037051949056","Defne#8951","27-Apr-20 05:03 PM","do you know why this isn't working","https://cdn.discordapp.com/attachments/661709026811183130/704331857935859772/unknown.png",""
+"297442037051949056","Defne#8951","27-Apr-20 05:03 PM","the paddles aren't moving","",""
+"573125269121007636","Chandler_Mosby#3493","27-Apr-20 05:04 PM","@Defne can you send the error displayed on compiling?","",""
+"297442037051949056","Defne#8951","27-Apr-20 05:05 PM","it doesn't give an error","",""
+"297442037051949056","Defne#8951","27-Apr-20 05:05 PM","it just doesn't move","",""
+"573125269121007636","Chandler_Mosby#3493","27-Apr-20 05:05 PM","oh, wait","",""
+"297442037051949056","Defne#8951","27-Apr-20 05:05 PM","maybe i need the paddle document","",""
+"297442037051949056","Defne#8951","27-Apr-20 05:05 PM","within the folder","",""
+"297442037051949056","Defne#8951","27-Apr-20 05:05 PM","but he doesn't seem to use that in the lecture","",""
+"245862788163960832","Noxafrigus#7031","27-Apr-20 05:06 PM","which version are you working on","",""
+"245862788163960832","Noxafrigus#7031","27-Apr-20 05:06 PM","Pong 3?","",""
+"573125269121007636","Chandler_Mosby#3493","27-Apr-20 05:06 PM","compare every line of your main along with the cs50's main","",""
+"297442037051949056","Defne#8951","27-Apr-20 05:07 PM","im just watching the lecture and trying to code it without looking","",""
+"297442037051949056","Defne#8951","27-Apr-20 05:07 PM","so i can remember and understanding the logic","",""
+"297442037051949056","Defne#8951","27-Apr-20 05:07 PM","i guess","",""
+"297442037051949056","Defne#8951","27-Apr-20 05:07 PM","@Chandler_Mosby let me check","",""
+"245862788163960832","Noxafrigus#7031","27-Apr-20 05:07 PM","Do you have classes for your code or not yet?","",""
+"297442037051949056","Defne#8951","27-Apr-20 05:08 PM","the downloadable assignment 0 folder and the lecture isn't exactly the same","",""
+"297442037051949056","Defne#8951","27-Apr-20 05:08 PM","not yet","",""
+"245862788163960832","Noxafrigus#7031","27-Apr-20 05:08 PM","ok","",""
+"245862788163960832","Noxafrigus#7031","27-Apr-20 05:08 PM","I dont know what the problem would be then that is stopping the paddles from moving","",""
+"297442037051949056","Defne#8951","27-Apr-20 05:08 PM","im in pong 3 bt","",""
+"297442037051949056","Defne#8951","27-Apr-20 05:08 PM","w","",""
+"245862788163960832","Noxafrigus#7031","27-Apr-20 05:09 PM","Try removing the spaces between the lines of code and the 'end'","",""
+"245862788163960832","Noxafrigus#7031","27-Apr-20 05:10 PM","","https://cdn.discordapp.com/attachments/661709026811183130/704333554322243675/code.PNG",""
+"245862788163960832","Noxafrigus#7031","27-Apr-20 05:10 PM","So that the vertical dotted lines always finish with an 'end' instead of a space then 'end'","",""
+"297442037051949056","Defne#8951","27-Apr-20 05:10 PM","I did, didn't work","",""
+"245862788163960832","Noxafrigus#7031","27-Apr-20 05:10 PM","Hmm I got no more ideas then","",""
+"245862788163960832","Noxafrigus#7031","27-Apr-20 05:11 PM","because that code their works for me on Pong 3","",""
+"573125269121007636","Chandler_Mosby#3493","27-Apr-20 05:11 PM","I would suggest go one to pong 4 and see if the problem persists","",""
+"573125269121007636","Chandler_Mosby#3493","27-Apr-20 05:11 PM","on*","",""
+"297442037051949056","Defne#8951","27-Apr-20 05:11 PM","wait","",""
+"297442037051949056","Defne#8951","27-Apr-20 05:12 PM","i think i haven't assigned the rectangles to player 1 and player 2","",""
+"297442037051949056","Defne#8951","27-Apr-20 05:12 PM","but i followed the lecture quite closely i have no idea how i missed that","",""
+"297442037051949056","Defne#8951","27-Apr-20 05:12 PM","if that's a thing","",""
+"573125269121007636","Chandler_Mosby#3493","27-Apr-20 05:12 PM","haha, that could be the reason. Try it.","",""
+"245862788163960832","Noxafrigus#7031","27-Apr-20 05:13 PM","Yeah that is probably it","",""
+"245862788163960832","Noxafrigus#7031","27-Apr-20 05:14 PM","you need to have drawn the rectangles and then named them","",""
+"297442037051949056","Defne#8951","27-Apr-20 05:14 PM","i did draw them","",""
+"297442037051949056","Defne#8951","27-Apr-20 05:14 PM","but he doesn't name them in the lecture either","",""
+"297442037051949056","Defne#8951","27-Apr-20 05:14 PM","","https://cdn.discordapp.com/attachments/661709026811183130/704334776869322772/unknown.png",""
+"297442037051949056","Defne#8951","27-Apr-20 05:15 PM","i feel so dumb","",""
+"245862788163960832","Noxafrigus#7031","27-Apr-20 05:15 PM","I dont know why they arent named there","",""
+"245862788163960832","Noxafrigus#7031","27-Apr-20 05:15 PM","*love.graphics.rectangle('fill', 10, player1Y, 5, 20)*","",""
+"245862788163960832","Noxafrigus#7031","27-Apr-20 05:15 PM","Should have a line like that for the first rectangle","",""
+"297442037051949056","Defne#8951","27-Apr-20 05:15 PM","oh","",""
+"297442037051949056","Defne#8951","27-Apr-20 05:16 PM","thank youuuu","",""
+"245862788163960832","Noxafrigus#7031","27-Apr-20 05:16 PM","Just so you can see where their label is meant to be","",""
+"245862788163960832","Noxafrigus#7031","27-Apr-20 05:16 PM","I should work now that they are labelled","",""
+"245862788163960832","Noxafrigus#7031","27-Apr-20 05:17 PM","It*","",""
+"297442037051949056","Defne#8951","27-Apr-20 05:19 PM","@Noxafrigus thank you!!! it's working","",""
+"245862788163960832","Noxafrigus#7031","27-Apr-20 05:20 PM","I'm happy it's working for you now 🙂","",""
+"297442037051949056","Defne#8951","27-Apr-20 05:20 PM","i was thinking, how did i miss such a big step like that","",""
+"245862788163960832","Noxafrigus#7031","27-Apr-20 05:21 PM","I am wondering how it worked without the objects being named?","",""
+"245862788163960832","Noxafrigus#7031","27-Apr-20 05:21 PM","Must have been a few more lines for the older versions of LOVE","",""
+"297442037051949056","Defne#8951","27-Apr-20 05:21 PM","probably, I have no idea","",""
+"297442037051949056","Defne#8951","27-Apr-20 05:21 PM","not great at this coding stuff","",""
+"355351425301086219","iSpy_u#2142","27-Apr-20 05:22 PM","Can someone help me I am new to lua and love2d","",""
+"245862788163960832","Noxafrigus#7031","27-Apr-20 05:22 PM","Yeah sure","",""
+"245862788163960832","Noxafrigus#7031","27-Apr-20 05:22 PM","What do you need","",""
+"355351425301086219","iSpy_u#2142","27-Apr-20 05:22 PM","I have a .lua file","",""
+"355351425301086219","iSpy_u#2142","27-Apr-20 05:23 PM","I want to run it in love","",""
+"355351425301086219","iSpy_u#2142","27-Apr-20 05:23 PM","What should I do","",""
+"245862788163960832","Noxafrigus#7031","27-Apr-20 05:23 PM","Ahh ok","",""
+"245862788163960832","Noxafrigus#7031","27-Apr-20 05:23 PM","So you need to drag the folder containing the .lua file on to the love app","",""
+"245862788163960832","Noxafrigus#7031","27-Apr-20 05:23 PM","thats the easiest way","",""
+"245862788163960832","Noxafrigus#7031","27-Apr-20 05:24 PM","Basically run whatever is in that folder using love","",""
+"245862788163960832","Noxafrigus#7031","27-Apr-20 05:25 PM","You can use a console to run it too which is quicker once you get used to it","",""
+"355351425301086219","iSpy_u#2142","27-Apr-20 05:25 PM","Let me try","",""
+"355351425301086219","iSpy_u#2142","27-Apr-20 05:26 PM","@Noxafrigus oh ya","",""
+"355351425301086219","iSpy_u#2142","27-Apr-20 05:26 PM","It worked","",""
+"355351425301086219","iSpy_u#2142","27-Apr-20 05:26 PM","Thanks man","",""
+"245862788163960832","Noxafrigus#7031","27-Apr-20 05:26 PM","Ok cool","",""
+"245862788163960832","Noxafrigus#7031","27-Apr-20 05:27 PM","No problem","",""
+"297442037051949056","Defne#8951","27-Apr-20 05:30 PM","@Noxafrigus how do you use console to open lua files in love?","",""
+"245862788163960832","Noxafrigus#7031","27-Apr-20 05:34 PM","Nah I just have some explorer windows open on my other monitor","",""
+"245862788163960832","Noxafrigus#7031","27-Apr-20 05:34 PM","I should learn to use the console to open lua files though","",""
+"297442037051949056","Defne#8951","27-Apr-20 05:54 PM","@Noxafrigus i'm having problems again :(","",""
+"355351425301086219","iSpy_u#2142","27-Apr-20 07:57 PM","Can someone help me with this plzzzzz","https://cdn.discordapp.com/attachments/661709026811183130/704375639230251029/err1.JPG",""
+"573125269121007636","Chandler_Mosby#3493","27-Apr-20 09:03 PM","@iSpy_u download the latest version of push from the link. Also, I am going to assume that you're using Love2d's latest version as well, so open the 'push.lua' file, and change 'getPixelScale' to 'getDPIScale'","",""
+"573125269121007636","Chandler_Mosby#3493","27-Apr-20 09:04 PM","or if it is written in the form -","",""
+"573125269121007636","Chandler_Mosby#3493","27-Apr-20 09:04 PM","""getPixelScale or getDPIScale"" then delete the pixelscale part","",""
+"573125269121007636","Chandler_Mosby#3493","27-Apr-20 09:04 PM","let me know if it works!","",""
+"573125269121007636","Chandler_Mosby#3493","27-Apr-20 09:28 PM","anyone on pong 6?","",""
+"573125269121007636","Chandler_Mosby#3493","27-Apr-20 09:31 PM","I am facing an issue, when compile the code, the home screen(the start gamestate) opens up, and i get every component, but when i press enter to change the state to 'play', I get an error saying that in the 'ball.lua' file, under the 'update' function, the 'dx' is a nil value","",""
+"573125269121007636","Chandler_Mosby#3493","27-Apr-20 09:31 PM","which, i have declared, though.","",""
+"573125269121007636","Chandler_Mosby#3493","27-Apr-20 09:31 PM","if anyone understands my problem, do let me know, I'll send screenshots as well.","",""
+"573125269121007636","Chandler_Mosby#3493","27-Apr-20 09:31 PM","Thanks!","",""
+"573125269121007636","Chandler_Mosby#3493","27-Apr-20 09:40 PM","here's the comparison of my code, and the one from github. on the right is mine.","https://cdn.discordapp.com/attachments/661709026811183130/704401526034268300/dx_nil_argument.PNG",""
+"573125269121007636","Chandler_Mosby#3493","27-Apr-20 09:40 PM","this is the error","https://cdn.discordapp.com/attachments/661709026811183130/704401650302844998/error.PNG",""
+"573125269121007636","Chandler_Mosby#3493","27-Apr-20 09:44 PM","um, nevermind *facepalm*","",""
+"409623218517704705","Thien#0976","27-Apr-20 10:46 PM","so what happened to your code?","",""
+"704441248634896477","Scoop#6830","28-Apr-20 01:36 AM","mac user here having trouble getting my assignment to run in LOVE 10.2. Every time i drag the folder over to the application i get the ""No game"" screen. What am i mssing?","",""
+"380203510349692928","serenai26#7065","28-Apr-20 12:55 PM","Doing pong-3 right now, I am having troubles with the love.keyboard.isDown
+
+here's the part of the code for the paddle movement:
+
+if love.keyboard.isDown('w') then
+        player1Y = player1Y + -PADDLE_SPEED * dt
+    elseif love.keyboard.isDown('s') then
+        player1Y = player1Y + PADDLE_SPEED * dt
+    end
+
+    -- player 2 movement
+    if love.keyboard.isDown('up') then
+        player2Y = player2Y + -PADDLE_SPEED * dt
+    elseif love.keyboard.isDown('down') then
+        player2Y = player2Y + PADDLE_SPEED * dt
+    end
+
+when I try to open pong-3, the screen shows up but the paddles don't move when I press the assigned keys
+
+am I missing something else?","",""
+"245862788163960832","Noxafrigus#7031","28-Apr-20 02:23 PM","The problem is most likely that when you have drawn the paddles, they haven't been named to work with their corresponding functions","",""
+"245862788163960832","Noxafrigus#7031","28-Apr-20 02:23 PM","make sure that the player1Y and player2Y are also the names of the paddles","",""
+"245862788163960832","Noxafrigus#7031","28-Apr-20 02:24 PM","*love.graphics.rectangle('fill', 10, player1Y, 5, 20)*","",""
+"245862788163960832","Noxafrigus#7031","28-Apr-20 02:24 PM","Have something like that","",""
+"703906393903857736","chuinzer#6740","28-Apr-20 02:57 PM","https://youtu.be/IqoeNUnyOPc","",""
+"703906393903857736","chuinzer#6740","28-Apr-20 02:58 PM","maybe you guys can check it out","",""
+"632328951443881986","Kratos#2943","29-Apr-20 08:29 AM","In pong-3, dt what is exactly?","",""
+"296776163072671756","viices#6125","29-Apr-20 05:00 PM","@Kratos
+dt is deltatime, the elapsed time in seconds from one frame to the next","",""
+"632328951443881986","Kratos#2943","29-Apr-20 10:28 PM","guys, any way to debug in visual studio code, with lua and love2d?","",""
+"362697042528567298","Resilienza#0532","29-Apr-20 10:39 PM","Hello Everyone I am on baby steps over here,but what exactly this means
+
+LÖVE can load a game in two ways:
+
+    From a folder that contains a main.lua file.
+
+    From a .love file that has a main.lua file in the top-most directory level (aka root) / To create a .love-file you have to create a zip file of the whole game directory. Make sure that your main.lua is in the root of the archive, e.g. if you have
+
+Also do I need to download Lua or can I just keep with Command Prompt and notepad","",""
+"583103829285797888","Lipheria#2461","29-Apr-20 10:59 PM","Hey guys, does anyone know how to implement the AI controlled paddle in Pong","","💯 (1)"
+"168856034138390528","Napoopan Totallatot, Worm King#3698","30-Apr-20 12:13 AM","theres quite a few ways to go about it","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","30-Apr-20 12:13 AM","whatre you trying to do","",""
+"584088898016116743","Knightsmen#7608","30-Apr-20 12:32 AM","Does anybody run into a problem where the **.love** command doesn’t work in Mac","",""
+"632328951443881986","Kratos#2943","30-Apr-20 01:11 AM","> Hey guys, does anyone know how to implement the AI controlled paddle in Pong
+@Lipheria yes indeed, i test two of them","",""
+"583103829285797888","Lipheria#2461","30-Apr-20 01:12 AM","How do you do it","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","30-Apr-20 01:12 AM","i used a state machine for mine","",""
+"632328951443881986","Kratos#2943","30-Apr-20 01:14 AM","first you must choise cpu or player","",""
+"632328951443881986","Kratos#2943","30-Apr-20 01:15 AM","then, you must evaluate if you are playing with cpu's role then, you could move the paddle to the ball.y position, but with paddle.dy","",""
+"632328951443881986","Kratos#2943","30-Apr-20 01:16 AM","because if you assing paddle.y = ball.y is not correct because you have PADDLE_SPEED","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","30-Apr-20 01:16 AM","Ill show some pics of my game to demonstrate how mine does it","",""
+"632328951443881986","Kratos#2943","30-Apr-20 01:17 AM","or you can predict the future position of the ball and move the paddle there","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","30-Apr-20 01:17 AM","","https://cdn.discordapp.com/attachments/661709026811183130/705180877335953449/unknown.png",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","30-Apr-20 01:17 AM","","https://cdn.discordapp.com/attachments/661709026811183130/705180915835338883/unknown.png",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","30-Apr-20 01:17 AM","","https://cdn.discordapp.com/attachments/661709026811183130/705180985498796163/unknown.png",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","30-Apr-20 01:18 AM","if the ball is going away from it, it gravitates towards the middle within a random margin of error","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","30-Apr-20 01:18 AM","if the ball is going towards it, it calculates the distance from the trajectory line and moves towards it","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","30-Apr-20 01:18 AM","when the distance is sub-MIN_DISTANCE then it stops, and sets its state to 'aimed'","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","30-Apr-20 01:19 AM","the going to the center is to make it winnable, as when the ball picks up enough speed itll start to be too slow to keep up","",""
+"698137183793709068","bruhmastir#6077","30-Apr-20 06:44 AM","> Hello Everyone I am on baby steps over here,but what exactly this means
+> 
+> LÖVE can load a game in two ways:
+> 
+>     From a folder that contains a main.lua file.
+> 
+>     From a .love file that has a main.lua file in the top-most directory level (aka root) / To create a .love-file you have to create a zip file of the whole game directory. Make sure that your main.lua is in the root of the archive, e.g. if you have
+> 
+> Also do I need to download Lua or can I just keep with Command Prompt and notepad
+@Resilienza  see first when you have downloaded love2d, and text editor (you can use notepad as i think but you can download if you want because it helps you find errors in many ways though never directly)
+
+now you have to start  doing the code. you can copy from the source code which is given. please note that i haven't done the CS50X so i am telling you from what i did in the CS50G which i think is the same about games. you said you are just starting so it will only be 1 file in pong-0 which is main.lua. you have to make a zip file containing the main file and change the file extension of the zip file to .love then just open it and you have your game starting","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","30-Apr-20 06:48 AM","imo the easiest way to work with love2d is to use visual studio and download the love2d extension","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","30-Apr-20 06:48 AM","just alt+l and youre in your program","",""
+"412105925667586068","kup#8138","30-Apr-20 07:41 AM","","https://cdn.discordapp.com/attachments/661709026811183130/705277575173505064/IMG_20200430_114058205.jpg",""
+"412105925667586068","kup#8138","30-Apr-20 07:41 AM","Why is there an error on line 4?","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","30-Apr-20 07:42 AM","seems like youre feeding it nil","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","30-Apr-20 07:42 AM","wait","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","30-Apr-20 07:43 AM","that should still work though so that probably isnt it","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","30-Apr-20 07:43 AM","What's happening at line 29 in main?","",""
+"412105925667586068","kup#8138","30-Apr-20 07:44 AM","","https://cdn.discordapp.com/attachments/661709026811183130/705278304315244584/JPEG_20200430_114408.jpg",""
+"412105925667586068","kup#8138","30-Apr-20 07:44 AM","Line 29 should be normal","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","30-Apr-20 07:44 AM","I cant tell which is 29, nor what that even says lol","",""
+"412105925667586068","kup#8138","30-Apr-20 07:44 AM","Wait I'll take new photo","",""
+"412105925667586068","kup#8138","30-Apr-20 07:45 AM","","https://cdn.discordapp.com/attachments/661709026811183130/705278533152538654/IMG_20200430_114457005.jpg",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","30-Apr-20 07:46 AM","Honestly im not sure","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","30-Apr-20 07:46 AM","What happens if you comment out self.y = y, as well as the other mentions of self.y?","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","30-Apr-20 07:47 AM","Oops, i mean self.x","",""
+"412105925667586068","kup#8138","30-Apr-20 07:48 AM","wdym","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","30-Apr-20 07:48 AM","I figured it out, youve done  Ball.init","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","30-Apr-20 07:48 AM","not Ball:init","",""
+"412105925667586068","kup#8138","30-Apr-20 07:48 AM","silly me","",""
+"412105925667586068","kup#8138","30-Apr-20 07:48 AM","haha","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","30-Apr-20 07:49 AM","Very cryptic error message","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","30-Apr-20 07:49 AM","Didnt really give direction on what went wrong lol","",""
+"412105925667586068","kup#8138","30-Apr-20 07:50 AM","thanks","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","30-Apr-20 07:50 AM","np, good luck","",""
+"521619822547566593","DrGuano#9842","30-Apr-20 08:47 AM","can someone eplains this to me in detail? Do i always have to type in os.time() to get the current time regardless of whichever time zone i'm at?","https://cdn.discordapp.com/attachments/661709026811183130/705294163549356113/unknown.png",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","30-Apr-20 08:49 AM","os.time() returns the time elapsed since 00:00:00 January 1st 1970","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","30-Apr-20 08:49 AM","aka epoch time","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","30-Apr-20 08:50 AM","You call that just so that the value being put in to generate a random seed is always different, its like a seed for your seed","",""
+"521619822547566593","DrGuano#9842","30-Apr-20 08:54 AM","so it goes all the way back to 1970? But the main variable we use here is the time in seconds right?","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","30-Apr-20 08:55 AM","Not sure exactly what format it returns the time in, all i know is that os.time returns epoch time in some format","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","30-Apr-20 08:56 AM","And you give it to math.randomseed() so that the value is different every time","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","30-Apr-20 08:56 AM","Because generating something random requires a seed, including getting a random seed","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","30-Apr-20 08:57 AM","Also, according to google, epoch time is in fact the number of *seconds* that have passed since January 1st 1970","",""
+"521619822547566593","DrGuano#9842","30-Apr-20 08:58 AM","alright thanks for the info, it was helpful","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","30-Apr-20 08:58 AM","Np, i had to ask my dad about it lol","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","30-Apr-20 08:59 AM","When i saw it in the video originally, that is","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","30-Apr-20 08:59 AM","Has something to do with Unix epoch, blah blah human convention","",""
+"521619822547566593","DrGuano#9842","30-Apr-20 12:19 PM","Could anyone tell me what this means? It's taking two arguments between 1 and 2 right? I'm also not sure why the ""and/or"" is used here?","https://cdn.discordapp.com/attachments/661709026811183130/705347700853440512/unknown.png",""
+"521619822547566593","DrGuano#9842","30-Apr-20 12:41 PM","it says that the reason for using the 'and/or' is to perform a ternary operation which means 'taking three arguments'","https://cdn.discordapp.com/attachments/661709026811183130/705353144640602132/unknown.png",""
+"521619822547566593","DrGuano#9842","30-Apr-20 12:42 PM","I'm not sure what these three arguments are exactly","",""
+"412105925667586068","kup#8138","30-Apr-20 02:03 PM","@DrGuano it's just lua syntax","",""
+"412105925667586068","kup#8138","30-Apr-20 02:03 PM","I mean ""and"" and ""or"" are lua syntax","",""
+"412105925667586068","kup#8138","30-Apr-20 02:04 PM","It means the value will be 100 or -100","",""
+"521619822547566593","DrGuano#9842","30-Apr-20 02:17 PM","hmmm then can't I just write this syntax instead? @kup","https://cdn.discordapp.com/attachments/661709026811183130/705377350313050222/unknown.png",""
+"521619822547566593","DrGuano#9842","30-Apr-20 02:19 PM","oh wait so you're saying we're either taking two values , ""100"" or ""-100"", no values in between?","",""
+"564058717881106452","Star Platinum#4540","30-Apr-20 02:27 PM","The ball checks every frame if the destination is blocked, right?","",""
+"564058717881106452","Star Platinum#4540","30-Apr-20 02:27 PM","So if it goes fast enough, it goes straight through the paddle","",""
+"412105925667586068","kup#8138","30-Apr-20 03:52 PM","@DrGuano yes","",""
+"412105925667586068","kup#8138","30-Apr-20 03:52 PM","It take either -100 or 100","",""
+"412105925667586068","kup#8138","30-Apr-20 03:52 PM","no values between","",""
+"412105925667586068","kup#8138","30-Apr-20 03:52 PM","The syntax below","",""
+"412105925667586068","kup#8138","30-Apr-20 03:52 PM","Take from -50 to 50","",""
+"412105925667586068","kup#8138","30-Apr-20 03:53 PM","It can be like -50 -49 -48 ... 49 50","",""
+"259440435880001536","Pardalis#3013","30-Apr-20 04:20 PM","@DrGuano  I had trouble with that syntax too, but it can be read ""if math.random(2) is equal to 1, ballDX is equal to 100, else it is equal to -100""","",""
+"521619822547566593","DrGuano#9842","30-Apr-20 04:23 PM","oh i see thanks guys for the clarification","",""
+"259440435880001536","Pardalis#3013","30-Apr-20 04:24 PM","np","",""
+"297442037051949056","Defne#8951","30-Apr-20 06:38 PM","anyone know another way to submit the video screencast other than youtube? or do we have to post it on youtube","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","30-Apr-20 06:44 PM","And or is the same as ? x : y","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","30-Apr-20 06:44 PM","@Defne video?","",""
+"297442037051949056","Defne#8951","30-Apr-20 06:45 PM","Record a 1- to 5-minute screencast in which you demonstrate your app’s functionality and/or walk viewers through your code. Upload that video to YouTube (as unlisted or public, but not private) or somewhere else. @Napoopan Totallatot, Worm King","",""
+"297442037051949056","Defne#8951","30-Apr-20 06:45 PM","do I have to do this?","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","30-Apr-20 06:45 PM","Where are you reading this","",""
+"297442037051949056","Defne#8951","30-Apr-20 06:45 PM","https://docs.cs50.net/games/2020/x/assignments/0/assignment0.html","",""
+"297442037051949056","Defne#8951","30-Apr-20 06:45 PM","under how to submit","",""
+"297442037051949056","Defne#8951","30-Apr-20 06:46 PM","i'm guessing that its not necessary if you don't know what this is","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","30-Apr-20 06:46 PM","That's for CS50G","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","30-Apr-20 06:47 PM","If you're in the X games track, I don't think you need to","",""
+"297442037051949056","Defne#8951","30-Apr-20 06:47 PM","what do you mean by X games track?","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","30-Apr-20 06:47 PM","CS50X","",""
+"297442037051949056","Defne#8951","30-Apr-20 06:47 PM","oh","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","30-Apr-20 06:47 PM","Introduction to computer science","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","30-Apr-20 06:47 PM","Rather than CS50G, introduction to game design","",""
+"297442037051949056","Defne#8951","30-Apr-20 06:47 PM","oh i'm in CS50G","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","30-Apr-20 06:47 PM","Well then yeah you have to do that","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","30-Apr-20 06:48 PM","And also #cs50-games","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","30-Apr-20 06:48 PM","This set of channels is CS50X, that one is G specific","",""
+"297442037051949056","Defne#8951","30-Apr-20 06:48 PM","oh","",""
+"297442037051949056","Defne#8951","30-Apr-20 06:48 PM","sorry then","",""
+"297442037051949056","Defne#8951","30-Apr-20 06:48 PM","thank you!","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","30-Apr-20 06:48 PM","Youre good, good luck","",""
+"297442037051949056","Defne#8951","30-Apr-20 07:23 PM","@Napoopan Totallatot, Worm King hey, i have a question about pushing the assignment to github if you know how to","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","30-Apr-20 07:23 PM","I haven't used GitHub in a long time, for CS50x you can upload to its online IDE and submit50, but I don't think you can do that for yours","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","30-Apr-20 07:24 PM","I'd look up git tutorials","",""
+"297442037051949056","Defne#8951","30-Apr-20 07:26 PM","@Napoopan Totallatot, Worm King i just can't find how to upload the file to a certain branch, it says make sure you upload it to games50/assignments/2020/x/0.","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","30-Apr-20 07:27 PM","Well heck, I don't know how to do that lol","",""
+"297442037051949056","Defne#8951","30-Apr-20 07:27 PM","okay thank u :)","",""
+"414816448867729418","█▬█ █ ▀█▀#1920","30-Apr-20 07:45 PM","this is the error i get with pong-1","https://cdn.discordapp.com/attachments/661709026811183130/705459868282126406/unknown.png",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","30-Apr-20 08:11 PM","did you actually download push?","",""
+"472156217297600512","XiaoBao13#7146","30-Apr-20 11:04 PM","Hey, I have edited my pong game with sublime text 3 and downloaded love2d. I looked at the wiki on how to open the program with the file and it opens it just does a white screen :( . The fps counter is there and it works too, just all it does is show a white screen. Even the original file that came directly from GitHub didn't work. Does anyone know how to help me?","",""
+"259440435880001536","Pardalis#3013","30-Apr-20 11:05 PM","update the push file or download love 0.10.2","",""
+"472156217297600512","XiaoBao13#7146","30-Apr-20 11:06 PM","How do I check the version? I just downloaded everything an hour ago.","",""
+"472156217297600512","XiaoBao13#7146","30-Apr-20 11:07 PM","And how do you update the push file?","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","30-Apr-20 11:07 PM","Its doing exactly what its supposed to do","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","30-Apr-20 11:07 PM","Go to the love.graphics.clear(...) line and divide all 4 values by 255","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","30-Apr-20 11:07 PM","@XiaoBao13","",""
+"472156217297600512","XiaoBao13#7146","30-Apr-20 11:08 PM","Thanks I'll try that!! :)","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","30-Apr-20 11:08 PM","Lua has a weird thing where color values are stored as 0.0 to 1.0 floats, the videos mention it, weird system","",""
+"472156217297600512","XiaoBao13#7146","30-Apr-20 11:15 PM","@Napoopan Totallatot, Worm King so you would put the first few digits or the whole thing?","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","30-Apr-20 11:16 PM","```love.graphics.clear(40 / 255, 45 / 255, 52 / 255, 255 / 255)```","",""
+"472156217297600512","XiaoBao13#7146","30-Apr-20 11:16 PM","Thanks!!","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","30-Apr-20 11:16 PM","Np, that had oughta make it a gray-blueish background","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","30-Apr-20 11:16 PM","The FPS draws over it because its green and being rendered after the white","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","30-Apr-20 11:16 PM","You cant see paddles or anything because theyre also white","",""
+"472156217297600512","XiaoBao13#7146","30-Apr-20 11:17 PM","I figured that.","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","30-Apr-20 11:17 PM","Kinda odd that it allows itself to take values greater than 1","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","30-Apr-20 11:17 PM","Yes, let us render a background that is SUPER white, 255x the maximum value","",""
+"380203510349692928","serenai26#7065","01-May-20 05:36 AM","is it normal to get ""nil"" for pong-5? I cant seem to figure the error after checking the video XP
+The ball doesn't move anymore after implementing the ball class. I placed the Ball.lua file in the folder as well XP","https://cdn.discordapp.com/attachments/661709026811183130/705608494643937300/unknown.png",""
+"456782789145133060","explodeguy#4116","01-May-20 02:22 PM","Hey can we add more features to our project before uploading it?","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","01-May-20 06:38 PM","Definitely @explodeguy","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","01-May-20 06:38 PM","I added a main menu, buttons, a few more sounds, the ability to have 2 AIs fight, and a debug menu","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","01-May-20 06:38 PM","Let the creativity flow","","👍 (1)"
+"456782789145133060","explodeguy#4116","01-May-20 06:39 PM","thank you","",""
+"456782789145133060","explodeguy#4116","01-May-20 06:39 PM","the support from the server and you is amazing","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","01-May-20 06:40 PM","The people here are pretty dern nice, it's a good place","","👍 (2)"
+"472156217297600512","XiaoBao13#7146","02-May-20 09:17 PM","||Does anyone know what and / or the code is to change the color on the text. It didn't seem like he told a lot to change it.||","",""
+"472156217297600512","XiaoBao13#7146","02-May-20 09:18 PM","||I'm on loves wiki and I'm kinda confused on what to do for the text graphics.||","",""
+"472156217297600512","XiaoBao13#7146","02-May-20 09:20 PM","Optional : ||also how do you get a update notification if you want to add it in the program. I want to do that so updating game files are quicker.||","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","02-May-20 09:26 PM","As for text color, love.graphics.setColor(rgba)","","👍 (1)"
+"168856034138390528","Napoopan Totallatot, Worm King#3698","02-May-20 09:26 PM","do that the line before the text, then set it back after","",""
+"472156217297600512","XiaoBao13#7146","02-May-20 09:27 PM","I thought it was that!","",""
+"472156217297600512","XiaoBao13#7146","02-May-20 09:27 PM","Thanks.","","👍 (1)"
+"472156217297600512","XiaoBao13#7146","02-May-20 10:21 PM","Hey @Napoopan Totallatot, Worm King , ||When I tried any possible way i thought of how to put the code in based off of your answer, I got the screen as the background color or an error. Can you maybe give me a screenshot of an example? If not maybe just do an example text? Sorry if I'm bugging you. Just a question on the code because i couldn't get it. Thanks!||","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","02-May-20 10:22 PM","```
+love.graphics.setColor(1, 1, 1, 1)
+love.graphics.print(""White text"")
+love.graphics.setColor(0, 1, 0, 1)
+love.grapics.print(""Green text"")
+love.graphics.setColor(1, 1, 1, 1) --back to white
+```","",""
+"472156217297600512","XiaoBao13#7146","02-May-20 10:44 PM","||So that whole code behind it? I've tried snips to match your code a bit but it did not work.|| 😦","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","02-May-20 10:53 PM","i just copypasted it into my mario, ran it, and it works","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","02-May-20 10:53 PM","aside from the typo","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","02-May-20 10:53 PM","are you putting it in your draw function?","",""
+"472156217297600512","XiaoBao13#7146","02-May-20 10:53 PM","In pong?","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","02-May-20 10:54 PM","yeah","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","02-May-20 10:54 PM","make sure its in love.draw() and is **below** love.graphics.clear","",""
+"472156217297600512","XiaoBao13#7146","02-May-20 11:01 PM","||so paste it under the place and in love.draw() also?||","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","02-May-20 11:05 PM","wat","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","02-May-20 11:05 PM","Whatre you trying to do","",""
+"472156217297600512","XiaoBao13#7146","02-May-20 11:07 PM","Just now I was trying to put the white text part in love.draw() and the green text part under love.graphics.clear","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","02-May-20 11:21 PM","i dont really know what youre trying to do lol","",""
+"472156217297600512","XiaoBao13#7146","03-May-20 12:24 AM","I'm just trying to make the text red","",""
+"472156217297600512","XiaoBao13#7146","03-May-20 12:24 AM","XD","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","03-May-20 12:48 AM","Theoretically:","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","03-May-20 12:49 AM","```
+function love.draw()
+  love.graphics.clear(0, 0, 0, 1) -- black background
+  love.graphics.setColor(1, 0, 0, 1) -- set color to red
+  love.graphics.print(""text"", x, y) -- text, printed in red
+end
+```","",""
+"472156217297600512","XiaoBao13#7146","03-May-20 12:49 AM","ahhhhh","",""
+"472156217297600512","XiaoBao13#7146","03-May-20 12:49 AM","I'm an idiot!","",""
+"472156217297600512","XiaoBao13#7146","03-May-20 12:50 AM","lol","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","03-May-20 12:50 AM","What were you doing?","",""
+"472156217297600512","XiaoBao13#7146","03-May-20 12:51 AM","I was putting parts under other things","",""
+"472156217297600512","XiaoBao13#7146","03-May-20 12:52 AM","Like love.draw(love.graphics.setcolor(1,1,1,1)","",""
+"472156217297600512","XiaoBao13#7146","03-May-20 12:52 AM","love.graphics.print(whitetext))","",""
+"472156217297600512","XiaoBao13#7146","03-May-20 12:52 AM","something like that","",""
+"472156217297600512","XiaoBao13#7146","03-May-20 12:52 AM",":\","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","03-May-20 12:52 AM","ahhh i see","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","03-May-20 12:53 AM","Yeah love.draw() is a function, like love.update() or load()","",""
+"472156217297600512","XiaoBao13#7146","03-May-20 12:53 AM","Ok","",""
+"472156217297600512","XiaoBao13#7146","03-May-20 12:53 AM","I've only used lua on roblox.","",""
+"472156217297600512","XiaoBao13#7146","03-May-20 12:53 AM","lol","",""
+"472156217297600512","XiaoBao13#7146","03-May-20 12:53 AM","not that much though","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","03-May-20 12:54 AM","Hey thats valid experience","",""
+"472156217297600512","XiaoBao13#7146","03-May-20 12:55 AM","True","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","03-May-20 12:55 AM","this stuff is love2d specific, so it makes sense you wouldnt have seen it in Roblox","",""
+"472156217297600512","XiaoBao13#7146","03-May-20 12:55 AM","yeah, and the game is half built already","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","03-May-20 12:56 AM","👍","",""
+"472156217297600512","XiaoBao13#7146","03-May-20 12:57 AM","👍 👍","",""
+"472156217297600512","XiaoBao13#7146","03-May-20 01:00 AM","also sorry for bugging you so much","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","03-May-20 01:03 AM","Youre good, dont worry","",""
+"472156217297600512","XiaoBao13#7146","03-May-20 01:06 AM","has anyone also figured out how to make your game built into love2D?","",""
+"472156217297600512","XiaoBao13#7146","03-May-20 01:06 AM","so when you open love2D like a normal desktop application it will run your game instead of doing that baloon chicken thing...","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","03-May-20 01:07 AM","I dont think that is possible","",""
+"472156217297600512","XiaoBao13#7146","03-May-20 01:07 AM","I can't find a video","",""
+"472156217297600512","XiaoBao13#7146","03-May-20 01:07 AM","Oh","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","03-May-20 01:07 AM","You can make your game into a .exe of its own","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","03-May-20 01:07 AM","But you cant like associate your game with love2d's executable","",""
+"472156217297600512","XiaoBao13#7146","03-May-20 01:08 AM","ok","",""
+"472156217297600512","XiaoBao13#7146","03-May-20 02:45 AM","What's a script to make a basic menu with a few buttons and a title? Doesn't matter who answers!","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","03-May-20 02:47 AM","Personally I made a Class for buttons","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","03-May-20 02:48 AM","And a gamestate for menu","",""
+"472156217297600512","XiaoBao13#7146","03-May-20 02:48 AM","oh","",""
+"472156217297600512","XiaoBao13#7146","03-May-20 02:48 AM","I'm trying to make it easy on myself since i've started 3 days ago","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","03-May-20 02:49 AM","Wait, you started CS50 3 days ago?","",""
+"472156217297600512","XiaoBao13#7146","03-May-20 02:49 AM","yeah.","",""
+"472156217297600512","XiaoBao13#7146","03-May-20 02:50 AM","I'm pretty close to the fourth update on my pong game","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","03-May-20 02:50 AM","What're you doing in the games track of you just started","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","03-May-20 02:50 AM","Are you in CS50G? Or CS50x?","",""
+"472156217297600512","XiaoBao13#7146","03-May-20 02:50 AM","???","",""
+"472156217297600512","XiaoBao13#7146","03-May-20 02:51 AM","cs50 g/x","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","03-May-20 02:51 AM","Are you in CS50 Introduction to Computer Science","",""
+"472156217297600512","XiaoBao13#7146","03-May-20 02:51 AM","?","",""
+"472156217297600512","XiaoBao13#7146","03-May-20 02:51 AM","yes","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","03-May-20 02:51 AM","Or CS50 Introduction to Game Development","",""
+"472156217297600512","XiaoBao13#7146","03-May-20 02:51 AM","game dev","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","03-May-20 02:51 AM","Which","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","03-May-20 02:52 AM","Ah right okay this channel is for CS50x, so hearing you started 3 days ago and you being in the 2nd to last CS50x pset was odd lol","",""
+"472156217297600512","XiaoBao13#7146","03-May-20 02:52 AM","oh","",""
+"472156217297600512","XiaoBao13#7146","03-May-20 02:52 AM","lol","",""
+"472156217297600512","XiaoBao13#7146","03-May-20 03:02 AM","or maybe a pause menu","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","03-May-20 03:07 AM","I forewent a pause menu in favor of escape returning you to the menu","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","03-May-20 03:07 AM","But that's because I'm lazy tbh","",""
+"349642361728663558","NascentSpace#8115","03-May-20 03:25 PM","Tried to open the pong example game for assignment0 on mac. Got this error, can anyone help?","https://cdn.discordapp.com/attachments/661709026811183130/706481659352186890/Screen_Shot_2020-05-03_at_10.04.23_pm.png",""
+"472156217297600512","XiaoBao13#7146","03-May-20 06:23 PM","You probably don't have the code like it says, or you put the files in wrong.","",""
+"472156217297600512","XiaoBao13#7146","03-May-20 06:24 PM","You need to put the pong0 folder in love2D","",""
+"472156217297600512","XiaoBao13#7146","03-May-20 06:25 PM","||Or maybe you are in the wrong files.||","",""
+"472156217297600512","XiaoBao13#7146","03-May-20 06:27 PM","||I read up on love2D's website to see how to open it with windows since windows runs off of C, not Unix. So I learned how to open it regularly. I think you can just drag the pong0 on a desktop shortcut. I'm not sure if it works for Mac though||","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","03-May-20 06:36 PM","Ideally youd just use visual studio code","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","03-May-20 06:36 PM","There's an extension to open your current folder in love2d with alt+L","",""
+"472156217297600512","XiaoBao13#7146","03-May-20 06:37 PM","That might be a way too.","",""
+"313121408911933441","Geo#2939","03-May-20 07:04 PM","> This is a super-important point, that could be made more clear in the assignment instructions.@FizzyG the code uses an older version of LOVE (0.10.2), which you can download for your OS here: https://bitbucket.org/rude/love/downloads/
+@coltonoscopy","",""
+"462666477259194409","OneEyedGhost#6655","03-May-20 07:46 PM","i need help","",""
+"462666477259194409","OneEyedGhost#6655","03-May-20 07:46 PM","for submitting assignments","",""
+"462666477259194409","OneEyedGhost#6655","03-May-20 07:47 PM","is uploading to github enough","",""
+"462666477259194409","OneEyedGhost#6655","03-May-20 07:47 PM","or must do both github and youtube @staff .. im seeing a form to fill in thats why im asking","",""
+"462666477259194409","OneEyedGhost#6655","03-May-20 07:47 PM","4th step","",""
+"472156217297600512","XiaoBao13#7146","03-May-20 07:48 PM","I'm guessing just GitHub. But I would do a YouTube so you can demonstrate how it works.","",""
+"472156217297600512","XiaoBao13#7146","03-May-20 07:48 PM","With github","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","03-May-20 07:48 PM","For CS50x you dont need a youtube video","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","03-May-20 07:48 PM","But for CS50G afaik you do","",""
+"462666477259194409","OneEyedGhost#6655","03-May-20 07:48 PM","ait","",""
+"462666477259194409","OneEyedGhost#6655","03-May-20 07:48 PM","thx","",""
+"462666477259194409","OneEyedGhost#6655","03-May-20 07:53 PM","does the staff here respond to questions tho","",""
+"462666477259194409","OneEyedGhost#6655","03-May-20 07:53 PM","lol","",""
+"462666477259194409","OneEyedGhost#6655","03-May-20 07:54 PM","@EternalExplorer  i did those assignments weeks ago","",""
+"462666477259194409","OneEyedGhost#6655","03-May-20 07:54 PM","didnt knw u have to make vids for them","",""
+"462666477259194409","OneEyedGhost#6655","03-May-20 07:54 PM","lol","",""
+"462666477259194409","OneEyedGhost#6655","03-May-20 07:54 PM","thx again","",""
+"472156217297600512","XiaoBao13#7146","03-May-20 08:07 PM","You don't on this one. I believe this is cs50x","",""
+"472156217297600512","XiaoBao13#7146","03-May-20 08:07 PM","The video.","",""
+"472156217297600512","XiaoBao13#7146","03-May-20 08:07 PM","I just said I would.","",""
+"472156217297600512","XiaoBao13#7146","03-May-20 08:07 PM","So you can maybe demonstrate how your program works.","",""
+"472156217297600512","XiaoBao13#7146","03-May-20 08:08 PM","Yeah you dont","",""
+"472156217297600512","XiaoBao13#7146","03-May-20 08:08 PM","This is cs50x","",""
+"472156217297600512","XiaoBao13#7146","03-May-20 08:08 PM","It says it on the devider","",""
+"472156217297600512","XiaoBao13#7146","03-May-20 08:08 PM","Cs50x - intro to cs","",""
+"355351425301086219","iSpy_u#2142","03-May-20 10:44 PM","> @iSpy_u download the latest version of push from the link. Also, I am going to assume that you're using Love2d's latest version as well, so open the 'push.lua' file, and change 'getPixelScale' to 'getDPIScale'
+@Chandler_Mosby Thanks man it worked!!","",""
+"395174542403829760","Orante#6576","04-May-20 08:59 AM","Can I have someone to explain how to submit my work?","",""
+"395174542403829760","Orante#6576","04-May-20 08:59 AM","I do not know how to install submit50","",""
+"395174542403829760","Orante#6576","04-May-20 09:03 AM","Oh well, I just uploaded my file in the CS50 ide","",""
+"355351425301086219","iSpy_u#2142","04-May-20 05:28 PM","Hey guys!","",""
+"355351425301086219","iSpy_u#2142","04-May-20 05:28 PM","Can somebody tell me the best procedure to learn all this stuff","",""
+"355351425301086219","iSpy_u#2142","04-May-20 05:28 PM","like watch lectures","",""
+"355351425301086219","iSpy_u#2142","04-May-20 05:28 PM","than?","",""
+"355351425301086219","iSpy_u#2142","04-May-20 05:28 PM","what do you guys do??","",""
+"478262400416743441","honeycat#6038","04-May-20 10:13 PM","@iSpy_u did you start cs50 at pset0 or did you just jump to the games track? 
+The course is designed to guide you through from the start.","",""
+"478262400416743441","honeycat#6038","04-May-20 10:16 PM","So I installed the love2d extension on VSCode, go to the window containing main.lua and press ctrl-l and nothing happens. I am very new to VSCode so I imaging there is some setup that I am overlooking. The love2d support window has all these settings examples but i have no idea how to access or alter these. Any ideas?","",""
+"160498794218127360","I AM ASIAN#0011","04-May-20 10:26 PM","Is there anyone that can help me with actually starting this? I am so completely lost and nothing is working. I need a start but I can't find it myself. If anyone can help me find an area where I can lay foundation of my learning that'd be great.","",""
+"395272669353869315","Oreo#2457","05-May-20 12:24 AM","ok so i'm on Pong9, since the collision section i've noticed sometimes the ball passes through my paddles and sometimes it doesn't, anyone else having this problem?","",""
+"472156217297600512","XiaoBao13#7146","05-May-20 12:25 AM","No I havn't Oreo!","",""
+"472156217297600512","XiaoBao13#7146","05-May-20 12:25 AM","Maybe I can give you my original script?","",""
+"395272669353869315","Oreo#2457","05-May-20 12:27 AM","send away 🙂","",""
+"395272669353869315","Oreo#2457","05-May-20 12:29 AM","@XiaoBao13","",""
+"472156217297600512","XiaoBao13#7146","05-May-20 12:29 AM","lemme get my coding device!","",""
+"472156217297600512","XiaoBao13#7146","05-May-20 12:30 AM","should i dm you the files?","",""
+"472156217297600512","XiaoBao13#7146","05-May-20 12:30 AM","so i dont fill this server with the files","",""
+"395272669353869315","Oreo#2457","05-May-20 12:32 AM","sure","",""
+"478262400416743441","honeycat#6038","05-May-20 03:34 AM","I stumbled upon the answer to my question above by trial and error. In case anybody is wondering the shortcut for VSCode to open the current game in love is 'alt-l' not 'ctrl-l'.","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","05-May-20 03:49 AM","yeh the extension page said so, think he misspoke in the video","","👍 (1)"
+"168856034138390528","Napoopan Totallatot, Worm King#3698","05-May-20 03:49 AM","mac users, smh","",""
+"478262400416743441","honeycat#6038","05-May-20 04:22 AM","@Napoopan Totallatot, Worm King I obviously didn't read carefully enough.","",""
+"521619822547566593","DrGuano#9842","05-May-20 09:41 AM","guys abt the assignment where you add an AI behaviour to a paddle, I already got it working but im stuck at the part where I have to make the AI paddle lose at some point during the game, right now it will always deflect the ball, making it impossible to beat","",""
+"349642361728663558","NascentSpace#8115","05-May-20 10:16 AM","Try making it so that its just slow enough that it wont always make it to the ball, or make it randomly goes in the wrong direction","",""
+"521619822547566593","DrGuano#9842","05-May-20 10:19 AM","i did try the former by slowing down the velocity of the AI paddle but it ends up twitching, it still works nonetheless, it's because the position changes each frame and it messes it up","",""
+"521619822547566593","DrGuano#9842","05-May-20 10:20 AM","according to the ball","",""
+"521619822547566593","DrGuano#9842","05-May-20 10:20 AM","y position","",""
+"521619822547566593","DrGuano#9842","05-May-20 10:28 AM","> the twitching is fine I guess but in the case of using it for commercial purposes, you don't want your game to look buggy despite it working","",""
+"297442037051949056","Defne#8951","05-May-20 07:41 PM","anyone know how to use visual studio to run lua and love like in the lecture?","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","05-May-20 11:45 PM","in visual studio download the love2d extension by pixelsomething","",""
+"395272669353869315","Oreo#2457","06-May-20 06:30 AM","@DrGuano  twitching is driving me nuts rn, i know the solution is to make it so the paddle isnt so precise aka if its in a certain range then make the paddle stop moving. the problem is derived from the y axis of the ball never being exact to the paddle since its a bigger object i think","",""
+"395272669353869315","Oreo#2457","06-May-20 06:31 AM","as to how to implement that i've been troubleshooting all day","",""
+"395272669353869315","Oreo#2457","06-May-20 06:31 AM","no idea","",""
+"521619822547566593","DrGuano#9842","06-May-20 06:31 AM","oh haha yeah i also tried to do that but i still couldn't get it to work","",""
+"521619822547566593","DrGuano#9842","06-May-20 06:31 AM","maybe using the dy instead of the y of the ball would change it","",""
+"521619822547566593","DrGuano#9842","06-May-20 06:32 AM","not sure","",""
+"395272669353869315","Oreo#2457","06-May-20 06:32 AM","nope tried that","",""
+"395272669353869315","Oreo#2457","06-May-20 06:32 AM","i think its a math problem","",""
+"521619822547566593","DrGuano#9842","06-May-20 06:32 AM","yeah i'll just move one and maybe come back to this once i'm done with other games","",""
+"521619822547566593","DrGuano#9842","06-May-20 06:33 AM","hmm yeah i don't have enough knowledge to pull it off especially math yeah","",""
+"395272669353869315","Oreo#2457","06-May-20 06:33 AM","if ball.y > paddle1.y + paddle1.height or something","",""
+"521619822547566593","DrGuano#9842","06-May-20 06:34 AM","oh yeah same thing i've been using that syntax haha","",""
+"395272669353869315","Oreo#2457","06-May-20 06:34 AM","i stumbled upon something like this","",""
+"395272669353869315","Oreo#2457","06-May-20 06:36 AM","if ball.y > paddle1.y - 10 then
+paddle1.dy = paddle_speed","",""
+"395272669353869315","Oreo#2457","06-May-20 06:36 AM","but i cant for the life of me figure out where he gets 10 from","",""
+"395272669353869315","Oreo#2457","06-May-20 06:36 AM","i haven't tried it yet though","",""
+"521619822547566593","DrGuano#9842","06-May-20 06:37 AM","hmm but if it's at -10, the y would be above the paddle","",""
+"395272669353869315","Oreo#2457","06-May-20 06:37 AM","sorry, +10 and -10 for > or <","",""
+"521619822547566593","DrGuano#9842","06-May-20 06:38 AM","oh i see","",""
+"395272669353869315","Oreo#2457","06-May-20 06:38 AM","any idea why 10?","",""
+"521619822547566593","DrGuano#9842","06-May-20 06:40 AM","cause the height of the paddle is 20 pixels based on the original code so I believe it's trying to get the y axis of the center of the paddle in height","",""
+"521619822547566593","DrGuano#9842","06-May-20 06:40 AM","not sure if that's what it means","",""
+"395272669353869315","Oreo#2457","06-May-20 06:41 AM","i thought the height was 30?","",""
+"395272669353869315","Oreo#2457","06-May-20 06:42 AM","maybe its off centering?","",""
+"521619822547566593","DrGuano#9842","06-May-20 06:42 AM","i checked the code of the final main file untouched and it says there 20 so yeah it should be","",""
+"521619822547566593","DrGuano#9842","06-May-20 06:43 AM","you could change it however you want, if it's 30, u change it to 15","",""
+"395272669353869315","Oreo#2457","06-May-20 06:43 AM","i see","",""
+"521619822547566593","DrGuano#9842","06-May-20 06:43 AM","depends on your preference of gameplay","",""
+"521619822547566593","DrGuano#9842","06-May-20 06:46 AM","another problem is the update, since the code is being executed per frame, once the ball gets into the range of the paddle, it gets stuck inside its proximity regardless of the distance from the paddle","",""
+"521619822547566593","DrGuano#9842","06-May-20 06:47 AM","well other factors subjected to this too","",""
+"521619822547566593","DrGuano#9842","06-May-20 06:48 AM","one recommendation my friend gave me was to setup a timer which involves a lot of math but that would make it more complicated than it should be i guess","",""
+"395272669353869315","Oreo#2457","06-May-20 07:55 AM","i figured it out, i think one way at least","",""
+"395272669353869315","Oreo#2457","06-May-20 07:56 AM","@DrGuano take a look at math.random, and as far as the update goes i moved it to the end of the function, below my paddle ai/ paddle2 code, and that seemed to do the trick.","",""
+"395272669353869315","Oreo#2457","06-May-20 07:59 AM","that being said i did all the code from scratch along with the videos, didn't realize i could just download it all until after :/ so your paddle updates might be at the bottom already","",""
+"521619822547566593","DrGuano#9842","06-May-20 08:01 AM","wow haha big oof, well at least you knew before heading into the other weeks","",""
+"395272669353869315","Oreo#2457","06-May-20 08:01 AM","haha yep","",""
+"521619822547566593","DrGuano#9842","06-May-20 08:02 AM","wait so now it stops twitching ?","",""
+"395272669353869315","Oreo#2457","06-May-20 08:02 AM","ya it seems to","",""
+"521619822547566593","DrGuano#9842","06-May-20 08:02 AM","can i check your syntax here?","",""
+"395272669353869315","Oreo#2457","06-May-20 08:05 AM","that's the bottom of the function","",""
+"395272669353869315","Oreo#2457","06-May-20 08:05 AM","woops...included the solution","",""
+"395272669353869315","Oreo#2457","06-May-20 08:06 AM","wtf, i thought i cropped it out","",""
+"395272669353869315","Oreo#2457","06-May-20 08:07 AM","","https://cdn.discordapp.com/attachments/661709026811183130/707458591392530472/Screenshot_from_2020-05-05_23-07-31.png",""
+"395272669353869315","Oreo#2457","06-May-20 08:08 AM","there, cropped out my solution","",""
+"395272669353869315","Oreo#2457","06-May-20 08:08 AM","but that's the bottom of the function if that's what you meant","",""
+"395272669353869315","Oreo#2457","06-May-20 08:09 AM","@DrGuano","",""
+"521619822547566593","DrGuano#9842","06-May-20 08:15 AM","hmm i was referring to the math.random for the AI  so you put it there?","",""
+"395272669353869315","Oreo#2457","06-May-20 08:18 AM","i put it in the paddle1 code","",""
+"395272669353869315","Oreo#2457","06-May-20 08:18 AM","but i moved the updates to the bottom","",""
+"395272669353869315","Oreo#2457","06-May-20 08:19 AM","so like instead of the + or - 10 i just generated a random number so it wasn't always right","",""
+"521619822547566593","DrGuano#9842","06-May-20 08:19 AM","ohh okay i'll try that","",""
+"521619822547566593","DrGuano#9842","06-May-20 08:19 AM","thanks","",""
+"395272669353869315","Oreo#2457","06-May-20 08:19 AM","np","",""
+"296776163072671756","viices#6125","07-May-20 01:08 AM","hello! don't mean to bother, but after watching the lecture and taking all my notes, i've finally started working on this assignment and for some reason LOVE can't open the folder i'm working in","https://cdn.discordapp.com/attachments/661709026811183130/707715417254395975/unknown.png",""
+"296776163072671756","viices#6125","07-May-20 01:09 AM","i've double, triple, quadruple-checked and it's definitely there, so am i missing something painfully obvious?","",""
+"296776163072671756","viices#6125","07-May-20 01:10 AM","i'll continue working along on the code, but any pointers would be much appreciated!","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","07-May-20 01:15 AM","try moving the folder off your desktop","",""
+"296776163072671756","viices#6125","07-May-20 01:19 AM","moved it to Documents but the error remains :^/","",""
+"225414817769324544","Samaritan#0469","07-May-20 03:58 AM","https://imgur.com/a3mgJHF","",""
+"225414817769324544","Samaritan#0469","07-May-20 03:58 AM","letting the robots duke it out","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","07-May-20 04:49 AM","That is *exactly* how I did my AI","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","07-May-20 04:49 AM","Returning to the middle after hitting the ball and all","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","07-May-20 04:50 AM","Good job my dude","",""
+"225414817769324544","Samaritan#0469","07-May-20 05:00 AM","👍","",""
+"225414817769324544","Samaritan#0469","07-May-20 05:00 AM","great minds and all","",""
+"225414817769324544","Samaritan#0469","07-May-20 05:00 AM","im curious though, how did you calculate where to move the paddles to?","",""
+"225414817769324544","Samaritan#0469","07-May-20 05:01 AM","I had my way but its probably not the easiest way","",""
+"521619822547566593","DrGuano#9842","07-May-20 05:05 AM","haha there's just that one point where the ball gets too fast it glitches through the paddle, how can you set a limit and maintain the speed at that limit once it reaches past that?","",""
+"521619822547566593","DrGuano#9842","07-May-20 05:06 AM","> im curious though, how did you calculate where to move the paddles to?
+@Samaritan same i'm curious, it involves some math between ball dy and y right?","",""
+"521619822547566593","DrGuano#9842","07-May-20 05:09 AM","oh so it also has to do with resetting back to the middle after each collide","",""
+"225414817769324544","Samaritan#0469","07-May-20 05:15 AM","I ran into the glitching through the paddle thing. I think mine might take longer to get to that point because im running it at a higher refresh rate","",""
+"225414817769324544","Samaritan#0469","07-May-20 05:17 AM","as for calculating the paddle position, yeah. The way I did it is use dy, dx, and the ball's current position to project where it will intersect the wall. if the point of intersection is before the paddles, then I recalculate the trajectory from that point on the wall, with an inverted dy","",""
+"225414817769324544","Samaritan#0469","07-May-20 05:19 AM","I could definitely improve on it though","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","07-May-20 05:31 AM","@Samaritan I used some math i dont fully understand","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","07-May-20 05:31 AM","Calculates the distance from a point to the nearest point on a ray","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","07-May-20 05:32 AM","And i drew an invisible line with love.graphics.line that follows the path the ball will take","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","07-May-20 05:32 AM","with ball.dx/dy","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","07-May-20 05:32 AM","","https://cdn.discordapp.com/attachments/661709026811183130/707781978161676369/unknown.png",""
+"225414817769324544","Samaritan#0469","07-May-20 05:33 AM","ok its basically the same math but implemented differently","",""
+"225414817769324544","Samaritan#0469","07-May-20 05:33 AM","I just did the raw calculation","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","07-May-20 05:34 AM","Im not sure how else youd do it","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","07-May-20 05:34 AM","You have 2 real options","",""
+"168856034138390528","Napoopan Totallatot, Worm King#3698","07-May-20 05:34 AM","Have the paddle track the ball's y value (cheapo mode), or use the distance calculation to ""lead"" the ball","",""
+"521619822547566593","DrGuano#9842","07-May-20 07:32 AM","@Samaritan i still quite don't get how to calculate that to predict where the ball would end up, could you show me your syntax or what you did with dy dx and y position of the ball?","",""
+"225414817769324544","Samaritan#0469","07-May-20 07:50 AM","Ill try to get back to you on that tomorrow. My computer is off and my code is ugly. Ill make it more readable and send it your way tomorrow","",""
+"521619822547566593","DrGuano#9842","07-May-20 07:51 AM","okay thanks man","",""
+"296776163072671756","viices#6125","07-May-20 04:03 PM","> hello! don't mean to bother, but after watching the lecture and taking all my notes, i've finally started working on this assignment and for some reason LOVE can't open the folder i'm working in
+after a lot of fumbling around i ended up figuring out how to appropriately call the directory and figured i might as well share in case anyone else's computer is nitpicky like mine. if you go to the bottom left corner of Visual Code, to the Problems console, and then go to the Terminal tab, it'll give you the ""real"", if you will, directory path to your game folder. i simply copied it and ran it through the Command Prompt normally and now the game loads fine.","https://cdn.discordapp.com/attachments/661709026811183130/707940754139512892/unknown.png",""
+"691170731484250133","Bloom212121#5256","07-May-20 05:56 PM","Hi guys","",""
+"691170731484250133","Bloom212121#5256","07-May-20 05:56 PM","I've been following the video but at Pong 3, where his paddles are moving in the video, mine remain static","",""
+"691170731484250133","Bloom212121#5256","07-May-20 05:56 PM","I've even gone to the extent of copy-pasting his code and running it but the issue still persists","",""
+"691170731484250133","Bloom212121#5256","07-May-20 05:57 PM","Can anyone help me out pls?","",""
+"534596281834930195","official#2351","07-May-20 10:23 PM","Hi @Bloom212121 Bloom! I had a problem like this when I setup love2d first because I downloaded a newer version and Love updated in the middle of the course. Checkout the assignment0 and it will tell you which version to dl and set up. I hope this helps!","",""
+"225414817769324544","Samaritan#0469","07-May-20 10:28 PM","download 10.2","",""
+"225414817769324544","Samaritan#0469","07-May-20 10:28 PM","I think the new version is like 11.3 or somethin but it dont work","",""
+"225414817769324544","Samaritan#0469","07-May-20 10:29 PM","https://bitbucket.org/rude/love/downloads/","",""
+"534596281834930195","official#2351","07-May-20 10:45 PM","Thank you @Samaritan","",""
+"478262400416743441","honeycat#6038","08-May-20 05:21 AM","@official @Samaritan I downloaded 10.2 as per another persons advice. One thing I noticed is that 10.2 uses the original 0 - 255 values for the colors. Other then that everything else seems to work except for I tried building the program along with the videos and realized that sometimes between current-video and current-video++ his code changed even before he implemented the new code changes.","",""
+"534596281834930195","official#2351","08-May-20 06:56 AM","Right on! I’ve gotten through the first lecture. I’m having trouble with the Ai paddle. I understand the logic but I  don’t have enough programming experience to know what the proper way to flesh it out would be. It’s kinda rough","",""
+"478262400416743441","honeycat#6038","08-May-20 08:31 PM","Any tips on getting bfxr to work without any adobe products? I'm allergic to them since that time they reeled me in for a free trial which turned into a paid subscription which they then charged me a hefty amount of money to cancel.","",""
+"478262400416743441","honeycat#6038","08-May-20 08:32 PM","IMO adobe has some pretty unethical business practices.","",""
+"478262400416743441","honeycat#6038","08-May-20 08:49 PM","Issue solved, I just downloaded the standalone version and it works fine.","",""
+"296776163072671756","viices#6125","09-May-20 02:50 AM","> I had a problem like this when I setup love2d first because I downloaded a newer version and Love updated in the middle of the course.
+@official i downloaded the appropriate version and my paddles remain still; i've checked and my code is identical to Colton's","",""
+"296776163072671756","viices#6125","09-May-20 02:55 AM","sorry to bug you, just wondering if you maybe have some idea of what else might be causing it!","",""
+"296776163072671756","viices#6125","09-May-20 02:59 AM","_nevermind_ i'm a big dummy and forgot to update the paddle's height values to the new playerYs","",""
+"296776163072671756","viices#6125","09-May-20 02:59 AM","apologies 🙏","",""
+"521619822547566593","DrGuano#9842","09-May-20 06:50 AM","umm pardon my off topic question, I want to talk about the flappy bird lesson, is there a chat for that? I can't get my head around some parts of the lecture or the code","",""
+"393854278764068875","curiouskiwi#1671","09-May-20 06:51 AM","#cs50-games channel is the one for that course.  (this channel is for the games track in CS50x)","",""
+"521619822547566593","DrGuano#9842","09-May-20 06:55 AM","oh alright thank you very much, im not sure what games track means, could you fill me in on that?","",""
+"521619822547566593","DrGuano#9842","09-May-20 06:55 AM","and CS50 is different from CS50x?","",""
+"393854278764068875","curiouskiwi#1671","09-May-20 07:19 AM","@DrGuano CS50x http://cs50.edx.org","",""
+"521619822547566593","DrGuano#9842","09-May-20 07:19 AM","ohhh i see thanks for the help","",""
+"393854278764068875","curiouskiwi#1671","09-May-20 07:20 AM","@DrGuano it's the prerequisite for the intermediate level courses like #cs50-games #cs50-web #cs50-ai etc.","",""
+"393854278764068875","curiouskiwi#1671","09-May-20 07:20 AM","(or at least one year of programming experience if you don't have CS50(x))","",""
+"521619822547566593","DrGuano#9842","09-May-20 07:24 AM","i see","",""
+"296776163072671756","viices#6125","09-May-20 03:11 PM","mere curiosity, i'm wondering if anyone's tried altering a function's color / alpha properties when in a different game state?","",""
+"244712996285317120","sage#1662","10-May-20 11:36 AM","So i recently ran into the issue with using verion 11.3 Love for pong. So i downloaded 10.2 but for some reason whenever i drag any of the pong folders on to the love application, it doesn't run the game and just has the supertoast thing show. Does anyone know why this is happening and how to fix it? (im on Mac OS)","",""
+"658315440157753374","smilegames44#7950","10-May-20 05:21 PM","hello guys!","",""
+"658315440157753374","smilegames44#7950","10-May-20 05:21 PM","I'm new here","",""
+"658315440157753374","smilegames44#7950","10-May-20 05:21 PM","working on my first demo which is a car in a 960x544 window that if it hits the edges makes a collision noise","",""
+"658315440157753374","smilegames44#7950","10-May-20 05:21 PM","17 years old","",""
+"658315440157753374","smilegames44#7950","10-May-20 05:22 PM","also the assignment","",""
+"658315440157753374","smilegames44#7950","10-May-20 05:22 PM","😛","",""
+"658315440157753374","smilegames44#7950","10-May-20 05:22 PM","the first one","",""
+"658315440157753374","smilegames44#7950","10-May-20 05:25 PM","the resolution is inspired by the psvita which i've used since 2013","",""
+"502566623215878148","Raith Amoro#6586","10-May-20 09:23 PM","Hi can anyone help? I’ve managed t set both my paddles to ai at the same speed as the ball is travelling is there anything else I need to add to get through assignment0?","",""
+"658315440157753374","smilegames44#7950","11-May-20 02:59 AM","so i'm also getting an error","",""
+"658315440157753374","smilegames44#7950","11-May-20 03:00 AM","logic error, I try to put keyisDown('p') to a command - to clear and print but it doesn't work, can give the screenshot of the code if needed","",""
+"658315440157753374","smilegames44#7950","11-May-20 03:00 AM","no compile error","",""
+"658315440157753374","smilegames44#7950","11-May-20 03:00 AM","need some help","",""
+"658315440157753374","smilegames44#7950","11-May-20 06:28 AM","couldnt get it to work, got the car moving around though","",""
+"658315440157753374","smilegames44#7950","11-May-20 06:28 AM","anyone know how to get the car going diagonally?  math formula for diagonals?","",""
+"658315440157753374","smilegames44#7950","11-May-20 10:15 AM","can someone further on explain collisions please?","",""
+"658315440157753374","smilegames44#7950","11-May-20 04:52 PM","np I got collisions","",""
+"515255906272018432","＄ᙎɩᖇしʓ#5948","11-May-20 11:16 PM","Error
+
+Syntax error: main.lua:17: unexpected symbol near ']'
+
+
+
+Traceback
+
+[C]: at 0x0fb0d550
+[C]: in function 'require'
+[C]: in function 'xpcall'
+[C]: in function 'xpcall'","",""
+"515255906272018432","＄ᙎɩᖇしʓ#5948","11-May-20 11:16 PM","what does that mean","",""
+"515255906272018432","＄ᙎɩᖇしʓ#5948","11-May-20 11:16 PM","Error
+
+Ball.lua:20: attempt to index global 'Ball' (a nil value)
+
+
+Traceback
+
+Ball.lua:20: in main chunk
+[C]: in function 'require'
+main.lua:13: in main chunk
+[C]: in function 'require'
+[C]: in function 'xpcall'
+[C]: in function 'xpcall'","",""
+"515255906272018432","＄ᙎɩᖇしʓ#5948","11-May-20 11:16 PM","Did i do something wrong?","",""
+"658315440157753374","smilegames44#7950","12-May-20 02:00 AM","can u give the code?","",""
+"658315440157753374","smilegames44#7950","12-May-20 02:00 AM","i mean show the lines where u see the error","",""

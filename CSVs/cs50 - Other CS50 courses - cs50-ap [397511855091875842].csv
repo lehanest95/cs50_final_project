@@ -1,0 +1,1277 @@
+AuthorID,Author,Date,Content,Attachments,Reactions
+"84197211113533440","Trainermax#4196","02-Jan-18 01:22 AM","so... you take cs50 then take the ap computer science test?","",""
+"393854278764068875","curiouskiwi#1671","02-Jan-18 01:31 AM","AP Computer Science Principles.  Yes.  CS50AP is currently running in a hundred (or maybe more?) high schools this school year.  The exam is in May.","",""
+"84197211113533440","Trainermax#4196","02-Jan-18 05:57 AM","I dislike how it's designed 😦","",""
+"84197211113533440","Trainermax#4196","02-Jan-18 05:58 AM","Less time spent on psets, more time spent on watching videos and reading text about some unique problem","",""
+"84197211113533440","Trainermax#4196","02-Jan-18 05:59 AM","Would finishing regular cs50 also classify me as ready for the ap exam?","",""
+"393854278764068875","curiouskiwi#1671","02-Jan-18 06:00 AM","To be fair, it's not really designed for self-study, but it's been put on edX to be accessible to those who don't have high school classes.","",""
+"393854278764068875","curiouskiwi#1671","02-Jan-18 06:01 AM","You'd have to check with your school about the AP exam, because AP CS Principles has both the exam plus other written essay requirements.","",""
+"161273615575285760","HardBoiled#5675","08-Jan-18 12:07 AM","Hello!","",""
+"161273615575285760","HardBoiled#5675","08-Jan-18 12:07 AM","I'm taking APCS50 on edX and I'm gonna try the test in may - just starting the course today!","",""
+"161273615575285760","HardBoiled#5675","08-Jan-18 12:53 AM","Hey guys - I have a question. According to the AP site, the APCSP test requires an Explore and a Create task. Does the class have any guidance/problems that qualify for this, or do I just have to do this on my own?","",""
+"161273615575285760","HardBoiled#5675","08-Jan-18 12:54 AM","@curiouskiwi since you're staff I thought you might know the answer to my question 😃","",""
+"393854278764068875","curiouskiwi#1671","08-Jan-18 01:03 AM","@HardBoiled not my area of expertise, but I'll ask and see.  I do know that in order to take the exam, you'll have to coordinate with a high school that will 'sponsor' you.","",""
+"161273615575285760","HardBoiled#5675","08-Jan-18 01:11 AM","@curiouskiwi Yup, my high school is letting me take the APE there","",""
+"393854278764068875","curiouskiwi#1671","08-Jan-18 01:18 AM","@HardBoiled I'll let you know when I find out. 😃","",""
+"161273615575285760","HardBoiled#5675","08-Jan-18 01:56 AM","@curiouskiwi Thank you so much 😄","",""
+"393854278764068875","curiouskiwi#1671","08-Jan-18 01:57 AM","@HardBoiled no problem. Hope to have an answer for you tomorrow.","",""
+"393854278764068875","curiouskiwi#1671","08-Jan-18 10:38 PM","@HardBoiled (and everyone else taking CS50APx), here are the updated instructions.  https://docs.cs50.net/2017/x/ap/references/instructions/instructions.html     In the  CS50APx course, there are both programming assignments and written assignments.  Those written assignments, particularly, should be useful in preparing to do the Explore and Create tasks (which are linked in the instructions).","",""
+"161273615575285760","HardBoiled#5675","09-Jan-18 12:52 AM","@curiouskiwi Thank you! I do have one question - does the course itself assign/help with the tasks or are they to be done independintly.","",""
+"393854278764068875","curiouskiwi#1671","09-Jan-18 12:53 AM","@HardBoiled independently","",""
+"161273615575285760","HardBoiled#5675","09-Jan-18 12:54 AM","Cool, thanks!","",""
+"403210558104666113","eclark#5163","23-Jan-18 01:19 AM","to get the certificate for the class do we have to finish all assignments by April 30th?","",""
+"393854278764068875","curiouskiwi#1671","23-Jan-18 01:25 AM","@eclark yes, the course deadline for the current CS50APx is Apr 30, 2018.","",""
+"393854278764068875","curiouskiwi#1671","23-Jan-18 01:26 AM","I see that that is not mentioned on the edX page itself, so, saying that, I will confirm that and post back here to confirm.","",""
+"403210558104666113","eclark#5163","23-Jan-18 08:00 AM","was it confirmed? @curiouskiwi","",""
+"393854278764068875","curiouskiwi#1671","23-Jan-18 08:56 AM","@eclark haven't heard back yet.  It's the middle of the night in Cambridge. 😃","",""
+"393854278764068875","curiouskiwi#1671","23-Jan-18 08:57 AM","so probably tomorrow.","",""
+"393854278764068875","curiouskiwi#1671","23-Jan-18 09:53 PM","@clarky103#5163 I've confirmed that the deadline is still 30 Apr 2018.  See the instructions page as well:  https://docs.cs50.net/2017/x/ap/references/instructions/instructions.html","",""
+"403210558104666113","eclark#5163","01-Feb-18 04:25 AM","When I’m trying to do the Fahrenheit problem and do get_string  it will say “undefined reference to ‘get_string’ “ and at the top put in include <cs50.h>","",""
+"403210558104666113","eclark#5163","01-Feb-18 04:26 AM","I copy and pasted word for word an example from the notes and it said the same thing when I did clang","",""
+"393854278764068875","curiouskiwi#1671","01-Feb-18 04:27 AM","did you run `make`?","",""
+"393854278764068875","curiouskiwi#1671","01-Feb-18 04:27 AM","`make fahrenheit`","",""
+"399126045636427776","Hussein#6023","01-Feb-18 05:16 PM","Hello guys","",""
+"399126045636427776","Hussein#6023","01-Feb-18 05:17 PM","Anyone can help me  in assignment  submition ?","",""
+"393854278764068875","curiouskiwi#1671","01-Feb-18 10:04 PM","Hi @Hussein  what's your question about submission?","",""
+"399126045636427776","Hussein#6023","01-Feb-18 10:06 PM","I submit the first one about ""house devices""  on github","",""
+"399126045636427776","Hussein#6023","01-Feb-18 10:07 PM","that enouth","https://cdn.discordapp.com/attachments/397511855091875842/408715017991618566/unknown.png",""
+"399126045636427776","Hussein#6023","01-Feb-18 10:07 PM","?","",""
+"399126045636427776","Hussein#6023","01-Feb-18 10:07 PM","or require other thing ?","",""
+"399126045636427776","Hussein#6023","01-Feb-18 10:08 PM","I'm asking that because there is no submition here","",""
+"399126045636427776","Hussein#6023","01-Feb-18 10:08 PM","","https://cdn.discordapp.com/attachments/397511855091875842/408715341443891210/unknown.png",""
+"399126045636427776","Hussein#6023","01-Feb-18 10:10 PM","@curiouskiwi","",""
+"393854278764068875","curiouskiwi#1671","01-Feb-18 10:26 PM","@Hussein when you submitted, did you create a branch called `cs50/2017/ap/algorithms` and upload it there?","",""
+"393854278764068875","curiouskiwi#1671","01-Feb-18 10:27 PM","Also, if go here: http://cs50.me/account does it show that your edX account is connected?","",""
+"399126045636427776","Hussein#6023","01-Feb-18 10:32 PM","ohh, no i didn't make this branch  cs50/2017/ap/algorithms","",""
+"399126045636427776","Hussein#6023","01-Feb-18 10:32 PM","but why algorithms ?","",""
+"393854278764068875","curiouskiwi#1671","01-Feb-18 10:32 PM","Oh sorry, typo.","",""
+"393854278764068875","curiouskiwi#1671","01-Feb-18 10:32 PM","I meant cs50/2017/ap/house","",""
+"393854278764068875","curiouskiwi#1671","01-Feb-18 10:32 PM","(I was looking at a different page)","",""
+"399126045636427776","Hussein#6023","01-Feb-18 10:33 PM","ok i get it, i ganna reload it again thanks","",""
+"399126045636427776","Hussein#6023","01-Feb-18 10:34 PM","where i found branch names ??","",""
+"393854278764068875","curiouskiwi#1671","01-Feb-18 10:41 PM","you have to create it per the instructions: https://docs.cs50.net/2017/ap/problems/house/house.html#how-to-submit","",""
+"399126045636427776","Hussein#6023","01-Feb-18 10:43 PM","Thaks a lot !","",""
+"393854278764068875","curiouskiwi#1671","01-Feb-18 10:56 PM","😃  So you see it on your http://cs50.me/gradebook now?","",""
+"399126045636427776","Hussein#6023","01-Feb-18 11:05 PM","yeah it works 😃","",""
+"399126045636427776","Hussein#6023","01-Feb-18 11:05 PM","","https://cdn.discordapp.com/attachments/397511855091875842/408729691294269440/unknown.png",""
+"399126045636427776","Hussein#6023","01-Feb-18 11:08 PM","but, I don't know why there is no courses while I'm already enrolled ?!","",""
+"399126045636427776","Hussein#6023","01-Feb-18 11:08 PM","","https://cdn.discordapp.com/attachments/397511855091875842/408730370184577033/unknown.png",""
+"393854278764068875","curiouskiwi#1671","01-Feb-18 11:24 PM","is it shown here? http://cs50.me/account ?","",""
+"399126045636427776","Hussein#6023","01-Feb-18 11:32 PM","","https://cdn.discordapp.com/attachments/397511855091875842/408736441519046676/unknown.png",""
+"399126045636427776","Hussein#6023","01-Feb-18 11:32 PM","Yup","",""
+"393854278764068875","curiouskiwi#1671","02-Feb-18 12:01 AM","I'm pretty sure that it will work later, once you've submitted one of the coding assignments.  (that is what triggers the gradebook to become available)","",""
+"399126045636427776","Hussein#6023","02-Feb-18 12:42 AM","Okey, I ganna continue ... thanks","",""
+"261314967536533504","whatsonyourcard#9526","03-Feb-18 04:08 AM","Hey - I'm trying to debug pennies. im first focusing on the part where i ask for how many days in a month. i can't figure out why i keep getting this on going loop in the screenie: any ideas?","https://cdn.discordapp.com/attachments/397511855091875842/409168211632979969/unknown.png",""
+"393854278764068875","curiouskiwi#1671","03-Feb-18 04:38 AM","sounds like you have some sort of while loop that never returns false.","",""
+"261314967536533504","whatsonyourcard#9526","03-Feb-18 05:07 AM","thank you @curiouskiwi ! found my bug","",""
+"161273615575285760","HardBoiled#5675","04-Feb-18 01:42 AM","@staff Do we have a join code for AP Digital Portfolio?","",""
+"393854278764068875","curiouskiwi#1671","04-Feb-18 03:22 AM","@HardBoiled  contact your AP coordinator at your high school. They should give that to you.","",""
+"161273615575285760","HardBoiled#5675","04-Feb-18 03:53 AM","Ok","",""
+"170015846435913730","ClearedFram3#1530","09-Feb-18 04:23 AM","Hi!","",""
+"170015846435913730","ClearedFram3#1530","09-Feb-18 04:23 AM","Does anyone know the Correct answer to this question?","",""
+"170015846435913730","ClearedFram3#1530","09-Feb-18 04:23 AM","""Imagine we don't have data types. What's 10 + ""10""? Is it ""1010"" or ""20"" (strings) or 1010 or 20 (ints)?""","",""
+"170015846435913730","ClearedFram3#1530","09-Feb-18 04:23 AM","I think it's 20","",""
+"393854278764068875","curiouskiwi#1671","09-Feb-18 05:17 AM","the answer really is ""how would you know?"" anyone of them might be correct, depending on the language you use.","",""
+"403210558104666113","eclark#5163","14-Feb-18 11:02 PM","I accidentally closed my terminal in the cs50 ide and now everytime I try to go back into the terminal it’s not outputting anything back to me does anybody know how to fix this","https://cdn.discordapp.com/attachments/397511855091875842/413439896452071424/image.jpg",""
+"393854278764068875","curiouskiwi#1671","14-Feb-18 11:03 PM","click the + and choose ""open terminal""","",""
+"403210558104666113","eclark#5163","14-Feb-18 11:04 PM","and also I was trying to do the Fahrenheit problem but everytime I did get_int it says that wasn’t supported so then I copied and pasted the algorithm on the problem about hello world into my cs50 ide and that also didn’t work either but it was copy and pasted straight from the site","",""
+"393854278764068875","curiouskiwi#1671","14-Feb-18 11:04 PM","you've opened a text tab","",""
+"403210558104666113","eclark#5163","14-Feb-18 11:04 PM","ahhh okay that makes sense thankyou but for my second problem do you know any way I can fix that","",""
+"393854278764068875","curiouskiwi#1671","14-Feb-18 11:05 PM","did you run `make fahrenheit` to compile it with all the correct flags by default?","",""
+"403210558104666113","eclark#5163","15-Feb-18 11:38 PM","yeah I’ve tried clang and make for my file called hello.c","https://cdn.discordapp.com/attachments/397511855091875842/413811326570332170/image.jpg",""
+"393854278764068875","curiouskiwi#1671","15-Feb-18 11:54 PM","`make hello`","",""
+"403210558104666113","eclark#5163","16-Feb-18 12:03 AM","I already tried that too it was in the terminal but it was just up above the ones I took a pic of","",""
+"393854278764068875","curiouskiwi#1671","16-Feb-18 12:07 AM","and what happened?","",""
+"393854278764068875","curiouskiwi#1671","16-Feb-18 12:09 AM","you're trying to run `make hello` in the `~/workspace` folder but your code is in the `~/workspace/chapter1/hello` folder","",""
+"393854278764068875","curiouskiwi#1671","16-Feb-18 12:09 AM","so you need to go to that folder in the terminal  (using `cd chapter1/hello`) and then try to make","",""
+"403210558104666113","eclark#5163","16-Feb-18 12:09 AM","okay I’ll try doing that thankyou","",""
+"403210558104666113","eclark#5163","20-Feb-18 12:45 AM","can anyone help me with this problem I have been having I don’t know how I can do math with this I keep on getting error messages","https://cdn.discordapp.com/attachments/397511855091875842/415277650534203393/image.jpg",""
+"348898174137532417","Kinno#3002","20-Feb-18 12:49 AM","uhm","",""
+"348898174137532417","Kinno#3002","20-Feb-18 12:49 AM","please screenshot","",""
+"348898174137532417","Kinno#3002","20-Feb-18 12:49 AM","instead of doing that","",""
+"348898174137532417","Kinno#3002","20-Feb-18 12:49 AM","just no","",""
+"403210558104666113","eclark#5163","20-Feb-18 01:04 AM","what","",""
+"403210558104666113","eclark#5163","20-Feb-18 01:05 AM","you can read it perfectly fine","",""
+"329977469350445069","Lord of Galaxy#9211","20-Feb-18 10:16 AM","And, uh, what are you trying to do there?","",""
+"397677328660037632","Maarten#1004","20-Feb-18 12:14 PM","Wondering the same. The code is a bit funky. Also: even if you get line 14 a bit straightened out, you will  find out that using % on floats/doubles won't work. You'll need to do some converting first (check out the round part of the pset, assuming that is there in AP is well).","",""
+"403210558104666113","eclark#5163","20-Feb-18 06:39 PM","I got it fixed","",""
+"237588407096705026",".Pork#0696","22-Feb-18 10:22 AM","Screen photos...","",""
+"415458979087646722","dominic#2838","26-Feb-18 10:11 AM","@eclark  Can you please take us on the steps you took to fix it?","",""
+"403210558104666113","eclark#5163","26-Feb-18 11:10 PM","@dominic the %f cannot he used with a decimal so i multiplied the .25 by 100 before i did it","",""
+"403210558104666113","eclark#5163","26-Feb-18 11:11 PM","@curiouskiwi if i don’t finish the class before april 30th am i still able to access the class but not get the certificate or does the class close","",""
+"393854278764068875","curiouskiwi#1671","26-Feb-18 11:11 PM","the materials will remain accessible.","",""
+"161273615575285760","HardBoiled#5675","06-Mar-18 01:55 AM","THANK GOD","",""
+"161273615575285760","HardBoiled#5675","06-Mar-18 01:56 AM","Also @curiouskiwi any idea how the certificate will be given? All other edX courses I've taken have used the builtin grading system, and CS50 is unclear about how grading works and what percentage must be completed for a certificate.","",""
+"393854278764068875","curiouskiwi#1671","06-Mar-18 01:58 AM","@HardBoiled per the syllabus:  ""All problems are due on April 30, 2018. You will receive a certificate of completion, if a satisfactory grade (60%) is earned on all problems.""","",""
+"161273615575285760","HardBoiled#5675","06-Mar-18 01:58 AM","@curiouskiwi is that an average score, or does that score need to be reached on every single problem?","",""
+"393854278764068875","curiouskiwi#1671","06-Mar-18 01:58 AM","each and every","",""
+"161273615575285760","HardBoiled#5675","06-Mar-18 01:58 AM","Alright! Thanks as always for your help!","",""
+"422643952945070080","manish_rocks#1948","15-Mar-18 10:47 AM","hello everyone","",""
+"422643952945070080","manish_rocks#1948","15-Mar-18 10:48 AM","i have a question","",""
+"422643952945070080","manish_rocks#1948","15-Mar-18 10:49 AM","which course should we take first cs50 introduction or cs50 ap","",""
+"422643952945070080","manish_rocks#1948","15-Mar-18 10:49 AM","or cs50 technology","",""
+"422643952945070080","manish_rocks#1948","15-Mar-18 10:50 AM","@curiouskiwi @Maarten","",""
+"422643952945070080","manish_rocks#1948","15-Mar-18 10:50 AM","@Kino#3002","",""
+"422643952945070080","manish_rocks#1948","22-Mar-18 08:37 PM","the kernel is separate and distinct from the operating system in general
+What would be some of the ramifications of removing that abstraction and letting the user tap into the kernel directly?","",""
+"422643952945070080","manish_rocks#1948","22-Mar-18 08:40 PM","please give me reply","",""
+"425829488752984084","I_love_Jesus_yo#8544","22-Mar-18 08:43 PM","@manish_rocks if you knew how to, you could straight up change your video games to be able to use more resources, or change your bluetooth to a dual-direction multi-point setup","",""
+"422643952945070080","manish_rocks#1948","22-Mar-18 08:53 PM","i did not understand @I_love_Jesus_yo","",""
+"161273615575285760","HardBoiled#5675","23-Mar-18 03:44 AM","@curiouskiwi Will I get my certificate if I only finish one of the problems that come with both a less and more comfortable version?","",""
+"393854278764068875","curiouskiwi#1671","23-Mar-18 03:45 AM","if there's a less/more, then you only need to do one of them.","",""
+"161273615575285760","HardBoiled#5675","23-Mar-18 03:46 AM","Great, thanks as always for your awesome and speedy help!","",""
+"393854278764068875","curiouskiwi#1671","23-Mar-18 03:46 AM","for example, it says: ""
+
+Now that you've finished ISBN, try the next problem in CS50 AP, and indeed your final milestone in Chapter 1!
+
+Mario is a problem in CS50 AP that has two versions, less and more comfy. The less comfy version is intended for students who are less comfortable  with programming and the more comfy is intended for students who are more comfortable with programming.
+
+You can find the specification for Mario (less comfortable), here and the specification for Mario (more comfortable), here. Both are designed to test the same skill set. You are only required to submit one or the other, so don't fret about completing both.""","",""
+"422643952945070080","manish_rocks#1948","23-Mar-18 07:27 PM","#include <cs50.h>
+#include <stdio.h>
+
+int main(void)
+{
+    printf(""bool is %lu\n"", sizeof(bool));
+    printf(""char is %lu\n"", sizeof(char));
+    printf(""double is %lu\n"", sizeof(double));
+    printf(""float is %lu\n"", sizeof(float));
+    printf(""int is %lu\n"", sizeof(int));
+    printf(""long long is %lu\n"", sizeof(long long));
+    printf(""string is %lu\n"", sizeof(string));
+}","",""
+"422643952945070080","manish_rocks#1948","23-Mar-18 07:28 PM","what  is the meaning of  %lu  in this program @curiouskiwi @Maarten#1004 @Kino#3002","",""
+"426454067582205956","JesusAndTacos#9685","23-Mar-18 07:37 PM","""%lu"" represents an *unsigned long*, which means a really big number that can not be negative","",""
+"426454067582205956","JesusAndTacos#9685","23-Mar-18 07:37 PM","@manish_rocks","",""
+"422643952945070080","manish_rocks#1948","23-Mar-18 08:18 PM","hey guys there is a problem  hello in csap2017","",""
+"422643952945070080","manish_rocks#1948","23-Mar-18 08:20 PM","the out put should be           Hello, world!     but in cs50 submission the output recommended       hello, world     its a mistake","",""
+"393854278764068875","curiouskiwi#1671","23-Mar-18 11:02 PM","check50 will allow either Hello or hello","",""
+"422643952945070080","manish_rocks#1948","24-Mar-18 01:40 PM","in check50 it was hello ,world  but in problem set it is Hello ,world!","",""
+"422643952945070080","manish_rocks#1948","24-Mar-18 01:41 PM","i think its a mistake in problem set","",""
+"238111329586511872","EatDoughnuts#4301","24-Mar-18 08:16 PM","For next school year: Is this course supposed to be taught with a teacher at the school or can I study it by myself at home? Also, my school doesn't administer AP exams. Can I still take it for credit, or is the regular CS50x more suitable for my circumstances?","",""
+"393854278764068875","curiouskiwi#1671","24-Mar-18 09:58 PM","If your school doesn't offer the exam, you have to find another school that will 'sponsor' you as there are other requirements for AP credit (there are written problems and the exam).  C50x might be better.","",""
+"238111329586511872","EatDoughnuts#4301","25-Mar-18 01:37 AM","Thanks","",""
+"397677328660037632","Maarten#1004","10-Apr-18 10:51 PM","@curiouskiwi I tagged you on Facebook too, but are you guys aware the link to the zip for the finance pset isn't working?","",""
+"393854278764068875","curiouskiwi#1671","10-Apr-18 10:53 PM","yes, it's on our list of things to fix.  In the meantime, using the CS50x version of the spec is the workaround.","","👌 (1)"
+"397677328660037632","Maarten#1004","10-Apr-18 10:56 PM","Cool 😃 informed Lindsay on Facebook.","",""
+"422643952945070080","manish_rocks#1948","12-Apr-18 09:21 PM","for pennies","",""
+"422643952945070080","manish_rocks#1948","12-Apr-18 09:21 PM","( 28 days, 1 penny on day one yields $2684354.55
+expected ""$2684354.55\n"", not ""2684354.56"" 
+
+Log 
+running ./pennies... 
+sending input 28... 
+sending input 1... 
+checking for output ""$2684354.55 ""... 
+
+Expected Output: 
+$2684354.55
+Actual Output: 
+2684354.56
+sir this problem is from cs50ap  pennies
+but  i  have checked on  calculator the answer for 28 days and first day pennies is 2684354.56
+than why on github page cs50 says that the expected is 2684354.55
+please sir help me","",""
+"422643952945070080","manish_rocks#1948","12-Apr-18 09:22 PM","its headache","",""
+"393854278764068875","curiouskiwi#1671","12-Apr-18 10:30 PM","The pennies aren't doubled on the first day but I'm guessing your formula is doing that.","",""
+"422643952945070080","manish_rocks#1948","12-Apr-18 11:09 PM","my formula is 1*(2^28)","",""
+"422643952945070080","manish_rocks#1948","12-Apr-18 11:09 PM","on calculator","",""
+"393854278764068875","curiouskiwi#1671","12-Apr-18 11:13 PM","`1+2+4+8+...+2^k = 2^(k+1) -1`","",""
+"393854278764068875","curiouskiwi#1671","22-Apr-18 04:28 AM","For reference, here are all the problems (not including from optional Chapters A & B):","",""
+"393854278764068875","curiouskiwi#1671","22-Apr-18 04:29 AM","Chapter 0:
+Around the House  http://docs.cs50.net/2017/ap/problems/house/house.html
+Tech Spotlight http://docs.cs50.net/2017/ap/problems/tech/tech.html
+Everday Algorithms http://docs.cs50.net/2017/ap/problems/algorithms/algorithms.html
+
+Chapter 1:
+Scratch http://docs.cs50.net/2017/ap/problems/scratch/scratch.html
+Hello http://docs.cs50.net/2017/ap/problems/hello/hello.html
+Fahrenheit  http://docs.cs50.net/2017/ap/problems/fahrenheit/fahrenheit.html
+Greedy http://docs.cs50.net/2017/ap/problems/greedy/greedy.html
+Pennies http://docs.cs50.net/2017/ap/problems/pennies/pennies.html
+ISBN http://docs.cs50.net/2017/ap/problems/isbn/isbn.html
+Mario Less http://docs.cs50.net/2017/ap/problems/mario/less/mario.html
+(optional)Mario More http://docs.cs50.net/2017/ap/problems/mario/more/mario.html
+(optional)Credit http://docs.cs50.net/2017/ap/problems/credit/credit.html","","💯 (1)"
+"393854278764068875","curiouskiwi#1671","22-Apr-18 04:29 AM","Chapter 2:
+Me Myself and UI  http://docs.cs50.net/2017/ap/problems/ui/ui.html
+(optional) Reverse Engineer http://docs.cs50.net/2017/ap/problems/reverse/reverse.html
+Initials Less http://docs.cs50.net/2017/ap/problems/initials/less/initials.html
+(optional) Initials More http://docs.cs50.net/2017/ap/problems/initials/more/initials.html
+Old Friends http://docs.cs50.net/2017/ap/problems/friends/friends.html
+Calc 1.0 http://docs.cs50.net/2017/ap/problems/calc/calc.html
+Caesar http://docs.cs50.net/2017/ap/problems/caesar/caesar.html
+Vigenere http://docs.cs50.net/2017/ap/problems/vigenere/vigenere.html
+
+Chapter3:
+Find Less http://docs.cs50.net/2017/ap/problems/find/less/find.html
+(optional) Find More http://docs.cs50.net/2017/ap/problems/find/more/find.html
+Fifteen http://docs.cs50.net/2017/ap/problems/fifteen/fifteen.html
+Sort Race http://docs.cs50.net/2017/ap/problems/race/race.html
+Analyze This http://docs.cs50.net/2017/ap/problems/analyze/analyze.html
+Scramble (Part 1) http://docs.cs50.net/2017/ap/problems/scramble/1/scramble1.html
+Simulate! http://docs.cs50.net/2017/ap/problems/simulate/simulate.html","","💯 (1)"
+"393854278764068875","curiouskiwi#1671","22-Apr-18 04:29 AM","Chapter4:
+Sudoku http://docs.cs50.net/2017/ap/problems/sudoku/sudoku.html
+Finder http://docs.cs50.net/2017/ap/problems/finder/finder.html
+Whodunit http://docs.cs50.net/2017/ap/problems/whodunit/whodunit.html
+Resize Less http://docs.cs50.net/2017/ap/problems/resize/less/resize.html
+(optional) Resize More http://docs.cs50.net/2017/ap/problems/resize/more/resize.html
+Recover http://docs.cs50.net/2017/ap/problems/recover/recover.html
+
+Chapter5
+Be the Teacher http://docs.cs50.net/2017/ap/problems/teacher/teacher.html
+Defender of the Web http://docs.cs50.net/2017/ap/problems/defender/defender.html
+</Chapter5> http://docs.cs50.net/2017/ap/problems/chapter5/chapter5.html
+
+Chapter 6
+Sentimental https://docs.cs50.net/2017/ap/problems/sentimental/sentimental.html
+Sentiments https://docs.cs50.net/2017/ap/problems/sentiments/sentiments.html
+C$50 Finance http://docs.cs50.net/2017/ap/problems/finance/finance.html
+Mashup http://docs.cs50.net/2017/ap/problems/mashup/mashup.html","","💯 (1)"
+"220328341029257219","Etudes#6969","02-May-18 12:34 AM","I enrolled in ap a few days ago through edx, and it says everything is due april 30th, which was yesterday... are these due dates accurate?","",""
+"393854278764068875","curiouskiwi#1671","02-May-18 12:52 AM","yes. The College Board's deadline for the 2018 CS AP Principles course is Apr 30 (and the exam is on May 19).  The CS50 AP course reflects those deadlines.   Between now and September, we will be updating the course with any changes that the College Board may make in the curriculum.   Let me double-check with the team what this means for anyone who is currently enrolled but didn't complete the course by the 30 Apr deadline.  (New enrollments are closed).","",""
+"393854278764068875","curiouskiwi#1671","02-May-18 12:52 AM","(CS50 AP is aligned to the high school academic year calendar (Sept-May))","",""
+"393854278764068875","curiouskiwi#1671","02-May-18 01:28 AM","@Etudes  I verified the above.  The deadline for all submissions was 30 April.  The course materials will remain accessible but cannot be submitted for a grade.  Once the course is updated to the 2018/19 version (later this year), submissions can be made for that course.","",""
+"220328341029257219","Etudes#6969","02-May-18 01:29 AM","ok, I was planning to take it over the summer. Would it work if I completed all the assignments this summer, then  have them graded in September or something?","",""
+"393854278764068875","curiouskiwi#1671","02-May-18 01:31 AM","Keeping in mind that the course may change, you would be able to submit anything you've completed that is still part of next year's course. (using next year's submission instructions).  If you aren't planning to purchase a certificate, of course, then there's no need to submit anything and you can simply complete the 2017/18 course for your own learning.","",""
+"220328341029257219","Etudes#6969","02-May-18 01:32 AM","Should I re-enroll in the course so I can get next year's instructions?","",""
+"393854278764068875","curiouskiwi#1671","02-May-18 01:33 AM","No need.  The current edX course will be updated with the new materials.","",""
+"393854278764068875","curiouskiwi#1671","02-May-18 01:34 AM","Enrollments in the course are currently closed until later in the year (but anyone currently enrolled will simply remain)","",""
+"220328341029257219","Etudes#6969","02-May-18 01:45 AM","If I did this, would I still be able to apply for the certificate when I'm finished?","",""
+"393854278764068875","curiouskiwi#1671","02-May-18 02:11 AM","yes","",""
+"441816863048204298","excelsior#5753","28-May-18 03:40 AM","@curiouskiwi around what month will it be updated","",""
+"393854278764068875","curiouskiwi#1671","28-May-18 03:41 AM","the new course will start at the beginning of the US high school year (September)","",""
+"441816863048204298","excelsior#5753","28-May-18 03:43 AM","Thanks @curiouskiwi","",""
+"291569684283785218","ooferini#0536","21-Jun-18 05:34 AM","How similar are regular cs50 and ap cs50","",""
+"393854278764068875","curiouskiwi#1671","21-Jun-18 06:29 AM","cs50ap includes everything in CS50 plus all the extra curriculum requirements for the AP course.  It's also an academic-year long course (runs Sept to April), so there are lots more psets.","",""
+"291569684283785218","ooferini#0536","21-Jun-18 06:10 PM","Is it available for all high school grade levels","",""
+"393854278764068875","curiouskiwi#1671","22-Jun-18 01:44 AM","@ooferini there's only one course.  Anyone can take it (it will be on edX).  Or are you asking about teaching it / taking it at your own school?","",""
+"291569684283785218","ooferini#0536","22-Jun-18 03:33 AM","@curiouskiwi Do you have to be in high school to take it?","",""
+"393854278764068875","curiouskiwi#1671","22-Jun-18 03:34 AM","CS50AP is an edX course that is open to anyone.  but if you are taking it for the purpose of getting AP credit, you'll have to coordinate with a high school who can submit your work and handle the exam.","",""
+"291569684283785218","ooferini#0536","22-Jun-18 03:35 AM","Is it free to take it for AP credit","",""
+"393854278764068875","curiouskiwi#1671","22-Jun-18 03:39 AM","The course is free.  there is a fee for the exam.  You'll find more information on the College Board site.  We aren't involved in that part of it.  https://apstudent.collegeboard.org/home","",""
+"291569684283785218","ooferini#0536","22-Jun-18 03:39 AM","Thank you","",""
+"461247479157882890","This is purely fun (Cod4life1O)#9734","11-Jul-18 10:17 PM","For some reason, when I open up the CS50 AP Principles course on edX, it only displays chapter 5. Is this just me or are chapters missing for everyone?","",""
+"95123066215997440","RandomGuy#9180","24-Jul-18 06:16 AM","can I start on the course now, or should I wait until the new school year begins?","",""
+"473989409730199583","perkytom#3980","01-Aug-18 02:10 AM","curiouskiwi  said ""CS50AP finished on 30 April.  It is currently being reset for the new school year and will become available again around 1 Sept."" that is why the course is closed","",""
+"441816863048204298","excelsior#5753","04-Aug-18 06:03 AM","@curiouskiwi did the course reset for the new school year","",""
+"393854278764068875","curiouskiwi#1671","04-Aug-18 06:06 AM","@excelsior yes, it just reopened.  But submissions won't be accepted until September.","",""
+"441816863048204298","excelsior#5753","04-Aug-18 06:21 AM","Ok thanks @curiouskiwi","",""
+"219174667137712138","AbstruseAsian#7463","10-Aug-18 12:41 AM","Can I transfer my work already done in regular cs50","",""
+"219174667137712138","AbstruseAsian#7463","10-Aug-18 12:42 AM","to cs50 for ap?","",""
+"393854278764068875","curiouskiwi#1671","14-Aug-18 01:20 AM","@Stephen you'd have to submit it (there's no automatic transfer)","",""
+"219174667137712138","AbstruseAsian#7463","15-Aug-18 06:58 PM","@curiouskiwi would submittingi t be allowed?","",""
+"219174667137712138","AbstruseAsian#7463","15-Aug-18 06:58 PM","not a form of academic cheating?","",""
+"186324060777480193","JankyCS#3437","15-Aug-18 08:45 PM","What programming language does this course teach?","",""
+"232215051052908545","QParticle#9469","15-Aug-18 09:45 PM","Someone told me it's in C","",""
+"232215051052908545","QParticle#9469","15-Aug-18 09:45 PM","","https://cdn.discordapp.com/attachments/397511855091875842/479360078873493524/image.png",""
+"393854278764068875","curiouskiwi#1671","16-Aug-18 12:25 AM","@AbstruseAsian if you've decided to switch courses (and you haven't used your submissions to get a certificate for CS50x already), then it's fine to resubmit them to CS50AP.","",""
+"186324060777480193","JankyCS#3437","16-Aug-18 12:26 AM","@QParticle hmm that's odd, my AP gr 12 comp studies course is gonna teach Java so idk","",""
+"393854278764068875","curiouskiwi#1671","16-Aug-18 12:35 AM","@JankyCS this is AP Computer Science Principles (not AP Computer Science) ... different course, which can be taught in any language.","",""
+"393854278764068875","curiouskiwi#1671","16-Aug-18 01:08 AM","I've updated the channel description:  
+This is CS50 AP, Harvard University's introduction to the intellectual enterprises of computer science and the art of programming for students in high school, which satisfies the College Board's new AP CS Principles curriculum framework. 
+ 
+An entry-level course taught by David J. Malan, CS50 AP teaches students how to think algorithmically and solve problems efficiently. Topics include abstraction, algorithms, data structures, encapsulation, resource management, security, software engineering, and web development. Languages include C, Python, SQL, and JavaScript plus CSS and HTML. Problem sets inspired by real-world domains of biology, cryptography, finance, forensics, and gaming. The on-campus version of CS50 AP, CS50 itself, is Harvard's largest course.
+ 
+Students in high school may receive AP credit for this course provided their school approves the credit and administers the College Board's end-of-year exam. Students who earn a satisfactory score (70% or higher) on each of the course's assigned problems","",""
+"393854278764068875","curiouskiwi#1671","16-Aug-18 01:09 AM","... are also eligible to receive a verified certificate from HarvardX.","",""
+"186324060777480193","JankyCS#3437","16-Aug-18 01:37 AM","AP computer science is different from AP computer science principles? Huh","",""
+"186324060777480193","JankyCS#3437","16-Aug-18 01:37 AM","Thanks for the help @curiouskiwi","",""
+"393854278764068875","curiouskiwi#1671","16-Aug-18 02:13 AM","@JankyCS https://apstudent.collegeboard.org/apcourse/ap-computer-science-a","",""
+"393854278764068875","curiouskiwi#1671","16-Aug-18 02:13 AM","https://apstudent.collegeboard.org/apcourse/ap-computer-science-principles","",""
+"393854278764068875","curiouskiwi#1671","16-Aug-18 02:17 AM","here's a chart that AP has showing the 2 courses","https://cdn.discordapp.com/attachments/397511855091875842/479428326218268672/CSvCSP.png",""
+"186324060777480193","JankyCS#3437","16-Aug-18 02:28 AM","Thanks, looks like what I'm doing is Computer Science A","",""
+"480220382603771920","quincy9200#5458","28-Aug-18 10:55 PM","If I were to take the class independently, who would correct my problem sets and other assignments?","",""
+"201767381691793408","Dsl03#4460","29-Aug-18 12:12 AM","Can I view my overall grade when I take the course? My school isn’t sure of letting me take the course because it is on EdX.","",""
+"399021249667399722","harbar20#9389","07-Sep-18 01:43 AM","i'm just doing this course outside of my school completely","",""
+"399021249667399722","harbar20#9389","07-Sep-18 01:45 AM","also, why can't i submit anything for Problem Around the House, even though it's already September 6, 2018?","",""
+"399021249667399722","harbar20#9389","07-Sep-18 01:45 AM","@curiouskiwi","",""
+"393854278764068875","curiouskiwi#1671","07-Sep-18 01:47 AM","soon","",""
+"399021249667399722","harbar20#9389","07-Sep-18 02:08 AM","ok cool thanks.","",""
+"243183483458027523","santyboi#6398","08-Sep-18 01:49 PM","How much time I have for pay the certified?","",""
+"399021249667399722","harbar20#9389","08-Sep-18 04:45 PM","Not much, i would think","",""
+"399021249667399722","harbar20#9389","08-Sep-18 04:45 PM","If u want it certified, you’re gonna wanna pay ASAP","",""
+"243183483458027523","santyboi#6398","08-Sep-18 07:46 PM","Okay thx","",""
+"393854278764068875","curiouskiwi#1671","09-Sep-18 12:49 AM","@santyboi you can pay at any time, even after completing the course.","",""
+"399021249667399722","harbar20#9389","09-Sep-18 02:15 AM","wait really?","",""
+"399021249667399722","harbar20#9389","09-Sep-18 02:15 AM","that's really cool","",""
+"243183483458027523","santyboi#6398","12-Sep-18 02:41 AM","@curiouskiwi  Oh, thank u 😄","",""
+"243183483458027523","santyboi#6398","12-Sep-18 02:44 AM","@harbar20  Yes, so cool","",""
+"399021249667399722","harbar20#9389","13-Sep-18 03:19 AM","is Around the House STILL not submittable?","",""
+"399021249667399722","harbar20#9389","13-Sep-18 03:19 AM","seriously","",""
+"399021249667399722","harbar20#9389","13-Sep-18 03:19 AM","i'm basically done with it and all i need to do is turn it in.","",""
+"399021249667399722","harbar20#9389","13-Sep-18 03:19 AM","do i email it>","",""
+"399021249667399722","harbar20#9389","13-Sep-18 03:20 AM","*?","",""
+"399021249667399722","harbar20#9389","13-Sep-18 03:20 AM","or go to the CS50","",""
+"399021249667399722","harbar20#9389","13-Sep-18 03:20 AM","website?","",""
+"399021249667399722","harbar20#9389","14-Sep-18 05:02 AM","@curiouskiwi","",""
+"399021249667399722","harbar20#9389","14-Sep-18 05:02 AM","pls answer. i wanna finish this course","",""
+"393854278764068875","curiouskiwi#1671","14-Sep-18 05:10 AM","@harbar20 the submission instructions will be updated soon (bit of a glitch with them at the moment).  You can simply carry on with the course and then submit when it becomes available.  It's a 36-week course, so this shouldn't prevent you from finishing.","",""
+"399021249667399722","harbar20#9389","14-Sep-18 05:14 AM","Ok thank you!","",""
+"339071055584952320","Gandalf#9111","17-Sep-18 12:59 AM","is cs50 ap more or less rigorous than cs50x? if i finish cs50x, is there any value to doing the ap counterpart?","",""
+"399021249667399722","harbar20#9389","17-Sep-18 02:17 AM","i feel like CS50 AP is just for AP credit and to study for the AP CSP exam","",""
+"399021249667399722","harbar20#9389","17-Sep-18 03:13 AM","so if you're not a high schooler who wants AP credit, there really is no point to taking this course if you've already taken the regular CS50","",""
+"393854278764068875","curiouskiwi#1671","17-Sep-18 03:20 AM","@harbar20 no point in taking the course as it uses the same lectures from CS50x.   you might do some of the extra psets (that aren't in cs50x) as a review (or for fun), like Sudoku (https://docs.cs50.net/2018/ap/problems/sudoku/sudoku.html)","",""
+"339071055584952320","Gandalf#9111","17-Sep-18 03:29 AM","@curiouskiwi  in terms of level of depth,  does cs50x surpass cs50 ap?","",""
+"393854278764068875","curiouskiwi#1671","17-Sep-18 03:30 AM","no.  it's probably the reverse.  Because AP is a 36-week course, it can go into more depth on some topics (and it has optional units that aren't in cs50x)","",""
+"339071055584952320","Gandalf#9111","17-Sep-18 03:31 AM","ah ok","",""
+"339071055584952320","Gandalf#9111","17-Sep-18 03:31 AM","in your knowledge, do you think it's better to do cs50x and then some java oop course and take ap cs a exam at the end of the year","",""
+"339071055584952320","Gandalf#9111","17-Sep-18 03:32 AM","or to take cs50 ap full year and take the ap cs principles","",""
+"339071055584952320","Gandalf#9111","17-Sep-18 03:32 AM","@curiouskiwi","",""
+"393854278764068875","curiouskiwi#1671","17-Sep-18 03:34 AM","are neither taught at your high school?","",""
+"339071055584952320","Gandalf#9111","17-Sep-18 03:35 AM","ap cs a is, but i generally learn better independently","",""
+"339071055584952320","Gandalf#9111","17-Sep-18 03:35 AM","plus i already have other aps","",""
+"339071055584952320","Gandalf#9111","17-Sep-18 03:35 AM","and it didnt fit into my schedule","",""
+"393854278764068875","curiouskiwi#1671","17-Sep-18 03:35 AM","As I understand it CS A is more of a programming course.  AP Principles is more broad-based","",""
+"393854278764068875","curiouskiwi#1671","17-Sep-18 03:36 AM","and doesn't require a particular language","",""
+"339071055584952320","Gandalf#9111","17-Sep-18 03:36 AM","so if my goal is to get good at machine learning","",""
+"339071055584952320","Gandalf#9111","17-Sep-18 03:36 AM","does cs50x give me enough broad knowledge?","",""
+"393854278764068875","curiouskiwi#1671","17-Sep-18 03:37 AM","keeping in mind that it's an introductory course, it gives you a good base to go forward with more advanced topics in college.","",""
+"393854278764068875","curiouskiwi#1671","17-Sep-18 03:39 AM","you might want to check with the university (or potentials) that you are planning to attend to see how they handle their CS program (if CS A or Principles is recommended).  If they teach their first year CS courses in Java, then doing A might be better prep for you?  It's hard for me to advise.","",""
+"339071055584952320","Gandalf#9111","17-Sep-18 03:40 AM","ok, i see","",""
+"339071055584952320","Gandalf#9111","17-Sep-18 03:40 AM","since oop is importnat, and java is chosen by the ap, im going to study java","",""
+"339071055584952320","Gandalf#9111","17-Sep-18 03:40 AM","off the top of your mind, do you know any good java oop courses online?","",""
+"339071055584952320","Gandalf#9111","17-Sep-18 03:41 AM","i know purdue had one, but the people speak too slow and the assignments are easy (unlike cs50)","",""
+"393854278764068875","curiouskiwi#1671","17-Sep-18 03:44 AM","My daughter did the one at HKUST ( https://www.edx.org/course/introduction-java-programming-part-1-hkustx-comp102-1x-4 ) to prepare for her first year CS (her university uses Java in their first-year courses) .  She did that one after finishing CS50x.  (both while in high school).","",""
+"393854278764068875","curiouskiwi#1671","17-Sep-18 03:44 AM","https://www.edx.org/course/introduction-java-programming-part-2-hkustx-comp102-2x-8","",""
+"393854278764068875","curiouskiwi#1671","17-Sep-18 03:45 AM","I don't know how it compares to others.","",""
+"339071055584952320","Gandalf#9111","17-Sep-18 03:45 AM","awesome thanks so much","",""
+"393854278764068875","curiouskiwi#1671","18-Sep-18 11:43 AM","@harbar20 the CS50AP submissions are now open. You can find the instructions in the How To Submit section of each problem.","",""
+"399021249667399722","harbar20#9389","18-Sep-18 01:36 PM","Thank you!","",""
+"229341659115028482","Kihan#6167","19-Sep-18 12:37 PM","I have a question","",""
+"229341659115028482","Kihan#6167","19-Sep-18 12:37 PM","Does this online edX CSP course have a class code that i can use","",""
+"229341659115028482","Kihan#6167","19-Sep-18 12:38 PM","for the ap test","",""
+"229341659115028482","Kihan#6167","19-Sep-18 12:39 PM","","https://cdn.discordapp.com/attachments/397511855091875842/491906203203403776/apcspjoincodecb.PNG",""
+"393854278764068875","curiouskiwi#1671","19-Sep-18 12:50 PM","@Kihan no.  Per the course instructions, you must register via your own school (or, if you aren't currently in high school and are homeschooled instead, via an AP coordinator)  Links are in the instructions:  https://docs.cs50.net/2018/ap/x/references/instructions.html","",""
+"229341659115028482","Kihan#6167","19-Sep-18 12:50 PM","ok","",""
+"229341659115028482","Kihan#6167","19-Sep-18 12:50 PM","thank you so much 😃","",""
+"447853489767448596","aalewis#1396","19-Sep-18 10:59 PM","@curiouskiwi im submitting my first scratch project. Is it supposed to be in a text file?","",""
+"399021249667399722","harbar20#9389","19-Sep-18 11:27 PM","no","",""
+"393854278764068875","curiouskiwi#1671","19-Sep-18 11:27 PM","@aalewis it should be a .sb2 file (which is a text-based json file).  You shouldn't need to open it or edit it before submitting. Just submit the .sb2 file that you are given when you download.","",""
+"399021249667399722","harbar20#9389","19-Sep-18 11:27 PM","it's supposed to be in `.sb2` file type","",""
+"447853489767448596","aalewis#1396","20-Sep-18 12:20 AM","Ok thanks","",""
+"198940082500009985","Grayson#8038","23-Sep-18 05:54 AM","can someone help me on ISBN?","",""
+"198940082500009985","Grayson#8038","23-Sep-18 05:54 AM","this is all i have","",""
+"198940082500009985","Grayson#8038","23-Sep-18 05:54 AM","","https://cdn.discordapp.com/attachments/397511855091875842/493253736441970688/unknown.png",""
+"393854278764068875","curiouskiwi#1671","23-Sep-18 07:06 AM","why are you writing it in java?","",""
+"393854278764068875","curiouskiwi#1671","23-Sep-18 07:08 AM","CS50AP is taught in C.","",""
+"393854278764068875","curiouskiwi#1671","23-Sep-18 07:16 AM","@Grayson","",""
+"198940082500009985","Grayson#8038","23-Sep-18 08:30 AM","my AP course is taught in java","",""
+"198940082500009985","Grayson#8038","23-Sep-18 08:30 AM","@curiouskiwi","",""
+"393854278764068875","curiouskiwi#1671","23-Sep-18 08:31 AM","You might have trouble finding help here then, since java is not covered in CS50","",""
+"198940082500009985","Grayson#8038","23-Sep-18 08:32 AM","ah","",""
+"198940082500009985","Grayson#8038","23-Sep-18 08:32 AM","thanks for the help","",""
+"399021249667399722","harbar20#9389","23-Sep-18 04:59 PM","@curiouskiwi i have a question: if I can't get the school to recognize that i'm doing this course & get it on my high school transcript, can I still do the course and pay for the certificate, and put it on my college apps later?","",""
+"399021249667399722","harbar20#9389","02-Oct-18 02:09 AM","@curiouskiwi how does this course deal with the AP exam or the AP Digital Portfolio?","",""
+"399021249667399722","harbar20#9389","02-Oct-18 02:09 AM","does the course just exist, and i have to study for the exam myself and do the portfolio by myself, or does the course prepare me for it?","",""
+"393854278764068875","curiouskiwi#1671","02-Oct-18 02:12 AM","the course prepares you for the exam (by teaching you the concepts that are covered).  You have to organize the portfolio yourself.  https://docs.cs50.net/2018/ap/x/references/instructions.html","",""
+"399021249667399722","harbar20#9389","02-Oct-18 04:02 AM","alright thank you!","",""
+"374867247799468033","relicradiation#7925","02-Oct-18 10:45 AM","Hi  I have reenrolled in ap cs50. I submitted 2 exercises this March but didnt get to finish the course. Is it ok if I resubmit it again so that I can move on to other exercises? Is it considered plagiarism or not  as I'm the only one who made it and just reusing it? Thanks.","",""
+"393854278764068875","curiouskiwi#1671","02-Oct-18 12:16 PM","@relicradiation that's fine to resubmit","",""
+"374867247799468033","relicradiation#7925","02-Oct-18 12:17 PM","Oh ok thanks.!","",""
+"399021249667399722","harbar20#9389","05-Oct-18 01:50 AM","i need help with the Pennies problem","",""
+"399021249667399722","harbar20#9389","05-Oct-18 01:51 AM","this is my code:
+```c
+#include <cs50.h>
+#include <stdio.h>
+#include <math.h>
+
+int main(void)
+{
+    //asks for number of days
+    long long int days;
+    do
+    {
+        printf(""Days in month: "");
+        days = get_int();
+    }
+    while (days > 32);
+    //asks for number of pennies
+    long long int numPennies;
+    do
+    {
+        printf(""Pennies on first day: "");
+        numPennies = get_int();
+    }
+    while (numPennies < 0);
+
+    //converts pennies into dollars
+    float total = numPennies/100;
+
+    //does calculation for how much total at the end
+    for (int i = 0; i < days; i++)
+    {
+        printf(""%f\n"", total);
+        total *= 2;
+    }
+
+    //prints total number of coins
+    printf(""%.2f\n"", total);
+}
+```","",""
+"399021249667399722","harbar20#9389","05-Oct-18 01:51 AM","when i input any number of days and 1 penny, it always outputs 0.00","",""
+"399021249667399722","harbar20#9389","05-Oct-18 01:51 AM","i think this is the problem:
+```c
+    //converts pennies into dollars
+    float total = numPennies/100;
+```","",""
+"399021249667399722","harbar20#9389","05-Oct-18 01:52 AM","but idk what exactly IS the problem","",""
+"399021249667399722","harbar20#9389","05-Oct-18 01:52 AM","could someone help me?","",""
+"399021249667399722","harbar20#9389","05-Oct-18 01:52 AM","if nobody helps me in the next 40 minutes, i'll ask in #general","",""
+"393854278764068875","curiouskiwi#1671","05-Oct-18 02:25 AM","why are you doing that?","",""
+"399021249667399722","harbar20#9389","05-Oct-18 02:25 AM","doing what?","",""
+"393854278764068875","curiouskiwi#1671","05-Oct-18 02:26 AM","converting pennies into dollars before you actually calculate the total amount?","",""
+"399021249667399722","harbar20#9389","05-Oct-18 02:27 AM","when i did it after i calculated, it gave out the wrong value","",""
+"393854278764068875","curiouskiwi#1671","05-Oct-18 02:28 AM","You are running into float imprecision where some decimal values can't be expressed exactly in binary.  Generally it's best to do all calculations using ints. (or long ints in this case)","",""
+"393854278764068875","curiouskiwi#1671","05-Oct-18 02:32 AM","you might also want to investigate the power function in math.h as suggested in the spec.","",""
+"399021249667399722","harbar20#9389","05-Oct-18 02:33 AM","yeah i should do that","",""
+"399021249667399722","harbar20#9389","05-Oct-18 03:45 AM","how would i use the power function for this?","",""
+"399021249667399722","harbar20#9389","05-Oct-18 03:45 AM","and also, i'm still stuck on how to convert an int to a float","",""
+"399021249667399722","harbar20#9389","05-Oct-18 05:03 AM","@curiouskiwi sorry to @ you, but this was about the course check50. In the `pennies` problem, i'm pretty sure that the check50 function is incorrect for that problem","",""
+"399021249667399722","harbar20#9389","05-Oct-18 05:03 AM","idk what's happening","",""
+"393854278764068875","curiouskiwi#1671","05-Oct-18 05:04 AM","hmm, looks fine to me: ```~/workspace/ap/chapter1/pennies/ $ check50 cs50/2018/ap/pennies
+Connecting......
+Authenticating......
+Preparing..............
+Uploading.............
+Checking...........
+:) pennies.c exists
+:) pennies.c compiles
+:) 28 days, 1 penny on day one yields $2684354.55
+:) 31 days, 1 penny on day one yields $21474836.47
+:) 29 days, 2 pennies on day one yields $10737418.22
+:) 30 days, 30 pennies on day one yields $322122546.90
+:) rejects days < 28 or > 31
+:) rejects pennies < 1
+:) rejects days == ""foo""
+:) rejects pennies == ""foo""
+:) rejects a non-numeric input of """" for days
+:) rejects a non-numeric input of """" for pennies```","",""
+"399021249667399722","harbar20#9389","05-Oct-18 05:06 AM","oh.","",""
+"399021249667399722","harbar20#9389","05-Oct-18 05:06 AM","can i PM you my code? i have absolutely 0 idea what's wrong","",""
+"399021249667399722","harbar20#9389","05-Oct-18 09:06 PM","@staff i think i found a bug in the check50 program","",""
+"399021249667399722","harbar20#9389","05-Oct-18 09:06 PM","idk tho","",""
+"399021249667399722","harbar20#9389","05-Oct-18 09:28 PM","it's a legitimate bug this time","",""
+"399021249667399722","harbar20#9389","05-Oct-18 09:28 PM","OH WAIT NVM","",""
+"399021249667399722","harbar20#9389","05-Oct-18 09:28 PM","SORRY FALSE ALARM","",""
+"160558940499869696","thegreasetrap#2844","08-Oct-18 04:50 AM","https://cdn.discordapp.com/attachments/285946939944468492/495638256868917248/image0.jpg","",""
+"160558940499869696","thegreasetrap#2844","08-Oct-18 04:57 AM","https://cdn.discordapp.com/attachments/285946939944468492/450124764418277386/9bc3hnwug9011.png","",""
+"399021249667399722","harbar20#9389","08-Oct-18 05:09 AM","um","",""
+"399021249667399722","harbar20#9389","08-Oct-18 10:28 PM","@curiouskiwi i'm almost done with Unit 1. is the Credit problem optional?","",""
+"399021249667399722","harbar20#9389","08-Oct-18 10:28 PM","i don't understand","",""
+"393854278764068875","curiouskiwi#1671","08-Oct-18 10:59 PM","it's optional","",""
+"399021249667399722","harbar20#9389","09-Oct-18 01:03 AM","ok, thank you!","",""
+"498960060450340885","James Manyiel Machok Alueng#6510","09-Oct-18 02:06 PM","I'm not getting what you guys talking about","",""
+"399021249667399722","harbar20#9389","09-Oct-18 09:43 PM","@James Manyiel Machok Alueng do u need help with the course?","",""
+"499292922903134230","hemabest#6006","09-Oct-18 10:03 PM","i didnot see any course yet","",""
+"499292922903134230","hemabest#6006","09-Oct-18 10:04 PM","how should i learn while i dont know","",""
+"399021249667399722","harbar20#9389","09-Oct-18 10:05 PM","@hemabest what are you asking?","",""
+"399021249667399722","harbar20#9389","09-Oct-18 10:05 PM","if you don't know anything, take the course","",""
+"399021249667399722","harbar20#9389","09-Oct-18 10:05 PM","read everything","",""
+"399021249667399722","harbar20#9389","09-Oct-18 10:05 PM","watch everything","",""
+"399021249667399722","harbar20#9389","09-Oct-18 10:05 PM","do everything","",""
+"399021249667399722","harbar20#9389","09-Oct-18 10:05 PM","you'll learn","",""
+"499292922903134230","hemabest#6006","09-Oct-18 10:06 PM","how i get the course","",""
+"393854278764068875","curiouskiwi#1671","09-Oct-18 10:58 PM","@hemabest the channel description has a link to the course for this channel.  Be sure that's the course you want to take. 😃","",""
+"499292922903134230","hemabest#6006","10-Oct-18 04:46 AM","thank you","",""
+"337775335695187969","ra9#3988","17-Oct-18 07:54 PM","Hey guys","",""
+"399021249667399722","harbar20#9389","18-Oct-18 01:20 AM","@ra9 wassup","",""
+"399021249667399722","harbar20#9389","18-Oct-18 01:20 AM","welcome to the CS50 AP world","",""
+"337775335695187969","ra9#3988","18-Oct-18 11:00 PM","Thanks @harbar20","",""
+"202872300968607745","aki#1005","21-Oct-18 09:46 AM","Hey, how exactly do I get credit for this course?","",""
+"202872300968607745","aki#1005","21-Oct-18 09:46 AM","Assuming I complete it all, how exactly will I be taking the AP test?","",""
+"202872300968607745","aki#1005","21-Oct-18 09:46 AM","My school doesn't offer this course, so naturally they don't have the test there.","",""
+"393854278764068875","curiouskiwi#1671","21-Oct-18 12:10 PM","@aki please see the Instructions page: https://docs.cs50.net/2018/ap/x/references/instructions.html","",""
+"399021249667399722","harbar20#9389","23-Oct-18 03:34 AM","how do i exit a function in c?","",""
+"399021249667399722","harbar20#9389","23-Oct-18 03:34 AM","other than return?","",""
+"399021249667399722","harbar20#9389","23-Oct-18 03:34 AM","im on the `calc` problem","",""
+"399021249667399722","harbar20#9389","23-Oct-18 03:35 AM","and it says to exit the program if the values of `argv` are invalid","",""
+"399021249667399722","harbar20#9389","23-Oct-18 03:35 AM","so how do i exit the program?","",""
+"399021249667399722","harbar20#9389","23-Oct-18 03:38 AM","nvm i got it","",""
+"399021249667399722","harbar20#9389","23-Oct-18 03:58 AM","i do have a new question now","",""
+"399021249667399722","harbar20#9389","23-Oct-18 03:58 AM","how do i perform a modulo operation on floats?","",""
+"393854278764068875","curiouskiwi#1671","23-Oct-18 04:01 AM","generally, you don't.  modulo returns the remainder of an integer division.","",""
+"393854278764068875","curiouskiwi#1671","23-Oct-18 04:02 AM","why would you want modulo on floats?","",""
+"399021249667399722","harbar20#9389","23-Oct-18 04:05 AM","@curiouskiwi because in the `calc` problem it asks us to modulo real numbers","",""
+"393854278764068875","curiouskiwi#1671","23-Oct-18 04:05 AM","and in that problem, it explains how to do it","",""
+"399021249667399722","harbar20#9389","23-Oct-18 04:05 AM","it does?","",""
+"399021249667399722","harbar20#9389","23-Oct-18 04:06 AM","this is all it says:
+```
+And that also means we can compare argv[2][0] against a variety of possible values (such as +, -, x, / or %, for example) and make certain decisions in our program based on what that character is, perhaps by making use of some Boolean expressions and conditional statements. (Of course, since there are only a small number of characters that we care about in argv[2][0], you might also find this a good opportunity to use a switch statement for perhaps the first time.)\
+```","",""
+"393854278764068875","curiouskiwi#1671","23-Oct-18 04:06 AM","https://docs.cs50.net/2018/ap/problems/calc/calc.html#the-mod-squad","",""
+"399021249667399722","harbar20#9389","23-Oct-18 04:06 AM","yeah i read everything","",""
+"399021249667399722","harbar20#9389","23-Oct-18 04:08 AM","it doesn't say anything on how to modulo floats","",""
+"399021249667399722","harbar20#9389","23-Oct-18 04:09 AM","@curiouskiwi see?","",""
+"399021249667399722","harbar20#9389","23-Oct-18 04:09 AM","or if it IS there, and im missing something, copy-paste what it says here","",""
+"393854278764068875","curiouskiwi#1671","23-Oct-18 04:10 AM","did you follow my link?","",""
+"399021249667399722","harbar20#9389","23-Oct-18 04:10 AM","wait wtf","",""
+"399021249667399722","harbar20#9389","23-Oct-18 04:11 AM","WHAT","",""
+"399021249667399722","harbar20#9389","23-Oct-18 04:11 AM","HOW DID I MISS THAT","",""
+"399021249667399722","harbar20#9389","23-Oct-18 04:11 AM","WHAT","",""
+"399021249667399722","harbar20#9389","23-Oct-18 04:11 AM","@curiouskiwi THANKS A LOT","",""
+"399021249667399722","harbar20#9389","23-Oct-18 04:11 AM","IM LEGIT SO BLIND","",""
+"399021249667399722","harbar20#9389","23-Oct-18 04:11 AM","OMG","",""
+"399021249667399722","harbar20#9389","23-Oct-18 04:11 AM","i need to get better glasses","",""
+"322919883409195008","JifS#4686","12-Nov-18 04:07 AM","Can somebody help","https://cdn.discordapp.com/attachments/397511855091875842/511361396995260416/image0.jpg",""
+"322919883409195008","JifS#4686","12-Nov-18 04:28 AM","nvm","",""
+"399021249667399722","harbar20#9389","15-Nov-18 01:19 AM","lol k","",""
+"497109143954391050","AdrianWix#4577","17-Nov-18 12:56 AM","Hi, I wonder, is the cs50-ap more complete than the introduction to cs or the cs50-web?","",""
+"399021249667399722","harbar20#9389","17-Nov-18 03:40 PM","@AdrianWix CS50 is an intro to CS class for people who go to harvard","",""
+"399021249667399722","harbar20#9389","17-Nov-18 03:40 PM","CS50 AP is to prepare students for the AP CSP exam in May whilst also doing the regular CS50 curriculum","",""
+"399021249667399722","harbar20#9389","17-Nov-18 03:41 PM","so i gues CS50 AP is just extra stuff","",""
+"456226577798135808","Deleted User#0000","17-Nov-18 04:18 PM","Hello world, I have a question concerning the first problem 'around the house'. Is adding a drawing to the file that must be submitted allowed ?","",""
+"497109143954391050","AdrianWix#4577","17-Nov-18 08:11 PM","@harbar20 Ok thanks","",""
+"399021249667399722","harbar20#9389","17-Nov-18 08:18 PM","@Deleted User i would assume not.
+@tyhk no problem","",""
+"384785091119022080","s.yzeen#1522","18-Nov-18 04:03 PM","Guys, where are the coding problems we have to submit to them?","",""
+"456226577798135808","Deleted User#0000","18-Nov-18 05:08 PM","@harbar20  hey thans for reply 😃","",""
+"399021249667399722","harbar20#9389","18-Nov-18 05:10 PM","no problem!","",""
+"399021249667399722","harbar20#9389","18-Nov-18 05:10 PM","@s.yzeen what do u mean?","",""
+"384785091119022080","s.yzeen#1522","18-Nov-18 05:13 PM","The final project","",""
+"384785091119022080","s.yzeen#1522","18-Nov-18 05:13 PM","How works","",""
+"393854278764068875","curiouskiwi#1671","18-Nov-18 08:53 PM","The problems are all found in the edX courseware as you move through the tabs for each topic.","",""
+"393854278764068875","curiouskiwi#1671","18-Nov-18 08:57 PM","CS50AP first topic.  Problem is last link there.","https://cdn.discordapp.com/attachments/397511855091875842/513789772951584788/ap.png",""
+"384785091119022080","s.yzeen#1522","18-Nov-18 10:01 PM","@curiouskiwi and in how many days I get results?","",""
+"393854278764068875","curiouskiwi#1671","18-Nov-18 10:04 PM","everything is auto-graded, so within minutes","",""
+"393854278764068875","curiouskiwi#1671","19-Nov-18 12:15 AM","I've put together this quick reference page with links to all problems in the 2018-19 CS50APx course.  https://curiouskiwi.github.io/cs50help/cs50ap.html","",""
+"393854278764068875","curiouskiwi#1671","19-Nov-18 12:15 AM","Pinned a message.","",""
+"399021249667399722","harbar20#9389","19-Nov-18 05:43 PM","oh my god that's so useful thanks!","",""
+"456226577798135808","Deleted User#0000","20-Nov-18 02:01 AM","@curiouskiwi  hello, is there a specific space where we can ask and discuss questions from each module of a single unit ? I would like to discuss about the first module of unit 0. I need precision and remove confusion.","",""
+"399021249667399722","harbar20#9389","20-Nov-18 02:07 AM","@Deleted User what problem r u stuck on? maybe i can help 😃","",""
+"456226577798135808","Deleted User#0000","20-Nov-18 02:15 AM","I am working on the writing  problem 'around the house'. According to the given definition of computer ( a device that accepts input, and processes it in some way to produce a result automatically), a washing machine is a computer. Dirty linen is an input and clean linen is the output. But a computer is a computing machine, it does calculations (computations). Cleaning automatically some linen is not a calculation. It is a physical process. That's where I am confused. It satisfy the given defibition but if we dig deeper, it does not...","",""
+"399021249667399722","harbar20#9389","20-Nov-18 02:58 AM","@Deleted User a computer is something that takes input, does something to it, then gives output","",""
+"399021249667399722","harbar20#9389","20-Nov-18 02:58 AM","so TECHINCALLY, yeah, a washing machine is a computer","",""
+"399021249667399722","harbar20#9389","20-Nov-18 02:59 AM","cleaning linen IS a calculation, because a washing machine also takes input for hot or cold water, speed of water, amount of water, etc.","",""
+"456226577798135808","Deleted User#0000","20-Nov-18 03:56 AM","@harbar20 I'm missing something. Yes, a washing machine  agrees with the definition given in the problem text.  But everything then agrees with that definition. The spectrum of machines satisfying these criteria is very broad, if not exhaustive. If I put a slice of bread in the toaster, then I get a toast. Should I understand the toaster is a computer ?  That's weird and I would say some more precision is needed for a machine is a computing device. What is a calculation according to you ?","",""
+"399021249667399722","harbar20#9389","20-Nov-18 03:58 AM","@Deleted User the logic u just proved is exactly what they're looking for in this problem","",""
+"399021249667399722","harbar20#9389","20-Nov-18 03:58 AM","they WANT you to prove something as absurd as a TOASTER is a computer","",""
+"399021249667399722","harbar20#9389","20-Nov-18 03:58 AM","that's the point of this exercise","",""
+"399021249667399722","harbar20#9389","20-Nov-18 03:58 AM","I did a TV, because it was easy lol","",""
+"399021249667399722","harbar20#9389","20-Nov-18 03:58 AM","but u can do wahteve","",""
+"456226577798135808","Deleted User#0000","20-Nov-18 04:03 AM","@harbar20 Oh ok then I understand and I agree with you. I will give the washing machine example.  Thank you for your help. Confusion is gone, now.","",""
+"399021249667399722","harbar20#9389","20-Nov-18 04:07 AM","No problem.","",""
+"399021249667399722","harbar20#9389","20-Nov-18 04:07 AM","enjoy!","",""
+"219295627459166208","VelocityIsntSpeed#9490","11-Dec-18 06:22 PM","A TV is a computer, and this is not absurd, unlike the washing machine and toaster examples","",""
+"399021249667399722","harbar20#9389","11-Dec-18 11:53 PM","@VelocityIsntSpeed the point of the activity is to think outside the box. the washing machine and toaster are outside the box.","",""
+"219295627459166208","VelocityIsntSpeed#9490","11-Dec-18 11:56 PM","Exactly. But a TV is not. You said they want you to prove something as absurd as a toaster is a computer, but a TV is not absurd.","",""
+"399021249667399722","harbar20#9389","12-Dec-18 03:39 AM","@VelocityIsntSpeed i guess u have a point.","",""
+"279728783874064386","Gwynbleidd#8181","20-Dec-18 07:30 AM","Does this actually give CS credit if I complete the exams needed?","",""
+"393854278764068875","curiouskiwi#1671","20-Dec-18 08:59 AM","@Gwynbleidd not via edX on its own, but if you take the exam and also submit the other required work (through your high school), then yes.  See more here: https://docs.cs50.net/2018/ap/x/references/instructions.html","",""
+"279728783874064386","Gwynbleidd#8181","21-Dec-18 07:17 AM","thank you @curiouskiwi","",""
+"399021249667399722","harbar20#9389","25-Dec-18 05:24 AM","@curiouskiwi im having trouble with the `race` problem","",""
+"399021249667399722","harbar20#9389","25-Dec-18 05:53 AM","how do i slice an array in C?","",""
+"164268698243170304","Alaharon1234#4957","27-Dec-18 12:50 AM","If I want to take cs50 ap on my own at some point, but I wouldn't finish it before April 30, when does the next grading period start? May 1, or a different time?","",""
+"393854278764068875","curiouskiwi#1671","27-Dec-18 01:15 AM","@Alaharon1234 it will start at the beginning of the  2019-20 school year (in September)","","👍 (1)"
+"399021249667399722","harbar20#9389","28-Dec-18 07:14 PM","ohh","",""
+"399021249667399722","harbar20#9389","28-Dec-18 07:14 PM","ok","",""
+"164268698243170304","Alaharon1234#4957","29-Dec-18 06:42 AM","Is there an official schedule to go through to stay on a 35-week schedule? I'm not going to be in this iteration, but I'd like to know where to look for next run","",""
+"393854278764068875","curiouskiwi#1671","29-Dec-18 07:04 AM","@Alaharon1234 because the class is designed to be taught in high school, we leave the exact timing up to the individual teachers based on their own school's schedule, etc, but here's the general outline which might give you some idea?","",""
+"393854278764068875","curiouskiwi#1671","29-Dec-18 07:04 AM","CS50AP schedule","https://cdn.discordapp.com/attachments/397511855091875842/528438182895943693/Screen_Shot_2018-12-29_at_6.03.35_PM.png",""
+"164268698243170304","Alaharon1234#4957","29-Dec-18 07:07 AM","Is that anywhere in the edx course or cs50 website so I'll know where to check in the future?","",""
+"393854278764068875","curiouskiwi#1671","29-Dec-18 07:38 AM","@Alaharon1234 not in that form, but I put that together from the AP Syllabus (PDF) found here: https://ap.cs50.school/syllabus/","",""
+"164268698243170304","Alaharon1234#4957","29-Dec-18 07:41 AM","Oh, that's a sneaky link to that pdf! Thanks! I'll probably join this server again next year when I actually take cs50. Seeya!","",""
+"399021249667399722","harbar20#9389","03-Jan-19 04:18 AM","@curiouskiwi is there no walkthrough for Scramble Part 1?","",""
+"393854278764068875","curiouskiwi#1671","03-Jan-19 04:33 AM","that's correct","",""
+"124016824202297344","jzlegion#3333","04-Jan-19 06:48 AM","How different is CS50AP from the regular CS50?","",""
+"393854278764068875","curiouskiwi#1671","04-Jan-19 06:56 AM","@jzlegion  CS50 AP covers all the same material as CS50x but with additional problem sets (both programming based and writing based) and some extra curriculum that is required for the AP.  It is a 36 week course, designed to be completed over the course of a school year.  It has a strict deadline of 30 April, after which time problems can no longer be graded.    CS50x is a 12 week course that is the same as Harvard's CS50 course but is open-ended.","",""
+"124016824202297344","jzlegion#3333","04-Jan-19 06:56 AM","got it, thanks!","",""
+"399021249667399722","harbar20#9389","06-Jan-19 04:31 AM","```
+Complete the implementation of lookup in such a way that the function returns true if and only if word is in dictionary. Odds are you can do better than linear search. Be sure to also mark the word’s found attribute to be true also, to prevent users from scoring the same word multiple times!
+```
+how do i change the `found` attribute?","",""
+"393854278764068875","curiouskiwi#1671","06-Jan-19 04:36 AM","see how in the load function, it marks each word as not found?  ```dictionary.words[dictionary.size].found = false;```   where in this case `dictionary.size` is a counter that increments for each word.  So you could mark a particular word as found by setting that `found` element to true.","",""
+"399021249667399722","harbar20#9389","06-Jan-19 04:37 AM","ok thx","",""
+"399021249667399722","harbar20#9389","06-Jan-19 04:37 AM","and also","",""
+"399021249667399722","harbar20#9389","06-Jan-19 04:37 AM","how do i index the `dictionary`?","",""
+"399021249667399722","harbar20#9389","06-Jan-19 04:38 AM","it's not an array","",""
+"399021249667399722","harbar20#9389","06-Jan-19 04:39 AM","so im just confused","",""
+"399021249667399722","harbar20#9389","06-Jan-19 04:41 AM","@curiouskiwi","",""
+"393854278764068875","curiouskiwi#1671","06-Jan-19 04:41 AM","so how are you approaching lookup?","",""
+"399021249667399722","harbar20#9389","06-Jan-19 04:41 AM","so idk how to do this in binary search effectively","",""
+"399021249667399722","harbar20#9389","06-Jan-19 04:41 AM","so im just doin linear search","",""
+"393854278764068875","curiouskiwi#1671","06-Jan-19 04:42 AM","okay, that's fine","",""
+"399021249667399722","harbar20#9389","06-Jan-19 04:42 AM","so im doing something like this:
+```
+for (loop condition) {
+    if (dictionary[i] == word) {
+        //code
+    }
+}
+```","",""
+"393854278764068875","curiouskiwi#1671","06-Jan-19 04:42 AM","remember that you can't use == to compare strings. you have to use strcmp","",""
+"399021249667399722","harbar20#9389","06-Jan-19 04:42 AM","oh right","",""
+"399021249667399722","harbar20#9389","06-Jan-19 04:42 AM","ok","",""
+"399021249667399722","harbar20#9389","06-Jan-19 04:43 AM","how about the dictionary index?","",""
+"393854278764068875","curiouskiwi#1671","06-Jan-19 04:43 AM","well, you know the size of the dictionary, so you can just loop over that","",""
+"399021249667399722","harbar20#9389","06-Jan-19 04:44 AM","i do?","",""
+"393854278764068875","curiouskiwi#1671","06-Jan-19 04:46 AM","your load function counted them and stored the value in the `dictionary.size`","",""
+"399021249667399722","harbar20#9389","06-Jan-19 04:46 AM","oh","",""
+"399021249667399722","harbar20#9389","06-Jan-19 04:46 AM","ok","",""
+"399021249667399722","harbar20#9389","06-Jan-19 04:46 AM","so how do i then index?","",""
+"399021249667399722","harbar20#9389","06-Jan-19 04:48 AM","the dictionary","",""
+"399021249667399722","harbar20#9389","06-Jan-19 04:48 AM","i mean","",""
+"399021249667399722","harbar20#9389","06-Jan-19 04:49 AM","@curiouskiwi sorry to @ you so much btw, im just desperate at this point","",""
+"393854278764068875","curiouskiwi#1671","06-Jan-19 04:51 AM","if you look at load, it should give you hints on how to access ```C
+       // copy word into dictionary
+        dictionary.words[dictionary.size].found = false;
+        strncpy(dictionary.words[dictionary.size].letters, buffer, LETTERS + 1);
+        dictionary.size++;
+```","",""
+"399021249667399722","harbar20#9389","06-Jan-19 04:51 AM","oh goodness","",""
+"399021249667399722","harbar20#9389","06-Jan-19 05:02 AM","@curiouskiwi i still dont get it >:.O","",""
+"393854278764068875","curiouskiwi#1671","06-Jan-19 06:13 AM","(helping privately)","",""
+"399021249667399722","harbar20#9389","08-Jan-19 03:39 AM","@curiouskiwi im having trouble with the output","",""
+"399021249667399722","harbar20#9389","08-Jan-19 03:39 AM","of Scramble","",""
+"399021249667399722","harbar20#9389","08-Jan-19 03:39 AM","i","",""
+"399021249667399722","harbar20#9389","08-Jan-19 03:39 AM","have my output exactly the same","",""
+"399021249667399722","harbar20#9389","08-Jan-19 03:39 AM","but it's not saying it's correct","",""
+"399021249667399722","harbar20#9389","08-Jan-19 04:14 AM","@curiouskiwi https://cs50.me/checks/69e2cef2b2c1deab1fafa919851f3362229c6d81","",""
+"399021249667399722","harbar20#9389","08-Jan-19 04:14 AM","pls help","",""
+"360930629807767553","midgetman#3812","09-Jan-19 07:16 AM","do we need to do  uinit 0","",""
+"393854278764068875","curiouskiwi#1671","09-Jan-19 07:48 AM","@midgetman what do you mean ""need""?  You don't need to do anything.","",""
+"399021249667399722","harbar20#9389","09-Jan-19 07:50 PM","@midgetman if, by ""need"", you mean for the certificate, then yes, u do. otherwise, u dont NEED to do anything","",""
+"399021249667399722","harbar20#9389","10-Jan-19 04:08 AM","@curiouskiwi i really cant figure out Scramble","",""
+"399021249667399722","harbar20#9389","10-Jan-19 04:08 AM","the only part i HAVENT got yet is `lookup`","",""
+"393854278764068875","curiouskiwi#1671","10-Jan-19 04:19 AM","lookup is where you search the words and return true if the word `s` matches a word in the dictionary.","",""
+"399021249667399722","harbar20#9389","10-Jan-19 04:20 AM","yeah","",""
+"399021249667399722","harbar20#9389","10-Jan-19 04:20 AM","@curiouskiwi idk WHAT im doing wrong","",""
+"393854278764068875","curiouskiwi#1671","10-Jan-19 04:25 AM","are you using `strcmp` to compare the strings?","",""
+"399021249667399722","harbar20#9389","10-Jan-19 04:26 AM","@curiouskiwi yes","",""
+"393854278764068875","curiouskiwi#1671","10-Jan-19 04:37 AM","so is your function never finding a word? or is it saying that all words are valid?  what's your problem with it?","",""
+"399021249667399722","harbar20#9389","10-Jan-19 04:37 AM","@curiouskiwi so i load the grid","",""
+"399021249667399722","harbar20#9389","10-Jan-19 04:37 AM","and i type the word","",""
+"399021249667399722","harbar20#9389","10-Jan-19 04:37 AM","it works","",""
+"399021249667399722","harbar20#9389","10-Jan-19 04:37 AM","i type it again","",""
+"399021249667399722","harbar20#9389","10-Jan-19 04:37 AM","it works again","",""
+"399021249667399722","harbar20#9389","10-Jan-19 04:37 AM","and i type it AGAIN","",""
+"399021249667399722","harbar20#9389","10-Jan-19 04:37 AM","and it works AGAIN","",""
+"399021249667399722","harbar20#9389","10-Jan-19 04:38 AM","it's counting points when i dont want it to","",""
+"393854278764068875","curiouskiwi#1671","10-Jan-19 04:38 AM","are you setting the `.found` variable to `true`?","",""
+"399021249667399722","harbar20#9389","10-Jan-19 04:38 AM","would u like to see my `lookup` code?","",""
+"399021249667399722","harbar20#9389","10-Jan-19 04:38 AM","and yes, i do","",""
+"399021249667399722","harbar20#9389","10-Jan-19 04:38 AM","`dictionary.words[i].found = true;`","",""
+"393854278764068875","curiouskiwi#1671","10-Jan-19 04:40 AM","and are you only returning true if that was set to false?","",""
+"393854278764068875","curiouskiwi#1671","10-Jan-19 04:41 AM","so that only the first time you will get points?","",""
+"399021249667399722","harbar20#9389","10-Jan-19 04:41 AM","@curiouskiwi wait, shouldnt we return true if `.found` is true?","",""
+"393854278764068875","curiouskiwi#1671","10-Jan-19 04:42 AM","you should return true only if the word is there and  it hasn't already been found","",""
+"399021249667399722","harbar20#9389","10-Jan-19 04:42 AM","oh right","",""
+"393854278764068875","curiouskiwi#1671","10-Jan-19 04:43 AM","so you have to check that before you change it","",""
+"399021249667399722","harbar20#9389","10-Jan-19 04:43 AM","@curiouskiwi 
+```c
+if (strcmp(s, dictionary.words[i].letters) && !dictionary.words[i].found)
+{
+    dictionary.words[i].found = true;
+    return true;
+}
+```","",""
+"399021249667399722","harbar20#9389","10-Jan-19 04:52 AM","@curiouskiwi pls","",""
+"393854278764068875","curiouskiwi#1671","10-Jan-19 04:53 AM","strcmp returns 0 if the words match","",""
+"393854278764068875","curiouskiwi#1671","10-Jan-19 04:54 AM","but you are treating it as a true/false.","",""
+"399021249667399722","harbar20#9389","10-Jan-19 04:55 AM","wait WHAT","",""
+"399021249667399722","harbar20#9389","10-Jan-19 04:55 AM","OHHH","",""
+"399021249667399722","harbar20#9389","10-Jan-19 04:55 AM","OK","",""
+"399021249667399722","harbar20#9389","10-Jan-19 04:56 AM","WHAT","",""
+"399021249667399722","harbar20#9389","10-Jan-19 04:56 AM","THAT'S SO STUPID OF ME","",""
+"399021249667399722","harbar20#9389","10-Jan-19 04:56 AM","OH MYG OD","",""
+"399021249667399722","harbar20#9389","10-Jan-19 04:59 AM","THANK YOU SO MUCH","",""
+"393854278764068875","curiouskiwi#1671","10-Jan-19 05:03 AM","😃","",""
+"212773685696790529","Andy#8558","11-Jan-19 08:42 AM","Hi,    I completed the CS50x’s requirements (by receiving scores of at least 70% on every required problem submitted as part of the course’s nine problem sets as well as on the final project) of  CS50-2018xFall  before Dec 31 2018, but I don't get the certificate yet,  did I lost anything? thanks for your help","",""
+"212773685696790529","Andy#8558","11-Jan-19 08:42 AM","@curiouskiwi","",""
+"393854278764068875","curiouskiwi#1671","11-Jan-19 08:43 AM","@Andy certificates for January haven't been generated yet.","",""
+"393854278764068875","curiouskiwi#1671","11-Jan-19 08:43 AM","hopefully within the next week or so","",""
+"212773685696790529","Andy#8558","11-Jan-19 08:45 AM","@curiouskiwi  OK,  thanks a lot!","",""
+"107016243449442304","Dornyel#3652","14-Jan-19 01:35 AM","Whats the difference between CS50 and CS50AP?","",""
+"107016243449442304","Dornyel#3652","14-Jan-19 02:27 AM","And why should I choose one over the other?","",""
+"393854278764068875","curiouskiwi#1671","14-Jan-19 04:56 AM","CS50 AP covers all the same material as CS50x but with additional problem sets (both programming based and writing based) and some extra curriculum that is required for the AP.  It is a 36 week course, designed to be completed over the course of a school year.  It has a strict deadline of 30 April, after which time problems can no longer be graded.    CS50x is a 12 week course that is the same as Harvard's CS50 course but is open-ended.","",""
+"393854278764068875","curiouskiwi#1671","14-Jan-19 04:56 AM","@Dornyel ^^","",""
+"393854278764068875","curiouskiwi#1671","14-Jan-19 04:56 AM","Pinned a message.","",""
+"107016243449442304","Dornyel#3652","14-Jan-19 06:19 AM","Is CS50 AP worth doing over CS50 if I'm only interested in it for more depth on the CS topics","",""
+"107016243449442304","Dornyel#3652","14-Jan-19 06:19 AM","And not for the credits or w/e","",""
+"393854278764068875","curiouskiwi#1671","14-Jan-19 06:22 AM","if you have the time.  Just keep in mind that you won't be able to submit any work after 30 April.  (if you aren't planning to submit, that won't matter ...the course materials should remain accessible","",""
+"107016243449442304","Dornyel#3652","14-Jan-19 06:49 AM","I'm more interested in the knowledge than the grades/cert","",""
+"107016243449442304","Dornyel#3652","14-Jan-19 06:49 AM","Thanks","",""
+"371015349430255617","SkilledFighter#4955","19-Jan-19 10:08 PM","Hello, how long should the CS50 AP course take to complete","",""
+"371015349430255617","SkilledFighter#4955","19-Jan-19 10:09 PM","rather is it possible for me to start it now and finish by April 30th","",""
+"393854278764068875","curiouskiwi#1671","19-Jan-19 10:23 PM","it's designed as a 36 week course, 5-6 hrs per week.  Would depend on your own schedule.  Are you trying to get AP credit for it?  You'll need to organize that with your local high school (if you aren't in high school) so you may not have time to get your outside projects done and graded if you're only starting now.","",""
+"371015349430255617","SkilledFighter#4955","19-Jan-19 11:40 PM","hm ok are the only  projects in this course the ones listed on the cs50.me site  -> what do you mean by outside projects?","",""
+"393854278764068875","curiouskiwi#1671","19-Jan-19 11:44 PM","@SkilledFighter  there are 2 tasks that are required by the AP, as explained in these instructions: https://docs.cs50.net/2018/ap/x/references/instructions.html","",""
+"371015349430255617","SkilledFighter#4955","19-Jan-19 11:49 PM","alright thanks for the information; seems a little bit hard to complete all this by april","",""
+"371015349430255617","SkilledFighter#4955","19-Jan-19 11:49 PM","i might consider doing it next year","",""
+"293802088251654157","Said Amir#4925","27-Jan-19 01:42 PM","Hello there !!! ... i got couple of questions .... i took MIT courses in python ( very good courses ) .... but it was mainly focused on computational thinking .... so i wanted to start one of Harvard courses ................ so i was wondering which course is the best ..... what is the difference between CS50 AP  and CS50 introduction to computer science ??........  and will it be a big waste of time to take them both or not ?","",""
+"393854278764068875","curiouskiwi#1671","27-Jan-19 09:18 PM","@Said Amir please check out the pinned message on this channel","",""
+"293802088251654157","Said Amir#4925","28-Jan-19 02:48 AM","thanks a lot ^_^","",""
+"293802088251654157","Said Amir#4925","28-Jan-19 02:54 AM","lol ..... i just figured out that many people asked the same question .... sorry for annoying you xD","",""
+"293802088251654157","Said Amir#4925","28-Jan-19 02:54 AM","i don't usually look at the pinned messages","",""
+"293802088251654157","Said Amir#4925","28-Jan-19 02:58 AM","sorry , i am still confused ... so you are basically saying that CS50 AP is better version of CS50x with more content and problems ?","",""
+"393854278764068875","curiouskiwi#1671","28-Jan-19 03:04 AM","I wouldn't say it's ""better"".  It serves a different audience.","",""
+"393854278764068875","curiouskiwi#1671","28-Jan-19 03:07 AM","CS50AP is designed to meet the AP Computer Science Principles curriculum (which is a less 'programming' oriented course than their other AP Computer Science A course which is taught in Java).  AP CSP can be taught in any language, which is how CS50 can be modified to meet that curriculum.","",""
+"393854278764068875","curiouskiwi#1671","28-Jan-19 03:08 AM","It depends how much time you have.  Know that the CS50AP course has a strict deadline for completion of 30 April, so if you are planning to submit work for grading, you must complete it by then.  The materials will remain accessible after that point though. (The course will be reset in September for the new year.)","",""
+"399021249667399722","harbar20#9389","04-Feb-19 06:58 PM","sudoky","",""
+"399021249667399722","harbar20#9389","04-Feb-19 06:59 PM","*sudoku","",""
+"399021249667399722","harbar20#9389","04-Feb-19 06:59 PM","is so","",""
+"399021249667399722","harbar20#9389","04-Feb-19 06:59 PM","fricking","",""
+"399021249667399722","harbar20#9389","04-Feb-19 06:59 PM","hard","",""
+"399021249667399722","harbar20#9389","04-Feb-19 06:59 PM","i cant even.","",""
+"342072140457312256","LagSpike776#6077","05-Feb-19 01:11 AM","ok I got it","",""
+"342072140457312256","LagSpike776#6077","05-Feb-19 01:11 AM","thanks","",""
+"393854278764068875","curiouskiwi#1671","05-Feb-19 01:11 AM","@LagSpike776 for the `race` problem, you need to verify that the command line arguments given were valid.  The `race` code is giving it to you ```C
+//Returns true if str is a valid flag (-a, -b, -r, or -s), false otherwise
+bool check_flag(char *str)```","",""
+"342072140457312256","LagSpike776#6077","05-Feb-19 01:12 AM","yes so can I do something like ```bool check_flag(char *str)
+{
+    /* Use the next character to decide what to do. */
+    switch (*str) {
+        case 'a':
+            return true;
+        case 'b':
+            return true;
+        case 'r':
+            return true;
+        case 's':
+            return true;
+    }
+    return false;
+}```","",""
+"393854278764068875","curiouskiwi#1671","05-Feb-19 01:14 AM","well, not really, since *str will be a string like `""-b""`","",""
+"342072140457312256","LagSpike776#6077","05-Feb-19 01:16 AM","ok","",""
+"342072140457312256","LagSpike776#6077","05-Feb-19 01:16 AM","that makes sense","",""
+"342072140457312256","LagSpike776#6077","05-Feb-19 01:16 AM","how about this","",""
+"342072140457312256","LagSpike776#6077","05-Feb-19 01:16 AM","``` c bool check_flag(char *str)
+{
+    /* Use the next character to decide what to do. */
+    switch (*str) {
+        case ""-a"":
+            return true;
+        case ""-b"":
+            return true;
+        case ""-r"":
+            return true;
+        case ""-s"":
+            return true;
+    }
+    return false;
+}
+```","",""
+"342072140457312256","LagSpike776#6077","05-Feb-19 01:17 AM","frick the ""c"" at the start is me trying to show it in the C language","",""
+"342072140457312256","LagSpike776#6077","05-Feb-19 01:17 AM","but apparently not","",""
+"342072140457312256","LagSpike776#6077","05-Feb-19 01:17 AM","wait what","",""
+"342072140457312256","LagSpike776#6077","05-Feb-19 01:17 AM","but the starting thing defines *str as a char","",""
+"342072140457312256","LagSpike776#6077","05-Feb-19 01:18 AM","so how would it equal a string like ""-a""","",""
+"393854278764068875","curiouskiwi#1671","05-Feb-19 01:21 AM","`char *` is the type (it's a pointer to a char, ie, a string)","",""
+"393854278764068875","curiouskiwi#1671","05-Feb-19 01:22 AM","as the spec says:  >what check_flag should do, per the comment atop its prototype, is return true if the argument passed in (which happens to be argv[1]) is -a, -b, -r, or -s, and return false if the argument passed in is anything other than that.","",""
+"393854278764068875","curiouskiwi#1671","05-Feb-19 01:22 AM","and it also says: Odds are there’s a function that might help with checking that.","",""
+"393854278764068875","curiouskiwi#1671","05-Feb-19 01:22 AM","where function is a link:  https://reference.cs50.net/string.h/strcmp","",""
+"342072140457312256","LagSpike776#6077","05-Feb-19 01:23 AM","man my head is like","",""
+"342072140457312256","LagSpike776#6077","05-Feb-19 01:23 AM","spaghetti","",""
+"342072140457312256","LagSpike776#6077","05-Feb-19 01:24 AM","I'm so tired I gotta go for today thanks for the help","",""
+"393854278764068875","curiouskiwi#1671","05-Feb-19 01:24 AM","sure thing","",""
+"342072140457312256","LagSpike776#6077","05-Feb-19 01:25 AM","https://cdn.discordapp.com/attachments/422430795248959488/541000056577458177/hqdefault.png","",""
+"342072140457312256","LagSpike776#6077","05-Feb-19 01:25 AM","this is like my head","",""
+"399021249667399722","harbar20#9389","06-Feb-19 12:39 AM","lol","",""
+"399021249667399722","harbar20#9389","06-Feb-19 12:40 AM","@curiouskiwi im having a LOT of trouble with sudoku. i dont understand a THING. could u help me?","",""
+"456226577798135808","Deleted User#0000","06-Feb-19 01:04 AM","i noticed the pinned says that the cs50 principles course contains all the same material as cs50 plus some, but i was going through cs50 and it seems there is much more programming. 
+
+does ap principles not cover programming in the same depth as normal cs50?","",""
+"399021249667399722","harbar20#9389","06-Feb-19 01:05 AM","@Deleted User you can check the APCSP syllabus on the College Board website","",""
+"399021249667399722","harbar20#9389","06-Feb-19 01:25 AM","@curiouskiwi what does this line do, in sudoku?
+```c
+// Shows cursor at (g.y, g.x)
+void show_cursor(void)
+{
+    // Restore cursor's location
+    move(g.top + g.y + 1 + g.y/3, g.left + 2 + 2*(g.x + g.x/3));
+}
+```
+it's starts at line 524 in the starting code.","",""
+"399021249667399722","harbar20#9389","06-Feb-19 01:39 AM","i think","",""
+"399021249667399722","harbar20#9389","06-Feb-19 01:39 AM","idr exactly","",""
+"399021249667399722","harbar20#9389","06-Feb-19 01:57 AM","@curiouskiwi pleeeeeeeeeeeeeeeeeeeeease","",""
+"342072140457312256","LagSpike776#6077","06-Feb-19 02:04 AM","ok","",""
+"342072140457312256","LagSpike776#6077","06-Feb-19 02:04 AM","I don't really understand how I'm supposed to use the strcmp command","",""
+"342072140457312256","LagSpike776#6077","06-Feb-19 02:07 AM","nobody?","",""
+"342072140457312256","LagSpike776#6077","06-Feb-19 02:07 AM","ok","",""
+"399021249667399722","harbar20#9389","06-Feb-19 02:11 AM","@LagSpike776 what do you need?","",""
+"399021249667399722","harbar20#9389","06-Feb-19 02:11 AM","maybe i can help","",""
+"342072140457312256","LagSpike776#6077","06-Feb-19 02:12 AM","ok","",""
+"342072140457312256","LagSpike776#6077","06-Feb-19 02:12 AM","so I'm having a bit of trouble understanding how I should be using strncmp in my code","",""
+"342072140457312256","LagSpike776#6077","06-Feb-19 02:13 AM","for my check_flag","",""
+"342072140457312256","LagSpike776#6077","06-Feb-19 02:13 AM","I have this code","",""
+"342072140457312256","LagSpike776#6077","06-Feb-19 02:13 AM","```
+```","",""
+"342072140457312256","LagSpike776#6077","06-Feb-19 02:13 AM","wait","",""
+"342072140457312256","LagSpike776#6077","06-Feb-19 02:13 AM","no no","",""
+"342072140457312256","LagSpike776#6077","06-Feb-19 02:13 AM","```c
+bool check_flag(char *str)
+{
+    if (strncmp(str, -a, 2) == 0) {
+        return true;
+    }
+    else if (strncmp(str, -b, 2) == 0) {
+        return true;
+    }
+    else if (strncmp(str, -r, 2) == 0) {
+        return true;
+    }
+    else if (strncmp(str, -s, 2) == 0) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+```","",""
+"342072140457312256","LagSpike776#6077","06-Feb-19 02:13 AM","goddamn it which line am I supposed to put the ""c"" on to make sure that discord formatting recognizes the langualge","",""
+"342072140457312256","LagSpike776#6077","06-Feb-19 02:15 AM","finally","",""
+"342072140457312256","LagSpike776#6077","06-Feb-19 02:15 AM","@harbar20 this is my code for check_flag","",""
+"342072140457312256","LagSpike776#6077","06-Feb-19 02:16 AM","don't know whether I should be using the length of what it should be checking as 2 or 1 (because of indexing starting at 0)","",""
+"399021249667399722","harbar20#9389","06-Feb-19 02:16 AM","ok","",""
+"399021249667399722","harbar20#9389","06-Feb-19 02:17 AM","so","",""
+"399021249667399722","harbar20#9389","06-Feb-19 02:17 AM","rather than using `strncmp`, i'd suggest using `strcmp`.","",""
+"399021249667399722","harbar20#9389","06-Feb-19 02:17 AM","it takes only 2 arguments instead of 3, and is easier to understand","",""
+"399021249667399722","harbar20#9389","06-Feb-19 02:17 AM","plus","",""
+"399021249667399722","harbar20#9389","06-Feb-19 02:18 AM","it returns the same thing","",""
+"399021249667399722","harbar20#9389","06-Feb-19 02:18 AM","https://reference.cs50.net/string/strcmp","",""
+"399021249667399722","harbar20#9389","06-Feb-19 02:18 AM","@LagSpike776 does that help?","",""
+"342072140457312256","LagSpike776#6077","06-Feb-19 02:18 AM","yes","",""
+"342072140457312256","LagSpike776#6077","06-Feb-19 02:18 AM","but would that fix up some of my coding issues>","",""
+"342072140457312256","LagSpike776#6077","06-Feb-19 02:18 AM","like my errors?","",""
+"399021249667399722","harbar20#9389","06-Feb-19 02:19 AM","what errors are you getting?","",""
+"342072140457312256","LagSpike776#6077","06-Feb-19 02:20 AM","nvm it fixed them
+I forget what I was getting yesterday","",""
+"342072140457312256","LagSpike776#6077","06-Feb-19 02:20 AM","oh well","",""
+"399021249667399722","harbar20#9389","06-Feb-19 02:20 AM","lol","",""
+"399021249667399722","harbar20#9389","06-Feb-19 02:20 AM","did u use my way, or did u figure it out urself?","",""
+"342072140457312256","LagSpike776#6077","06-Feb-19 02:20 AM","Well, I used your way","",""
+"342072140457312256","LagSpike776#6077","06-Feb-19 02:21 AM","I also changed -a, -s, and the others into ``` ""-a"" ``` and so forth","",""
+"342072140457312256","LagSpike776#6077","06-Feb-19 02:21 AM","so it was a string","",""
+"399021249667399722","harbar20#9389","06-Feb-19 02:21 AM","lol yeah","",""
+"399021249667399722","harbar20#9389","06-Feb-19 02:21 AM","btw, do u wanna do this course together?","",""
+"399021249667399722","harbar20#9389","06-Feb-19 02:21 AM","im a bit ahead of u, but i can help u and u can help me","",""
+"342072140457312256","LagSpike776#6077","06-Feb-19 02:22 AM","sure","",""
+"342072140457312256","LagSpike776#6077","06-Feb-19 02:22 AM","just gimme a second","",""
+"342072140457312256","LagSpike776#6077","06-Feb-19 02:23 AM","my parents are calling me","",""
+"399021249667399722","harbar20#9389","06-Feb-19 02:23 AM","lol sur","",""
+"342072140457312256","LagSpike776#6077","06-Feb-19 02:27 AM","ok I'm back","",""
+"342072140457312256","LagSpike776#6077","06-Feb-19 02:27 AM","what do you need help with","",""
+"342072140457312256","LagSpike776#6077","06-Feb-19 02:28 AM","here lemme friend rq you so we don't clog up the server","",""
+"342072140457312256","LagSpike776#6077","06-Feb-19 02:28 AM","@harbar20","",""
+"399021249667399722","harbar20#9389","06-Feb-19 02:56 AM","@curiouskiwi PLEEEEEEEEEEAASE","",""
+"399021249667399722","harbar20#9389","06-Feb-19 02:58 AM","i dont understand","",""
+"399021249667399722","harbar20#9389","06-Feb-19 02:58 AM","a THING","",""
+"399021249667399722","harbar20#9389","06-Feb-19 02:59 AM","```
+Speaking of show_banner, why don’t we also peek at show_cursor. Recall that functions like mvaddch and mvaddstr end up moving your cursor in order to add text to the screen. That’s kind of annoying if you want to use that same cursor to play the actual game. And so it is necessary to remember where the cursor should be with respect to the grid. Glance back at that global called g and you’ll see how we do it. This show_cursor function relies on that struct to return the cursor to where it should be after screen updates.
+```","",""
+"399021249667399722","harbar20#9389","06-Feb-19 02:59 AM","that's what it says in the PSet","",""
+"399021249667399722","harbar20#9389","06-Feb-19 02:59 AM","the part im confused about is this:
+```
+return the cursor to where it should be
+```","",""
+"399021249667399722","harbar20#9389","06-Feb-19 02:59 AM","what is ""where it should be""?","",""
+"399021249667399722","harbar20#9389","06-Feb-19 03:33 AM","ahhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh","",""
+"399021249667399722","harbar20#9389","06-Feb-19 04:15 AM","@curiouskiwi im so sorry to be @ing u so many times, but im so desperate, at this point, i'll do anything to understand","",""
+"393854278764068875","curiouskiwi#1671","06-Feb-19 04:16 AM","@harbar20 I never did that problem, and I'm afraid I don't have time at the moment to read through and figure it out.","",""
+"399021249667399722","harbar20#9389","06-Feb-19 04:16 AM","it's alright","",""
+"399021249667399722","harbar20#9389","06-Feb-19 04:16 AM","that's all i needed","",""
+"399021249667399722","harbar20#9389","06-Feb-19 04:17 AM","thank you","",""
+"399021249667399722","harbar20#9389","06-Feb-19 04:18 AM","[not sarcastic btw]","",""
+"342072140457312256","LagSpike776#6077","10-Feb-19 03:41 AM","@harbar20 maybe the mouse would be put to like the top-right of the screen after reload unless this command acted?","",""
+"342072140457312256","LagSpike776#6077","10-Feb-19 03:42 AM","or something","",""
+"342072140457312256","LagSpike776#6077","10-Feb-19 05:06 PM","so umm","",""
+"342072140457312256","LagSpike776#6077","10-Feb-19 05:07 PM","@curiouskiwi I'm on Scramble part 1, and do you know what this ""crawl"" function does?","",""
+"342072140457312256","LagSpike776#6077","10-Feb-19 05:15 PM","also I love programming bc it makes you feel like you have the most swole brain in the entire universe","",""
+"342072140457312256","LagSpike776#6077","10-Feb-19 05:22 PM","like this is me when I implement a recursive function for binary search","",""
+"342072140457312256","LagSpike776#6077","10-Feb-19 05:22 PM","","https://cdn.discordapp.com/attachments/397511855091875842/544176291147022338/galaxybrain.webp",""
+"293802088251654157","Said Amir#4925","10-Feb-19 11:11 PM","looks like you are on weed","",""
+"293802088251654157","Said Amir#4925","10-Feb-19 11:11 PM","very high quality","",""
+"293802088251654157","Said Amir#4925","10-Feb-19 11:11 PM","😄","",""
+"342072140457312256","LagSpike776#6077","11-Feb-19 08:27 PM","lol","",""
+"342072140457312256","LagSpike776#6077","11-Feb-19 08:27 PM","ok so I'm kinda scuffed rn","",""
+"342072140457312256","LagSpike776#6077","11-Feb-19 08:27 PM","bc I am on the Scramble part 1","",""
+"342072140457312256","LagSpike776#6077","11-Feb-19 08:28 PM","and for some reason I know I have implemented the ""draw"" function correctly, but it says the index is out of bounds. However, it also doesn't give me a seg fault, so I don't know what's going on here","",""
+"342072140457312256","LagSpike776#6077","11-Feb-19 08:28 PM","this is my draw function","",""
+"342072140457312256","LagSpike776#6077","11-Feb-19 08:28 PM","```c
+void draw(void)
+{
+    for(int i = 0; i < strlen((string)grid); i++) {
+        for (int j = 0; j < strlen(grid[i]); j++) {
+            printf(""%c"", grid[i][j]);
+        }
+        printf(""\n"");
+    }
+    return;
+}
+```","",""
+"342072140457312256","LagSpike776#6077","11-Feb-19 08:28 PM","@curiouskiwi are you free? if so, would like some help","",""
+"342072140457312256","LagSpike776#6077","11-Feb-19 08:32 PM","ok nvm I did some changes and it works","",""
+"342072140457312256","LagSpike776#6077","11-Feb-19 08:32 PM","I had to change the ```c
+strlen((string)grid)```","",""
+"342072140457312256","LagSpike776#6077","11-Feb-19 08:32 PM","and the ```c
+strlen(grid[i])
+```","",""
+"342072140457312256","LagSpike776#6077","11-Feb-19 08:32 PM","to ```DIMENSION```","",""
+"342072140457312256","LagSpike776#6077","11-Feb-19 08:32 PM","bc for some reason the strings change size","",""
+"342072140457312256","LagSpike776#6077","11-Feb-19 08:33 PM","whatever it works now","",""
+"399021249667399722","harbar20#9389","14-Feb-19 11:59 PM","@curiouskiwi i need help with the *Finder* problem.","",""
+"399021249667399722","harbar20#9389","14-Feb-19 11:59 PM","i have a populated directory","",""
+"399021249667399722","harbar20#9389","14-Feb-19 11:59 PM","how do i ""begin iterating through the entries in it""?","",""
+"399021249667399722","harbar20#9389","15-Feb-19 01:39 AM","also","",""
+"399021249667399722","harbar20#9389","15-Feb-19 01:39 AM","how do i check what type a variable is?","",""
+"393854278764068875","curiouskiwi#1671","15-Feb-19 02:43 AM","use a loop to iterate.  if your directory is called `dir`, then `dir.npaths` will be the number of entries, right?","",""
+"393854278764068875","curiouskiwi#1671","15-Feb-19 02:43 AM","I don't understand your second question.  what type?","",""
+"393854278764068875","curiouskiwi#1671","15-Feb-19 02:54 AM","Do you mean this?  ```The name field of newPath is set to the relative filepath, and the type field is set to either ""file"" or ""directory"".```","",""
+"393854278764068875","curiouskiwi#1671","15-Feb-19 02:54 AM","it's a string, so `strcmp` might be of use?","",""
+"285407668535820288","Sadness#0940","18-Feb-19 03:08 AM","Hopefully I'm asking in the right place, but, as a high school student, is CS50 AP Principles of CS or CS50 intro to CS better?","",""
+"399021249667399722","harbar20#9389","18-Feb-19 09:09 PM","@Sadness it's not better or worse, it's just aimed at a different audience","",""
+"285407668535820288","Sadness#0940","19-Feb-19 01:28 AM","@harbar20 Thanks I guess","",""
+"399021249667399722","harbar20#9389","19-Feb-19 06:22 PM","@curiouskiwi how do i fix this error:
+```
+finder.c:138:32: error: member reference type 'path *' is a pointer; did
+      you mean to use '->'?
+        if (strcmp(newDir.paths.type, ""file""))
+                   ~~~~~~~~~~~~^
+```","",""
+"399021249667399722","harbar20#9389","19-Feb-19 07:12 PM","nvm i figured it out","",""
+"399021249667399722","harbar20#9389","19-Feb-19 07:18 PM","now i have a different problem","",""
+"399021249667399722","harbar20#9389","19-Feb-19 07:18 PM","how do i do this:
+```
+If indeed you successfully found key inside the file, open an outfile called found.txt for appending, not writing. (This way every time you open and write to the file, you will not overwrite any file names already stored in there.)
+
+Copy the name of the file where you found the string into found.txt. You should additionally add a newline character at the end to ensure separation of each file name.
+
+Additionally, you will only want to write a file name into your outfile once, even if the string is found in multiple locations within that same file, so perhaps you can devise an easy way keep track of whether or not[5] you’ve already output that file.
+```","",""
+"178543252637483009","JZ#7525","21-Feb-19 03:51 AM","Hey guys","",""
+"178543252637483009","JZ#7525","21-Feb-19 03:51 AM","can someone help me out?","",""
+"399021249667399722","harbar20#9389","22-Feb-19 12:34 AM","@JZ what's up?","",""
+"178543252637483009","JZ#7525","22-Feb-19 02:39 AM","Not sure if anyone knows this, but as a Canadian in highschool is it worth it for me to get the edX certificate while applying to university (college and university is switched from what it is in the US). My school isn't offering the course I'm taking it on my own.","",""
+"456226577798135808","Deleted User#0000","22-Feb-19 05:04 AM","I would say so, usually certificates account for something in international colleges, however I am not entirely sure.","",""
+"299628202685497344","Investor#1409","23-Feb-19 08:02 PM","I am from Quebec, and my school does not offer AP classes, but I am taking it as when I am applying to CEGEP (grade 12 & 13), I will be able to request to skip classes with the credits obtained.","",""
+"399021249667399722","harbar20#9389","23-Feb-19 08:35 PM","@Investor u only get the credit if u take the exam","",""
+"299628202685497344","Investor#1409","23-Feb-19 09:56 PM","@harbar20 true but I mean what is the point of taking CS50 AP without the exam?","",""
+"299628202685497344","Investor#1409","23-Feb-19 09:56 PM","Its curriculum is made for the AP course specifically","",""
+"299628202685497344","Investor#1409","23-Feb-19 09:56 PM","so might as well do the exam with it","",""
+"178543252637483009","JZ#7525","24-Feb-19 04:25 AM","Is there a way I can get my school to host the exam for myself to take? @harbar20","",""
+"178543252637483009","JZ#7525","24-Feb-19 04:26 AM","Will an ""AP"" credit even help myself in the future?  If I go to a Canadian university","",""
+"393854278764068875","curiouskiwi#1671","24-Feb-19 04:47 AM","if you have a particular university in mind, you can check their AP credit policy here:  https://apstudent.collegeboard.org/creditandplacement/search-credit-policies","",""
+"393854278764068875","curiouskiwi#1671","24-Feb-19 04:48 AM","does your high school offer any AP courses now?","",""
+"393854278764068875","curiouskiwi#1671","24-Feb-19 04:49 AM","if not, you'll probably have to find any school that will sponsor you (it's not just the exam, but the two other outside projects that must be completed.)","",""
+"393854278764068875","curiouskiwi#1671","24-Feb-19 04:51 AM","https://docs.cs50.net/2018/ap/x/references/instructions.html#enrolled-in-high-school-taking-cs50x-ap-independently","",""
+"178543252637483009","JZ#7525","24-Feb-19 04:53 AM","They offer AP BIO I think","",""
+"178543252637483009","JZ#7525","24-Feb-19 04:54 AM","Thanks for the information","",""
+"178543252637483009","JZ#7525","24-Feb-19 04:54 AM","I'll send an email to the computer science teacher","",""
+"393854278764068875","curiouskiwi#1671","24-Feb-19 04:57 AM","It may be that if you have enough demand in your school, they could offer it next year.  (it's a bit late for this year)","",""
+"393854278764068875","curiouskiwi#1671","24-Feb-19 04:58 AM","please send your teacher this link in case:  https://ap.cs50.school/   that has all the information about the curriculum, etc.","",""
+"178543252637483009","JZ#7525","24-Feb-19 05:04 AM","I doubt my school is large enough to offer it on it's own as a course, but I'll ask nontheless","",""
+"178543252637483009","JZ#7525","24-Feb-19 05:04 AM","is there a chnace that they would be able to setup for myself to write the exam?","",""
+"393854278764068875","curiouskiwi#1671","24-Feb-19 05:09 AM","if they already offer at least one AP course, then they are probably set up for it, so I wouldn't think it would be too much of a problem?  But I can't guarantee that. 😃","",""
+"178543252637483009","JZ#7525","24-Feb-19 05:14 AM","Thanks for all of the help and information","",""
+"399021249667399722","harbar20#9389","24-Feb-19 06:16 PM","@curiouskiwi i need help with the *Finder* problem, do u have time?","",""
+"178543252637483009","JZ#7525","27-Feb-19 03:27 AM","Hey guys! I'm currently working to coordinate the writing of the AP exam to be able to write it.  Is there any specific information I should be reviewing ?","",""
+"399021249667399722","harbar20#9389","28-Feb-19 01:28 AM","@JZ go to the college board website and read everything they have","",""
+"171582083217489920","a1n#4277","01-Mar-19 05:28 PM","i'm having some trouble understanding the assembly behind the problem reverse engineer","",""
+"171582083217489920","a1n#4277","01-Mar-19 05:29 PM","through some trial and error i understand that 
+`cmpl    $50, -4(%rbp)
+jle    .L3`
+converts to if x is greater than 50","",""
+"171582083217489920","a1n#4277","01-Mar-19 05:29 PM","but how does that work out logically?","",""
+"171582083217489920","a1n#4277","01-Mar-19 05:30 PM","based on the cheatsheet and some searching around cmp works by subtracting one number from the other and then comparing that to zero","",""
+"171582083217489920","a1n#4277","01-Mar-19 05:32 PM","then by that knowledge, the line after (jle) then jumps to .L3 if 50-x is less than or equal to zero","",""
+"171582083217489920","a1n#4277","01-Mar-19 05:32 PM","but that would mean if x is 50 the statement would evaluate as true, but 50 is clearly not greater than 50","",""
+"171582083217489920","a1n#4277","01-Mar-19 05:33 PM","testing the condition if x is greater than or equal to 50 results in the assembly
+`cmpl    $49, -4(%rbp)
+jle    .L3`","",""
+"171582083217489920","a1n#4277","01-Mar-19 05:35 PM","full gnu assembly of my code","https://cdn.discordapp.com/attachments/397511855091875842/551064912668000256/mystery.s",""
+"399021249667399722","harbar20#9389","01-Mar-19 08:28 PM","I havent got that far lol","",""
+"399021249667399722","harbar20#9389","01-Mar-19 08:28 PM","But once i do, i’ll help ya","",""
+"171582083217489920","a1n#4277","02-Mar-19 01:14 AM","yeah sorry, not really a question related to the problem but more of one related to the assembly code in general","",""
+"178543252637483009","JZ#7525","09-Mar-19 01:07 AM","Is there a member of staff that I can talk to about AP?","",""
+"492450454341550100","WhipStreak23#6131","09-Mar-19 01:28 AM","The only staff member on here is @curiouskiwi","",""
+"393854278764068875","curiouskiwi#1671","09-Mar-19 01:29 AM","@JZ do you have questions about the course?","",""
+"178543252637483009","JZ#7525","09-Mar-19 01:53 AM","Yeah","",""
+"178543252637483009","JZ#7525","09-Mar-19 01:53 AM","Would you like me to list them or dm you?","",""
+"178543252637483009","JZ#7525","09-Mar-19 01:53 AM","@curiouskiwi","",""
+"178543252637483009","JZ#7525","09-Mar-19 02:05 AM","Alright well here's my list ish of stuff.
+```
+Just to preface this I think that Canada's university is the US's college. 
+
+1. Exam/Next year
+I'm currently starting unit 3. It's my understand that I've already passed the date at Which my school can email cs50 for the exam. My exam coordinator has said that I could write the exam but I don't think I have enough time to finish the course and study for the exam.  If I reinroll in the class next year, can I simply resubmit what I've completed so far and then study and prepare for the exam and take it?
+
+2. Is the AP level credit worth it
+As a Canadian planning to go to a Canadian university is it worth it for myself to even get the actual credit? I went down to guidance and the person I talked to had no idea what to say. What would this course be classified as to university? How can I tell if this credit would help me? Or would it be better if I just got the certificate from edX. For comparision I'm in grade 10.
+
+3. Exam Prep
+Assuming I can complete the course next year, how should I go about preparing for the exam?
+
+I guess my overall question is: is it worth it for myself to peruse the actual academic way of receiving certification. Or should I just get the certificate and use it as a part of my application while applying to university
+
+Thanks so much!
+```","",""
+"393854278764068875","curiouskiwi#1671","09-Mar-19 02:23 AM","Does your high school offer any other AP credit courses?  It sounds like they don't, otherwise they would know how Canadian universities deal with the credits.  I don't think I have the knowledge to advise you one way or the other.  I can answer your first question to say, yes, you can resubmit anything that hasn't changed (some problems change every year).","",""
+"178543252637483009","JZ#7525","09-Mar-19 02:54 AM","@curiouskiwi They offer AP Bio but my guidance office was unable to tell me about this specific course","",""
+"393834019302670338","HungryTiger#5741","16-Mar-19 02:56 AM","How would you transfer work from the CS50 IDE to the AP Digital Portfolio?","",""
+"393834019302670338","HungryTiger#5741","16-Mar-19 06:30 AM","@staff","",""
+"393854278764068875","curiouskiwi#1671","16-Mar-19 07:03 AM","@HungryTiger I wouldn't expect that you would do any of your Digital Portfolio work (the Create and Explore tasks) in the IDE?","",""
+"393854278764068875","curiouskiwi#1671","16-Mar-19 07:04 AM","if you mean to download your code from the IDE, you can choose   File>Download project  to get a zip file of all of your files in the IDE.","",""
+"393854278764068875","curiouskiwi#1671","16-Mar-19 07:07 AM","you could use `render50` in the IDE to create PDF files of your code if needed.","",""
+"393854278764068875","curiouskiwi#1671","16-Mar-19 07:07 AM","I think your AP teacher may have templates for all of your work though, so it's best to ask him/her.","",""
+"393834019302670338","HungryTiger#5741","29-Mar-19 05:29 AM","What are the required problems to finish the course","",""
+"399021249667399722","harbar20#9389","29-Mar-19 10:41 PM","@HungryTiger if ur not getting the certificate, none of them","",""
+"399021249667399722","harbar20#9389","29-Mar-19 10:41 PM","if you ARE","",""
+"399021249667399722","harbar20#9389","29-Mar-19 10:41 PM","then all of them","",""
+"304022711141924865","Calebe#0809","01-Apr-19 10:01 PM","hey is the cs50 ap going to be archieved on april 30?","",""
+"120336472019697666","Andriani#3278","02-Apr-19 01:21 AM","i was going to do the cs50 AP course and got to like the first work then i wanted to see what te regular cs50 intro to computer science was like and i preferred the lecture format better so i just switched to the intro to computer science. will that effect anything? i havnt actuallly submitted anywork for ap cs50","",""
+"120336472019697666","Andriani#3278","02-Apr-19 01:22 AM","im taking a high school course next year for AP comp science.","",""
+"399021249667399722","harbar20#9389","04-Apr-19 03:01 AM","@Calebe yes
+@Andriani no","",""
+"534555201127055372","AceGoal1#2583","04-Apr-19 05:20 PM","What's the best way to check the sudoku board to see for a win?","",""
+"393834019302670338","HungryTiger#5741","06-Apr-19 07:44 PM","for the Sort Race problem, isn't *str only the first char of the user input? How do you check the second char?","",""
+"399021249667399722","harbar20#9389","11-Apr-19 03:55 AM","@HungryTiger im pretty sure it's the whole string.","",""
+"393834019302670338","HungryTiger#5741","17-Apr-19 04:52 AM","yea","",""
+"393834019302670338","HungryTiger#5741","17-Apr-19 04:53 AM","Ended up figuring that out after treating it like the string array it is","",""
+"399021249667399722","harbar20#9389","30-Apr-19 06:27 AM","just finished the course","",""
+"399021249667399722","harbar20#9389","30-Apr-19 06:27 AM","extremely satisfying, highly recommend","",""
+"499759339540709376","geekaara#8777","30-Apr-19 09:16 AM","Hi guys, in week 1 lecture I have small doubt about closure, when we initialize I with var why it returns 5, rather than 0, anybody help me to understand this","",""
+"399021249667399722","harbar20#9389","30-Apr-19 10:24 PM","@geekaara what do you mean?","",""
+"399021249667399722","harbar20#9389","01-May-19 01:17 AM","ok","",""
+"399021249667399722","harbar20#9389","01-May-19 01:17 AM","so i finished the course yesterdady","",""
+"399021249667399722","harbar20#9389","01-May-19 01:17 AM","but i havent gotten the certificate?","",""
+"399021249667399722","harbar20#9389","01-May-19 01:18 AM","even though i paid for verified yesterday","",""
+"393854278764068875","curiouskiwi#1671","01-May-19 01:21 AM","certificates are processed manually.   I'd expect within a couple of weeks.","",""
+"399021249667399722","harbar20#9389","01-May-19 01:24 AM","ahhhh","",""
+"399021249667399722","harbar20#9389","01-May-19 01:24 AM","ok","",""
+"399021249667399722","harbar20#9389","01-May-19 01:24 AM","that makes sense","",""
+"399021249667399722","harbar20#9389","01-May-19 01:24 AM","thanks!","",""
+"499759339540709376","geekaara#8777","01-May-19 06:08 AM","@harbar20  hey I could not able to understand closure yesterday, but now I understood the concept thanks for your response :-)","",""
+"492450454341550100","WhipStreak23#6131","02-May-19 10:01 PM","I just joined CS50 AP, Can I still do the course?","",""
+"393854278764068875","curiouskiwi#1671","02-May-19 10:05 PM","@WhipStreak23  you can still access the materials but it's past the deadline so nothing can be submitted.","",""
+"492450454341550100","WhipStreak23#6131","02-May-19 10:07 PM","Thanks @curiouskiwi, When will it be available next?","",""
+"393854278764068875","curiouskiwi#1671","02-May-19 10:07 PM","in the new school year (september).   But given that you've already done CS50x, why would you want to do CS50AP?  It would be a repeat for you.","",""
+"492450454341550100","WhipStreak23#6131","02-May-19 10:08 PM","I see, nothing at **all** new?","",""
+"393854278764068875","curiouskiwi#1671","02-May-19 10:09 PM","there are some AP curriculum specific stuff added to CS50 to meet the AP requirements, so that's ""new"" in that respect, but there are no new lectures","",""
+"492450454341550100","WhipStreak23#6131","02-May-19 10:09 PM","What can I do to show I have completed that course?","",""
+"492450454341550100","WhipStreak23#6131","02-May-19 10:09 PM","or ""AP"" course.","",""
+"393854278764068875","curiouskiwi#1671","02-May-19 10:11 PM","do you mean to get a certificate?  You'd have to enroll in September and pay for the certificate and then complete all the requirements.","",""
+"393854278764068875","curiouskiwi#1671","02-May-19 10:12 PM","if you mean, to get actual AP credit, then you'd have to do that *and* arrange with your local high school to submit all of the AP-specific assignments and sign up for the end of year exam in May.","",""
+"492450454341550100","WhipStreak23#6131","02-May-19 10:17 PM","Thanks, @curiouskiwi!","",""
+"412066270402445313","deuteriumoxide#8814","15-May-19 11:26 PM","Right now I can't seem to access the archived version of the CS50x AP CS Principles on edX. Is there any way I could just look at the contents of the last course? I want to just look at the material over the summer when I have more time.","",""
+"393854278764068875","curiouskiwi#1671","15-May-19 11:40 PM","@deuteriumoxide https://ap.cs50.school/units/","",""
+"412066270402445313","deuteriumoxide#8814","15-May-19 11:42 PM","Thank you.","",""
+"393854278764068875","curiouskiwi#1671","15-May-19 11:45 PM","@deuteriumoxide that link will be updated as the course is updated for the coming fall term too, so it may not still be last year's over time","",""
+"393854278764068875","curiouskiwi#1671","15-May-19 11:45 PM","but will be the most current","",""
+"412066270402445313","deuteriumoxide#8814","15-May-19 11:46 PM","If I did some of the the 2016 version for the course and completed some of the assignments, will the assignments count as completed for the same assignments for the coming version?","",""
+"393854278764068875","curiouskiwi#1671","15-May-19 11:47 PM","@deuteriumoxide CS50AP on edX resets every year.  You'd be able to resubmit your old code if it still met the requirements of the new assignments, but nothing would automatically be counted.","",""
+"412066270402445313","deuteriumoxide#8814","15-May-19 11:48 PM","@curiouskiwi  Thanks again.","","👍 (1)"
+"459117740146556929","🔱Oden🔱#0655","19-May-19 06:48 PM","Hello all. I have a quick question, I took CS50-ap python course on March 29th but it ended on apr 30th and I couldn't complete it.. what are my options now? Should I continue it or do I wait for it to be offered again ? I'll appreciate your help. Thanks","",""
+"590491244216451082","Haitham Shaaban#6467","18-Jun-19 01:53 PM","Hi guys, I have started CS50 today any advice.","",""
+"407130931153993729","soho#6582","22-Jun-19 02:57 PM","This is what I do have done in the last month! http://undercode.org a free resource platform to learn how to code 😄 Please send me your feedback!","",""
+"323210158861844480","Ratrabbit#7970","24-Jun-19 03:32 PM","Can I take the course, then pay for the verification afterwards? Or do I need to pay beforehand","",""
+"393854278764068875","curiouskiwi#1671","24-Jun-19 10:29 PM","@Ratrabbit you can pay at any time.  (just to be sure, you've posted in the CS50 AP channel ... this course will become available in the fall)","",""
+"299628202685497344","Investor#1409","13-Jul-19 08:21 PM","when is the starting date this course?","",""
+"299628202685497344","Investor#1409","13-Jul-19 08:22 PM","well the new 2019-2020 starting date i mean","",""
+"269921447206584323","Banan#2842","14-Jul-19 11:38 AM","@Investor September","",""
+"299628202685497344","Investor#1409","14-Jul-19 04:09 PM","alright thank you @Banan","",""
+"257661620656930820","Dave L.#2361","16-Jul-19 12:48 PM","Is this course worth doing as a rising senior?","",""
+"220681987134980098","Sk1mmy#2851","19-Jul-19 03:30 AM","should i just wait till the fall to finish this?","",""
+"220681987134980098","Sk1mmy#2851","19-Jul-19 03:30 AM","and will i still get the same certificate","",""
+"393854278764068875","curiouskiwi#1671","19-Jul-19 03:37 AM","The course isn't currently active.  If you were enrolled in the 2018-19 class and didn't finish by the 30 Apr deadline, you'll need to re-enroll in the 2019-20 class once enrolments open, and resubmit your work using the newest specs.  You should be able to ask edX to transfer your verification to the new course as well.","",""
+"393854278764068875","curiouskiwi#1671","19-Jul-19 03:38 AM","@Sk1mmy","",""
+"269921447206584323","Banan#2842","19-Jul-19 04:14 PM","@Dave L. if you want to solidify core programming knowledge, definitely. If you're also able to take the ap test, that's a bonus.","",""
+"222822528761069571","Trashed Panda#9224","29-Jul-19 02:18 PM","The course is currently active and open for enrollment but now requires submission of all PSETS and the final project by December 31, 2019 (per my dashboard; signed up a few days ago).","",""
+"222822528761069571","Trashed Panda#9224","29-Jul-19 02:19 PM","Can also currently sign up for the certificate if you were wanting that. Edit: Wrong channel.","",""
+"393854278764068875","curiouskiwi#1671","29-Jul-19 09:47 PM","@Trashed Panda you must be talking about a different course.  CS50AP is not currently available.  The new session will begin this Fall.","",""
+"222822528761069571","Trashed Panda#9224","29-Jul-19 10:10 PM","You are correct. I was in the wrong channel. My fault.","",""
+"244284498534072322","Dillon#9999","08-Aug-19 06:40 PM","So can the ap class count for high school credits aswell or just ap credits for college","",""
+"393854278764068875","curiouskiwi#1671","08-Aug-19 09:29 PM","@Dillon you'd have to ask your high school","",""
+"299628202685497344","Investor#1409","16-Aug-19 12:49 AM","when is this starting again?","",""
+"244284498534072322","Dillon#9999","23-Aug-19 05:04 PM","When does the ap course generally start?","",""
+"361235692019384323","Sanath#7244","23-Aug-19 05:05 PM","september i think","",""
+"367692148855799809","Ka’Jin#6070","24-Aug-19 05:13 AM","Ours started last year as soon as school began","",""
+"393854278764068875","curiouskiwi#1671","24-Aug-19 05:15 AM","CS50AP 2019-20 will be launched on edX on/about Sept 1.","","👌 (2)"
+"367692148855799809","Ka’Jin#6070","24-Aug-19 09:10 AM","Oh, on edX","",""
+"361235692019384323","Sanath#7244","24-Aug-19 09:11 AM","yeah","",""
+"361235692019384323","Sanath#7244","24-Aug-19 09:12 AM","also this isnt ap cs, its ap cs principles","",""
+"367692148855799809","Ka’Jin#6070","24-Aug-19 09:40 AM","I’m aware","",""
+"182293270133473281","VGTheOne#6877","30-Aug-19 05:19 PM","what are the differences between the ap cs principles cs50 and cs50x?","",""
+"361235692019384323","Sanath#7244","30-Aug-19 08:40 PM","Cs50x is a college level introductory course while cs50 ap covers a slightly more general and easier syllabus that's meant for high school students","",""
+"617752059109965834","UrbanAtWork#4799","01-Sep-19 07:34 PM","Has anyone noticed that the version posted on edX doesn't seem to be paced for the AP (36 weeks?)","",""
+"617752059109965834","UrbanAtWork#4799","01-Sep-19 07:35 PM","I just posted a little video of what I am seeing. I was going to use the edX course to support the course I am teaching based on the same syllabus. I'm concerned... Starting Wednesday. https://youtu.be/-VSY5jzv-_o","",""
+"393854278764068875","curiouskiwi#1671","01-Sep-19 10:00 PM","@UrbanAtWork  the CS50AP on edX course is designed for students who do not have access to a school offering AP.  It is not the complete CS AP Principles course.   We'd recommend teachers use the curriculum/materials  here   https://ap.cs50.school","",""
+"393854278764068875","curiouskiwi#1671","01-Sep-19 10:00 PM","We're in the process of updating the course information page on edX to make that clearer.  Thanks for raising the issue!!  Good luck with your class this year.","",""
+"182293270133473281","VGTheOne#6877","04-Sep-19 04:03 AM","@curiouskiwi if CS50AP is not the complete CS AP Principles course, why is it advertised as such? And what additional material is covered in CS AP Principles that isn’t in CS50 AP?","",""
+"393854278764068875","curiouskiwi#1671","04-Sep-19 04:19 AM","The person asking the question is a high school teacher, so I directed him to our school site that has curriculum/teacher's guide, etc. for those teaching the course.  I didn't mean that CS50APx didn't cover the curriculum, but that you will not get AP credit simply by completing the edX course.   (ie, it's not the complete course, because there are additional tasks that are required by the AP organization, as well as the end of year exam;  those things must be done in coordination with a high school that either is teaching the course or will sponsor students)","",""
+"479282904426479617","Nicolax#1014","06-Sep-19 06:18 AM","I'm new to cs 50, so I don't know how this ide works. I wasn't able to find a clear cut guide because I was redirected to the CS50 page for AP teachers, and I'm not a teacher","",""
+"393854278764068875","curiouskiwi#1671","06-Sep-19 06:23 AM","Are you a highschool student taking CS50 AP at your highschool?  Or planning on having a local school sponsor you?","",""
+"479282904426479617","Nicolax#1014","06-Sep-19 06:24 AM","I'm planning to have a local school sponsor me. Although I was just wondering if I could do everything myself","",""
+"393854278764068875","curiouskiwi#1671","06-Sep-19 06:26 AM","AP requires a school to handle your AP-specific tasks and the exam","",""
+"479282904426479617","Nicolax#1014","06-Sep-19 06:27 AM","What if my school already has AP Com Sci; I'm enrolled in a first year introductory course in my current school, but I already know most of the principles of python so I don't want to wait for two years to take the ap","",""
+"393854278764068875","curiouskiwi#1671","06-Sep-19 06:29 AM","https://apcentral.collegeboard.org/courses/ap-computer-science-principles/exam","",""
+"393854278764068875","curiouskiwi#1671","06-Sep-19 06:29 AM","Best to talk to your school.","",""
+"479282904426479617","Nicolax#1014","06-Sep-19 06:30 AM","Thanks","",""
+"617752059109965834","UrbanAtWork#4799","07-Sep-19 07:12 PM","@VGTheOne  You are right to be confused about the course being presented as ""CS50AP"".   Some of the naming on the course isn't consistent. Also the edX course isn't clearly defined and laid out like a ~36 week AP course for high schools. The edX ""AP"" course still holds on to most of the 10 week Harvard schedule which makes it a little tricky for teachers trying to figure out pacing if they wanted to use it along  with what they teach and support in class.  All that was probably explained in the Teacher workshops but I wasn't able to go since the one closest to me was canceled this year.
+
+All that being said.... I think it is a great curriculum with LOTS of resources but for a busy teacher that might be new to the AP, or in some cases a math teacher who hasn't taught a CS course before, it could be tricky and unsettling.  ... Just my $0.02.","","👍 (1),👌 (1)"
+"182293270133473281","VGTheOne#6877","07-Sep-19 10:02 PM","Yeah, I’m a student trying to self-study it and I was wondering how I could complete those tasks “in school”","",""
+"182293270133473281","VGTheOne#6877","07-Sep-19 10:02 PM","I’ll send an email to our AP Comp Sci teacher","",""
+"479282904426479617","Nicolax#1014","08-Sep-19 03:55 AM","Thanks a lot @UrbanAtWork","",""
+"479282904426479617","Nicolax#1014","08-Sep-19 03:55 AM","I appreciate it","",""
+"522112612490805249","BrianTX#1707","10-Sep-19 07:59 PM","I am watching the CS50 Understanding Technology video.  He keeps referring to the 8's place as the 16's place before and after 15:30.  I.e. ""16+64=72"".  It should be 8+64=72.  Is there any site with an errata list?","",""
+"393854278764068875","curiouskiwi#1671","10-Sep-19 10:47 PM","(answered in other channel)","",""
+"208294747771502594","Devrim#1557","13-Oct-19 10:02 PM","How would I go about earning AP credit for this course?","",""
+"208294747771502594","Devrim#1557","13-Oct-19 10:02 PM","Would I just shoot an email to my APCS teacher/ counselor","",""
+"208294747771502594","Devrim#1557","13-Oct-19 10:03 PM","Also what if I do not finish by April 30, do I have to retake the entire class again?","",""
+"393854278764068875","curiouskiwi#1671","13-Oct-19 10:04 PM","Best to coordinate with your AP teacher.","",""
+"208294747771502594","Devrim#1557","13-Oct-19 10:04 PM","ok","",""
+"393854278764068875","curiouskiwi#1671","13-Oct-19 10:04 PM","CS50AP itself does not award credit.","",""
+"208294747771502594","Devrim#1557","13-Oct-19 10:04 PM","Because I am a freshman and freshman at my school cannot take AP classes during the school","",""
+"208294747771502594","Devrim#1557","13-Oct-19 10:05 PM","What exactly does the school need to provide for the APCS50?","",""
+"393854278764068875","curiouskiwi#1671","13-Oct-19 10:07 PM","they have to provide you with the facility to submit the required Performance tasks and to take the exam:  https://apcentral.collegeboard.org/pdf/ap-csp-student-task-directions.pdf","",""
+"208294747771502594","Devrim#1557","13-Oct-19 10:07 PM","Last question: Should I talk to my APCS teacher before I start the course?","",""
+"393854278764068875","curiouskiwi#1671","13-Oct-19 10:11 PM","Yes.  You can send them https://cs50.harvard.edu/ap/  which is our site for the course materials/etc.  so they know what you are wanting to study.","",""
+"577251760813637632","Cheese581#0545","15-Nov-19 11:18 PM","As a freshman self-studying for AP CSP with the APCS50 course, is there any way to get high school credit for taking the course? I'm signed up for exam and have a way to submit the Create and Explore projects that are separate from CS50, but not sure if I can get credit as well - if so does the certificate have anything to do with it?","",""
+"393854278764068875","curiouskiwi#1671","15-Nov-19 11:19 PM","you'd have to ask your high school","",""
+"577251760813637632","Cheese581#0545","15-Nov-19 11:24 PM","If they did say yes, how would I obtain credit?","",""
+"393854278764068875","curiouskiwi#1671","15-Nov-19 11:28 PM","they would give it to you","",""
+"577251760813637632","Cheese581#0545","15-Nov-19 11:29 PM","I'm saying how would I prove that - certificate? Progress? Something else?","",""
+"393854278764068875","curiouskiwi#1671","15-Nov-19 11:29 PM","You'd have to ask them.","",""
+"306870406697189378","f1re#3996","05-Jan-20 07:43 PM","hello. i'm currently taking ap csp with the cs50x course. how can i see my 2019 gradebook? cs50.me will only show the 2020 gradebook","",""
+"609824384500105217","Boyuan#0628","05-Jan-20 08:01 PM","@f1re cs50.me will only show current year's gradebook, you can see your past year's check50 and style50 result by go to https://submit.cs50.io/courses/1","",""
+"306870406697189378","f1re#3996","05-Jan-20 08:08 PM","thanks @Boyuan !","",""
+"306870406697189378","f1re#3996","05-Jan-20 08:10 PM","will i still get credit for finishing cs50x 2019?","",""
+"609824384500105217","Boyuan#0628","05-Jan-20 08:11 PM","I don't think so, to finish CS50, you must working on current CS50x 2020 psets.","",""
+"393854278764068875","curiouskiwi#1671","05-Jan-20 08:15 PM","@f1re you're asking in the CS50 Ap channel.  Are you talking about the current 2019-20 CS50 AP course?  I think @Boyuan is assuming the CS50x course.","",""
+"609824384500105217","Boyuan#0628","05-Jan-20 08:16 PM","@curiouskiwi @f1re Yeah, I'm assuming CS50x course.","",""
+"306870406697189378","f1re#3996","05-Jan-20 10:31 PM","ah yes i'm talking about the current cs50 ap course","",""
+"306870406697189378","f1re#3996","05-Jan-20 10:31 PM","sorry for the confusion","",""
+"306870406697189378","f1re#3996","05-Jan-20 10:31 PM","@curiouskiwi @Boyuan","",""
+"393854278764068875","curiouskiwi#1671","05-Jan-20 10:35 PM","Hi @f1re we're still working out the gradebook for CS50AP.  In the meantime, you can continue with your course","",""
+"306870406697189378","f1re#3996","05-Jan-20 10:36 PM","good to know, thanks!","",""
+"664588970545381399","nickj02#9326","09-Jan-20 12:35 AM","Hi I recently started the cs50 course and I intend to take the APCSP exam.  Collegeboard prompted me for a join code to enroll for the exam, how did I get the code?","",""
+"393854278764068875","curiouskiwi#1671","09-Jan-20 12:36 AM","You'll have to talk to your high school's AP coordinator.","",""
+"110917640884584448","Watz#5018","10-Jan-20 02:24 PM","@curiouskiwi is apcs50 supposed to be all self study or are some teachers teaching the class themselves?","",""
+"393854278764068875","curiouskiwi#1671","13-Jan-20 07:21 AM","@Watz there are high schools around the US (and world) that are teaching CS50AP.  So I'd guess most students using the CS50AP course are students in these classes.  You can teach yourself, but you also need to coordinate with a local high school if you are planning on getting AP credit.  If you aren't a high school student who is trying to get AP credit, then we recommend following CS50x 2020 instead.","",""
+"393854278764068875","curiouskiwi#1671","13-Jan-20 07:21 AM","https://cs50.harvard.edu/x/","",""
+"110917640884584448","Watz#5018","13-Jan-20 02:05 PM","@curiouskiwi no im a high school teacher trying to figure out what a board proposal would look like and if the course has an instructor generally","",""
+"393854278764068875","curiouskiwi#1671","13-Jan-20 08:20 PM","@Watz ah! You want the teachers guide linked from here. https://cs50.harvard.edu/ap/","",""
+"393854278764068875","curiouskiwi#1671","13-Jan-20 08:22 PM","There is an online community of fellow teachers with resources to help you. But you would be the instructor.","",""
+"110917640884584448","Watz#5018","13-Jan-20 10:51 PM","Ty!","",""
+"480179135558451230","DemonicBarbequee#7151","21-Mar-20 06:32 PM","How different is the CS50-AP course from CS50x?","",""
+"393854278764068875","curiouskiwi#1671","21-Mar-20 10:17 PM","it's a combo of CS50 Technology and CS50x.","",""
+"319994332192964608","Laur0#5360","25-Mar-20 06:09 PM","Hi, I would like to know if I should take CS50AP through Edx or harvard website(https://cs50.harvard.edu/ap/) , when I do the psets at https://cs50.harvard.edu/ap/  it requires submitting a form, which is restricted by having the Harvard key.","",""
+"670343752589770774","Vandle#6220","25-Mar-20 06:19 PM","If you use Ed-X you'll spend a lot of time fighting with the grader system.","",""
+"234805984973815808","Фъээ lоvэѕ Ўоц#3292","25-Mar-20 11:40 PM","This is my last year of high school does it really matter whether or not I at the ap versión os cs50. Is cs50 count as college credit if taken?","",""
+"393854278764068875","curiouskiwi#1671","25-Mar-20 11:45 PM","The AP version (if wanting AP credits) also requires submitting extra work (and the deadline for organizing that has already passed).  You can study CS50x and the knowledge you get will help you in your college studies, but you'd have to ask your college if they would give you credit (more than likely, I'd expect not)","",""
+"234805984973815808","Фъээ lоvэѕ Ўоц#3292","25-Mar-20 11:49 PM","Thank you for the response @curiouskiwi","",""
+"212346579527401473","cfox#2639","26-Mar-20 12:04 AM","@curiouskiwi So would it be more beneficial for a high school student to take the AP version in terms of college admittance?","",""
+"393854278764068875","curiouskiwi#1671","26-Mar-20 12:05 AM","the AP version on edX has a 30 April deadline.  It's a full school-year long course.  At this point, I'm not sure trying to squeeze 36 weeks of course into 4 weeks is beneficial.","",""
+"393854278764068875","curiouskiwi#1671","26-Mar-20 12:07 AM","I'd suggest CS50x  http://cs50.harvard.edu/x/2020/","",""
+"393854278764068875","curiouskiwi#1671","26-Mar-20 12:08 AM","that has a deadline of 31 Dec 2020 and if you can't finish it by then, your progress will carry over to the 2021 course.  CS50 AP has a 30 April deadline and if you aren't finished, you can't continue later.","",""
+"212346579527401473","cfox#2639","26-Mar-20 12:17 AM","Ok good. I just started CS50x and I am loving it so far the teacher is great! Thanks for the reply","",""
+"291033142968582146","LordFlacko#1199","27-Mar-20 01:52 AM","is there anyone here who's doing the ap course and is starting the first couple weeks?","",""
+"638197964824903693","sugarcookie#0001","28-Mar-20 11:34 PM","Hi friends! I know the CS50APcourse expires April 30... so does anyone know when it will open back up after that? I am currently finishing up my freshman year, and I would like to take the AP exam the spring of my sophomore year (2021). If anyone has info on this that would be great!","",""
+"393854278764068875","curiouskiwi#1671","29-Mar-20 02:38 AM","Sorry, don't have details at this time, but usually organize this in late summer.  In the meantime, if you wanted to get a head start and are starting with no experience, I'd recommend starting with CS50 Technology (http://cs50.edx.org/technology) and then move to CS50x (http://cs50.edx.org)  ...  CS50AP is a combination of these 2 courses.","",""
+"188639482851885056","CelloThanos#9729","29-Mar-20 11:51 PM","Can I take the CS50 AP now and take the APCSP exam in Spring 2021?","",""
+"188639482851885056","CelloThanos#9729","30-Mar-20 01:44 AM","Okay I read above, so my understanding is that if I take it now, it *must* be finished by 30 April, otherwise the course shuts down and I can't complete it.","",""
+"188639482851885056","CelloThanos#9729","30-Mar-20 01:44 AM","So I need to wait until 2020-21 school year to take CS50AP?","",""
+"188639482851885056","CelloThanos#9729","30-Mar-20 01:45 AM","(in order to take the APCSP exam in May 2021)","",""
+"393854278764068875","curiouskiwi#1671","30-Mar-20 01:45 AM","Yes, although as I said, CS50AP is a combination of CS50T and CS50x so you could just start with one of those while you wait.","",""
+"188639482851885056","CelloThanos#9729","30-Mar-20 01:46 AM","Okay. I was doing the main CS50 and got a clear understanding of that too","",""
+"188639482851885056","CelloThanos#9729","30-Mar-20 01:46 AM","But then I found the AP credit one","",""
+"393854278764068875","curiouskiwi#1671","30-Mar-20 01:47 AM","taking the edX course doesn't give you any credits","",""
+"393854278764068875","curiouskiwi#1671","30-Mar-20 01:47 AM","it's just to let you learn the material.","",""
+"188639482851885056","CelloThanos#9729","30-Mar-20 01:47 AM","Well the exam gives me credit","",""
+"393854278764068875","curiouskiwi#1671","30-Mar-20 01:47 AM","you would still have to organize with a high school to do the extra AP specific tasks","",""
+"393854278764068875","curiouskiwi#1671","30-Mar-20 01:47 AM","and the exam","",""
+"188639482851885056","CelloThanos#9729","30-Mar-20 01:47 AM","Oh so I'd have to contact my school to do the CS50 for AP credit","",""
+"188639482851885056","CelloThanos#9729","30-Mar-20 01:48 AM","Kinda like virtual school?","",""
+"188639482851885056","CelloThanos#9729","30-Mar-20 01:48 AM","Or could I just take the class and then take the exam anyway?","",""
+"393854278764068875","curiouskiwi#1671","30-Mar-20 01:48 AM","AP CSP requires the exam plus 2 extra written assignments/projects","",""
+"188639482851885056","CelloThanos#9729","30-Mar-20 01:48 AM","Ah","",""
+"188639482851885056","CelloThanos#9729","30-Mar-20 01:49 AM","I think my state's virtual school offers the APCSP online, but Harvard's looks like it's higher quality","",""
+"188639482851885056","CelloThanos#9729","30-Mar-20 01:49 AM","Might just do virtual school so that I won't have to jump through all the hoops to get my school to recognise CS50","",""
+"393854278764068875","curiouskiwi#1671","30-Mar-20 01:50 AM","here's the teachers' site which goes into more detail:  https://cs50.harvard.edu/ap/syllabus/","",""
+"188639482851885056","CelloThanos#9729","30-Mar-20 01:54 AM","Thank you","",""
+"188639482851885056","CelloThanos#9729","30-Mar-20 01:54 AM","I'll talk to my school","",""
+"658712695037493303","Bishal Neupane#5078","31-Mar-20 06:24 PM","Hello","",""
+"188639482851885056","CelloThanos#9729","31-Mar-20 10:23 PM","Hello","",""
+"516652903763542017","PeterC#0586","01-Apr-20 02:14 AM","My robotics team has middle School aged kids, do you think cs50 ap would be a satisfactory curriculum to understand basic computer science and to get ready for Java","",""
+"188639482851885056","CelloThanos#9729","01-Apr-20 06:27 PM","I think it's a bit hard for middle school but I think if someone were there to break down the info in the videos they could get it","",""
+"463704998052888576","shakib101#0334","03-Apr-20 11:20 AM","Cs50 ap for whom and can anyone do this.","",""
+"688643965779443729","bshaan#4042","04-Apr-20 01:38 AM","why does it show that assignments have to be completed by this month?","",""
+"688643965779443729","bshaan#4042","04-Apr-20 01:39 AM","I started today, so does this mean I won't be able to finish, or is there going to be another course after April 30. Or do you guys think it is possible to complete in the 4 weeks I have","",""
+"393854278764068875","curiouskiwi#1671","04-Apr-20 01:48 AM","this course is a full year course for high school students. As such, it has a strict 30 April deadline in preparation for the AP CSP exam in May.  The course on edX remains open, but at this point, it's probably not feasible to complete it.  You are better to choose the CS50x course which covers the same material but is open ended.  http://cs50.edx.org","",""
+"688643965779443729","bshaan#4042","04-Apr-20 07:27 AM","o ok thx, I am actually trying to do it for next year. I can probably start it in June","",""
+"697220814717583442","Alisson#1913","08-Apr-20 02:19 AM","anybody know how many assignments and lectures there are ?","",""
+"697220814717583442","Alisson#1913","08-Apr-20 02:55 AM","And how do we see our grades for our assignments","",""
+"688643965779443729","bshaan#4042","15-Apr-20 03:34 AM","you can check on the results link","",""
+"688643965779443729","bshaan#4042","15-Apr-20 03:34 AM","it should come to ur email that is connected to your github","",""
+"697220814717583442","Alisson#1913","20-Apr-20 11:45 PM","okay thanks","",""
+"317065850819444748","Crusader#3258","21-Apr-20 08:19 AM","Say we do the regular CS50, will our work there apply to this AP course?  @curiouskiwi","",""
+"149437513872834560","edgeform#8651","23-Apr-20 08:17 PM","No @Crusader, this is an entirely different course. It's a year long course for high school students with an end date of April 30 since the AP exams sit in May.","",""
+"317065850819444748","Crusader#3258","23-Apr-20 08:19 PM","Okay","",""
+"317065850819444748","Crusader#3258","23-Apr-20 08:19 PM","Do we have to apply for that one?","",""
+"373479597897023498","Aljan-sama#1168","24-Apr-20 09:39 AM","Hi !","",""
+"373479597897023498","Aljan-sama#1168","24-Apr-20 09:39 AM","How to apply for CS50 AP?","",""
+"149437513872834560","edgeform#8651","25-Apr-20 02:30 AM","@Crusader The CS50 course can be taken whenever you want, just not for AP credit. @Aljan-sama We don't know, details haven't been announced for next year. We don't know when or even *if* this will be offered again currently from what I read yesterday.","",""
+"563386402012921900","MayerT#7203","29-Apr-20 10:00 PM","So there might not be a CS50 AP next year?","",""
+"393854278764068875","curiouskiwi#1671","29-Apr-20 11:47 PM","CS50AP on edX this year was a combination of CS50 Technology + CS50x.  It will most likely be the same next year (or simply be a 2-course offering)  Details will follow as it gets closer.","",""
+"443116301968211989","MarcosB20#9517","30-Apr-20 12:06 AM","When the course gets archived, will we still get the chance to finish it?","",""
+"443116301968211989","MarcosB20#9517","30-Apr-20 12:11 AM","@curiouskiwi","",""
+"444929390384775188","GiulioT25#9941","30-Apr-20 12:12 AM","@curiouskiwi and if we can continue, will our progress be saved for when the course begins next year.","",""
+"444929390384775188","GiulioT25#9941","30-Apr-20 12:12 AM","?","",""
+"393854278764068875","curiouskiwi#1671","30-Apr-20 12:13 AM","@MarcosB20 With CS50AP you are essentially submitting the exact same work as CS50x (once you've finished the CS50Tech section), so you could switch to CS50x to finish.","",""
+"393854278764068875","curiouskiwi#1671","30-Apr-20 12:16 AM","@GiulioT25 generally, CS50AP is a new course on edX each year, so progress does not carry forward.","",""
+"443116301968211989","MarcosB20#9517","30-Apr-20 12:16 AM","This is the course I'm currently doing, is it staying open?It's only called cs50x not ap","https://cdn.discordapp.com/attachments/397511855091875842/705165538153857074/Screenshot_14.png",""
+"393854278764068875","curiouskiwi#1671","30-Apr-20 12:16 AM","That's CS50x and it does not have a 30 April deadline.","",""
+"444929390384775188","GiulioT25#9941","30-Apr-20 12:16 AM","I had the same question @MarcosB20","",""
+"444929390384775188","GiulioT25#9941","30-Apr-20 12:16 AM","damn","",""
+"444929390384775188","GiulioT25#9941","30-Apr-20 12:16 AM","thanks god","",""
+"393854278764068875","curiouskiwi#1671","30-Apr-20 12:16 AM","the 30 April deadline is for earning a Verified certificate from edX for CS50AP","",""
+"443116301968211989","MarcosB20#9517","30-Apr-20 12:16 AM","Oooook good good, that's great then","",""
+"444929390384775188","GiulioT25#9941","30-Apr-20 12:16 AM","aight","",""
+"393854278764068875","curiouskiwi#1671","30-Apr-20 12:17 AM","http://cs50.edx.org/ap","",""
+"444929390384775188","GiulioT25#9941","30-Apr-20 12:17 AM","but, when is a new offer for the certificate going to arrive?","",""
+"393854278764068875","curiouskiwi#1671","30-Apr-20 12:18 AM","for CS50AP?  A new course will probably be launched in September, to coincide with the start of the high school academic year.","",""
+"444929390384775188","GiulioT25#9941","30-Apr-20 12:18 AM","oh okay","",""
+"444929390384775188","GiulioT25#9941","30-Apr-20 12:18 AM","thanks for the information","",""
+"393854278764068875","curiouskiwi#1671","30-Apr-20 12:18 AM","But that has not yet been confirmed","",""
+"444929390384775188","GiulioT25#9941","30-Apr-20 12:18 AM","okay perfect","",""
+"393854278764068875","curiouskiwi#1671","30-Apr-20 12:18 AM","given that CS50AP is simply CS50 Tech + CS50x, you can get the same thing by taking those 2 courses, which you can start at any time.","",""
+"443116301968211989","MarcosB20#9517","30-Apr-20 12:24 AM","Ok then one last question, will I get the certificate after completing the 8 weeks of cs50x? Or will I also have to complete the total 10 weeks of the cs50 AP","",""
+"444929390384775188","GiulioT25#9941","30-Apr-20 12:25 AM","@curiouskiwi","",""
+"393854278764068875","curiouskiwi#1671","30-Apr-20 12:29 AM","@MarcosB20 which certificate?","",""
+"443116301968211989","MarcosB20#9517","30-Apr-20 12:29 AM","not the edx verified one","",""
+"443116301968211989","MarcosB20#9517","30-Apr-20 12:30 AM","Though it does say ""If you submit and receive a score of at least 70% on each of this course’s problem sets and final project, you will be eligible for a free CS50 Certificate like the below. For a verified certificate from edX, register at cs50.edx.org. Email certificates@cs50.harvard.edu with any questions.""","",""
+"444929390384775188","GiulioT25#9941","30-Apr-20 12:30 AM","@curiouskiwi the hardvard one","",""
+"444929390384775188","GiulioT25#9941","30-Apr-20 12:30 AM","hardvard*","",""
+"444929390384775188","GiulioT25#9941","30-Apr-20 12:30 AM","harvard*","",""
+"393854278764068875","curiouskiwi#1671","30-Apr-20 12:30 AM","you have to complete the entire CS50x course (ie, submit all 9 psets plus the final project).  That has nothing to do with AP.","",""
+"443116301968211989","MarcosB20#9517","30-Apr-20 12:31 AM","huh... where's problem set 9?","",""
+"443116301968211989","MarcosB20#9517","30-Apr-20 12:32 AM","I can see all other problem sets and the final project, but I can't see a pset 8 or 9..","",""
+"393854278764068875","curiouskiwi#1671","30-Apr-20 12:32 AM","tracks","",""
+"443116301968211989","MarcosB20#9517","30-Apr-20 12:33 AM","Aaah ok, thx for all the help","",""
+"393854278764068875","curiouskiwi#1671","30-Apr-20 12:33 AM","","https://cdn.discordapp.com/attachments/397511855091875842/705169931229986876/Screen_Shot_2020-04-30_at_9.35.03_AM.png",""
+"443116301968211989","MarcosB20#9517","30-Apr-20 12:35 AM","So we only have to chose a single track after week 8?","",""
+"393854278764068875","curiouskiwi#1671","30-Apr-20 12:35 AM","yes","",""
+"443116301968211989","MarcosB20#9517","30-Apr-20 12:35 AM","and give in the final project ofc","",""
+"444929390384775188","GiulioT25#9941","30-Apr-20 12:35 AM","okay","",""
+"443116301968211989","MarcosB20#9517","30-Apr-20 12:35 AM","ooook, pff thx for all","",""
+"393854278764068875","curiouskiwi#1671","30-Apr-20 12:36 AM","the Track is the equivalent of 2 weeks (2 psets worth)","",""
+"443116301968211989","MarcosB20#9517","30-Apr-20 12:36 AM","Makes sense","",""
+"393854278764068875","curiouskiwi#1671","30-Apr-20 12:38 AM","and just to bring this back to AP. 🙂   In the CS50AP version, everyone does the Web track.  That's why it may look different.","",""
+"443116301968211989","MarcosB20#9517","30-Apr-20 12:39 AM","ok :))","",""
+"704550100386447361","thedogmah#8071","30-Apr-20 03:08 AM","Hi all, I feel like I have a well coded tictactoe but its not optimal. I was wondering whether anyone can elaborate on the need of the result function to raise an error for bad moves. How will the A.I make a bad move if it has a list to choose from. I'm not sure what is being asked.","",""
+"393854278764068875","curiouskiwi#1671","30-Apr-20 03:11 AM","#cs50-ai","",""
+"704550100386447361","thedogmah#8071","30-Apr-20 05:56 AM","whats difference between cs50x and AI","",""
+"704550100386447361","thedogmah#8071","30-Apr-20 05:56 AM","is AI one part of the cs50 course?","",""
+"393854278764068875","curiouskiwi#1671","30-Apr-20 05:58 AM","This is the channel for AP.   Is that what you mean?  or AI?","",""
+"704550100386447361","thedogmah#8071","30-Apr-20 07:58 AM","Yes I meant AI (in connection to the conversation abouve)","",""
+"704550100386447361","thedogmah#8071","30-Apr-20 07:59 AM","above*","",""
+"560835982388232205","dlloyd#7570","01-May-20 07:02 AM","That's a wrap on CS50 AP for 2019-20! Learners who have completed all four written assignments with a satisfactory grade (70% or higher) will be notified by email during the first week of May. If they have also completed all of the programming exercises and purchased a verified certificate for the course, the verified certificate will issue by mid-May.","",""
+"393854278764068875","curiouskiwi#1671","01-May-20 07:09 AM","Pinned a message.","",""
+"188639482851885056","CelloThanos#9729","01-May-20 09:36 AM","So how does registering for the AP exam with CS50AP work? My school distract pays for the exam, but I can't just register for whatever exam I want to, I need to also receive the credit for the class","",""
+"560835982388232205","dlloyd#7570","01-May-20 04:36 PM","You would need to coordinate that through a local school. The course is intended for students who don't have enough students for a full AP course at their school or homeschool, but can coordinate with a local high school for the exam and for submission of the performance tasks","",""
+"372867715993567233","King of Random#7545","09-May-20 11:24 PM","hi","",""
+"188639482851885056","CelloThanos#9729","10-May-20 03:41 AM","Hello there","",""

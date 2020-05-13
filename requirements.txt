@@ -1,10 +1,7 @@
-click==7.1.2
 cs50==5.0.4
 Flask==1.1.2
-itsdangerous==1.1.0
-Jinja2==2.11.2
-MarkupSafe==1.1.1
-SQLAlchemy==1.3.16
-sqlparse==0.3.1
-termcolor==1.1.0
-Werkzeug==1.0.1
+Flask-Session
+requests==2.23.0
+
+Werkzeug==0.16.1
+pandas==1.0.3

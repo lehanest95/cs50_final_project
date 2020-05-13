@@ -1,0 +1,26 @@
+AuthorID,Author,Date,Content,Attachments,Reactions
+"414660528083042304","Bitcoin#9272","14-Feb-20 07:03 AM","hey guys, 
+
+So I am trying to submit my CS50 (https://cs50.harvard.edu/x/2020/tracks/mobile/android/fiftygram/) in my terminal by using submit50 cs50/problems/2020/x/tracks/android/fiftygram. I have installed pip3 and CS50 but I keep getting an error zsh: command not found: submit50
+
+Please help! How do I solve this","",""
+"393854278764068875","curiouskiwi#1671","14-Feb-20 07:12 AM","did you install submit50","",""
+"393854278764068875","curiouskiwi#1671","14-Feb-20 07:12 AM","`pip3 install submit50`","",""
+"414660528083042304","Bitcoin#9272","14-Feb-20 07:26 AM","yes i did @curiouskiwi","",""
+"414660528083042304","Bitcoin#9272","14-Feb-20 07:32 AM","I know its installed cause when I execute pip3 show submit50. I get:
+```
+Name: submit50
+Version: 3.0.2
+Summary: This is submit50, with which you can submit solutions to problems for CS50.
+Home-page: https://github.com/cs50/submit50
+Author: CS50
+Author-email: sysadmins@cs50.harvard.edu
+License: GPLv3
+etc....
+```","",""
+"393854278764068875","curiouskiwi#1671","14-Feb-20 08:11 AM","I'm not sure then.  You could just upload the files to your CS50 IDE and then submit from there.","",""
+"414660528083042304","Bitcoin#9272","14-Feb-20 08:15 AM","@curiouskiwi how do I do that? Do I just drag the folder into the CS50 IDE?","",""
+"393854278764068875","curiouskiwi#1671","14-Feb-20 08:16 AM","File > Upload local files  and then drag","",""
+"414660528083042304","Bitcoin#9272","14-Feb-20 08:24 AM","that was much easier! thank you so much!!","",""
+"418804878656274434","SvejKelej#4184","01-Apr-20 08:18 PM","@brian i would like to study some arabic please🇸🇦","",""
+"701041582341619742","mihreteab bokretsion#4622","25-Apr-20 05:31 PM","this is my java program would you if you help me to find where is my error","https://cdn.discordapp.com/attachments/661709189915344927/703614276220354602/message.txt",""

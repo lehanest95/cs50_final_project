@@ -1,0 +1,1450 @@
+AuthorID,Author,Date,Content,Attachments,Reactions
+"371851786971119616","taco#3171","02-Jan-18 05:43 AM","Jesus is Lord","",""
+"371851786971119616","taco#3171","02-Jan-18 05:43 AM","mashup has a long read","",""
+"371851786971119616","taco#3171","02-Jan-18 05:45 AM","I'd like you to know that I spent 2 hours of actual work reading API docs, the problem set page, and the source code.","",""
+"371851786971119616","taco#3171","02-Jan-18 05:46 AM","Today, with about 30 minutes of work, I implemented articles and search in application.py","",""
+"371851786971119616","taco#3171","02-Jan-18 05:46 AM","I haven't gotten to scripts yet","",""
+"371851786971119616","taco#3171","02-Jan-18 06:01 PM","Jesus is Lord","",""
+"399211626118512642","gawdahm#1896","06-Jan-18 08:05 PM","Does anyone know how to get the labels like the staff solution does? I have looked at the google API for it and all I can get are ""ABC"" etc inside the marker, not a place name outside it. Is it a third party API?","",""
+"393854278764068875","curiouskiwi#1671","06-Jan-18 11:43 PM","@gawdahm pretty sure the staff version is using icons for the markers.  If you use an icon, you can place the label outside.","",""
+"399211626118512642","gawdahm#1896","06-Jan-18 11:44 PM","@curiouskiwi ahhh, that makes sense! I'll look into it, thank you 😃","",""
+"393854278764068875","curiouskiwi#1671","06-Jan-18 11:45 PM","@gawdahm have a look here about icons  https://developers.google.com/maps/documentation/javascript/markers","",""
+"399211626118512642","gawdahm#1896","06-Jan-18 11:50 PM","Thanks a lot! 😃","",""
+"341706123612520451","Aurea#9477","26-Jan-18 12:26 AM","Anyone have debugging tips for this pset? I 'm unfamiliar with javascript and it's hard to debug when your website ""works"" (isn't flagging any errors). For some reason my print statements aren'tw orking either","",""
+"341706123612520451","Aurea#9477","26-Jan-18 12:26 AM","I can't get my markers to show and don't know why 😦","",""
+"393854278764068875","curiouskiwi#1671","26-Jan-18 12:34 AM","does `console.log` not work?  for example, I've got this in my script: ```function addMarker(place)
+{
+    // TODO
+    console.log(""I've now hit the addMarker function"")
+    console.log(place)
+        // instantiate ```  to make sure I'm getting there and what I'm dealing with.","",""
+"341706123612520451","Aurea#9477","26-Jan-18 12:37 AM","oh, yes I just rearlized that I was assuming print(x) would work for JS. My brain is starting to mush together all the programming languages 😂 Thanks!","",""
+"341706123612520451","Aurea#9477","26-Jan-18 12:58 AM","ok i'm still stumped, my `console.log` print statements aren't working","",""
+"341706123612520451","Aurea#9477","26-Jan-18 12:59 AM","I can only seem to print statements in application.py, any ideas?","",""
+"393854278764068875","curiouskiwi#1671","26-Jan-18 01:32 AM","silly question, but are you looking in the console?  (via the browser developer tools?)","",""
+"393854278764068875","curiouskiwi#1671","26-Jan-18 01:32 AM","application.py will print to the IDE terminal.","",""
+"341706123612520451","Aurea#9477","26-Jan-18 01:49 AM","wait... I think you're right... I've been looking at the IDE terminal this whole time","",""
+"341706123612520451","Aurea#9477","26-Jan-18 01:50 AM","Where is the console? You said browser developer tools but I don't see console or that anywhere in the IDE","",""
+"341706123612520451","Aurea#9477","26-Jan-18 01:50 AM","oh nvm, I found it","",""
+"341706123612520451","Aurea#9477","26-Jan-18 01:50 AM","thanks","",""
+"341706123612520451","Aurea#9477","26-Jan-18 01:52 AM","Ok, another stupid question: my console is blank even if I run my code OR move around my other functioning website for pset7","",""
+"393854278764068875","curiouskiwi#1671","26-Jan-18 02:03 AM","and you've got `console.log()` calls in js?   (pset7 doesn't use javascript, so I wouldn't expect anything in the console)","",""
+"341706123612520451","Aurea#9477","26-Jan-18 02:17 AM","yeah","",""
+"341706123612520451","Aurea#9477","26-Jan-18 02:17 AM","I've sprinkled them throughout multiple functions and I'm sitll getting nothing","",""
+"341706123612520451","Aurea#9477","26-Jan-18 02:18 AM","Although right now I'm getting an error in `/articles` saying `request.args.get(""geo"")` is missing, but that's what I'm trying to debug in JS right now","",""
+"393854278764068875","curiouskiwi#1671","26-Jan-18 02:28 AM","did you open the console on the map page itself?  (another silly question but I've seen folks open it on the ide tab by mistake)","",""
+"341706123612520451","Aurea#9477","26-Jan-18 02:52 AM","wow that was totally what I was doing. Thanks, I can finally see my print statements now!!","",""
+"341706123612520451","Aurea#9477","26-Jan-18 02:53 AM","and now I'm seeing errors I've never seen before. excellent, this is exactly what I need to work with","","😀 (1)"
+"341706123612520451","Aurea#9477","26-Jan-18 08:49 AM","Given this line of JS code `$.getJSON(""/articles"", parameters, function(data, textStatus, jqXHR)`","",""
+"341706123612520451","Aurea#9477","26-Jan-18 08:49 AM","how would you take `data` and embed it into HTML","",""
+"341706123612520451","Aurea#9477","26-Jan-18 08:49 AM","i've tried a million thigns and they don'tw ork","",""
+"341706123612520451","Aurea#9477","26-Jan-18 08:49 AM","like say it had attributes `link` and `title`","",""
+"341706123612520451","Aurea#9477","26-Jan-18 08:50 AM","how would you call it such that `<b> DATA.LINK </b>` is embedded","",""
+"393854278764068875","curiouskiwi#1671","26-Jan-18 09:19 AM","you'll want to loop over the data.length so you can get the data[i].link and data[i].title to put into your html string.","",""
+"341706123612520451","Aurea#9477","26-Jan-18 06:34 PM","Right, but how would you make HTML recognize that you’re calling the actual value of ‘data[i].link’ instead of a string ? I’ve tried enclosing it in double squarely braces, enclosed it in ‘$()’ but nothing seems to work","",""
+"341706123612520451","Aurea#9477","26-Jan-18 06:37 PM","Also tried using handlebars.compile function but I think that only applies to typeahead","",""
+"341706123612520451","Aurea#9477","26-Jan-18 11:29 PM","nvm I got it","",""
+"178528128891617290","FlamingTiger#2021","04-Feb-18 01:53 AM","Hey anyone noticing problems with the distribution code?","",""
+"178528128891617290","FlamingTiger#2021","04-Feb-18 01:53 AM","Isn't the distribution code supposed to at least load the map?","",""
+"178528128891617290","FlamingTiger#2021","04-Feb-18 02:36 AM","Figured it out","",""
+"394586780810346496","Baris Can Ceylan#4867","16-Feb-18 11:16 PM","any time ide closes, the exported API_KEY is lost. Is there a way to make it persistent? If not, isn't this bad design?","",""
+"394586780810346496","Baris Can Ceylan#4867","16-Feb-18 11:16 PM","Is there a reason we are exporting api_key to os instead of using a variable in application.py?","",""
+"394586780810346496","Baris Can Ceylan#4867","16-Feb-18 11:18 PM","for the most projects, i create an .env file and store the keys/passes in it and ignore it via gitignore.","",""
+"217139706868006912","JoRst#7692","18-Feb-18 01:41 AM","Hello! @all im having an issue rn implementing the /search functionality. Right now I can search by any of the parameters independently using:","",""
+"217139706868006912","JoRst#7692","18-Feb-18 01:42 AM","but cant seem to get https://ide50-username.cs50.io/search?q=Cambridge+MA","",""
+"217139706868006912","JoRst#7692","18-Feb-18 01:42 AM","wokrking","",""
+"217139706868006912","JoRst#7692","18-Feb-18 01:42 AM","any help?","",""
+"394586780810346496","Baris Can Ceylan#4867","18-Feb-18 12:28 PM","@JoRst I'm on the same step, trying to build query. ""Cambridge+MA"" consists of two words, it should be seperated into two parameters as ""Cambridge"" and ""MA"".","",""
+"394586780810346496","Baris Can Ceylan#4867","18-Feb-18 12:44 PM","What troubles me is strings like ""New+Haven+CT"". new haven is in fact should be seached as one string...","",""
+"217139706868006912","JoRst#7692","18-Feb-18 01:24 PM","@Baris Can Ceylan so I need to use .split("" "")?  And compare my LIKES to different words in the list? Doesn't that mean I'm always assuming they will input Cambridge before MA to make the logic work?;","",""
+"217139706868006912","JoRst#7692","18-Feb-18 01:26 PM","I don't want to say it but I think other than a LOT of conditional statements, the only way to get these complicated searches functioning is to do the Full-Text Search they suggested. For now I think ill leave it able to handle postal codes, cities, etc separately and then circle back at the end to implement a FTS for the complicated stufd","",""
+"217139706868006912","JoRst#7692","18-Feb-18 01:26 PM","Stuff","",""
+"394586780810346496","Baris Can Ceylan#4867","18-Feb-18 01:35 PM","yep, without A TON of statements (which will impact the results time greatly), the only way to provide relevant results is FTS. the problem specification says it is enough to show results only for postal code but I am trying to push myself. 
+Perhaps generating full strings of adresses in another table and search through it with FTS might be the optimal solution.","",""
+"394586780810346496","Baris Can Ceylan#4867","18-Feb-18 01:35 PM","I bet staff's solution is using FTS","",""
+"217139706868006912","JoRst#7692","18-Feb-18 10:47 PM","Yeah man I'm with you. I'm happy with the postal code for now, then when I'm done with the rest of the app I'm gonna try the FTS, I'll let you know how it goes!","",""
+"394586780810346496","Baris Can Ceylan#4867","20-Feb-18 08:10 PM","@JoRst I managed to succesfully implement an fts solution. Let me know if you want to discuss about it.","",""
+"217139706868006912","JoRst#7692","21-Feb-18 01:16 AM","@Baris Can Ceylan hey congrats!! I had to take a couple days off for work but I'm getting back to it tonight, I'll let you know if I have questions (I will :p)","",""
+"329977469350445069","Lord of Galaxy#9211","21-Feb-18 10:22 AM","Please format your code using ```","",""
+"329977469350445069","Lord of Galaxy#9211","21-Feb-18 10:23 AM","```c
+//Code
+int main(){
+    int a;
+    return 0;
+}
+```","",""
+"393854278764068875","curiouskiwi#1671","21-Feb-18 10:27 AM","@JoRst please don't share solution code, per the academic honesty guidelines. thanks.","",""
+"217139706868006912","JoRst#7692","21-Feb-18 10:27 AM","okay ill delete it","",""
+"217139706868006912","JoRst#7692","21-Feb-18 10:29 AM","@Baris Can Ceylan hey I got my implementation mostly working would love to compare, apparently we cannot on here","",""
+"217139706868006912","JoRst#7692","21-Feb-18 10:31 AM","@curiouskiwi my apologies","",""
+"394586780810346496","Baris Can Ceylan#4867","21-Feb-18 07:14 PM","BTW be advise, when implementing other countries (in my example, Turkey), search works fine. But articles cannot be fetched with geocode, instead for local news, google news rss builds a multi combination of strings from the adress.","",""
+"329977469350445069","Lord of Galaxy#9211","21-Feb-18 07:20 PM","The course includes stuff like RSS too? Wow","",""
+"394586780810346496","Baris Can Ceylan#4867","21-Feb-18 09:46 PM","@JoRst in case you also have completed and submitted your task, we can discuss our approaches in pvt, this wouldn't violate academic honesty, right @curiouskiwi ?","",""
+"393854278764068875","curiouskiwi#1671","21-Feb-18 09:48 PM","@Baris Can Ceylan that's fine","",""
+"217139706868006912","JoRst#7692","21-Feb-18 11:14 PM","Yeah I've already submitted mine @Baris Can Ceylan","",""
+"315647018682810368","kaws#7525","24-Feb-18 11:41 AM","Hi. I submitted this problem but my grades are not showing up on cs50.me. I submitted about a week ago","",""
+"315647018682810368","kaws#7525","04-Mar-18 05:13 PM","@curiouskiwi  Can you help with this please","",""
+"397677328660037632","Maarten#1004","04-Mar-18 06:35 PM","tried resubmitting? Had one week where submits where a bit buggy for some reason and resubmitting worked","",""
+"315647018682810368","kaws#7525","04-Mar-18 06:39 PM","yeah i did earlier today. We'll see what happens. How long does it take for tis pset to be marked? I'm assuming it is manually marked.","",""
+"397677328660037632","Maarten#1004","04-Mar-18 06:39 PM","No clue to be honest, I'm busy with finance so probably kiwi knows more 😃","",""
+"393854278764068875","curiouskiwi#1671","04-Mar-18 10:04 PM","nothing in CS50x is manually marked.  You should see a grade within about 2 minutes.","",""
+"315647018682810368","kaws#7525","05-Mar-18 11:40 PM","@curiouskiwi  I still don't have a grade  for mashup. Ive tried several submissions","",""
+"393854278764068875","curiouskiwi#1671","05-Mar-18 11:41 PM","@kaws just to be sure, you ran `submit50 cs50/2018/x/mashup` ?","",""
+"393854278764068875","curiouskiwi#1671","05-Mar-18 11:42 PM","and you can see the submission here? http://cs50.me/submissions","",""
+"315647018682810368","kaws#7525","05-Mar-18 11:44 PM","ah i think thats the problem","",""
+"315647018682810368","kaws#7525","05-Mar-18 11:45 PM","the pset document has ""submit50 cs50/2017/x/mashup""","",""
+"315647018682810368","kaws#7525","05-Mar-18 11:45 PM","instead of 2018","",""
+"315647018682810368","kaws#7525","05-Mar-18 11:45 PM","done. thanks for your help @curiouskiwi","",""
+"393854278764068875","curiouskiwi#1671","05-Mar-18 11:46 PM","sounds like you were using the 2017 spec. The current spec shows 2018: https://docs.cs50.net/2018/x/psets/8/pset8.html#how-to-submit","",""
+"315647018682810368","kaws#7525","05-Mar-18 11:47 PM","oops","",""
+"420657780723286025","ankusha#0689","06-Mar-18 09:12 PM","hi","",""
+"393889685879128075","agni#0999","13-Mar-18 12:34 PM","hello","",""
+"397677328660037632","Maarten#1004","15-Mar-18 11:22 AM","It's funny to see that Doug is declaring the local variable with var in his video, whilst David is trying to get us to use let instead. Did make me look-up on the differences, seems that let is preferred in most cases because they are limited to the block in which they're defined 😃 Interesting stuff haha","",""
+"397677328660037632","Maarten#1004","15-Mar-18 02:50 PM","@curiouskiwi ""Unfortunately, Google Maps disables ctrl- and right-clicks on maps, which interferes with using Chrome’s (amazingly useful) Inspect Element feature, so these lines re-enable those."" wouldn't it just have been easier/better to teach people how to reach the element inspector using the shortcut Ctrl+Shift+I (Windows) / Command+option/alt+I (MacOS) or via the menu in the browser?","",""
+"403211213699547157","Aternus#9711","16-Mar-18 01:17 PM","F12","",""
+"403211213699547157","Aternus#9711","16-Mar-18 01:17 PM","Works on almost all platforms","",""
+"397677328660037632","Maarten#1004","16-Mar-18 03:18 PM","But not all (won't work on Mac Os if I recall correctly). The shortcuts above do I believe.","",""
+"397677328660037632","Maarten#1004","17-Mar-18 02:34 PM","Thanks @Baris Can Ceylan  for that referring back to that FTS suggestion, I couldn't get results similar to the staff solution until I went that route 😃","",""
+"397677328660037632","Maarten#1004","18-Mar-18 09:52 PM","Just a little tip. If you guys find setting the API_KEY constantly annoying too:","",""
+"397677328660037632","Maarten#1004","18-Mar-18 09:53 PM","```markdown
+if not os.environ.get(""API_KEY""):
+    os.environ[""API_KEY""] = ""YOURAPIKEY""
+```","",""
+"393854278764068875","curiouskiwi#1671","18-Mar-18 09:59 PM","just be aware to never publish your code publicly if you are hard-coding your api key into your code.","",""
+"397677328660037632","Maarten#1004","18-Mar-18 10:00 PM","Good point (was aware of that, but others might not be 😃 )","",""
+"397677328660037632","Maarten#1004","19-Mar-18 04:17 PM","I seem to have got it working, but sometimes markers close to eachother have the same news. Don't know if that is to be expected or not :\","",""
+"397677328660037632","Maarten#1004","19-Mar-18 06:04 PM","","https://cdn.discordapp.com/attachments/395684859651031041/425323621095833602/unknown.png",""
+"397677328660037632","Maarten#1004","19-Mar-18 06:04 PM","Done 😃","",""
+"403211213699547157","Aternus#9711","20-Mar-18 03:24 PM","Great job! 😄","",""
+"422750522186137600","Steven#4330","21-Mar-18 10:14 PM","Hi, whenever I type an input into the text input for the location to search instead of getting q=new%20haven like on the staffs version i'm instead getting q=new+haven, has anyone else encountered this?","",""
+"425829488752984084","I_love_Jesus_yo#8544","21-Mar-18 11:09 PM","it shouldn't be a big deal @Steven it's just another way of querying","",""
+"393854278764068875","curiouskiwi#1671","22-Mar-18 06:01 AM","@Steven I've noticed that as well, but I'm not sure of the answer. I'll ask. 😃","",""
+"393854278764068875","curiouskiwi#1671","22-Mar-18 06:21 AM","in any event, both work fine. 😃","",""
+"403211213699547157","Aternus#9711","26-Mar-18 08:05 PM","@curiouskiwi do you think that sentence needs fixing? ""In this here mashup, you’ll combine data from Google News with functionality from Google Maps!""","",""
+"393854278764068875","curiouskiwi#1671","27-Mar-18 01:16 AM","no","",""
+"403211213699547157","Aternus#9711","27-Mar-18 10:48 AM","""In this here"" is considered valid English?","",""
+"393854278764068875","curiouskiwi#1671","27-Mar-18 10:57 PM","It's colloquial usage, but sure, it's valid.  I don't think there's anyone who will be confused by it.","",""
+"403211213699547157","Aternus#9711","27-Mar-18 11:09 PM","Not sure that anyone noticed this before, but out of curiosity I had to ask 😃 Thanks a lot!","",""
+"403211213699547157","Aternus#9711","03-Apr-18 05:09 PM","@curiouskiwi Seems like there is some confusion between the pset text and the distribution code:
+
+""Accordingly, search uses jQuery’s getJSON method to contact /search asynchronously, passing in one parameter, geo, the value of which is query.""
+
+There is no such parameters `geo`, perhaps it should be `q`?
+
+Also the next sentence refers to a `done` function, which I suspect is a promise, but it's not part of the distribution code.","",""
+"393854278764068875","curiouskiwi#1671","03-Apr-18 11:30 PM","The promise functionality was removed from the distro code. We'll update the spec.","",""
+"403211213699547157","Aternus#9711","04-Apr-18 12:41 AM","Cool, thanks!","",""
+"403211213699547157","Aternus#9711","04-Apr-18 12:42 AM","I've migrated it to Bootstrap 4, http://ide50-aternus.cs50.io:8080/","",""
+"403211213699547157","Aternus#9711","04-Apr-18 12:42 AM","It's the first version so it's only the basics","",""
+"340140981586493442","teyalogos#2807","09-Apr-18 06:51 AM","```python
+    """"""Search for places that match query""""""
+
+    q = request.args.get(""q"") + ""%""
+
+    # check if q is set
+    if not q:
+        raise RuntimeError(""arguement 'q' is null"")
+
+    # query for any postal code, city or state that begins with q
+    places = db.execute(""SELECT * FROM places WHERE postal_code LIKE :q OR place_name LIKE :q OR admin_name1 LIKE :q LIMIT 0,10"", q=q)
+
+    if len(places) > 10:
+        return jsonify([places[0:10]])
+
+    return jsonify(places)
+```","",""
+"340140981586493442","teyalogos#2807","09-Apr-18 06:52 AM","I've been tryna get the search function working for the past 2 hours or so","",""
+"340140981586493442","teyalogos#2807","09-Apr-18 06:52 AM","I don't understand what's wrong","",""
+"340140981586493442","teyalogos#2807","09-Apr-18 06:52 AM","the SQL query works","",""
+"340140981586493442","teyalogos#2807","09-Apr-18 06:52 AM","the return values are correct","",""
+"340140981586493442","teyalogos#2807","09-Apr-18 06:53 AM","however it still returns a 500","",""
+"340140981586493442","teyalogos#2807","09-Apr-18 06:53 AM","my articles function works perfectly, however when i run the search function, the article function completely breaks","",""
+"340140981586493442","teyalogos#2807","09-Apr-18 06:53 AM","I'm asking for help?","",""
+"340140981586493442","teyalogos#2807","09-Apr-18 06:57 AM","ALRIGHT","",""
+"340140981586493442","teyalogos#2807","09-Apr-18 06:57 AM","IT WORKS?","",""
+"340140981586493442","teyalogos#2807","09-Apr-18 06:58 AM","IT WORKS NOW","",""
+"340140981586493442","teyalogos#2807","09-Apr-18 06:58 AM","but it only works on the online ide50","",""
+"340140981586493442","teyalogos#2807","09-Apr-18 06:58 AM","why?","",""
+"340140981586493442","teyalogos#2807","09-Apr-18 06:58 AM","can anyone answer my question?","",""
+"393854278764068875","curiouskiwi#1671","09-Apr-18 07:52 AM","which question?","",""
+"340140981586493442","teyalogos#2807","09-Apr-18 10:52 AM","the exact code","",""
+"340140981586493442","teyalogos#2807","09-Apr-18 10:52 AM","works on the online version","",""
+"340140981586493442","teyalogos#2807","09-Apr-18 10:52 AM","but not on the offline version","",""
+"403211213699547157","Aternus#9711","09-Apr-18 11:30 AM","@teyalogos As an aside, in the code you've posted, `q` will always be set, regardless if the GET argument is present, you should check why","",""
+"403211213699547157","Aternus#9711","09-Apr-18 11:31 AM","Also, it's better to handle the exception you're raising within your function. Unless you have a global exception handler that knows what to do based on the parameters you're using.","",""
+"340140981586493442","teyalogos#2807","09-Apr-18 11:34 AM","ahh","",""
+"340140981586493442","teyalogos#2807","09-Apr-18 11:34 AM","alright","",""
+"340140981586493442","teyalogos#2807","09-Apr-18 11:35 AM","the assignment told me to raise the exception but i'll handle it anywyas","",""
+"331360434567380995","DiscordBay#6583","17-Apr-18 05:01 PM","done with /search at last. It took way longer to get it working than I thought.","",""
+"331360434567380995","DiscordBay#6583","18-Apr-18 08:11 PM","Please I have a question regarding my search box behavior. when am on the course official mashup website and open up my chrome developer tools just to see the ""behind the scenes"" what I notice on the website is that any time I type something on the search-box and press the space-bar I notice that %20 got added. I know this happen by default but when I do the same thing on my own website, + got added instead of %20. My /search and /article are both working. Have I done something wrong somewhere?","",""
+"403211213699547157","Aternus#9711","18-Apr-18 11:45 PM","Notice how? From the network tab?","",""
+"331360434567380995","DiscordBay#6583","19-Apr-18 03:27 AM","Yes","",""
+"331360434567380995","DiscordBay#6583","19-Apr-18 03:32 AM","So if I type something like ""new haven"" it becomes /search?q=new%20haven","",""
+"331360434567380995","DiscordBay#6583","19-Apr-18 03:33 AM","But mine becomes /search?q=new+haven","",""
+"403211213699547157","Aternus#9711","19-Apr-18 01:01 PM","It probably has to do with URL Encoding","",""
+"403211213699547157","Aternus#9711","19-Apr-18 01:01 PM","You should research that and see if it has any effect on your logic","",""
+"331360434567380995","DiscordBay#6583","19-Apr-18 01:28 PM","I thought so as well","",""
+"331360434567380995","DiscordBay#6583","19-Apr-18 01:31 PM","though everything works just fine on my end","",""
+"403211213699547157","Aternus#9711","20-Apr-18 06:03 PM","Did anyone here implement FTS (Full Text Search) for this pset?","",""
+"403211213699547157","Aternus#9711","20-Apr-18 06:04 PM","Would be awesome if someone could share their insights about structuring the `WHERE` statement.
+Currently I'm using `UNION` to OR the *PHRASE* results of the `MATCH` operator; hopefully there is a better way?","",""
+"403211213699547157","Aternus#9711","20-Apr-18 06:04 PM","@curiouskiwi @Maarten","",""
+"397677328660037632","Maarten#1004","20-Apr-18 07:41 PM","I'm using WHERE ftstable MATCH query in my query, but no clue if that's the best approach. Perhaps curiouskiwi could share the best practice?","",""
+"403211213699547157","Aternus#9711","20-Apr-18 07:45 PM","The LIKE approach works much faster for me","",""
+"403211213699547157","Aternus#9711","20-Apr-18 07:45 PM","Also did you create two tables?","",""
+"403211213699547157","Aternus#9711","20-Apr-18 07:46 PM","Since you can't use integers in FTS, I was wondering if there is another solution for the ""in view"" area query","",""
+"403211213699547157","Aternus#9711","20-Apr-18 07:50 PM","What I mean is that this part of the update query no longer works if you use an FTS table:
+```sql
+WHERE :sw_lat <= latitude AND latitude <= :ne_lat AND (:sw_lng <= longitude AND longitude <= :ne_lng)
+```","",""
+"397677328660037632","Maarten#1004","20-Apr-18 09:58 PM","I run MATCH on my whole FTS table, but I've used nonindexed on table creation as well to filter out columns I don't need.","",""
+"397677328660037632","Maarten#1004","20-Apr-18 09:59 PM","Also, I don't know if this is too much spoiling @curiouskiwi  If so I'll delete it","",""
+"403211213699547157","Aternus#9711","22-Apr-18 06:16 PM","Hey @curiouskiwi, do you have any insights about the question I've asked previously? 😃","",""
+"318140321403895808","nil4k#5220","22-Apr-18 06:18 PM","Is that all you wrote?  It looks like an incomplete sql statement.","",""
+"318140321403895808","nil4k#5220","22-Apr-18 06:19 PM","you would generally need to include what to select and from which table to select it.","",""
+"403211213699547157","Aternus#9711","22-Apr-18 07:38 PM","Hey @nil4k, that was not my question.
+I was asking if it is possible to have one table that can support Full Text Search on specific columns so that I can gain FTS benefits and still use the other columns and their data types to my advantage","",""
+"331360434567380995","DiscordBay#6583","22-Apr-18 09:52 PM","@Aternus just curious though, have you first came out with a way to do the search using the normal table and now you are just experimenting with the FTS?","",""
+"403211213699547157","Aternus#9711","22-Apr-18 09:54 PM","Yes","",""
+"403211213699547157","Aternus#9711","22-Apr-18 09:55 PM","From my experiments the ""normal"" table lookup is faster","",""
+"331360434567380995","DiscordBay#6583","22-Apr-18 09:56 PM","yeah I would agree to that except I didn't experiment with the FTS but I'll say the normal is fast","",""
+"403211213699547157","Aternus#9711","22-Apr-18 11:55 PM","Well, it might be that I'm implementing it wrong, which is why I wanted @curiouskiwi to take a look 😃","",""
+"393854278764068875","curiouskiwi#1671","22-Apr-18 11:59 PM","I didn't implement FTS in my version.","",""
+"403211213699547157","Aternus#9711","23-Apr-18 08:56 AM","Thanks for the feedback @curiouskiwi !","",""
+"435776696172675073","cs50-student#8737","25-Apr-18 08:59 PM","can someone help me understand the pset8 explanation for ""search"" under ""Understanding""? on https://docs.cs50.net/2018/x/psets/8/mashup/mashup.html it says ""the plugin also passes to search two additional arguments, the last of which (asyncResults) is a ""callback"" function that search should call as soon as it’s done searching for matches"", but asyncResults isn't defined anywhere in the code given (scripts.js) from ""wget http://cdn.cs50.net/2017/fall/psets/8/mashup/mashup.zip"". It also says ""Once /search responds (however many milliseconds or seconds later), the anonymous function passed to done will be called and passed data, whose value will be whatever JSON that /search has emitted. (Though if something goes wrong, fail is instead called.)"" but I cannot find a definition for 'done' or 'fail' anywhere in the provided code (scripts.js). What am I missing/not understanding?","",""
+"435776696172675073","cs50-student#8737","25-Apr-18 11:35 PM","The specification goes on instruct the reader to notice the usage of ""console.log"", which is nowhere to be found in scripts.js...","",""
+"438836331595169793","cs50-student#2759","26-Apr-18 03:12 AM","@curiouskiwi can i borrow your attention for moment? am I not understanding something? is the specification wrong? is the file incomplete?","",""
+"393854278764068875","curiouskiwi#1671","26-Apr-18 03:30 AM","Hi.  We changed the  source code this year, but it appears that the spec wasn't updated.  I'll make sure it gets fixed.  But essentially,  replace the `search` part with just this:  
+
+
+This function is called by the typeahead plugin every time the user changes the mashup's text box, as by typing or deleting a character. The value of the text box (i.e., whatever the user has typed in total) is passed to `search` as `query`. And the plugin also passes to `search` two additional arguments, the last of which (`asyncResults`) is a ""callback"" function that `search` should call as soon as it's done searching for matches. In other words, this passing in of `asyncResults` empowers `search` to be ""asynchronous,"" whereby it will only call `asyncResults` as soon as it's ready, without blocking any of the mashup's other functionality. Accordingly, `search` uses jQuery's `getJSON` method to contact `/search` asynchronously, passing in one parameter, `q`, the value of which is `query`. Once `/search` responds (however many milliseconds or seconds later), `asyncResults` will be called and passed `data`, whose value will be whatever JSON that `/search` has emitted. The plugin can then iterate over the places therein (assuming `/search` found matches) in order to update the plugin's drop-down. Phew.","",""
+"438836331595169793","cs50-student#2759","26-Apr-18 03:33 AM","thank you! i'm still not quite understanding the function asyncResults - where is it defined, or is it something we need to define?","",""
+"393854278764068875","curiouskiwi#1671","26-Apr-18 03:35 AM","it's part of typeahead.js","",""
+"393854278764068875","curiouskiwi#1671","26-Apr-18 03:37 AM","which is one of the scripts in your index.html: https://cdn.rawgit.com/corejavascript/typeahead.js/master/dist/typeahead.jquery.js","",""
+"438836331595169793","cs50-student#2759","26-Apr-18 03:41 AM","asyncResults isn't anywhere in that file... here's all i can find on asyncResults from https://github.com/corejavascript/typeahead.js/blob/master/doc/jquery_typeahead.md : Datasets can be configured using the following options.
+
+    source – The backing data source for suggestions. Expected to be a function with the signature (query, syncResults, asyncResults). syncResults should be called with suggestions computed synchronously and asyncResults should be called with suggestions computed asynchronously (e.g. suggestions that come for an AJAX request). source can also be a Bloodhound instance. Required.
+... is that just saying that we should use that function signature, and if we intend to have asynchronous results (as we do for the pset) we send it to typeahead.js via asyncResults()?","",""
+"393854278764068875","curiouskiwi#1671","26-Apr-18 03:47 AM","you don't have to make any changes to the search function","",""
+"438836331595169793","cs50-student#2759","26-Apr-18 03:47 AM","ok, thanks","",""
+"393854278764068875","curiouskiwi#1671","26-Apr-18 03:49 AM","per the spec, the only things in scripts.js you need to complete are `configure`, `addMarker` and `removeMarkers`","",""
+"438836331595169793","cs50-student#2759","26-Apr-18 06:02 PM","can someone point me to documentation on flask's jsonify or help with this error? i can't find a full description anywhere, and am running into this error (and have verified that geo is populated correctly, a list of dictionaries containing links and titles):","",""
+"438836331595169793","cs50-student#2759","26-Apr-18 06:02 PM","[2018-04-26 14:47:42,592] ERROR in app: Exception on /articles [GET]
+Traceback (most recent call last):
+  File ""/opt/pyenv/versions/3.6.0/lib/python3.6/site-packages/flask/app.py"", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File ""/opt/pyenv/versions/3.6.0/lib/python3.6/site-packages/flask/app.py"", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File ""/opt/pyenv/versions/3.6.0/lib/python3.6/site-packages/flask/app.py"", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File ""/opt/pyenv/versions/3.6.0/lib/python3.6/site-packages/flask/_compat.py"", line 33, in reraise
+    raise value
+  File ""/opt/pyenv/versions/3.6.0/lib/python3.6/site-packages/flask/app.py"", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File ""/opt/pyenv/versions/3.6.0/lib/python3.6/site-packages/flask/app.py"", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File ""/home/ubuntu/workspace/pset8/mashup/application.py"", line 46, in articles
+    return jsonify(geo)
+  File ""/opt/pyenv/versions/3.6.0/lib/python3.6/site-packages/flask/json.py"", line 251, in jsonify
+    if current_app.config['JSONIFY_PRETTYPRINT_REGULAR'] and not request.is_xhr:
+  File ""/opt/pyenv/versions/3.6.0/lib/python3.6/site-packages/werkzeug/local.py"", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+  File ""/opt/pyenv/versions/3.6.0/lib/python3.6/site-packages/werkzeug/wrappers.py"", line 699, in is_xhr
+    ), stacklevel=2)
+DeprecationWarning: Request.is_xhr is deprecated. Given that the X-Requested-With header is not a part of any spec, it is not reliable
+INFO:werkzeug:10.240.0.233 - - [26/Apr/2018 14:47:42] ""GET /articles?geo=02138 HTTP/1.1"" 500 -","",""
+"438836331595169793","cs50-student#2759","26-Apr-18 06:04 PM","for reference, this line fixes it (disabling JSONIFY_PRETTYPRINT_REGULAR), but i'm not sure if that's what's intended for the assignment: `app.config['JSONIFY_PRETTYPRINT_REGULAR'] = False`","",""
+"438836331595169793","cs50-student#2759","26-Apr-18 07:38 PM","also (lol) if anyone wants to share tips for advanced strategies for /search that handle inputs such as ""New Haven"" and ""Cambridge Massachusetts"" separately, i'm all ears.","",""
+"438836331595169793","cs50-student#2759","26-Apr-18 09:00 PM","and here's another issue: i can successfully get the user's current gps location. if i put the code that does that in the ready function of scripts.js, right before the code that sets the map options, the code that sets the map options executes before the code that get's the gps location and thus i can't set the map to center on the current gps location...","",""
+"331360434567380995","DiscordBay#6583","02-May-18 04:42 PM","finally completed mashup, guys please help me check against bug. have tried breaking the app myself but it seems okay.
+ide50-sammyjson.cs50.io","",""
+"403211213699547157","Aternus#9711","02-May-18 10:28 PM","Let's see 😀","",""
+"403211213699547157","Aternus#9711","02-May-18 10:28 PM","Ugh, it says that your app is down","",""
+"331360434567380995","DiscordBay#6583","02-May-18 11:19 PM","oh the server must have shut down, let me start it","",""
+"331360434567380995","DiscordBay#6583","02-May-18 11:33 PM","it's back online","",""
+"397677328660037632","Maarten#1004","03-May-18 09:06 PM","Seems to be working as you'd expect","",""
+"331360434567380995","DiscordBay#6583","04-May-18 12:11 AM","okay @Maarten","",""
+"132257794253520896","DMuffin#6434","04-May-18 04:33 AM","I'm trying to do the wildcard query","",""
+"132257794253520896","DMuffin#6434","04-May-18 04:34 AM","```
+q = request.args.get(""q"") + ""%""
+cities = db.execute(""SELECT * FROM places WHERE postal_code LIKE :q LIMIT 0, 10"", q=q)
+```","",""
+"132257794253520896","DMuffin#6434","04-May-18 04:34 AM","It returns nothing 🤔","",""
+"393854278764068875","curiouskiwi#1671","04-May-18 04:37 AM","wildcard is *","",""
+"393854278764068875","curiouskiwi#1671","04-May-18 04:38 AM","oh wait, nm","",""
+"132257794253520896","DMuffin#6434","04-May-18 04:41 AM","My database seems to be fine and outputs something when I remove the % and use = instead of LIKE","",""
+"132257794253520896","DMuffin#6434","04-May-18 04:42 AM","No idea where the problem might be 🤔","",""
+"132257794253520896","DMuffin#6434","04-May-18 04:42 AM","I use the * for ""SELECT * FROM"" is there somewhere else where it should go? @curiouskiwi","",""
+"393854278764068875","curiouskiwi#1671","04-May-18 04:45 AM","the query looks fine","",""
+"393854278764068875","curiouskiwi#1671","04-May-18 04:45 AM","what's not being returned?  the json?","",""
+"132257794253520896","DMuffin#6434","04-May-18 04:46 AM","Cities = [] @curiouskiwi","",""
+"132257794253520896","DMuffin#6434","04-May-18 04:46 AM","I have a print statement and I return it with jsonify","",""
+"132257794253520896","DMuffin#6434","04-May-18 04:46 AM","both show only []","",""
+"393854278764068875","curiouskiwi#1671","04-May-18 04:48 AM","so in your terminal, where it prints the query, does it look correct?  ```DEBUG:cs50:SELECT * from places where postal_code LIKE '19104%'```","",""
+"393854278764068875","curiouskiwi#1671","04-May-18 04:48 AM","(which I see when I type 19104)","",""
+"132257794253520896","DMuffin#6434","04-May-18 04:49 AM","```
+DEBUG:cs50:SELECT * FROM places WHERE postal_code LIKE '02138%' LIMIT 0, 10
+```","",""
+"132257794253520896","DMuffin#6434","04-May-18 04:49 AM","All green","",""
+"132257794253520896","DMuffin#6434","04-May-18 04:50 AM","Tried it with no LIMIT and LIMIT 10 too, none work","",""
+"393854278764068875","curiouskiwi#1671","04-May-18 04:50 AM","and when you run that exact query in sqlite3,  you get 1 row?","",""
+"393854278764068875","curiouskiwi#1671","04-May-18 04:51 AM","sqlite3 query","https://cdn.discordapp.com/attachments/395684859651031041/441778757561221120/Screen_Shot_2018-05-04_at_1.50.45_PM.png",""
+"132257794253520896","DMuffin#6434","04-May-18 04:51 AM","```
+q = request.args.get(""q"")
+cities = db.execute(""SELECT * FROM places WHERE postal_code = :q"", q=q)
+```","",""
+"132257794253520896","DMuffin#6434","04-May-18 04:51 AM","Outputs","",""
+"132257794253520896","DMuffin#6434","04-May-18 04:51 AM","```
+[
+  {
+    ""accuracy"": 4, 
+    ""admin_code1"": ""MA"", 
+    ""admin_code2"": 17, 
+    ""admin_code3"": """", 
+    ""admin_name1"": ""Massachusetts"", 
+    ""admin_name2"": ""Middlesex"", 
+    ""admin_name3"": """", 
+    ""country_code"": ""US"", 
+    ""latitude"": 42.377, 
+    ""longitude"": -71.1256, 
+    ""place_name"": ""Cambridge"", 
+    ""postal_code"": 2138
+  }
+]
+```","",""
+"132257794253520896","DMuffin#6434","04-May-18 04:51 AM","This is the jsonify version of it","",""
+"393854278764068875","curiouskiwi#1671","04-May-18 04:51 AM","why is your postal code 2138?","",""
+"132257794253520896","DMuffin#6434","04-May-18 04:52 AM","http://ide50-ch3rrytea.cs50.io:8080/search?q=02138","",""
+"132257794253520896","DMuffin#6434","04-May-18 04:52 AM","This is my search","",""
+"132257794253520896","DMuffin#6434","04-May-18 04:52 AM","OOOOOOOOO","",""
+"393854278764068875","curiouskiwi#1671","04-May-18 04:52 AM","yes, but 02138 is not 2138","",""
+"132257794253520896","DMuffin#6434","04-May-18 04:52 AM","I think I know what's wrong now","",""
+"393854278764068875","curiouskiwi#1671","04-May-18 04:52 AM","check your field type","",""
+"132257794253520896","DMuffin#6434","04-May-18 04:52 AM","Looks like database ate the 0","",""
+"132257794253520896","DMuffin#6434","04-May-18 04:53 AM","Thanks @curiouskiwi 😄","",""
+"393854278764068875","curiouskiwi#1671","04-May-18 04:53 AM","😃","",""
+"353268272956702720","iJaylan#8612","09-May-18 04:27 AM","does anybody here knows how this focus function works?","",""
+"353268272956702720","iJaylan#8612","09-May-18 04:27 AM","http://api.jquery.com/focus/","",""
+"353268272956702720","iJaylan#8612","09-May-18 04:27 AM","i still don't understand, even after reading the reference that it was let by the pset","",""
+"397677328660037632","Maarten#1004","09-May-18 09:33 PM","@iJaylan something specific you don't get? The jquery doc seems pretty straight forward to me.","",""
+"353268272956702720","iJaylan#8612","09-May-18 09:33 PM","kiwi friend already answered my question in private","",""
+"353268272956702720","iJaylan#8612","09-May-18 09:33 PM","ty maarten","",""
+"397677328660037632","Maarten#1004","09-May-18 11:34 PM","👌","",""
+"328620744219033610","Rodrigo(Turron)#1591","11-May-18 09:43 PM","anyone had issues registering for API key ? It's asking for my credit card","",""
+"328620744219033610","Rodrigo(Turron)#1591","11-May-18 09:44 PM","as part of the sign up for free trial","",""
+"397677328660037632","Maarten#1004","11-May-18 09:45 PM","Google recently changed the policy about that, more on that here: https://mapsplatform.googleblog.com/2018/05/introducing-google-maps-platform.html","",""
+"328620744219033610","Rodrigo(Turron)#1591","11-May-18 09:45 PM","yeah was just reading that","",""
+"328620744219033610","Rodrigo(Turron)#1591","11-May-18 09:46 PM","they made major product license updates since the new european directive","",""
+"328620744219033610","Rodrigo(Turron)#1591","11-May-18 09:47 PM","so yeah you need to put in your credit card to get access to a monthly free $200","",""
+"328620744219033610","Rodrigo(Turron)#1591","11-May-18 09:48 PM","Maarten idk if you have ties to the staff but might be nice to comment on that","",""
+"328620744219033610","Rodrigo(Turron)#1591","11-May-18 09:48 PM","in the pset instructions","",""
+"397677328660037632","Maarten#1004","11-May-18 09:49 PM","I don't. @curiouskiwi is the staff already aware of this?","",""
+"397677328660037632","Maarten#1004","11-May-18 09:51 PM","I finished the pset before the change from Google, so fortunately I didn't have this issue @Rodrigo(Turron)","",""
+"328620744219033610","Rodrigo(Turron)#1591","11-May-18 09:56 PM","So it won't charge you or anything without your permission, credit card is only required for free account sign up","",""
+"328620744219033610","Rodrigo(Turron)#1591","11-May-18 09:57 PM","There's like 100 pages in a reddit post about it, ppl not happy","",""
+"397677328660037632","Maarten#1004","11-May-18 09:58 PM","Yup 😮","",""
+"331360434567380995","DiscordBay#6583","12-May-18 01:22 AM","I think Amazon does that as well","",""
+"393854278764068875","curiouskiwi#1671","12-May-18 01:41 AM","We'll take a look at what we can do.","",""
+"353268272956702720","iJaylan#8612","14-May-18 03:29 AM","does anybody here knows how $.getJSON works? i'm trying to understand how this function works specifically but i'm struggling to discover","",""
+"403211213699547157","Aternus#9711","14-May-18 11:58 AM","http://api.jquery.com/jQuery.getJSON/","",""
+"403211213699547157","Aternus#9711","14-May-18 11:59 AM","In short, it's a wrapper around `$.ajax()` with some predefined options","",""
+"211790818304851968","Faust#1079","14-May-18 03:19 PM","Is it just me or 
+
+Visit developers.google.com/maps/web/, logging in if prompted, and click GET A KEY at top-right.","",""
+"211790818304851968","Faust#1079","14-May-18 03:20 PM","Is there not such option on this page","",""
+"211790818304851968","Faust#1079","14-May-18 03:26 PM","Ah.","",""
+"211790818304851968","Faust#1079","14-May-18 03:26 PM","I don't think it's even possible for me to do this pset","",""
+"211790818304851968","Faust#1079","14-May-18 03:27 PM","I don't have a card google will accept","",""
+"211790818304851968","Faust#1079","14-May-18 03:33 PM","@staff If there's some workaround or solution to this issue, please advise","",""
+"403211213699547157","Aternus#9711","14-May-18 05:20 PM","The distribution code already comes with an API_KEY, doesn't it?","",""
+"211790818304851968","Faust#1079","14-May-18 05:49 PM","Does it?","",""
+"211790818304851968","Faust#1079","14-May-18 05:49 PM","I'll have a look","",""
+"211790818304851968","Faust#1079","14-May-18 05:49 PM","I don't think so.","",""
+"211790818304851968","Faust#1079","14-May-18 05:49 PM","Because the documentation tells you to fetch a key from google after downloading distro","",""
+"211790818304851968","Faust#1079","14-May-18 05:52 PM","Doesn't look like it.","",""
+"331360434567380995","DiscordBay#6583","14-May-18 05:52 PM","@Aternus about two weeks ago when I did mine I had to obtain the API_KEY from google","",""
+"403211213699547157","Aternus#9711","14-May-18 05:52 PM","I think it does, if you take a look at the Jinja template","",""
+"403211213699547157","Aternus#9711","14-May-18 05:53 PM","It has a URL string with an API key","",""
+"331360434567380995","DiscordBay#6583","14-May-18 05:53 PM","don't know though, maybe they've updated that over the past days","",""
+"211790818304851968","Faust#1079","14-May-18 05:54 PM","Jinja?","",""
+"211790818304851968","Faust#1079","14-May-18 05:54 PM","The only thing in the distro I see is index.html","",""
+"211790818304851968","Faust#1079","14-May-18 05:54 PM","```        <!-- https://developers.google.com/maps/documentation/javascript/ -->
+        <script src=""https://maps.googleapis.com/maps/api/js?key={{ key | urlencode }}&v=3.exp""></script>```","",""
+"211790818304851968","Faust#1079","14-May-18 05:54 PM","The only thing mentioning a key here is this","",""
+"211790818304851968","Faust#1079","14-May-18 05:54 PM","and it seems to be extracting your own key","",""
+"331360434567380995","DiscordBay#6583","14-May-18 05:58 PM","still,  application.py still has the check condition on API_KEY on env","",""
+"403211213699547157","Aternus#9711","14-May-18 06:00 PM","Yeah, I was referring to an older version of the distribution code","",""
+"403211213699547157","Aternus#9711","14-May-18 06:02 PM","Anyway, if anyone is stuck you can send me a PM and I'll send you a key you can use from my own account","",""
+"397677328660037632","Maarten#1004","14-May-18 07:58 PM","@Aternus hooked up your cc yet? 🙄","",""
+"403211213699547157","Aternus#9711","14-May-18 08:18 PM","Hey @Maarten is your key not working anymore?","",""
+"397677328660037632","Maarten#1004","14-May-18 08:29 PM","It is for now, but didn't add a cc so it will stop soonish (june I think?)","",""
+"211790818304851968","Faust#1079","15-May-18 02:20 PM","@cs50-student Hey, I noticed you also had the whole Request.is_xhr is deprecated error","",""
+"211790818304851968","Faust#1079","15-May-18 02:21 PM","Was your only solution to use ```app.config['JSONIFY_PRETTYPRINT_REGULAR'] = False``` or was there some other problem with your code?","",""
+"211790818304851968","Faust#1079","15-May-18 02:23 PM","It does seem to fix the problem though","",""
+"211790818304851968","Faust#1079","15-May-18 02:23 PM","👍","",""
+"211790818304851968","Faust#1079","15-May-18 05:14 PM","Could someone here help me understand callback functions?","",""
+"211790818304851968","Faust#1079","15-May-18 05:14 PM","I'm a little stuck on $.getJSON","",""
+"211790818304851968","Faust#1079","16-May-18 01:20 PM","ACtually, I think my JSON call is fine","",""
+"211790818304851968","Faust#1079","16-May-18 01:20 PM","But somehow I'm not interacting with object properly","",""
+"210178498378072064","Atom Heart#5790","26-May-18 08:14 PM","There's a mistake in the ""Understanding"" section regarding `search` function in `scripts.js`. Here's the bit I'm talking about:
+```
+Accordingly, search uses jQuery’s getJSON method to contact /search asynchronously, passing in one parameter, geo, the value of which is query. Once /search responds (however many milliseconds or seconds later), the anonymous function passed to done will be called and passed data, whose value will be whatever JSON that /search has emitted. (Though if something goes wrong, fail is instead called.) Finally called is asyncResults, to which search passes that same data so that the plugin can iterate over the places therein (assuming /search found matches) in order to update the plugin’s drop-down. Phew.```
+But the `search` function looks like this:
+```js
+// Search database for typeahead's suggestions
+function search(query, syncResults, asyncResults)
+{
+    // Get places matching query (asynchronously)
+    let parameters = {
+        q: query
+    };
+    $.getJSON(""/search"", parameters, function(data, textStatus, jqXHR) {
+     
+        // Call typeahead's callback with search results (i.e., places)
+        asyncResults(data);
+    });
+}
+```
+There's no sight of `geo`, `done` or `fail`. Could someone look into it, please?","",""
+"397677328660037632","Maarten#1004","26-May-18 09:25 PM","done and fail are part of getJSON (check the jquery manual for more on that). But the part of geo is indeed a bit confusing to read. It's basically referring to the geographical data that is being typed in the typeahead box.","",""
+"210178498378072064","Atom Heart#5790","26-May-18 10:41 PM","But nothing is actually passed to `done` or `fail`. There's no use of them in the code at all. And the begginng of next paragraph sounds like there is:
+
+""Notice that we’re using `getJSON`'s ""Promise"" interface, per http://api.jquery.com/jquery.getjson/. Rather than pass an anonymous function directly to `getJSON` (to be called upon success), we’re instead ""chaining"" together calls to `getJSON`, `done` (whose argument, an anonymous function, will be called upon success), and `fail` (whose argument, another anonymous function, will be called upoon failure).""
+
+I don't see any chaining.","",""
+"393854278764068875","curiouskiwi#1671","27-May-18 02:21 AM","Hi @Atom Heart you're right. The distribution code was changed but the spec still has the old description.  You can ignore that part. Sorry for any confusion.","",""
+"210178498378072064","Atom Heart#5790","27-May-18 02:21 AM","Ok, thanks for the answer 😉","",""
+"425957346879995924","AndrewF#7449","28-May-18 12:45 PM","Morning everyone - can you check out my implementation and see if there's anything wrong or broken : http://ide50-andrewfitai1.cs50.io:8080/","",""
+"425957346879995924","AndrewF#7449","28-May-18 12:46 PM","Also do we need to add any ""personal touches"" ?","",""
+"425957346879995924","AndrewF#7449","28-May-18 12:47 PM","Feels like this one's been a bit easy lol","",""
+"210178498378072064","Atom Heart#5790","28-May-18 02:31 PM","Loading doesn't end when I click on a marker first time.","",""
+"210178498378072064","Atom Heart#5790","28-May-18 02:32 PM","After that, when I close info window and click on any marker, articles show up instantly, like they have been loaded already.","",""
+"210178498378072064","Atom Heart#5790","28-May-18 02:32 PM","And when I click on a marker twice in a row, articles change.","",""
+"425957346879995924","AndrewF#7449","28-May-18 02:33 PM","Yeah working on that at the moment","",""
+"425957346879995924","AndrewF#7449","28-May-18 02:36 PM","No idea how to fix it tho 😛","",""
+"425957346879995924","AndrewF#7449","28-May-18 02:39 PM","Aparently the showInfo function triggers first","",""
+"425957346879995924","AndrewF#7449","28-May-18 02:39 PM","¯\_(ツ)_/¯","",""
+"210178498378072064","Atom Heart#5790","28-May-18 02:41 PM","Try putting `showInfo` inside `getJSON`","",""
+"425957346879995924","AndrewF#7449","28-May-18 02:42 PM","Now it works 😃","",""
+"425957346879995924","AndrewF#7449","28-May-18 02:43 PM","I mean it works but not as the staff implementation - there's no loading gif since .... well everything is loaded already when the function is called","",""
+"425957346879995924","AndrewF#7449","28-May-18 02:43 PM","🤔","",""
+"210178498378072064","Atom Heart#5790","28-May-18 02:44 PM","I'm gonna let you figure that one yourself 😜","",""
+"210178498378072064","Atom Heart#5790","28-May-18 02:45 PM","Also search results look a bit funky, there's no state there.","",""
+"425957346879995924","AndrewF#7449","28-May-18 02:45 PM","Hmm that's odd - thanks for pointing that one out","",""
+"210178498378072064","Atom Heart#5790","28-May-18 02:48 PM","Sure. 😉 You could also make searching more responsive. Fore example when I type ""califo"", I expect to see places that have that keyword in city or state. But what I see is:","https://cdn.discordapp.com/attachments/395684859651031041/450626392724340736/unknown.png",""
+"210178498378072064","Atom Heart#5790","28-May-18 02:49 PM","Acutally Alameda is in California, isn't it? 😄","",""
+"425957346879995924","AndrewF#7449","28-May-18 02:50 PM","Yep","",""
+"425957346879995924","AndrewF#7449","28-May-18 02:50 PM","Misspelled the handlebars template :3","",""
+"425957346879995924","AndrewF#7449","28-May-18 02:50 PM","And the state wasn't showing between the two commas","",""
+"210178498378072064","Atom Heart#5790","28-May-18 02:51 PM","Yup","",""
+"425957346879995924","AndrewF#7449","28-May-18 02:51 PM","Should work now. Time to figure out how to fix the gif loading thing","",""
+"210178498378072064","Atom Heart#5790","28-May-18 02:53 PM","Also a space between city and state names in marker labels would be nice, but that's just me being nitpicky. 😉","",""
+"425957346879995924","AndrewF#7449","28-May-18 02:54 PM","I'm nitpicky as well so i completely understand 😄","",""
+"210178498378072064","Atom Heart#5790","28-May-18 02:55 PM","Good luck with the gif loading thing! 😄","",""
+"335629887929057282","SheevTheSenate#3303","29-May-18 01:18 AM","Any tips y'all have for someone who just came back after an 8-month break from this pset?","",""
+"335629887929057282","SheevTheSenate#3303","29-May-18 01:18 AM","im thinking of downloading the new scripts and frankensteining a functional site","",""
+"335629887929057282","SheevTheSenate#3303","29-May-18 01:19 AM","but my markers and searchbox broke","",""
+"335629887929057282","SheevTheSenate#3303","29-May-18 01:19 AM","should I just start over completely?","",""
+"210178498378072064","Atom Heart#5790","29-May-18 08:27 AM","I'd probably start over","",""
+"335629887929057282","SheevTheSenate#3303","29-May-18 07:26 PM","damn","",""
+"335629887929057282","SheevTheSenate#3303","29-May-18 07:26 PM","okay then see ya in a week","",""
+"301839271764164608","Averax#3343","29-May-18 11:59 PM","https://cloud.google.com/maps-platform/user-guide/ 
+
+Will these changes break mashup?","",""
+"335629887929057282","SheevTheSenate#3303","31-May-18 07:32 PM","i dont know","",""
+"335629887929057282","SheevTheSenate#3303","31-May-18 07:32 PM","maybe","",""
+"335629887929057282","SheevTheSenate#3303","31-May-18 07:32 PM","Do you have to do something to the source for typeahead?","",""
+"335629887929057282","SheevTheSenate#3303","31-May-18 07:34 PM","The specifications dont say so but the suggestion box is empty for me","",""
+"335629887929057282","SheevTheSenate#3303","31-May-18 07:48 PM","never mind i fixed it","",""
+"393854278764068875","curiouskiwi#1671","31-May-18 11:22 PM","@Averax no, they shouldn't. We've updated the problem spec (and the distribution code) so students no longer have to obtain their own API key.","",""
+"129045744542810112","Ansari#0490","03-Jun-18 10:54 AM","Hmm","",""
+"129045744542810112","Ansari#0490","03-Jun-18 10:54 AM","I just downlaode the distrubition code, unzipped it","",""
+"129045744542810112","Ansari#0490","03-Jun-18 10:54 AM","and then got an error saying API_KEY not set","",""
+"129045744542810112","Ansari#0490","03-Jun-18 10:54 AM","(When I tried to run it in flask)","",""
+"129045744542810112","Ansari#0490","03-Jun-18 10:54 AM","Did I accidentally miss an insturction?","",""
+"129045744542810112","Ansari#0490","03-Jun-18 10:56 AM","```   File ""/home/ubuntu/workspace/pset8/mashup/application.py"", line 28, in index
+    raise RuntimeError(""API_KEY not set"")
+RuntimeError: API_KEY not set```","",""
+"129045744542810112","Ansari#0490","03-Jun-18 10:56 AM","This is my error","",""
+"129045744542810112","Ansari#0490","03-Jun-18 10:59 AM","Just did Update50 and I am still getting it","",""
+"129045744542810112","Ansari#0490","03-Jun-18 10:59 AM","._.","",""
+"393854278764068875","curiouskiwi#1671","03-Jun-18 11:05 AM","looks like the link in the spec isn't leading to the correct zip file.  Hopefully it will be fixed soon.","",""
+"129045744542810112","Ansari#0490","03-Jun-18 11:06 AM","Oh, ok","",""
+"129045744542810112","Ansari#0490","03-Jun-18 11:06 AM","I'll wait a bit then","",""
+"129045744542810112","Ansari#0490","03-Jun-18 11:07 AM","Just wanted to finish or attempt the last Pset today","",""
+"393854278764068875","curiouskiwi#1671","04-Jun-18 04:51 AM","Mashup Spec and Distribution code has now been updated.","",""
+"301839271764164608","Averax#3343","04-Jun-18 03:51 PM","Oh that was a bug lol? I just used the one suggested here and set it like finance.","https://cdn.discordapp.com/attachments/395684859651031041/453179023552544768/unknown.png",""
+"393854278764068875","curiouskiwi#1671","04-Jun-18 11:05 PM","@Averax the issue is that Google now requires a credit card to get an API key, which many students might not have.  So we've hard-coded it now instead.","",""
+"129045744542810112","Ansari#0490","05-Jun-18 03:33 AM","Yay, that's fixed!","",""
+"129045744542810112","Ansari#0490","05-Jun-18 04:50 AM","Out of curiousity, how much dedicated time it take to finish this on average?","",""
+"335629887929057282","SheevTheSenate#3303","05-Jun-18 10:05 PM","Depends on what you dedicate it to, if you carefully read the pset, you can theoretically do it in about 3-5 hours","",""
+"335629887929057282","SheevTheSenate#3303","05-Jun-18 10:06 PM","If you dive in without reading it all you can easily dump 20 hours on it (like me)","",""
+"129045744542810112","Ansari#0490","06-Jun-18 01:57 AM","I managed ot finish it in 3 dedicated hours or so","",""
+"134495127522508800","AerialWombat#8056","08-Jun-18 01:12 AM","I'm not sure if I'm missing something here, but all of the example Google News links in the pset don't seem to work. They just redirect me to a generic front page: https://news.google.com/?hl=en-US&gl=US&ceid=US:en","",""
+"134495127522508800","AerialWombat#8056","08-Jun-18 01:13 AM","And there doesn't seem to be any ""RSS"" link at the bottom either","",""
+"393854278764068875","curiouskiwi#1671","08-Jun-18 02:13 AM","oh gee. seems like google news changed their format recently.  But the RSS example links should still work?  https://news.google.com/news/rss/local/section/geo/02138","",""
+"134495127522508800","AerialWombat#8056","08-Jun-18 02:36 AM","Yeah, I noticed those still work fortunately. It seems like it's now written with HTML instead of the RSS-flavoured XML though. But it looks like the necessary information is still in the HTML.","",""
+"134495127522508800","AerialWombat#8056","08-Jun-18 02:38 AM","So, I'm not sure if the lookup helper function will still function correctly?","",""
+"393854278764068875","curiouskiwi#1671","08-Jun-18 02:43 AM","it will.  You can verify that by running the staff version  http://mashup.cs50.net","",""
+"242943926653157376","Theofratus#9606","12-Jun-18 08:23 AM","","https://cdn.discordapp.com/attachments/395684859651031041/455965239595368469/sqlite_problem.PNG",""
+"242943926653157376","Theofratus#9606","12-Jun-18 08:23 AM","can anyone help with this? is there anything wrong with my places table?","",""
+"393854278764068875","curiouskiwi#1671","12-Jun-18 08:26 AM","@Theofratus you need to run `wc -l US.txt` in the terminal, not inside sqlite.","",""
+"393854278764068875","curiouskiwi#1671","12-Jun-18 08:26 AM","```~/workspace/pset8/mashup/ $ wc -l US.txt
+41440 US.txt```","",""
+"242943926653157376","Theofratus#9606","12-Jun-18 08:27 AM","oh.. yeah","",""
+"242943926653157376","Theofratus#9606","12-Jun-18 08:27 AM","thank you!","",""
+"464565367558373376","ST#0544","06-Jul-18 01:58 AM","Hi there, I've been running into an issue with the API key. The provided API key doesn't seem to work anymore according to a console error I get when trying to run the site","",""
+"393854278764068875","curiouskiwi#1671","06-Jul-18 02:42 AM","@ST we'll investigate. thanks.","",""
+"464565367558373376","ST#0544","10-Jul-18 08:10 PM","Hi @curiouskiwi , I just tried to do the mashup problem set and now the google maps is working. Thanks!","",""
+"390274000271704077","Dillon#3924","24-Jul-18 10:21 PM","also had to use `app.config['JSONIFY_PRETTYPRINT_REGULAR'] = False`, for anyone's future reference","",""
+"390274000271704077","Dillon#3924","24-Jul-18 11:06 PM","Question: Do we have to implement full-text searches so that queries like `https://ide50-username.cs50.io/search?q=Cambridge,+Massachusetts,+US` will  work? I'm using the LIKE operator successfully, but I don't see any way to make the above search successful unless I put in 1 million if/else statements or use full-text searches","",""
+"390274000271704077","Dillon#3924","24-Jul-18 11:06 PM","i'm using LIKE and OR but I'd really not like to do full-text search if I don't have to","",""
+"416211713554120704","Shogun#1760","29-Jul-18 03:23 PM","I'm having the same issue as @Dillon 
+Has anyone been able to successfuly implement the search function to get multiple values from the url?","",""
+"199332236250578946","yesdefinitely#3055","30-Jul-18 05:15 PM","Same issue here, too. If either of you figure it out, let me know. I've been stumped for an hour or two trying different things.","",""
+"384583686353321994","alan#2806","31-Jul-18 02:25 AM","I tried to refactor the code on mashup such that it uses fetch instead of $.getJSON, but then I get a CORS error and was wondering why that is.  thanks!","",""
+"199332236250578946","yesdefinitely#3055","31-Jul-18 06:07 AM","@curiouskiwi Any tips for @Dillon, @Shogun, and I for getting this working? I can implement just postal code search no problem, but getting multiple values is beyond me at this point.","",""
+"393854278764068875","curiouskiwi#1671","31-Jul-18 09:19 AM","you do multiple ORs or ANDs ... or perhaps get a bit deeper into SQL functionality and create a virtual table to search all fields at once.","",""
+"199332236250578946","yesdefinitely#3055","01-Aug-18 03:02 AM","How can I have a label of text below each marker like in the staff solution? I've been searching the docs and google but I can't find anything","",""
+"393854278764068875","curiouskiwi#1671","01-Aug-18 03:10 AM","Are you using an icon?","",""
+"199332236250578946","yesdefinitely#3055","01-Aug-18 03:16 AM","No, I'm  just using the default marker","",""
+"393854278764068875","curiouskiwi#1671","01-Aug-18 03:17 AM","the staff uses an icon","",""
+"199332236250578946","yesdefinitely#3055","01-Aug-18 03:20 AM","And the text below each marker is somehow part of the icon?","",""
+"393854278764068875","curiouskiwi#1671","01-Aug-18 03:23 AM","icon is a property of Marker","",""
+"393854278764068875","curiouskiwi#1671","01-Aug-18 03:23 AM","so for your marker, you can have icon, label, position, map","",""
+"199332236250578946","yesdefinitely#3055","01-Aug-18 03:24 AM","I'm not trying to change the icon though.","",""
+"199332236250578946","yesdefinitely#3055","01-Aug-18 03:24 AM","","https://cdn.discordapp.com/attachments/395684859651031041/474009525301805066/unknown.png",""
+"199332236250578946","yesdefinitely#3055","01-Aug-18 03:24 AM","What I want is the text below the icon","",""
+"393854278764068875","curiouskiwi#1671","01-Aug-18 03:25 AM","you can't change the position unless you use an icon.  https://developers.google.com/maps/documentation/javascript/examples/icon-simple","",""
+"199332236250578946","yesdefinitely#3055","01-Aug-18 03:26 AM","Ohh is that text the label?","",""
+"393854278764068875","curiouskiwi#1671","01-Aug-18 03:26 AM","like this?","",""
+"393854278764068875","curiouskiwi#1671","01-Aug-18 03:26 AM","```js
+icon: {
+            labelOrigin: new google.maps.Point(16,40),
+            url: ""http://maps.google.com/mapfiles/kml/pal2/icon23.png""
+        },```","",""
+"393854278764068875","curiouskiwi#1671","01-Aug-18 03:26 AM","and labelOrigin lets you change the position of the label relative to the marker.","",""
+"393854278764068875","curiouskiwi#1671","01-Aug-18 03:27 AM","yes, the text is the label","",""
+"199332236250578946","yesdefinitely#3055","01-Aug-18 03:27 AM","Great, thank you!","",""
+"474141736793538560","Dement0-#6584","01-Aug-18 10:15 PM","So are we allowed to use Google Maps API only in CS50 IDE? Because I'm trying to use it in the final project using Atom as my IDE and I'm getting `Google Maps JavaScript API error: RefererNotAllowedMapError`","",""
+"474141736793538560","Dement0-#6584","01-Aug-18 10:16 PM","More info for those who are interested in:","",""
+"474141736793538560","Dement0-#6584","01-Aug-18 10:17 PM","https://developers.google.com/maps/documentation/javascript/error-messages#referer-not-allowed-map-error","",""
+"393854278764068875","curiouskiwi#1671","01-Aug-18 11:12 PM","@Dement0- you'll have to get your own API key","",""
+"474141736793538560","Dement0-#6584","01-Aug-18 11:15 PM","@curiouskiwi Thanks for the clarification 😉","",""
+"244277877485469698","birkhoff#0001","03-Aug-18 08:52 AM","I get a lot of this when importing to `mashup.db`
+```
+US.txt:39922: expected 11 columns but found 12 - extras ignored
+```
+
+Is this normal?","",""
+"393854278764068875","curiouskiwi#1671","03-Aug-18 09:03 AM","per the spec: Using phpLiteAdmin or sqlite3, create a table in mashup.db called places that has these twelve fields, in this order: ...   sounds like you only have 11?","",""
+"393854278764068875","curiouskiwi#1671","03-Aug-18 09:04 AM","as it also says: ""If you see any errors, odds are your schema for places isn’t quite right...""","",""
+"244277877485469698","birkhoff#0001","03-Aug-18 09:09 AM","but US.txt only has 11 columns?
+```
+US    99553    Akutan    Alaska    AK    Aleutians East    013            54.143    -165.7854    1
+```","",""
+"244277877485469698","birkhoff#0001","03-Aug-18 09:19 AM","I don't get it
+how do I import US.txt into a 12-column table when it only have 11 columns","",""
+"393854278764068875","curiouskiwi#1671","03-Aug-18 09:21 AM","it has 12 columns. here's the first line:","",""
+"393854278764068875","curiouskiwi#1671","03-Aug-18 09:21 AM","US<TAB>99553<TAB>Akutan<TAB>Alaska<TAB>AK<TAB>Aleutians East<TAB>013<TAB><TAB><TAB>54.143<TAB>-165.7854<TAB>1","",""
+"393854278764068875","curiouskiwi#1671","03-Aug-18 09:22 AM","12 fields separated by tabs","",""
+"393854278764068875","curiouskiwi#1671","03-Aug-18 09:22 AM","the spec gives you the 12 column names you need.","",""
+"393854278764068875","curiouskiwi#1671","03-Aug-18 09:22 AM","```country_code
+
+postal_code
+
+place_name
+
+admin_name1
+
+admin_code1
+
+admin_name2
+
+admin_code2
+
+admin_name3
+
+admin_code3
+
+latitude
+
+longitude
+
+accuracy```","",""
+"244277877485469698","birkhoff#0001","03-Aug-18 10:11 AM","so there are empty columns","",""
+"244277877485469698","birkhoff#0001","03-Aug-18 10:12 AM","then shouldn't this be correct
+```sql
+CREATE TABLE places (
+    country_code TEXT,
+    postal_code TEXT
+    place_name TEXT,
+    admin_name1 TEXT,
+    admin_code1 TEXT,
+    admin_name2 TEXT,
+    admin_code2 TEXT,
+    admin_name3 TEXT,
+    admin_code3 TEXT,
+    latitude REAL,
+    longitude REAL,
+    accuracy INT
+);
+```","",""
+"393854278764068875","curiouskiwi#1671","03-Aug-18 10:25 AM","that looks okay","",""
+"244277877485469698","birkhoff#0001","03-Aug-18 10:26 AM","","https://cdn.discordapp.com/attachments/395684859651031041/474840385601142784/Screen_Shot_2018-08-03_at_3.25.53_PM.png",""
+"393854278764068875","curiouskiwi#1671","03-Aug-18 10:27 AM","When I just imported, I saw no errors?","",""
+"244277877485469698","birkhoff#0001","03-Aug-18 10:27 AM","let me delete the database and try again","",""
+"244277877485469698","birkhoff#0001","03-Aug-18 10:28 AM","it's the same","https://cdn.discordapp.com/attachments/395684859651031041/474841012460584963/Screen_Shot_2018-08-03_at_3.27.29_PM.png",""
+"393854278764068875","curiouskiwi#1671","03-Aug-18 10:28 AM","oh, wait.","",""
+"393854278764068875","curiouskiwi#1671","03-Aug-18 10:28 AM","I just used your schema and now I get all the erros.","",""
+"244277877485469698","birkhoff#0001","03-Aug-18 10:29 AM","😦","",""
+"393854278764068875","curiouskiwi#1671","03-Aug-18 10:29 AM","you forgot the comma after postal code","",""
+"393854278764068875","curiouskiwi#1671","03-Aug-18 10:29 AM","so you only get 11 cols","",""
+"244277877485469698","birkhoff#0001","03-Aug-18 10:29 AM","Oh!!","",""
+"244277877485469698","birkhoff#0001","03-Aug-18 10:30 AM","but when I create the table, sqlite didn't complain about the syntax error... strange","",""
+"244277877485469698","birkhoff#0001","03-Aug-18 10:30 AM","it's working this time, thanks for helping out 😃","",""
+"393854278764068875","curiouskiwi#1671","03-Aug-18 10:31 AM","sure","",""
+"474141736793538560","Dement0-#6584","07-Aug-18 11:22 AM","Hi, I'm trying to implement a form which contains Country-City inputs. My intention is to use typeahead.js on pycountry library (https://pypi.org/project/pycountry/) so that when a user types his/her country they see suggestions and click on it. After that, in city section they can type their city again using typeahead.js but they can only see the cities from that specific country.
+
+Looking at the source code of mashup, I can see the usage of typeahead but it's populated from a database. which we get from `/search` route and after that it returns JSON formatted matches. But what's the role of JavaScript here exactly? Or, the correct question might be, is it obligatory that I use a database to do this implementation? I can't simply use `pycountry`?
+
+I can think of it but the problem is I can't wrap my mind around the `how`! If anybody could gave me a suggestion, I'd be grateful since I'm stuck on this point! Thanks.","",""
+"395724151102504961","sleeb#0634","09-Aug-18 02:29 PM","can anyone help me figure out how to set the geo as the place_name when you call  $.getJSON(""/articles"", parameters, function(data, textStatus, jqXHR) in addmarkers? 😦","",""
+"395724151102504961","sleeb#0634","09-Aug-18 02:30 PM","i can only seem to hardcode things into parameters, geo.","",""
+"474141736793538560","Dement0-#6584","09-Aug-18 09:41 PM","Your parameter here is not place_name, in the documentation it says that we have to use another field of our table.
+For example: `https://ide50-username.cs50.io/articles?geo=02138`
+See here: https://docs.cs50.net/problems/mashup/mashup.html#code-application-py-code","",""
+"352995141721653248","JamesWong#0436","22-Aug-18 07:15 AM","dumb question but how do i exit sql? My command console right now is:
+
+sqlite> cd
+   ...> terminate
+   ...> ^C^C
+   ...>","",""
+"393854278764068875","curiouskiwi#1671","22-Aug-18 07:31 AM","`.quit`","",""
+"393854278764068875","curiouskiwi#1671","22-Aug-18 07:31 AM","@JamesWong ^^","",""
+"352995141721653248","JamesWong#0436","22-Aug-18 07:40 AM","you're a life saver kiwi!","",""
+"470318064903389185","Chewy#4008","23-Aug-18 04:09 PM","hi i don't think my api key is working ```js?key=AIzaSyAgatq4KgsR2NHXXIG8YxiwncrsEz_xis8&v=3.exp:39 Google Maps JavaScript API error: RefererNotAllowedMapError```","",""
+"470318064903389185","Chewy#4008","23-Aug-18 04:23 PM","okay it only works for online ide","",""
+"470318064903389185","Chewy#4008","23-Aug-18 05:05 PM","guys why does `jsonify(articles)` give a 500 error? eprint(articles) is correct in every sense - a list of 5 dicts from lookup with link and title key-value pairs","",""
+"470318064903389185","Chewy#4008","23-Aug-18 05:42 PM","it would seem i need to set `JSONIFY_PRETTYPRINT_REGULAR ` to false as in the staff solution there are no spaces between seperators but i don't understand why?","",""
+"470318064903389185","Chewy#4008","23-Aug-18 08:42 PM","Can anyone explain why ```SELECT * FROM places WHERE country_code LIKE '%New Haven CT%' OR postal_code LIKE '%New Haven CT%' OR place_name LIKE '%New Haven CT%' OR admin_name1 LIKE '%New Haven CT%' OR admin_code1 LIKE '%New Haven CT%'``` although valid, produces an empty list?","",""
+"393854278764068875","curiouskiwi#1671","23-Aug-18 11:15 PM","@Chewy it's empty because there are no rows that meet any of those criteria.","",""
+"470318064903389185","Chewy#4008","24-Aug-18 02:27 AM","Could you explain further? There should be 26 rows, as per staff solution.","",""
+"393854278764068875","curiouskiwi#1671","24-Aug-18 02:29 AM","the staff solution isn't using that query","",""
+"470318064903389185","Chewy#4008","24-Aug-18 02:31 AM","do i need to create a new table in fts3?","",""
+"393854278764068875","curiouskiwi#1671","24-Aug-18 02:33 AM","that's one way to do it.","",""
+"470318064903389185","Chewy#4008","24-Aug-18 02:34 AM","but there is another that does not involve having to start again? and is also not an OR LIKE chain?","",""
+"393854278764068875","curiouskiwi#1671","24-Aug-18 02:36 AM","depends on if you're happy with only searching on one field.","",""
+"393854278764068875","curiouskiwi#1671","24-Aug-18 02:37 AM","per the spec:  If you’d like to support searching by more than just postal codes, keep in mind that SQL supports `OR` and `AND`!","",""
+"470318064903389185","Chewy#4008","24-Aug-18 02:37 AM","I'm so confused","",""
+"393854278764068875","curiouskiwi#1671","24-Aug-18 02:38 AM","if you want to search multiple fields without using fts3/4  then your option is to have multiple ORs or ANDs","",""
+"470318064903389185","Chewy#4008","24-Aug-18 02:40 AM","so the code i posted does not have multiple ORs? even though it has 4 of them?","",""
+"393854278764068875","curiouskiwi#1671","24-Aug-18 02:43 AM","the code you posted is fine.  You were asking why it returned empty, and I said it's because there are no rows that match that.  I would expect that as you type in the place name, the query would run as you type, and you'd get matches to ""N"" and then ""Ne"" and then ""New"" ... etc.  But you won't get a match for ""New Haven CT"" because none of those fields have a value of that.","",""
+"470318064903389185","Chewy#4008","24-Aug-18 02:44 AM","26 fields have a value of that","",""
+"470318064903389185","Chewy#4008","24-Aug-18 02:45 AM","and yeah it works fine until i add the ct at the end","",""
+"470318064903389185","Chewy#4008","24-Aug-18 02:45 AM","i haven't tried with commas yet","",""
+"393854278764068875","curiouskiwi#1671","24-Aug-18 02:46 AM","```
+country_code  postal_code  place_name  admin_name1  admin_code1  admin_name2  admin_code2  admin_name3  admin_code3  latitude    longitude   accuracy  
+------------  -----------  ----------  -----------  -----------  -----------  -----------  -----------  -----------  ----------  ----------  ----------
+US            06501        New Haven   Connecticut  CT           New Haven    009                                    41.3082     -72.9282    4         
+US            06502        New Haven   Connecticut  CT           New Haven    009                                    41.3082     -72.9282    4         
+US            06503        New Haven   Connecticut  CT           New Haven    009                                    41.3082     -72.9282    4         
+US            06504        New Haven   Connecticut  CT           New Haven    009                                    41.3657     -72.9275    4         
+US   ```  for example","",""
+"393854278764068875","curiouskiwi#1671","24-Aug-18 02:46 AM","there is no column that has ""New Haven CT"" in it","",""
+"393854278764068875","curiouskiwi#1671","24-Aug-18 02:46 AM","hence the empty result","",""
+"470318064903389185","Chewy#4008","24-Aug-18 03:00 AM","i tried AND ( OR ) and that did not work","",""
+"470318064903389185","Chewy#4008","24-Aug-18 03:07 AM","tried putting % in spaces and that also did not work","",""
+"470318064903389185","Chewy#4008","24-Aug-18 03:12 AM","what am i missing?","",""
+"393854278764068875","curiouskiwi#1671","24-Aug-18 03:37 AM","if you want it to behave like the staff version, you should use a virtual table.  otherwise, you are going to have to parse the query and work with each word maybe?","",""
+"470318064903389185","Chewy#4008","24-Aug-18 03:38 AM","you mean like a for loop to put % in between each word?","",""
+"393854278764068875","curiouskiwi#1671","24-Aug-18 03:39 AM","no, I mean, split the query into a list and then perhaps iterate over the list and use that to test every field. It gets really unwieldy.  using a virtual table is actually the simplest way to do it.","",""
+"470318064903389185","Chewy#4008","24-Aug-18 03:40 AM","yeah it sounds slow, i have already started to make a virtual table","",""
+"470318064903389185","Chewy#4008","24-Aug-18 03:41 AM","tell me - what command do you use in sqlite3 to check what tables are in a db?","",""
+"470318064903389185","Chewy#4008","24-Aug-18 03:42 AM","it says my table exists but i don't see anything in phpliteadmin","",""
+"393854278764068875","curiouskiwi#1671","24-Aug-18 03:44 AM","`.schema`","",""
+"393854278764068875","curiouskiwi#1671","24-Aug-18 03:44 AM","```sqlite3 mashup.db
+sqlite> .schema```","",""
+"470318064903389185","Chewy#4008","24-Aug-18 03:46 AM","great thanks! this sql business is like learning chinese, i swear C was easier","",""
+"470318064903389185","Chewy#4008","24-Aug-18 04:07 AM","wth i got it instantly with fts3 - why does the documentation even suggest using otherwise","",""
+"470318064903389185","Chewy#4008","24-Aug-18 04:13 AM","the only difference now between mine and staff solution is formatting but i guess that doesn't matter.. thanks again  @curiouskiwi","",""
+"393854278764068875","curiouskiwi#1671","24-Aug-18 04:13 AM","glad you got it working. 😃","",""
+"470318064903389185","Chewy#4008","24-Aug-18 04:21 AM","do you think having `""` before and after numbers will cause problems? I set them to reals and ints where necessary","",""
+"470318064903389185","Chewy#4008","24-Aug-18 04:22 AM","for example staff solution: `""latitude"":41.3082,""longitude"":-72.9282 ` and mine: `""latitude"":""41.3427"",""longitude"":""-73.0742""`","",""
+"393854278764068875","curiouskiwi#1671","24-Aug-18 05:29 AM","why didn't you set them to real and int in the table?","",""
+"470318064903389185","Chewy#4008","24-Aug-18 06:50 AM","I did","",""
+"470318064903389185","Chewy#4008","24-Aug-18 06:50 AM","latitude and longitude both real, accuracy int","",""
+"470318064903389185","Chewy#4008","24-Aug-18 06:51 AM","everything else text","",""
+"393854278764068875","curiouskiwi#1671","24-Aug-18 06:51 AM","so what's going wrong?","",""
+"393854278764068875","curiouskiwi#1671","24-Aug-18 06:56 AM","so, the json results for yours have those in quotes?  And you're sure that your table has them as REALs?","",""
+"470318064903389185","Chewy#4008","24-Aug-18 06:59 AM","yes but is it a problem?","",""
+"393854278764068875","curiouskiwi#1671","24-Aug-18 07:00 AM","does your map work?","",""
+"393854278764068875","curiouskiwi#1671","24-Aug-18 07:00 AM","I don't know what would cause it to be shown as a string if it's a REAL in the table.","",""
+"470318064903389185","Chewy#4008","24-Aug-18 07:03 AM","hmm there are a bunch of 503 errors from update when i pan around","",""
+"470318064903389185","Chewy#4008","24-Aug-18 07:08 AM","sorry there aren't any errors i forgot to flask run","",""
+"393854278764068875","curiouskiwi#1671","24-Aug-18 07:12 AM","so you're seeing all the places with markers?","",""
+"393854278764068875","curiouskiwi#1671","24-Aug-18 07:12 AM","and you don't have any sql errors in your terminal?","",""
+"470318064903389185","Chewy#4008","24-Aug-18 07:13 AM","no i haven't reached markers yet i'm still on search and configure","",""
+"470318064903389185","Chewy#4008","24-Aug-18 07:13 AM","but there are no errors","",""
+"393854278764068875","curiouskiwi#1671","24-Aug-18 07:18 AM","well, I guess you're okay then.  I haven't seen the jsonify put REALs inside quotes before, so I'm not sure why that is happening, but as long as `update` is happy, then I guess it's okay.","",""
+"136081839474343936","3vofnGGo#5368","30-Aug-18 12:19 AM","TIL i shouldnt use print() function on js","",""
+"136081839474343936","3vofnGGo#5368","30-Aug-18 01:07 AM","I feel like cheating reading all the info from google","",""
+"136081839474343936","3vofnGGo#5368","30-Aug-18 02:00 AM","Finished this one but i'm not sure if i learned everything i was supposed to learn will do it again >.< Tasks were kinda underwhelming compared to other psets","",""
+"404244996724621315","tural#6938","01-Sep-18 12:54 PM","Can I sumbit50 multiple times? (if i score poorly)","",""
+"393854278764068875","curiouskiwi#1671","01-Sep-18 12:56 PM","yes","",""
+"404244996724621315","tural#6938","01-Sep-18 03:13 PM","thank you 😃","",""
+"404244996724621315","tural#6938","01-Sep-18 10:22 PM","Do I need to implement search so that it is exactly same as staff's solution? Or can I just simply check for postal_code?","",""
+"136081839474343936","3vofnGGo#5368","01-Sep-18 11:02 PM","You can implement as you want but more features == better","",""
+"404244996724621315","tural#6938","02-Sep-18 10:32 AM","@3vofnGGo will it have an influence on my score?","",""
+"136081839474343936","3vofnGGo#5368","02-Sep-18 12:18 PM","Nope","",""
+"136081839474343936","3vofnGGo#5368","02-Sep-18 12:19 PM","Check 50 doesn't work on Mashup","",""
+"136081839474343936","3vofnGGo#5368","02-Sep-18 12:19 PM","But you're liable of your own work","",""
+"136081839474343936","3vofnGGo#5368","02-Sep-18 12:19 PM","Learning extra sql syntax will be useful no matter what","",""
+"404244996724621315","tural#6938","02-Sep-18 01:15 PM","@3vofnGGo thank you. I learned about fts and it is really useful 😃","",""
+"136081839474343936","3vofnGGo#5368","02-Sep-18 02:28 PM","👌","",""
+"486134760456978432","-][-M-][-#3424","03-Sep-18 02:44 PM","heyyy","",""
+"480317354501341184","NAmbry#2791","06-Sep-18 09:12 PM","If I'm using a full-text searches table, can't I query it like a normal table ? Let me explain : I used a FTS table but now the code for /update (which I didn't write because it was already provided by the pset) doesn't return the places anymore, just an empty list","",""
+"480317354501341184","NAmbry#2791","06-Sep-18 09:12 PM","is there something I missed ?","",""
+"480317354501341184","NAmbry#2791","06-Sep-18 09:31 PM","it is the ""latitude <= :ne_lat"" and the ""longitude <= :ne_lng"" parts in the request that return no results","",""
+"480317354501341184","NAmbry#2791","06-Sep-18 09:31 PM","the "":sw_lat <= latitude"" and "":sw_lng <= longitude"" work perfectly 😐","",""
+"480317354501341184","NAmbry#2791","06-Sep-18 10:03 PM","when using an FTS table all fields are considered TEXT fields, could that be the problem ? I got it working partially by adding quotes in the request","",""
+"480317354501341184","NAmbry#2791","06-Sep-18 10:04 PM","but it still returns an empty list if the longitude or latitude I compare to is negative","",""
+"480317354501341184","NAmbry#2791","06-Sep-18 10:10 PM","Got it ! So for everyone who will encounter this problem : when you use an FTS table (full-text search), even the latitude and longitude fields will be considered TEXT. You'll have to explicitely CAST those fields to NUMERIC in your request in order to be able to compare their value with < or > (for instance CAST(latitude AS NUMERIC) )","",""
+"181145775126872075","Oops365#7416","23-Sep-18 01:44 AM","Is the map api broken again?","",""
+"480317354501341184","NAmbry#2791","23-Sep-18 09:43 AM","@Oops365 what do you mean ?","",""
+"181145775126872075","Oops365#7416","23-Sep-18 01:18 PM","Nvm I figured it out, it shows can't load maps correctly, but it's because the course api has been used over its limit","",""
+"409536742836797443","MeHere#2310","29-Sep-18 06:26 AM","@curiouskiwi @NAmbry is a marker the red thing which identifies locations","",""
+"409536742836797443","MeHere#2310","29-Sep-18 06:26 AM","Also what is an info window","",""
+"393854278764068875","curiouskiwi#1671","29-Sep-18 06:27 AM","go here: http://mashup.cs50.net/  click a red marker and get an info window","",""
+"409536742836797443","MeHere#2310","29-Sep-18 06:28 AM","oh","",""
+"409536742836797443","MeHere#2310","29-Sep-18 06:28 AM","so the info window is like brief news","",""
+"409536742836797443","MeHere#2310","29-Sep-18 06:28 AM","once you click the red marker","",""
+"409536742836797443","MeHere#2310","29-Sep-18 06:28 AM","on a location right","",""
+"393854278764068875","curiouskiwi#1671","29-Sep-18 06:31 AM","yes","",""
+"409536742836797443","MeHere#2310","29-Sep-18 06:31 AM","ok","",""
+"409536742836797443","MeHere#2310","29-Sep-18 07:01 AM","@curiouskiwi","",""
+"409536742836797443","MeHere#2310","29-Sep-18 07:01 AM","i need some help","",""
+"409536742836797443","MeHere#2310","29-Sep-18 07:17 AM","place name        : varchar(180)","",""
+"409536742836797443","MeHere#2310","29-Sep-18 07:17 AM","this is what is says in readme but why is the placename a varchar","",""
+"409536742836797443","MeHere#2310","29-Sep-18 07:18 AM","@curiouskiwi","",""
+"409536742836797443","MeHere#2310","29-Sep-18 07:20 AM","@NAmbry","",""
+"409536742836797443","MeHere#2310","29-Sep-18 07:20 AM","admin name1       : 1. order subdivision (state) varchar(100)
+admin code1       : 1. order subdivision (state) varchar(20)
+admin name2       : 2. order subdivision (county/province) varchar(100)
+admin code2       : 2. order subdivision (county/province) varchar(20)
+admin name3       : 3. order subdivision (community) varchar(100)
+admin code3       : 3. order subdivision (community) varchar(20)","",""
+"409536742836797443","MeHere#2310","29-Sep-18 07:21 AM","|
+US    99553    Akutan    Alaska    AK    Aleutians East    013            54.143    -165.7854    1","",""
+"409536742836797443","MeHere#2310","29-Sep-18 07:22 AM","which admin names and codes correspond to the readme text below","",""
+"409536742836797443","MeHere#2310","29-Sep-18 07:22 AM","im confused","",""
+"409536742836797443","MeHere#2310","30-Sep-18 03:05 AM","I’m stuck","",""
+"480317354501341184","NAmbry#2791","30-Sep-18 02:18 PM","@MeHere hmm I don't exactly remember the structure of the file, I'll have to check in my ide again","",""
+"409536742836797443","MeHere#2310","30-Sep-18 06:08 PM","Ok","",""
+"288401029312282624","Peace#3340","30-Sep-18 07:32 PM","hi, anyway to check .js style?","",""
+"409536742836797443","MeHere#2310","30-Sep-18 08:24 PM","@curiouskiwi why do some rows in US.txt have less parameters than others","",""
+"409536742836797443","MeHere#2310","30-Sep-18 08:24 PM","not all rows have 12 parameters","",""
+"409536742836797443","MeHere#2310","30-Sep-18 09:30 PM","oh i see","",""
+"409536742836797443","MeHere#2310","30-Sep-18 09:30 PM","nevermind","",""
+"409536742836797443","MeHere#2310","30-Sep-18 09:36 PM","@curiouskiwi is varchar a SQLite datatype or do i use text","",""
+"409536742836797443","MeHere#2310","30-Sep-18 09:40 PM","ill use text","",""
+"409536742836797443","MeHere#2310","30-Sep-18 09:41 PM","also I can't figure out which fields in the mashup.db table should be not null","",""
+"480317354501341184","NAmbry#2791","30-Sep-18 09:59 PM","@MeHere varchar works for text, yes 🙂","",""
+"409536742836797443","MeHere#2310","30-Sep-18 09:59 PM","ok","",""
+"409536742836797443","MeHere#2310","30-Sep-18 09:59 PM","thx","",""
+"409536742836797443","MeHere#2310","30-Sep-18 10:00 PM","which fields in the mashup.db table should be not null","",""
+"480317354501341184","NAmbry#2791","30-Sep-18 10:00 PM","For the null fields : think about which makes the more sense","",""
+"409536742836797443","MeHere#2310","30-Sep-18 10:00 PM","ok","",""
+"480317354501341184","NAmbry#2791","30-Sep-18 10:00 PM","For example, if I'm storing users, their username should probably be not null","",""
+"480317354501341184","NAmbry#2791","30-Sep-18 10:00 PM","And unique :)","",""
+"409536742836797443","MeHere#2310","30-Sep-18 10:00 PM","oh ya","",""
+"409536742836797443","MeHere#2310","30-Sep-18 10:00 PM","ok","",""
+"409536742836797443","MeHere#2310","30-Sep-18 10:00 PM","thx","",""
+"409536742836797443","MeHere#2310","30-Sep-18 10:02 PM","i dont get what to do for articles","",""
+"409536742836797443","MeHere#2310","30-Sep-18 10:02 PM","@NAmbry","",""
+"480317354501341184","NAmbry#2791","30-Sep-18 10:23 PM","What fields do you have","",""
+"409536742836797443","MeHere#2310","01-Oct-18 01:20 AM","oh its the news thing right","",""
+"409536742836797443","MeHere#2310","01-Oct-18 01:20 AM","what do you mean by what fields","",""
+"409536742836797443","MeHere#2310","01-Oct-18 06:34 AM","hmm","",""
+"409536742836797443","MeHere#2310","01-Oct-18 07:41 AM","@curiouskiwi does search in articles show all the rows in places database which matches the city, state or postal_Code","",""
+"393854278764068875","curiouskiwi#1671","01-Oct-18 07:43 AM","articles uses whatever the value of `geo` is","",""
+"409536742836797443","MeHere#2310","01-Oct-18 07:44 AM","i meant does search show all the rows in places database which matches the city, state or postal_Code","",""
+"409536742836797443","MeHere#2310","01-Oct-18 07:44 AM","sorry","",""
+"409536742836797443","MeHere#2310","01-Oct-18 07:44 AM",":(","",""
+"393854278764068875","curiouskiwi#1671","01-Oct-18 07:46 AM","it shows whichever matches you decide on.  The spec says:  The value of q, passed into /search as a GET parameter, might be a city, state, and/or postal code. We leave it to you to decide what constitutes a match and, therefore, which rows to SELECT. It suffices to support searching by postal codes only, but try to support searching by city and/or state as well.","",""
+"288401029312282624","Peace#3340","02-Oct-18 02:44 PM","anyone know why i get 4 in style, yet style50 looks good? i have styled scripts.js also but same results!!","",""
+"409536742836797443","MeHere#2310","03-Oct-18 03:54 AM","@curiouskiwi every time I run mashup, it says that it can’t run maps correctly and shows a bunch of gray","",""
+"409536742836797443","MeHere#2310","03-Oct-18 03:55 AM","","https://cdn.discordapp.com/attachments/395684859651031041/496847677993123858/image0.jpg",""
+"409536742836797443","MeHere#2310","03-Oct-18 07:35 AM","How to add articles data to custom list for add marker","",""
+"409535907788750859","MuyCool#4825","04-Oct-18 07:31 AM","@curiouskiwi how do I start on articles?","",""
+"409535907788750859","MuyCool#4825","04-Oct-18 07:31 AM","I have geo stored in a variable","",""
+"409535907788750859","MuyCool#4825","04-Oct-18 07:31 AM","but idk how to proceed","",""
+"409535907788750859","MuyCool#4825","04-Oct-18 07:32 AM","Oh nvm I dont have geo","",""
+"409535907788750859","MuyCool#4825","04-Oct-18 07:32 AM","how do I get geo","",""
+"409535907788750859","MuyCool#4825","04-Oct-18 07:32 AM","is geo entered in the form?","",""
+"409535907788750859","MuyCool#4825","04-Oct-18 07:32 AM","in index.html?","",""
+"409535907788750859","MuyCool#4825","04-Oct-18 07:33 AM","@NAmbry ^^ I tagged you cause ur helpful 😃","",""
+"409535907788750859","MuyCool#4825","04-Oct-18 07:33 AM","and I need help","",""
+"480317354501341184","NAmbry#2791","04-Oct-18 10:46 AM","@MuyCool you have to use the geo code on the back end to lookup the articles","",""
+"480317354501341184","NAmbry#2791","04-Oct-18 10:46 AM","Via the /articles route which should already be implemented","",""
+"409535907788750859","MuyCool#4825","04-Oct-18 05:07 PM","Wdym on the backend?","",""
+"409535907788750859","MuyCool#4825","04-Oct-18 05:07 PM","Srry I’m confused :/ @NAmbry","",""
+"480317354501341184","NAmbry#2791","04-Oct-18 05:08 PM","If I remember correctly, you need to make an Ajax request to the route on your server which will then call the external API to get back the articles","",""
+"409535907788750859","MuyCool#4825","04-Oct-18 05:21 PM","Ok","",""
+"409535907788750859","MuyCool#4825","04-Oct-18 05:21 PM","So is geo entered on the form?","",""
+"409536742836797443","MeHere#2310","04-Oct-18 06:02 PM","@NAmbry","",""
+"409536742836797443","MeHere#2310","04-Oct-18 06:02 PM","what does .done do","",""
+"409536742836797443","MeHere#2310","04-Oct-18 06:02 PM","@curiouskiwi","",""
+"480317354501341184","NAmbry#2791","04-Oct-18 06:04 PM","@MuyCool @MeHere I'm sorry I really need to dive into mashup to give you a concrete answer","",""
+"480317354501341184","NAmbry#2791","04-Oct-18 06:04 PM","I don't remember exactly how I've done it","",""
+"409536742836797443","MeHere#2310","04-Oct-18 06:11 PM","oh ok","",""
+"409536742836797443","MeHere#2310","04-Oct-18 06:11 PM","np","",""
+"409536742836797443","MeHere#2310","04-Oct-18 06:21 PM","@curiouskiwi","",""
+"409536742836797443","MeHere#2310","04-Oct-18 06:21 PM","markers.push(marker);
+
+    $.getJSON(""articles.php"", {geo: place.postal_code}, function(articles)
+        if (!$.isEmptyObject(articles))
+            listOfArticles = ""<ul>""
+        });
+    });","",""
+"409536742836797443","MeHere#2310","04-Oct-18 06:21 PM","it says Parsing error unexpected if token","",""
+"409536742836797443","MeHere#2310","04-Oct-18 06:28 PM","neverminds","",""
+"409536742836797443","MeHere#2310","04-Oct-18 06:28 PM","i figured it out","",""
+"409536742836797443","MeHere#2310","04-Oct-18 06:28 PM","Flask.url","",""
+"409536742836797443","MeHere#2310","04-Oct-18 06:29 PM","how do i add the articles into the unordered list that i created","",""
+"409536742836797443","MeHere#2310","04-Oct-18 06:29 PM","@curiouskiwi","",""
+"409536742836797443","MeHere#2310","04-Oct-18 06:42 PM","<a target='_NEW' href='""","",""
+"409536742836797443","MeHere#2310","04-Oct-18 06:42 PM","what does that do","",""
+"409536742836797443","MeHere#2310","04-Oct-18 08:49 PM","@NAmbry","",""
+"409536742836797443","MeHere#2310","04-Oct-18 08:49 PM","@NAmbry","",""
+"409536742836797443","MeHere#2310","04-Oct-18 08:49 PM","didnt mean to do it twice","",""
+"409536742836797443","MeHere#2310","04-Oct-18 08:49 PM","srry","",""
+"409536742836797443","MeHere#2310","04-Oct-18 08:49 PM","but","",""
+"409536742836797443","MeHere#2310","04-Oct-18 08:49 PM","how do i print in javascript","",""
+"409536742836797443","MeHere#2310","04-Oct-18 08:49 PM","like if i wanted to print a variable","",""
+"409536742836797443","MeHere#2310","04-Oct-18 08:50 PM","and what is .done and jqXHR","",""
+"409536742836797443","MeHere#2310","04-Oct-18 08:54 PM","why doesn't @curiouskiwi respond to me anymore","",""
+"409536742836797443","MeHere#2310","04-Oct-18 08:54 PM",":(","",""
+"409536742836797443","MeHere#2310","05-Oct-18 12:54 AM","Why doesn’t anyone respond to me anymore","",""
+"399021249667399722","harbar20#9389","05-Oct-18 01:38 AM","maybe @kzidane can help?","",""
+"393854278764068875","curiouskiwi#1671","05-Oct-18 01:42 AM","As I've posted before in various channels, this server is designed for ""peer to peer"" help.  We staff are here to answer questions about the course itself, etc. and if we have time,  to provide help with concepts, code, etc.  But we shouldn't be the first one you ask.   😃","",""
+"399021249667399722","harbar20#9389","05-Oct-18 01:49 AM","ok sorry.","",""
+"399021249667399722","harbar20#9389","05-Oct-18 01:49 AM","i didn't know that","",""
+"399021249667399722","harbar20#9389","05-Oct-18 01:49 AM","i won't do it next time 😦","",""
+"409536742836797443","MeHere#2310","05-Oct-18 02:02 AM","@curiouskiwi sorry I'll try and figure it out myself or ask my peers next time","",""
+"409536742836797443","MeHere#2310","05-Oct-18 02:02 AM",":)","",""
+"409536742836797443","MeHere#2310","05-Oct-18 02:40 AM","@kzidane when i add the part to display articles, most of my markers disappear and the ones that are still there dont respond to clicks","",""
+"393854278764068875","curiouskiwi#1671","05-Oct-18 03:47 AM","(answered privately)","",""
+"409536742836797443","MeHere#2310","05-Oct-18 03:53 AM","yes","",""
+"409536742836797443","MeHere#2310","05-Oct-18 03:53 AM","thanks","",""
+"409535907788750859","MuyCool#4825","05-Oct-18 06:05 AM","@curiouskiwi how do I get geo to process it","",""
+"409535907788750859","MuyCool#4825","05-Oct-18 06:11 AM","NVM","",""
+"409535907788750859","MuyCool#4825","05-Oct-18 06:11 AM","I figured it out","",""
+"409535907788750859","MuyCool#4825","05-Oct-18 06:12 AM","can I do 
+
+```
+if not geo:
+      '''whatever error'''
+```","",""
+"409535907788750859","MuyCool#4825","05-Oct-18 06:12 AM","to validate geo","",""
+"409535907788750859","MuyCool#4825","05-Oct-18 06:12 AM","@curiouskiwi","",""
+"393854278764068875","curiouskiwi#1671","05-Oct-18 06:21 AM","I don't know what part of the problem you are doing.","",""
+"409535907788750859","MuyCool#4825","05-Oct-18 06:23 AM","So","",""
+"409535907788750859","MuyCool#4825","05-Oct-18 06:24 AM","@curiouskiwi in the walkthrough zaymla says that I need to check geo for a missing argument","",""
+"409535907788750859","MuyCool#4825","05-Oct-18 06:24 AM","how do I do that","",""
+"409535907788750859","MuyCool#4825","05-Oct-18 06:29 AM","@curiouskiwi can I do 
+
+```
+if geo = Null:
+       [whatever]
+```","",""
+"409535907788750859","MuyCool#4825","05-Oct-18 06:29 AM","or what I did above","",""
+"409535907788750859","MuyCool#4825","05-Oct-18 06:42 AM","@NAmbry","",""
+"409535907788750859","MuyCool#4825","05-Oct-18 06:42 AM","@MeHere","",""
+"409535907788750859","MuyCool#4825","05-Oct-18 06:42 AM","^^^^^^^^^^^","",""
+"409535907788750859","MuyCool#4825","05-Oct-18 06:44 AM","is anyone online","",""
+"409535907788750859","MuyCool#4825","05-Oct-18 06:44 AM","heeeelp","",""
+"409535907788750859","MuyCool#4825","05-Oct-18 07:01 AM","NVM","",""
+"409535907788750859","MuyCool#4825","05-Oct-18 07:01 AM","I FIGURED IT OUT","",""
+"409535907788750859","MuyCool#4825","05-Oct-18 07:02 AM","the best tool to solving problems is to try things","",""
+"409535907788750859","MuyCool#4825","05-Oct-18 07:02 AM","and google","",""
+"409535907788750859","MuyCool#4825","05-Oct-18 07:02 AM","for specific thigns ofc","",""
+"480317354501341184","NAmbry#2791","05-Oct-18 11:00 AM","@MuyCool yes exactly ! Finding stuff out on your own is how you learn and retain information","",""
+"409535907788750859","MuyCool#4825","05-Oct-18 08:42 PM","@curiouskiwi I have a question","",""
+"409535907788750859","MuyCool#4825","05-Oct-18 08:43 PM","After I've returned jsonify(likeq)","",""
+"409535907788750859","MuyCool#4825","05-Oct-18 08:43 PM","how do I get it","",""
+"409535907788750859","MuyCool#4825","05-Oct-18 08:43 PM","to be a suggestion in the form","",""
+"409535907788750859","MuyCool#4825","05-Oct-18 08:44 PM","right now it just says todo","",""
+"409535907788750859","MuyCool#4825","05-Oct-18 08:44 PM","where do Ic hange that","",""
+"409535907788750859","MuyCool#4825","05-Oct-18 08:45 PM","Ok I found that its in configure","",""
+"409535907788750859","MuyCool#4825","05-Oct-18 09:03 PM","@curiouskiwi How do I input stuff from the json onto the suggestions in configure","",""
+"409535907788750859","MuyCool#4825","05-Oct-18 09:16 PM","@NAmbry","",""
+"409535907788750859","MuyCool#4825","05-Oct-18 09:16 PM","^","",""
+"480317354501341184","NAmbry#2791","05-Oct-18 09:19 PM","You have to use the html template","",""
+"480317354501341184","NAmbry#2791","05-Oct-18 09:19 PM","Read carefully the pset","",""
+"480317354501341184","NAmbry#2791","05-Oct-18 09:20 PM","Somewhere it tells you to be attentive to a particular use of an html template","",""
+"409535907788750859","MuyCool#4825","05-Oct-18 09:20 PM","Oh god im so dumb","",""
+"409535907788750859","MuyCool#4825","05-Oct-18 09:20 PM","it says literally right there","",""
+"480317354501341184","NAmbry#2791","05-Oct-18 09:20 PM","That could be useful somewhere else","",""
+"409535907788750859","MuyCool#4825","05-Oct-18 09:20 PM","THanks","",""
+"409535907788750859","MuyCool#4825","05-Oct-18 09:20 PM","silly me...","",""
+"480317354501341184","NAmbry#2791","05-Oct-18 09:20 PM","No problem","",""
+"409535907788750859","MuyCool#4825","05-Oct-18 09:21 PM","I got it!","",""
+"409535907788750859","MuyCool#4825","05-Oct-18 09:21 PM","lol this is acutally funny","",""
+"409535907788750859","MuyCool#4825","06-Oct-18 03:20 AM","Im doing
+
+```
+function addMarker(place) {
+    var marker = new google.maps.Marker({
+        position: place,
+        map: map,
+        title: 'test!'
+    });
+    marker.setMap(map);
+}
+
+```","",""
+"409535907788750859","MuyCool#4825","06-Oct-18 03:20 AM","for add marker","",""
+"409535907788750859","MuyCool#4825","06-Oct-18 03:20 AM","but it doesnt do anything","",""
+"409535907788750859","MuyCool#4825","06-Oct-18 03:20 AM","whats the name of the map?","",""
+"409535907788750859","MuyCool#4825","06-Oct-18 03:21 AM","Oh its just map","",""
+"409535907788750859","MuyCool#4825","06-Oct-18 03:22 AM","@NAmbry ^","",""
+"409535907788750859","MuyCool#4825","06-Oct-18 03:26 AM","how do I make the marker appear","",""
+"409535907788750859","MuyCool#4825","06-Oct-18 03:26 AM","also, what is the type of place/","",""
+"344929126349799426","Chugga#1483","07-Oct-18 01:17 PM","My map shows ""for development purposes only"" when launched. I did some research and apparently this is because google maps is no longer free, but just to make sure, is it supposed to be like that?","",""
+"175637864808316928","NinjaCow31#7504","07-Oct-18 01:35 PM","Is it necessary to implement searching for things other than postal codes?","",""
+"409535907788750859","MuyCool#4825","07-Oct-18 07:44 PM","@Chugga","",""
+"409535907788750859","MuyCool#4825","07-Oct-18 07:44 PM","the staff are trying to fix it","",""
+"409535907788750859","MuyCool#4825","07-Oct-18 07:44 PM","the problem is with the api_key","",""
+"344929126349799426","Chugga#1483","07-Oct-18 07:48 PM","ah right","",""
+"344929126349799426","Chugga#1483","07-Oct-18 07:48 PM","well, apart from that, my mashup seems to work properly","",""
+"344929126349799426","Chugga#1483","07-Oct-18 07:48 PM","now I just need to think of something to do for the final project","",""
+"409535907788750859","MuyCool#4825","07-Oct-18 08:25 PM","@Chugga how do you use $.getJSON to get rss feeds","",""
+"409535907788750859","MuyCool#4825","07-Oct-18 08:25 PM","Zamyla doesnt give very many clues","",""
+"409535907788750859","MuyCool#4825","07-Oct-18 08:26 PM","also how do I trigger mashup's info window to open?","",""
+"409535907788750859","MuyCool#4825","07-Oct-18 08:26 PM","im very confuzzled","",""
+"344929126349799426","Chugga#1483","07-Oct-18 08:46 PM","you don't have to get the rss yourself","",""
+"344929126349799426","Chugga#1483","07-Oct-18 08:46 PM","there's a function somewhere that does that for you","",""
+"344929126349799426","Chugga#1483","07-Oct-18 08:47 PM","Read through the code again and look for what it might be","",""
+"344929126349799426","Chugga#1483","07-Oct-18 08:48 PM","in particular you probably want to look at application.py","",""
+"409535907788750859","MuyCool#4825","07-Oct-18 09:09 PM","Ok thanks","",""
+"175637864808316928","NinjaCow31#7504","07-Oct-18 09:42 PM","for the implementation of the ""/search"" route in python, is it necessary to give an output for queries such as ""/search?q=New%20Haven,+Connecticut""","",""
+"175637864808316928","NinjaCow31#7504","07-Oct-18 09:45 PM","I am not sure how to query the database for a search argument like that","",""
+"409535907788750859","MuyCool#4825","07-Oct-18 09:55 PM","I suggest watching the walkthrough @NinjaCow31","",""
+"175637864808316928","NinjaCow31#7504","07-Oct-18 09:57 PM","I did, but it mostly covered results from only postal codes","",""
+"409535907788750859","MuyCool#4825","07-Oct-18 09:57 PM","Ok make sure you read all the documentation","",""
+"409535907788750859","MuyCool#4825","07-Oct-18 09:57 PM","check application.py section","",""
+"409535907788750859","MuyCool#4825","07-Oct-18 09:58 PM","and the search subsection","",""
+"409535907788750859","MuyCool#4825","07-Oct-18 09:58 PM","that should give you sql statements","",""
+"175637864808316928","NinjaCow31#7504","07-Oct-18 09:58 PM","I've done that as well","",""
+"175637864808316928","NinjaCow31#7504","07-Oct-18 09:58 PM","but it doesn't work for strings like ""New Haven, Connecticut""","",""
+"409535907788750859","MuyCool#4825","07-Oct-18 09:59 PM","so you will have to add more OR statements to sql","",""
+"409535907788750859","MuyCool#4825","07-Oct-18 09:59 PM","db.execute(""SELECT * FROM places WHERE postal_code LIKE :q"", q=q)","",""
+"409535907788750859","MuyCool#4825","07-Oct-18 09:59 PM","only gives postal codes","",""
+"409535907788750859","MuyCool#4825","07-Oct-18 09:59 PM","so try adding","",""
+"409535907788750859","MuyCool#4825","07-Oct-18 09:59 PM","db.execute(""SELECT * FROM places WHERE postal_code LIKE :q OR country_code LIKE :q OR [so on]"", q=q)","",""
+"409535907788750859","MuyCool#4825","07-Oct-18 09:59 PM","you should add all the columns from your table","",""
+"409535907788750859","MuyCool#4825","07-Oct-18 09:59 PM","in or statements","",""
+"175637864808316928","NinjaCow31#7504","07-Oct-18 09:59 PM","ok","",""
+"409535907788750859","MuyCool#4825","07-Oct-18 10:00 PM","that way, you can cover all fields","",""
+"409535907788750859","MuyCool#4825","07-Oct-18 10:00 PM","""If you’d like to support searching by more than just postal codes, keep in mind that SQL supports OR and AND!""","",""
+"175637864808316928","NinjaCow31#7504","07-Oct-18 10:00 PM","but I was not getting any result when  q =  ""New Haven, Connecticut""","",""
+"409535907788750859","MuyCool#4825","07-Oct-18 10:01 PM","yea","",""
+"409535907788750859","MuyCool#4825","07-Oct-18 10:01 PM","remember in finance","",""
+"409535907788750859","MuyCool#4825","07-Oct-18 10:01 PM","if something went wrong there was an Internal Server Error","",""
+"175637864808316928","NinjaCow31#7504","07-Oct-18 10:01 PM","yeah","",""
+"409535907788750859","MuyCool#4825","07-Oct-18 10:01 PM","there is nothing like that here","",""
+"409535907788750859","MuyCool#4825","07-Oct-18 10:01 PM","it will just not show the map","",""
+"409535907788750859","MuyCool#4825","07-Oct-18 10:01 PM","if you have something wrong","",""
+"409535907788750859","MuyCool#4825","07-Oct-18 10:01 PM","so thats how you know 👍","",""
+"175637864808316928","NinjaCow31#7504","07-Oct-18 10:02 PM","but I do get internal server errors","",""
+"409535907788750859","MuyCool#4825","07-Oct-18 10:02 PM","Hmm","",""
+"409535907788750859","MuyCool#4825","07-Oct-18 10:02 PM","ok I guess thats your error then","",""
+"409535907788750859","MuyCool#4825","07-Oct-18 10:02 PM","error notifier*","",""
+"409535907788750859","MuyCool#4825","07-Oct-18 10:02 PM","but try the or statements","",""
+"409535907788750859","MuyCool#4825","07-Oct-18 10:02 PM","then you should be able to","",""
+"409535907788750859","MuyCool#4825","07-Oct-18 10:03 PM","do this","",""
+"409535907788750859","MuyCool#4825","07-Oct-18 10:03 PM","https://ide50-username.cs50.io/search?q=Cambridge,+Massachusetts","",""
+"175637864808316928","NinjaCow31#7504","07-Oct-18 10:03 PM","but I was not getting any result when  q =  ""New Haven, Connecticut""","",""
+"175637864808316928","NinjaCow31#7504","07-Oct-18 10:03 PM","^my main issue is this","",""
+"409535907788750859","MuyCool#4825","07-Oct-18 10:03 PM","Yes, you shouldnt be","",""
+"409535907788750859","MuyCool#4825","07-Oct-18 10:03 PM","when maps doesnt know what ur talking about it will no show anything","",""
+"175637864808316928","NinjaCow31#7504","07-Oct-18 10:03 PM","ok","",""
+"393854278764068875","curiouskiwi#1671","07-Oct-18 10:32 PM","if you want to support that sort of query, investigate full text search in the sqlite documentation.","",""
+"175637864808316928","NinjaCow31#7504","08-Oct-18 08:28 AM","I tried out FTS, but it didn't help much","",""
+"175637864808316928","NinjaCow31#7504","08-Oct-18 08:28 AM","although it's possible I didn't do through all the possible types of queries through FTS","",""
+"480317354501341184","NAmbry#2791","08-Oct-18 10:13 AM","@NinjaCow31 FTS is the way to go if you want to support those kind of searches","",""
+"480317354501341184","NAmbry#2791","08-Oct-18 10:13 AM","I had to read a whole bunch about it before I could make it work though","",""
+"175637864808316928","NinjaCow31#7504","08-Oct-18 10:17 AM","ah ok","",""
+"175637864808316928","NinjaCow31#7504","08-Oct-18 10:18 AM","did you split the query string into different parts?","",""
+"480317354501341184","NAmbry#2791","08-Oct-18 03:36 PM","@NinjaCow31 no. But the sql query syntax is a bit different when using FTS","",""
+"480317354501341184","NAmbry#2791","08-Oct-18 03:36 PM","To allow to search partial matches etc.","",""
+"175637864808316928","NinjaCow31#7504","08-Oct-18 07:23 PM","oh ok","",""
+"175637864808316928","NinjaCow31#7504","08-Oct-18 07:24 PM","well I implemented just postal code for noe","",""
+"175637864808316928","NinjaCow31#7504","08-Oct-18 07:24 PM","might do that later","",""
+"173519500572884992","fractylan#5926","20-Oct-18 01:22 AM","is the staff solution using fts?","",""
+"173519500572884992","fractylan#5926","20-Oct-18 01:24 AM","i ask because they get more results using 021 as a search and it looks like those results are coming from latitude partial matches that my code doesn't get","",""
+"393854278764068875","curiouskiwi#1671","20-Oct-18 01:27 AM","pretty sure it is","",""
+"173519500572884992","fractylan#5926","20-Oct-18 01:28 AM","thx @curiouskiwi , helpful as ever!","",""
+"173519500572884992","fractylan#5926","20-Oct-18 02:08 AM","hey @curiouskiwi  i'm getting this error","https://cdn.discordapp.com/attachments/395684859651031041/502981403898675212/unknown.png",""
+"393854278764068875","curiouskiwi#1671","20-Oct-18 02:09 AM","yeah, unfortunately, google's put in rate limiting on our key.  if you can get your own key that might work better?  if not, then you have  to wait a  bit for it to work again.","",""
+"173519500572884992","fractylan#5926","20-Oct-18 02:10 AM","hmm.. seems like they could just not be jerks and give you guys an ""educational key""","",""
+"173519500572884992","fractylan#5926","20-Oct-18 02:11 AM","is that why my map looks like this tho? or did i just miss something lol","https://cdn.discordapp.com/attachments/395684859651031041/502982057719365633/unknown.png",""
+"173519500572884992","fractylan#5926","20-Oct-18 02:20 AM","@curiouskiwi  ya, that's too much paperwork and whatnot to get my own key just to do this pset - is there any sort of timeframe for when the cs50 key might be working again?","",""
+"393854278764068875","curiouskiwi#1671","20-Oct-18 02:21 AM","hi, I'm afraid I don't know","",""
+"483672946209193985","ikmrgrv#8222","21-Oct-18 04:51 PM","Neither of the links from the pset8 pdf shows me the news from mentioned location (Cambridge or New Haven).
+https://news.google.com/news/local/section/geo/Cambridge,%20Massachusetts
+https://news.google.com/news/local/section/geo/02138
+
+Instead it shows me my local area news  (i.e. of Bangalore, India). 
+Am I making any mistake here ??","",""
+"393879219698008076","a1#0674","22-Oct-18 03:09 AM","@ikmrgrv No, you're not making a mistake. I'm encountering this issue as well. If you come up with a solution, please let me know.","",""
+"276841927037419521","H311 YE4H#7766","22-Oct-18 05:35 PM","Hey everyone. So I think I may be finished with this one but I’m unsure how to check my removeMarkers() function","",""
+"276841927037419521","H311 YE4H#7766","22-Oct-18 05:35 PM","Everything else works fine","",""
+"483672946209193985","ikmrgrv#8222","22-Oct-18 07:23 PM","@a1 https://news.google.com/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNREZ4YURjU0FtVnVLQUFQAQ
+this link works for  Cambridge...","",""
+"276841927037419521","H311 YE4H#7766","22-Oct-18 07:25 PM","Figured it out. I should always wait before posting. Turns out it wasn’t working and when it was it was obvious:)","",""
+"239013603922018304","bhavik_knight#6872","22-Oct-18 07:34 PM","hey, when I click `https://news.google.com/news/local/section/geo/02138` for news, It keeps redirecting me to my local news. - fine - but when I keep scrolling down, I don't see `RSS` anywhere","",""
+"239013603922018304","bhavik_knight#6872","22-Oct-18 07:42 PM","@ikmrgrv,  Thanks I just clicked that link. But Do you see any `RSS` when scrolling down?","",""
+"483672946209193985","ikmrgrv#8222","22-Oct-18 07:43 PM","@bhavik_knight no, no `RSS` anywhere","",""
+"483672946209193985","ikmrgrv#8222","22-Oct-18 07:43 PM","I guess they have modified the website a lot after this pset was posted","",""
+"239013603922018304","bhavik_knight#6872","22-Oct-18 07:44 PM","hey, click the link below with RSS, it opened something","",""
+"239013603922018304","bhavik_knight#6872","22-Oct-18 07:44 PM","https://news.google.com/news/rss/local/section/geo/02138","",""
+"239013603922018304","bhavik_knight#6872","22-Oct-18 07:45 PM","this one","",""
+"483672946209193985","ikmrgrv#8222","22-Oct-18 07:50 PM","yes that link works","",""
+"483672946209193985","ikmrgrv#8222","22-Oct-18 07:50 PM","but that's only when the link is already given to you","",""
+"483672946209193985","ikmrgrv#8222","22-Oct-18 07:51 PM","else there's no RSS link in the google news website now","",""
+"483672946209193985","ikmrgrv#8222","22-Oct-18 07:52 PM","@staff how can we store the latitude and longitude of places in the table ??
+will NUMBER work with the precision required by the GPS coordinates??","",""
+"393854278764068875","curiouskiwi#1671","22-Oct-18 10:24 PM","I'd use a REAL","",""
+"239013603922018304","bhavik_knight#6872","23-Oct-18 05:47 PM","Are `admin_name3` & `admin_code3` blank?","",""
+"239013603922018304","bhavik_knight#6872","23-Oct-18 06:38 PM","what is to be done in article exactly? I didn't get Zamyla's walkthrough. how `request.args.get(""geo"")` works? Form has no ""geo"" id","",""
+"239013603922018304","bhavik_knight#6872","23-Oct-18 06:49 PM","okay, figured that out! So do we need to return only 5 articles as per solution? or as many as it returns?","",""
+"239013603922018304","bhavik_knight#6872","23-Oct-18 11:17 PM","I need help with `add marker` function. I can't understand anything at all here. Zamyla's walkthrough isn't helping much","",""
+"483672946209193985","ikmrgrv#8222","24-Oct-18 09:20 AM","within itwo square brackets ""[[ "", i am getting a long list of `link` and `titles` bounded by curly braces '{' ...
+is this what we expect  from `/articles` ??","",""
+"239013603922018304","bhavik_knight#6872","24-Oct-18 02:12 PM","@ikmrgrv `/articles`, `/search` returns a json object, so something like python dictionary is to be expected","",""
+"239013603922018304","bhavik_knight#6872","24-Oct-18 02:13 PM","I am stuck  @ `add marker` function. I don't know how to do stuff here. I copy pasted line to line, with minimal changes from google map api examples, yet it doesn't show map or markers","",""
+"483672946209193985","ikmrgrv#8222","24-Oct-18 02:37 PM","@bhavik_knight `/articles` returns an array of json objects.","",""
+"239013603922018304","bhavik_knight#6872","24-Oct-18 02:37 PM","yes, something like that","",""
+"239013603922018304","bhavik_knight#6872","24-Oct-18 02:39 PM","the elements are objects like python dict, it's array of objects, you're right. I mixed up terminologies sometimes","",""
+"239013603922018304","bhavik_knight#6872","24-Oct-18 04:17 PM","I need help with `$.getJSON` I am not getting clear ideas from google api example","",""
+"239013603922018304","bhavik_knight#6872","24-Oct-18 08:03 PM","@staff: Will mashup be checked for style of `script.js` as well or just `application.py`?
+Because script uses java like braces - starts on line of function","",""
+"239013603922018304","bhavik_knight#6872","24-Oct-18 08:14 PM","Though I have made the pset working for now, but it shows error in console.
+**You have exceeded your request quota for this API**
+link : https://cs50x-bhavik-knight.cs50.io:8080/","",""
+"239013603922018304","bhavik_knight#6872","24-Oct-18 08:19 PM","Does this look okay? I can't get name under the marker as per staff's solution yet.
+I tried label - replacing label w/ title, but labels whole thing, which looks uglier.
+I didn't do much in it, but when mouse is reached to marker, it kinds shows its title. There isn't any event for it in code.","",""
+"239013603922018304","bhavik_knight#6872","24-Oct-18 08:22 PM","I need tips to improve speed of drag options when typing (SQL Query)","",""
+"483672946209193985","ikmrgrv#8222","26-Oct-18 01:47 PM","when I run the server using `flask run`, the page that loads says ""something went wrong !! this page didn't load google maps correctly. see the javascript console for more details.""","",""
+"483672946209193985","ikmrgrv#8222","26-Oct-18 01:47 PM","what am I doing wrong ??","",""
+"393854278764068875","curiouskiwi#1671","26-Oct-18 11:02 PM","the api key may have been temporarily limited.  What did the javascript console tell you?","",""
+"483672946209193985","ikmrgrv#8222","27-Oct-18 06:57 AM","it says,
+`Google Maps JavaScript API error: RefererNotAllowedMapError
+https://developers.google.com/maps/documentation/javascript/error-messages#referer-not-allowed-map-error
+Your site URL to be authorized: https://ide50-kumargaurav26.c9users.io:8080/`","",""
+"483672946209193985","ikmrgrv#8222","27-Oct-18 06:58 AM","should i registered with google developers and obtained my own API??","",""
+"483672946209193985","ikmrgrv#8222","27-Oct-18 07:08 AM","wait, it has `RefererNotAllowedMapError` error","",""
+"483672946209193985","ikmrgrv#8222","27-Oct-18 07:08 AM","i read the documentation at https://developers.google.com/maps/documentation/javascript/error-messages#referer-not-allowed-map-error","",""
+"483672946209193985","ikmrgrv#8222","27-Oct-18 07:09 AM","it says please check referrer settings","",""
+"182927416648269824","smokiebacon#6980","29-Oct-18 01:29 AM","is there a complete (as in holds your hand, coding thru the entire project) video walkthrough of mashup project? im a beginner web dev and skipped thru those C projects and wanna straight dive into the juiciy part of javascript  API, AJAX, etc","",""
+"393854278764068875","curiouskiwi#1671","29-Oct-18 02:11 AM","no, there isn't.  the assumption with the course is that by this stage, you no longer need hold-handing.","",""
+"397677328660037632","Maarten#1004","29-Oct-18 08:07 PM","Personally those C lectures really helped to lay a proper foundation on which it was really easy to transition to other languages, such as JS, python and some others I've tried after that. So I'd really say just watch them at least, the psets are fun to do as well if you like a challenge .","",""
+"173519500572884992","fractylan#5926","02-Nov-18 06:32 AM","@curiouskiwi  to your knowledge is the API key still not working? Should I redownload the wget or is there somewhere I can get the new API key if it's been updated?","",""
+"393854278764068875","curiouskiwi#1671","02-Nov-18 09:04 AM","afaik, it works in most cases.  There is no new key.","",""
+"329977469350445069","Lord of Galaxy#9211","02-Nov-18 02:10 PM","Re-download `wget`? What?","",""
+"491234244954292225","Alma#2981","03-Nov-18 02:59 PM","hi, maybe someone here can help me.","",""
+"491234244954292225","Alma#2981","03-Nov-18 03:01 PM","I'm working on the infobox that should pop up whenever you click a marker. In my addMarker function, I added the following line of code to add an event listener to my marker object: 
+marker.addListener(""click"", showInfo(marker, ""testit""));
+what happens now when I load the page is that the popup is showing randomly on one of my markers, but clicking any markers doesn't do anything. Can anyone give me some hint as to what I am doing wrong?","",""
+"492085255243563036","brodyalbers#1301","06-Nov-18 10:25 PM","The API key wasn't working for me either... I ended up putting my own in, I already had a google cloud platform account though.","",""
+"492085255243563036","brodyalbers#1301","06-Nov-18 10:31 PM","The problem I'm running into right now is with getting json objects in the scripts.js file. I have my articles page functioning properly and giving JSON output just like the staff solution (see https://ide50-brodyalbers.cs50.io/articles?geo=saskatoon%20east%20central for details). When I run `var urlcontents = $.getJSON(url, function(data) {
+    });` it stores it in the urlcontents variable (as best I can tell). But I can't then access it. If I print it to the console via `console.log(urlcontents)` I get this crazy array of objects where `responseText` contains the titles and links that I want to retrieve, but when I try to use that variable with `console.log(urlcontents.responseText)` I get undefined? The IDE even autocompletes responseText for me. I hope this makes sense. I'll post a snippet of my code in a moment.","",""
+"492085255243563036","brodyalbers#1301","06-Nov-18 10:33 PM","","https://cdn.discordapp.com/attachments/395684859651031041/509465289528705026/addmarker.PNG",""
+"492085255243563036","brodyalbers#1301","06-Nov-18 10:34 PM","This causes this output","https://cdn.discordapp.com/attachments/395684859651031041/509465519355723786/debugaddmarker.PNG",""
+"492085255243563036","brodyalbers#1301","06-Nov-18 10:36 PM","If I omit the .responseText and just print urlcontents to the log, this is what I get.","https://cdn.discordapp.com/attachments/395684859651031041/509466230554492929/objectdebug.PNG",""
+"492085255243563036","brodyalbers#1301","06-Nov-18 10:38 PM","btw if it isn't clear I'm using the CA.txt list of Canadian locations.","",""
+"492085255243563036","brodyalbers#1301","07-Nov-18 04:39 PM","Okay, I think I've made some progress if not in the problem then at least understanding it. When I go to any /articles route I am calling lookup() and then jsonify(). The text my browser is getting back from the server is exactly that, one long string of JSON. So I need to use JSON.parse() in order to parse it into a javascript object that I can then properly reference and use. Am I on the right track so far?","",""
+"492085255243563036","brodyalbers#1301","07-Nov-18 06:38 PM","Nevermind I was off base. What I really needed to do was learn how to use a callback.. which I still don't completely understand but atleast I have unformatted text in my info windows now.","",""
+"492085255243563036","brodyalbers#1301","07-Nov-18 06:38 PM","I think at the end of the day what was happening is I was trying to use the responseText before the response actually came back from the server and so that's why it was showing up as undefined in my log and on my info window.","",""
+"432952780903284737","von Ang#4889","08-Nov-18 02:48 PM","Is the script in the link from the lecture working for you?  http://cdn.cs50.net/2017/fall/lectures/11/src11/ajax0.html I get a 404 from the request","",""
+"468506826317758465","McD98#2951","08-Nov-18 03:06 PM","@von Ang Wrong channel I think, finance is one up","",""
+"432952780903284737","von Ang#4889","08-Nov-18 03:08 PM","That's from the ajax lecture that would help the mashup","",""
+"473198049712406529","cswalker21#0279","11-Nov-18 09:12 AM","Mine said "" You have exceeded your request quota for this API. See https://developers.google.com/maps/documentation/javascript/error-messages?utm_source=maps_js&utm_medium=degraded&utm_campaign=billing#api-key-and-billing-errors"" Still works, but it's just darkened out a bit.","",""
+"473198049712406529","cswalker21#0279","11-Nov-18 09:32 AM","I just got my own key. They're having a 12 month free trial 😉","",""
+"167621231242117121","RPGeezus#0245","11-Nov-18 09:40 AM","I'll try my message again. I'm trying to get my articles query working for australian postcodes but it just keeps default searching for american postcodes. I've tried my best to get it looking at Australian ones but nothing I do seems to return any results","",""
+"167621231242117121","RPGeezus#0245","11-Nov-18 09:42 AM","I have tried","",""
+"167621231242117121","RPGeezus#0245","11-Nov-18 09:42 AM","```
+https://news.google.com/news/rss/headlines/section/geo/{escaped}?hl=en-AU&gl=AU&ceid=AU%3Aen
+https://news.google.com/news/rss/local/section/geo/{escaped}?hl=en-AU&gl=AU&ceid=AU%3Aen
+```","",""
+"167621231242117121","RPGeezus#0245","11-Nov-18 09:42 AM","both don't work","",""
+"167621231242117121","RPGeezus#0245","11-Nov-18 09:43 AM","The final encoding I have put on to override the US location just gets overridden when I enter it into the browser","",""
+"473198049712406529","cswalker21#0279","11-Nov-18 11:00 AM","This was the most fun I've ever had doing homework until 2:00 AM, LOL. Good night.","",""
+"393854278764068875","curiouskiwi#1671","11-Nov-18 11:13 AM","US.zip only has the us zipcodes.  Did you import an australian list into your sql db too?","",""
+"167621231242117121","RPGeezus#0245","11-Nov-18 01:49 PM","yes I have a full lit of AU zips. Thats not the issue anyway as /articles doesn't interact with the DB. The lookup(geo) function from helpers.py is where it is falling down","",""
+"167621231242117121","RPGeezus#0245","11-Nov-18 01:50 PM","basicaly the following line from the lookup function just never returns anything as the url RSS feed doesn't seem to work for anything non US","",""
+"167621231242117121","RPGeezus#0245","11-Nov-18 01:50 PM","```
+    feed = feedparser.parse(f""https://news.google.com/news/rss/local/section/geo/{escaped}"")
+```","",""
+"167621231242117121","RPGeezus#0245","11-Nov-18 01:50 PM","so it just returns onion stuff which isn't what I want","",""
+"167621231242117121","RPGeezus#0245","11-Nov-18 01:56 PM","All you have to do to test is try to get the feeder.parse to return anything for a AU postcode and it won't with that address","",""
+"393854278764068875","curiouskiwi#1671","11-Nov-18 09:39 PM","ah,  sorry.  afaik, google news rss only supports us zip codes.    A couple years back, we used to use a different method to get the articles that did support other countries (and the pset gave a link to other country files for testing), but google deprecated that, and we no longer offer non-us zip files in the pset.   This, and the fact that google maps api now requires a developer account to get an api key, are some of the reasons why this pset will not be included in next year's class.","",""
+"473198049712406529","cswalker21#0279","11-Nov-18 10:43 PM","That's too bad. I really had a lot of fun with this one. But, I'm sure y'all will come up with something just as good to replace it!","",""
+"393854278764068875","curiouskiwi#1671","11-Nov-18 11:20 PM","@cswalker21 next year's class is a week shorter (but each week now has a 2-hour lecture) and we've tweaked most of the psets.","",""
+"167621231242117121","RPGeezus#0245","12-Nov-18 09:07 AM","Thanks @curiouskiwi I thought this was the case I just wanted to make sure. Already changed back expecting this haha","",""
+"465518211853582338","pranavg189#3530","12-Nov-18 04:13 PM","About the ""/search"" endpoint in mashup problem, I see that the staff solution is using  full text search index on the relevant rows. I am using plain SQL like  and have implemented almost all the functionalities mentioned in the specification for the /search but having a hard time implementing  queries using  only plus sign: https://ide50-username.cs50.io/search?q=Cambridge+MA . The problem is that '+' is decoded by the browser as a space and hence you can't tokenize the terms separated by '+' for example in this case: https://ide50-username.cs50.io/search?q=New%20Haven+CT. Has anyone been able to implement this type of  /search query using SQL like ?","",""
+"465518211853582338","pranavg189#3530","12-Nov-18 04:20 PM","my search workflow","https://cdn.discordapp.com/attachments/395684859651031041/511545820454191104/info.PNG",""
+"465518211853582338","pranavg189#3530","12-Nov-18 04:20 PM","code for /search","https://cdn.discordapp.com/attachments/395684859651031041/511545931355914251/code.PNG",""
+"465518211853582338","pranavg189#3530","12-Nov-18 04:22 PM","I am reconsidering using sqlite full text search for  /search endpoint as it can support '+' operator queries in a better fashion","",""
+"432952780903284737","von Ang#4889","13-Nov-18 02:54 PM","Is your code doing ""salt lake city, utah, us"" correctly? mine was not prepared for this...","",""
+"432952780903284737","von Ang#4889","13-Nov-18 03:13 PM","also ""new york city"" really messes with my code :/","",""
+"432952780903284737","von Ang#4889","13-Nov-18 03:25 PM","and I think I found the longest combination: http://mashup.cs50.net/search?q=CAPE%20MAY%20COURT%20HOUSE%20NEW%20JERSEY%20US","",""
+"432952780903284737","von Ang#4889","13-Nov-18 03:25 PM","at least the one with the most words","",""
+"383748351864078346","pesce#1361","16-Nov-18 10:42 AM","hi guys, trying to understand sqlite FTS, 
+does the virtual table has any relation with the original table? 
+if not can u populate the data from the original to the the virtual ? or do i need to insert the data again to the virtual?","",""
+"383748351864078346","pesce#1361","16-Nov-18 11:25 AM","so i found u can INSERT selected values from the original table INTO the virtual table, 
+so my question now is there a relation between the two tables in such a way that querying one table affect the other?","",""
+"465518211853582338","pranavg189#3530","16-Nov-18 08:27 PM","@pesce  Don't think so. The FTS virtual table is completely separate from the original table. It differs from the normal SQL index in a way that some kind of extra cache/metadata tables are created to make the searching faster.","",""
+"383748351864078346","pesce#1361","16-Nov-18 09:13 PM","@pranavg189 thanks for answering kinda thought so, 
+so say for example that u have dynamic tables where values get added and removed regularly and u want search them, like a blog or something, shouldn't the two tables be modified along the way?","",""
+"383748351864078346","pesce#1361","16-Nov-18 09:13 PM","or is there a better way to use something similar to FTS?","",""
+"465518211853582338","pranavg189#3530","16-Nov-18 11:01 PM","@pesce  By my understanding, yeah, the two tables should be kept in sync somehow in that case.","",""
+"465518211853582338","pranavg189#3530","16-Nov-18 11:04 PM","https://stackoverflow.com/questions/19634458/sqlite-regular-table-and-table-for-fts","",""
+"465518211853582338","pranavg189#3530","16-Nov-18 11:05 PM","As per above link, we can use the FTS table to find the corresponding rows in the original table. Hence, it would be better if you only include those columns in the FTS virtual table which need fast searching.","",""
+"465518211853582338","pranavg189#3530","16-Nov-18 11:08 PM","""or is there a better way to use something similar to FTS?"" -> As per my testing, the staff solution is using FTS table for the '/search' endpoint","",""
+"484230733074923542","starrfighter#1183","17-Nov-18 08:40 AM","@curiouskiwi  So, at this point, even though I went and got an API key, for development purposes only is what I see either way... and I used export and hardcoded it. is that what we will all see?
+I was really  hoping that what was preventing my markers from not showing up.  I guess not, as it still works on staff solution.  Unless I enabled the wrong API for maps js since there are a few options.  I'm very irritated about the markers not showing up.   I actually found someone elses solution that checked out sometime this year and I just saved mine and plugged it in just to see if that worked and could isolate my issue.  That solution that did work, now works worse than mine.....
+
+And I am soooo close.
+
+This- it's just odd... and with no check50 which would have made sense then, but now that this pset seems like a mess it would be nice to have it.
+
+Besides API key has anything else changed?  So close.","",""
+"393854278764068875","curiouskiwi#1671","17-Nov-18 08:45 AM","it's only the API key.","",""
+"484230733074923542","starrfighter#1183","17-Nov-18 08:46 AM","OK, here's one.... are all db fields text?","",""
+"484230733074923542","starrfighter#1183","17-Nov-18 08:49 AM","ff it has no bearing on markers (my search works fine) just say it doesn't have to do with markers.","",""
+"393854278764068875","curiouskiwi#1671","17-Nov-18 08:50 AM","all db fields are text except latitude longitude and accuracy","",""
+"393854278764068875","curiouskiwi#1671","17-Nov-18 08:51 AM","are you reaching your add markers function with proper places?  if you add some debugging, do you see what you expect?  ```javascript
+// Add marker for place to map
+function addMarker(place)
+{
+
+    // TODO
+    console.log(""I've now hit the addMarker function"")
+    console.log(place)
+        // instantiate marker```","",""
+"393854278764068875","curiouskiwi#1671","17-Nov-18 08:51 AM","for example.","",""
+"393854278764068875","curiouskiwi#1671","17-Nov-18 08:51 AM","and then make sure you are getting a proper place.","",""
+"484230733074923542","starrfighter#1183","17-Nov-18 08:54 AM","I will do that tomorrow (15 hours today)... and I haven't tested my search with geo (duh), although I've hardcoded a different start city.  That said typing in wherever brings me there with auto complete, I can change the type for geo, but none of that prevents markers, correct?  If I get a map there should be markers.  ?","",""
+"484230733074923542","starrfighter#1183","17-Nov-18 08:54 AM","Like if i just typed zip","",""
+"393854278764068875","curiouskiwi#1671","17-Nov-18 08:55 AM","if your lat/lon values are text instead of REAL , I'm pretty sure it's not going to work, since the api is expecting a value.","",""
+"393854278764068875","curiouskiwi#1671","17-Nov-18 08:55 AM","when you create the marker","",""
+"484230733074923542","starrfighter#1183","17-Nov-18 08:56 AM","OH.  ok.  thanks.  But, for development purposes is on everyon'es screeen including the staff solution, and that's how it is?","",""
+"393854278764068875","curiouskiwi#1671","17-Nov-18 08:56 AM","so for example, my debug shows this","https://cdn.discordapp.com/attachments/395684859651031041/513246130398691330/Screen_Shot_2018-11-17_at_7.56.35_PM.png",""
+"393854278764068875","curiouskiwi#1671","17-Nov-18 08:57 AM","yes, development mode","https://cdn.discordapp.com/attachments/395684859651031041/513246324154695680/Screen_Shot_2018-11-17_at_7.57.25_PM.png",""
+"393854278764068875","curiouskiwi#1671","17-Nov-18 08:58 AM","you have to pay to get ""production"" version.","",""
+"484230733074923542","starrfighter#1183","17-Nov-18 08:59 AM","Is that where you are from?  grew up in CT/NJ, New Yorker at 15, Seattleite at 25, Austinite re-skilling at 35.","",""
+"393854278764068875","curiouskiwi#1671","17-Nov-18 09:00 AM","no, originally from El Paso.","",""
+"393854278764068875","curiouskiwi#1671","17-Nov-18 09:00 AM","but lived in Philly for college","",""
+"484230733074923542","starrfighter#1183","17-Nov-18 09:00 AM","Well that's wjhat irritated me too.  They have a year trial with $300 credit to use so I got a key.  tried exted in console and also put it in the code and no go.  That wasn't cool.","",""
+"484230733074923542","starrfighter#1183","17-Nov-18 09:00 AM","Go Eagles!","",""
+"393854278764068875","curiouskiwi#1671","17-Nov-18 09:01 AM","parents from Boston, so go Patriots! 😃","",""
+"484230733074923542","starrfighter#1183","17-Nov-18 09:01 AM","Going to the Longhorns game tomorrow as a secret birthday surprise for someone.","",""
+"393854278764068875","curiouskiwi#1671","17-Nov-18 09:01 AM","go horns!","",""
+"393854278764068875","curiouskiwi#1671","17-Nov-18 09:01 AM","grew up cheering for the Miners.  (UTEP)","",""
+"393854278764068875","curiouskiwi#1671","17-Nov-18 09:02 AM","spent a summer at UT Austin","",""
+"393854278764068875","curiouskiwi#1671","17-Nov-18 09:03 AM","who are they playing?","",""
+"484230733074923542","starrfighter#1183","17-Nov-18 09:05 AM","But OH YES bless the Giants hearts, poor eli, but I am crazy Patriots.  Saw my first concert... Paul McCartney in the old stadium. 1989.  the new stadium is like, wild. My father lived in Taunton so there was a whole bunch of exit of 84, oh look, the state police immediately!  I just want the rest stop!  Everyone driving 10 miles under the speed limit.... the big dig....  memories.","",""
+"393854278764068875","curiouskiwi#1671","17-Nov-18 09:06 AM","Saw Simon & Garfunkel in the old stadium. (1982?)","",""
+"484230733074923542","starrfighter#1183","17-Nov-18 09:07 AM","I was in the oven","",""
+"393854278764068875","curiouskiwi#1671","17-Nov-18 09:08 AM","1983","",""
+"393854278764068875","curiouskiwi#1671","17-Nov-18 09:08 AM","😃","",""
+"393854278764068875","curiouskiwi#1671","17-Nov-18 09:08 AM","https://www.songkick.com/artists/234875-simon-and-garfunkel/gigography?page=4","",""
+"484230733074923542","starrfighter#1183","17-Nov-18 09:11 AM","Austin is playing Iowa.  Last game of regular season no playoffs scheduled for the austin stadium.  Conan O'Brien is also here and i was going to do that for the birthday and football for xmas, but, I didn't realize it's the last game so I called an audible.  It's too bad, I have the Steven Colbert production on ""Who's Boat is this Boat?"" accidentally written by Donald Trump and the first page has ""Who's book is this book?"" and a big line underneath.   I was going to have Conan sign his name there.  But, it has become clear Longhorns or I would not hear the end of it.","",""
+"484230733074923542","starrfighter#1183","17-Nov-18 09:12 AM","I gotta go to bed but if The Revolution is coming to a place near you.....  GO","",""
+"484230733074923542","starrfighter#1183","17-Nov-18 09:12 AM","And really you have been very helpful.   You are very appreciated.","",""
+"393854278764068875","curiouskiwi#1671","17-Nov-18 09:13 AM","good night!","",""
+"484230733074923542","starrfighter#1183","17-Nov-18 09:18 AM","@curiouskiwi Prince & The Revolution have a hot track called Computer Blue.  Even though 1984, the lyric goes ""Where is my love life, where can it be?  There must be something wrong with the machinery...till I find the righteous one, Computer Blue.""  I just imagine Prince on match.com finally see someone he likes, whips up a great message, and right before clicking send.... BSOD. 😱","",""
+"484230733074923542","starrfighter#1183","17-Nov-18 09:18 AM","Waaaaay off topic.  good night.","",""
+"383748351864078346","pesce#1361","17-Nov-18 03:34 PM","@pranavg189 thanks for  help, it's now more clear , i also got to learn about triggers 😃","",""
+"371307366937001986","Kaunta#1271","18-Nov-18 02:38 AM","For longtitude and latitude","",""
+"371307366937001986","Kaunta#1271","18-Nov-18 02:39 AM","should i just use real","",""
+"371307366937001986","Kaunta#1271","18-Nov-18 02:39 AM","in the README it says `wgs84` but Idk what that means but I mean, real should encompass everything unless im somehow missing something here","",""
+"393854278764068875","curiouskiwi#1671","18-Nov-18 04:05 AM","yes REAL","",""
+"484230733074923542","starrfighter#1183","18-Nov-18 10:29 PM","REAL gave me one second of seeing markers before the google page went uh oh, but I saw a glimpse, after I changed them from REAL to text.   Unfortunately, as a reminder, be careful with the IDE, because I plugged in someone's working solution when I was trying to figure out why markers were not showing... Very similar to mine but I wanted to do a compare and contrast to isolate what my problem was.  Due to the IDE having a delay at times, especially on the GUI side, even when you hit refresh, MY CODE, which worked better, overall,  than the other persons solution I plugged in to see if a line is missing a line or even a symbol or something... magically is gone.  I have to redo the js again. Be careful.
+
+Speaking of which @curiouskiwi  I could see the markers finally appear right before it snapped out of populating a map to an error, after changing from text to REAL for lat long.  That said, I have to write my whole file again... I'm so stupid but these things do happen... :","",""
+"484230733074923542","starrfighter#1183","18-Nov-18 10:35 PM","Was it alright to just change those fields to real ?
+(I think yes, but I'm more of an MSSQL background so there are differences)
+Or should I recreate the DB for reasons I don't know but you'll probably know if there are any.  
+
+Again  watch your ide, I took great pains to have copies of my code when I was checking what might be wrong.   I  think it was lat and long being text instead of real as I know see a flash of markers and a map before the page gets shut down to an error.  If I still had my own code, I think I'd be done.   The ide is on a slight delay...  always give things time.   Or you will be writing code you already wrote, again.  But it's sunday and I have the NFL Redzone and teams so... tomorrow,
+
+But am I correct in the assumptions I've made @curiouskiwi about DB structure?  Or should I re-create?","",""
+"484230733074923542","starrfighter#1183","20-Nov-18 11:23 PM","I had to get my own API key after rewriting my code, and/or flask in debug mode is not a fan.  I you get your own API key make sure you put &v=3 before the .exp","",""
+"484230733074923542","starrfighter#1183","20-Nov-18 11:25 PM","It will ask for billing info but it is free...for like a year or up to $300 in credit and they won't actually bill you after that time until you say ok, which you may or may not want to.","",""
+"484230733074923542","starrfighter#1183","20-Nov-18 11:55 PM","@curiouskiwi  the pset8 mashup spec says to only check application.py for style50, which I had to add a line remove a line, whatever, until ""Looks Good!"", everything works, got 5/5 for correctness and 0 out of 5 for style... I just ran it again and ""Looks good!"".   Why would I not be assigned the points, is there something I can do, and resubmit?  style50 in the ide is exactly the same as submission I think you told me.  Any tips?","",""
+"393854278764068875","curiouskiwi#1671","21-Nov-18 12:23 AM","@starrfighter pretty sure it checks any .py or .js file you submit.","",""
+"484230733074923542","starrfighter#1183","21-Nov-18 12:31 AM","can I resubmit if I go through the other files?  At this point it's the final project but I have perfect 100 everywhere, this is a bummer, even though not relevent to pass the course.... I want full credit.","",""
+"484230733074923542","starrfighter#1183","21-Nov-18 12:31 AM","and if I resubmit, is there a limit?","",""
+"393854278764068875","curiouskiwi#1671","21-Nov-18 12:35 AM","you can resubmit as many times as you need","",""
+"484230733074923542","starrfighter#1183","21-Nov-18 12:36 AM","You are right @curiouskiwi  style50 does .js too... 
+One more thing, if I don't finish by years end (I'm pretty sure I am going to, but we will see. Too many holidays and birthdays....) Do I get ported over to CS50 2019?","",""
+"393854278764068875","curiouskiwi#1671","21-Nov-18 12:37 AM","i'm surprised that you got 0/5 though, if application.py was fine.  did you have any test files in there?","",""
+"393854278764068875","curiouskiwi#1671","21-Nov-18 12:37 AM","and yes, it will carry over to 2019.","",""
+"484230733074923542","starrfighter#1183","21-Nov-18 12:38 AM","I was ported from  2017 to 2018, i had a major medical incident so I didn't start this until.. September?","",""
+"484230733074923542","starrfighter#1183","21-Nov-18 12:48 AM","I had one test file application.1.py to hold the stuff I auto-remembered I did before I deleted my file.... :still hurts... so I'd at least if I messed stuff up had a bigger build out to revert to.  But it all worked out.  And it doesn't say for development only! Google's Console and APIs are great and a free year... perfect for me.  If submit50 grabbed every py file it would have gotten garbage, but style even then could have been too bad..  BUT, the JS is all red and green so I'll do that.  With unlimited resubmits, hopefully I'll be good.  (At least the program works very nicely.  I want to make one change but 5/5 correct and a final to come...  I'm leaving it as is except for style).  Thank you, as always @curiouskiwi  👍","",""
+"484230733074923542","starrfighter#1183","21-Nov-18 01:07 AM","It the script.js file.  In the testing area of the spec it should be added.   All points now.  Thank you!!!!","",""
+"371307366937001986","Kaunta#1271","22-Nov-18 06:15 PM","@curiouskiwi Ummm for application.py do we have to use the typeahead for search or can you do it with just a db.execute","",""
+"371307366937001986","Kaunta#1271","22-Nov-18 06:17 PM","can't figure out what the WHERE would be since you can't really do = because they might not have fully typed it all out","",""
+"371307366937001986","Kaunta#1271","22-Nov-18 09:32 PM","I'm just kind of stuck on this atm","",""
+"393854278764068875","curiouskiwi#1671","22-Nov-18 10:03 PM","@Kaunta, your SELECT query will simply run after each character is typed.  If I look at my terminal I see:  ```INFO:werkzeug:10.240.1.191 - - [23/Nov/2018 09:01:38] ""GET /favicon.ico HTTP/1.1"" 404 -
+DEBUG:cs50:SELECT * FROM data WHERE data MATCH '*0*'
+INFO:werkzeug:10.240.1.50 - - [23/Nov/2018 09:01:46] ""GET /search?q=0 HTTP/1.1"" 200 -
+DEBUG:cs50:SELECT * FROM data WHERE data MATCH '*02*'
+INFO:werkzeug:10.240.1.191 - - [23/Nov/2018 09:01:46] ""GET /search?q=02 HTTP/1.1"" 200 -
+DEBUG:cs50:SELECT * FROM data WHERE data MATCH '*021*'
+INFO:werkzeug:10.240.1.191 - - [23/Nov/2018 09:01:47] ""GET /search?q=021 HTTP/1.1"" 200 -
+DEBUG:cs50:SELECT * FROM data WHERE data MATCH '*0210*'
+```  you can see that it runs on each number as I type","",""
+"371307366937001986","Kaunta#1271","22-Nov-18 10:03 PM","OHHHH","",""
+"371307366937001986","Kaunta#1271","22-Nov-18 10:03 PM","Thanks so much!","",""
+"371307366937001986","Kaunta#1271","22-Nov-18 10:04 PM","That helps a lot kiwi","",""
+"371307366937001986","Kaunta#1271","22-Nov-18 10:04 PM","C:","",""
+"371307366937001986","Kaunta#1271","22-Nov-18 10:05 PM","what in the world, what's DATA","",""
+"371307366937001986","Kaunta#1271","22-Nov-18 10:05 PM","data","",""
+"393854278764068875","curiouskiwi#1671","22-Nov-18 10:10 PM","I'm using full text search, so you can ignore my actual query syntax and just use a select from the places table. 😃","",""
+"371307366937001986","Kaunta#1271","22-Nov-18 10:11 PM","oh ok lol thanks","",""
+"393854278764068875","curiouskiwi#1671","22-Nov-18 10:11 PM","I'd expect :  ""SELECT * FROM places WHERE place_name LIKE :q""","",""
+"371307366937001986","Kaunta#1271","22-Nov-18 10:11 PM","somehow i missed the section in the ye","",""
+"393854278764068875","curiouskiwi#1671","22-Nov-18 10:11 PM","or something like that.","",""
+"371307366937001986","Kaunta#1271","22-Nov-18 10:11 PM","i missed the section on it somehow lol","",""
+"371307366937001986","Kaunta#1271","22-Nov-18 10:11 PM","my bad","",""
+"472495048773074974","ritesh#0522","23-Nov-18 05:36 PM","In shorts/JavaScript in Functions(redux) array.size() doesn't works 
+Instead use array.length","",""
+"371307366937001986","Kaunta#1271","24-Nov-18 05:59 PM","Ummmmm so once again im stuck lol","",""
+"371307366937001986","Kaunta#1271","24-Nov-18 05:59 PM","Last thing I need to do is to get the articles but im not too sure ow to do that","",""
+"371307366937001986","Kaunta#1271","24-Nov-18 05:59 PM","only thing i can find is $.getJSON","",""
+"371307366937001986","Kaunta#1271","24-Nov-18 06:00 PM","not sure how to use that","",""
+"371307366937001986","Kaunta#1271","24-Nov-18 06:00 PM","@curiouskiwi If you have time, could you respond?","",""
+"472495048773074974","ritesh#0522","26-Nov-18 05:25 AM","In SRC11, while running application.py(for getting stock prices)
+I'm getting error with this line:
+`from flask.exthook import ExtDeprecationWarning`
+It says 'no name exthook in module flask' 
+I searched about this and found that falsk.ext and flask.exthook has been removed from flask 1.0 so  I tried flask_exthook  but it's still not working
+Any Idea on this guys?","",""
+"393854278764068875","curiouskiwi#1671","26-Nov-18 06:27 AM","looks like flask_autoindex  hasn't been updated for other changes made in Flask 1.0","",""
+"393854278764068875","curiouskiwi#1671","26-Nov-18 06:27 AM","I don't know if there's a workaround for that feature (which mimics a file tree for every file in the folder)","",""
+"393854278764068875","curiouskiwi#1671","26-Nov-18 06:28 AM","You could use what you learned in pset7 to update application.py with routes for the html pages you want to try (and comment out all the unnecessary imports).  I changed mine to this:  ```python
+import csv
+import os
+import urllib.request
+
+from flask import Flask, jsonify, render_template, request
+#from flask.exthook import ExtDeprecationWarning
+#from warnings import simplefilter
+#simplefilter(""ignore"", ExtDeprecationWarning)
+#from flask_autoindex import AutoIndex
+
+
+app = Flask(__name__)
+#AutoIndex(app, browse_root=os.path.curdir)
+
+
+@app.route(""/ajax0"")
+def ajax0():
+    return render_template(""ajax0.html"")
+
+@app.route(""/ajax1"")
+def ajax1():
+    return render_template(""ajax1.html"")
+
+@app.route(""/ajax2"")
+def ajax2():
+    return render_template(""ajax2.html"")
+
+
+@app.route(""/quote"")
+def quote():
+    symbol = request.args.get(""symbol"")
+    url = f""https://www.alphavantage.co/query?apikey=NAJXWIA8D6VN6A3K&datatype=csv&function=TIME_SERIES_INTRADAY&interval=1min&symbol={symbol}""
+    webpage = urllib.request.urlopen(url)
+    datareader = csv.reader(webpage.read().decode(""utf-8"").splitlines())
+    next(datareader)
+    row = next(datareader)
+    return jsonify({
+        ""name"": symbol.upper(),
+        ""price"": float(row[4]),
+        ""symbol"": symbol.upper()
+    })
+
+
+@app.route(""/register"")
+def register():
+    return ""You're registered! (Well, not really.)""
+```","",""
+"393854278764068875","curiouskiwi#1671","26-Nov-18 06:29 AM","and then created a `templates` folder in `src11/` where I put the 3 ajax html files.","",""
+"472495048773074974","ritesh#0522","26-Nov-18 08:18 AM","Thanks, that worked","",""
+"472495048773074974","ritesh#0522","26-Nov-18 12:59 PM","I'm trying to find rss feed in my browser but I'm not seeing any rss link at the bottom. Any idea on this?
+Also: https://news.google.com/news/local/section/geo/Cambridge,%20Massachusetts
+It redirects to google India News Home page with 301 status code (moved permanently). I tried this with Indian cities but still not working","",""
+"472495048773074974","ritesh#0522","26-Nov-18 03:13 PM","In distribution code of pset8/templates/script.js :
+`function configure()`  is called before it is defined  using
+`google.maps.event.addListenerOnce(map, ""idle"", configure);`
+How is this possible? Acc. to my understanding a function in python should be defined before it can be used","",""
+"472495048773074974","ritesh#0522","27-Nov-18 08:18 AM","In style.css :
+```#form
+{
+    /* Position form ""absolutely"" where we want it */
+    position: absolute;
+
+    /* Distance from top edge of viewport */
+    top: 28px;
+
+    /* Form's width */
+    width: 100%;
+}```
+changing the values of `width : 50%` changes the position of the form on screen not the width of the form. why this behavior?","",""
+"472495048773074974","ritesh#0522","28-Nov-18 07:09 AM","The lookup() function in helpers.py returns a list of dictionary then why do we need to jsonify() this output in articles() in application.py? I'm getting a type error when I don't jsonify it","",""
+"393854278764068875","curiouskiwi#1671","28-Nov-18 07:46 AM","The jsonify() function returns a flask.Response() object that already has the appropriate content-type header 'application/json' for use with json responses.","",""
+"472495048773074974","ritesh#0522","28-Nov-18 08:07 AM","k","",""
+"472495048773074974","ritesh#0522","30-Nov-18 05:18 PM","Do I need do FTS4 in database to enable 
+`https://ide50-username.cs50.io/search?q=New%20Haven+CT`
+kind of searches?","",""
+"397677328660037632","Maarten#1004","30-Nov-18 09:07 PM","What you see there is just URL encoding (both %20 and + translate to a space). If you are unsure what to use, just read up on it and try to judge for yourself I'd say. You can find plenty of discussions on when to use LIKE with wildcards vs using  FTS with CONTAINS/MATCH. Or just try to implement them both and see what works best 😉 .","",""
+"472495048773074974","ritesh#0522","01-Dec-18 05:51 AM","Thanks for the intriguing reply @Maarten, I figured out the problem 
+The problem is that my query is searching for  full text `New Heaven CT%` instead it should  be searching for `New Haven` AND `CT` acc. to staff solution","",""
+"393879219698008076","a1#0674","01-Dec-18 05:40 PM","https://www.reddit.com/r/cs50/comments/a218az/pset8_mashup_googlemapseventaddlistener_spoiler/","",""
+"393879219698008076","a1#0674","01-Dec-18 05:42 PM","Hi all, above is my post on Reddit. I haven't had any responses yet, so I posted it here. If anyone could help me understand where I'm going wrong I'd greatly appreciate it!","",""
+"472495048773074974","ritesh#0522","01-Dec-18 09:32 PM","Not quite sure about the animation code but to show infowindow u  have to use function `showInfo(marker,content)` to be used.  Also u have to fetch the articles to be displayed in the info window","",""
+"211711548949921794","ToastyTempura#4800","02-Dec-18 01:37 AM","I've been testing and changing my search route in python and noticed when comparing my outputs to http://mashup.cs50.net/ that the admin_name2 usually have 'County"" at the end where my outputs do not. Is my database incorrect? I did exactly what assignment said to import the US file into sqlite?","",""
+"393854278764068875","curiouskiwi#1671","02-Dec-18 01:43 AM","I can't find any admin_name2 values that contain 'County' at the end.  Where are you seeing that?","",""
+"211711548949921794","ToastyTempura#4800","02-Dec-18 02:22 AM","http://mashup.cs50.net/search?q=New%20Haven","",""
+"393854278764068875","curiouskiwi#1671","02-Dec-18 02:34 AM","looks like the staff version is using an older us.txt file.  The current one doesn't have County in those names.","",""
+"211711548949921794","ToastyTempura#4800","02-Dec-18 02:45 AM","awesome thanks","",""
+"211711548949921794","ToastyTempura#4800","04-Dec-18 10:31 PM","in configure(), in scripts.js, putting ""{{place_name}}, {{admin_name1}}, {{postal_code}}"" for ""TODO""  isn't working, I've tested my search method a ton and it works so how do I make configure() work with my search?","",""
+"211711548949921794","ToastyTempura#4800","04-Dec-18 10:49 PM","My search bar isn't popping up with anything, just "",,""","",""
+"472495048773074974","ritesh#0522","05-Dec-18 10:19 AM","It's really annoying, I too wasted a lot of time on this 
+Can't give the exact answer here, try experimenting with syntaxes
+remember u r passing a whole string as argument here to handlebars","",""
+"211711548949921794","ToastyTempura#4800","05-Dec-18 09:35 PM","figured out my problem, was returning an object within an object (return jsonify([searched]) in my /search","",""
+"371307366937001986","Kaunta#1271","06-Dec-18 03:15 PM","Why does it say only for development purposes on the webpage?","",""
+"211711548949921794","ToastyTempura#4800","06-Dec-18 08:36 PM","Because CS50 hasn’t got a correct google api key, the official mashup.cs50.net  says it too. You could try getting a new key, I think Malan got a new one in the lecture.","",""
+"484230733074923542","starrfighter#1183","08-Dec-18 06:14 AM","You can get a year long/$300 credit whichever is first for google api keys and their platform.  The spec says screw that, and have it be dim and ""for development only"".  But I found I couldn't get the thing to work until I had my own key due to a problem I never identified.   Just happy it worked with my key!  I think there is a suffix you have to attach to the end of your key however.... if you look a few weeks back I think I mentioned it.","",""
+"484230733074923542","starrfighter#1183","08-Dec-18 06:15 AM","Please put final project ideas in my tip jar.","",""
+"393854278764068875","curiouskiwi#1671","08-Dec-18 06:16 AM","Google only added this requirement after the course started and we're sorry it's messed things up for everyone. 😦   CS50x-2019 won't have this problem.","",""
+"371307366937001986","Kaunta#1271","09-Dec-18 05:09 PM","wait so does everything work properly or not then @curiouskiwi","",""
+"393854278764068875","curiouskiwi#1671","09-Dec-18 09:31 PM","it should all work except for the ""development only"" messages over the map","",""
+"371307366937001986","Kaunta#1271","09-Dec-18 10:56 PM","did anyone have the problem of it not showing all the cities?","",""
+"371307366937001986","Kaunta#1271","09-Dec-18 10:56 PM","It makes markers but it dones't show 10 unless you zoom out a bit","",""
+"371307366937001986","Kaunta#1271","09-Dec-18 10:56 PM","not sure if i screwed up or if my add marker is wrong","",""
+"371307366937001986","Kaunta#1271","09-Dec-18 10:56 PM","because it is adding markers to the map so im confused","",""
+"371307366937001986","Kaunta#1271","09-Dec-18 11:12 PM","Would this be a problem with update or with add markers?","",""
+"124303592369815554","Vanishy#6250","11-Dec-18 08:17 PM","when I run flask on the raw distribution code the map should load properly at least, shouldnt it?","",""
+"260757571445587968","LT.Sana#9372","11-Dec-18 11:56 PM","Has any been able to use their own API keys in their index.html ? I hate looking at the Watermarks 😭","",""
+"260757571445587968","LT.Sana#9372","11-Dec-18 11:57 PM","I have my own API key but I'm not being able to get it to work","",""
+"124303592369815554","Vanishy#6250","12-Dec-18 01:37 PM","^ same problem","",""
+"397677328660037632","Maarten#1004","12-Dec-18 02:25 PM","What happens if you set it in index.html ?","",""
+"397677328660037632","Maarten#1004","12-Dec-18 02:26 PM","Source code has changed a bit I see since I did it","",""
+"397677328660037632","Maarten#1004","12-Dec-18 02:26 PM","But this line seems to be the one to change:","",""
+"397677328660037632","Maarten#1004","12-Dec-18 02:26 PM","```        <!-- https://developers.google.com/maps/documentation/javascript/ -->
+        <script src=""https://maps.googleapis.com/maps/api/js?key=AIzaSyAgatq4KgsR2NHXXIG8YxiwncrsEz_xis8&v=3.exp""></script>
+```
+According to the docs this is the format you should be able to change the key (key=YOURKEY&v=3.exp)","",""
+"260757571445587968","LT.Sana#9372","12-Dec-18 09:18 PM","@Maarten  Yeah Did that, it worked 6 hours later after I woke up and now it's not working anymore","",""
+"207503709746233345","Secure Me Musk#8567","13-Dec-18 08:54 PM","I'm hoping to start Mashup next week, is there anything to keep in mind starting this project. Also signs are pointing this this project being removed in 2019 so is it worth skipping?","",""
+"207503709746233345","Secure Me Musk#8567","13-Dec-18 08:54 PM","I've heard there are some issues with it and wanted to prepare in case.","",""
+"397677328660037632","Maarten#1004","13-Dec-18 09:09 PM","If my experience is worth anything: you can probably finish mashup in a day or so, so you should be fine before years end.","",""
+"260757571445587968","LT.Sana#9372","14-Dec-18 10:51 PM","I recommend not using all the countries 😂😂 my IDE CPU couldn't process everything and would make Flask CRASH","",""
+"371307366937001986","Kaunta#1271","17-Dec-18 02:37 AM","My remove markers isn'tw orking and i can't figure out why","",""
+"371307366937001986","Kaunta#1271","17-Dec-18 02:37 AM","is ther eanyone who can take a look at my code?","",""
+"489831274588930062","paat#5098","18-Dec-18 06:56 AM","is my output for articles supposed to match the staff's solution exactly or can it be different? For some reason, mine has waay more articles being outputted...","",""
+"453346089307996160","ahmad#6213","24-Dec-18 07:49 AM","@Maarten Really? Can it be done in a day? It gives me hope. Well, I heard that there are some problems with Google API. So, is it still doable in a day? If yes please let me know. I will be filled with hope.","",""
+"489831274588930062","paat#5098","24-Dec-18 01:56 PM","I just finished it in about a week on and off between work etc.","",""
+"489831274588930062","paat#5098","24-Dec-18 01:56 PM","I think it's do-able","",""
+"397677328660037632","Maarten#1004","24-Dec-18 01:57 PM","@ahmad It took me under a day of dedicated attention. I've seen others struggle with this one though, so it'll depend. Most of the pset is just using well documented functions from Google Maps and jQuery","",""
+"489831274588930062","paat#5098","24-Dec-18 01:57 PM","I'm also completely inexperienced with jquery/ajax","",""
+"489831274588930062","paat#5098","24-Dec-18 01:57 PM","SO yeah","",""
+"489831274588930062","paat#5098","24-Dec-18 01:58 PM","No idea how I just made a 100 but I'll take it.","",""
+"366971957499002901","Neo#7814","27-Dec-18 02:21 AM","@curiouskiwi will my project still work without an api key?","",""
+"366971957499002901","Neo#7814","27-Dec-18 02:21 AM","when I go into console it says You have exceeded your request quota for this AP","",""
+"366971957499002901","Neo#7814","27-Dec-18 02:23 AM","and in order to sign up for an api key I need to link a billing account","",""
+"366971957499002901","Neo#7814","27-Dec-18 02:23 AM","which I do not have","",""
+"393854278764068875","curiouskiwi#1671","27-Dec-18 03:08 AM","if you wait a few minutes, it should work again.","",""
+"366971957499002901","Neo#7814","27-Dec-18 11:16 PM","@curiouskiwi for some reason I got a 4 on my style for mashup even though style50 said looks good","",""
+"366971957499002901","Neo#7814","27-Dec-18 11:16 PM","do you know what could have happened?","",""
+"393854278764068875","curiouskiwi#1671","27-Dec-18 11:17 PM","did you run style50 on all the files you submitted?","",""
+"366971957499002901","Neo#7814","27-Dec-18 11:17 PM","just on application.py","",""
+"366971957499002901","Neo#7814","27-Dec-18 11:17 PM","that's they only program that you can use style50 for","",""
+"366971957499002901","Neo#7814","27-Dec-18 11:18 PM","@Kaunta had the same issue as well","",""
+"393854278764068875","curiouskiwi#1671","27-Dec-18 11:24 PM","it runs style50 on all py files.","",""
+"393854278764068875","curiouskiwi#1671","27-Dec-18 11:26 PM","and .js files","",""
+"366971957499002901","Neo#7814","27-Dec-18 11:29 PM","oh, thanks!","",""
+"366971957499002901","Neo#7814","27-Dec-18 11:31 PM","","https://cdn.discordapp.com/attachments/395684859651031041/527961659898069003/unknown.png",""
+"366971957499002901","Neo#7814","27-Dec-18 11:31 PM","Maybe tell cs50 staff that it's not clear that you can style50 other files 👍","",""
+"366971957499002901","Neo#7814","27-Dec-18 11:33 PM","Just for future reference for everyone else the source code provided actually isn't compliant with style50","",""
+"393854278764068875","curiouskiwi#1671","27-Dec-18 11:41 PM","Apologies for the confusion on that.  Given there are only 4 days left in the 2018 course, it's probably not worth changing that now.","",""
+"225234578481086464","Boylemaker88#7134","28-Dec-18 11:46 PM","i just started mashup, not sure if i will finish it by new year as I'm a little slow. But, if i don't make it in time, I can still submit it and have it checked, yeah? It just wouldn't count towards completion of the class and so Id' have to do the new version of the problem?","",""
+"393854278764068875","curiouskiwi#1671","28-Dec-18 11:49 PM","mashup has no check50 (it's graded on the honor system ... if you submit, we assume you've tested and it works properly).","",""
+"207503709746233345","Secure Me Musk#8567","29-Dec-18 02:40 AM","Do we not need a primary key for this?","",""
+"207503709746233345","Secure Me Musk#8567","29-Dec-18 02:41 AM","The spec says not to add an ID field, and using a zip code returns errors when importing the list","",""
+"393854278764068875","curiouskiwi#1671","29-Dec-18 02:43 AM","the import will add the primary key for you","",""
+"393854278764068875","curiouskiwi#1671","29-Dec-18 02:43 AM","that's why you don't add it yourself","",""
+"207503709746233345","Secure Me Musk#8567","29-Dec-18 02:44 AM","hum, SQL said something about there being an issue becuase there was no key after i imported though","",""
+"207503709746233345","Secure Me Musk#8567","29-Dec-18 02:44 AM","that it couldn't count?","",""
+"207503709746233345","Secure Me Musk#8567","29-Dec-18 02:46 AM","I'll post it here..","",""
+"207503709746233345","Secure Me Musk#8567","29-Dec-18 02:48 AM","","https://cdn.discordapp.com/attachments/395684859651031041/528373675829886989/unknown.png",""
+"393854278764068875","curiouskiwi#1671","29-Dec-18 02:49 AM","but if you run `select count(*) from places;`  do you get the right number/","",""
+"207503709746233345","Secure Me Musk#8567","29-Dec-18 02:49 AM","i do, but i didn't know if this would be an issue later","",""
+"207503709746233345","Secure Me Musk#8567","29-Dec-18 02:49 AM","guess not?","",""
+"393854278764068875","curiouskiwi#1671","29-Dec-18 02:51 AM","are you using something other than phpliteadmin to view it?  I don't recognize that screenshot","",""
+"207503709746233345","Secure Me Musk#8567","29-Dec-18 02:51 AM","nope it's phpliteadmin","",""
+"207503709746233345","Secure Me Musk#8567","29-Dec-18 02:51 AM","","https://cdn.discordapp.com/attachments/395684859651031041/528374524690038795/unknown.png",""
+"393854278764068875","curiouskiwi#1671","29-Dec-18 02:52 AM","oh, on that page.","",""
+"393854278764068875","curiouskiwi#1671","29-Dec-18 02:52 AM","mine says the same. 😃","",""
+"393854278764068875","curiouskiwi#1671","29-Dec-18 02:52 AM","and I misspoke earlier about the id field.  There is not one added.","",""
+"393854278764068875","curiouskiwi#1671","29-Dec-18 02:53 AM","I was thinking of something else. sorry to confuse!","",""
+"207503709746233345","Secure Me Musk#8567","29-Dec-18 02:53 AM","ah okay! was just about to ask.","",""
+"207503709746233345","Secure Me Musk#8567","29-Dec-18 02:53 AM","thanks for looking into it for me.","",""
+"225234578481086464","Boylemaker88#7134","30-Dec-18 08:19 PM","hi @curiouskiwi , not sure if you are around but I am just having the hardest time wrapping my head around typeaheads configuration/functionality, specifically what I believe is the dataset portion of the configuration. I don't think I am understanding how the keys of the dataset object (display, templates, source), etc...all work together. Have read through the documentation several times but am just not getting it. I understand that when a user starts typing, the 'search' function runs (and I believe I've implemented that without too much trouble), but how exactly do the 'display' and 'template' pieces work together?","",""
+"225234578481086464","Boylemaker88#7134","30-Dec-18 08:24 PM","i think understanding it may not even be totally necessary to finishing the pset (I seem to have gotten the search bar working at least), but am trying to get a better understanding of how it's all working together (sorry if my question is a little vague 😦 )","",""
+"207503709746233345","Secure Me Musk#8567","31-Dec-18 04:06 AM","I dont understand removemarkers. Maybe im overthinking it.. but how are we removing them? I dont see any way to remove them in the staff solutions","",""
+"207503709746233345","Secure Me Musk#8567","31-Dec-18 04:06 AM","I'm building a function to removed them, but how do I even call that function?","",""
+"397677328660037632","Maarten#1004","31-Dec-18 01:49 PM","@Secure Me Musk The function is already there in the js file, you just need to finish it. And for a hint: check Google's documentation (https://developers.google.com/maps/documentation/javascript/markers -> remove markers, also check the example... it almost spoonfeeds you the solution...) on this and check the top of the js file. There you see this: ```let markers = [];``` Which get's filled up, it need to be empty again after removing.","",""
+"393854278764068875","curiouskiwi#1671","01-Jan-19 05:27 AM","Hey everyone! Just a heads up that this problem will not be part of the 2019 course, so if you plan to submit, be in quick!","",""
+"352468291169812480","db#2654","10-Feb-19 04:36 AM","In search when returning jsonify what is the name of the dict returned?","",""
+"352468291169812480","db#2654","10-Feb-19 04:38 AM","For example I have 
+```
+return jsonify([loc])
+```
+So how would I access or reference the dict returned?","",""
+"393854278764068875","curiouskiwi#1671","10-Feb-19 04:41 AM","the search function in js is written for you.  Your application.py search function has to return a jsonifyied dict.   what's `[loc]`?  that looks like something inside a list?","",""
+"393854278764068875","curiouskiwi#1671","10-Feb-19 04:42 AM","it shouldn't matter what you call it.","",""
+"393854278764068875","curiouskiwi#1671","10-Feb-19 04:43 AM","like `return jsonify(db.execute(""SELECT * .....`    with your query","",""
+"344531583010865177","SniperJoe#2194","13-Feb-19 06:44 AM","The API given in index.html `<script src=""https://maps.googleapis.com/maps/api/js?key=AIzaSyAgatq4KgsR2NHXXIG8YxiwncrsEz_xis8&v=3.exp""></script>` doesn't work, producing an error in the Javascript Console `Google Maps JavaScript API error: RefererNotAllowedMapError` I tried making my own API key but I need to setup an account for that.","",""
+"352468291169812480","db#2654","13-Feb-19 03:24 PM","Sorry for taking so long to respond. yes it returns a jsonify dict, I was just wondering if I wanted to call that returned dict what would I call?","",""
+"225282646178004994","L Ö Ö P S#7263","13-Feb-19 08:07 PM","I can't import. What is wrong with the SQL code?
+Also, in `US.txt` I see 10 columns and my code (followed from specifications) has 12. Is it even supposed to work like than? I've tried to remove ``admin_name3 varchar(100), admin_code3 varchar(20),`` but no success.","https://cdn.discordapp.com/attachments/395684859651031041/545304969423749122/Capture.PNG",""
+"352468291169812480","db#2654","13-Feb-19 11:04 PM","Do you know what error message you are getting?","",""
+"393854278764068875","curiouskiwi#1671","13-Feb-19 11:08 PM","US.txt has 12 columns of data (some are empty)","",""
+"455415794868682754","HarRi PotTer#3533","14-Feb-19 06:39 AM","My application.py index route does not have the API key setting mentioned in the  walkthroughs","",""
+"455415794868682754","HarRi PotTer#3533","14-Feb-19 06:39 AM","Is this intentional? or am I missing some distribution code?","",""
+"393854278764068875","curiouskiwi#1671","14-Feb-19 06:51 AM","Are you doing the CS50AP course?    If not, do know that the 2018 CS50x Mashup problem is no longer valid.","",""
+"225282646178004994","L Ö Ö P S#7263","14-Feb-19 08:11 PM","@db I see no error except for the one in the terminal. Is the any other place I should check?
+ @curiouskiwi Thanks for the info","",""
+"352468291169812480","db#2654","15-Feb-19 12:25 AM","You might want to  check to make sure all of the types work for each collumn.","",""
+"225282646178004994","L Ö Ö P S#7263","15-Feb-19 03:58 PM","The problem was that `US.txt` was actually in the `pset8` folder, not `mashup`.","",""
+"469756465863983124","Fer#1196","17-Mar-19 03:54 AM","Hi everyone. How to call the main function in js? I'm writing functions in the file, but I want to call one of them and that function handles every other function. 😒","",""
+"175637864808316928","NinjaCow31#7504","03-Apr-19 07:49 PM","http://learn.jquery.com/using-jquery-core/document-ready/","",""
+"175637864808316928","NinjaCow31#7504","03-Apr-19 07:50 PM","this function is automatically called when the html of the page is loaded @Fer","",""
+"469756465863983124","Fer#1196","08-Apr-19 07:33 PM","Ty @NinjaCow31","",""
+"399021249667399722","harbar20#9389","29-Apr-19 04:35 PM","how do i get the Google Maps Javascript API Key?","",""
+"399021249667399722","harbar20#9389","29-Apr-19 04:35 PM","my flask app won't run without it","",""
+"393854278764068875","curiouskiwi#1671","29-Apr-19 09:48 PM","@harbar20  not quite sure what's happening, but can you download a different version of the distribution code that doesn't require the key?   Here's the link:   ```wget http://cdn.cs50.net/2018/x/psets/8/mashup/mashup.zip```    (if you've already changed/written your own code in application.py or the templates, etc., be sure to copy them all to a new folder so you can then copy/paste them into the newer version)","",""
+"399021249667399722","harbar20#9389","29-Apr-19 09:48 PM","ok thanks!","",""
+"339585451226562561","Dane#7672","02-Jun-19 09:41 AM","Hey guys, I was going through my old PSETs from cs50 and noticed that in mashup, the google news RSS feeds are no longer available","",""
+"339585451226562561","Dane#7672","02-Jun-19 09:41 AM","I was wondering if anyone knew if there was a fix for this? Does anyone know of rss news feeds accessible by zipcode?","",""

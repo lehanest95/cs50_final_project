@@ -1,0 +1,414 @@
+AuthorID,Author,Date,Content,Attachments,Reactions
+"329977469350445069","Lord of Galaxy#9211","26-Dec-18 10:37 AM","New channels","",""
+"393854278764068875","curiouskiwi#1671","26-Dec-18 11:44 AM","just getting ready for 2019","",""
+"329977469350445069","Lord of Galaxy#9211","26-Dec-18 01:10 PM","interesting","",""
+"329977469350445069","Lord of Galaxy#9211","26-Dec-18 01:11 PM","Let's see what new challenges 2019 brings us","",""
+"219295627459166208","VelocityIsntSpeed#9490","28-Dec-18 06:01 PM","Is homepage going to replace speller, bleep replace sentimental, and survey replace similarities?","",""
+"393854278764068875","curiouskiwi#1671","28-Dec-18 10:25 PM","no.   they are new problems, but speller, sentimental and similarities are still here too.  (music has been removed)","",""
+"393854278764068875","curiouskiwi#1671","28-Dec-18 10:31 PM","Here's a sneak peek of the schedule for 2019 cs50x","https://cdn.discordapp.com/attachments/527358000999038976/528309138879676427/2019cs50x.png","💯 (5),👍 (3)"
+"219295627459166208","VelocityIsntSpeed#9490","29-Dec-18 10:33 PM","@curiouskiwi Were the already existing problems modified for 2019? And if so, will we have to do them again?","",""
+"393854278764068875","curiouskiwi#1671","29-Dec-18 11:08 PM","@VelocityIsntSpeed afaik, if you already had a problem graded, it will count for 2019, even if the problem is changed.  Prof Malan is working out the ""transition instructions"" which will be published on Jan 1.","",""
+"207503709746233345","Secure Me Musk#8567","03-Jan-19 05:33 PM","new year looking really strong for CS50. tbh music was my least favorite pset 😅","",""
+"397677328660037632","Maarten#1004","03-Jan-19 06:01 PM","I actually really enjoyed music haha","",""
+"224937960431157260","Penderrin#5312","16-Jan-19 06:59 AM","Should this be pointing to 2018 ... or 2019?","https://cdn.discordapp.com/attachments/527358000999038976/534959792821633044/unknown.png",""
+"393854278764068875","curiouskiwi#1671","16-Jan-19 07:10 AM","that's correct as is","",""
+"224937960431157260","Penderrin#5312","16-Jan-19 08:15 AM","Great!","",""
+"280154315098685441","MC Kevmeister#3166","20-Jan-19 02:16 AM","When we are printing the bleeped message, do we compare the  banned words stored in the set  to the words from the message stored in a list?","",""
+"280154315098685441","MC Kevmeister#3166","20-Jan-19 02:16 AM","How do you work with lists and sets at the same time?","",""
+"393854278764068875","curiouskiwi#1671","20-Jan-19 02:18 AM","well, if you had a set called `badwords` and a list called `text` ... for word in text:   if word in badwords:    ...etc.","",""
+"492450454341550100","WhipStreak23#6131","23-Jan-19 07:33 PM","How do you access a text file in python? 🤔","",""
+"492450454341550100","WhipStreak23#6131","23-Jan-19 07:49 PM","The `open` function doesn't exactly seem to work...","",""
+"393854278764068875","curiouskiwi#1671","23-Jan-19 09:10 PM","@WhipStreak23   ```python
+file = open(""file.txt"", ""r"")```  should work fine.","",""
+"535134130980257802","zingya#3821","24-Jan-19 03:30 AM","```
+:) bleep exists
+:) rejects len(sys.argv) less than 2
+:) rejects len(sys.argv) more than 2
+:( input of 'hello world' outputs 'hello world'
+    expected ""Hello world\n"", not ""hello world\n""
+:( input of 'This darn world' outputs 'This **** world'
+    expected ""This **** world..."", not ""this **** world...""
+:( input of 'THIS DARN WORLD' outputs 'THIS **** WORLD'
+    expected ""THIS **** WORLD..."", not ""this **** world...""
+:( doesn't censor substrings
+    expected ""Darning my sock..."", not ""darning my sock...""
+:( handles banned words lists with arbitrary words in them
+    expected ""My *** and *** ..."", not ""my *** and dog ...""
+```","",""
+"535134130980257802","zingya#3821","24-Jan-19 03:30 AM","getting these errors on check50","",""
+"535134130980257802","zingya#3821","24-Jan-19 03:30 AM","code","",""
+"535134130980257802","zingya#3821","24-Jan-19 03:30 AM","it seems to work when I test it in console","",""
+"535134130980257802","zingya#3821","24-Jan-19 03:30 AM","im confused","",""
+"393854278764068875","curiouskiwi#1671","24-Jan-19 04:23 AM","You're changing the case of the input when you shouldn't be.  ```:( input of 'THIS DARN WORLD' outputs 'THIS **** WORLD'
+    expected ""THIS **** WORLD..."", not ""this **** world...""```","",""
+"393854278764068875","curiouskiwi#1671","24-Jan-19 04:23 AM","etc","",""
+"393854278764068875","curiouskiwi#1671","24-Jan-19 04:25 AM","you shouldn't be saving the results of  .lower()    Why  not just use that when testing each word, rather than saving a new version?","",""
+"393854278764068875","curiouskiwi#1671","24-Jan-19 04:26 AM","@zingya ^^","",""
+"535134130980257802","zingya#3821","24-Jan-19 01:02 PM","@curiouskiwi I removed it and it fixed it","",""
+"535134130980257802","zingya#3821","24-Jan-19 01:02 PM","but","",""
+"535134130980257802","zingya#3821","24-Jan-19 01:02 PM","now DARN isnt == darn","",""
+"535134130980257802","zingya#3821","24-Jan-19 01:03 PM","so surely I do need to lowercase it ?","",""
+"535134130980257802","zingya#3821","24-Jan-19 01:03 PM","instead of `if number == banned:`","",""
+"535134130980257802","zingya#3821","24-Jan-19 01:03 PM","would `if number.lower() == banned:`","",""
+"535134130980257802","zingya#3821","24-Jan-19 01:04 PM","work?","",""
+"535134130980257802","zingya#3821","24-Jan-19 01:04 PM","idk why im asking im just going to try","",""
+"535134130980257802","zingya#3821","24-Jan-19 02:07 PM","@! Ben hey thanks thats what I basically was trying to say with my previous messages","",""
+"535134130980257802","zingya#3821","24-Jan-19 02:07 PM","then I tried it and it works","",""
+"535134130980257802","zingya#3821","24-Jan-19 02:07 PM","I understand that now","",""
+"535134130980257802","zingya#3821","24-Jan-19 02:08 PM","thanks 😄","",""
+"492450454341550100","WhipStreak23#6131","25-Jan-19 10:32 PM","```
+Traceback (most recent call last):
+  File ""bleep.py"", line 10, in <module>
+    main()
+  File ""bleep.py"", line 5, in main
+    file = open(sys.argv[1], ""r"")
+IndexError: list index out of range
+```","",""
+"492450454341550100","WhipStreak23#6131","25-Jan-19 10:33 PM","That's the error when I have this code : 
+```
+from cs50 import get_string
+import sys
+
+def main():
+    file = open(sys.argv[1], ""r"")
+    print(file[0])
+
+
+if __name__ == ""__main__"":
+    main()
+```","",""
+"393854278764068875","curiouskiwi#1671","25-Jan-19 10:35 PM","`file` is a file object.  what are you trying to print?","",""
+"492450454341550100","WhipStreak23#6131","25-Jan-19 10:36 PM","a word","",""
+"492450454341550100","WhipStreak23#6131","25-Jan-19 10:37 PM","`darn`","",""
+"393854278764068875","curiouskiwi#1671","25-Jan-19 10:40 PM","first, I'd make sure the file was actually opened.  You can wrap your open in a try/except like ```python
+    try:
+        file = open(sys.argv[1], ""r"")
+    except OSError:
+        sys.exit(""File not opened"")```","",""
+"492450454341550100","WhipStreak23#6131","25-Jan-19 10:42 PM","getting the same error : It was","",""
+"393854278764068875","curiouskiwi#1671","25-Jan-19 10:44 PM","so as I said, `file` is an object. You can't just print it directly.","",""
+"393854278764068875","curiouskiwi#1671","25-Jan-19 10:45 PM","you can iterate over it using a loop if you want to get individual words, or you can print the entire contents with `print(file.read())`","",""
+"393854278764068875","curiouskiwi#1671","25-Jan-19 10:45 PM","for the purposes of the Bleep problem, you probably want to take the words and add them to list (or maybe a set?)","",""
+"492450454341550100","WhipStreak23#6131","26-Jan-19 04:36 PM","Thanks @curiouskiwi, I finished Bleep.","","👍 (1)"
+"66419649960488960","IzaakDonaldson#2597","02-Feb-19 12:16 AM","```py
+def main():
+
+if __name__ == ""__main__"":
+    main()
+```
+
+Is it fine to do this problem set without these functions?","",""
+"393854278764068875","curiouskiwi#1671","02-Feb-19 02:29 AM","@IzaakDonaldson if you have no other functions, then it's fine to use a simple script without defining a `main` function.","","👍 (1)"
+"522241274364035092","phantomware#8056","11-Feb-19 01:58 AM","if i use `for w in words` to iterate through a list called words is there a way to change the items in the list or can they only be referenced?  Ie. I know I can do `if w = ...` but how do I change the value of `w` (more accurately the value at that index) in the array `words`?","",""
+"522241274364035092","phantomware#8056","11-Feb-19 01:58 AM","in this case do I have to iterate through the array using index reference?","",""
+"393854278764068875","curiouskiwi#1671","11-Feb-19 02:17 AM","you can't change the values so yes, use an index, like `for i in range(len(text)):` rather than `for word in text:`","",""
+"542404365248364557","Papounet94#9051","11-Feb-19 12:30 PM","Hi everyone I am having a trouble with check50 for the last test. with 'banned2.txt' file. I apparently do not catch the cat (no pun intended), but I have no way to understand the trouble if I cannot have access to banned2.txt.","",""
+"542404365248364557","Papounet94#9051","11-Feb-19 12:30 PM","😦 handles banned words lists with arbitrary words in them
+expected ""My *** and *** ..."", not ""My cat and *** ..."" 
+
+Log 
+running python bleep.py banned2.txt... 
+sending input My cat and dog are great... 
+checking for output ""My *** and *** are great ""... 
+
+Expected Output: 
+My *** and *** are great
+Actual Output: 
+My cat and *** are great","",""
+"542404365248364557","Papounet94#9051","11-Feb-19 12:31 PM","sorry the copy/paste of the Result didn't work well","",""
+"542404365248364557","Papounet94#9051","11-Feb-19 12:34 PM","here is a screen capture","https://cdn.discordapp.com/attachments/527358000999038976/544466190584774666/Capture_decran_2019-02-11_a_11.33.39.png",""
+"542404365248364557","Papounet94#9051","11-Feb-19 12:40 PM","Forget it! I have figured out what is my problem. I can be so dumb sometimes ... 😭","",""
+"224937960431157260","Penderrin#5312","16-Feb-19 04:22 PM","@Papounet94 Nice!  I also feel like almost every single bug I make is in the ""so dumb"" category.","",""
+"247039406802862082","sampJ#2249","17-Feb-19 07:34 PM","im using this code to make a list from the banned.txt
+``` # makes a list of every line from file
+        ban_list = file.readlines()```","",""
+"247039406802862082","sampJ#2249","17-Feb-19 07:35 PM","but  then i cant work out how to remove \n with the strip() function","",""
+"247039406802862082","sampJ#2249","17-Feb-19 07:35 PM","any help ?>","",""
+"224937960431157260","Penderrin#5312","18-Feb-19 06:08 AM","@sampJ  Check out https://docs.python.org/3/library/stdtypes.html#str.rstrip","",""
+"247039406802862082","sampJ#2249","18-Feb-19 10:07 AM","Like rstrip('\n') ?","",""
+"247039406802862082","sampJ#2249","18-Feb-19 01:13 PM","I already used rstrip in a for loop but that didnt replace the original values.. Now i get it. I used a counter to store the values in the original list","",""
+"224937960431157260","Penderrin#5312","19-Feb-19 03:55 AM","@sampJ Nice!","","👌 (1)"
+"492450454341550100","WhipStreak23#6131","19-Feb-19 04:33 PM","`sys.stdout.write` is pretty good too but quite long : https://stackoverflow.com/questions/3263672/the-difference-between-sys-stdout-write-and-print","",""
+"330647206023528449","kelechy#8060","22-Feb-19 05:07 PM","`input: gosh darn it`
+`expected: **** **** it`
+`my code: ********it`","",""
+"330647206023528449","kelechy#8060","22-Feb-19 05:07 PM","any help on print issue","",""
+"330647206023528449","kelechy#8060","22-Feb-19 05:16 PM","https://pastebin.com/JfnzvGvj","",""
+"330647206023528449","kelechy#8060","22-Feb-19 05:20 PM","nvm.. fixed it","",""
+"330647206023528449","kelechy#8060","22-Feb-19 05:24 PM","i dont understand the error
+https://cs50.me/checks/ab2423e9178ebbd1f692034a90a22be073f5fba7","",""
+"330647206023528449","kelechy#8060","22-Feb-19 05:24 PM","pls help","",""
+"330647206023528449","kelechy#8060","22-Feb-19 05:59 PM","","https://cdn.discordapp.com/attachments/527358000999038976/548534273058013184/error.JPG",""
+"330647206023528449","kelechy#8060","22-Feb-19 06:10 PM","nvm.. fixed it","",""
+"299665471396118532","Nyandereian#6481","06-Mar-19 11:49 PM","not sure what I should do about this","https://cdn.discordapp.com/attachments/527358000999038976/552971115824283699/Schermopname_226.png",""
+"299665471396118532","Nyandereian#6481","06-Mar-19 11:49 PM","I didn't touch this prewritten code","",""
+"393854278764068875","curiouskiwi#1671","07-Mar-19 12:00 AM","add another newline before it","",""
+"299665471396118532","Nyandereian#6481","07-Mar-19 12:09 AM","ah haha okay","",""
+"299665471396118532","Nyandereian#6481","07-Mar-19 12:09 AM","thnx","",""
+"242010922611245056","armchair#4520","12-Mar-19 05:46 PM","Lawrence has arrived boiz","",""
+"242010922611245056","armchair#4520","12-Mar-19 05:47 PM","Sentimental was a nice way of getting to know the ins and outs of python. Also a good rehersal of previously acquired knowledge and seeing in what ways python differs from C.","",""
+"299665471396118532","Nyandereian#6481","15-Mar-19 11:16 PM","yushh","",""
+"134426631379877888","thrake#3514","20-Mar-19 11:56 AM","Is there a mistake in the specification for speller?","",""
+"134426631379877888","thrake#3514","20-Mar-19 11:56 AM","it says","",""
+"134426631379877888","thrake#3514","20-Mar-19 11:56 AM","""You may assume that any text files the staff tests with will have one word per line (each line terminated with a \n), and any alphabetic characters in those words will be lowercase.""","",""
+"134426631379877888","thrake#3514","20-Mar-19 11:56 AM","and when i run check50 i run into the error:","https://cdn.discordapp.com/attachments/527358000999038976/557865111507828737/Bildschirmfoto_2019-03-20_um_10.56.40.png",""
+"134426631379877888","thrake#3514","20-Mar-19 11:57 AM","ah nvm, that is for the bannedWord files","",""
+"109132404450410496","Pook#5879","10-Jun-19 09:06 AM","I wonder how many people have quit up to this point","",""
+"234679095378706433","Blauelf#6622","11-Jun-19 01:58 PM","Don't have official numbers (there were some for a previous year, can't find it), but I guess `speller` hit hard.","",""
+"138076956762701825","Ryan#3894","12-Jun-19 05:03 PM","I finished Bleep :D","",""
+"116388284376154116","AndrewHI#7952","13-Jun-19 03:59 PM","My code seems to be working fine but I'm getting this error when I run check50","https://cdn.discordapp.com/attachments/527358000999038976/588714024393375755/unknown.png",""
+"116388284376154116","AndrewHI#7952","13-Jun-19 04:02 PM","Ah I see I needed to use exit(1) instead of return 1","",""
+"288782447704014861","Aarif#4801","16-Jul-19 04:03 AM","https://gyazo.com/f498e407acb20303c6cb7f90e5231e4b","",""
+"288782447704014861","Aarif#4801","16-Jul-19 04:03 AM","I'm dealing with this annoying  error:","",""
+"288782447704014861","Aarif#4801","16-Jul-19 04:04 AM","","https://cdn.discordapp.com/attachments/527358000999038976/600492831009800192/unknown.png",""
+"323564643358605322","Nornor#4436","16-Jul-19 04:17 AM","Can u try adjusting the if statement","",""
+"288782447704014861","Aarif#4801","16-Jul-19 04:22 AM","god bless you","",""
+"323564643358605322","Nornor#4436","16-Jul-19 05:35 AM","glad it worked","",""
+"254780208811343873","Animaster7#5593","17-Jul-19 03:24 AM","Is returning True necessary in a function, or will it do this automatically as long as the function works?","",""
+"323564643358605322","Nornor#4436","17-Jul-19 03:30 AM","In Python, functions don't have to return something but if u want them to return sth they will.","",""
+"254780208811343873","Animaster7#5593","17-Jul-19 04:24 AM","ok thanks","",""
+"323564643358605322","Nornor#4436","17-Jul-19 04:59 AM","did that answer ur question tho?","",""
+"254780208811343873","Animaster7#5593","17-Jul-19 08:46 PM","yes","",""
+"263519112515289089","shinxr#0424","20-Jul-19 01:04 AM","is it cheating to just make a bunch of strings that equal the words or do i have to rip the words from the list? i know a way to do it because ive done something similar in java in school but I had to make a bunch of strings","",""
+"393854278764068875","curiouskiwi#1671","20-Jul-19 01:18 AM","not sure what you mean...  you are given a text file of censored words, you ask the user for a string, and then you compare each word to your censored list and print either the word or the censored stars.","",""
+"393854278764068875","curiouskiwi#1671","20-Jul-19 01:18 AM","""just make a bunch of strings""...  what do you mean by that?","",""
+"263519112515289089","shinxr#0424","20-Jul-19 01:37 AM","i was thinking of making each word a string and using a making a for loop to go though 1 letter at a time and compare it every time","",""
+"263519112515289089","shinxr#0424","20-Jul-19 01:38 AM","im trying to figure out how to do it as intended anyways so i guess it doesnt really matter","",""
+"263519112515289089","shinxr#0424","20-Jul-19 01:39 AM","my code spits out <_io.TextIOWrapper name='banned.txt' mode='r' encoding='UTF-8'> when i run it and right now it looks like this:
+```
+from cs50 import get_string
+from sys import argv
+
+
+def main():
+    # TODO
+    if len(argv)!=2:
+        return 1
+    words = open(argv[1], 'r')
+    print(words)
+
+
+
+if __name__ == ""__main__"":
+    main()
+```","",""
+"263519112515289089","shinxr#0424","20-Jul-19 01:39 AM","so that print is giving me that <_io.TextIOWrapper thing","",""
+"263519112515289089","shinxr#0424","20-Jul-19 01:39 AM","instead of the text","",""
+"263519112515289089","shinxr#0424","20-Jul-19 01:39 AM","inside","",""
+"393854278764068875","curiouskiwi#1671","20-Jul-19 01:43 AM","you have to read from `words` and store each word in a list or maybe a set?","",""
+"263519112515289089","shinxr#0424","20-Jul-19 01:43 AM","no lemme try","",""
+"263519112515289089","shinxr#0424","20-Jul-19 09:05 PM","ok this is the only problem mine now has and i have no clue why theres 4 added astricts, is there something in the banned2.txt that i cant see? like did they put 4 spaces after cat and dog just to mess with it?","",""
+"263519112515289089","shinxr#0424","20-Jul-19 09:05 PM","","https://cdn.discordapp.com/attachments/527358000999038976/602199418363445263/unknown.png",""
+"263519112515289089","shinxr#0424","20-Jul-19 09:05 PM","ill post the code but delete it later since its basically finished","",""
+"263519112515289089","shinxr#0424","20-Jul-19 09:42 PM","nvm figured it out","",""
+"508382519146709018","Amar S. Gill#4588","21-Jul-19 01:40 PM","working through some data manipulation right now. I am unable to lop off the '\n' at the end of each banned word wether it is stored in list or set","",""
+"508382519146709018","Amar S. Gill#4588","21-Jul-19 01:40 PM","well set entries are immutable","",""
+"508382519146709018","Amar S. Gill#4588","21-Jul-19 01:40 PM","do I even need to lop off '\n'??","",""
+"508382519146709018","Amar S. Gill#4588","21-Jul-19 01:41 PM","because str.split entries do not have them","",""
+"508382519146709018","Amar S. Gill#4588","21-Jul-19 01:41 PM","i beleive it to be getting in way of use in operator on my banned_words_set","",""
+"508382519146709018","Amar S. Gill#4588","21-Jul-19 01:43 PM","nvm","",""
+"508382519146709018","Amar S. Gill#4588","21-Jul-19 01:43 PM","my answer is in the hints section of the pset","",""
+"508382519146709018","Amar S. Gill#4588","21-Jul-19 01:43 PM","on wards","",""
+"347682143159320577","nullableVoid*#7225","21-Jul-19 02:55 PM","@Amar S. Gill strip()","",""
+"593369406810226699","Jammar#8645","31-Jul-19 12:01 PM","I'm quite happy by writing main() in, what, 15-20 lines! Did anyone do even better? feel free to share in PM","",""
+"593369406810226699","Jammar#8645","31-Jul-19 12:06 PM","Is there any way to measure my code in efficiency?","",""
+"456226577798135808","Deleted User#0000","02-Aug-19 06:14 AM","","https://cdn.discordapp.com/attachments/527358000999038976/606686223771238410/helloerror.png",""
+"456226577798135808","Deleted User#0000","02-Aug-19 06:14 AM","","https://cdn.discordapp.com/attachments/527358000999038976/606686227139264513/helloterminal.png",""
+"456226577798135808","Deleted User#0000","02-Aug-19 06:15 AM","","https://cdn.discordapp.com/attachments/527358000999038976/606686437768691732/oogabooga.png",""
+"456226577798135808","Deleted User#0000","02-Aug-19 06:15 AM","??????","",""
+"456226577798135808","Deleted User#0000","02-Aug-19 06:16 AM","I think that the check50 is messed up... if you look at the log it says it's sending Hello world (capital h) but it's expecting lowercase h","",""
+"456226577798135808","Deleted User#0000","02-Aug-19 06:16 AM","That's the only thing that makes sense, cause it's returning hello world, and it works on every other input","",""
+"456226577798135808","Deleted User#0000","02-Aug-19 06:40 AM","ah","",""
+"456226577798135808","Deleted User#0000","02-Aug-19 06:40 AM","it works now?","",""
+"456226577798135808","Deleted User#0000","02-Aug-19 06:40 AM","I just reloaded the page","",""
+"530135855415820288","Kontrary#1502","11-Aug-19 08:34 PM","It even stars out non-alphabetic chars","",""
+"393854278764068875","curiouskiwi#1671","11-Aug-19 09:43 PM","`if s not in bannedwords:`  is the syntax you want","",""
+"530135855415820288","Kontrary#1502","12-Aug-19 01:53 AM","ohh","",""
+"530135855415820288","Kontrary#1502","12-Aug-19 01:53 AM","thanks!!","",""
+"574512800710393885","mann#4607","04-Sep-19 01:19 PM","how to compare word with every element of set? Any suggestiom/help. Thanks","https://cdn.discordapp.com/attachments/527358000999038976/618752096623394816/SPOILER_unknown.png",""
+"234679095378706433","Blauelf#6622","04-Sep-19 02:33 PM","Do not name your variable `set`, but use a Python `set`. And you can use the `in` operator. Also, don't extend the `with` beyond the point where you need the file to be open.","",""
+"342168976123756548","A-A-RON#1271","04-Sep-19 10:33 PM","tolower() is not python 🙂","",""
+"342168976123756548","A-A-RON#1271","04-Sep-19 10:33 PM","@mann","",""
+"574512800710393885","mann#4607","05-Sep-19 04:45 AM","Thanks @Blauelf, thanks @A-A-RON","",""
+"574512800710393885","mann#4607","05-Sep-19 04:54 AM","using a python set means only reading the text file via command line in program, do i need not to store  the individual banned word in program?","",""
+"393854278764068875","curiouskiwi#1671","05-Sep-19 04:55 AM","you are storing the words in a set","",""
+"574512800710393885","mann#4607","05-Sep-19 04:57 AM","ok, is it just the use of curly braces instead of round","",""
+"393854278764068875","curiouskiwi#1671","05-Sep-19 04:58 AM","well, you might just declare an empty set like this  `words = set()`","",""
+"393854278764068875","curiouskiwi#1671","05-Sep-19 04:58 AM","and then iterate over your file object (that you get from opening the file) and add each word to the set","",""
+"574512800710393885","mann#4607","05-Sep-19 04:59 AM","ok thanks!","",""
+"574512800710393885","mann#4607","05-Sep-19 05:43 AM","How to remove new line from every words appearing in the set?","https://cdn.discordapp.com/attachments/527358000999038976/618999539067518979/SPOILER_unknown.png",""
+"393854278764068875","curiouskiwi#1671","05-Sep-19 05:53 AM","if you search the python docs, you'll find this  https://docs.python.org/3.7/library/stdtypes.html?highlight=rstrip#str.rstrip","",""
+"574512800710393885","mann#4607","05-Sep-19 05:58 AM","Thanks","",""
+"574512800710393885","mann#4607","05-Sep-19 01:07 PM","Do we need to use replace function to remove banned words from input ?","https://cdn.discordapp.com/attachments/527358000999038976/619111275540250637/SPOILER_unknown.png",""
+"342168976123756548","A-A-RON#1271","05-Sep-19 08:00 PM","@mann i didn't use replace() in my program","",""
+"342168976123756548","A-A-RON#1271","05-Sep-19 08:02 PM","```if __name__ == __main__:```","",""
+"342168976123756548","A-A-RON#1271","05-Sep-19 08:03 PM","why is this check even needed in the case where i know i'll be running my program, (not importing it). why can't i just straight-up call `main()` on my last line of code?","",""
+"574512800710393885","mann#4607","06-Sep-19 01:45 PM","@A-A-RON  thanks, but how i will replace the banned word with * ?","",""
+"234679095378706433","Blauelf#6622","06-Sep-19 02:53 PM","One of my solutions would `split` the string at spaces, check each of the ""words"" against the list, then `"" "".join()` it again. Used a list comprehension for the middle part, really like those.","",""
+"574512800710393885","mann#4607","06-Sep-19 03:04 PM","Thanks @Blauelf","",""
+"574512800710393885","mann#4607","06-Sep-19 03:07 PM","My aim is to check each word in  the list (in the form of string) to compare with  every words in set now (although backslash n is also coming in set) and then bleep the banned word. Any help, much appreciated!","https://cdn.discordapp.com/attachments/527358000999038976/619503952626581504/SPOILER_unknown.png",""
+"234679095378706433","Blauelf#6622","06-Sep-19 03:23 PM","Don't forget to strip the newline for `words`. And the `in` operator helps with comparison.","",""
+"603294110614552587","noob4ever#1127","06-Sep-19 06:07 PM","I have everything right except for the exit code. I return 1 when there are not two arguments, but when I execute ```echo $?``` after my program exits due to the wrong number of arguments I see a 0. What am I missing.","https://cdn.discordapp.com/attachments/527358000999038976/619549190187646986/SPOILER_argv.PNG",""
+"603294110614552587","noob4ever#1127","06-Sep-19 06:07 PM","","https://cdn.discordapp.com/attachments/527358000999038976/619549225092513792/SPOILER_argverrors.PNG",""
+"234679095378706433","Blauelf#6622","06-Sep-19 06:11 PM","Use `sys.exit(1)`","",""
+"603294110614552587","noob4ever#1127","06-Sep-19 06:20 PM","Thanks @Blauelf  that did the trick. What is the difference between ```return 1``` and ```sys.exit(1)``` My thinking was that by calling return it would exit the ""main"" function aka the program and the exit code would be ""1"". This does not appear to be the case though.","",""
+"234679095378706433","Blauelf#6622","06-Sep-19 07:01 PM","`main` in Python is a function like any, its return value has no special meaning. `exit` is how you end with an exit code.","",""
+"603294110614552587","noob4ever#1127","06-Sep-19 08:03 PM","So in C main was the program itself and using a ```return 1;``` was the exit code returned to the system aka the operating system. In python, because python is running the program and it is not compiled, return 1 just returns 1 to python and not the system. However, using sys.exit(1) tells python itself to return 1 to the OS it is running on. I think I may be **way** confused with this. If you happen to have a link to a resource that would explain this if I am wrong it might be easier. I've been googling around the past hour or so and still haven't found anything which explains this well.","",""
+"574512800710393885","mann#4607","07-Sep-19 04:49 AM","Thanks @Blauelf","",""
+"574512800710393885","mann#4607","07-Sep-19 05:11 AM","strip and rstrip is not helping. do i need to iterate over the set of words to remove \n from each line?","",""
+"393854278764068875","curiouskiwi#1671","07-Sep-19 05:15 AM","you can strip the newline as you add the word to the set","",""
+"393854278764068875","curiouskiwi#1671","07-Sep-19 05:16 AM","if you have a string `word = ""word\n""`, then   `word.strip(""\n"")`  will return ""word""","",""
+"393854278764068875","curiouskiwi#1671","07-Sep-19 05:19 AM","or even simpler `word.strip()`  since that by default will strip a newline from the end","",""
+"574512800710393885","mann#4607","07-Sep-19 05:20 AM","Thanks @curiouskiwi","",""
+"574512800710393885","mann#4607","07-Sep-19 01:24 PM","I have these two steps left, please dont tell me the solution. Just can anyone give more focus on the available option, that would be highly appreciated","https://cdn.discordapp.com/attachments/527358000999038976/619840485430657024/SPOILER_unknown.png",""
+"234679095378706433","Blauelf#6622","07-Sep-19 06:31 PM","I guess you don't mean `x.islower` (which is a function, as you did not add parentheses), but `x.lower()` (which is a string)","",""
+"574512800710393885","mann#4607","08-Sep-19 04:46 AM","Thanks @Blauelf","",""
+"574512800710393885","mann#4607","08-Sep-19 05:33 AM","Why it is not replacing banned words? if i use words for replacing it is showing no instance of set()","https://cdn.discordapp.com/attachments/527358000999038976/620084271859630092/SPOILER_unknown.png",""
+"393854278764068875","curiouskiwi#1671","08-Sep-19 05:44 AM","shouldn't you check if each item in y is in words?","",""
+"574512800710393885","mann#4607","08-Sep-19 05:50 AM","i tried to check before if  y in words, but showing unhashable type: list, i reversed if words in y:","",""
+"393854278764068875","curiouskiwi#1671","08-Sep-19 05:50 AM","I suggest you shouldn't put the user input into a list","",""
+"393854278764068875","curiouskiwi#1671","08-Sep-19 05:50 AM","but just iterate over it as a string","",""
+"393854278764068875","curiouskiwi#1671","08-Sep-19 05:52 AM","if you have a string  called y = ""heck yeah"", then `for item in y:` will let you access each word, and you can then check if item in words","",""
+"574512800710393885","mann#4607","08-Sep-19 05:55 AM","ok thanks let me check","",""
+"574512800710393885","mann#4607","08-Sep-19 01:09 PM","The output is not changin, that means there is no operation of replacement. can anyone shed light on this? Thanks","https://cdn.discordapp.com/attachments/527358000999038976/620198926808514561/SPOILER_unknown.png",""
+"234679095378706433","Blauelf#6622","08-Sep-19 02:29 PM","You need to either use the index to assign a different word, or create your own list. Did I tell you how much I like list comprehensions? :D
+(though a loop appending words to the new list would work as well, and even `map` with a lambda does)","",""
+"574512800710393885","mann#4607","08-Sep-19 03:00 PM","Yeah, thanks for your time Blauelf,  you mean to say i should create a new list of banned word and then defining a function to remove thos words and then iterate and then calling that function to remove those banned words?","",""
+"234679095378706433","Blauelf#6622","08-Sep-19 03:27 PM","I mean - you have a list of words in user input. You could create a new list of words, with some words sanitized.","",""
+"574512800710393885","mann#4607","09-Sep-19 04:53 AM","Hey @curiouskiwi  but in the specification it is mentioned to tokenize the user input through the use of split function into list. I followed the rest as you suggested but still no output. By the way , thanks for your time and attention!","https://cdn.discordapp.com/attachments/527358000999038976/620436686484013076/SPOILER_unknown.png",""
+"393854278764068875","curiouskiwi#1671","09-Sep-19 04:58 AM","well, mine was an alternate way since your way wasn't working.  If you've got the words into a list `y`, then you only need to iterate over `y` to see if the word is in your banned set.","",""
+"393854278764068875","curiouskiwi#1671","09-Sep-19 04:59 AM","I don't see why `if y in words:` wasn't working for you originally.","",""
+"574512800710393885","mann#4607","09-Sep-19 05:02 AM","Thanks i will check again","",""
+"574512800710393885","mann#4607","09-Sep-19 05:05 AM","Because it checks and gives the attribute error for list","https://cdn.discordapp.com/attachments/527358000999038976/620439728612966400/SPOILER_unknown.png",""
+"393854278764068875","curiouskiwi#1671","09-Sep-19 05:07 AM","you can't use replace on a list like that.  you need to think of another way to deal with it. I'd suggest that you start with a new empty list that you add either the existing word or the altered (all * word) to.","",""
+"574512800710393885","mann#4607","09-Sep-19 05:38 AM","Thanks @curiouskiwi  the purpose of my breaking user input of string to list  was to check case sensitivity as instructed in the specification, but that requiremnt is also not fulfilled in my code, should i check that first ? Then can i proceed with original user input which is stored in the variable x?","https://cdn.discordapp.com/attachments/527358000999038976/620447925561982986/SPOILER_unknown.png",""
+"393854278764068875","curiouskiwi#1671","09-Sep-19 06:25 AM","you can just lowercase the word before checking, all in one step with `.lower()`","",""
+"393854278764068875","curiouskiwi#1671","09-Sep-19 06:25 AM","that way ""Darn"" and ""darn"" will both match ""darn""","",""
+"574512800710393885","mann#4607","09-Sep-19 07:56 AM","Thanks","",""
+"574512800710393885","mann#4607","10-Sep-19 05:23 AM","this one is replacing whole word of user input, i already tried with set z but attribute error as set has not replace. Any other way?","https://cdn.discordapp.com/attachments/527358000999038976/620806446489141250/SPOILER_unknown.png",""
+"574512800710393885","mann#4607","10-Sep-19 05:54 AM","how to sanitize the banned words in new list?","",""
+"380342830369079296","Antony Mikhael#5177","10-Sep-19 09:53 AM","why doesn't it work when  including argv[1] but works when directly including the banned.txt ? what is wrong with my thought process ?","https://cdn.discordapp.com/attachments/527358000999038976/620874482864619540/bleep_problem.mp4",""
+"234679095378706433","Blauelf#6622","10-Sep-19 09:55 AM","Use variable `openfile`, not string constant `'openfile'`.","",""
+"234679095378706433","Blauelf#6622","10-Sep-19 10:01 AM","@mann I would not use `replace` at all. Maybe if you used regular expressions, but that's a big topic on its own. Here it should be sufficient to check whether the words are in your banned list, much like the list comprehension you have.
+It's confusing how you use `words` for different things.","",""
+"234679095378706433","Blauelf#6622","10-Sep-19 10:04 AM","@Antony Mikhael Also, I would recommend checking out the `with` keyword, makes file handling nicer.","","👍 (1)"
+"380342830369079296","Antony Mikhael#5177","10-Sep-19 10:05 AM","thanks but why don't we use the 'openfile' ? the documentation I found states the example with ' before and after the file name  ?","https://cdn.discordapp.com/attachments/527358000999038976/620877511215284234/dfhdsfhdh.jpg",""
+"380342830369079296","Antony Mikhael#5177","10-Sep-19 10:08 AM","I am sorry for asking such a basic question but I could either rely on someone every time my code doesn't work or find a  way to understand the core problem which  is  understanding how to use the documentation better . ? so how do I know that I shouldn't include ' before and after the file name from the documentation ?","",""
+"380342830369079296","Antony Mikhael#5177","10-Sep-19 10:19 AM","@Blauelf  honestly I had no idea that the keyword ""with"" existed until you have just suggested it now ,thanks alot .  but is it  normal that  we have to dig around to find these type of stuff by chance or am I missing something from the course ?","",""
+"234679095378706433","Blauelf#6622","10-Sep-19 10:29 AM","The `'workfile'` of the example describes a file of that name, not a file name stored in a variable. Small differences in how string literals can be formatted, otherwise same as in C.
+And while I prefer using `with`, you'll find enough examples closing the file manually. Python's documentation is a bit... interesting. They have some official tutorial which isn't that bad.","",""
+"234679095378706433","Blauelf#6622","10-Sep-19 10:30 AM","And yeah, at this point in the course, digging is expected. Just be careful when digging up an answer on StackOverflow from 2009, it might no longer apply.","",""
+"234679095378706433","Blauelf#6622","10-Sep-19 10:31 AM","Typing the right search queries is a skill to train, too.","",""
+"380342830369079296","Antony Mikhael#5177","10-Sep-19 10:32 AM","oh okay thanks alot , that is really helpful . I really appreciate your help","",""
+"574512800710393885","mann#4607","10-Sep-19 01:03 PM","Thanks @Blauelf its done now, but did that without list comprehension, the error shown is i not defined, any hint on to fix this","https://cdn.discordapp.com/attachments/527358000999038976/620922213930893312/SPOILER_unknown.png",""
+"234679095378706433","Blauelf#6622","10-Sep-19 01:06 PM","I would not use an `if` clause for the `for`, but one for the value, like `A(x) if cond else B(x) for x in my_list`","",""
+"574512800710393885","mann#4607","10-Sep-19 01:10 PM","ok thanks @Blauelf  i will check","",""
+"574512800710393885","mann#4607","10-Sep-19 02:46 PM","Hey @Blauelf  how to define i, before i get this error? As we know in python code is read from top to bottom and from left to right","https://cdn.discordapp.com/attachments/527358000999038976/620948164240736256/SPOILER_unknown.png",""
+"234679095378706433","Blauelf#6622","10-Sep-19 07:46 PM","`y=` without index","",""
+"574512800710393885","mann#4607","11-Sep-19 05:01 AM","Now showing, typerror","https://cdn.discordapp.com/attachments/527358000999038976/621163465385705482/SPOILER_unknown.png",""
+"234679095378706433","Blauelf#6622","11-Sep-19 09:34 AM","What about switching to reasonable variable names? You want the word or the censored word, not the whole list. For an iterable, you can do like `for item in array`, without `range`. Won't give the index, which is fine here.","",""
+"509216408027267072","uman230#0233","30-Sep-19 05:47 AM","","https://cdn.discordapp.com/attachments/527358000999038976/628060263723302927/unknown.png",""
+"509216408027267072","uman230#0233","30-Sep-19 05:47 AM","im seeing this when i run `style50` not sure how to fix it","",""
+"393854278764068875","curiouskiwi#1671","30-Sep-19 05:52 AM","Is that formatted like this?  left aligned  ```python
+if __name__ == ""__main__"":
+    main()
+```","",""
+"393854278764068875","curiouskiwi#1671","30-Sep-19 05:52 AM","and with at least 2 empty lines above it?","",""
+"509216408027267072","uman230#0233","30-Sep-19 06:11 AM","yeah i needed to add an extra newline above it","",""
+"509216408027267072","uman230#0233","30-Sep-19 06:11 AM","thanks","",""
+"301525325945241611","Pyroberry#1980","21-Oct-19 01:29 PM","what is exit code 1 and exit code 0?","",""
+"623156179081756672","sai#1028","21-Oct-19 02:00 PM","my bleep showing 91 accuracy on submission eventhough it passed all test cases and style50","",""
+"623156179081756672","sai#1028","21-Oct-19 02:07 PM","got it just resubmited it","",""
+"166251424873709570","Grimrath#0353","21-Oct-19 08:56 PM","Yeah, the automated check50 tests for submit50 seems to give you incorrect scoring for seemingly no reason some times.","",""
+"166251424873709570","Grimrath#0353","21-Oct-19 08:57 PM","This is the same file (bleep.py) submitted 3 times in a row with different scores each time.","https://cdn.discordapp.com/attachments/527358000999038976/635899393949696000/unknown.png",""
+"393854278764068875","curiouskiwi#1671","21-Oct-19 09:05 PM","when that happens, it generally means that your program is doing something strange with memory.","",""
+"393854278764068875","curiouskiwi#1671","21-Oct-19 09:07 PM","or something to do with how you are asking for user input.","",""
+"166251424873709570","Grimrath#0353","21-Oct-19 09:08 PM","Can I send you the code to see if I'm doing something wrong? Because I have no idea at all","",""
+"393854278764068875","curiouskiwi#1671","21-Oct-19 09:11 PM","I can see it in the submissions. I don't see anything wrong either. I think perhaps check50 was just running slowly, but I'll ask the team.","",""
+"166251424873709570","Grimrath#0353","21-Oct-19 09:11 PM","Very grateful, thanks @curiouskiwi","",""
+"393854278764068875","curiouskiwi#1671","21-Oct-19 09:12 PM","in the meantime, looks like your latest got 8/8 so you're all set with it","",""
+"393854278764068875","curiouskiwi#1671","21-Oct-19 09:25 PM","@Grimrath so it does look like some sort of timing issue which only happens occasionally (I ran check50 on your code 5x and it got 8/8 each time).  But we think it might be because of the newline char at the beginning of your prompt:  ```inmessage = get_string(""\nWhat message would you like to censor?\n"")```  that might confuse check50's test for a prompt. (it sees the empty line first and reports a missing prompt)","",""
+"393854278764068875","curiouskiwi#1671","21-Oct-19 09:26 PM","as I said, no action required on your part now since you have the 8/8 score as your latest.","",""
+"166251424873709570","Grimrath#0353","21-Oct-19 09:27 PM","I'll clean it up in the local file. Will keep that in mind going forward! Thanks 🙂","",""
+"263639668451573762","Straight#3244","28-Oct-19 09:05 PM","The only check50 i'm not passing is rejects len(sys.argv) more than 2, but shouldn't my 
+```python
+if len(argv[1]) != 2:
+        print(""Usage: python bleep.py list"")
+        exit```
+handle that?","",""
+"393854278764068875","curiouskiwi#1671","28-Oct-19 09:07 PM","does the spec say you need to exit with a particular code?","",""
+"263639668451573762","Straight#3244","28-Oct-19 09:07 PM","Oh yeah it does! I didn't see that, i'll try!","",""
+"263639668451573762","Straight#3244","28-Oct-19 09:11 PM","It works, but i think i have the error where sometimes it'll give me random errors (like the guy above me).","",""
+"263639668451573762","Straight#3244","28-Oct-19 09:11 PM","I got these results, running the exact same code.","https://cdn.discordapp.com/attachments/527358000999038976/638454823674445825/unknown.png",""
+"393854278764068875","curiouskiwi#1671","29-Oct-19 10:57 PM","@Straight that looks like a timeout issue with check50. Can you try again? we've made some changes.","",""
+"263639668451573762","Straight#3244","29-Oct-19 10:57 PM","I did submit 50, and it was luckily a 8/8 😃","",""
+"490979026433867776","jhr_pato92#9062","09-Nov-19 01:54 AM","seems like others have the same problem as me..","",""
+"490979026433867776","jhr_pato92#9062","09-Nov-19 01:55 AM","but i'm only getting 3/8 every time..","",""
+"490979026433867776","jhr_pato92#9062","09-Nov-19 01:58 AM","@curiouskiwi  any idea what i am doing wrong with my code? https://pastebin.com/U41CX8p2","",""
+"393854278764068875","curiouskiwi#1671","09-Nov-19 05:49 AM","the only issue I see is that you aren't handling uppercase letters.","",""
+"489113470281973760","gonefishing★#0147","21-Nov-19 01:28 AM","is there anything wrong with using str.replace()? (provided I put the right code around it)","",""
+"541265994363043851","AFRS#7371","26-Nov-19 11:58 AM","How i can remove \n from items in list 🤔","",""
+"541265994363043851","AFRS#7371","26-Nov-19 12:19 PM","By added i=i. rstrip(\n)","",""
+"541265994363043851","AFRS#7371","26-Nov-19 02:47 PM","","https://cdn.discordapp.com/attachments/527358000999038976/648867460908580868/Screenshot_20191126_154713_com.android.gallery3d.jpg",""
+"541265994363043851","AFRS#7371","26-Nov-19 02:47 PM","Any advice 😥","",""
+"451947267558080512","Don Draper#8540","26-Nov-19 09:52 PM","why doesn't .replace work on the list?","",""
+"393854278764068875","curiouskiwi#1671","26-Nov-19 09:53 PM","@Don Draper are you sure it's a list?  And you didn't return a list inside a list?","",""
+"451947267558080512","Don Draper#8540","26-Nov-19 09:57 PM",".replace only returns the string that was replaced, not the list itself. I'll have to do more work on it then","",""
+"451947267558080512","Don Draper#8540","26-Nov-19 10:25 PM","Should we try to be pythonic in our code?","",""
+"153264387178758144","hi im steven#6206","30-Nov-19 02:20 AM","@Don Draper Whatever works, you're going to be moving on anyway.","",""
+"584361025789362196","Günay Karaoğlu#8291","31-Dec-19 09:09 PM","can someone halp me :
+```
+from cs50 import get_string
+from sys import argv
+
+def main():
+    banned=[]
+    message=[]
+  # f=open(argv[1],""r"")
+    f=open(""banned.txt"",""r"")
+    for i in f:
+        banned.append(i)
+    text=get_string(""What message would you like to censor?"")
+    words=text.split(' ')
+    text=""""
+    for word in words:
+        a=0
+        for ban in banned:
+            if ban == word:
+                a=1
+        if a==1:
+            word =""""len(word )
+        if word  is not words[0]:
+            text +="" ""+word
+        else:
+            text+=word
+    print(text)
+if name == ""main"":
+    main()
+```","",""
+"584361025789362196","Günay Karaoğlu#8291","31-Dec-19 09:09 PM","if ban == word part always return false","",""
+"584361025789362196","Günay Karaoğlu#8291","31-Dec-19 09:09 PM","I couldn't detect the problem","",""
+"393854278764068875","curiouskiwi#1671","31-Dec-19 09:20 PM","A simpler approach would be to check `if word in banned:`  rather than looping over the entire banned array each time.","",""
+"584361025789362196","Günay Karaoğlu#8291","31-Dec-19 09:24 PM","still couldn't make the condition true","",""
+"393854278764068875","curiouskiwi#1671","31-Dec-19 09:24 PM","consider this: ```python
+numbers = [3, 5, 2, 9, 1, 8]
+test = [8,2]
+for number in numbers:
+    if number in test:
+        print(f""found {number}"")
+
+# results in:
+# found 2
+# found 8```","",""
+"584361025789362196","Günay Karaoğlu#8291","31-Dec-19 09:27 PM","``for word in words:
+        a=0
+        if word in banned:
+            a=1 ``","",""
+"393854278764068875","curiouskiwi#1671","31-Dec-19 09:27 PM","Have you printed `banned` to make sure it has the list of words?","",""
+"584361025789362196","Günay Karaoğlu#8291","31-Dec-19 09:27 PM","yes","",""
+"584361025789362196","Günay Karaoğlu#8291","31-Dec-19 09:27 PM","it gave the correct list of banned","",""
+"584361025789362196","Günay Karaoğlu#8291","31-Dec-19 09:28 PM","ok I found the problem","",""
+"584361025789362196","Günay Karaoğlu#8291","31-Dec-19 09:28 PM","thanks for your help","",""
+"393854278764068875","curiouskiwi#1671","31-Dec-19 09:30 PM","new lines? 🙂","",""
+"584361025789362196","Günay Karaoğlu#8291","31-Dec-19 09:36 PM","yes I forgot ""\n"" part","",""
+"584361025789362196","Günay Karaoğlu#8291","31-Dec-19 09:37 PM","I was trying to figure out what is wrong for almost an hour","",""

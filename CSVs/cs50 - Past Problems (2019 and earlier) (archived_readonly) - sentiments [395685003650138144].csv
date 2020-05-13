@@ -1,0 +1,22 @@
+AuthorID,Author,Date,Content,Attachments,Reactions
+"280681300979875851","TroubLe#3349","10-Jan-18 03:47 PM","hi,.. may u help me.. i cant get omit the blank line... what should be don.. what function should i  use???","https://cdn.discordapp.com/attachments/395685003650138144/400646718208737280/unknown.png",""
+"280681300979875851","TroubLe#3349","10-Jan-18 03:55 PM","Update: I solved this by adding ``` if line.strip():``` condition","",""
+"280681300979875851","TroubLe#3349","13-Jan-18 01:37 PM","hi..help me please..I  got  an error ```NameError: name 'analyzer' is not defined``` and dunno why... i have imported  class Analyze... it still works in file tweets","https://cdn.discordapp.com/attachments/395685003650138144/401701325072760832/unknown.png",""
+"193268441476497410","Raggy#0001","13-Jan-18 01:54 PM","Add another line saying `import analyzer`","",""
+"193268441476497410","Raggy#0001","13-Jan-18 01:54 PM","@TroubLe","",""
+"280681300979875851","TroubLe#3349","13-Jan-18 01:55 PM","@Rags#3015  liike this: ```from analyzer import Analyzer
+import analyzer```","",""
+"280681300979875851","TroubLe#3349","13-Jan-18 01:55 PM","?","",""
+"193268441476497410","Raggy#0001","13-Jan-18 01:58 PM","Yes","",""
+"280681300979875851","TroubLe#3349","13-Jan-18 02:02 PM","@Raggy it  returns ```AttributeError: module 'analyzer' has no attribute 'analyze'```","",""
+"193268441476497410","Raggy#0001","13-Jan-18 02:04 PM","Did you mean Analyzer.analyse instead?","",""
+"280681300979875851","TroubLe#3349","13-Jan-18 02:07 PM","nope.. i still use `score = analyzer.analyze(i)`","",""
+"193268441476497410","Raggy#0001","13-Jan-18 02:08 PM","I meant instead of that, Analyzer.analyze","",""
+"280681300979875851","TroubLe#3349","13-Jan-18 02:10 PM","I changed it for Analyzer.analyze.. it gave me this error `TypeError: analyze() missing 1 required positional argument: 'text'`","",""
+"280681300979875851","TroubLe#3349","13-Jan-18 02:11 PM","why did it work for `tweets` perfectly and now its failing..","",""
+"280681300979875851","TroubLe#3349","13-Jan-18 02:16 PM","i guess i found my mistake.. i didnt instantiate analyzer... Sry for disturbing...dude","",""
+"398945250745516043","mikeb#6016","16-Jan-18 09:41 PM","mario","",""
+"595301211385626669","Juan#9311","01-Jul-19 08:37 PM","git","",""
+"234679095378706433","Blauelf#6622","03-Jul-19 11:46 PM","This looks like speller, not sentiments. And the variable name reminds me of a song, 땡 (ddaeng) :D
+Function looks like it would count and list all the words in the hash table, and it should work.","",""
+"112625916781277184","yama#2710","04-Jul-19 03:04 AM","Oh lol you right","",""

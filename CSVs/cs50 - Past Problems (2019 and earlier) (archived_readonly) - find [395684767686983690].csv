@@ -1,0 +1,724 @@
+AuthorID,Author,Date,Content,Attachments,Reactions
+"456226577798135808","Deleted User#0000","27-Dec-17 11:19 PM","Looks like I'm the first!","",""
+"208250933522464768","Timbersaw#8519","27-Dec-17 11:20 PM","now dont go posting it in every channel","",""
+"208250933522464768","Timbersaw#8519","27-Dec-17 11:20 PM","xd","",""
+"456226577798135808","Deleted User#0000","27-Dec-17 11:20 PM","I will!","",""
+"456226577798135808","Deleted User#0000","27-Dec-17 11:20 PM","jk","",""
+"244657929196666891","Hector Garcia#1092","27-Dec-17 11:28 PM","Any one else doing this pset?","",""
+"456226577798135808","Deleted User#0000","27-Dec-17 11:28 PM","Me!","",""
+"456226577798135808","Deleted User#0000","29-Dec-17 01:21 AM","Hi, I have this code","",""
+"456226577798135808","Deleted User#0000","29-Dec-17 01:22 AM","```/**
+ * helpers.c
+ *
+ * Helper functions for Problem Set 3.
+ */
+
+#include <cs50.h>
+
+#include ""helpers.h""
+
+/**
+ * Returns true if value is in array of n values, else false.
+ */
+bool search(int value, int values[], int n)
+{
+    int start = n;
+    int target = value;
+    int middle;
+    int end = 0;
+    //Repeat until the (sub)array is of size 0
+    do
+    {
+     //Calculate the middle point of the current (sub)array
+     middle = (start + end)/2;
+     //If the target is in the middle,...
+     if(target == middle)
+      {
+       //...Stop.
+       return true;
+      }
+     //Otherwise, if the target is less than what's in the middle...
+     if(target < middle)
+      {
+       //...Change the end to just the left of the middle.
+       end = middle - 1;
+      }
+     //Otherwise, if the target is more than what's in the middle...
+     if(target > middle)
+      {
+        //...Change the start to just the right of the middle.
+        start = middle + 1;
+      }
+
+    }
+    while(start - end == 0);
+    return false;
+}
+
+/**
+ * Sorts array of n values.
+ */
+void sort(int values[], int n)//Note: SC = swap counter
+{
+    //Temporary Variable
+    int temp;
+    //Set swap counter to non-zero value (I just chose 7!)
+    int SC = 7;
+    //Repeat until swap counter is 0:
+    do
+    {
+      //Reset swap counter to 0
+      SC = 0;
+      //Look at each adjacent pair
+      for(int i = 0, h = n - 2; i < h; i++)
+       {
+           //If two adjacent elements not in order,
+           if(values[i] > values[i - 1])
+            {             //Swap them...
+             temp = values[i - 1];
+             values[i - 1] = values[i];
+             values[i] = temp;
+             //...And add one to the swap counter
+             SC++;
+            }
+       }
+
+    }
+    while(SC != 0);
+    return;
+}```","",""
+"456226577798135808","Deleted User#0000","29-Dec-17 01:29 AM","And then I get this.... ```~/workspace/pset3/find/ $ ./generate 1000 50 | ./find 127
+
+haystack[0] = 
+haystack[1] = 
+haystack[2] = 
+haystack[3] = 
+haystack[4] = 
+haystack[5] = 
+haystack[6] = 
+haystack[7] = 
+haystack[8] = 
+haystack[9] = 
+haystack[10] = 
+haystack[11] = 
+haystack[12] = 
+haystack[13] =
+.........
+haystack[977] = 
+haystack[978] = 
+haystack[979] = 
+haystack[980] = 
+haystack[981] = 
+haystack[982] = 
+haystack[983] = 
+haystack[984] = 
+haystack[985] = 
+haystack[986] = 
+haystack[987] = 
+haystack[988] = 
+haystack[989] = 
+haystack[990] = 
+haystack[991] = 
+haystack[992] = 
+haystack[993] = 
+haystack[994] = 
+haystack[995] = 
+haystack[996] = 
+haystack[997] = 
+haystack[998] = 
+haystack[999] = 
+haystack[1000] = 
+Segmentation fault
+~/workspace/pset3/find/ $ ```","",""
+"456226577798135808","Deleted User#0000","29-Dec-17 01:32 AM","Btw what is a ""Segmentation Fault""?","",""
+"393854278764068875","curiouskiwi#1671","29-Dec-17 01:33 AM","@😎 77NattyNat77 😎#0808  a segmentation fault means you are trying to access memory that you don't have permission to.  Have you narrowed down your problem to the sort or the search?  Did it work when you used a linear search, as suggested in the pset?","",""
+"393854278764068875","curiouskiwi#1671","29-Dec-17 01:33 AM","@😎 77NattyNat77 😎#0808 ^^","",""
+"456226577798135808","Deleted User#0000","29-Dec-17 01:36 AM","@curiouskiwi Both the problems seem right,, I don't know what to do....","",""
+"456226577798135808","Deleted User#0000","29-Dec-17 01:37 AM","¯\_(ツ)_/¯","",""
+"393854278764068875","curiouskiwi#1671","29-Dec-17 01:37 AM","what do you mean by ""seem right"".  You need to debug it with a smaller array than 1000.  Run `./find 3` and then give it 3 4 5 ... does that work?","",""
+"456226577798135808","Deleted User#0000","29-Dec-17 03:12 AM","This happened ```~/workspace/pset3/find/ $ ./find 3
+
+haystack[0] = 3
+
+haystack[1] = 4
+
+haystack[2] = 5
+
+haystack[3] = 6
+
+haystack[4] = 7
+
+haystack[5] = 8
+
+haystack[6] = 9
+
+haystack[7] = 0
+
+haystack[8] = 11
+
+haystack[9] = 12
+
+haystack[10] = 13
+```","",""
+"393854278764068875","curiouskiwi#1671","29-Dec-17 03:16 AM","why is the haystack being filled??  Did you change  `find.c` ?","",""
+"393854278764068875","curiouskiwi#1671","29-Dec-17 03:17 AM","or did you enter each of those numbers?  What happens when you hit ctrl-D to finish, per the instructions?","",""
+"456226577798135808","Deleted User#0000","29-Dec-17 03:28 AM","```~/workspace/pset3/find/ $ ./find 3
+
+haystack[0] = 3
+
+haystack[1] = 4
+
+haystack[2] = 5
+
+haystack[3] = 
+Segmentation fault
+~/workspace/pset3/find/ $ 
+```","",""
+"456226577798135808","Deleted User#0000","29-Dec-17 03:28 AM","(at line 7 I hit Ctrl-D)","",""
+"393854278764068875","curiouskiwi#1671","29-Dec-17 03:32 AM","I'd concentrate on your `sort` function.","",""
+"456226577798135808","Deleted User#0000","29-Dec-17 03:32 AM","Thanks","",""
+"297744474703134722","Duroxxigar#3224","29-Dec-17 04:20 PM","Just started this pset - I'm going through, looking at the generate file. I have a question on one certain part though.","",""
+"297744474703134722","Duroxxigar#3224","29-Dec-17 04:20 PM","```c
+    else
+    {
+        srand48((long) time(NULL));
+    }```","",""
+"297744474703134722","Duroxxigar#3224","29-Dec-17 04:20 PM","Not really sure what this is doing.","",""
+"297744474703134722","Duroxxigar#3224","29-Dec-17 04:21 PM","Because `time()` returns the time in seconds. But if we're passing in NULL, how does it work?","",""
+"297744474703134722","Duroxxigar#3224","29-Dec-17 04:33 PM","I understand that `drand48` is being seeded with the systems time, and that will pretty much never be the same, but why are we passing in the value of `NULL`?","",""
+"456226577798135808","Deleted User#0000","29-Dec-17 09:13 PM","```//Temporary Variable
+    int temp;
+    //Set swap counter to non-zero value (I just chose 7!)
+    int SC = 7;
+    //Repeat until swap counter is 0:
+    do
+    {
+      //Reset swap counter to 0
+      SC = 0;
+      //Look at each adjacent pair
+      for(int i = 0, h = n - 2; i < h; i++)
+       {
+           //If two adjacent elements not in order,
+           if(values[i] > values[i - 1])
+            {             //Swap them...
+             temp = values[i - 1];
+             values[i - 1] = values[i];
+             values[i] = temp;
+             //...And add one to the swap counter
+             SC++;
+            }
+       }
+
+    }
+    while(SC != 0);
+    return;```","",""
+"456226577798135808","Deleted User#0000","29-Dec-17 09:13 PM","So I looked at my sort & nothing seems wrong","",""
+"456226577798135808","Deleted User#0000","29-Dec-17 09:14 PM","🤔","",""
+"456226577798135808","Deleted User#0000","29-Dec-17 10:37 PM","@here please help, I'm desprate","",""
+"84197211113533440","Trainermax#4196","29-Dec-17 10:49 PM","@Deleted User  if you wrote it on paper you would see the errors easily","",""
+"84197211113533440","Trainermax#4196","29-Dec-17 10:49 PM","I give you a list of 10 9 8 7 6 5 4 3 2 1","",""
+"84197211113533440","Trainermax#4196","29-Dec-17 10:49 PM","your n value is 10, you set h = n - 2 so 8. your loop will iterate 8 times then","",""
+"84197211113533440","Trainermax#4196","29-Dec-17 10:50 PM","not even enough times to look at all the values i gave you","",""
+"84197211113533440","Trainermax#4196","29-Dec-17 10:52 PM","looking at your do while loop, SC will never equal 0 because you're adding","",""
+"456226577798135808","Deleted User#0000","29-Dec-17 10:52 PM","So ur saying n - 1?","",""
+"84197211113533440","Trainermax#4196","29-Dec-17 10:52 PM","..nope","",""
+"84197211113533440","Trainermax#4196","29-Dec-17 10:52 PM","if you did n - 1 you would have to do","",""
+"84197211113533440","Trainermax#4196","29-Dec-17 10:52 PM","h >= i","",""
+"297744474703134722","Duroxxigar#3224","29-Dec-17 10:58 PM","Possibly a dumb question. But how am I supposed to impelement the `search` function? I've tried writing the body under the prototype and clang threw an error","",""
+"297744474703134722","Duroxxigar#3224","29-Dec-17 10:58 PM","Tried doing it by itself - clang threw an error","",""
+"297744474703134722","Duroxxigar#3224","29-Dec-17 11:04 PM","UnderThePrototype","https://cdn.discordapp.com/attachments/395684767686983690/396408127987122180/unknown.png",""
+"297744474703134722","Duroxxigar#3224","29-Dec-17 11:04 PM","ByItself","https://cdn.discordapp.com/attachments/395684767686983690/396408278990716928/unknown.png",""
+"297744474703134722","Duroxxigar#3224","29-Dec-17 11:05 PM","I know the code isn't right for the speed, but, I can't even ""make"" the file.","",""
+"297744474703134722","Duroxxigar#3224","29-Dec-17 11:22 PM","@curiouskiwi Can you make heads or tails of what the issue is here? ^","",""
+"456226577798135808","Deleted User#0000","29-Dec-17 11:24 PM","How many ```bool search(int value, array values[], int n)```'s do you have?","",""
+"297744474703134722","Duroxxigar#3224","29-Dec-17 11:24 PM","Uno","",""
+"456226577798135808","Deleted User#0000","29-Dec-17 11:24 PM","Not Dos?","",""
+"297744474703134722","Duroxxigar#3224","29-Dec-17 11:24 PM","The first screenshot, I have two. The second one, I have one.","",""
+"297744474703134722","Duroxxigar#3224","29-Dec-17 11:25 PM","I tried implementing it without the prototype header and with. Both threw errors","",""
+"393854278764068875","curiouskiwi#1671","29-Dec-17 11:25 PM","don't change helpers.h  Looks like you've tried to define the function in helpers.h and helpers.c?","",""
+"297744474703134722","Duroxxigar#3224","29-Dec-17 11:25 PM","oh my jeebus","",""
+"297744474703134722","Duroxxigar#3224","29-Dec-17 11:25 PM","I never even saw the helpers.c file","",""
+"456226577798135808","Deleted User#0000","29-Dec-17 11:26 PM","Really?","",""
+"297744474703134722","Duroxxigar#3224","29-Dec-17 11:26 PM","100%","",""
+"456226577798135808","Deleted User#0000","29-Dec-17 11:26 PM","😐","",""
+"393854278764068875","curiouskiwi#1671","29-Dec-17 11:27 PM","The best lesson I can give people is if something doesn't work, first go back and re-read the spec carefully.","",""
+"297744474703134722","Duroxxigar#3224","29-Dec-17 11:27 PM","I thought I was in the right file.","",""
+"297744474703134722","Duroxxigar#3224","29-Dec-17 11:30 PM","How does the .h file know to go to the .c file to get the definition for the functions that are called from the .h file?","",""
+"393854278764068875","curiouskiwi#1671","29-Dec-17 11:37 PM","the .h file tells the compiler that these functions are available. Then, the linker is responsible for taking the code and putting it together.  Have you watch the Compile short yet?","",""
+"456226577798135808","Deleted User#0000","29-Dec-17 11:38 PM","@Trainermax Ok I updated my code ```    
+    //Temporary Variable
+    int temp;
+     //Set swap counter to non-zero value (I just chose 7!)
+    int SC = 7;
+    //Repeat until swap counter is 0:
+    do
+    {
+      //Reset swap counter to 0
+      SC = 0;
+      //Look at each adjacent pair
+      for(int i = 0, h = n; i < h; i++)
+       {
+           //If two adjacent elements not in order,
+           if(values[i] > values[i - 1])
+            {             //Swap them...
+             temp = values[i - 1];
+             values[i - 1] = values[i];
+             values[i] = temp;
+             //...And add one to the swap counter
+             SC++;
+            }
+       }```Btw I commented it like the bubble sort short in pset3","",""
+"297744474703134722","Duroxxigar#3224","29-Dec-17 11:38 PM","Which week is is supposed to be on? Because I don't see it on 2 or 3.","",""
+"456226577798135808","Deleted User#0000","29-Dec-17 11:38 PM","I think pset1","",""
+"456226577798135808","Deleted User#0000","29-Dec-17 11:38 PM","I remeber watching it in pset1","",""
+"297744474703134722","Duroxxigar#3224","29-Dec-17 11:39 PM","In the pset itself?","",""
+"297744474703134722","Duroxxigar#3224","29-Dec-17 11:39 PM","'Cause I only remember seeing walkthroughs in the pset","",""
+"456226577798135808","Deleted User#0000","29-Dec-17 11:40 PM","The shorts","",""
+"456226577798135808","Deleted User#0000","29-Dec-17 11:41 PM","Did you ever see any of the shorts?","",""
+"297744474703134722","Duroxxigar#3224","29-Dec-17 11:41 PM","yeah","",""
+"297744474703134722","Duroxxigar#3224","29-Dec-17 11:41 PM","Here are the shorts for week 1","https://cdn.discordapp.com/attachments/395684767686983690/396417475819864065/unknown.png",""
+"393854278764068875","curiouskiwi#1671","29-Dec-17 11:44 PM","I'm thinking that it's been removed from the course this year as it goes into more detail than necessary. 😃  But here's the older one if of interest: https://www.youtube.com/watch?v=CSZLNYF4Klo","",""
+"393854278764068875","curiouskiwi#1671","29-Dec-17 11:45 PM","Really, all you need to know is explained in the Find problem spec, where it shows how Make works to pull all the files together to create the executable.","",""
+"297744474703134722","Duroxxigar#3224","29-Dec-17 11:46 PM","I'm just curious to how the .h file knows to go to that specific file to grab the body of the the function.","",""
+"84197211113533440","Trainermax#4196","29-Dec-17 11:47 PM","@Deleted User  code is still wrong 😛","",""
+"456226577798135808","Deleted User#0000","29-Dec-17 11:48 PM","😡","",""
+"84197211113533440","Trainermax#4196","29-Dec-17 11:48 PM","first of all","",""
+"84197211113533440","Trainermax#4196","29-Dec-17 11:48 PM","why i - 1?","",""
+"84197211113533440","Trainermax#4196","29-Dec-17 11:48 PM","the lecture and shorts only covered i + 1","",""
+"84197211113533440","Trainermax#4196","29-Dec-17 11:49 PM","second of all, if your i starts at 0...","",""
+"84197211113533440","Trainermax#4196","29-Dec-17 11:49 PM","i - 1 is what?","",""
+"456226577798135808","Deleted User#0000","29-Dec-17 11:55 PM","```//Temporary Variable
+    int temp;
+    //Set swap counter to non-zero value (I just chose 7!)
+    int SC = 7;
+    //Repeat until swap counter is 0:
+    do
+    {
+      //Reset swap counter to 0
+      SC = 0;
+      //Look at each adjacent pair
+      for(int i = 0, h = n; i < h; i++)
+       {
+           //If two adjacent elements not in order,
+           if(values[i] > values[i + 1])
+            {             //Swap them...
+             temp = values[i];
+             values[i] = values[i + 1];
+             values[i + 1] = temp;
+             //...And add one to the swap counter
+             SC++;
+            }
+       }
+
+    }
+    while(SC != 0);
+    return;```","",""
+"456226577798135808","Deleted User#0000","29-Dec-17 11:56 PM","Now?","",""
+"393854278764068875","curiouskiwi#1671","30-Dec-17 12:01 AM","@Deleted User a bit of advice. rather than posting your code and asking others to tell you if it's correct, you should run it yourself and see if it works. If it doesn't, start using `debug50` (explained in week 2) and follow your program to see where it might be failing.  You'll learn a lot more that way than someone telling you how to change your code without you understanding why.  Like, why was `i-1` going to cause problems?","",""
+"456226577798135808","Deleted User#0000","30-Dec-17 12:44 AM","Honestly, I don't really understand find very well","",""
+"297744474703134722","Duroxxigar#3224","30-Dec-17 12:51 AM","Which part?","",""
+"456226577798135808","Deleted User#0000","30-Dec-17 12:52 AM","How generate and find work together","",""
+"456226577798135808","Deleted User#0000","30-Dec-17 12:52 AM","And it's all very complex","",""
+"456226577798135808","Deleted User#0000","30-Dec-17 12:53 AM","I'm mostly just writing code w/out really understanding everything","",""
+"297744474703134722","Duroxxigar#3224","30-Dec-17 12:53 AM","generate just creates pseudo-random numbers. find just looks for the number that is passed as a command line argument in the list from generate","",""
+"456226577798135808","Deleted User#0000","30-Dec-17 12:55 AM","I haven't touched helpers.h, Is that right?","",""
+"297744474703134722","Duroxxigar#3224","30-Dec-17 12:55 AM","Correct","",""
+"297744474703134722","Duroxxigar#3224","30-Dec-17 12:56 AM","Is there a specific line of code you don't understand?","",""
+"297744474703134722","Duroxxigar#3224","30-Dec-17 12:56 AM","Or an action they are asking for you to perform?","",""
+"456226577798135808","Deleted User#0000","30-Dec-17 12:57 AM","I understand the code **completely**, It's the error","",""
+"297744474703134722","Duroxxigar#3224","30-Dec-17 12:58 AM","Which part of the problem?","",""
+"456226577798135808","Deleted User#0000","30-Dec-17 01:01 AM","Why does my program keep saying  ```Segmentation Error```","",""
+"297744474703134722","Duroxxigar#3224","30-Dec-17 01:01 AM","You're probably going past your array bounds","",""
+"297744474703134722","Duroxxigar#3224","30-Dec-17 01:01 AM","You're accessing memory that isn't yours pretty much","",""
+"297744474703134722","Duroxxigar#3224","30-Dec-17 01:02 AM","So, if you have 10 elements and you try to access the 11th - you get an error, because the 11th block does not belong to you.","",""
+"456226577798135808","Deleted User#0000","30-Dec-17 01:05 AM","I'm not trying to access the 11th block, To my perspective..","",""
+"297744474703134722","Duroxxigar#3224","30-Dec-17 01:06 AM","What line does it say it is happening on?","",""
+"456226577798135808","Deleted User#0000","30-Dec-17 01:13 AM","What do you mean, There is no mention of a line number...","",""
+"297744474703134722","Duroxxigar#3224","30-Dec-17 01:14 AM","When you get an error - the compiler will tell you the line number and column","",""
+"297744474703134722","Duroxxigar#3224","30-Dec-17 01:14 AM","It'll be the numbers","",""
+"456226577798135808","Deleted User#0000","30-Dec-17 01:14 AM","```~/workspace/pset3/find/ $ ./find 3
+
+haystack[0] = 3
+
+haystack[1] = 4
+
+haystack[2] = 5
+
+haystack[3] = 
+Segmentation fault
+~/workspace/pset3/find/ $ 
+```","",""
+"297744474703134722","Duroxxigar#3224","30-Dec-17 01:14 AM","Ah","",""
+"456226577798135808","Deleted User#0000","30-Dec-17 01:15 AM","It's a systematical, not a syntax error","",""
+"297744474703134722","Duroxxigar#3224","30-Dec-17 01:15 AM","seg faults are never syntax","",""
+"297744474703134722","Duroxxigar#3224","30-Dec-17 01:15 AM","just fyi","",""
+"456226577798135808","Deleted User#0000","30-Dec-17 01:15 AM","seg faults?","",""
+"297744474703134722","Duroxxigar#3224","30-Dec-17 01:15 AM","Segmentation fault","",""
+"297744474703134722","Duroxxigar#3224","30-Dec-17 01:15 AM","You just called it a segmentation error","",""
+"297744474703134722","Duroxxigar#3224","30-Dec-17 01:16 AM","Same thing really","",""
+"456226577798135808","Deleted User#0000","30-Dec-17 01:16 AM","Sorry....","",""
+"297744474703134722","Duroxxigar#3224","30-Dec-17 01:16 AM","How are you doing it?","",""
+"456226577798135808","Deleted User#0000","30-Dec-17 01:16 AM","My total bad","",""
+"297744474703134722","Duroxxigar#3224","30-Dec-17 01:16 AM","Are you hitting enter?","",""
+"297744474703134722","Duroxxigar#3224","30-Dec-17 01:16 AM","Or ctrl+d?","",""
+"297744474703134722","Duroxxigar#3224","30-Dec-17 01:16 AM","Does it only happen with 3?","",""
+"297744474703134722","Duroxxigar#3224","30-Dec-17 01:16 AM","Did you alter `find.c` at all?","",""
+"456226577798135808","Deleted User#0000","30-Dec-17 01:17 AM","```~/workspace/pset3/find/ $ ./find 4
+
+haystack[0] = 3
+
+haystack[1] = 4 
+
+haystack[2] = 5
+
+haystack[3] = 
+Segmentation fault
+~/workspace/pset3/find/ $ ```","",""
+"297744474703134722","Duroxxigar#3224","30-Dec-17 01:17 AM","The array is jacked.","",""
+"297744474703134722","Duroxxigar#3224","30-Dec-17 01:17 AM","So, you can never go past the 4th element?","",""
+"456226577798135808","Deleted User#0000","30-Dec-17 01:18 AM","I didn't alter find.c, only helpers.c","",""
+"297744474703134722","Duroxxigar#3224","30-Dec-17 01:18 AM","Paste your find.c file code here","",""
+"393854278764068875","curiouskiwi#1671","30-Dec-17 01:19 AM","Please run it under debug50 so you can see exactly when it segfaults. Is it in search? or sort?","",""
+"456226577798135808","Deleted User#0000","30-Dec-17 01:19 AM","```/**
+ * helpers.c
+ *
+ * Helper functions for Problem Set 3.
+ */
+
+#include <cs50.h>
+
+#include ""helpers.h""
+
+/**
+ * Returns true if value is in array of n values, else false.
+ */
+bool search(int value, int values[], int n)
+{
+   int start = n;
+    int target = value;
+    int middle;
+    int end = 0;
+    //Repeat until the (sub)array is of size 0
+    do
+    {
+     //Calculate the middle point of the current (sub)array
+     middle = (start + end)/2;
+     //If the target is in the middle,...
+     if(target == middle)
+      {
+       //...Stop.
+       return true;
+      }
+     //Otherwise, if the target is less than what's in the middle...
+     if(target < middle)
+      {
+       //...Change the end to just the left of the middle.
+       end = middle - 1;
+      }
+     //Otherwise, if the target is more than what's in the middle...
+     if(target > middle)
+      {
+        //...Change the start to just the right of the middle.
+        start = middle + 1;
+      }
+
+    }
+    while(start - end == 0);
+    return false;
+}
+
+/**
+ * Sorts array of n values.
+ */
+void sort(int values[], int n)//Note: SC = swap counter
+{
+    //Temporary Variable
+    int temp;
+    //Set swap counter to non-zero value (I just chose 7!)
+    int SC = 7;
+    //Repeat until swap counter is 0:
+    do
+    {
+      //Reset swap counter to 0
+      SC = 0;
+      //Look at each adjacent pair
+      for(int i = 0, h = n; i < h; i++)
+       {
+           //If two adjacent elements not in order,
+           if(values[i] > values[i + 1])
+            {             //Swap them...
+             temp = values[i];
+             values[i] = values[i + 1];
+             values[i + 1] = temp;
+             //...And add one to the swap counter
+             SC++;
+            }
+       }
+
+    }
+    while(SC != 0);
+    return;
+}
+```","",""
+"456226577798135808","Deleted User#0000","30-Dec-17 01:19 AM","ok @curiouskiwi","",""
+"456226577798135808","Deleted User#0000","30-Dec-17 01:22 AM","```~/workspace/pset3/find/ $ ./find 4
+
+haystack[0] = 3
+
+haystack[1] = 4
+
+haystack[2] = 5
+
+haystack[3] = 
+
+Didn't find needle in haystack.
+
+~/workspace/pset3/find/ $ ./find 3
+
+haystack[0] = 1
+
+haystack[1] = 2
+
+haystack[2] = 4
+
+haystack[3] = 
+
+Didn't find needle in haystack.
+
+~/workspace/pset3/find/ $ 
+```","",""
+"456226577798135808","Deleted User#0000","30-Dec-17 01:22 AM","Idk wht I did...","",""
+"456226577798135808","Deleted User#0000","30-Dec-17 01:22 AM","I'm one step closer....","",""
+"393854278764068875","curiouskiwi#1671","30-Dec-17 01:23 AM","your search function never looks at the values in the array.","",""
+"393854278764068875","curiouskiwi#1671","30-Dec-17 01:24 AM","I'd suggest doing a linear search before trying to do a binary search.","",""
+"393854278764068875","curiouskiwi#1671","30-Dec-17 01:24 AM","As the pset says: ""Before you implement search in O(log n) time, you might want to implement it temporarily in O(n) time, as with linear search, if only because it’s a bit easier to get right. That way, you can move on to sort, knowing that search already works. And once sort works, you can go back and re-implement search in O(log n) time, as with binary search. Just remember to!""","",""
+"297744474703134722","Duroxxigar#3224","30-Dec-17 01:25 AM","Yeah, the binary search is kickin' my butt. Linear search was pretty straightforward.","",""
+"297744474703134722","Duroxxigar#3224","30-Dec-17 01:25 AM","Seems to find some - but not others.","",""
+"393854278764068875","curiouskiwi#1671","30-Dec-17 01:26 AM","binary search relies on sort working properly.  that's why it's suggested you do a linear search first instead of trying to tackle both sort and search together.","",""
+"297744474703134722","Duroxxigar#3224","30-Dec-17 01:27 AM","Linear search worked everytime though.","",""
+"456226577798135808","Deleted User#0000","30-Dec-17 01:29 AM","I tried linear, got an error...","",""
+"297744474703134722","Duroxxigar#3224","30-Dec-17 01:29 AM","Seg error?","",""
+"456226577798135808","Deleted User#0000","30-Dec-17 01:29 AM","No...","",""
+"297744474703134722","Duroxxigar#3224","30-Dec-17 01:30 AM","What error?","",""
+"456226577798135808","Deleted User#0000","30-Dec-17 01:34 AM","```~/workspace/pset3/find/ $ make find
+clang -ggdb3 -O0 -std=c11 -Wall -Werror -o find find.c helpers.c -lcs50 -lm
+helpers.c:27:1: error: control may reach end of non-void function [-Werror,-Wreturn-type]
+}
+^
+1 error generated.
+make: *** [find] Error 1
+~/workspace/pset3/find/ $ ```","",""
+"393854278764068875","curiouskiwi#1671","30-Dec-17 01:36 AM","what if you run `help50 make find`","",""
+"456226577798135808","Deleted User#0000","30-Dec-17 01:38 AM","Thanks! I really need to start using help50....","",""
+"456226577798135808","Deleted User#0000","30-Dec-17 01:39 AM","```~/workspace/pset3/find/ $ ./find 3
+
+haystack[0] = 1
+
+haystack[1] = 2
+
+haystack[2] = 3
+
+haystack[3] = 
+
+Didn't find needle in haystack.
+
+~/workspace/pset3/find/ $ ./find 4
+
+haystack[0] = 3
+
+haystack[1] = 4
+
+haystack[2] = 5
+
+haystack[3] = 
+
+Found needle in haystack!
+
+~/workspace/pset3/find/ $ ```","",""
+"456226577798135808","Deleted User#0000","30-Dec-17 01:40 AM","So it works! 😃 With linear search 😕","",""
+"393854278764068875","curiouskiwi#1671","30-Dec-17 01:40 AM","so now you need to figure out why it didn't find it in the first one.","",""
+"84197211113533440","Trainermax#4196","30-Dec-17 03:04 AM","Your sort code still has errors in it.","",""
+"297744474703134722","Duroxxigar#3224","30-Dec-17 04:49 PM","I honestly don't see the difference in the more & less versions of `find`.","",""
+"297744474703134722","Duroxxigar#3224","30-Dec-17 04:50 PM","My code passes both of the versions. And the requirements seem to be pretty much the same.","",""
+"456226577798135808","Deleted User#0000","30-Dec-17 05:24 PM","@Trainermax#4196  ik","",""
+"456226577798135808","Deleted User#0000","30-Dec-17 05:24 PM","smh @Deleted User","",""
+"456226577798135808","Deleted User#0000","30-Dec-17 05:36 PM","😭","",""
+"456226577798135808","Deleted User#0000","30-Dec-17 05:36 PM","😭","",""
+"456226577798135808","Deleted User#0000","30-Dec-17 05:37 PM","😭","",""
+"456226577798135808","Deleted User#0000","30-Dec-17 06:43 PM","This happens when I do debug50, I had a debugger open and I closed it. Next debug 50, This happens","https://cdn.discordapp.com/attachments/395684767686983690/396704767847694338/unknown.png",""
+"393854278764068875","curiouskiwi#1671","30-Dec-17 10:41 PM","@Duroxxigar the difference in Find is that the More comfortable challenges you to do use a sort algorithm that is `O(n)`  rather than the Less version `O(n^2)`","",""
+"393854278764068875","curiouskiwi#1671","30-Dec-17 10:43 PM","@Deleted User Try running `debug50 -HUP`, then retry your command?","",""
+"329977469350445069","Lord of Galaxy#9211","25-Apr-18 04:17 PM","Does anyone have a link to this one?","",""
+"329977469350445069","Lord of Galaxy#9211","25-Apr-18 05:04 PM","And to #fifteen","",""
+"329977469350445069","Lord of Galaxy#9211","25-Apr-18 05:04 PM","(the link to the PSET docs)","",""
+"329977469350445069","Lord of Galaxy#9211","25-Apr-18 05:06 PM","@curiouskiwi","",""
+"329977469350445069","Lord of Galaxy#9211","25-Apr-18 05:06 PM","(sorry for the ping)","",""
+"397677328660037632","Maarten#1004","25-Apr-18 07:15 PM","@Lord of Galaxy#9211 : https://docs.cs50.net/problems/fifteen/fifteen.html and https://docs.cs50.net/problems/find/less/find.html","",""
+"329977469350445069","Lord of Galaxy#9211","26-Apr-18 07:52 AM","Thanks!","",""
+"240723137442873345","waltersantos#6979","13-Jun-18 10:39 PM","Hello folks. I'm on Week 1 of CS50 (not taking the certification, just the free course) Got a question:   In the lecture, the teacher/instructor will say (as he is opening C programming files) that these documents are ""on the website"".  Where exactly are these documents (e.g. conditions.c, ints.c, etc.)?  Thanks in advance","",""
+"393854278764068875","curiouskiwi#1671","13-Jun-18 11:27 PM","@waltersantos are you  using the edX course?  the source code is linked from each week's main tab.  If you are using cs50.tv to get your materials, the source code is found in the Lectures section  (click the + to see the links)","",""
+"240723137442873345","waltersantos#6979","14-Jun-18 12:20 AM","Thanks!. Also, @Ahmad posted on #general a screen shot that made it clear. Thanks, again.","",""
+"402537072587702275","yells at keyboard#9862","22-Jun-18 05:20 PM","```c
+void sort(int values[], int n);```
+in this block of code, I thought if you pass an array to a function, that it will only be provided a copy of the array?","",""
+"402537072587702275","yells at keyboard#9862","22-Jun-18 05:21 PM","and that the original array won't be touched (learned this from ""swap"" function in pointers lecture)","",""
+"393854278764068875","curiouskiwi#1671","23-Jun-18 01:46 AM","an array variable ""decays"" to a pointer type so it is always passed by reference.   `int values[]` is the same as `int *values`","",""
+"393854278764068875","curiouskiwi#1671","23-Jun-18 05:48 AM","@UltimateGamer07  what specific example?  are you talking about lecture 4?  https://docs.cs50.net/2017/fall/notes/4/lecture4.html","",""
+"393854278764068875","curiouskiwi#1671","23-Jun-18 05:50 AM","actually, since you're asking in this channel, perhaps you mean one of the fall 2016 lectures?  can you give me a link?","",""
+"402537072587702275","yells at keyboard#9862","23-Jun-18 06:19 AM","@UltimateGamer07 I too would like to see the link 😂","",""
+"393854278764068875","curiouskiwi#1671","24-Jun-18 02:12 AM","@UltimateGamer07 the swap function example wasn't using arrays.","",""
+"240723137442873345","waltersantos#6979","14-Jul-18 05:07 PM","Hey guys. I'm on the second part of Week 1 on the course, and really enjoying it. Here's my questions (thanks in advanced):
+I'm trying to find on CS50's GitHub repos where there are examples of error messages that help50 tries to catch. This is mentioned in on one of the Shorts called ""Debugging."" Can you guys help me find this on GitHub?","",""
+"240723137442873345","waltersantos#6979","14-Jul-18 05:07 PM","Maybe this will help","https://cdn.discordapp.com/attachments/395684767686983690/467693656233607169/help40_error_cant_find_github_repos.PNG",""
+"240723137442873345","waltersantos#6979","14-Jul-18 05:09 PM","When I go into the help50 repo, there isn't much about those error messages mentioned on the short","https://cdn.discordapp.com/attachments/395684767686983690/467694016129925120/help50_2.PNG",""
+"393854278764068875","curiouskiwi#1671","15-Jul-18 01:46 AM","@waltersantos what you want is  https://github.com/cs50/help50-server","",""
+"173921423004401664","Bulletmaniac#9806","15-Jul-18 04:51 PM",": Hi, can anyone help me to add cs50 liblaries to codeblocks ?","",""
+"385203052014993419","Rebel-T#1046","11-Oct-18 06:40 AM","Hey does anyone know what happened to the notes for CS50 understanding technology course? I keep getting a 404 page error from github","",""
+"393854278764068875","curiouskiwi#1671","11-Oct-18 06:43 AM","@Rebel-T let me ask the team and find the new location (and get the course page updated)","",""
+"385203052014993419","Rebel-T#1046","11-Oct-18 06:44 AM","Thanks 👍 @curiouskiwi","",""
+"393854278764068875","curiouskiwi#1671","11-Oct-18 06:53 AM","@Rebel-T we'll get the links fixed tomorrow, but here's the first one: https://cs50.harvard.edu/technology/2018/fall/notes/hardware/hardware/","",""
+"385203052014993419","Rebel-T#1046","11-Oct-18 04:35 PM","Thanks a plenty 
+But do you have the one for the Internet section?","",""
+"393854278764068875","curiouskiwi#1671","11-Oct-18 10:48 PM","https://cs50.harvard.edu/technology/2018/fall/notes/internet/internet/","",""
+"487406811633156096","Señor_Papi#4572","09-Nov-18 05:04 PM","Hey everyone","",""
+"487406811633156096","Señor_Papi#4572","09-Nov-18 05:05 PM","Was wondering where can i download the .c files used in each lectures as examples?","",""
+"487406811633156096","Señor_Papi#4572","09-Nov-18 05:12 PM","Nevermind found it","",""
+"487406811633156096","Señor_Papi#4572","09-Nov-18 05:12 PM","😅","",""
+"399021249667399722","harbar20#9389","22-Nov-18 10:43 PM","lol","",""
+"399021249667399722","harbar20#9389","24-Nov-18 06:13 PM","i feel like Zamyla's walkthrough of `sort` is really weird","",""
+"399021249667399722","harbar20#9389","24-Nov-18 07:21 PM","can somebody help me understand the `sort` thing?","",""
+"399021249667399722","harbar20#9389","24-Nov-18 07:21 PM","i dont understand at all how she explained it","",""
+"399021249667399722","harbar20#9389","24-Nov-18 07:21 PM","i know that u count the number of times a number has appeared in an array","",""
+"399021249667399722","harbar20#9389","24-Nov-18 07:21 PM","but that's all i understood","",""
+"399021249667399722","harbar20#9389","24-Nov-18 09:13 PM","@curiouskiwi ?","",""
+"399021249667399722","harbar20#9389","24-Nov-18 09:31 PM","im doing Find More btw'","",""
+"393854278764068875","curiouskiwi#1671","24-Nov-18 11:51 PM","so you have a counting array that holds the number of times each value in your original array appeared.  So let's say your counting array looks like this: ```{1,0,1,4,2}
+ 0,1,2,3,4   values``` which means you have 8 values in your original values array.  You now need to loop over the counting array and replace those 8 values in the original array with the values in sorted order.  So, value[0] would be 0, value[1] would be 2, value[2] would be 3, value[3] would be 3, value[4] would be 3, value[5] would be 3, value[6] would be 4, value[7] would be 4.  And the loop ends, since you replaced all 8 values in the array.","",""
+"393854278764068875","curiouskiwi#1671","24-Nov-18 11:51 PM","ie, you have 1 zero, 1 two, 4 threes, and 2 fours.  ```{0,2,3,3,3,3,4,4}```","",""
+"399021249667399722","harbar20#9389","25-Nov-18 04:33 AM","@curiouskiwi is it possible to mutate an array after initializing it?","",""
+"393854278764068875","curiouskiwi#1671","25-Nov-18 04:33 AM","sure","",""
+"399021249667399722","harbar20#9389","25-Nov-18 04:34 AM","ij","",""
+"399021249667399722","harbar20#9389","25-Nov-18 04:34 AM","ok","",""
+"399021249667399722","harbar20#9389","25-Nov-18 04:36 AM","also @curiouskiwi how long should the counting array be?","",""
+"393854278764068875","curiouskiwi#1671","25-Nov-18 04:36 AM","as Zamyla said, it has to hold all the possible values","",""
+"399021249667399722","harbar20#9389","25-Nov-18 05:28 AM","ok thx","",""
+"399021249667399722","harbar20#9389","10-Dec-18 05:54 AM","@curiouskiwi i have a question about the counting array. given `[3, 1, 4, 2, 3]`, should the counting array be `[0, 1, ,1, 2, 1]` (to account for 0's) or should it be `[1, 1, 2, 1]`?","",""
+"393854278764068875","curiouskiwi#1671","10-Dec-18 06:02 AM","you have to account for 0s","",""
+"399021249667399722","harbar20#9389","10-Dec-18 06:11 AM","ok thx","",""
+"399021249667399722","harbar20#9389","12-Dec-18 03:40 AM","@curiouskiwi what does this error mean?
+```
+~/workspace/unit3/find/ $ make find
+clang -ggdb3 -O0 -std=c11 -Wall -Werror -o find find.c helpers.c -lcs50 -lm
+/tmp/helpers-4225bc.o: In function `main':
+/home/ubuntu/workspace/unit3/find/helpers.c:129: multiple definition of `main'
+/tmp/find-d007f2.o:/home/ubuntu/workspace/unit3/find/find.c:13: first defined here
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [find] Error 1
+```","",""
+"393854278764068875","curiouskiwi#1671","12-Dec-18 04:38 AM","it means you must have added a `main` function to helpers.c?","",""
+"399021249667399722","harbar20#9389","12-Dec-18 03:06 PM","oh","",""
+"399021249667399722","harbar20#9389","12-Dec-18 03:06 PM","ok thx","",""
+"399021249667399722","harbar20#9389","13-Dec-18 04:09 AM","@curiouskiwi i'm facing a problem, and i have NO idea how to fix it at all. so my function works fine, but it's not outputting correctly:
+```c
+    //making the original array equal the sorted array
+    values = newArray;
+
+    for (int i = 0; i < n; i++) {
+        printf(""Values[%d] in function: %d\n"", i, values[i]);
+    }
+
+    //done!
+}
+
+int cool[3] = {3, 2, 1};
+
+int main(void) {
+    printf(""\n"");
+    for (int i = 0; i < 3; i++) {
+        printf(""Before values[%d]: %d\n"", i, cool[i]);
+    }
+
+    sort(cool, 3);
+    printf(""\n"");
+
+    for (int i = 0; i < 3; i++) {
+        printf(""After values[%d]: %d\n"", i, cool[i]);
+    }
+}
+```
+that's just my printing code for me to see if `sort` works, and for some reason, it's outputting this:
+```
+Before values[0]: 3
+Before values[1]: 2
+Before values[2]: 1
+Values[0] in function: 1
+Values[1] in function: 2
+Values[2] in function: 3
+
+After values[0]: 3
+After values[1]: 2
+After values[2]: 1
+```
+can you help?","",""
+"399021249667399722","harbar20#9389","13-Dec-18 04:10 AM","so what's happening here is that the middle print statements are printing from inside the `sort` function, so i KNOW that it works","",""
+"399021249667399722","harbar20#9389","13-Dec-18 04:11 AM","but i have no idea how to make it the same outside of the function too","",""
+"393854278764068875","curiouskiwi#1671","13-Dec-18 06:03 AM","is `newArray` still in scope after the function ends?  are you actually changing the `cool` array, or a copy of it?","",""
+"399021249667399722","harbar20#9389","14-Dec-18 04:20 AM","@curiouskiwi nvm, i got it. thx for the help tho!","",""
+"342072140457312256","LagSpike776#6077","01-Feb-19 10:19 PM","hello fellow kids","",""
+"342072140457312256","LagSpike776#6077","01-Feb-19 10:21 PM","so I'm pretty sure my code for the sort part is kinda scuffed","",""
+"342072140457312256","LagSpike776#6077","01-Feb-19 10:21 PM","I'm running ```C
+void sort(int values[], int n) {
+    int interimValue;
+    for (int j = 0; j < n-1; j++) {
+        if (values[j] > values[j+1]) {
+            interimValue = values[j+1];
+            values[j+1] = values[j];
+            values[j] = interimValue;
+        }
+        else {
+            interimValue = (int) values[j];
+            values[j] = values[j+1];
+            values[j+1] = interimValue;
+        }
+    }
+    return;
+}```","",""
+"342072140457312256","LagSpike776#6077","01-Feb-19 10:21 PM","so I'm not sure whether I should be casting my stuff","",""
+"342072140457312256","LagSpike776#6077","01-Feb-19 10:22 PM","like making ```values[j+1]``` into ```(int) values[j+1]```","",""
+"342072140457312256","LagSpike776#6077","02-Feb-19 12:00 AM","would you mind helping?","",""
+"342072140457312256","LagSpike776#6077","02-Feb-19 12:03 AM","I know that the problem is within sort","",""
+"342072140457312256","LagSpike776#6077","02-Feb-19 12:04 AM","because when I commented it out in find, everything worked!","",""
+"342072140457312256","LagSpike776#6077","03-Feb-19 12:29 AM","@staff umm ok some weird stuff is going on with my problem bc my ""generate.c"" file is literally the same as my ""find.c"" file. I decided to redownload and re-unzip the file that we were provided, but for some reason, it just doesn't work. I can get the file, but I can't unzip it","",""
+"393854278764068875","curiouskiwi#1671","03-Feb-19 12:30 AM","the unzip might not work if you already have files with the same name.  Move everything to a new folder and then try again","",""
+"342072140457312256","LagSpike776#6077","03-Feb-19 12:31 AM","yeah I tried it thanks for the help my code now works!","",""
+"178543252637483009","JZ#7525","17-Mar-19 04:10 AM","ugh I'm having a large problem","",""
+"178543252637483009","JZ#7525","17-Mar-19 04:10 AM","I can't get ONE of the checks to work","",""
+"178543252637483009","JZ#7525","17-Mar-19 04:11 AM","https://pastebin.com/K8zqEKUu","",""
+"178543252637483009","JZ#7525","17-Mar-19 04:14 AM","Here is my check50:","",""
+"178543252637483009","JZ#7525","17-Mar-19 04:14 AM","","https://cdn.discordapp.com/attachments/395684767686983690/556661708962398248/unknown.png",""
+"178543252637483009","JZ#7525","17-Mar-19 04:15 AM","I've done some tinkering and I'm unsure how to get around the 
+{25, 26, 27, 29} set","",""
+"178543252637483009","JZ#7525","17-Mar-19 04:16 AM","","https://cdn.discordapp.com/attachments/395684767686983690/556662005830778890/unknown.png",""
+"178543252637483009","JZ#7525","17-Mar-19 04:16 AM","Thanks in advance","",""
+"399021249667399722","harbar20#9389","17-Mar-19 08:09 PM","so","",""
+"399021249667399722","harbar20#9389","17-Mar-19 08:09 PM","i forget what this problem is about lol","",""
+"399021249667399722","harbar20#9389","17-Mar-19 08:09 PM","@JZ what do you EXPECT to happen?","",""
+"393854278764068875","curiouskiwi#1671","17-Mar-19 08:14 PM","the min and max should be the index values, not the values in the actual array.","",""
+"178543252637483009","JZ#7525","18-Mar-19 12:30 AM","what do you mean?","",""
+"178543252637483009","JZ#7525","18-Mar-19 12:30 AM","hmm like how does that work","",""
+"178543252637483009","JZ#7525","18-Mar-19 12:31 AM","so the midpoint will become (values[max] + values[min]) / 2","",""
+"178543252637483009","JZ#7525","18-Mar-19 12:36 AM","This is the problem","",""
+"178543252637483009","JZ#7525","18-Mar-19 12:36 AM","https://docs.cs50.net/problems/find/more/find.html","",""
+"469756465863983124","Fer#1196","18-Mar-19 12:36 AM","```javascript 
+const x = 12;   ```","",""
+"178543252637483009","JZ#7525","18-Mar-19 12:36 AM","?","",""
+"178543252637483009","JZ#7525","18-Mar-19 12:37 AM","@Fer I'm confused what is that for?","",""
+"469756465863983124","Fer#1196","18-Mar-19 12:37 AM","Missclick, srry :/","",""
+"178543252637483009","JZ#7525","18-Mar-19 12:37 AM","oh","",""
+"178543252637483009","JZ#7525","18-Mar-19 12:37 AM","ok","",""
+"393854278764068875","curiouskiwi#1671","18-Mar-19 12:54 AM","@JZ your screenshot was showing 27 and 29 and a mid of 28.   But when calculating the mid/max of the array, it is the index values that are important, not the actual numbers in the array.  (it's only once you find the right ""mid"" index value that you then compare the value at that point in the array to the value you are searching for.","",""
+"393854278764068875","curiouskiwi#1671","18-Mar-19 12:55 AM","so if you have an array {10, 20, 30, 40}, then min is 0 and max is 3 ...","",""
+"178543252637483009","JZ#7525","18-Mar-19 12:56 AM","Ohhh tysm!","",""
+"178543252637483009","JZ#7525","18-Mar-19 12:56 AM","I think I did it differently in my code","",""
+"266971325254467584","Berky_Ross#6951","23-Jun-19 11:32 AM","hello?","",""
+"234679095378706433","Blauelf#6622","23-Jun-19 02:12 PM","@Berky_Ross Specific question on the ""find"" problem?","",""

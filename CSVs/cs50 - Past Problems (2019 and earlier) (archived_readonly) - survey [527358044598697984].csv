@@ -1,0 +1,1076 @@
+AuthorID,Author,Date,Content,Attachments,Reactions
+"329977469350445069","Lord of Galaxy#9211","26-Dec-18 10:37 AM","New channels!","",""
+"393854278764068875","curiouskiwi#1671","26-Dec-18 11:44 AM","per the channel description","",""
+"329977469350445069","Lord of Galaxy#9211","26-Dec-18 02:19 PM","Indeed","",""
+"322044236222562307","skies#3501","05-Jan-19 06:40 AM","this was fun to do","",""
+"329977469350445069","Lord of Galaxy#9211","09-Jan-19 06:32 PM","You're done so fast?","",""
+"322044236222562307","skies#3501","14-Jan-19 02:41 PM","Yeah small project","",""
+"322044236222562307","skies#3501","14-Jan-19 02:41 PM","I deployed on Heroku too","",""
+"224937960431157260","Penderrin#5312","20-Jan-19 08:37 PM","@skies  So ... I've been wondering","",""
+"224937960431157260","Penderrin#5312","20-Jan-19 08:37 PM","If you deploy a Heroku with a *.csv backend, and someone uses some code to submit like, 1E6 records, what happens?","",""
+"224937960431157260","Penderrin#5312","20-Jan-19 08:38 PM","I've had similar concerns with using Heroku to deploy a test app w/ database backend ... as for the ""free"" dynos and postgre, they limit the db size to <10,000 lines?","",""
+"224937960431157260","Penderrin#5312","20-Jan-19 08:39 PM","What happens if you exceed ... do you get a bill for $100 ?!  😧","",""
+"322044236222562307","skies#3501","20-Jan-19 08:46 PM","heroku doesn't save the data for more than a day","",""
+"322044236222562307","skies#3501","20-Jan-19 08:46 PM","i got my friends to do the survey and it disappeared","",""
+"322044236222562307","skies#3501","20-Jan-19 08:47 PM","need to use postgres or mongo","",""
+"322044236222562307","skies#3501","20-Jan-19 08:47 PM","@Penderrin","",""
+"224937960431157260","Penderrin#5312","20-Jan-19 08:48 PM","Just wondering though ... if someone made your CSV file really large (1GB)","",""
+"224937960431157260","Penderrin#5312","20-Jan-19 08:48 PM","If Heroku would yell at you","",""
+"322044236222562307","skies#3501","20-Jan-19 08:49 PM","hmm i dont think it would happen? i also ran into an issue where everytime i commit the CSV file got renewed","",""
+"322044236222562307","skies#3501","20-Jan-19 08:49 PM","you could manually clear the db","",""
+"322044236222562307","skies#3501","20-Jan-19 08:49 PM","i doubt they can charge you like that","",""
+"224937960431157260","Penderrin#5312","20-Jan-19 08:50 PM","Probably wouldn't be the best way to retain customers","",""
+"224937960431157260","Penderrin#5312","20-Jan-19 08:50 PM","Perhaps every db line, past 10,000 just gets dropped","",""
+"224937960431157260","Penderrin#5312","20-Jan-19 08:50 PM","I suppose you could also write server-side code if you wanted to protect against it","",""
+"224937960431157260","Penderrin#5312","20-Jan-19 08:50 PM","if <csv size larger than 2mb> then <discard>","",""
+"322044236222562307","skies#3501","20-Jan-19 08:54 PM","i really dont think they can charge you when you're on free tier haha","",""
+"224937960431157260","Penderrin#5312","20-Jan-19 09:26 PM","Any ideas on how to do this better?","",""
+"224937960431157260","Penderrin#5312","20-Jan-19 09:27 PM","```py
+# Build error message
+    err_txt = ""Missing an answer to Question ... ""
+    missing_item = False
+    for i in range(1, q_amt + 1):
+        stat = q_stat[i]
+        print(""stat = {0}"".format(stat))
+        if stat == False:
+            missing_item = True
+            err_txt = err_txt + ""{0}, "".format(i)
+
+    if missing_item:
+        print(err_txt)
+        abort(400, err_txt)
+```","",""
+"224937960431157260","Penderrin#5312","20-Jan-19 09:27 PM","On error.html, this will print like ""Missing an answer to Question ... 1, 2, 3, 4, 5,""","",""
+"224937960431157260","Penderrin#5312","20-Jan-19 09:28 PM","It would probably look better to print as:","",""
+"224937960431157260","Penderrin#5312","20-Jan-19 09:28 PM","Missing an answer to Question 1","",""
+"224937960431157260","Penderrin#5312","20-Jan-19 09:28 PM","Missing an answer to Question 2 ... etc.","",""
+"224937960431157260","Penderrin#5312","20-Jan-19 09:51 PM","This works ... but still seems like a lot of work","",""
+"224937960431157260","Penderrin#5312","20-Jan-19 09:51 PM","```python
+# Build error message
+    err_txts = []
+    missing_item = False
+    for i in range(1, q_amt + 1):
+        stat = q_stat[i]
+        print(""stat = {0}"".format(stat))
+        if stat == False:
+            missing_item = True
+            err_txts.append(""Missing an answer to Question {0}"".format(i))
+
+    if missing_item:
+        print(err_txts)
+        abort(400, err_txts)
+```","",""
+"224937960431157260","Penderrin#5312","20-Jan-19 09:52 PM","```html
+<div class=""col"">
+        <div class=""jumbotron"">
+            <h1 class=""display-3"">{{ error.code }}</h1>
+            <p class=""lead"">{{ error.name }}</p>
+            <hr class=""my-4""/>
+            {% if error.description is string %}
+                <p>{{ error.description }}</p>
+            {% else %}
+                {% for errtxt in error.description %}
+                    {{ errtxt }}<br>
+                {% endfor %}
+            {% endif %}
+        </div>
+```","",""
+"535419624402190346","Manfred Edward Dossen#1812","21-Jan-19 04:05 PM","Hello, I'm facing a problem with pet7 especially when it comes to /sheet that is, I  created a new template (HTML file) but right after I read into my survey.csv file  and I'm rendering a template (the new HTML file I created)  I get 500 status code. can anyone help with this please?","",""
+"393854278764068875","curiouskiwi#1671","21-Jan-19 09:31 PM","@Manfred Edward Dossen do you see any errors in the terminal?","",""
+"535419624402190346","Manfred Edward Dossen#1812","21-Jan-19 09:33 PM","yeah I'm getting these","",""
+"535419624402190346","Manfred Edward Dossen#1812","21-Jan-19 09:33 PM","jinja2.exceptions.UndefinedError: 'survey' is undefined
+127.0.0.1 - - [21/Jan/2019 19:33:09] ""GET /sheet HTTP/1.1"" 500 -
+127.0.0.1 - - [21/Jan/2019 19:33:10] ""GET /favicon.ico HTTP/1.1"" 404 -","",""
+"535419624402190346","Manfred Edward Dossen#1812","21-Jan-19 09:35 PM","And this is what I wrote","",""
+"535419624402190346","Manfred Edward Dossen#1812","21-Jan-19 09:36 PM","@app.route(""/sheet"", methods=[""GET""])
+def get_sheet():
+    file = open (""survey.csv"", ""r"")
+    reader = csv.reader(file)
+    students = list(reader)
+    file.close()
+    return render_template(""sheet.html"") // This is a new template I created","",""
+"393854278764068875","curiouskiwi#1671","21-Jan-19 09:40 PM","`jinja2.exceptions.UndefinedError: 'survey' is undefined`  so that tells you that in your sheet.html, you are using a jinja variable called `survey` but it doesn't know what that is.  You don't appear to be passing any variables to the template.  What's `survey`?","",""
+"535419624402190346","Manfred Edward Dossen#1812","21-Jan-19 09:52 PM","I actually believe survey to be my ""survey.csv file""","",""
+"535419624402190346","Manfred Edward Dossen#1812","21-Jan-19 09:56 PM","I'm trying to read past submissions from survey.csv using csv.reader  and
+displays those submissions in an HTML table via a new template. The new html template I created is sheet.html but when I submit and try to render this new template I get that error.","",""
+"393854278764068875","curiouskiwi#1671","21-Jan-19 09:56 PM","but you aren't passing any variables to the sheet template, so jinja doesn't know about them","",""
+"393854278764068875","curiouskiwi#1671","21-Jan-19 09:57 PM","I would expect your `render_template` to include the variable(s) you need.  what are you trying to access in your sheets.html?  (what jinja variables are you using?)","",""
+"393854278764068875","curiouskiwi#1671","21-Jan-19 10:00 PM","in the distro code, you had this:  ```@app.route(""/sheet"", methods=[""GET""])
+def get_sheet():
+    return render_template(""error.html"", message=""TODO"")
+```","",""
+"393854278764068875","curiouskiwi#1671","21-Jan-19 10:00 PM","and in error.html, you had a line   ` <p>{{ message }}</p>`","",""
+"393854278764068875","curiouskiwi#1671","21-Jan-19 10:01 PM","that jinja variable `message` is sent to the template by the `render_template` function's argument `message=""TODO""`","",""
+"393854278764068875","curiouskiwi#1671","21-Jan-19 10:02 PM","so if you have a jinja variable called `survey` then you need to pass a variable called `survey` to the template.  maybe `survey=students`?","",""
+"535419624402190346","Manfred Edward Dossen#1812","21-Jan-19 10:30 PM","Thank you so much, sorry I didn't reply earlier it is because I just got it to work.","",""
+"535134130980257802","zingya#3821","25-Jan-19 04:05 PM","hi","",""
+"535134130980257802","zingya#3821","25-Jan-19 04:05 PM","its gunna be so much work to append a new table row for each row in the csv file","",""
+"535134130980257802","zingya#3821","25-Jan-19 04:05 PM","without jquery","",""
+"535134130980257802","zingya#3821","25-Jan-19 04:05 PM","can I not just use it even though we havent learnt about it in the lectures yet?","",""
+"393854278764068875","curiouskiwi#1671","25-Jan-19 10:19 PM","if you'd like.  although I'm not sure what you mean by ""so much work"" though.  what happens if your user has javascript turned off?","",""
+"393854278764068875","curiouskiwi#1671","25-Jan-19 10:24 PM","also, the idea of this pset is to learn how to use csv files to serve HTML with your  own flask server.  I'm not sure how jquery is going to help you there.","",""
+"535134130980257802","zingya#3821","25-Jan-19 11:52 PM","I get that","",""
+"535134130980257802","zingya#3821","25-Jan-19 11:53 PM","@curiouskiwi im having a hard time figuring out how to read the file, storing each row in a dictionary, and those dictionaries in an array of dicts","",""
+"535134130980257802","zingya#3821","25-Jan-19 11:53 PM","And then transporting that structure to the sheet.html using jinja","",""
+"393854278764068875","curiouskiwi#1671","25-Jan-19 11:54 PM","the `csv` library that is linked from the spec pretty much handles all that for you","",""
+"393854278764068875","curiouskiwi#1671","25-Jan-19 11:55 PM","https://docs.python.org/3/library/csv.html#module-csv","",""
+"535134130980257802","zingya#3821","25-Jan-19 11:55 PM","ill have a look","",""
+"535134130980257802","zingya#3821","25-Jan-19 11:55 PM","yeah","",""
+"535134130980257802","zingya#3821","25-Jan-19 11:55 PM","I have had a big read through this already","",""
+"535134130980257802","zingya#3821","25-Jan-19 11:56 PM","including the dictread","",""
+"535134130980257802","zingya#3821","25-Jan-19 11:56 PM","I think its the logic behind what im thinking will work is wrong","",""
+"393854278764068875","curiouskiwi#1671","25-Jan-19 11:56 PM","so in the lecture,  with the froshims2 application, it was writing to a csv and then reading from the csv to render a page.","",""
+"393854278764068875","curiouskiwi#1671","25-Jan-19 11:56 PM","```@app.route(""/registered"")
+def registered():
+    file = open(""registered.csv"", ""r"")
+    reader = csv.reader(file)
+    students = list(reader)
+    return render_template(""registered.html"", students=students)```","",""
+"535134130980257802","zingya#3821","25-Jan-19 11:56 PM","mainly its the concept of making the dict, putting the dict in an array etc","",""
+"535134130980257802","zingya#3821","25-Jan-19 11:57 PM","I have done a similar thing","",""
+"535134130980257802","zingya#3821","25-Jan-19 11:57 PM","well I think at least","",""
+"393854278764068875","curiouskiwi#1671","25-Jan-19 11:59 PM","using DictReader does make it slightly more complicated.","",""
+"535134130980257802","zingya#3821","26-Jan-19 12:00 AM","have I really overcomplicated things for myself?","",""
+"393854278764068875","curiouskiwi#1671","26-Jan-19 12:02 AM","I did the same when I first did this, then decided I had no real need for a dictionary and changed my approach.:)","",""
+"535134130980257802","zingya#3821","26-Jan-19 12:03 AM","how would you differentiate between the rows if just using a list?","",""
+"535134130980257802","zingya#3821","26-Jan-19 12:03 AM","can you put a list within a list?","",""
+"393854278764068875","curiouskiwi#1671","26-Jan-19 12:05 AM","yes","",""
+"393854278764068875","curiouskiwi#1671","26-Jan-19 12:11 AM","let's say you had a test.csv file that had 5 rows.  ```with open(""test.csv"", ""r"") as file:
+    print(list(csv.reader(file)))```  should print a list of 5 lists, each of which is a row","",""
+"535134130980257802","zingya#3821","26-Jan-19 12:14 AM","would this work","",""
+"535134130980257802","zingya#3821","26-Jan-19 12:14 AM","so placing the row in the array at index of i","",""
+"535134130980257802","zingya#3821","26-Jan-19 12:14 AM","which is incrementing","",""
+"393854278764068875","curiouskiwi#1671","26-Jan-19 12:16 AM","well, it would, but you could just say `data = list(reader)`  and let python do it for you","",""
+"535134130980257802","zingya#3821","26-Jan-19 12:18 AM","and for writer I imagine the same would work in reverse?","",""
+"393854278764068875","curiouskiwi#1671","26-Jan-19 12:19 AM","you'd want to create a list of lists (where each list is a row) and then use `writerow`","",""
+"535134130980257802","zingya#3821","26-Jan-19 12:20 AM","well for this example I suppose it doesnt matter","",""
+"535134130980257802","zingya#3821","26-Jan-19 12:20 AM","as you'd only ever be inputting one row at a time","",""
+"535134130980257802","zingya#3821","26-Jan-19 12:21 AM","per submit click","",""
+"393854278764068875","curiouskiwi#1671","26-Jan-19 12:21 AM","yes","",""
+"393854278764068875","curiouskiwi#1671","26-Jan-19 12:21 AM","so one list, one row","",""
+"535134130980257802","zingya#3821","26-Jan-19 12:22 AM","the only other question I had","",""
+"535134130980257802","zingya#3821","26-Jan-19 12:22 AM","was","",""
+"535134130980257802","zingya#3821","26-Jan-19 12:22 AM","```{i = 0}
+    {%for lists in data%}
+      <tr>
+        <td>{{data[i][0]}}</td>
+        <td>{{data[i][0]}}</td>
+        <td>{{data[i][0]}}</td>
+        <td>{{data[i][0]}}</td>
+        <td>{{data[i][0]}}</td>
+      </tr>
+    {% endfor %}
+```","",""
+"535134130980257802","zingya#3821","26-Jan-19 12:22 AM","I have tried","",""
+"535134130980257802","zingya#3821","26-Jan-19 12:22 AM","even with sample data","",""
+"535134130980257802","zingya#3821","26-Jan-19 12:22 AM","using html tables","",""
+"535134130980257802","zingya#3821","26-Jan-19 12:22 AM","and think im missing something","",""
+"535134130980257802","zingya#3821","26-Jan-19 12:23 AM","I think I got the jinja right","",""
+"535134130980257802","zingya#3821","26-Jan-19 12:23 AM","but idk","",""
+"393854278764068875","curiouskiwi#1671","26-Jan-19 12:23 AM","so is `data` your list of lists? (ie, your rows?)","",""
+"535134130980257802","zingya#3821","26-Jan-19 12:23 AM","yes","",""
+"393854278764068875","curiouskiwi#1671","26-Jan-19 12:24 AM","so your jinja loop might say  for row in data   and then your td is simply {{ row }}","",""
+"393854278764068875","curiouskiwi#1671","26-Jan-19 12:24 AM","wait","",""
+"393854278764068875","curiouskiwi#1671","26-Jan-19 12:24 AM","I mean","",""
+"393854278764068875","curiouskiwi#1671","26-Jan-19 12:25 AM","your tr is row  and then you loop over the row  with   ""for item in row""  and then your td is  item","",""
+"393854278764068875","curiouskiwi#1671","26-Jan-19 12:26 AM","see how that would work?","",""
+"535134130980257802","zingya#3821","26-Jan-19 12:27 AM","ah","",""
+"535134130980257802","zingya#3821","26-Jan-19 12:27 AM","I see","",""
+"393854278764068875","curiouskiwi#1671","26-Jan-19 12:27 AM","so you have a table with a header row. then you loop over the data and create trs for each row and tds for each item in each row","",""
+"535134130980257802","zingya#3821","26-Jan-19 12:28 AM","```  <tbody>
+    {i = 0}
+    {%for lists in data%}
+      <tr>
+        {%for elements in lists}}
+        <td>{{data[i][0]}}</td>
+        <td>{{data[i][0]}}</td>
+        <td>{{data[i][0]}}</td>
+        <td>{{data[i][0]}}</td>
+        <td>{{data[i][0]}}</td>
+        {% endfor %}
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+```","",""
+"535134130980257802","zingya#3821","26-Jan-19 12:28 AM","this","",""
+"535134130980257802","zingya#3821","26-Jan-19 12:28 AM","without the headers?","",""
+"535134130980257802","zingya#3821","26-Jan-19 12:28 AM","but I forgot to increment i","",""
+"535134130980257802","zingya#3821","26-Jan-19 12:28 AM","and remove","",""
+"535134130980257802","zingya#3821","26-Jan-19 12:28 AM","remove i *","",""
+"393854278764068875","curiouskiwi#1671","26-Jan-19 12:28 AM","you shouldn't have any of those squarebracket things","",""
+"393854278764068875","curiouskiwi#1671","26-Jan-19 12:28 AM","that's what `elements` is","",""
+"393854278764068875","curiouskiwi#1671","26-Jan-19 12:28 AM","<td>{{elements}}</td>","",""
+"535134130980257802","zingya#3821","26-Jan-19 12:29 AM","but surely I need to index them?","",""
+"393854278764068875","curiouskiwi#1671","26-Jan-19 12:29 AM","that's what the for loop does","",""
+"535134130980257802","zingya#3821","26-Jan-19 12:29 AM","ah I see","",""
+"393854278764068875","curiouskiwi#1671","26-Jan-19 12:29 AM","just like in python","",""
+"535134130980257802","zingya#3821","26-Jan-19 12:29 AM","the way python for loops use words","",""
+"535134130980257802","zingya#3821","26-Jan-19 12:29 AM","still confuses me a little","",""
+"393854278764068875","curiouskiwi#1671","26-Jan-19 12:29 AM","```python
+words = ['apple', 'banana', 'carrot']
+for word in words:
+    print(word)```","",""
+"393854278764068875","curiouskiwi#1671","26-Jan-19 12:30 AM","same as in C:   ```C
+for (int i = 0; i < 3; i++)
+{
+    printf(""%s\n"", words[i]);
+}```","",""
+"393854278764068875","curiouskiwi#1671","26-Jan-19 12:31 AM","you could also in python say ```python
+for i in range (len(words)):
+    print(words[i])```","",""
+"535134130980257802","zingya#3821","26-Jan-19 12:31 AM","for some reason","",""
+"535134130980257802","zingya#3821","26-Jan-19 12:32 AM","its printing out the entire row in each colomb","",""
+"393854278764068875","curiouskiwi#1671","26-Jan-19 12:34 AM","do have an endfor  for both loops?","",""
+"393854278764068875","curiouskiwi#1671","26-Jan-19 12:34 AM","do you still have multiple tds in the loop?","",""
+"535134130980257802","zingya#3821","26-Jan-19 12:13 PM","yeah","",""
+"535134130980257802","zingya#3821","26-Jan-19 12:13 PM","Just one td I imagine","",""
+"492450454341550100","WhipStreak23#6131","28-Jan-19 09:22 PM","Can someone explain ```@app.route(""/"", methods=[""GET""])
+def get_index():
+    return redirect(""/form"")
+
+
+@app.route(""/form"", methods=[""GET""])
+def get_form():
+    return render_template(""form.html"")
+
+
+@app.route(""/form"", methods=[""POST""])
+def post_form():
+    return render_template(""error.html"", message=""TODO"")
+
+
+@app.route(""/sheet"", methods=[""GET""])
+def get_sheet():
+    return render_template(""error.html"", message=""TODO"")
+```","",""
+"393854278764068875","curiouskiwi#1671","28-Jan-19 09:31 PM","Those are all the routes you'll need and they currently just default to saying ""TODO""","",""
+"492450454341550100","WhipStreak23#6131","28-Jan-19 09:37 PM","got it, ty","",""
+"492450454341550100","WhipStreak23#6131","28-Jan-19 09:58 PM","What is ```
+
+{% extends ""layout.html"" %}
+
+{% block main %}
+
+{% endblock %}
+``` for?","",""
+"393854278764068875","curiouskiwi#1671","28-Jan-19 10:01 PM","I'd suggest you review the lecture.  David explains all of this in his examples.","",""
+"492450454341550100","WhipStreak23#6131","28-Jan-19 10:02 PM","ok","",""
+"393854278764068875","curiouskiwi#1671","28-Jan-19 10:02 PM","or perhaps review the notes, like this section","https://cdn.discordapp.com/attachments/527358044598697984/539535857338679316/Screen_Shot_2019-01-29_at_9.02.27_AM.png",""
+"492450454341550100","WhipStreak23#6131","28-Jan-19 10:03 PM","where did you get that?","",""
+"393854278764068875","curiouskiwi#1671","28-Jan-19 10:03 PM","from the lecture notes that are linked from Week 7","",""
+"393854278764068875","curiouskiwi#1671","28-Jan-19 10:03 PM","every lecture has notes","",""
+"393854278764068875","curiouskiwi#1671","28-Jan-19 10:03 PM","https://cs50.harvard.edu/college/weeks/7/notes","",""
+"492450454341550100","WhipStreak23#6131","28-Jan-19 10:04 PM","I never knew that, thanks Brenda","",""
+"224937960431157260","Penderrin#5312","29-Jan-19 03:46 AM","I noticed that the Notes pages aren't linked from https://cs50.harvard.edu/college/","",""
+"224937960431157260","Penderrin#5312","29-Jan-19 03:46 AM","Only from inside the edX on the first page each week","",""
+"224937960431157260","Penderrin#5312","29-Jan-19 03:46 AM","Suggest: Adding a link to a Notes table of contents, on the side menu of cs50.harvard.edu?","",""
+"393854278764068875","curiouskiwi#1671","29-Jan-19 03:49 AM","@Penderrin the edX course materials are meant to be accessed via edX, not the harvard college site.","",""
+"393854278764068875","curiouskiwi#1671","29-Jan-19 03:50 AM","otherwise, it can get too confusing, since the psets (for example) are different for the edX course.","",""
+"224937960431157260","Penderrin#5312","29-Jan-19 03:51 AM","The edX links out to the other site","",""
+"393854278764068875","curiouskiwi#1671","29-Jan-19 03:51 AM","yes, but only for the notes","",""
+"224937960431157260","Penderrin#5312","29-Jan-19 03:51 AM","It's just a bit annoying because it takes many clicks to go from week to week in edX","",""
+"224937960431157260","Penderrin#5312","29-Jan-19 03:52 AM","Maybe on the front edX page, a link to something like","",""
+"224937960431157260","Penderrin#5312","29-Jan-19 03:52 AM","https://cs50.harvard.edu/college/weeks/notes_all","",""
+"393854278764068875","curiouskiwi#1671","29-Jan-19 03:52 AM","you can change the week number in the URL 😃","",""
+"393854278764068875","curiouskiwi#1671","29-Jan-19 03:52 AM","that's what I do","",""
+"224937960431157260","Penderrin#5312","29-Jan-19 03:52 AM","Good point","",""
+"393854278764068875","curiouskiwi#1671","29-Jan-19 03:53 AM","but I get what you're saying.","",""
+"224937960431157260","Penderrin#5312","29-Jan-19 03:53 AM","Unless people do silly things (as I've seen on other sites) such as /2a/...","",""
+"224937960431157260","Penderrin#5312","29-Jan-19 03:53 AM","/2-1/... 2-2","",""
+"224937960431157260","Penderrin#5312","29-Jan-19 03:53 AM","etc.","",""
+"393854278764068875","curiouskiwi#1671","29-Jan-19 03:53 AM","we're currently creating an edX 'version' of the cs50.harvard site ... and everything will then be linked from there.","",""
+"224937960431157260","Penderrin#5312","29-Jan-19 03:53 AM","Neat!","",""
+"393854278764068875","curiouskiwi#1671","29-Jan-19 03:53 AM","I don't like the edX UI","",""
+"224937960431157260","Penderrin#5312","29-Jan-19 03:53 AM","Me either ... 
+The Harvard site is also 100x faster","",""
+"224937960431157260","Penderrin#5312","29-Jan-19 03:54 AM","The Poetry course may not want to create their own custom website though (!!)","",""
+"393854278764068875","curiouskiwi#1671","29-Jan-19 03:56 AM","I'm only talking about CS50 😃","",""
+"393854278764068875","curiouskiwi#1671","29-Jan-19 03:56 AM","not all HarvardX","",""
+"393854278764068875","curiouskiwi#1671","31-Jan-19 09:02 PM","@WhipStreak23 did you just ask this in slack?","",""
+"300110246238486530","Mr. Distinguished#9941","06-Feb-19 07:50 AM","hello there, I am having trouble with the client side form submission check.
+
+My form has two text inputs, two select inputs, and 5 radio buttons. When using
+!document.querySelector('input' or 'select').value the js will only catch if the first text input and the first select input are empty. 
+
+I resolved this by using giving each text and select input an id attribute and using that. 
+
+However, I cannot figure out a way to check if  at least one of the radio buttons is selected. I've tried selecting the value (with querySelector) using id, class, and just a board 'input"". but nothing seems to work. Any advice? Thanks in advance!","",""
+"393854278764068875","curiouskiwi#1671","06-Feb-19 08:58 AM","If there are only 2 or 3, you can give each one a different id and then check if the .checked value is not set for all of them.   If there are more, you can loop over them similarly to this example:   https://stackoverflow.com/a/13212893/3815266   (a function might be unnecessary but you can use the concept)","",""
+"300110246238486530","Mr. Distinguished#9941","07-Feb-19 05:07 AM","@curiouskiwi ahh thanks!","",""
+"492450454341550100","WhipStreak23#6131","07-Feb-19 08:03 PM","Thanks @curiouskiwi I'm done!","","👍 (1)"
+"492450454341550100","WhipStreak23#6131","07-Feb-19 08:07 PM","ON TO FINANCE!","",""
+"300110246238486530","Mr. Distinguished#9941","09-Feb-19 05:53 PM","errors in form.html","https://cdn.discordapp.com/attachments/527358044598697984/543821750086139904/htmlvalidation.jpg",""
+"300110246238486530","Mr. Distinguished#9941","09-Feb-19 05:53 PM","any ideas?","",""
+"300110246238486530","Mr. Distinguished#9941","09-Feb-19 05:55 PM","similar story with sheet.html, except there is the new one ""non white space in table"", seems like it is complaining about the jinja?","https://cdn.discordapp.com/attachments/527358044598697984/543822289943134218/htmlerrors.jpg",""
+"393854278764068875","curiouskiwi#1671","09-Feb-19 10:53 PM","@Mr. Distinguished presumbly your layout.html already starts with an html tag, so you shouldn't be adding one to form.html","",""
+"300110246238486530","Mr. Distinguished#9941","09-Feb-19 11:49 PM","@curiouskiwi Yeah I did not add a html tag to form.html. So I can just ignore that warning?
+
+What abt the error about a missing title tag? There is already one in layout.html. the. There is the whole ""misplaced non white space in table"". 
+I turned in the assignment and got a 95 for style which is fine, I just want to why it's kicking back all these errors.","",""
+"393854278764068875","curiouskiwi#1671","10-Feb-19 12:58 AM","@Mr. Distinguished you have to check the style using the calculated HTML not the one with jinja tags in it.  (I wasn't thinking right about it when I answered before).    As for your style grade, did you run `style50 application.py` ?   Your html isn't graded for style.","",""
+"300110246238486530","Mr. Distinguished#9941","10-Feb-19 01:04 AM","@curiouskiwi oh that makes alot of sense... And nope, ran style50 for similarities but forgot to do it for survey. 😑 Thanks once again for all your consistent help!","",""
+"442001256085454888","FlaggedLasso#2499","21-Feb-19 12:03 AM","When completing post_form is there a better way of checking if a form value is left blank than: if (request.form.get('var1') == """" or request.form.get('var2') == """" ...): 
+  return render_template(""error.html"", message)?","",""
+"393854278764068875","curiouskiwi#1671","21-Feb-19 12:22 AM","perhaps use a loop to loop over all the field names (put them in a list) and then you can say  value =  request.form.get(field) and then   if not value:   return the template","",""
+"442001256085454888","FlaggedLasso#2499","21-Feb-19 12:31 AM","Thanks, I forgot request.form is a dictionary object","",""
+"442001256085454888","FlaggedLasso#2499","22-Feb-19 03:16 AM","Stuck on validating that one checkbox has been clicked using JS. Why doesn't this work: if (!document.querySelector('input[type='checkbox']:checked').length==1) {alert...}","",""
+"442001256085454888","FlaggedLasso#2499","22-Feb-19 03:17 AM","*Not the full script, just jumping into the part that's not working. Thanks","",""
+"442001256085454888","FlaggedLasso#2499","22-Feb-19 05:12 AM","querySelectorAll*","",""
+"442001256085454888","FlaggedLasso#2499","23-Feb-19 01:20 AM","Any ideas would be appreciated thanks","",""
+"224937960431157260","Penderrin#5312","23-Feb-19 05:02 PM","@FlaggedLasso Unfortunatly, validating forms usually takes a combination of HTML + Javascript","",""
+"224937960431157260","Penderrin#5312","23-Feb-19 05:02 PM","Bootstrap has an example here:","",""
+"224937960431157260","Penderrin#5312","23-Feb-19 05:03 PM","https://getbootstrap.com/docs/4.0/components/forms/#custom-styles","",""
+"224937960431157260","Penderrin#5312","23-Feb-19 05:03 PM","```javascript
+<script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
+```","",""
+"224937960431157260","Penderrin#5312","23-Feb-19 05:04 PM","The first time I looked at this though ... it looked like a bunch of random characters that didn't make any sense","",""
+"224937960431157260","Penderrin#5312","23-Feb-19 05:05 PM","Check-boxes especially, are annoying","",""
+"224937960431157260","Penderrin#5312","23-Feb-19 05:05 PM","I had a form with something like","",""
+"224937960431157260","Penderrin#5312","23-Feb-19 05:05 PM","```
+What is your favorite color? (Check only one)
+[ ] Yellow
+[ ] Blue
+[x] Green
+```","",""
+"224937960431157260","Penderrin#5312","23-Feb-19 05:06 PM","Eventually I scrapped it, and used a single checkbox ( which can be validated just by following Bootstrap's example )","",""
+"224937960431157260","Penderrin#5312","23-Feb-19 05:07 PM","```
+I filled out all the questions
+[ x ] yes
+```","",""
+"224937960431157260","Penderrin#5312","23-Feb-19 05:08 PM","Otherwise, if you have a form group with multiple check boxes, some custom Javascript will be needed, as ...","",""
+"224937960431157260","Penderrin#5312","23-Feb-19 05:11 PM","```
+From the DOM ... get the form
+From the form ... get the check box group
+var OneCheck = false
+For each checkbox type input
+    If state is :checked
+        OneCheck = true
+If OneCheck is false 
+    Prevent form submission
+    Display an ""invalid"" message to the user
+```","",""
+"442001256085454888","FlaggedLasso#2499","23-Feb-19 06:16 PM","Thanks for the response! I finally figured it out yesterday; and the issue was with the boolean operator. Corrected code: if (document.querySelector('input[type='checkbox']:checked').length!=1) {alert...}","",""
+"442001256085454888","FlaggedLasso#2499","23-Feb-19 06:16 PM","I was just being a JS noob :)","",""
+"224937960431157260","Penderrin#5312","23-Feb-19 07:35 PM","@FlaggedLasso  Great!  Does your survey question only involve one checkbox?","",""
+"442001256085454888","FlaggedLasso#2499","23-Feb-19 07:55 PM","Yes but with that snippet you can limit users to any number of checkboxes","",""
+"224937960431157260","Penderrin#5312","23-Feb-19 08:03 PM","@FlaggedLasso Sure, but it may not work if you have two seperate questions, each with two potential checkboxes","",""
+"224937960431157260","Penderrin#5312","23-Feb-19 08:04 PM","```
+Question 1:
+[ ] Mark this ... 
+[ ] Or this ...
+
+Question 2:
+[ ] Foo
+[ ] Bar
+```","",""
+"224937960431157260","Penderrin#5312","23-Feb-19 08:05 PM","To validate this form, I think I need to check each group of check boxes seperately, and check that at least one (for each group) is checked","",""
+"442001256085454888","FlaggedLasso#2499","23-Feb-19 08:18 PM","Ah gotcha, you can change the css selector to 'input[name=question1]' to separate out the checkboxes","",""
+"330647206023528449","kelechy#8060","01-Mar-19 03:43 PM","I used bootstrap to make sure the user does not submit form with filling in the details
+but when he does I get error `Internal Server Error`
+any help","",""
+"330647206023528449","kelechy#8060","01-Mar-19 03:49 PM","https://pastebin.com/0bepHeVH","",""
+"330647206023528449","kelechy#8060","01-Mar-19 03:56 PM","someone help look at my `post_form`","",""
+"393854278764068875","curiouskiwi#1671","01-Mar-19 09:50 PM","@kelechy what errors do you see in the terminal?","",""
+"330647206023528449","kelechy#8060","01-Mar-19 09:51 PM","no error in particular
+just error when i submit form and try to move to another route","",""
+"330647206023528449","kelechy#8060","01-Mar-19 09:51 PM","i notice i did not validate the form input with js, I thought bootstrap did that for me","",""
+"330647206023528449","kelechy#8060","01-Mar-19 09:54 PM","@curiouskiwi  is it compulsory i must validate input in`<script>` tag ?","",""
+"330647206023528449","kelechy#8060","01-Mar-19 10:08 PM","@curiouskiwi  I'm using the `required` attribute so that form cant be submitted if not filled, is that correct?","",""
+"224937960431157260","Penderrin#5312","02-Mar-19 06:34 AM","@kelechy  Bootstrap isn't 100% clear in their example, but I do think some javascript inside <script> is needed to make it work","",""
+"224937960431157260","Penderrin#5312","02-Mar-19 06:34 AM","https://getbootstrap.com/docs/4.3/components/forms/#custom-styles","",""
+"224937960431157260","Penderrin#5312","02-Mar-19 06:34 AM","This is the sample code they provide:","",""
+"224937960431157260","Penderrin#5312","02-Mar-19 06:34 AM","```js
+<script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
+```","",""
+"330647206023528449","kelechy#8060","02-Mar-19 10:25 AM","ok I'll look at it @Penderrin","",""
+"330647206023528449","kelechy#8060","02-Mar-19 12:27 PM","pls i do not see anything in `survey.csv` even after writing to that file,  any help?","",""
+"224937960431157260","Penderrin#5312","02-Mar-19 06:08 PM","@kelechy Check the documentation on your CSV . functions","",""
+"224937960431157260","Penderrin#5312","02-Mar-19 06:08 PM","https://docs.python.org/3/library/csv.html#csv.DictWriter","",""
+"224937960431157260","Penderrin#5312","02-Mar-19 06:09 PM","```python
+    fieldnames = ['first_name', 'last_name']
+    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+```","",""
+"224937960431157260","Penderrin#5312","02-Mar-19 06:09 PM","Do you see how their example code is different than yours?","",""
+"330647206023528449","kelechy#8060","02-Mar-19 06:12 PM","okay @Penderrin","",""
+"242010922611245056","armchair#4520","17-Mar-19 10:22 PM","Hey guys","",""
+"189635070246518784","holymama#4630","27-Mar-19 03:22 AM","how do i have the user input written into the csv file?","",""
+"189635070246518784","holymama#4630","27-Mar-19 03:23 AM","i know i have to use dictwriter at some point","",""
+"189635070246518784","holymama#4630","27-Mar-19 03:26 AM","i googled a bit but they mostly refer to PHP?","",""
+"393854278764068875","curiouskiwi#1671","27-Mar-19 03:37 AM","@holymama revisit the froshims example from lecture 7   https://cs50.harvard.edu/college/weeks/7/notes/","",""
+"189635070246518784","holymama#4630","27-Mar-19 03:38 AM","yeah your right","",""
+"189635070246518784","holymama#4630","27-Mar-19 03:38 AM","i scrolled up and saw that advice","",""
+"189635070246518784","holymama#4630","27-Mar-19 03:38 AM","thanks!","",""
+"294467919411150848","Six-legged Turtle#0788","31-Mar-19 04:20 AM","Not a bit much related to the problem, but I find how the use of singular and plural noun  is so frustrating. 
+An example would be:
+Python: `request.form.get   // make sense cause there's one form`
+Java:  `document.forms[].value  // why use plural for a singular object?`","",""
+"224937960431157260","Penderrin#5312","31-Mar-19 04:26 AM","https://developer.mozilla.org/en-US/docs/Web/API/Document/forms","",""
+"224937960431157260","Penderrin#5312","31-Mar-19 04:26 AM","""The forms read-only property of the Document interface returns an HTMLCollection listing all the <form> elements contained in the document.""","",""
+"224937960431157260","Penderrin#5312","31-Mar-19 04:26 AM","So it is one object ... but possibly many forms?","",""
+"224937960431157260","Penderrin#5312","31-Mar-19 04:27 AM","I guess they had to pick one","",""
+"294467919411150848","Six-legged Turtle#0788","31-Mar-19 04:28 AM","I guess I'm just salty cus I wasted half an hour looking for bug because I forgot to add an ""s""","",""
+"224937960431157260","Penderrin#5312","31-Mar-19 04:28 AM","haha, know that","",""
+"224937960431157260","Penderrin#5312","31-Mar-19 04:28 AM","I think the same happens in Python a lot","",""
+"294467919411150848","Six-legged Turtle#0788","31-Mar-19 04:28 AM","since the code look similar, i thought i was correct and ignore it.","",""
+"224937960431157260","Penderrin#5312","31-Mar-19 04:29 AM","```py
+animals = [ 'bear', 'dragon', 'swallow' ]
+for animal in animals:
+  # do something
+```","",""
+"294467919411150848","Six-legged Turtle#0788","31-Mar-19 04:29 AM","for the `for` loop I avoid similar names for that reason.","",""
+"224937960431157260","Penderrin#5312","31-Mar-19 04:30 AM","That is fair  ... the one s can be killer","",""
+"294467919411150848","Six-legged Turtle#0788","31-Mar-19 04:30 AM","too confusing, I would use something like `for ani` or something","",""
+"224937960431157260","Penderrin#5312","31-Mar-19 04:31 AM","If any consolation ... I think javascript is where I make the most syntax mistakes","",""
+"224937960431157260","Penderrin#5312","31-Mar-19 04:31 AM","Do you know about the Chrome dev tools, console / source ?","",""
+"224937960431157260","Penderrin#5312","31-Mar-19 04:32 AM","That has helped me find the exact line where things are going wrong","",""
+"294467919411150848","Six-legged Turtle#0788","31-Mar-19 04:33 AM","I guess next time I can find the error faster.","",""
+"230799800671404042","❤ Eufrasia ❤#2536","31-Mar-19 07:22 PM","how much time will it take to solve this pset ?","",""
+"92902705873301504","francis#9938","10-Apr-19 05:03 PM","When should I use csv.writer and csv.DictWriter?","",""
+"397677328660037632","Maarten#1004","11-Apr-19 10:57 AM","I think writer if you want a list, dictwriter when you want a dictionary as data structure.","",""
+"425716535580033024","Siddharth#2643","15-Apr-19 06:57 PM","hey guys","",""
+"425716535580033024","Siddharth#2643","15-Apr-19 06:57 PM","I am trying to run this application","",""
+"425716535580033024","Siddharth#2643","15-Apr-19 06:57 PM","I haven't changed the code at all yet","",""
+"425716535580033024","Siddharth#2643","15-Apr-19 06:57 PM","but when I try `flask run`","",""
+"425716535580033024","Siddharth#2643","15-Apr-19 06:57 PM","I see this in the terminal:","",""
+"425716535580033024","Siddharth#2643","15-Apr-19 06:58 PM","","https://cdn.discordapp.com/attachments/527358044598697984/567378149663309863/Screen_Shot_2019-04-15_at_11.57.54_AM.png",""
+"425716535580033024","Siddharth#2643","15-Apr-19 06:58 PM","what am I doing wrong?","",""
+"425716535580033024","Siddharth#2643","15-Apr-19 06:58 PM","just trying to get this up and running so as I change my  `form.html` file I can see the changes reflected in the browser","",""
+"397677328660037632","Maarten#1004","15-Apr-19 09:33 PM","To prevent someone else to spend time on this problem: seems solved for now by forcing to reinstall Flask (updating didn't work).","",""
+"425716535580033024","Siddharth#2643","15-Apr-19 09:34 PM","Yes, big thanks to Maarten for helping me with the above! `pip install --upgrade --force-reinstall Flask` did the job!","",""
+"425716535580033024","Siddharth#2643","15-Apr-19 10:58 PM","potentially a false alarm - I am experiencing this issue again, and `pip install --upgrade --force-reinstall Flask` does not seem to be doing the trick this time","",""
+"425716535580033024","Siddharth#2643","15-Apr-19 10:58 PM","if anyone has any advice, would be greatly appreciated","",""
+"425716535580033024","Siddharth#2643","15-Apr-19 11:08 PM","thanks again to @Maarten . this time, I had to run `pip list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip install -U` and then Reset Settings on the IDE and then Restart Workspace on the IDE. must be an issue with the IDE","",""
+"393854278764068875","curiouskiwi#1671","16-Apr-19 12:52 AM","@kzidane is this a known issue? `flask` works fine for me in the IDE.","",""
+"397677328660037632","Maarten#1004","16-Apr-19 10:36 AM","fyi: Siddharth contacted me in pm and I've tested his files on my (CS50) ide, and they work fine there as well. The error message kinda seems something went wrong on the Flask end, hence the updating / reinstalling and reset/restarting tips I gave. Also advised to contact Kareem in case the issue persisted, because to me this kinda feels like an IDE issue.","",""
+"106362473711431680","Saltey#8750","23-Apr-19 03:11 PM","Hey guys, have a strange situation where my form.html is returning back only this to post_form","",""
+"106362473711431680","Saltey#8750","23-Apr-19 03:11 PM","b''","",""
+"106362473711431680","Saltey#8750","23-Apr-19 03:11 PM","No idea why","",""
+"504624536407244800","Dmoj#2271","24-Apr-19 07:14 PM","@Saltey what are you trying to do?","",""
+"106362473711431680","Saltey#8750","24-Apr-19 07:14 PM","Oh sorry, I fixed it last night","",""
+"106362473711431680","Saltey#8750","24-Apr-19 07:14 PM","Thanks for trying to help though hahaha, I was reading the request.data instead of request.form","",""
+"504624536407244800","Dmoj#2271","24-Apr-19 07:25 PM","Oh, no problem! Glad you fixed it 😃 good luck","",""
+"563455981711917067","nicocasr#8594","09-May-19 01:07 AM","Where should I start with the python part of this problem, I don't understand at all what the methods  do, and I'm a little bit confuse with all of that. Can anybody help me with something like texts or something to get confortable  with that pls","",""
+"308235184182919168","pentacz#4986","10-May-19 02:10 PM","AFAIK in def post_form you need to open file and write the data, and in get_sheet open and read csv as a list","",""
+"308235184182919168","pentacz#4986","10-May-19 02:10 PM","both were on lecture 7 in some froshims example","",""
+"308235184182919168","pentacz#4986","10-May-19 02:11 PM","I'm currently struggling to open properly that survey.csv or sheet.html...","",""
+"308235184182919168","pentacz#4986","10-May-19 02:11 PM","and in post_form you add an if when there is no data to return error.html","",""
+"308235184182919168","pentacz#4986","10-May-19 02:46 PM","yes! done. lost over an hour because writer.writerow needs double parenthesis, not single... so typical...","",""
+"318724387417227266","0x4E696E6A75#6171","11-May-19 06:09 PM","staff solution accepts numbers in name field 😒","https://cdn.discordapp.com/attachments/527358044598697984/576787883747311637/unknown.png",""
+"317154646160441345","amanecer#2948","21-May-19 09:12 PM","","https://cdn.discordapp.com/attachments/527358044598697984/580457946715258910/unknown.png",""
+"317154646160441345","amanecer#2948","21-May-19 09:13 PM","So... running `style50 application.py` gave me the okay but submitting my files gave me a 1/5... anybody got a clue why?","https://cdn.discordapp.com/attachments/527358044598697984/580458126600568864/unknown.png",""
+"234679095378706433","Blauelf#6622","21-May-19 09:25 PM","Other files `style50` might apply to? Like other python files?","",""
+"317154646160441345","amanecer#2948","21-May-19 09:29 PM","application.py is my only python file, but I did borrow the use of external css templates, images, scripts, fonts etc (purely for aesthetic purposes, I built pset specs myself) - those had to be uploaded as well. Did `style50` scan all those too? If the html files aren't being scored for style, doesn't add up that other file types would be scored as well... 🤔","",""
+"234679095378706433","Blauelf#6622","21-May-19 09:31 PM","Does local `style50` work for those now? Last time I tried, it only covered `.c` and `.py` files.","",""
+"317154646160441345","amanecer#2948","21-May-19 09:40 PM","Think I figured it out lol. `style50` is also run against .js files, so those script files I've imported were the culprits","",""
+"234679095378706433","Blauelf#6622","21-May-19 09:47 PM","Nice to know.","",""
+"317154646160441345","amanecer#2948","21-May-19 09:48 PM","Yeah, just removed those files and got the 5/5 for style, but my site is now looking a little bit less cool 😂","",""
+"234679095378706433","Blauelf#6622","21-May-19 09:55 PM","Could you maybe load the script from some cdn?","",""
+"317154646160441345","amanecer#2948","21-May-19 10:01 PM","Nah, those are custom scripts (the type that make an image ""pop"" when mouseover, for example). I could've tried cleaning those scripts up to make `style50` happy but they're so massive and terribly formatted it's really not worth the effort lol","",""
+"234679095378706433","Blauelf#6622","21-May-19 10:07 PM","Uh, that's too annoying then.","",""
+"218368025089409024","Brewslee#6566","30-May-19 09:52 PM","I'm having problems figuring out why I am getting a '400-Bad Request'. 
+I've written a block of code in application.py to check if the form inputs are empty and if they are, to redirect to the error page. This works as intended for my <input type=text> but I am getting problems with my <select> dropdown list. Basically the first option in my dropdown list has the selected and disabled attribute but if I submit with this option selected, I get 400 error. 
+
+form.html
+```html
+<select name=""character"" id=""inputCharacters"">
+        <option selected disabled> Select Avenger: </option>
+       <option value=""Black Widow""> Black Widow </option>
+</select>
+```
+application.py
+```python
+if not request.form[""character""]:
+    return render_template(""error.html"", message=""Please select a character"");
+```","",""
+"234679095378706433","Blauelf#6622","30-May-19 10:00 PM","Try `if request.form.get(""character"") == None:`, or `if not request.form.get(""character""):`, or maybe `if not ""character"" in request.form:`. `.get(""character"")`, unlike `[""character""]`, will not raise an error (you should see the error on your terminal), but return some default value instead, which is `None` if not specified otherwise.","",""
+"218368025089409024","Brewslee#6566","30-May-19 10:05 PM","That solved it - thanks! Do you have any insights into why I was getting error 400 using request.form[ ]?","",""
+"234679095378706433","Blauelf#6622","30-May-19 11:05 PM","Your function crashed. You should have seen a stack trace on the terminal where you start the server.","",""
+"234679095378706433","Blauelf#6622","30-May-19 11:06 PM","`[]` type access will raise an error if the key does not exist. The `.get()` type access returns a default value instead. With the `in` operator, you can check whether a key exists in a dict.","",""
+"234679095378706433","Blauelf#6622","30-May-19 11:14 PM","```Python
+my_dict = { ""answer"" : 42 }
+print(my_dict[""answer""]) # nothing special
+print(my_dict.get(""answer"")) # same
+print(my_dict.get(""discordia"")) # ""discordia"" is not a key in this dict, get returns the default None
+print(my_dict.get(""eris"", 23))  # ""eris"" is also not a valid key, so get returns the value 23 instead
+print(""Borderline Cobblestone"" in my_dict) # checks whether this key exists in the dict
+print(my_dict[""Bugglesome Counterwrench""]) # key is not valid, raises KeyError
+```","",""
+"218368025089409024","Brewslee#6566","31-May-19 12:13 AM","Ahh I get it now. In flask, request.data is a dict data type so accessing an absent key with [ ] returns an error whereas the .get() function will return None. So basically I was getting 400 because my code was trying to do something illegal. Thanks again @Blauelf!","",""
+"234679095378706433","Blauelf#6622","31-May-19 12:20 AM","http://flask.pocoo.org/docs/0.12/api/#incoming-request-data
+`request.data` actually is a string 😛 (but I was talking about `request.form`)","",""
+"218368025089409024","Brewslee#6566","31-May-19 12:27 AM","Oh yeah - typo on my part. I meant .form too 😝","",""
+"510229644419530764","tommcn#1268","02-Jun-19 07:52 PM","How do I pass a list from Python to JavaScript","",""
+"510229644419530764","tommcn#1268","02-Jun-19 07:52 PM","I tried {{ test }} but I get ""parsing error, unexpected token {""","",""
+"510229644419530764","tommcn#1268","02-Jun-19 08:00 PM","Never mind, I had my code in the wrong place","",""
+"297463042319581184","Thrills#2955","03-Jun-19 03:16 PM","Hey guys, I've recently completed Survey","",""
+"297463042319581184","Thrills#2955","03-Jun-19 03:17 PM","However when I submit it, i get ':( has one or more checkboxes or two or more radio buttons' despite having two functioning check boxes","",""
+"297463042319581184","Thrills#2955","03-Jun-19 03:17 PM","i've tried putting radio buttons in which also function properly and get the same error","",""
+"297463042319581184","Thrills#2955","03-Jun-19 03:18 PM","anyone had this/know why this might be?","",""
+"393854278764068875","curiouskiwi#1671","03-Jun-19 09:00 PM","have you run your HTML through the Validator to make sure you have no errors, per the spec?  If you have errors, check50 may struggle to parse your code.","",""
+"234679095378706433","Blauelf#6622","03-Jun-19 09:04 PM","Good idea, I remember the weird `</br>` tags (br elements have no closing tag) breaking the checker before.","",""
+"560548949212135430","MatMiLam#5890","04-Jun-19 06:45 AM","If you have more than 1 input field how would you verify the 2nd field? This checks the first input.
+`if (!document.querySelector('input').value) {
+            alert('You must provide your name!');
+            return false;`","",""
+"234679095378706433","Blauelf#6622","04-Jun-19 07:56 AM","A selector for a type, or a selector for a class, might return multiple elements (`querySelector` will return the first only, wile `querySelectorAll` returns... all of them). A selector for `id` won't refer to multiple elements, as IDs must be unique. You would find an element `<input type=""text"" name=""username"" id=""username"" placeholder=""Your username"">` (the `id` is relevant here) using `document.getElementById(""username"")` or `document.querySelector(""#username"")` (the hash is CSS for referring to an id).
+
+And then there's also the form in the DOM, holding a list of all of its input elements. See https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement#Usage_notes","",""
+"560548949212135430","MatMiLam#5890","04-Jun-19 08:01 AM","Here is my input line.
+`<input autocomplete=off autofocus name=""firstName"" placeholder=""What is your first name?"" type=""text"">`
+Should I add an id="""" to my line in order to use one of those 2 solutions?","",""
+"234679095378706433","Blauelf#6622","04-Jun-19 08:05 AM","I'd do it that way, but only because I know it works and my previous knowledge on forms is pretty outdated, pre-CSS.","",""
+"560548949212135430","MatMiLam#5890","04-Jun-19 08:05 AM","sounds good. thank you I will give it a try now","",""
+"234679095378706433","Blauelf#6622","04-Jun-19 08:14 AM","What also might still work would be `document.forms[0][""firstName""]`, based on `name` attribute and the first (index 0) form. That's how it worked in the 90s 😄","",""
+"560548949212135430","MatMiLam#5890","04-Jun-19 08:16 AM","Ok. I will give that a shot because I was unable to get the first 2 solutions to work.","",""
+"560548949212135430","MatMiLam#5890","04-Jun-19 08:20 AM","still no luck.","",""
+"234679095378706433","Blauelf#6622","04-Jun-19 08:20 AM","`document.forms[0]` should probably be replaced with accessing the form by ID (like `document.getElementById(""registerForm"")`), rest should still work. If you have a group of ""radio""-type options, it will give you a list, but the list will have the selected value.","",""
+"560548949212135430","MatMiLam#5890","04-Jun-19 08:21 AM","ok. trying that one","",""
+"560548949212135430","MatMiLam#5890","04-Jun-19 08:21 AM","thanks","",""
+"560548949212135430","MatMiLam#5890","04-Jun-19 08:22 AM","'if (!document.getElementById(""firstName"") {
+                alert('You must provide your first name!');
+                return false;
+            }`","",""
+"560548949212135430","MatMiLam#5890","04-Jun-19 08:22 AM","this code is not working either","",""
+"560548949212135430","MatMiLam#5890","04-Jun-19 08:23 AM","I have added id to the input line.
+`<input autocomplete=off autofocus id=""firstName"" name=""firstName"" placeholder=""What is your first name?"" type=""text"">`","",""
+"560548949212135430","MatMiLam#5890","04-Jun-19 08:26 AM","I appear to be missing a "")"" in that if line. I will fix and retest","",""
+"560548949212135430","MatMiLam#5890","04-Jun-19 08:28 AM","I think it is working now. Here is the line that seems to work.
+`document.getElementById(""firstName"").value)`","",""
+"560548949212135430","MatMiLam#5890","04-Jun-19 08:31 AM","Great!  This works for both input and select just as long as I set an id field. Thank you Blauelf","",""
+"140183864076140544","Key#3708","04-Jun-19 09:47 AM","","https://cdn.discordapp.com/attachments/527358044598697984/585359042793308160/unknown.png",""
+"140183864076140544","Key#3708","04-Jun-19 09:48 AM","i'm having trouble with this one. If I fill out the whole form for some reason it still gives me the error message","",""
+"140183864076140544","Key#3708","04-Jun-19 09:48 AM","firstname, lastname, birthday, email, job are all text inputs. school is radio. and salary is select","",""
+"140183864076140544","Key#3708","04-Jun-19 09:49 AM","i have a javascript code from bootstrap that prevents me from submitting if i don't have all the inputs selected and filled out","",""
+"224937960431157260","Penderrin#5312","04-Jun-19 06:03 PM","@Key You might consider re-working a little to avoid so much repeated code","",""
+"224937960431157260","Penderrin#5312","04-Jun-19 06:03 PM","Something like","",""
+"224937960431157260","Penderrin#5312","04-Jun-19 06:05 PM","```py
+fields = [""foo"", ""bar"", ""baz""]
+for name in fields:
+  if not request.form.get(name)
+    return render_template( ... )
+```","",""
+"224937960431157260","Penderrin#5312","04-Jun-19 06:08 PM","Otherwise ... tough to tell where your problem is, unless you describe the error more / provide the full route in app.py + the full HTML file (base template + extended template) via https://gist.github.com/ or similar","",""
+"224937960431157260","Penderrin#5312","04-Jun-19 06:10 PM","Ex: Does it display the HTML page, error.html with the error message ""please fill out ... ""? Or something else?  Is there print-out in the terminal when you run the route?","",""
+"140183864076140544","Key#3708","04-Jun-19 07:06 PM","Thanks for the advice. I'll implement that","",""
+"140183864076140544","Key#3708","04-Jun-19 07:06 PM","But yes it goes to the error. HTML page","",""
+"560548949212135430","MatMiLam#5890","04-Jun-19 10:37 PM","In the example prof showed us there are only 2 variables being returned. What if there are many variables being returned back to your application.py? Is there  a way to iterate through the writer.writerow section so that you dont have a bunch of redundant code?  
+`with open(""registered.csv"", ""a"") as file:
+        writer = csv.DictWriter(file, fieldnames=[""name"", ""dorm""])
+        writer.writerow({""name"": request.form.get(""name""), ""dorm"": request.form.get(""dorm"")})`","",""
+"234679095378706433","Blauelf#6622","04-Jun-19 10:40 PM","Do you mean something like
+```Python
+with open(""registered.csv"", ""a"") as file:
+        writer = csv.DictWriter(file, fieldnames=request.form.keys())
+        writer.writerow(request.form)
+```
+? Don't know if that would work.","",""
+"560548949212135430","MatMiLam#5890","04-Jun-19 10:51 PM","hmm.. let me see what that will do","",""
+"560548949212135430","MatMiLam#5890","04-Jun-19 11:00 PM","no luck with that one","",""
+"560548949212135430","MatMiLam#5890","04-Jun-19 11:20 PM","it would be cool if some sort of comprehension would work like this
+`writer.writerow({""key"" : request.form.get(""key"")} for key in request.form.keys())`
+I was just trying to find a way to not have to write request.form.get() a bunch of times","",""
+"393854278764068875","curiouskiwi#1671","04-Jun-19 11:42 PM","create a list of all your field names, then you can do something like that","",""
+"234679095378706433","Blauelf#6622","04-Jun-19 11:43 PM","Just realized that CSV does not ensure the written line to match the rest of the file.","",""
+"393854278764068875","curiouskiwi#1671","04-Jun-19 11:44 PM","`items = request.form.get(field) for field in fieldnames`  and then writerow those items","",""
+"297463042319581184","Thrills#2955","04-Jun-19 11:45 PM","Thanks guys, sorted it out","",""
+"560548949212135430","MatMiLam#5890","05-Jun-19 12:07 AM","have you tried this kiwi?
+`writer.writerow(key for key in List)`
+Even after formulating a list that contains values that have already gone through request.form.get  I am unable to get a writer line to write anything. I have a working solution that I can use but it is repetitive and was wondering if there was a better way to write a bunch of variables being returned from a form.","",""
+"393854278764068875","curiouskiwi#1671","05-Jun-19 12:14 AM","I did what I posted above. I get a list (`items`) and then `writer.writerow(items)` writes those to the csv file.","",""
+"393854278764068875","curiouskiwi#1671","05-Jun-19 12:16 AM","so to summarize, I have a list of fieldnames.  I iterate over those fieldnames to get the values for each field and store that in a list.  then I write that list as rows to the csv file.","",""
+"560548949212135430","MatMiLam#5890","05-Jun-19 12:31 AM","shouldn't a list comprehension look like this
+`items = [request.form.get(field) for field in fieldnames]`
+and not this
+`items = request.form.get(field) for field in fieldnames`
+Im clearly missing something here because I am getting nothing in the csv file","",""
+"393854278764068875","curiouskiwi#1671","05-Jun-19 12:40 AM","yes, the former. I left off the brackets when I typed it. sorry if that caused confusion.  I was initially trying to use pseudocode. 😃","",""
+"393854278764068875","curiouskiwi#1671","05-Jun-19 12:40 AM","if you do that, and then `print(items)` are you seeing anything?","",""
+"393854278764068875","curiouskiwi#1671","05-Jun-19 12:42 AM","fwiw, I also used `csv.writer` and not DictWriter since that was all I needed.","",""
+"560548949212135430","MatMiLam#5890","05-Jun-19 12:43 AM","no worries kiwi. I appreciate the help. The list comprehension is working as validated with a print statement. However, the writer.writerow() is not working","",""
+"393854278764068875","curiouskiwi#1671","05-Jun-19 12:46 AM","and you have something like this (from the lecture example)?  ```python
+file = open(""registered.csv"", ""a"")
+writer = csv.writer(file)
+writer.writerow(items)```","",""
+"560548949212135430","MatMiLam#5890","05-Jun-19 12:47 AM","`getFieldnames = [request.form.get(field) for field in possibleFieldnames]
+    with open(""survey.csv"", ""a"") as file:
+        writer = csv.DictWriter(file, fieldnames=possibleFieldnames)
+        writer.writerow(getFieldnames)`","",""
+"560548949212135430","MatMiLam#5890","05-Jun-19 12:48 AM","using the `` seems to mess up the formatting a bit","",""
+"393854278764068875","curiouskiwi#1671","05-Jun-19 12:48 AM","the issue I think is that DictWriter is expecting a dictionary, and you're giving it a simple list of values.","",""
+"393854278764068875","curiouskiwi#1671","05-Jun-19 12:49 AM","that's why I used writer instead","",""
+"560548949212135430","MatMiLam#5890","05-Jun-19 12:49 AM","i tried it with csv.writer","",""
+"560548949212135430","MatMiLam#5890","05-Jun-19 12:50 AM","`writer = csv.writer(file, fieldnames=possibleFieldnames)`
+also did not write to csv","",""
+"393854278764068875","curiouskiwi#1671","05-Jun-19 12:53 AM","writer=csv.writer(file)","",""
+"393854278764068875","curiouskiwi#1671","05-Jun-19 12:53 AM","like the example","",""
+"560548949212135430","MatMiLam#5890","05-Jun-19 12:55 AM","success!","",""
+"560548949212135430","MatMiLam#5890","05-Jun-19 12:55 AM","sorry I left in that fieldnames part","",""
+"560548949212135430","MatMiLam#5890","05-Jun-19 12:57 AM","is fieldnames=""""  only needed when using DictWriter?","",""
+"393854278764068875","curiouskiwi#1671","05-Jun-19 12:57 AM","yes","",""
+"393854278764068875","curiouskiwi#1671","05-Jun-19 12:58 AM","csv.writer doesn't know anything about the field names.  It just writes the comma separated values in the list","",""
+"560548949212135430","MatMiLam#5890","05-Jun-19 12:58 AM","thank you very much. this looks much better","",""
+"393854278764068875","curiouskiwi#1671","05-Jun-19 01:07 AM","you're welcome","",""
+"140183864076140544","Key#3708","05-Jun-19 07:35 AM","","https://cdn.discordapp.com/attachments/527358044598697984/585688101276483604/unknown.png",""
+"140183864076140544","Key#3708","05-Jun-19 07:35 AM","much cleaner","",""
+"140183864076140544","Key#3708","05-Jun-19 07:35 AM","but still have the same problem where i can submit the form with every blank filled out and it still spits out the error message","",""
+"393854278764068875","curiouskiwi#1671","05-Jun-19 07:50 AM","that looks fine.  how about adding a print statement before your render that tells you what field it thinks is empty?   `print(f""{name} has no value"")`","",""
+"140183864076140544","Key#3708","05-Jun-19 07:50 AM","also how come we have to write the values from the form even if it gives them an error","",""
+"393854278764068875","curiouskiwi#1671","05-Jun-19 07:51 AM","what do you mean?  if you get an error, you shouldn't be writing to the csv file.  your `return` of the error message stops the function, so you wouldn't be writing","",""
+"140183864076140544","Key#3708","05-Jun-19 07:53 AM","my school has no value. it is the radio buttons","",""
+"140183864076140544","Key#3708","05-Jun-19 07:58 AM","ok fixed it i think. now i just need to work on writing it 🤔","",""
+"140183864076140544","Key#3708","05-Jun-19 02:10 PM","How do I make a csv into an html table?","",""
+"140183864076140544","Key#3708","05-Jun-19 02:10 PM","The table I have doesn't display properly","",""
+"140183864076140544","Key#3708","05-Jun-19 02:11 PM","","https://cdn.discordapp.com/attachments/527358044598697984/585787707792556032/unknown.png",""
+"140183864076140544","Key#3708","05-Jun-19 02:28 PM","and i'm not sure how to make extract a list properly from csv. I've tried to use loops. If I use one for loop, then I get a bunch of lists within a list. If I use two for loops to get the lists out, then I get a huge list that has more items in the list than the table column","",""
+"234679095378706433","Blauelf#6622","05-Jun-19 04:07 PM","Tried something like `list(csv.reader(file))`? What is bad about lists or tuples in a list?","",""
+"140183864076140544","Key#3708","05-Jun-19 11:04 PM","I guess my main problem right now is that my table isn't displaying and I don't know why","",""
+"140183864076140544","Key#3708","05-Jun-19 11:05 PM","If I remove jinja code it still doesn't display","",""
+"234679095378706433","Blauelf#6622","05-Jun-19 11:11 PM","You fixed the `</tr` to be `</tr>`, right?","",""
+"140183864076140544","Key#3708","06-Jun-19 05:41 AM","I didn't even see that","",""
+"140183864076140544","Key#3708","06-Jun-19 05:41 AM","But yes I fixed it and my table isn't showing up","",""
+"140183864076140544","Key#3708","06-Jun-19 05:42 AM","oh hang on i might have something","",""
+"140183864076140544","Key#3708","06-Jun-19 06:07 AM","ok i got it. thanks!","",""
+"140183864076140544","Key#3708","06-Jun-19 06:07 AM","now i'm having problems with styling i'm using CSS to style the table but it doesn't work  🤔","",""
+"140183864076140544","Key#3708","06-Jun-19 06:09 AM","ok apparently <style> has to be outside of {% extend %}","",""
+"140183864076140544","Key#3708","06-Jun-19 06:22 AM","","https://cdn.discordapp.com/attachments/527358044598697984/586032093033660426/unknown.png",""
+"140183864076140544","Key#3708","06-Jun-19 06:22 AM","","https://cdn.discordapp.com/attachments/527358044598697984/586032145613586453/unknown.png",""
+"140183864076140544","Key#3708","06-Jun-19 06:22 AM","hello??","",""
+"393854278764068875","curiouskiwi#1671","06-Jun-19 06:28 AM","@Key have you run your HTML through the Validator to make sure you have no errors, per the spec?  If you have errors, check50 may struggle to parse your code.","",""
+"140183864076140544","Key#3708","06-Jun-19 06:40 AM","hmmm i am not sure if i could fix these errors","",""
+"140183864076140544","Key#3708","06-Jun-19 06:40 AM","","https://cdn.discordapp.com/attachments/527358044598697984/586036747457003550/unknown.png",""
+"140183864076140544","Key#3708","06-Jun-19 06:41 AM","like it doesn't start with doctype first i can't fix that right?","",""
+"140183864076140544","Key#3708","06-Jun-19 06:45 AM","I also have CSS in my html sheet cuz I only want to format that page. If I put it in style.css then it would modify my survey too","",""
+"140183864076140544","Key#3708","06-Jun-19 07:16 AM","Oops that's the /sheet page. My form.html has a lot more errors cuz I use a table style to align text boxes and such","",""
+"140183864076140544","Key#3708","06-Jun-19 07:35 AM","please don't tell me i have to change my entire code just cuz of this 😐","",""
+"393854278764068875","curiouskiwi#1671","06-Jun-19 07:49 AM","per the spec: ""know that your correctness score on this problem will be based on whether you meet the requirements of the specification as outlined above, whether your code is free of bugs, and whether your HTML is well-formed and valid. ""","",""
+"140183864076140544","Key#3708","06-Jun-19 07:52 AM","but it's free of bugs and well formatted. just not to validator-standards","",""
+"140183864076140544","Key#3708","06-Jun-19 07:59 AM","wait ok i didn't even change any html (to my knowledge) i just redid some python stuff and it fixed the correctness","",""
+"140183864076140544","Key#3708","06-Jun-19 07:59 AM","now i'm confused","",""
+"456226577798135808","Deleted User#0000","08-Jun-19 09:03 PM","What could cause JS Alert not pop out?","",""
+"456226577798135808","Deleted User#0000","08-Jun-19 09:04 PM","I am following a similar pattern of code shown during the lecture ( <form> .... </form> <script> </script>)","",""
+"456226577798135808","Deleted User#0000","08-Jun-19 09:04 PM","but my Alerts are not showing up.","",""
+"456226577798135808","Deleted User#0000","08-Jun-19 09:04 PM","Any hints?","",""
+"456226577798135808","Deleted User#0000","08-Jun-19 09:05 PM","Tbh, I do not feel comfortable with front-end ... :/","",""
+"456226577798135808","Deleted User#0000","08-Jun-19 09:08 PM","","https://cdn.discordapp.com/attachments/527358044598697984/586979953791205386/unknown.png",""
+"456226577798135808","Deleted User#0000","08-Jun-19 10:52 PM","I did it with Flask","",""
+"456226577798135808","Deleted User#0000","08-Jun-19 10:52 PM","Still no clue why JS version did not work. ugh.","",""
+"224937960431157260","Penderrin#5312","09-Jun-19 12:14 AM","@Deleted User If you send me the text (not a screen shot) in a DM, I can run it in my browser and see if I spot the reason","","💯 (1)"
+"456226577798135808","Deleted User#0000","09-Jun-19 06:47 PM","Nathan, if I am unable to solve this entirely by the end of today, then surely I will DM you the code! Thank you, in advance.
+
+Edit: DONE!","","👏 (2)"
+"224937960431157260","Penderrin#5312","09-Jun-19 08:47 PM","@Deleted User Did you find the issue with the JS?","",""
+"234679095378706433","Blauelf#6622","11-Jun-19 03:27 PM","@Deleted User Isn't it `onsubmit` with lower-case `s`? Any error messages in your browser's JavaScript console? For debugging purposes, you could temporarily prevent actual submission, and `console.log` values you are unsure of.","",""
+"333271488411205634","leibov#9934","26-Jun-19 04:30 PM","What error should I be testing for in get_sheet?","",""
+"323564643358605322","Nornor#4436","30-Jun-19 07:11 AM","I've noticed that all of the functions that are called when certain routes are accessed have to return something, so why is that?","",""
+"323564643358605322","Nornor#4436","30-Jun-19 07:11 AM","why can't I just say redirect(""/sheet"")","",""
+"323564643358605322","Nornor#4436","30-Jun-19 07:11 AM","not ""return redirect(""/sheet"")""","",""
+"393854278764068875","curiouskiwi#1671","30-Jun-19 07:14 AM","Flask will expect a return value","",""
+"393854278764068875","curiouskiwi#1671","30-Jun-19 07:20 AM","it's like this simple example: ```python
+def mult(n):
+    print(n*n)
+
+answer = mult(5)
+print(answer)
+```   if you run that,  you'll see ```
+25
+None```  because the function printed the value but it didn't return the value.","",""
+"323564643358605322","Nornor#4436","30-Jun-19 07:23 AM","oh so flask wants the value returned then it'll do stuff with it.","",""
+"393854278764068875","curiouskiwi#1671","30-Jun-19 07:30 AM","yes","",""
+"234679095378706433","Blauelf#6622","30-Jun-19 02:12 PM","Flask expects your function to return a response object (or a string, in that case it would wrap it into a default response object). The response object has headers like the return code for redirect and the ""location"" header with the new location. So `redirect` does not perform the redirect, it simply creates an object that will cause Flask to issue the redirect when it is returned from a route.","",""
+"323564643358605322","Nornor#4436","30-Jun-19 04:40 PM","oh thx","",""
+"468298102831316992","countVectorizer#8434","03-Jul-19 02:58 AM","I am trying to understand how to use DataTables by passing it to `render_template()`","",""
+"468298102831316992","countVectorizer#8434","03-Jul-19 03:04 AM","if i jsonify and return the csv file, how do I access it in `sheet.html` using javascript for DataTables","",""
+"131136426946461697","Normantas#0001","04-Jul-19 12:56 AM","finally understanding how Bootstrap and HTML works better,  I'm starting to enjoy building simple pages for these excercises","",""
+"131136426946461697","Normantas#0001","04-Jul-19 12:56 AM","","https://cdn.discordapp.com/attachments/527358044598697984/596097078317416456/unknown.png",""
+"131136426946461697","Normantas#0001","05-Jul-19 07:42 PM","Hmmm","",""
+"131136426946461697","Normantas#0001","05-Jul-19 07:42 PM","I'm running into a problem","",""
+"131136426946461697","Normantas#0001","05-Jul-19 07:42 PM","","https://cdn.discordapp.com/attachments/527358044598697984/596742722564653109/unknown.png",""
+"131136426946461697","Normantas#0001","05-Jul-19 07:45 PM","while testing out my code I'm getting","",""
+"131136426946461697","Normantas#0001","05-Jul-19 07:45 PM","","https://cdn.discordapp.com/attachments/527358044598697984/596743378259935232/unknown.png",""
+"234679095378706433","Blauelf#6622","05-Jul-19 08:25 PM","@Normantas Any stack trace on the terminal?","",""
+"234679095378706433","Blauelf#6622","05-Jul-19 08:34 PM","I would expect something like ""could not find variable w""","",""
+"131136426946461697","Normantas#0001","05-Jul-19 09:45 PM","I'll check","",""
+"131136426946461697","Normantas#0001","05-Jul-19 09:45 PM","I don't really check terminal in flask","",""
+"131136426946461697","Normantas#0001","05-Jul-19 09:45 PM","didn't think it writes what kind of errors","",""
+"234679095378706433","Blauelf#6622","05-Jul-19 09:46 PM","Internal Server Error sounds like something crashed in your site, so it couldn't even return a reasonable error message.","",""
+"254780208811343873","Animaster7#5593","24-Jul-19 05:03 PM","how do I check if the user has checked radio boxes or check boxes?","",""
+"254780208811343873","Animaster7#5593","24-Jul-19 05:05 PM","I need to make a javascript alert to make sure that the user checks one of these radio boxes but I don't know how to do this.","https://cdn.discordapp.com/attachments/527358044598697984/603588559005548544/unknown.png",""
+"254780208811343873","Animaster7#5593","24-Jul-19 11:41 PM","So basically I need help figuring out how to use javascript to make sure the user has inputs for <select>, radio and checkboxes.","",""
+"254780208811343873","Animaster7#5593","25-Jul-19 01:56 AM","Ok I think I kinda figured it out. I forgot the name attr for Select","",""
+"254780208811343873","Animaster7#5593","25-Jul-19 04:13 AM","Please help me I can't get the select error check to work","",""
+"254780208811343873","Animaster7#5593","25-Jul-19 04:45 AM","Nvm I fixed it all.","",""
+"254780208811343873","Animaster7#5593","26-Jul-19 09:01 PM","@curiouskiwi Can I store the form values into an array, and then have python access that array to get the form values","",""
+"254780208811343873","Animaster7#5593","26-Jul-19 09:01 PM","instead of request.form.get","",""
+"254780208811343873","Animaster7#5593","26-Jul-19 09:01 PM","and also the html validator says that the attribute ""name"" is obsolete, but I read somewhere else that you need the ""name"" attribute to submit values through forms. Do I still need the name attribute or can I remove it?","",""
+"393854278764068875","curiouskiwi#1671","27-Jul-19 09:58 AM","I ran mine through the validator and got nothing about ""name"" being obsolete.  You should use it.  And use, in an array should work.","",""
+"254780208811343873","Animaster7#5593","27-Jul-19 04:11 PM","@curiouskiwi 
+What do you mean by use, in an array? Here is my python:
+```@app.route(""/form"", methods=[""POST""])
+def post_form():
+    forminfo = []
+    forminfo = request.form.getlist(""forminfo[]"")
+    return render_template(""error.html"", message=convert(forminfo))
+    if not forminfo or len(forminfo) < 4:
+        return render_template(""error.html"", message=""One or more fields have not been filled out! Please try again."")
+    else:
+        print(forminfo)
+        file = open(""sruvey.csv"", ""a"")
+        writer = csv.writer(file)
+        writer.writerow((convert(forminfo)))
+        file.close()
+        return render_template(""sheet.html"")```","",""
+"254780208811343873","Animaster7#5593","27-Jul-19 04:12 PM","Forminfo looks like ``<input hidden value='' id=forminfo>`` and through javascript I have successfully changed it's value to hold an array of my form's info. It is also between the <form> tags","",""
+"254780208811343873","Animaster7#5593","27-Jul-19 04:15 PM","The ``convert()`` function just turns my list into a comma separated string.","",""
+"254780208811343873","Animaster7#5593","28-Jul-19 04:45 AM","Nevermind I figured it out. There are so many things to keep track of. Thanks for your help.","",""
+"393854278764068875","curiouskiwi#1671","28-Jul-19 05:16 AM","@Animaster7 oh sorry, ""use, in an array ""  was an autocorrect on my phone. I meant ""using an array""","",""
+"280562316058296320","Inconspicuous#1071","07-Aug-19 10:43 AM","having some issues with my jinja for loop, for servering sheet.html","",""
+"280562316058296320","Inconspicuous#1071","07-Aug-19 10:44 AM","here's some of my attempts:","",""
+"280562316058296320","Inconspicuous#1071","07-Aug-19 10:44 AM","`        <tbody>
+        {% for row in f %}
+        <tr>
+            {% for item in row %}
+                <td>{{ item }}</td>
+                <td>{{ item }}</td>
+                <td>{{ item }}</td>
+                <td>{{ item }}</td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+        </tbody>`","",""
+"280562316058296320","Inconspicuous#1071","07-Aug-19 10:45 AM","`
+        <tbody>
+        {% for row in f %}
+        <tr>
+            <td>{{ row.name }}</td>
+            <td>{{ row.lastname }}</td>
+            <td>{{ row.foot }}</td>
+            <td>{{ row.position }}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+`","",""
+"280562316058296320","Inconspicuous#1071","07-Aug-19 10:45 AM","any help appreciated, thx","",""
+"234679095378706433","Blauelf#6622","07-Aug-19 08:34 PM","What does your `f` look like, and do you pass it to `render_template` as a named parameter like `f=something`?","",""
+"280562316058296320","Inconspicuous#1071","08-Aug-19 01:02 AM","@Blauelf","",""
+"280562316058296320","Inconspicuous#1071","08-Aug-19 01:02 AM","`
+@app.route(""/sheet"", methods=[""GET""])
+def get_sheet():
+    file = open(""survey.csv"", ""r"")
+    f = csv.DictReader(file)
+    return render_template(""/sheet.html"")
+`","",""
+"280562316058296320","Inconspicuous#1071","08-Aug-19 07:08 AM","I see what you mean now thanks @Blauelf","",""
+"119868879664185346","Megas#7859","12-Aug-19 02:45 AM","Hi guys i m having this bug in every aplication even in the lectures aplication","",""
+"119868879664185346","Megas#7859","12-Aug-19 02:45 AM","","https://cdn.discordapp.com/attachments/527358044598697984/610257493070708736/unknown.png",""
+"119868879664185346","Megas#7859","12-Aug-19 02:45 AM","anyone else is getting this?","",""
+"393854278764068875","curiouskiwi#1671","12-Aug-19 02:51 AM","sometimes the IDE gets confused about that line.  You can just ignore that.","",""
+"393854278764068875","curiouskiwi#1671","12-Aug-19 02:52 AM","if you restart the IDE  (via the CS50 IDE > Restart menu item), do you still see it?","",""
+"119868879664185346","Megas#7859","12-Aug-19 03:08 AM","no","",""
+"119868879664185346","Megas#7859","12-Aug-19 03:08 AM","working perfect","",""
+"119868879664185346","Megas#7859","12-Aug-19 03:08 AM","now","",""
+"119868879664185346","Megas#7859","12-Aug-19 03:08 AM","ty","",""
+"119868879664185346","Megas#7859","12-Aug-19 03:08 AM","😃","",""
+"593369406810226699","Jammar#8645","14-Aug-19 03:10 PM","When it says 
+""Complete the implementation of `post_form` in such a way that it..."" 
+they mean the `@app.route(""/form"", methods=[""POST""])` right","",""
+"593369406810226699","Jammar#8645","14-Aug-19 03:18 PM","O_O this ought to be a challenge","",""
+"593369406810226699","Jammar#8645","14-Aug-19 04:17 PM","Ok most of it was in the sandbox from lecture 7. This was fun tho!!! can't wait for cs50-web or something similar","",""
+"477688147564822529","geekchick#1206","17-Aug-19 03:28 AM","Having trouble validating my select dropdown. It won't validate and the alert message doesn't come up. My javascript code is in an external file. Heres my code:
+
+```<div class=""form-group row col-sm-2"">
+            <select class=""form-control"" id=""states"">
+              <option selected disabled>--Select a State--</option>
+              <option value=""AL"">Alabama</option>
+                <option value=""AK"">Alaska</option>
+                <option value=""AZ"">Arizona</option>
+                <option value=""AR"">Arkansas</option>
+                <option value=""CA"">California</option>
+                <option value=""CO"">Colorado</option>
+                <option value=""CT"">Connecticut</option>
+                <option value=""DE"">Delaware</option>
+</select>
+</div>```
+
+```var mySelect = document.getElementById(""states"");
+    if (mySelect.value == """") {
+        alert(""You must select a State!"");
+        return false;
+    }```","",""
+"323564643358605322","Nornor#4436","17-Aug-19 06:32 AM","IIRC, the value of a select tag is the value of the selected option so maybe if u give the default option a value and check for that instead it will work","",""
+"477688147564822529","geekchick#1206","20-Aug-19 04:45 AM","Ok thank you @Nornor","",""
+"323564643358605322","Nornor#4436","20-Aug-19 05:46 AM","np","",""
+"543295021697204236","dexmexter#1184","22-Aug-19 06:03 AM","I think I'm finding that I prefer writing back end logic more than tweaking front end aesthetics. I don't really care what it looks like as long as it is doing what I need.","",""
+"593369406810226699","Jammar#8645","22-Aug-19 01:22 PM","@dexmexter Fun innit!? I think I agree, but haven't written off frontend completely. I'd like to learn more about the web, javascript and reactJS perhaps.","",""
+"248208770788884491","Nicholas Goldfinder#3350","24-Aug-19 04:51 AM","hi all. just wanted to say that starting this excercise made me enthusiast! so many techniques to apply!!! yummy 😄","",""
+"593369406810226699","Jammar#8645","26-Aug-19 03:17 PM","In the Flask short video from Doug – and also the code from pset8 Finance – they define one function for Get AND Post, wheras in this pset7 Survey there is one for each http request.
+
+Finance
+```python
+@app.route(""/quote"", methods=[""GET"", ""POST""])
+```
+
+Survey
+```python
+@app.route(""/form"", methods=[""GET""])
+def get_form():
+
+...
+
+@app.route(""/form"", methods=[""POST""])
+def post_form():```","",""
+"593369406810226699","Jammar#8645","26-Aug-19 03:17 PM","Any reason for this?","",""
+"593369406810226699","Jammar#8645","26-Aug-19 03:18 PM","Either way works? Design decision?","",""
+"248208770788884491","Nicholas Goldfinder#3350","26-Aug-19 06:28 PM","Hi there! I would like to cycle the radio buttons with something like
+||`document.getElementsByName(""position"").forEach.call(checked)`||
+to verify whether a radio button was checked. So far I have been unsuccessful. Any suggestions? (this indeed doesn't work and was just a random guess)","",""
+"234679095378706433","Blauelf#6622","26-Aug-19 10:54 PM","@Jammar Earlier versions of Flask would not support separate GET and POST functions, so either one code is older, or somebody hat that old limitation in mind when writing it.","",""
+"234679095378706433","Blauelf#6622","26-Aug-19 10:56 PM","Might be a limitation in Werkzeug. Not sure how those work together. But it was an old version that did not support separate GET and POST.","",""
+"234679095378706433","Blauelf#6622","26-Aug-19 10:58 PM","@Nicholas Goldfinder Do you mean `.forEach(checked)`? Also, is `checked` a function?","",""
+"593369406810226699","Jammar#8645","26-Aug-19 11:55 PM","@Blauelf Oh interesting! Thanks for that knowledge. Whoever wrote it == Doug.","",""
+"248208770788884491","Nicholas Goldfinder#3350","27-Aug-19 01:18 AM","@Blauelf i gave that up and resorted to a simplier for loop","",""
+"214560066907406336","HopefulPanic#5870","28-Aug-19 05:07 AM","The HTML Validator freaks out about the jinja on my pages. Is that normal/ok for submit50?","",""
+"393854278764068875","curiouskiwi#1671","28-Aug-19 05:10 AM","you should validate the source that you get from your browser when you run it, not the raw html that includes the jinja templating.","",""
+"530135855415820288","Kontrary#1502","28-Aug-19 10:18 PM","@Nicholas Goldfinder hey were you able to verify a radio button being checked?","",""
+"530135855415820288","Kontrary#1502","28-Aug-19 10:18 PM","I'm struggling on how to implement that","",""
+"234679095378706433","Blauelf#6622","28-Aug-19 10:57 PM","The form objects have some property that might help. https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/elements","",""
+"530135855415820288","Kontrary#1502","29-Aug-19 12:52 AM","very useful website, thank you!!","",""
+"248208770788884491","Nicholas Goldfinder#3350","29-Aug-19 02:33 AM","@Kontrary I did it but, using a for cycle with a nested if:","",""
+"248208770788884491","Nicholas Goldfinder#3350","29-Aug-19 02:40 AM","all radios have same name, for eg. `position`, as in:
+||```html
+<input class=""form-check-input"" type=""radio"" name=""position"" id=""Beater"" value=""Beater"">```||
+so that I can call a 
+||```js
+buttons = document.getElementsByName(""position"")```|| 
+to get a collection of the objects radio buttons with such name, iterate through the collection with  a pythonic FOR, and execute IF checks on them like
+||```js
+if (buttons.item(i).checked == 0)    // or 1```||
+You could use `buttons[i]`, instead of `buttons.item(i)`, but, if the index `i` exceeds the number of elements,  the latter returns _**None**_, while the former returns _**Undefined**_. I prefere the _**None**_ return, because it doesn't produce server errors when it fails. Not sure it is the best decision for error handling, but was a good one for debugging 😄","",""
+"248208770788884491","Nicholas Goldfinder#3350","29-Aug-19 03:24 AM","@Blauelf `checked` is a method  of ```js
+document.getElementsByName(""position"").items(i)```
+that returns `1` if the radio button `i` is checked and `0` otherwise","",""
+"530135855415820288","Kontrary#1502","29-Aug-19 03:27 AM","Ohhh","",""
+"530135855415820288","Kontrary#1502","29-Aug-19 03:27 AM","Dang","",""
+"530135855415820288","Kontrary#1502","29-Aug-19 03:27 AM","I actually worked through it and found a jquery shortcut","",""
+"248208770788884491","Nicholas Goldfinder#3350","29-Aug-19 03:27 AM","yup @Kontrary","",""
+"248208770788884491","Nicholas Goldfinder#3350","29-Aug-19 03:28 AM","||```js
+if ($('input[name=position]:checked').length == 0)```||","",""
+"248208770788884491","Nicholas Goldfinder#3350","29-Aug-19 03:29 AM","is this it?","",""
+"530135855415820288","Kontrary#1502","29-Aug-19 03:29 AM","Yeah!","",""
+"248208770788884491","Nicholas Goldfinder#3350","29-Aug-19 03:29 AM","I wanted to write it in pure JavaScript 🙂","",""
+"248208770788884491","Nicholas Goldfinder#3350","29-Aug-19 03:30 AM","and the shorter the better 😄","",""
+"530135855415820288","Kontrary#1502","29-Aug-19 03:30 AM","Ohhh I see","",""
+"530135855415820288","Kontrary#1502","29-Aug-19 03:30 AM","I just wanted to get it done quick really! lol","",""
+"248208770788884491","Nicholas Goldfinder#3350","29-Aug-19 03:30 AM","ikr lol","",""
+"530135855415820288","Kontrary#1502","29-Aug-19 03:31 AM","Are you interested in going into web dev? 🤔","",""
+"530135855415820288","Kontrary#1502","29-Aug-19 03:31 AM","Bc of the Javascript thing","",""
+"248208770788884491","Nicholas Goldfinder#3350","29-Aug-19 03:31 AM","but I could not sleep, so... ¯\_(ツ)_/¯","",""
+"530135855415820288","Kontrary#1502","29-Aug-19 03:32 AM","Or was it just like a personal challenge?","",""
+"248208770788884491","Nicholas Goldfinder#3350","29-Aug-19 03:32 AM","I would like to full stack my final project 😄","",""
+"248208770788884491","Nicholas Goldfinder#3350","29-Aug-19 03:32 AM","to make a useful app to add to my professional portfolio","",""
+"248208770788884491","Nicholas Goldfinder#3350","29-Aug-19 03:33 AM","and learn the mechanics too, cuz I am like that and I got myself the time to grind","",""
+"530135855415820288","Kontrary#1502","29-Aug-19 03:33 AM","Ohhh dang","",""
+"530135855415820288","Kontrary#1502","29-Aug-19 03:33 AM","Nice","",""
+"530135855415820288","Kontrary#1502","29-Aug-19 03:34 AM","That's a good idea","",""
+"248208770788884491","Nicholas Goldfinder#3350","29-Aug-19 03:34 AM","i have like 20 browser tabs open 😄","",""
+"530135855415820288","Kontrary#1502","29-Aug-19 03:34 AM","Lol good lord","",""
+"248208770788884491","Nicholas Goldfinder#3350","29-Aug-19 03:34 AM","lol","",""
+"530135855415820288","Kontrary#1502","29-Aug-19 03:34 AM","Are you doing the final project?","",""
+"248208770788884491","Nicholas Goldfinder#3350","29-Aug-19 03:35 AM","In my mind, yes. For the course, I am brainstorming pset8 finance","",""
+"530135855415820288","Kontrary#1502","29-Aug-19 03:37 AM","Ohh I see, I haven't gotten there yet I still have to do similarities","",""
+"530135855415820288","Kontrary#1502","29-Aug-19 03:37 AM","I also had probably that amount of tabs open for survey 😅 😂 to figure out the Javascript","",""
+"530135855415820288","Kontrary#1502","29-Aug-19 03:38 AM","I'm excited for SQL","","😄 (1)"
+"248208770788884491","Nicholas Goldfinder#3350","29-Aug-19 03:39 AM","@Blauelf I would like to make to work something like ||```js
+if document.getElementsByName(""position"").forEach(checked) == 0 {
+                alert(""Select Position"");
+                return false;
+}```||","",""
+"248208770788884491","Nicholas Goldfinder#3350","29-Aug-19 03:42 AM","@Kontrary learning to do stuff with SQL is going to be a blast!","","😍 (1)"
+"530135855415820288","Kontrary#1502","29-Aug-19 03:48 AM","Awesomee","",""
+"234679095378706433","Blauelf#6622","29-Aug-19 08:01 AM","@Nicholas Goldfinder `forEach` doesn't return something, does it? I guess one could
+```js
+if (Array.prototype.every.call(document.getElementsByName(""position""), item => !item.checked)) {
+    alert(""Select Position"");
+    return false;
+}
+```
+`Array.prototype.every.call(arrayLike, fun)` is a way to do `arrayLike.every(fun)` for something that's not an array, just array-like. The array methods are written in a way that most of them will work on any array-like if you want. Doing `arr.every(fun)` would internally do the same (actually calling a method uses the same internal structure as `apply`, not `call`, which takes arguments stored in an array-like, not a parameter list with all separate, but is otherwise the same)
+
+`item => !item.checked` is almost same as function expression `function(item) { return !item.checked; }`, it's a more compact notation introduced in ECMAScript 2015.","","❤ (1)"
+"248208770788884491","Nicholas Goldfinder#3350","29-Aug-19 08:07 AM","@Blauelf yikes! it works and exactly as i meant. thank you very much!","",""
+"248208770788884491","Nicholas Goldfinder#3350","29-Aug-19 08:07 AM","indeed forEach doesn't return something useful. for me it was just brainstorming, as I didn't have the time to teach myself proper usage.
+Edit: now I know that forEach does not return anything at all","",""
+"248208770788884491","Nicholas Goldfinder#3350","29-Aug-19 08:10 PM","@Blauelf I modified your code as follows. hope you like it:
+||```js
+let buttons = Array.from(document.getElementsByName(""position""));
+if (buttons.every(item => !item.checked)) {
+    alert(""Select Position"");
+    return false;
+}```||
+Apparently, we do not need to invoke `call()`","",""
+"248208770788884491","Nicholas Goldfinder#3350","29-Aug-19 08:51 PM","actually, I guess it is necessary to invoke `call()` with `Array.prototype`, because you are making the _**NodeList**_ returned by `getElementsByName` inherit the `every()` method of the `Array.prototype`. Am I right?
+On the other hand, my method transforms the _**NodeList**_ into an _**Array**_, thus not needing inheritance when calling `every()`.
+At the moment, my feeling is that your method is leaner","",""
+"234679095378706433","Blauelf#6622","29-Aug-19 10:57 PM","If a property does not exist at an object, it's searched through the prototype chain (""delegation""). For arrays, the next one would be `Array.prototype`, so when I say `arr.slice(3, 5)`, it will not have a ""slice"" property, but up the prototype chain it can be found at `Array.prototype`, so it's same as `Array.prototype.slice.call(arr, 3, 5)` (or closer to `slice.apply(arr, [3, 5])`, but that does not matter at all).
+
+In Python, it's pretty similar, just completely different. Python does not clearly differentiate between static and member methods (does so implicitly via first parameter for methods which is named `self` by convention), and Python supports inheriting from multiple classes.","",""
+"250646623955189770","jubiiz#4846","30-Aug-19 01:28 PM","Should I worry about these? they all occur on the end character (ex: a } or )  ) of a non-html line","https://cdn.discordapp.com/attachments/527358044598697984/616942298399375360/parse_error.PNG",""
+"234679095378706433","Blauelf#6622","30-Aug-19 01:42 PM","Check the rendered HTML as seen by the browser, not a template.","",""
+"250646623955189770","jubiiz#4846","30-Aug-19 01:49 PM","ok thx","",""
+"250646623955189770","jubiiz#4846","30-Aug-19 01:57 PM","yep! it works!","",""
+"372317272666144778","TheCaneTrain09#0359","03-Sep-19 12:58 PM","I'm having an issue when turn in survey that it's saying I haven't met the requirement for one or more select menus, each with two or more options, but I have 3 select menus on the page, each with more than 2 options.  Does anybody have ideas what might be causing this? My score is sitting at 88% instead of 100% because of it.","",""
+"234679095378706433","Blauelf#6622","03-Sep-19 07:47 PM","Does your HTML as seen by the browser pass the validator? Unbalanced elements can confuse the checker, even if a browser fixes the issue (so much broken code they have to deal with)","",""
+"372317272666144778","TheCaneTrain09#0359","04-Sep-19 02:41 PM","@Blauelf everything seems to check out in the validator but it still doesn't seem to be picking up the select menus. Could it because I'm using some bootcamp stuff? (e.g. <select class=""custom-select"" required id=""position"" name=""position"">)","",""
+"234679095378706433","Blauelf#6622","04-Sep-19 03:10 PM","Styling should not affect the parser.","",""
+"372317272666144778","TheCaneTrain09#0359","04-Sep-19 03:15 PM","Well then I'm not sure what the deal is... that's unfortunate. Thanks for the help anyway though, much appreciated.","",""
+"398595647051268116","Disco Trooper#4230","28-Sep-19 11:56 AM","Hey guys, I have a problem with survey. I managed to write the surveyed data into the table, but when I'm redirected to the page with survey data, the table isn't showing any data even though the data is written into the csv file","",""
+"398595647051268116","Disco Trooper#4230","28-Sep-19 12:41 PM","Nvm I got it","",""
+"603294110614552587","noob4ever#1127","03-Oct-19 10:30 PM","I've been grinding on this one since last night and know I'm missing something obvious. Why doesn't success.html load after the form is submitted. To test I replaced the ```return render_template(""success.html"")``` with ```return ""This is a test""``` and the text is displayed. I've looked at the sandbox example and can't see how my code is different from the later froshims's. When I put text in the success.html template it is not displayed. What am I missing?","https://cdn.discordapp.com/attachments/527358044598697984/629399908050403349/SPOILER_Survey.PNG",""
+"603294110614552587","noob4ever#1127","03-Oct-19 10:32 PM","Here is my success template.","https://cdn.discordapp.com/attachments/527358044598697984/629400443507965962/SPOILER_success_template.PNG",""
+"603294110614552587","noob4ever#1127","03-Oct-19 10:33 PM","and here is what is displayed after submitting the form.","https://cdn.discordapp.com/attachments/527358044598697984/629400523937939516/SPOILER_success_displayed.PNG",""
+"393854278764068875","curiouskiwi#1671","03-Oct-19 10:33 PM","does layout.html have a `block body` tag?  or is it `block main`?","",""
+"393854278764068875","curiouskiwi#1671","03-Oct-19 10:49 PM","@noob4ever ^^","",""
+"603294110614552587","noob4ever#1127","03-Oct-19 11:08 PM","@curiouskiwi Doh! Okay, I see what's wrong I think. As a side question. Why does the URL show ""/form"" even though it isn't rendering correctly I would have expected it to show ""/success"" for the ""success.html"" template","",""
+"393854278764068875","curiouskiwi#1671","03-Oct-19 11:14 PM","it's the `/form` route","",""
+"393854278764068875","curiouskiwi#1671","03-Oct-19 11:15 PM","I'd probably expect that your /form route wouldn't render a template, but redirect to another route that actually displays the results?  `return redirect(""/success"")`  for example","",""
+"603294110614552587","noob4ever#1127","03-Oct-19 11:17 PM","Hhhhmmm I have to admit I'm lost here, but going to dive back in and see if these topics become more apparent as I work through the problem. Thank you again for the help @curiouskiwi","",""
+"193016637060939776","H3ra#8940","11-Oct-19 06:33 PM","Hello! I've been having some trouble with this. I've been able to get my table to render, as you can see here, I've been able to get the data given into the csv file, and the table renders rows as if it's taking in data (although it renders one less row than it needs). However, I can't get the data to print onto the table. Could someone help me out with this?","https://cdn.discordapp.com/attachments/527358044598697984/632239407985852416/SPOILER_Screen_Shot_2019-10-11_at_11.32.20_AM.png",""
+"193016637060939776","H3ra#8940","11-Oct-19 09:42 PM","nevermind, figured it out","",""
+"603294110614552587","noob4ever#1127","18-Oct-19 03:30 AM","So I am trying to catch the case when users do not select a family size. When email, first name or last name are not populated the inner html changes just fine.","",""
+"603294110614552587","noob4ever#1127","18-Oct-19 03:30 AM","","https://cdn.discordapp.com/attachments/527358044598697984/634548753247895553/SPOILER_Survey1.PNG",""
+"603294110614552587","noob4ever#1127","18-Oct-19 03:31 AM","I've tried deleting the ""for"" from the label associated with the selector. I've tried getElementByName, getElementById with no luck.","https://cdn.discordapp.com/attachments/527358044598697984/634549041413226536/SPOILER_Survey2.PNG",""
+"603294110614552587","noob4ever#1127","18-Oct-19 03:32 AM","On the form I've tried using console.log to see if I can track down the right syntax to use to return false and change the html label when a family size is not selected, but have had no luck. Any thoughts?","",""
+"149030650639286272","meray#3929","19-Oct-19 01:16 AM","I don't think `name` is a valid attribute for the label tag. Getting an element by `name` also returns a node list, so if that did work, you'd want to do `document.getelementbyname('blah')[0].innerHTML`","",""
+"635103613588340736","asgard_printf#9656","19-Oct-19 05:46 PM","hi everbody","",""
+"153264387178758144","hi im steven#6206","23-Oct-19 05:43 AM","hi","",""
+"153264387178758144","hi im steven#6206","23-Oct-19 05:43 AM","@asgard_printf","",""
+"548508397490798603","rybohi - tothewebsite.com#0217","28-Oct-19 01:51 PM","Hey","",""
+"548508397490798603","rybohi - tothewebsite.com#0217","28-Oct-19 01:51 PM","```
+@app.route(""/form"", methods=[""POST""])
+```","",""
+"548508397490798603","rybohi - tothewebsite.com#0217","28-Oct-19 01:51 PM","the``` methods=[""post""]```","",""
+"548508397490798603","rybohi - tothewebsite.com#0217","28-Oct-19 01:51 PM","what specifically is that doing ?","",""
+"548508397490798603","rybohi - tothewebsite.com#0217","28-Oct-19 01:52 PM","is it just saying any time","",""
+"548508397490798603","rybohi - tothewebsite.com#0217","28-Oct-19 01:52 PM","that /form is posting something","",""
+"548508397490798603","rybohi - tothewebsite.com#0217","28-Oct-19 01:52 PM","the below functions will be triggered/activated","",""
+"548508397490798603","rybohi - tothewebsite.com#0217","28-Oct-19 01:52 PM","and if that is true","",""
+"548508397490798603","rybohi - tothewebsite.com#0217","28-Oct-19 01:52 PM","what is","",""
+"548508397490798603","rybohi - tothewebsite.com#0217","28-Oct-19 01:52 PM","```
+@app.route(""/form"", methods=[""GET""])
+```","",""
+"548508397490798603","rybohi - tothewebsite.com#0217","28-Oct-19 01:52 PM","getting ?","",""
+"391541463055466498","Spectrum#0405","28-Oct-19 04:08 PM","Hi, I have designed the form, I am facing some problems in validation using javascript","",""
+"391541463055466498","Spectrum#0405","28-Oct-19 04:08 PM","``form.checkValidity()``","",""
+"391541463055466498","Spectrum#0405","28-Oct-19 04:08 PM","How does this function work?","",""
+"391541463055466498","Spectrum#0405","29-Oct-19 06:27 AM","How to validate radio buttons?","",""
+"391541463055466498","Spectrum#0405","29-Oct-19 08:01 AM","Pset7 completed 😀","",""
+"548508397490798603","rybohi - tothewebsite.com#0217","30-Oct-19 01:42 PM","Hey, I'm confused about how to create a dynamic table","",""
+"548508397490798603","rybohi - tothewebsite.com#0217","30-Oct-19 01:42 PM","any help ?","",""
+"548508397490798603","rybohi - tothewebsite.com#0217","30-Oct-19 01:42 PM","one that outputs to html","",""
+"149030650639286272","meray#3929","31-Oct-19 07:51 AM","with jinja 😄","",""
+"548508397490798603","rybohi - tothewebsite.com#0217","01-Nov-19 01:02 PM","Why do we","",""
+"548508397490798603","rybohi - tothewebsite.com#0217","01-Nov-19 01:02 PM","```from flask import Flask```","",""
+"548508397490798603","rybohi - tothewebsite.com#0217","01-Nov-19 01:03 PM","instead of just","",""
+"548508397490798603","rybohi - tothewebsite.com#0217","01-Nov-19 01:03 PM","```import flask ```","",""
+"631026596639277067","eli1stark#0264","01-Nov-19 03:16 PM","All is fine! Question about code cleanliness. How can I go to the sheet.html after submiting without copy and paste code inside function get_sheet()","https://cdn.discordapp.com/attachments/527358044598697984/639814914222850048/SPOILER_file.png",""
+"631026596639277067","eli1stark#0264","01-Nov-19 03:48 PM","don't pay attention at code below comment(# render sheet), I forgot to delete it. Except return value of course 😉","",""
+"436300361280782346","shultzy#1470","02-Nov-19 02:34 AM","why is check50 returning an unmet requirement of a select menu even when I have a <select> tag in the form?","",""
+"393854278764068875","curiouskiwi#1671","02-Nov-19 02:38 AM","does your select menu have two or more options?","",""
+"436300361280782346","shultzy#1470","02-Nov-19 06:16 AM","@curiouskiwi yes, I have them in two groups using the optgroup tag","",""
+"393854278764068875","curiouskiwi#1671","02-Nov-19 07:24 AM","@shultzy does your html pass all the validator tests?  https://validator.w3.org/#validate_by_input","",""
+"393854278764068875","curiouskiwi#1671","02-Nov-19 07:24 AM","(if not, then check50 may struggle to parse your html and won't find tags)","",""
+"332384670652301313","flying_$loths#6952","08-Nov-19 10:22 PM","For form validation via clientside is putting a required attribute on the form item allowed or does it have to be JavaScript","",""
+"332384670652301313","flying_$loths#6952","08-Nov-19 10:43 PM","Can anyone help the rows written to csv file aren't being displayed on web page just the rows themselves empty when submitting but when Accessing sheet.html no rows are displayed","https://cdn.discordapp.com/attachments/527358044598697984/642464221644193812/validation.png,https://cdn.discordapp.com/attachments/527358044598697984/642464221644193813/app.png,https://cdn.discordapp.com/attachments/527358044598697984/642464222143578142/sheet.png",""
+"332384670652301313","flying_$loths#6952","08-Nov-19 10:46 PM","Also onsumbit attribute function is not being called because it's instead handled serverside by python","",""
+"166251424873709570","Grimrath#0353","13-Nov-19 11:36 PM","I'm having trouble seeing what importing CS50 in application.py of this pset does. Anyone have any idea?","",""
+"393854278764068875","curiouskiwi#1671","13-Nov-19 11:39 PM","I'm not sure why that's actually there.  Feel free to remove.","",""
+"393854278764068875","curiouskiwi#1671","14-Nov-19 12:25 AM","okay, so it actually makes it easier to read error messages. 🙂  doesn't affect the functionality","","👍 (1)"
+"232279834749829120","Bloomd#3739","15-Nov-19 02:55 AM","hello hello","",""
+"232279834749829120","Bloomd#3739","15-Nov-19 02:55 AM","I'm having a bit of trouble figuring out how request.form.get works","",""
+"232279834749829120","Bloomd#3739","15-Nov-19 02:56 AM","as far as I've been able to see it it only gets objects by the tag name=""something"", but I'm not sure how to use it for checkboxes and selections","",""
+"232279834749829120","Bloomd#3739","15-Nov-19 02:57 AM","example:","",""
+"232279834749829120","Bloomd#3739","15-Nov-19 02:57 AM","","https://cdn.discordapp.com/attachments/527358044598697984/644702547361136641/unknown.png",""
+"232279834749829120","Bloomd#3739","15-Nov-19 02:59 AM","would I put that name tag (or whatever the correct tag is) inside every input and repeat it four times, or can I make a div around all of this code and use it there?","",""
+"232279834749829120","Bloomd#3739","16-Nov-19 02:22 AM","ok, I figured out how to do what I was asking before, but now I can only get the value of one row to show up. Any thoughts?","",""
+"232279834749829120","Bloomd#3739","16-Nov-19 02:22 AM","","https://cdn.discordapp.com/attachments/527358044598697984/645056175552856064/unknown.png",""
+"232279834749829120","Bloomd#3739","16-Nov-19 02:23 AM","","https://cdn.discordapp.com/attachments/527358044598697984/645056206267744265/unknown.png",""
+"232279834749829120","Bloomd#3739","16-Nov-19 02:23 AM","it just displays the input in the name column","",""
+"232279834749829120","Bloomd#3739","16-Nov-19 02:23 AM","","https://cdn.discordapp.com/attachments/527358044598697984/645056414573789192/unknown.png",""
+"393854278764068875","curiouskiwi#1671","16-Nov-19 04:28 AM","How have you tried to debug?  Does your csv file have all the data?  If you `print(info)` do you see all the data?","",""
+"232279834749829120","Bloomd#3739","16-Nov-19 05:57 AM","@curiouskiwi the csv file stores all data, yeah","",""
+"232279834749829120","Bloomd#3739","16-Nov-19 05:58 AM","if you mean debugging with cs50 I haven't figured out how to do that","",""
+"232279834749829120","Bloomd#3739","16-Nov-19 05:58 AM","but the csv file has all the information. For some reason only ""name"" is being printed tho","",""
+"489113470281973760","gonefishing★#0147","30-Nov-19 02:05 AM","For some reason, my table isn't being printed.","",""
+"489113470281973760","gonefishing★#0147","30-Nov-19 02:06 AM","sheet.html:","https://cdn.discordapp.com/attachments/527358044598697984/650125343587303424/SPOILER_Annotation_2019-11-29_160319.png",""
+"489113470281973760","gonefishing★#0147","30-Nov-19 02:10 AM","application.py:","https://cdn.discordapp.com/attachments/527358044598697984/650126392985649172/SPOILER_Annotation_2019-11-29_160435.png",""
+"489113470281973760","gonefishing★#0147","30-Nov-19 02:10 AM","my csv file:","https://cdn.discordapp.com/attachments/527358044598697984/650126406218416169/SPOILER_Annotation_2019-11-29_160400.png",""
+"489113470281973760","gonefishing★#0147","30-Nov-19 02:12 AM","sheet page (😦) :","https://cdn.discordapp.com/attachments/527358044598697984/650127045023498274/Annotation_2019-11-29_161211.png",""
+"541265994363043851","AFRS#7371","01-Dec-19 09:40 PM","Why data not display in sheet 😔😔","",""
+"541265994363043851","AFRS#7371","01-Dec-19 09:41 PM","","https://cdn.discordapp.com/attachments/527358044598697984/650783555722543116/Screenshot_20191201_224114.jpg",""
+"541265994363043851","AFRS#7371","01-Dec-19 09:41 PM","When i go to sheet no thing apper","",""
+"489113470281973760","gonefishing★#0147","01-Dec-19 10:19 PM","I had the same problem, but then I found out that I had to make ""headers"" manually for my csv file.","",""
+"489113470281973760","gonefishing★#0147","01-Dec-19 10:20 PM","So when I make a csv file to record my data, I wrote it like this:","https://cdn.discordapp.com/attachments/527358044598697984/650793288223162379/Annotation_2019-12-01_121851.png",""
+"489113470281973760","gonefishing★#0147","01-Dec-19 10:20 PM","So my first row would be like this: (name: foobar, flavour: other, topping: other)","",""
+"489113470281973760","gonefishing★#0147","01-Dec-19 10:21 PM","I hope that helps!","",""
+"489113470281973760","gonefishing★#0147","01-Dec-19 10:21 PM","(You may not have had the same problem as me, though)","",""
+"541265994363043851","AFRS#7371","01-Dec-19 11:29 PM","I do that and i store in csv file like you but not display","",""
+"541265994363043851","AFRS#7371","01-Dec-19 11:31 PM","","https://cdn.discordapp.com/attachments/527358044598697984/650811232672153610/Screenshot_20191202_003106_com.android.gallery3d.jpg",""
+"541265994363043851","AFRS#7371","01-Dec-19 11:31 PM","@gonefishing★🤔","",""
+"489113470281973760","gonefishing★#0147","01-Dec-19 11:32 PM","I think you need to put a title for each column in the csv","",""
+"541265994363043851","AFRS#7371","02-Dec-19 12:35 AM","Not work 😔","",""
+"489113470281973760","gonefishing★#0147","02-Dec-19 06:24 AM","idk how to help, then 😦","",""
+"170904950631563265","Netscape#8705","02-Dec-19 07:41 PM","When i render my template for the sheet it inserts the data above my table :/","",""
+"170904950631563265","Netscape#8705","02-Dec-19 07:41 PM","anyone have simmiliar issues","",""
+"541265994363043851","AFRS#7371","03-Dec-19 07:20 PM","@gonefishing★ i know what problem i type start block body in jinja but i must write block main","",""
+"541265994363043851","AFRS#7371","03-Dec-19 07:22 PM","@Netscape i think you must create table then pass data","",""
+"541265994363043851","AFRS#7371","03-Dec-19 07:23 PM","If you  pass data befor create table will show above","",""
+"170904950631563265","Netscape#8705","03-Dec-19 07:23 PM","Yeah i did that, i figured it out, safe keyword was missinh","",""
+"541265994363043851","AFRS#7371","03-Dec-19 07:23 PM","Nice 👍👍","",""
+"170904950631563265","Netscape#8705","03-Dec-19 07:23 PM","Thanks though :)","","👍 (1)"
+"298518538958667786","XtratoS#2159","13-Dec-19 12:58 PM","can I use json files instead of csv files?","",""
+"609824384500105217","Boyuan#0628","15-Dec-19 09:42 AM","I think you might have to work with csv files","",""
+"627049392121053194","seancs50#5979","07-Jan-20 05:17 AM","Hi my sheet will not render! Csv file is populated. Even the text hardcoded in sheet doesn't diplay. I have checked against froshim but still cant get there","",""
+"393854278764068875","curiouskiwi#1671","07-Jan-20 05:19 AM","are you using a dictreader or just a regular one?","",""
+"393854278764068875","curiouskiwi#1671","07-Jan-20 05:19 AM","if a dictreader, do you have column names in your first row in your csv file?","",""
+"393854278764068875","curiouskiwi#1671","07-Jan-20 05:20 AM","or might this be the issue? http://reddit.com/r/cs50/comments/cz444u/pset_7_cannot_get_data_to_display_in_html_table/?st=k53b1343&sh=fe8a07ff","",""
+"627049392121053194","seancs50#5979","07-Jan-20 05:31 AM","I have listed column names in first row of csv file however the problem is that sheet doesn't  render at all ..my render template is identical to froshim but nothing..have gone around on this for some time. I am using dictreader","",""
+"627049392121053194","seancs50#5979","07-Jan-20 06:13 AM","Thanks anyway. I will continue!!","",""
+"627049392121053194","seancs50#5979","07-Jan-20 02:09 PM","Success! Values in first row of csv file must be the ""values"" from form not the self designated fieldnames 😀","",""
