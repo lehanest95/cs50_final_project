@@ -16,14 +16,19 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8afbb7c-6803-4e93-8fc3-362e51c09e6e" name="Default Changelist" comment="merge_csv.py as stanalone file">
+    <list default="true" id="c8afbb7c-6803-4e93-8fc3-362e51c09e6e" name="Default Changelist" comment="optimized API requests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/merge_csv.py" beforeDir="false" afterPath="$PROJECT_DIR$/merge_csv.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +44,16 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="e5eae68e-c1dc-4073-8f93-69139616f9d9" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/lehanest95/cs50_final_project.git" />
+      </set>
+    </option>
   </component>
   <component name="ProjectId" id="1bojVnnWuXgYXW5A5VWaLbxfDGA" />
   <component name="ProjectLevelVcsManager">
@@ -58,7 +73,8 @@
     <property name="file.manager.left.side.uri" value="file:///C:/Users/aleksej/" />
     <property name="file.manager.right.side.uri" value="file:///C:/Users/aleksej/PycharmProjects/cs50_psets/pset6/readability/" />
     <property name="full.screen.before.presentation.mode" value="false" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="file.status.colors" />
   </component>
   <component name="RunManager" selected="Flask server.Flask (app.py)">
     <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -121,9 +137,9 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Flask server.Flask (app.py)" />
       <item itemvalue="Python.merge_csv" />
       <item itemvalue="Python.app" />
-      <item itemvalue="Flask server.Flask (app.py)" />
     </list>
     <recent_temporary>
       <list>
@@ -134,7 +150,7 @@
     </recent_temporary>
   </component>
   <component name="SvnConfiguration">
-    <configuration />
+    <configuration>C:\Users\aleksej\AppData\Roaming\Subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -147,7 +163,7 @@
       <workItem from="1589306568034" duration="110000" />
       <workItem from="1589308745905" duration="106000" />
       <workItem from="1589308866471" duration="2247000" />
-      <workItem from="1589314017522" duration="2075000" />
+      <workItem from="1589314017522" duration="3271000" />
     </task>
     <task id="LOCAL-00001" summary="merge_csv.py as stanalone file">
       <created>1589314373433</created>
@@ -163,7 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589314531853</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="optimized API requests">
+      <created>1589316109590</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1589316109590</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,7 +197,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -183,7 +218,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="merge_csv.py as stanalone file" />
-    <option name="LAST_COMMIT_MESSAGE" value="merge_csv.py as stanalone file" />
+    <MESSAGE value="optimized API requests" />
+    <option name="LAST_COMMIT_MESSAGE" value="optimized API requests" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1026" y="154" key="#Code_Folding" timestamp="1589315014659">
@@ -194,6 +230,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1072" y="558" key="#Scopes/0.0.2560.1400@0.0.2560.1400" timestamp="1589309704541" />
+    <state x="1045" y="353" key="#Web_Browsers" timestamp="1589316290228">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1045" y="353" key="#Web_Browsers/0.0.2560.1400@0.0.2560.1400" timestamp="1589316290228" />
     <state x="872" y="358" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589315130547">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -206,50 +246,50 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="810" y="355" key="DBNavigator.ProjectSettingsDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1589306667071" />
-    <state x="1059" y="455" key="FileChooserDialogImpl" timestamp="1589305597460">
+    <state x="1059" y="455" key="FileChooserDialogImpl" timestamp="1589316897551">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1059" y="455" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1589305597460" />
-    <state width="2507" height="370" key="GridCell.Tab.0.bottom" timestamp="1589316043422">
+    <state x="1059" y="455" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1589316897551" />
+    <state width="2507" height="370" key="GridCell.Tab.0.bottom" timestamp="1589317292512">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2507" height="370" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1589316043422" />
-    <state width="2507" height="370" key="GridCell.Tab.0.center" timestamp="1589316043422">
+    <state width="2507" height="370" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1589317292512" />
+    <state width="2507" height="370" key="GridCell.Tab.0.center" timestamp="1589317292512">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2507" height="370" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1589316043422" />
-    <state width="2507" height="370" key="GridCell.Tab.0.left" timestamp="1589316043422">
+    <state width="2507" height="370" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1589317292512" />
+    <state width="2507" height="370" key="GridCell.Tab.0.left" timestamp="1589317292512">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2507" height="370" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1589316043422" />
-    <state width="2507" height="370" key="GridCell.Tab.0.right" timestamp="1589316043422">
+    <state width="2507" height="370" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1589317292512" />
+    <state width="2507" height="370" key="GridCell.Tab.0.right" timestamp="1589317292512">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2507" height="370" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1589316043422" />
-    <state width="2507" height="454" key="GridCell.Tab.1.bottom" timestamp="1589315406967">
+    <state width="2507" height="370" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1589317292512" />
+    <state width="2507" height="454" key="GridCell.Tab.1.bottom" timestamp="1589317290229">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2507" height="454" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1589315406967" />
-    <state width="2507" height="454" key="GridCell.Tab.1.center" timestamp="1589315406967">
+    <state width="2507" height="454" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1589317290229" />
+    <state width="2507" height="454" key="GridCell.Tab.1.center" timestamp="1589317290229">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2507" height="454" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1589315406967" />
-    <state width="2507" height="454" key="GridCell.Tab.1.left" timestamp="1589315406967">
+    <state width="2507" height="454" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1589317290229" />
+    <state width="2507" height="454" key="GridCell.Tab.1.left" timestamp="1589317290229">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2507" height="454" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1589315406967" />
-    <state width="2507" height="454" key="GridCell.Tab.1.right" timestamp="1589315406967">
+    <state width="2507" height="454" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1589317290229" />
+    <state width="2507" height="454" key="GridCell.Tab.1.right" timestamp="1589317290229">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2507" height="454" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1589315406967" />
+    <state width="2507" height="454" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1589317290229" />
     <state width="196" height="539" key="HiddenNamespacesPopup" timestamp="1589308805948">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="196" height="539" key="HiddenNamespacesPopup/0.0.2560.1400@0.0.2560.1400" timestamp="1589308805948" />
-    <state x="781" y="345" key="SettingsEditor" timestamp="1589315354558">
+    <state x="781" y="345" key="SettingsEditor" timestamp="1589316985784">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="781" y="345" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1589315354558" />
+    <state x="781" y="345" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1589316985784" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/cs50_final_project$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1589316043414" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
