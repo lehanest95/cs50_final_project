@@ -61,6 +61,7 @@ questions = db.execute("SELECT * FROM questions")
 #     t2
 #     WHERE
 #     t2.AuthorID = t1.AuthorID)
+first_topic = 0
 
 
 @app.route("/")
