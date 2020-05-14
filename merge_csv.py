@@ -3,6 +3,7 @@ import os
 
 import pandas as pd
 from sys import exit
+import csv_to_sqlite
 
 print("\n\n\nmerged.csv will be written to the same directory of 'merged_csv.py'")
 print("Please ENSURE FOLDER containing CSVs is in the same directory and called 'CSVs'")
@@ -29,4 +30,16 @@ merged_df = pd.concat(all_df, ignore_index=True, sort=True)
 # write to new CSV
 merged_df.to_csv("merged.csv")
 print("merged.csv successfully written!")
+
+# write CSV to database
+#
+# csv_merged = pd.read_csv("merged.csv")
+# csv_merged.to_sql(table_name, conn, if_exists='append', index=False)
+
+# https://pypi.org/project/csv-to-sqlite/
+options = csv_to_sqlite.CsvOptions(typing_style="full", encoding="utf-8")
+input_files = ["merged.csv"]  # pass in a list of CSV files
+csv_to_sqlite.write_csv(input_files, "merged.db", options)
+
+
 exit(0)

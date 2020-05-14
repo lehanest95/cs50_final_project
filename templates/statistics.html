@@ -7,22 +7,104 @@
 {% block main %}
     <div style="text-align: left">
         <h3>Statistics</h3>
+        Users registered: {{ users_counter }}
         <br>
-            <h6>
-        You can:
+        Users participated: {{ users_participated }}
         <br>
-                1. <a href="/participate">Participate</a> in research (login/register required) by submitting your own answers to several questions - you will then see how it compares to statistics
+        Answers submitted: {{ answers_counter }}
         <br>
-        or
-        <br>
-                2. Just see the <a href="/statistics">statistics</a>
-        <br>
-        Cheers!)</h6>
-    Users registered: {{ users_counter }}
-    <br>
-    Users participated: {{ users_participated }}
-    <br>
-    Answers submitted: {{ answers_counter }}
-
+        {% for row in questions %}
+            <br><h4>{{ row["question_name"] }}</h4>
+            {{ row["question_text"] }}
+            {% if row["answer_type"] == "select_week" %}
+                <div id="week_container" class="container-chart">
+                    <script>
+                        anychart.onDocumentReady(function() {
+                            var chart = anychart.fromJson({{weekData|safe}});
+                            chart.draw();
+                        });
+                    </script>
+                </div>
+            {% elif row["answer_type"] == "select_problem_set" %}
+                <div id="pset_container" class="container-chart">
+                    <script>
+                        anychart.onDocumentReady(function() {
+                            var chart = anychart.fromJson({{psetData|safe}});
+                            chart.draw();
+                        });
+                    </script>
+                </div>
+            {% elif row["answer_type"] == "select_bool" %}
+                <div id="bool_container" class="container-chart">
+                    <script>
+                        anychart.onDocumentReady(function() {
+                            var chart = anychart.fromJson({{boolData|safe}});
+                            chart.draw();
+                        });
+                    </script>
+                </div>
+             {% elif row["answer_type"] == "positive_int" %}
+                {{ int_data }}
+                <div id="int_container" class="container-chart">
+                    <script>
+                        anychart.onDocumentReady(function() {
+                            var chart = anychart.fromJson({{intData|safe}});
+                            chart.draw();
+                        });
+                    </script>
+                </div>
+            {% endif %}
+        {% endfor %}
     </div>
 {% endblock %}
+
+
+{#    <div id="sample"></div>#}
+{#    <script>    // create a chart#}
+{#        anychart.onDocumentReady(function () {#}
+{##}
+{#        // create a chart and set the data#}
+{#        var chart = anychart.bar();#}
+{##}
+{#        var tableData = anychart.data.parseHtmlTable("#htmlTable");#}
+{##}
+{#        chart.data(tableData);#}
+{#        chart.height('100%');#}
+{#        chart.legend(true);#}
+{##}
+{#        // set chart container and draw#}
+{#        chart.container("sample").draw();#}
+{#        });#}
+{#    </script>#}
+{#    <table id="htmlTable" class="table table-striped" style="width: auto">#}
+{#      <caption style="color: white">Exchange rates</caption>#}
+{#      <thead>#}
+{#        <tr>#}
+{#          <th>Date</th>#}
+{#          <th>EUR</th>#}
+{#          <th>USD</th>#}
+{#          <th>YEN</th>#}
+{#        </tr>#}
+{#      </thead>#}
+{#      <tbody>#}
+{#        <tr>#}
+{#          <td>01/01</td>#}
+{#          <td>1</td>#}
+{#          <td>2</td>#}
+{#          <td>3</td>#}
+{#        </tr>#}
+{#        <tr>#}
+{#          <td>01/02</td>#}
+{#          <td>1</td>#}
+{#          <td>2</td>#}
+{#          <td>3</td>#}
+{#        </tr>#}
+{#        <tr>#}
+{#          <td>01/03</td>#}
+{#          <td>1</td>#}
+{#          <td>2</td>#}
+{#          <td>3</td>#}
+{#        </tr>#}
+{#      </tbody>#}
+{#    </table>#}
+

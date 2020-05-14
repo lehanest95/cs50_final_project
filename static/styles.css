@@ -2,6 +2,25 @@ table {
     text-align: left;
 }
 
+html, body {
+    height: 100%;
+}
+
+.container-chart {
+    height: 400px;
+    float: left;
+    margin: auto;
+    width: 100%;
+}
+
+#container {
+    width: 50%;
+    height: 400px;
+    background-color: #ffcc33;
+    float: left;
+    margin: auto;
+}
+
 nav
 {
     /* size for brand */

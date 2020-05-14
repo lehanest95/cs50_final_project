@@ -8,6 +8,29 @@
     <div style="text-align: left">
         Session (user_id) is: {{ user_id }}
         <br><br>
+        {% if participated_status == "yes" %}
+            <h1 style="color: #2e944b">You have already participated!) If u submit again - ALL answers will be changed</h1>
+            Your previous answers were:
+            <table class="table table-striped">
+                <thead>
+                    <th>Question</th>
+                    <th>Answer</th>
+                    <th>Date</th>
+                </thead>
+                <tbody>
+                {% for row in answers %}
+                    <tr>
+                        <td>{{ row["question_name"] }}</td>
+                        <td>{{ row["answer"] }}</td>
+                        <td>{{ row["answer_date"] }}</td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+
+        {% endif %}
+
+        <br>
         <div id="accordion">
           <div class="card">
             <div class="card-header" id="headingTwo">
@@ -55,8 +78,8 @@
                             <option value="no">No</option>
                         </select>
                     {% elif row["answer_type"] == "positive_int" %}
-{#                        hint: https://www.youtube.com/watch?v=PcQtdjlxp0M#}
-                        <input autocomplete="off" class="form-control form-control" min="0" name="{{ row["id"] }}" value="Int or check for hints" type="number">
+                        <!-- hint: https://www.youtube.com/watch?v=PcQtdjlxp0M -->
+                        <input autocomplete="off" class="form-control form-control" min="1" max = "5660" name="{{ row["id"] }}" value="Int or check for hints" type="number">
                     {% endif %}
                 <br>
             {% endfor %}
