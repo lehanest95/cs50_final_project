@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Dashboard
+{% endblock %}
+
+{% block main %}
+
+
+    <div style="text-align: left">
+<h3>Readme</h3>
+        <br>
+        <h6>
+            Stack used for the project:
+            <ol>
+                <li>Flask</li>
+                <li>Python</li>
+                <li>Pandas</li>
+                <li>JavaScript (for Charts in statistics)</li>
+                <li>CSS</li>
+                <li>HTML</li>
+                <li>SQL (SQLITE)</li>
+                <li>Excel to form extra charts from Discord Data</li>
+            </ol>
+        </h6>
+        <h2>Discord Data Analysis</h2>
+        <h6>
+            I used open-source tool <a href="https://github.com/Tyrrrz/DiscordChatExporter">DiscordChatExporter</a>
+            to get multiple CSVs from the official CS50 Discord channel.
+            I then wrote Python code "merge_csv.py" to merge CSVs together and form new file "merged.csv" using Pandas.
+            Then this CSV was imported to SQLITE database for ease of queries and speed.
+        </h6>
+
+    </div>
+{% endblock %}

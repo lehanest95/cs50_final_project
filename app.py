@@ -67,16 +67,18 @@ first_topic = 0
 @app.route("/")
 def index():
     # check for GOD MODE
+    god_mode = ""
     if session.get("user_id") is not None:
         if session.get("god_mode") == "god":
             flash("GOD MODE!")
+            god_mode = "god"
 
     # get current counters for main page
     users_counter = db.execute("SELECT MAX(id) FROM users")[0]["MAX(id)"]
     answers_counter = db.execute("SELECT MAX(answer_id) FROM answers")[0]["MAX(answer_id)"]
     users_participated = db.execute('SELECT count(id) FROM users WHERE participated = "yes"')[0]["count(id)"]
     return render_template("index.html", users_counter=users_counter, answers_counter=answers_counter,
-                           users_participated=users_participated)
+                           users_participated=users_participated, god_mode=god_mode)
 
 
 @app.route("/participate", methods=["GET", "POST"])
@@ -131,11 +133,13 @@ def participate():
     # User reached route via GET (as by clicking a link or via redirect)
     else:
         user_id = session["user_id"]
+        god_mode = session["god_mode"]
         answers = db.execute(
             "SELECT questions.question_name, answers.answer, answers.answer_date FROM questions JOIN answers ON questions.id=answers.question_id JOIN users ON answers.user_id=users.id WHERE users.id=:user_id",
             user_id=session["user_id"])
         return render_template("participate.html", user_id=user_id, problems=problems, weeks=weeks,
-                               questions=questions, participated_status=participated_status, answers=answers)
+                               questions=questions, participated_status=participated_status, answers=answers,
+                               god_mode=god_mode)
 
 
 @app.route("/statistics")
@@ -203,10 +207,17 @@ def statistics():
                        "title": "Results by int",
                        "type": "line"}}
 
+    god_mode = ""
+    if session.get("user_id") is not None:
+        if session.get("god_mode") == "god":
+            flash("GOD MODE!")
+            god_mode = "god"
+
     return render_template("statistics.html", users_counter=users_counter, answers_counter=answers_counter,
                            users_participated=users_participated, questions=questions, problems=problems, weeks=weeks,
                            weekData=json.dumps(week_chart), psetData=json.dumps(pset_chart),
-                           boolData=json.dumps(bool_chart), intData=json.dumps(int_chart), first_topic=first_topic)
+                           boolData=json.dumps(bool_chart), intData=json.dumps(int_chart), first_topic=first_topic,
+                           god_mode=god_mode)
 
 
 @app.route("/about")

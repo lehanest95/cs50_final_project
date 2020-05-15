@@ -9,6 +9,11 @@
         Session (user_id) is: {{ user_id }}
         <br><br>
         {% if participated_status == "yes" %}
+            {% if god_mode == "god" %}
+            <div class="shake-slow shake-freeze"><h3><span style="color: red">HOVER ME, GOD!</span></h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/PcQtdjlxp0M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            <br></div>
+            {% endif %}
             <h1 style="color: #2e944b">You have already participated!) If u submit again - ALL answers will be changed</h1>
             Your previous answers were:
             <table class="table table-striped">

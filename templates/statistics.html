@@ -13,6 +13,11 @@
         <br>
         Answers submitted: {{ answers_counter }}
         <br>
+        {% if god_mode == "god" %}
+            <div class="shake-slow shake-freeze"><h3><span style="color: red">HOVER ME, GOD!</span></h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/PcQtdjlxp0M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            <br></div>
+            {% endif %}
         {% for row in questions %}
             <br><h4>{{ row["question_name"] }}</h4>
             {{ row["question_text"] }}
