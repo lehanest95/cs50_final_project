@@ -26,8 +26,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8afbb7c-6803-4e93-8fc3-362e51c09e6e" name="Default Changelist" comment="Final v1">
+    <list default="true" id="c8afbb7c-6803-4e93-8fc3-362e51c09e6e" name="Default Changelist" comment="Added README.md">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/about.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,7 +201,7 @@
       <workItem from="1589485182819" duration="640000" />
       <workItem from="1589489246180" duration="7938000" />
       <workItem from="1589560518182" duration="4909000" />
-      <workItem from="1589613597827" duration="9804000" />
+      <workItem from="1589613597827" duration="11299000" />
     </task>
     <task id="LOCAL-00001" summary="merge_csv.py as stanalone file">
       <created>1589314373433</created>
@@ -279,7 +280,21 @@
       <option name="project" value="LOCAL" />
       <updated>1589625023004</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Added README.md">
+      <created>1589625651062</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1589625651062</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Added README.md">
+      <created>1589625659081</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1589625659081</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -316,7 +331,8 @@
     <MESSAGE value="participate.html page almost finished" />
     <MESSAGE value="all except Power BI charts finished" />
     <MESSAGE value="Final v1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Final v1" />
+    <MESSAGE value="Added README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added README.md" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1026" y="154" key="#Code_Folding" timestamp="1589315014659">
@@ -391,25 +407,25 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1059" y="455" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1589316897551" />
-    <state width="2505" height="369" key="GridCell.Tab.0.bottom" timestamp="1589622859628">
+    <state width="2505" height="369" key="GridCell.Tab.0.bottom" timestamp="1589630973037">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2505" height="369" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1589622859628" />
+    <state width="2505" height="369" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1589630973037" />
     <state width="1833" height="306" key="GridCell.Tab.0.bottom/35.23.1885.1177@35.23.1885.1177" timestamp="1589471362363" />
-    <state width="2505" height="369" key="GridCell.Tab.0.center" timestamp="1589622859627">
+    <state width="2505" height="369" key="GridCell.Tab.0.center" timestamp="1589630973037">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2505" height="369" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1589622859627" />
+    <state width="2505" height="369" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1589630973037" />
     <state width="1833" height="306" key="GridCell.Tab.0.center/35.23.1885.1177@35.23.1885.1177" timestamp="1589471362362" />
-    <state width="2505" height="369" key="GridCell.Tab.0.left" timestamp="1589622859627">
+    <state width="2505" height="369" key="GridCell.Tab.0.left" timestamp="1589630973037">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2505" height="369" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1589622859627" />
+    <state width="2505" height="369" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1589630973037" />
     <state width="1833" height="306" key="GridCell.Tab.0.left/35.23.1885.1177@35.23.1885.1177" timestamp="1589471362362" />
-    <state width="2505" height="369" key="GridCell.Tab.0.right" timestamp="1589622859627">
+    <state width="2505" height="369" key="GridCell.Tab.0.right" timestamp="1589630973037">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2505" height="369" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1589622859627" />
+    <state width="2505" height="369" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1589630973037" />
     <state width="1833" height="306" key="GridCell.Tab.0.right/35.23.1885.1177@35.23.1885.1177" timestamp="1589471362362" />
     <state width="2505" height="452" key="GridCell.Tab.1.bottom" timestamp="1589617179497">
       <screen x="0" y="0" width="2560" height="1400" />
@@ -440,10 +456,10 @@
     </state>
     <state x="781" y="345" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1589614309604" />
     <state x="610" y="303" key="SettingsEditor/35.23.1885.1177@35.23.1885.1177" timestamp="1589454947283" />
-    <state x="772" y="362" key="Vcs.Push.Dialog.v2" timestamp="1589625051982">
+    <state x="772" y="362" key="Vcs.Push.Dialog.v2" timestamp="1589630965502">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="772" y="362" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1589625051982" />
+    <state x="772" y="362" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1589630965502" />
     <state x="603" y="327" key="Vcs.Push.Dialog.v2/35.23.1885.1177@35.23.1885.1177" timestamp="1589410299772" />
     <state x="871" y="267" key="VcsDiffUtil.ChangesDialog" timestamp="1589361100674">
       <screen x="0" y="0" width="2560" height="1400" />
@@ -489,7 +505,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/cs50_final$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1589471362354" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/cs50_final_project$Flask__app_py_.coverage" NAME="Flask (application.py) Coverage Results" MODIFIED="1589622859613" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cs50_final_project$Flask__app_py_.coverage" NAME="Flask (application.py) Coverage Results" MODIFIED="1589630973026" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/cs50_final$merge_csv.coverage" NAME="merge_csv Coverage Results" MODIFIED="1589451015179" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/cs50_final_project$app.coverage" NAME="app Coverage Results" MODIFIED="1589315264534" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/cs50_final_project$merge_csv.coverage" NAME="merge_csv Coverage Results" MODIFIED="1589560832212" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
