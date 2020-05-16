@@ -26,14 +26,16 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8afbb7c-6803-4e93-8fc3-362e51c09e6e" name="Default Changelist" comment="participate.html page almost finished">
-      <change afterPath="$PROJECT_DIR$/templates/about.html" afterDir="false" />
+    <list default="true" id="c8afbb7c-6803-4e93-8fc3-362e51c09e6e" name="Default Changelist" comment="all except Power BI charts finished">
+      <change beforePath="$PROJECT_DIR$/.idea/cs50_final.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/cs50_final.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/application.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/final.db" beforeDir="false" afterPath="$PROJECT_DIR$/final.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/merge_csv.py" beforeDir="false" afterPath="$PROJECT_DIR$/merge_csv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/participate.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/participate.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/statistics.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/statistics.html" afterDir="false" />
     </list>
@@ -82,14 +84,14 @@
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Flask server.Flask (app.py)">
+  <component name="RunManager" selected="Flask server.Flask (application.py)">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="cs50_final" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -112,7 +114,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="application" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="cs50_final" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -125,7 +127,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\aleksej\PycharmProjects\cs50_final_project\application.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -156,14 +158,14 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Flask (app.py)" type="Python.FlaskServer" temporary="true" nameIsGenerated="true">
+    <configuration name="Flask (application.py)" type="Python.FlaskServer" temporary="true" nameIsGenerated="true">
       <module name="cs50_final" />
-      <option name="target" value="$PROJECT_DIR$/app.py" />
+      <option name="target" value="$PROJECT_DIR$/application.py" />
       <option name="targetType" value="PATH" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
@@ -172,15 +174,15 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Flask server.Flask (app.py)" />
       <item itemvalue="Python.merge_csv" />
-      <item itemvalue="Python.app" />
+      <item itemvalue="Flask server.Flask (application.py)" />
+      <item itemvalue="Python.application" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Flask server.Flask (app.py)" />
+        <item itemvalue="Flask server.Flask (application.py)" />
         <item itemvalue="Python.merge_csv" />
-        <item itemvalue="Python.app" />
+        <item itemvalue="Python.application" />
       </list>
     </recent_temporary>
   </component>
@@ -207,7 +209,8 @@
       <workItem from="1589480835540" duration="298000" />
       <workItem from="1589485182819" duration="640000" />
       <workItem from="1589489246180" duration="7938000" />
-      <workItem from="1589560518182" duration="3178000" />
+      <workItem from="1589560518182" duration="4909000" />
+      <workItem from="1589613597827" duration="7583000" />
     </task>
     <task id="LOCAL-00001" summary="merge_csv.py as stanalone file">
       <created>1589314373433</created>
@@ -251,7 +254,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589497462265</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="all except Power BI charts finished">
+      <created>1589563727653</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1589563727653</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -282,16 +292,22 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="true" />
     <MESSAGE value="merge_csv.py as stanalone file" />
     <MESSAGE value="optimized API requests" />
     <MESSAGE value="participate.html page almost finished" />
-    <option name="LAST_COMMIT_MESSAGE" value="participate.html page almost finished" />
+    <MESSAGE value="all except Power BI charts finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="all except Power BI charts finished" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1026" y="154" key="#Code_Folding" timestamp="1589315014659">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1026" y="154" key="#Code_Folding/0.0.2560.1400@0.0.2560.1400" timestamp="1589315014659" />
+    <state x="1153" y="480" width="632" height="613" key="#Docker" timestamp="1589614222444">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1153" y="480" width="632" height="613" key="#Docker/0.0.2560.1400@0.0.2560.1400" timestamp="1589614222444" />
     <state x="922" y="200" key="#Flask_(app.py)" timestamp="1589362233171">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -328,6 +344,10 @@
     </state>
     <state x="1202" y="333" key="#com.intellij.ide.ui.customization.CustomizableActionsPanel.FindAvailableActionsDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1589361564320" />
     <state x="920" y="303" key="#com.intellij.ide.ui.customization.CustomizableActionsPanel.FindAvailableActionsDialog/35.23.1885.1177@35.23.1885.1177" timestamp="1589389181119" />
+    <state x="1131" y="291" key="#xdebugger.XInspectDialog" timestamp="1589616802605">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1131" y="291" key="#xdebugger.XInspectDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1589616802605" />
     <state x="489" y="111" key="CommitChangelistDialog2" timestamp="1589410233630">
       <screen x="35" y="23" width="1885" height="1177" />
     </state>
@@ -344,63 +364,67 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="92" y="92" width="2376" height="1216" key="DiffContextDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1589361574319" />
+    <state x="1231" y="361" key="EnvironmentVariablesDialog" timestamp="1589614202276">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1231" y="361" key="EnvironmentVariablesDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1589614202276" />
     <state x="1059" y="455" key="FileChooserDialogImpl" timestamp="1589316897551">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1059" y="455" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1589316897551" />
-    <state width="2505" height="369" key="GridCell.Tab.0.bottom" timestamp="1589562144295">
+    <state width="2505" height="369" key="GridCell.Tab.0.bottom" timestamp="1589622382619">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2505" height="369" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1589562144295" />
+    <state width="2505" height="369" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1589622382619" />
     <state width="1833" height="306" key="GridCell.Tab.0.bottom/35.23.1885.1177@35.23.1885.1177" timestamp="1589471362363" />
-    <state width="2505" height="369" key="GridCell.Tab.0.center" timestamp="1589562144295">
+    <state width="2505" height="369" key="GridCell.Tab.0.center" timestamp="1589622382619">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2505" height="369" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1589562144295" />
+    <state width="2505" height="369" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1589622382619" />
     <state width="1833" height="306" key="GridCell.Tab.0.center/35.23.1885.1177@35.23.1885.1177" timestamp="1589471362362" />
-    <state width="2505" height="369" key="GridCell.Tab.0.left" timestamp="1589562144295">
+    <state width="2505" height="369" key="GridCell.Tab.0.left" timestamp="1589622382619">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2505" height="369" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1589562144295" />
+    <state width="2505" height="369" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1589622382619" />
     <state width="1833" height="306" key="GridCell.Tab.0.left/35.23.1885.1177@35.23.1885.1177" timestamp="1589471362362" />
-    <state width="2505" height="369" key="GridCell.Tab.0.right" timestamp="1589562144295">
+    <state width="2505" height="369" key="GridCell.Tab.0.right" timestamp="1589622382619">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2505" height="369" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1589562144295" />
+    <state width="2505" height="369" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1589622382619" />
     <state width="1833" height="306" key="GridCell.Tab.0.right/35.23.1885.1177@35.23.1885.1177" timestamp="1589471362362" />
-    <state width="1833" height="379" key="GridCell.Tab.1.bottom" timestamp="1589464608515">
-      <screen x="35" y="23" width="1885" height="1177" />
+    <state width="2505" height="452" key="GridCell.Tab.1.bottom" timestamp="1589617179497">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2507" height="454" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1589317290229" />
+    <state width="2505" height="452" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1589617179497" />
     <state width="1833" height="379" key="GridCell.Tab.1.bottom/35.23.1885.1177@35.23.1885.1177" timestamp="1589464608515" />
-    <state width="1833" height="379" key="GridCell.Tab.1.center" timestamp="1589464608514">
-      <screen x="35" y="23" width="1885" height="1177" />
+    <state width="2505" height="452" key="GridCell.Tab.1.center" timestamp="1589617179497">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2507" height="454" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1589317290229" />
+    <state width="2505" height="452" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1589617179497" />
     <state width="1833" height="379" key="GridCell.Tab.1.center/35.23.1885.1177@35.23.1885.1177" timestamp="1589464608514" />
-    <state width="1833" height="379" key="GridCell.Tab.1.left" timestamp="1589464608514">
-      <screen x="35" y="23" width="1885" height="1177" />
+    <state width="2505" height="452" key="GridCell.Tab.1.left" timestamp="1589617179497">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2507" height="454" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1589317290229" />
+    <state width="2505" height="452" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1589617179497" />
     <state width="1833" height="379" key="GridCell.Tab.1.left/35.23.1885.1177@35.23.1885.1177" timestamp="1589464608514" />
-    <state width="1833" height="379" key="GridCell.Tab.1.right" timestamp="1589464608514">
-      <screen x="35" y="23" width="1885" height="1177" />
+    <state width="2505" height="452" key="GridCell.Tab.1.right" timestamp="1589617179497">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2507" height="454" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1589317290229" />
+    <state width="2505" height="452" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1589617179497" />
     <state width="1833" height="379" key="GridCell.Tab.1.right/35.23.1885.1177@35.23.1885.1177" timestamp="1589464608514" />
     <state width="196" height="539" key="HiddenNamespacesPopup" timestamp="1589308805948">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="196" height="539" key="HiddenNamespacesPopup/0.0.2560.1400@0.0.2560.1400" timestamp="1589308805948" />
-    <state x="781" y="345" key="SettingsEditor" timestamp="1589490409222">
+    <state x="781" y="345" key="SettingsEditor" timestamp="1589614309605">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="781" y="345" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1589490409222" />
+    <state x="781" y="345" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1589614309604" />
     <state x="610" y="303" key="SettingsEditor/35.23.1885.1177@35.23.1885.1177" timestamp="1589454947283" />
-    <state x="772" y="362" key="Vcs.Push.Dialog.v2" timestamp="1589497465312">
+    <state x="772" y="362" key="Vcs.Push.Dialog.v2" timestamp="1589563736813">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="772" y="362" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1589497465312" />
+    <state x="772" y="362" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1589563736813" />
     <state x="603" y="327" key="Vcs.Push.Dialog.v2/35.23.1885.1177@35.23.1885.1177" timestamp="1589410299772" />
     <state x="871" y="267" key="VcsDiffUtil.ChangesDialog" timestamp="1589361100674">
       <screen x="0" y="0" width="2560" height="1400" />
@@ -418,23 +442,31 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1193" y="634" key="com.intellij.database.run.ParametersPanel.Standalone/0.0.2560.1400@0.0.2560.1400" timestamp="1589485415704" />
-    <state x="811" y="314" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1589443945427">
-      <screen x="35" y="23" width="1885" height="1177" />
+    <state x="1054" y="346" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1589618502556">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
+    <state x="1054" y="346" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1589618502556" />
     <state x="811" y="314" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/35.23.1885.1177@35.23.1885.1177" timestamp="1589443945427" />
     <state x="1119" y="512" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1" timestamp="1589485351740">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1119" y="512" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1/0.0.2560.1400@0.0.2560.1400" timestamp="1589485351740" />
-    <state x="662" y="170" width="838" height="868" key="search.everywhere.popup" timestamp="1589466314109">
-      <screen x="35" y="23" width="1885" height="1177" />
+    <state x="852" y="175" width="840" height="1032" key="search.everywhere.popup" timestamp="1589614286269">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="852" y="175" width="840" height="1032" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1589386836475" />
+    <state x="852" y="175" width="840" height="1032" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1589614286269" />
     <state x="662" y="170" width="838" height="868" key="search.everywhere.popup/35.23.1885.1177@35.23.1885.1177" timestamp="1589466314109" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="Python.FlaskServer">
+        <watch expression="session[&quot;god_mode&quot;]" language="Python" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/cs50_final$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1589471362354" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/cs50_final_project$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1589562144286" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/cs50_final_project$Flask__app_py_.coverage" NAME="Flask (application.py) Coverage Results" MODIFIED="1589622382610" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/cs50_final$merge_csv.coverage" NAME="merge_csv Coverage Results" MODIFIED="1589451015179" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/cs50_final_project$app.coverage" NAME="app Coverage Results" MODIFIED="1589315264534" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/cs50_final_project$merge_csv.coverage" NAME="merge_csv Coverage Results" MODIFIED="1589560832212" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

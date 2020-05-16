@@ -14,9 +14,8 @@
         Answers submitted: {{ answers_counter }}
         <br>
         {% if god_mode == "god" %}
-            <div class="shake-slow shake-freeze"><h3><span style="color: red">HOVER ME, GOD!</span></h3>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/PcQtdjlxp0M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-            <br></div>
+            <div class="shake-slow shake-freeze"><h3><span style="color: red">HOVER ME, GOD!</span></h3></div>
+            <br><iframe width="560" height="315" src="https://www.youtube.com/embed/PcQtdjlxp0M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             {% endif %}
         {% for row in questions %}
             <br><h4>{{ row["question_name"] }}</h4>
@@ -60,6 +59,25 @@
                 </div>
             {% endif %}
         {% endfor %}
+    <br>
+    <h1>DISCORD Insights as of date 14/05/2020</h1>
+    <h2>Which channel user first interacted in</h2>
+    My assumption was that the channel in which user posted first message was the first hardest for student to solve.
+    <br>
+    <img src="/static/first-interaction-chart.jpg">
+    <br>
+    <h2>Which channel user first interacted in 2020</h2>
+    Same as above, but only in 2020.
+    <br>
+    <img src="/static/first-interaction-chart-2020.jpg">
+    <br>
+    <h2>Overall number of messages per channel</h2>
+    <br>
+    <img src="/static/messages-per-channel-chart.jpg">
+    <br>
+    <h2>Overall number of messages per channel only in 2020</h2>
+    <br>
+    <img src="/static/messages-per-channel-chart-2020.jpg">
     </div>
 {% endblock %}
 

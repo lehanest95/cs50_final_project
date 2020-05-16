@@ -67,16 +67,13 @@ first_topic = 0
 @app.route("/")
 def index():
     # check for GOD MODE
-    god_mode = ""
-    if session.get("user_id") is not None:
-        if session.get("god_mode") == "god":
-            flash("GOD MODE!")
-            god_mode = "god"
+    god_mode = CheckGodMode(session.get("user_id"))
 
     # get current counters for main page
     users_counter = db.execute("SELECT MAX(id) FROM users")[0]["MAX(id)"]
-    answers_counter = db.execute("SELECT MAX(answer_id) FROM answers")[0]["MAX(answer_id)"]
+    answers_counter = db.execute("SELECT COUNT(answer_id) FROM answers")[0]["COUNT(answer_id)"]
     users_participated = db.execute('SELECT count(id) FROM users WHERE participated = "yes"')[0]["count(id)"]
+
     return render_template("index.html", users_counter=users_counter, answers_counter=answers_counter,
                            users_participated=users_participated, god_mode=god_mode)
 
@@ -106,12 +103,10 @@ def participate():
                     flash("YOU ARE THE GOD OF CONSPIRACY AND HACKING, CONGRATS!")
                     db.execute("UPDATE users SET god_mode=:god_value WHERE id=:user_id", god_value="god",
                                user_id=session["user_id"])
-                    session["god_mode"] = "god"
                 elif int(answer) != boiling_point:
                     # disable God Mode
                     db.execute("UPDATE users SET god_mode=:god_value WHERE id=:user_id", god_value="",
                                user_id=session["user_id"])
-                    session["god_mode"] = ""
 
             # if user didn't participate before
             if participated_status != "yes":
@@ -133,7 +128,7 @@ def participate():
     # User reached route via GET (as by clicking a link or via redirect)
     else:
         user_id = session["user_id"]
-        god_mode = session["god_mode"]
+        god_mode = CheckGodMode(session["user_id"])
         answers = db.execute(
             "SELECT questions.question_name, answers.answer, answers.answer_date FROM questions JOIN answers ON questions.id=answers.question_id JOIN users ON answers.user_id=users.id WHERE users.id=:user_id",
             user_id=session["user_id"])
@@ -144,12 +139,9 @@ def participate():
 
 @app.route("/statistics")
 def statistics():
-    """Show history of transactions"""
-    # if session.user_id:
-
     # get current counters for main page
     users_counter = db.execute("SELECT MAX(id) FROM users")[0]["MAX(id)"]
-    answers_counter = db.execute("SELECT MAX(answer_id) FROM answers")[0]["MAX(answer_id)"]
+    answers_counter = db.execute("SELECT COUNT(answer_id) FROM answers")[0]["COUNT(answer_id)"]
     users_participated = db.execute('SELECT count(id) FROM users WHERE participated = "yes"')[0]["count(id)"]
     # data = db.execute("SELECT id, problem_week FROM problems GROUP BY problem_week")
 
@@ -158,20 +150,22 @@ def statistics():
     cur = conn.cursor()
 
     # data for "select_week"
-    cur.execute('SELECT "Week #" || problem_week.week_number || " " || "(" || problem_week.week_topic || ")" AS week, COUNT(answers.answer) AS votes FROM answers answers, questions questions, problem_week problem_week WHERE answers.question_id = questions.id AND answers.answer = problem_week.week_number AND questions.answer_type = "select_week" GROUP BY answers.answer')
+    cur.execute(
+        'SELECT "Week #" || problem_week.week_number || " " || "(" || problem_week.week_topic || ")" AS week, COUNT(answers.answer) AS votes FROM answers answers, questions questions, problem_week problem_week WHERE answers.question_id = questions.id AND answers.answer = problem_week.week_number AND questions.answer_type = "select_week" GROUP BY answers.answer')
     week_data = cur.fetchall()
     week_chart = {"chart":
-                 {"container": "week_container",
-                  "series": [
-                      {"enabled": True,
-                       "seriesType": "bar",
-                       "data": week_data
-                       }],
-                  "title": "Results by week",
-                  "type": "bar"}}
+                      {"container": "week_container",
+                       "series": [
+                           {"enabled": True,
+                            "seriesType": "bar",
+                            "data": week_data
+                            }],
+                       "title": "Results by week",
+                       "type": "bar"}}
 
     # data for "select_problem_set"
-    cur.execute('SELECT "(Week #"|| problems.problem_week || ") " || problems.problem_name AS pset, COUNT(answers.answer) AS counter FROM answers answers, questions questions, problems problems WHERE answers.question_id = questions.id AND answers.answer = problems.id AND questions.answer_type = "select_problem_set" GROUP BY problems.problem_name ORDER BY problems.id')
+    cur.execute(
+        'SELECT "(Week #"|| problems.problem_week || ") " || problems.problem_name AS pset, COUNT(answers.answer) AS counter FROM answers answers, questions questions, problems problems WHERE answers.question_id = questions.id AND answers.answer = problems.id AND questions.answer_type = "select_problem_set" GROUP BY problems.problem_name ORDER BY problems.id')
     pset_data = cur.fetchall()
     pset_chart = {"chart":
                       {"container": "pset_container",
@@ -198,20 +192,16 @@ def statistics():
         'SELECT answers.answer, COUNT(answers.answer_id) as counter  FROM answers answers, questions questions WHERE answers.question_id = questions.id AND questions.answer_type = "positive_int" GROUP BY answers.answer')
     int_data = cur.fetchall()
     int_chart = {"chart":
-                      {"container": "int_container",
-                       "series": [
-                           {"enabled": True,
-                            "seriesType": "spline",
-                            "data": int_data
-                            }],
-                       "title": "Results by int",
-                       "type": "line"}}
+                     {"container": "int_container",
+                      "series": [
+                          {"enabled": True,
+                           "seriesType": "spline",
+                           "data": int_data
+                           }],
+                      "title": "Results by int",
+                      "type": "line"}}
 
-    god_mode = ""
-    if session.get("user_id") is not None:
-        if session.get("god_mode") == "god":
-            flash("GOD MODE!")
-            god_mode = "god"
+    god_mode = CheckGodMode(session.get("user_id"))
 
     return render_template("statistics.html", users_counter=users_counter, answers_counter=answers_counter,
                            users_participated=users_participated, questions=questions, problems=problems, weeks=weeks,
@@ -221,7 +211,6 @@ def statistics():
 
 
 @app.route("/about")
-@login_required
 def about():
     return render_template("about.html")
 
@@ -252,10 +241,6 @@ def login():
 
         # Remember which user has logged in
         session["user_id"] = rows[0]["id"]
-        if rows[0]["god_mode"] == "god":
-            session["god_mode"] = "god"
-        else:
-            session["god_mode"] = ""
 
         # Redirect user to home page
 
@@ -319,7 +304,7 @@ def register():
 
         # Remember which user has logged in
         session["user_id"] = rows[0]["id"]
-
+        session["god_mode"] = ""
         # Redirect user to home page
 
         flash("Registered and logged in")
@@ -357,6 +342,15 @@ def change_password():
     # User reached route via GET (as by clicking a link or via redirect)
     else:
         return render_template("change-password.html")
+
+
+def CheckGodMode(user_id):
+    if user_id is not None:
+        god_mode = db.execute("SELECT god_mode FROM users WHERE id =:user_id",
+                              user_id=user_id)[0]["god_mode"]
+        return god_mode
+    else:
+        return ""
 
 
 def errorhandler(e):
