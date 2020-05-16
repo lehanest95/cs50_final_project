@@ -25,7 +25,7 @@ all_df = []
 for f in all_files:
     df = pd.read_csv(f, sep=',')  # read contents of particular CSV (including headers)
     df['file'] = f.split('/')[-1]  # add new column named "file" and put in the name of the file
-    df['unix'] = 1
+    # df['unix'] = 1
     all_df.append(df)  # add contents to the list
 
 # merge all (remove headers from subsequent CSVs)
@@ -38,15 +38,16 @@ for index, row in merged_df.iterrows():
     # convert to unix
     datetime_object = time.mktime(datetime_object.timetuple())
     # row['Date'] = datetime_object
-    print(row['unix'])
+    # print(row['unix'])
     row['unix'] = datetime_object
-    print(row['unix'])
+    # print(row['unix'])
     # print(row['Date'])
 
 print(merged_df['unix'])
 
 # write to new CSV
 # merged_df.to_csv("merged.csv", date_format='%Y%m%d')
+merged_df.to_csv("merged.csv")
 print("merged.csv successfully written!")
 
 # write CSV to database
